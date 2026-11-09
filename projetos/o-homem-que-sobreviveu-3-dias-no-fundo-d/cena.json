@@ -1,0 +1,1370 @@
+{
+ "perfil": "curiosidades",
+ "tema": "O HOMEM QUE SOBREVIVEU 3 DIAS NO FUNDO D",
+ "efeitos": {
+  "continuidade": true,
+  "entrada": "queda",
+  "fisica": true,
+  "luz": "estudio",
+  "reels0612": true
+ },
+ "beats": [
+  {
+   "id": "b01",
+   "palavras": [
+    0,
+    5
+   ],
+   "elementos": [
+    {
+     "tipo": "contador",
+     "valor": 30,
+     "papel": "destaque",
+     "legenda": "metros abaixo",
+     "entra": "30",
+     "pos": [
+      0.5,
+      0.5
+     ],
+     "entrada": "dispara"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "avanca"
+   },
+   "cenario": "estudio-tv",
+   "titulo": {
+    "texto": "30 *metros* abaixo iam buscar corpos"
+   }
+  },
+  {
+   "id": "b02",
+   "palavras": [
+    6,
+    12
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "mao",
+     "papel": "destaque",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "escala": 1.6,
+     "entra": 0.1,
+     "_fotoFalhou": "Era Harrison Okene"
+    }
+   ],
+   "camera": {
+    "plano": "lateral",
+    "mov": "orbita"
+   },
+   "cenario": "presidio"
+  },
+  {
+   "id": "b03",
+   "palavras": [
+    13,
+    16
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "panelapressao",
+     "papel": "destaque",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "escala": 1.6,
+     "entra": 0.1,
+     "_fotoFalhou": "Jascon-4"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "recua"
+   },
+   "cenario": "presidio"
+  },
+  {
+   "id": "b04",
+   "palavras": [
+    17,
+    22
+   ],
+   "titulo": {
+    "texto": "Em 26"
+   },
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "lampadaideia",
+     "papel": "destaque",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "escala": 1.6,
+     "entra": 0.1,
+     "entrada": "queda"
+    }
+   ],
+   "camera": {
+    "plano": "lateralEsq",
+    "mov": "panDir"
+   },
+   "cenario": "presidio"
+  },
+  {
+   "id": "b05",
+   "palavras": [
+    23,
+    27
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "ilhacena",
+     "papel": "destaque",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "escala": 1.6,
+     "entra": 0.1,
+     "_fotoFalhou": "Atlântico"
+    }
+   ],
+   "camera": {
+    "plano": "fechado",
+    "mov": "avanca"
+   },
+   "cenario": "sala",
+   "transicao": "varredura"
+  },
+  {
+   "id": "b06",
+   "palavras": [
+    28,
+    31
+   ],
+   "elementos": [
+    {
+     "tipo": "contador",
+     "valor": 32,
+     "papel": "destaque",
+     "legenda": "km da costa",
+     "entra": "32",
+     "pos": [
+      0.5,
+      0.5
+     ],
+     "entrada": "placar"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "nenhum"
+   },
+   "cenario": "estudio-tv"
+  },
+  {
+   "id": "b06f",
+   "palavras": [
+    32,
+    36
+   ],
+   "elementos": [
+    {
+     "tipo": "bandeira",
+     "marca": "ng",
+     "papel": "destaque",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "escala": 1.5,
+     "entra": 0.1,
+     "entrada": "gira"
+    }
+   ],
+   "camera": {
+    "plano": "aberto",
+    "mov": "deriva"
+   },
+   "cenario": "presidio"
+  },
+  {
+   "id": "b07",
+   "palavras": [
+    37,
+    39
+   ],
+   "titulo": {
+    "texto": "segundo a BBC"
+   },
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "lampadaideia",
+     "papel": "destaque",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "escala": 1.6,
+     "entra": 0.1,
+     "entrada": "cresce"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "avanca"
+   },
+   "cenario": "presidio"
+  },
+  {
+   "id": "b08",
+   "palavras": [
+    40,
+    51
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "arvore",
+     "papel": "destaque",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "escala": 1.6,
+     "entra": 0.1,
+     "entrada": "desliza"
+    }
+   ],
+   "camera": {
+    "plano": "lateral",
+    "mov": "orbita"
+   },
+   "cenario": "presidio"
+  },
+  {
+   "id": "b09",
+   "palavras": [
+    52,
+    58
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "algemas",
+     "papel": "destaque",
+     "pos": [
+      -1.1,
+      0,
+      0
+     ],
+     "escala": 1.2,
+     "entra": 0.1,
+     "entrada": "gira"
+    },
+    {
+     "tipo": "peca",
+     "forma": "cela",
+     "papel": "frente",
+     "pos": [
+      1.1,
+      0,
+      0
+     ],
+     "escala": 1.2,
+     "entra": 0.6
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "recua"
+   },
+   "cenario": "sala",
+   "transicao": "varredura"
+  },
+  {
+   "id": "b10",
+   "palavras": [
+    59,
+    67
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "prato",
+     "papel": "destaque",
+     "pos": [
+      -1.1,
+      0,
+      0
+     ],
+     "escala": 1.2,
+     "entra": 0.1,
+     "entrada": "desliza"
+    },
+    {
+     "tipo": "peca",
+     "forma": "piramidealimentos",
+     "papel": "frente",
+     "pos": [
+      1.1,
+      0,
+      0
+     ],
+     "escala": 1.2,
+     "entra": 0.6
+    }
+   ],
+   "camera": {
+    "plano": "lateralEsq",
+    "mov": "panDir"
+   },
+   "cenario": "cozinha"
+  },
+  {
+   "id": "b11",
+   "palavras": [
+    68,
+    74
+   ],
+   "elementos": [
+    {
+     "tipo": "contador",
+     "valor": 60,
+     "papel": "destaque",
+     "legenda": "horas",
+     "entra": "60",
+     "pos": [
+      0.5,
+      0.5
+     ],
+     "entrada": "dispara"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "nenhum"
+   },
+   "cenario": "estudio-tv"
+  },
+  {
+   "id": "b12",
+   "palavras": [
+    75,
+    88
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "lampadaideia",
+     "papel": "destaque",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "escala": 1.6,
+     "entra": 0.1,
+     "_fotoFalhou": "Reuters"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "sobe"
+   },
+   "cenario": "presidio"
+  },
+  {
+   "id": "b13",
+   "palavras": [
+    89,
+    96
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "pessoa",
+     "papel": "destaque",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "escala": 1.6,
+     "entra": 0.1,
+     "entrada": "queda"
+    }
+   ],
+   "camera": {
+    "plano": "aberto",
+    "mov": "deriva"
+   },
+   "cenario": "presidio"
+  },
+  {
+   "id": "b14",
+   "palavras": [
+    97,
+    106
+   ],
+   "titulo": {
+    "texto": "Não esperavam"
+   },
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "lampadaideia",
+     "papel": "destaque",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "escala": 1.6,
+     "entra": 0.1,
+     "entrada": "gira"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "avanca"
+   },
+   "cenario": "presidio",
+   "transicao": "varredura"
+  },
+  {
+   "id": "b15",
+   "palavras": [
+    107,
+    114
+   ],
+   "elementos": [
+    {
+     "tipo": "contador",
+     "valor": 30,
+     "papel": "destaque",
+     "legenda": "metros",
+     "entra": "30",
+     "pos": [
+      0.5,
+      0.5
+     ],
+     "entrada": "rolo"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "nenhum"
+   },
+   "cenario": "estudio-tv"
+  },
+  {
+   "id": "b16",
+   "palavras": [
+    115,
+    125
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "lampadaideia",
+     "papel": "destaque",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "escala": 1.6,
+     "entra": 0.1,
+     "_fotoFalhou": "National Geographic"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "recua"
+   },
+   "cenario": "presidio"
+  },
+  {
+   "id": "b17",
+   "palavras": [
+    126,
+    134
+   ],
+   "titulo": {
+    "texto": "Ele passou"
+   },
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "lampadaideia",
+     "papel": "destaque",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "escala": 1.6,
+     "entra": 0.1,
+     "entrada": "desliza"
+    }
+   ],
+   "camera": {
+    "plano": "lateralEsq",
+    "mov": "panDir"
+   },
+   "cenario": "presidio"
+  },
+  {
+   "id": "b18",
+   "palavras": [
+    135,
+    141
+   ],
+   "titulo": {
+    "texto": "E"
+   },
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "lampadaideia",
+     "papel": "destaque",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "escala": 1.6,
+     "entra": 0.1,
+     "entrada": "gira"
+    }
+   ],
+   "camera": {
+    "plano": "fechado",
+    "mov": "avanca"
+   },
+   "cenario": "presidio"
+  },
+  {
+   "id": "b19",
+   "palavras": [
+    142,
+    156
+   ],
+   "elementos": [
+    {
+     "tipo": "contador",
+     "valor": 56,
+     "papel": "destaque",
+     "legenda": "horas",
+     "entra": "56",
+     "pos": [
+      0.5,
+      0.5
+     ],
+     "entrada": "dispara"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "nenhum"
+   },
+   "cenario": "estudio-tv",
+   "transicao": "varredura"
+  },
+  {
+   "id": "b20",
+   "palavras": [
+    157,
+    165
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "janela3d",
+     "papel": "destaque",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "escala": 1.6,
+     "entra": 0.1,
+     "entrada": "desliza"
+    }
+   ],
+   "camera": {
+    "plano": "aberto",
+    "mov": "deriva"
+   },
+   "cenario": "presidio"
+  },
+  {
+   "id": "b21",
+   "palavras": [
+    166,
+    179
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "relogio3d",
+     "papel": "destaque",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "escala": 1.6,
+     "entra": 0.1,
+     "entrada": "queda"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "avanca"
+   },
+   "cenario": "presidio"
+  },
+  {
+   "id": "b22",
+   "palavras": [
+    180,
+    187
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "areia",
+     "papel": "destaque",
+     "pos": [
+      -1.1,
+      0,
+      0
+     ],
+     "escala": 1.2,
+     "entra": 0.1,
+     "entrada": "cresce"
+    },
+    {
+     "tipo": "peca",
+     "forma": "calendario",
+     "papel": "frente",
+     "pos": [
+      1.1,
+      0,
+      0
+     ],
+     "escala": 1.2,
+     "entra": 0.6
+    }
+   ],
+   "camera": {
+    "plano": "lateral",
+    "mov": "orbita"
+   },
+   "cenario": "presidio"
+  },
+  {
+   "id": "b23",
+   "palavras": [
+    188,
+    195
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "dado",
+     "papel": "destaque",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "escala": 1.6,
+     "entra": 0.1,
+     "entrada": "desliza"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "recua"
+   },
+   "cenario": "sala"
+  },
+  {
+   "id": "b24",
+   "palavras": [
+    196,
+    208
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "engrenagens",
+     "papel": "destaque",
+     "pos": [
+      -1.1,
+      0,
+      0
+     ],
+     "escala": 1.2,
+     "entra": 0.1,
+     "entrada": "queda"
+    },
+    {
+     "tipo": "peca",
+     "forma": "engrenagem",
+     "papel": "frente",
+     "pos": [
+      1.1,
+      0,
+      0
+     ],
+     "escala": 1.2,
+     "entra": 0.6
+    }
+   ],
+   "camera": {
+    "plano": "lateralEsq",
+    "mov": "panDir"
+   },
+   "cenario": "presidio",
+   "titulo": {
+    "texto": "ou pra quem quer o *mecanismo*",
+    "entrada": "marca"
+   },
+   "transicao": "varredura"
+  }
+ ],
+ "gerado": "autoplano",
+ "relevancia": {
+  "versao": 1,
+  "familias": [
+   "saude",
+   "comida",
+   "natureza"
+  ],
+  "beats": [
+   {
+    "beat": "b01",
+    "palavras": [
+     0,
+     5
+    ],
+    "casou": [
+     {
+      "forma": "pessoa",
+      "nota": 1.19,
+      "termos": [
+       "corpo"
+      ]
+     }
+    ],
+    "motivo": "número da fala"
+   },
+   {
+    "beat": "b02",
+    "palavras": [
+     6,
+     12
+    ],
+    "casou": [
+     {
+      "forma": "mao",
+      "nota": 1.5,
+      "termos": [
+       "mao"
+      ]
+     }
+    ],
+    "motivo": "nome próprio \"Era Harrison Okene\": foto real buscada sozinha",
+    "foto": "Era Harrison Okene"
+   },
+   {
+    "beat": "b03",
+    "palavras": [
+     13,
+     16
+    ],
+    "casou": [
+     {
+      "forma": "panelapressao",
+      "nota": 1.1,
+      "termos": [
+       "cozinh"
+      ]
+     }
+    ],
+    "motivo": "nome próprio \"Jascon-4\": foto real buscada sozinha",
+    "foto": "Jascon-4"
+   },
+   {
+    "beat": "b04",
+    "palavras": [
+     17,
+     22
+    ],
+    "casou": [],
+    "motivo": "nada casou; figura neutra + texto da fala",
+    "apoio": true,
+    "neutra": true
+   },
+   {
+    "beat": "b05",
+    "palavras": [
+     23,
+     27
+    ],
+    "casou": [
+     {
+      "forma": "ilhacena",
+      "nota": 1.5,
+      "termos": [
+       "barco"
+      ]
+     },
+     {
+      "forma": "veleiro",
+      "nota": 1.5,
+      "termos": [
+       "barco"
+      ]
+     },
+     {
+      "forma": "glb-veleiro",
+      "nota": 1.5,
+      "termos": [
+       "barco"
+      ]
+     }
+    ],
+    "motivo": "nome próprio \"Atlântico\": foto real buscada sozinha",
+    "foto": "Atlântico"
+   },
+   {
+    "beat": "b06",
+    "palavras": [
+     28,
+     31
+    ],
+    "casou": [],
+    "motivo": "número da fala"
+   },
+   {
+    "beat": "b06f",
+    "palavras": [
+     32,
+     36
+    ],
+    "casou": [],
+    "motivo": "país \"Nigéria\" (bandeira da biblioteca)",
+    "foto": "Nigéria"
+   },
+   {
+    "beat": "b07",
+    "palavras": [
+     37,
+     39
+    ],
+    "casou": [],
+    "motivo": "nada casou; figura neutra + texto da fala",
+    "apoio": true,
+    "neutra": true
+   },
+   {
+    "beat": "b08",
+    "palavras": [
+     40,
+     51
+    ],
+    "casou": [],
+    "motivo": "nada casou; peça da família de assunto do próprio beat (arvore)",
+    "apoio": true
+   },
+   {
+    "beat": "b09",
+    "palavras": [
+     52,
+     58
+    ],
+    "casou": [
+     {
+      "forma": "algemas",
+      "nota": 1.5,
+      "termos": [
+       "preso"
+      ]
+     },
+     {
+      "forma": "cela",
+      "nota": 1.27,
+      "termos": [
+       "preso"
+      ]
+     }
+    ],
+    "motivo": "peça casada com a fala"
+   },
+   {
+    "beat": "b10",
+    "palavras": [
+     59,
+     67
+    ],
+    "casou": [
+     {
+      "forma": "prato",
+      "nota": 1.8,
+      "termos": [
+       "comida"
+      ]
+     },
+     {
+      "forma": "bolo",
+      "nota": 1.8,
+      "termos": [
+       "doce"
+      ]
+     },
+     {
+      "forma": "gota",
+      "nota": 1.58,
+      "termos": [
+       "agua"
+      ]
+     }
+    ],
+    "motivo": "peça casada com a fala"
+   },
+   {
+    "beat": "b11",
+    "palavras": [
+     68,
+     74
+    ],
+    "casou": [
+     {
+      "forma": "relogio3d",
+      "nota": 1.78,
+      "termos": [
+       "horas",
+       "hora"
+      ]
+     },
+     {
+      "forma": "relogioparede",
+      "nota": 1.5,
+      "termos": [
+       "horas"
+      ]
+     }
+    ],
+    "motivo": "número da fala"
+   },
+   {
+    "beat": "b12",
+    "palavras": [
+     75,
+     88
+    ],
+    "casou": [],
+    "motivo": "nome próprio \"Reuters\": foto real buscada sozinha",
+    "foto": "Reuters"
+   },
+   {
+    "beat": "b13",
+    "palavras": [
+     89,
+     96
+    ],
+    "casou": [
+     {
+      "forma": "pessoa",
+      "nota": 1.19,
+      "termos": [
+       "corpo"
+      ]
+     }
+    ],
+    "motivo": "peça casada com a fala"
+   },
+   {
+    "beat": "b14",
+    "palavras": [
+     97,
+     106
+    ],
+    "casou": [],
+    "motivo": "nada casou; figura neutra + texto da fala",
+    "apoio": true,
+    "neutra": true
+   },
+   {
+    "beat": "b15",
+    "palavras": [
+     107,
+     114
+    ],
+    "casou": [
+     {
+      "forma": "hemacia",
+      "nota": 1.5,
+      "termos": [
+       "sangue"
+      ]
+     }
+    ],
+    "motivo": "número da fala"
+   },
+   {
+    "beat": "b16",
+    "palavras": [
+     115,
+     125
+    ],
+    "casou": [],
+    "motivo": "nome próprio \"National Geographic\": foto real buscada sozinha",
+    "foto": "National Geographic"
+   },
+   {
+    "beat": "b17",
+    "palavras": [
+     126,
+     134
+    ],
+    "casou": [],
+    "motivo": "nada casou; figura neutra + texto da fala",
+    "apoio": true,
+    "neutra": true
+   },
+   {
+    "beat": "b18",
+    "palavras": [
+     135,
+     141
+    ],
+    "casou": [],
+    "motivo": "nada casou; figura neutra + texto da fala",
+    "apoio": true,
+    "neutra": true
+   },
+   {
+    "beat": "b19",
+    "palavras": [
+     142,
+     156
+    ],
+    "casou": [
+     {
+      "forma": "relogio3d",
+      "nota": 1.78,
+      "termos": [
+       "horas",
+       "hora"
+      ]
+     },
+     {
+      "forma": "relogioparede",
+      "nota": 1.5,
+      "termos": [
+       "horas"
+      ]
+     }
+    ],
+    "motivo": "número da fala"
+   },
+   {
+    "beat": "b20",
+    "palavras": [
+     157,
+     165
+    ],
+    "casou": [
+     {
+      "forma": "janela3d",
+      "nota": 1.5,
+      "termos": [
+       "janela"
+      ]
+     }
+    ],
+    "motivo": "peça casada com a fala"
+   },
+   {
+    "beat": "b21",
+    "palavras": [
+     166,
+     179
+    ],
+    "casou": [
+     {
+      "forma": "relogio3d",
+      "nota": 1.19,
+      "termos": [
+       "minuto"
+      ]
+     }
+    ],
+    "motivo": "peça casada com a fala"
+   },
+   {
+    "beat": "b22",
+    "palavras": [
+     180,
+     187
+    ],
+    "casou": [
+     {
+      "forma": "compartilhar",
+      "nota": 2.2,
+      "termos": [
+       "manda esse"
+      ]
+     },
+     {
+      "forma": "areia",
+      "nota": 1.5,
+      "termos": [
+       "prazo"
+      ]
+     },
+     {
+      "forma": "calendario",
+      "nota": 1.5,
+      "termos": [
+       "prazo"
+      ]
+     }
+    ],
+    "motivo": "peça casada com a fala"
+   },
+   {
+    "beat": "b23",
+    "palavras": [
+     188,
+     195
+    ],
+    "casou": [
+     {
+      "forma": "dado",
+      "nota": 1.5,
+      "termos": [
+       "sorte"
+      ]
+     }
+    ],
+    "motivo": "peça casada com a fala"
+   },
+   {
+    "beat": "b24",
+    "palavras": [
+     196,
+     208
+    ],
+    "casou": [
+     {
+      "forma": "botaoseguir",
+      "nota": 2.2,
+      "termos": [
+       "segue a pagina"
+      ]
+     },
+     {
+      "forma": "engrenagens",
+      "nota": 1.5,
+      "termos": [
+       "mecanismo"
+      ]
+     },
+     {
+      "forma": "engrenagem",
+      "nota": 1.27,
+      "termos": [
+       "mecanismo"
+      ]
+     }
+    ],
+    "motivo": "peça casada com a fala"
+   }
+  ]
+ },
+ "falaForma": {
+  "versao": 1,
+  "estilo": "padrao",
+  "beats": [
+   {
+    "beat": "b01",
+    "forma": "contador",
+    "por": "numero",
+    "motivo": "número da fala"
+   },
+   {
+    "beat": "b02",
+    "forma": "card",
+    "por": "foto",
+    "motivo": "nome próprio \"Era Harrison Okene\": foto real buscada sozinha"
+   },
+   {
+    "beat": "b03",
+    "forma": "card",
+    "por": "foto",
+    "motivo": "nome próprio \"Jascon-4\": foto real buscada sozinha"
+   },
+   {
+    "beat": "b04",
+    "forma": "lampadaideia",
+    "por": "neutro",
+    "motivo": "nada casou; figura neutra + texto da fala"
+   },
+   {
+    "beat": "b05",
+    "forma": "card",
+    "por": "foto",
+    "motivo": "nome próprio \"Atlântico\": foto real buscada sozinha"
+   },
+   {
+    "beat": "b06",
+    "forma": "contador",
+    "por": "numero",
+    "motivo": "número da fala"
+   },
+   {
+    "beat": "b06f",
+    "forma": "bandeira",
+    "por": "foto",
+    "motivo": "país \"Nigéria\" (bandeira da biblioteca)"
+   },
+   {
+    "beat": "b07",
+    "forma": "lampadaideia",
+    "por": "neutro",
+    "motivo": "nada casou; figura neutra + texto da fala"
+   },
+   {
+    "beat": "b08",
+    "forma": "arvore",
+    "por": "familia",
+    "motivo": "nada casou; peça da família de assunto do próprio beat (arvore)"
+   },
+   {
+    "beat": "b09",
+    "forma": "algemas",
+    "por": "fala",
+    "motivo": "peça casada com a fala"
+   },
+   {
+    "beat": "b10",
+    "forma": "prato",
+    "por": "fala",
+    "motivo": "peça casada com a fala"
+   },
+   {
+    "beat": "b11",
+    "forma": "contador",
+    "por": "numero",
+    "motivo": "número da fala"
+   },
+   {
+    "beat": "b12",
+    "forma": "card",
+    "por": "foto",
+    "motivo": "nome próprio \"Reuters\": foto real buscada sozinha"
+   },
+   {
+    "beat": "b13",
+    "forma": "pessoa",
+    "por": "fala",
+    "motivo": "peça casada com a fala"
+   },
+   {
+    "beat": "b14",
+    "forma": "lampadaideia",
+    "por": "neutro",
+    "motivo": "nada casou; figura neutra + texto da fala"
+   },
+   {
+    "beat": "b15",
+    "forma": "contador",
+    "por": "numero",
+    "motivo": "número da fala"
+   },
+   {
+    "beat": "b16",
+    "forma": "card",
+    "por": "foto",
+    "motivo": "nome próprio \"National Geographic\": foto real buscada sozinha"
+   },
+   {
+    "beat": "b17",
+    "forma": "lampadaideia",
+    "por": "neutro",
+    "motivo": "nada casou; figura neutra + texto da fala"
+   },
+   {
+    "beat": "b18",
+    "forma": "lampadaideia",
+    "por": "neutro",
+    "motivo": "nada casou; figura neutra + texto da fala"
+   },
+   {
+    "beat": "b19",
+    "forma": "contador",
+    "por": "numero",
+    "motivo": "número da fala"
+   },
+   {
+    "beat": "b20",
+    "forma": "janela3d",
+    "por": "fala",
+    "motivo": "peça casada com a fala"
+   },
+   {
+    "beat": "b21",
+    "forma": "relogio3d",
+    "por": "fala",
+    "motivo": "peça casada com a fala"
+   },
+   {
+    "beat": "b22",
+    "forma": "areia",
+    "por": "fala",
+    "motivo": "peça casada com a fala"
+   },
+   {
+    "beat": "b23",
+    "forma": "dado",
+    "por": "fala",
+    "motivo": "peça casada com a fala"
+   },
+   {
+    "beat": "b24",
+    "forma": "engrenagens",
+    "por": "fala",
+    "motivo": "peça casada com a fala"
+   }
+  ]
+ },
+ "hashPalavras": "31feb9ccfe0e",
+ "nPalavras": 209,
+ "automatica": true,
+ "estiloPlano": "padrao"
+}

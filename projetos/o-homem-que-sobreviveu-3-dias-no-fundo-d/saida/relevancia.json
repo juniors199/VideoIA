@@ -1,0 +1,187 @@
+{
+ "media": 1.92,
+ "semRelacao": 0,
+ "apoio": 8,
+ "beats": [
+  {
+   "beat": "b01",
+   "fala": "30 metros abaixo, iam buscar corpos.",
+   "mostra": "número 30",
+   "nota": 3,
+   "cenario": "estudio-tv"
+  },
+  {
+   "beat": "b02",
+   "fala": "Acharam uma mão viva. Era Harrison Okene,",
+   "mostra": "peça mao",
+   "nota": 2,
+   "cenario": "presidio",
+   "fotoFalhou": "Era Harrison Okene"
+  },
+  {
+   "beat": "b03",
+   "fala": "cozinheiro do rebocador Jascon-4.",
+   "mostra": "peça panelapressao",
+   "nota": 2,
+   "cenario": "presidio",
+   "fotoFalhou": "Jascon-4"
+  },
+  {
+   "beat": "b04",
+   "fala": "Em 26 de maio de 2013,",
+   "mostra": "peça lampadaideia",
+   "nota": 1,
+   "cenario": "presidio"
+  },
+  {
+   "beat": "b05",
+   "fala": "o barco virou no Atlântico,",
+   "mostra": "peça ilhacena",
+   "nota": 2,
+   "cenario": "sala",
+   "fotoFalhou": "Atlântico"
+  },
+  {
+   "beat": "b06",
+   "fala": "a cerca de 32",
+   "mostra": "número 32",
+   "nota": 3,
+   "cenario": "estudio-tv"
+  },
+  {
+   "beat": "b06f",
+   "fala": "km da costa da Nigéria,",
+   "mostra": "bandeira",
+   "nota": 3,
+   "cenario": "presidio"
+  },
+  {
+   "beat": "b07",
+   "fala": "segundo a BBC.",
+   "mostra": "peça lampadaideia",
+   "nota": 1,
+   "cenario": "presidio"
+  },
+  {
+   "beat": "b08",
+   "fala": "O Jascon-4 afundou de cabeça para baixo até o leito do mar.",
+   "mostra": "peça arvore",
+   "nota": 1,
+   "cenario": "presidio"
+  },
+  {
+   "beat": "b09",
+   "fala": "Harrison ficou preso num bolsão de ar,",
+   "mostra": "peça algemas + peça cela",
+   "nota": 2,
+   "cenario": "sala"
+  },
+  {
+   "beat": "b10",
+   "fala": "no escuro, sem comida e quase sem água doce.",
+   "mostra": "peça prato + peça piramidealimentos",
+   "nota": 2,
+   "cenario": "cozinha"
+  },
+  {
+   "beat": "b11",
+   "fala": "Cerca de 60 horas. Quase três dias.",
+   "mostra": "número 60",
+   "nota": 3,
+   "cenario": "estudio-tv"
+  },
+  {
+   "beat": "b12",
+   "fala": "Dos 12 a bordo, só ele saiu vivo, segundo a Reuters e a BBC.",
+   "mostra": "peça lampadaideia",
+   "nota": 1,
+   "cenario": "presidio",
+   "fotoFalhou": "Reuters"
+  },
+  {
+   "beat": "b13",
+   "fala": "Os mergulhadores da DCN tinham ido recuperar corpos.",
+   "mostra": "peça pessoa",
+   "nota": 2,
+   "cenario": "presidio"
+  },
+  {
+   "beat": "b14",
+   "fala": "Não esperavam um vivo. Mas achar vivo ainda não salvava.",
+   "mostra": "peça lampadaideia",
+   "nota": 1,
+   "cenario": "presidio"
+  },
+  {
+   "beat": "b15",
+   "fala": "A 30 metros, o nitrogênio sobe no sangue.",
+   "mostra": "número 30",
+   "nota": 3,
+   "cenario": "estudio-tv"
+  },
+  {
+   "beat": "b16",
+   "fala": "Subir direto podia matar, segundo a BBC e a National Geographic.",
+   "mostra": "peça lampadaideia",
+   "nota": 1,
+   "cenario": "presidio",
+   "fotoFalhou": "National Geographic"
+  },
+  {
+   "beat": "b17",
+   "fala": "Ele passou por descompressão antes de voltar à superfície.",
+   "mostra": "peça lampadaideia",
+   "nota": 1,
+   "cenario": "presidio"
+  },
+  {
+   "beat": "b18",
+   "fala": "E, segundo estimativa citada pela National Geographic,",
+   "mostra": "peça lampadaideia",
+   "nota": 1,
+   "cenario": "presidio"
+  },
+  {
+   "beat": "b19",
+   "fala": "num bolsão daquele tamanho o gás carbônico começa a ficar tóxico perto de 56 horas.",
+   "mostra": "número 56",
+   "nota": 3,
+   "cenario": "estudio-tv"
+  },
+  {
+   "beat": "b20",
+   "fala": "Ele foi tirado perto das 60. Na janela estreita.",
+   "mostra": "peça janela3d",
+   "nota": 2,
+   "cenario": "presidio"
+  },
+  {
+   "beat": "b21",
+   "fala": "O fundo do mar não te dá minutos. Às vezes te dá um bolsão.",
+   "mostra": "peça relogio3d",
+   "nota": 2,
+   "cenario": "presidio"
+  },
+  {
+   "beat": "b22",
+   "fala": "E um prazo. Quem você manda esse caso:",
+   "mostra": "peça areia + peça calendario",
+   "nota": 2,
+   "cenario": "presidio"
+  },
+  {
+   "beat": "b23",
+   "fala": "pra quem acha que sobrevivência é só sorte,",
+   "mostra": "peça dado",
+   "nota": 2,
+   "cenario": "sala"
+  },
+  {
+   "beat": "b24",
+   "fala": "ou pra quem quer o mecanismo? Segue a página pra ver a próxima.",
+   "mostra": "peça engrenagens + peça engrenagem",
+   "nota": 2,
+   "cenario": "presidio"
+  }
+ ]
+}
