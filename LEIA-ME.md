@@ -9,13 +9,13 @@ O Método é uma pasta que o seu assistente (Claude Code ou Codex) usa. Você es
 
 1. **Baixe e descompacte** o zip numa pasta fixa da sua pasta pessoal.
 2. **Abra a pasta** no Claude Code (aba **Code**, modo **Local**) ou no Codex.
-3. **Escreva:** `Comece pelos primeiros passos.` Ele instala o que faltar (Node, FFmpeg, navegador interno e alinhador de voz, dentro de `.programas/`, conferindo o SHA-256 de cada arquivo), ativa a licença, liga a voz e faz o vídeo de teste. Depois: `Quero um vídeo sobre <tema>.`
+3. **Escreva:** `Comece pelos primeiros passos.` Ele instala o que faltar (Node, FFmpeg, navegador interno e alinhador de voz, dentro de `.programas/`, conferindo o SHA-256 de cada arquivo), liga a voz e faz o vídeo de teste. Não há licença para ativar. Depois: `Quero um vídeo sobre <tema>.`
 
 O **estúdio visual é opcional**: escreva **abrir estúdio** para ver seus vídeos, estilos, voz e marca em telas. Quem ainda não tem o assistente pode dar dois cliques em **Instalar (Mac)** ou **Instalar (Windows)**, que abre o estúdio; sem assistente dá para ver a demonstração e fazer o vídeo de teste, mas o vídeo do seu tema precisa dele. Avisos do macOS e do Windows na primeira vez: Guia 01, Seções 05 e 06.
 
 No estúdio:
-1. No estúdio (**Abrir Estúdio**), aba **Começar**: licença, voz (a ElevenLabs é a padrão, com conta grátis e o passo a passo completo na própria tela: criar a conta, gerar a chave, colar e ouvir as 10 vozes; a chave vai direto para o `.env`, sem aparecer de novo), marca e tipo de página.
-2. No topo da aba **Começar**, digite um tema e clique em **Fazer meu primeiro vídeo**: o estúdio confere a instalação, a licença e a voz, instala o que faltar e mostra o vídeo tocando. Se algo parar, a tela diz a causa, o que fazer e tem **Copiar diagnóstico** para mandar no direct do Instagram @ilustrandocuriosidades (sem chaves nem dados pessoais).
+1. No estúdio (**Abrir Estúdio**), aba **Começar**: voz (a ElevenLabs é a padrão, com conta grátis e o passo a passo completo na própria tela: criar a conta, gerar a chave, colar e ouvir as 10 vozes; a chave vai direto para o `.env`, sem aparecer de novo), marca e tipo de página.
+2. No topo da aba **Começar**, digite um tema e clique em **Fazer meu primeiro vídeo**: o estúdio confere a instalação e a voz, instala o que faltar e mostra o vídeo tocando. Se algo parar, a tela diz a causa, o que fazer e tem **Copiar diagnóstico** para mandar no direct do Instagram @ilustrandocuriosidades (sem chaves nem dados pessoais).
 3. Os vídeos prontos ficam em **Meus vídeos**, com Baixar e Copiar legenda.
 
 ## O que vem pronto
@@ -87,7 +87,7 @@ AGENTS.md       as mesmas regras para o Codex (gerado em parte pelo npm run sinc
 .agents/skills  cópia das skills para o Codex (não edite; rode npm run sincronizar)
 .codex/         configuração e regras do Codex para esta pasta (só valem com a pasta confiável)
 scripts/        marca.mjs (sua marca), sincronizar-skills.mjs, verificar.mjs, atualizar.mjs, buscar-imagem.mjs e buscar-broll.mjs (fotos e b-roll de licença livre), folha-carrossel.mjs
-src/licenca     licença por computador, marca d'água e metadados de rastreio
+src/licenca     stubs open-source (sem ativação comercial)
 src/pacote      manifesto assinado, verificação e atualização segura
 MAPA.md         o que é cada pasta e arquivo (o que é seu e o que é do kit)
 VERSAO          versão instalada; CHANGELOG.md diz o que mudou

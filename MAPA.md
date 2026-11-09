@@ -10,10 +10,10 @@ O que é cada pasta e cada arquivo desta pasta, em duas colunas: o que significa
 |---|---|---|---|
 | `COMECE-AQUI.pdf` e `.md` | os primeiros passos | não precisa ler | kit |
 | `Instalar (Mac).command` e `Instalar (Windows).bat` | **dois cliques e ele instala tudo** dentro da pasta (Node, FFmpeg, navegador, alinhador de voz) e abre o estúdio | pede para a pessoa usar quando o doctor acusar falta de programa | kit |
-| `Abrir Estúdio (Mac).command` e `Abrir Estúdio (Windows).bat` | abre o estúdio no navegador (licença, voz, marca, meus vídeos, atualizar) | `npm run estudio -- --abrir` faz o mesmo | kit |
+| `Abrir Estúdio (Mac).command` e `Abrir Estúdio (Windows).bat` | abre o estúdio no navegador (voz, marca, meus vídeos, atualizar) | `npm run estudio -- --abrir` faz o mesmo | kit |
 | `LEIA-ME.md` | visão geral e comandos | referência rápida | kit |
 | `MAPA.md` | este mapa | onde fica cada coisa e o que pode editar | kit |
-| `LICENCA.md` | o termo de licença (o que pode e o que não pode) | não muda nada no trabalho | kit |
+| `LICENSE` | licença MIT do estúdio open-source | não muda nada no trabalho | kit |
 | `VERSAO` | a versão instalada (ex.: 0.4.0) | conferir antes de atualizar | kit |
 | `CHANGELOG.md` | o que mudou em cada versão | ler depois de atualizar | kit |
 | `CLAUDE.md` | as regras do estúdio para o Claude Code | lido no começo de toda conversa | kit |
@@ -24,7 +24,7 @@ O que é cada pasta e cada arquivo desta pasta, em duas colunas: o que significa
 | `package.json` e `package-lock.json` | lista travada das peças que o `npm install` baixa | não editar | kit |
 | `MANIFESTO.json` e `MANIFESTO.assinatura` | a lista de fábrica de cada arquivo com a impressão digital (SHA-256), assinada por nós | `npm run verificar` compara a pasta com ela | kit |
 | `AVISOS-TERCEIROS.md` | licenças dos componentes de terceiros | não precisa ler | kit |
-| `.gitignore` | o que nunca vai para o Git (chaves, saídas, licença) | não editar | kit |
+| `.gitignore` | o que nunca vai para o Git (chaves, saídas, cache) | não editar | kit |
 
 ## Pastas
 
@@ -45,25 +45,22 @@ O que é cada pasta e cada arquivo desta pasta, em duas colunas: o que significa
 | `.claude/skills/` | o passo a passo de cada tarefa (pauta, roteiro, vídeo, carrossel, publicar...) | segue a skill da tarefa | kit |
 | `.agents/skills/` | cópia das skills para o Codex (gerada, não edite) | o Codex segue estas | kit |
 | `.codex/` | configuração do Codex só para esta pasta | carregada quando a pasta é confiável | kit |
-| `src/` | **o motor** do estúdio (vídeo, carrossel, licença). No pacote vai protegido | roda pelos comandos; não edita | protegido |
+| `src/` | **o motor** do estúdio (vídeo, carrossel). No pacote vai protegido | roda pelos comandos; não edita | protegido |
 | `scripts/` | comandos de manutenção: marca, sincronizar, verificar, atualizar, buscar foto (`buscar-imagem.mjs`) e trecho de vídeo de licença livre (`buscar-broll.mjs`), folha de contato do carrossel (`folha-carrossel.mjs`), foto em pontos e folha dos pontos (`imagem-para-pontos.mjs`, `folha-pontos.mjs`), linha editorial, modelos de vídeo (`modelos.mjs`) | roda pelos comandos `npm run ...` e `node scripts/...` | kit |
 | `fontes/` | as fontes da marca (Inter Tight) e as dos estilos (Bricolage Grotesque, Instrument Serif, JetBrains Mono, Poppins, Antonio, Roboto, Euphoria Script) | o motor usa | kit |
 | `ferramentas/` | o instalador de um clique (`instalador/`), o alinhador de voz sem Python (`alinhar-voz.mjs`, `alinhador/`), o atalho `rodar` (Node portátil para o assistente) e o extra opcional em Python (`transcrever.py`) | `ferramentas/rodar <comando>` quando `node` não existe no terminal | kit |
 | `.programas/` | os programas portáteis que o instalador baixou (Node, FFmpeg, alinhador de voz). Fica só no seu computador | usa pelo `ferramentas/rodar`; não edita | gerada |
 | `test/` | testes automáticos (`npm test`) | roda para conferir se está tudo bem | kit |
 | `node_modules/` | peças baixadas pelo `npm install` (não vem no zip) | não mexe | gerada |
-| `.licenca/` | o comprovante da sua licença neste computador (criado ao ativar no estúdio web) | nunca mostra nem edita | seu |
 | `.atualizacao/` | cópia de segurança da versão anterior, criada pelo `npm run atualizar` | usa para desfazer | seu |
 
 ## Comandos de manutenção
 
 | Comando | O que faz |
 |---|---|
-| `npm run doctor` | confere os programas (Node, FFmpeg, Chromium), as chaves, a licença e o motor |
+| `npm run doctor` | confere os programas (Node, FFmpeg, Chromium), as chaves e o motor |
 | `npm run verificar` | compara cada arquivo com a lista de fábrica e diz, em português, o que mudou. `-- --completo` também roda o doctor e os testes |
-| `npm run estudio -- --abrir` | abre o estúdio web (o mesmo que "Abrir Estúdio"): licença, voz, marca, vídeo de teste, meus vídeos, atualizar |
-| `npm run ativar` | ativa a licença pelo Terminal (o jeito fácil é o estúdio web, Começar > Licença) |
-| `npm run licenca` | mostra a situação da licença. `-- --desativar` libera este computador para usar em outro |
+| `npm run estudio -- --abrir` | abre o estúdio web (o mesmo que "Abrir Estúdio"): voz, marca, vídeo de teste, meus vídeos, atualizar |
 | `npm run atualizar -- <zip>` | instala uma versão nova sem tocar em `projetos/`, `marca/`, `carrosseis/`, `.env` e no que você criou. `-- --simular` só mostra; `-- --desfazer` volta |
 | `npm run estilos` / `npm run objetivos` | listam os estilos e os objetivos. `-- --ver <id>` mostra um; `-- --padrao <id>` grava o da página; `-- --novo <id> --base <id>` cria o seu em `estilos/meus/` ou `objetivos/meus/`; `-- --validar` confere todos. `npm run modelos` continua funcionando como apelido |
 | `npm test` | testes automáticos do estúdio |
@@ -72,8 +69,7 @@ O que é cada pasta e cada arquivo desta pasta, em duas colunas: o que significa
 
 - Conteúdo da pessoa vive em `projetos/`, `carrosseis/`, `marca/`, `estilos/meus/`, `objetivos/meus/` e `modelos/meus/`. Nada de arquivo solto na raiz.
 - Não edite `src/`, `MANIFESTO.*`, `package*.json` nem `.agents/skills/` (gerada). Mudou uma skill? Edite em `.claude/skills/` e rode `npm run sincronizar`.
-- Nunca leia, mostre ou peça o conteúdo de `.env` e `.licenca/`.
-- Se o vídeo sair com a marca d'água "versão não ativada", explique e indique o estúdio web (Começar > Licença); não tente contornar.
+- Nunca leia, mostre ou peça o conteúdo de `.env`.
 - Nunca peça para a pessoa abrir o Terminal ou digitar comando: instalar é dois cliques em "Instalar"; configurar é no estúdio web.
 
 

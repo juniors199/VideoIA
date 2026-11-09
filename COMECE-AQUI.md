@@ -9,7 +9,7 @@ rodape: Travou? Copiar diagnóstico e Abrir o direct (ig.me/m/ilustrandocuriosid
 
 
 :::passo Baixe e descompacte numa pasta fixa (5 min)
-Na área de membros, clique em **BAIXAR O ESTÚDIO** (cerca de 88 MB). **Mac:** dois cliques, renomeie para `ilustrando` e mova para a sua pasta pessoal. **Windows:** botão direito, **Extrair tudo**, **Procurar...**, **Disco Local (C:)**, **Selecionar pasta**, **Extrair**. Por quê: o Windows protege e sincroniza Downloads, Área de Trabalho e OneDrive, e o estúdio pode cair ali. ✔ **Deu certo se:** há uma pasta `ilustrando` (ou `ilustrando-metodo...` no C) com o **Instalar** dentro.
+Baixe o arquivo do estúdio (releases) e clique em **BAIXAR O ESTÚDIO** se estiver na página de download (cerca de 88 MB). **Mac:** dois cliques, renomeie para `ilustrando` e mova para a sua pasta pessoal. **Windows:** botão direito, **Extrair tudo**, **Procurar...**, **Disco Local (C:)**, **Selecionar pasta**, **Extrair**. Por quê: o Windows protege e sincroniza Downloads, Área de Trabalho e OneDrive, e o estúdio pode cair ali. ✔ **Deu certo se:** há uma pasta `ilustrando` (ou `ilustrando-metodo...` no C) com o **Instalar** dentro.
 :::
 
 :::passo Abra a pasta no Claude Code ou no Codex
@@ -24,7 +24,7 @@ Leia e aprove os pedidos de permissão. ✔ **Deu certo se:** ele confere o comp
 :::
 
 :::passo Responda ao que ele pedir
-O **e-mail da compra** pode ir na conversa. A **chave da voz nunca**: ele abre um arquivo para você colar. ✔ **Deu certo se:** ele diz que a licença está ativa e a voz funciona.
+A **chave da voz nunca** vai na conversa: ele abre um arquivo para você colar. ✔ **Deu certo se:** a voz funciona. (Não há licença de ativação: o estúdio é open-source.)
 :::
 
 :::passo Peça o seu vídeo

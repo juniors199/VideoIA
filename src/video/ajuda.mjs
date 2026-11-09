@@ -31,7 +31,6 @@ Conferir e diagnosticar
   npm run comece -- --situacao [--json] o que falta para o primeiro v\xEDdeo, em uma tela
 
 Licen\xE7a e voz sem abrir o est\xFAdio web
-  npm run ativar -- <e-mail> --aceito   ativa a licen\xE7a neste computador
   npm run voz -- --situacao | --preparar | --conferir | --voz-padrao [nome]
 
 Ajuda

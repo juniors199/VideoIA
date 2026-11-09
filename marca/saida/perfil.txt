@@ -1,14 +1,14 @@
 PERFIL DA PÁGINA 
 Gerado por npm run marca. Use o mesmo nome, @ e foto nas 4 redes.
 
-Nome: Sua Página
-@: @suapagina
+Nome: simaopedro
+@: @simaopedro
 
 Bio (Instagram e Facebook, até 150 caracteres):
-Troque esta bio com npm run marca.
+Uma página para quem gosta de entender as coisas.
 
 Bio curta (TikTok, até 80 caracteres):
-A assinatura da sua página aparece aqui.
+Uma página para quem gosta de entender as coisas.
 
 Onde vai cada arquivo (pasta marca/saida):
 - avatar.png: foto de perfil no Instagram, TikTok, YouTube e Facebook (as redes cortam em círculo; veja avatar-previa-circulo.png).

@@ -12,7 +12,7 @@ O Método Ilustrando é uma pasta que o seu assistente (Claude Code ou Codex) us
 Comece pelos primeiros passos.
 ```
 
-O assistente instala o que faltar, ativa a licença com o e-mail da compra (pode digitar na conversa), liga a voz e faz o seu vídeo de teste, um passo por vez. Depois, peça o seu: `Quero um vídeo sobre...`
+O assistente instala o que faltar, liga a voz e faz o seu vídeo de teste, um passo por vez. Não há licença para ativar. Depois, peça o seu: `Quero um vídeo sobre...`
 
 ## O estúdio visual é opcional
 

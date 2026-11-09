@@ -1,0 +1,64 @@
+{
+ "media": 1.11,
+ "semRelacao": 0,
+ "apoio": 8,
+ "beats": [
+  {
+   "beat": "gancho",
+   "fala": "Trabalha 44 horas por semana? Sua hora vai valer 10% a mais.",
+   "mostra": "peça relogioparede",
+   "nota": 2
+  },
+  {
+   "beat": "fim6x1",
+   "fala": "Com o fim da 6x1, promulgado em 16 de outubro,",
+   "mostra": "peça calendario",
+   "nota": 1
+  },
+  {
+   "beat": "jornada",
+   "fala": "a jornada máxima cai para 40 horas, sem cortar salário.",
+   "mostra": "peça despertador",
+   "nota": 1,
+   "cenario": "escritorio"
+  },
+  {
+   "beat": "minimo",
+   "fala": "Pega o salário mínimo: R$ 1.621.",
+   "mostra": "peça cedulareal",
+   "nota": 1
+  },
+  {
+   "beat": "d220",
+   "fala": "Dividido por 220,",
+   "mostra": "peça calculadora",
+   "nota": 1,
+   "cenario": "escritorio"
+  },
+  {
+   "beat": "h737",
+   "fala": "a sua hora vale R$ 7,37.",
+   "mostra": "peça relogioparede",
+   "nota": 1
+  },
+  {
+   "beat": "h811",
+   "fala": "Dividido por 200, vale R$ 8,11.",
+   "mostra": "peça relogioparede",
+   "nota": 1
+  },
+  {
+   "beat": "igual",
+   "fala": "Seu salário fica igual.",
+   "mostra": "peça cedulareal",
+   "nota": 1,
+   "cenario": "agencia-banco"
+  },
+  {
+   "beat": "virada",
+   "fala": "O que sobe é o preço da sua hora.",
+   "mostra": "peça relogioparede",
+   "nota": 1
+  }
+ ]
+}

@@ -58,19 +58,15 @@ Cada ajuste refaz o vídeo, de 2 a 15 minutos. Mexer só no visual reaproveita a
 # Perguntas sobre o método {compra, licença, custos e assistentes}
 
 :::pergunta Preciso saber programar ou abrir o Terminal?
-Não. Instalar é dois cliques em **Instalar**. Licença, voz, marca e vídeos ficam no estúdio, no navegador. Os vídeos você pede em português. Se o assistente pedir para você digitar algo, responda: "rode você, ou me diga o que clicar".
+Não. Instalar é dois cliques em **Instalar**. Voz, marca e vídeos ficam no estúdio, no navegador. Os vídeos você pede em português. Se o assistente pedir para você digitar algo, responda: "rode você, ou me diga o que clicar".
 :::
 
 :::pergunta Funciona no celular, no tablet ou no Windows?
 Celular e tablet, não: o estúdio desenha cada quadro no computador. Windows 10 e 11 de 64 bits, sim (Guia 01). O celular entra na hora de postar.
 :::
 
-:::pergunta Como ativo a licença? E se trocar de computador?
-No estúdio, **Começar > Licença**: digite **só o e-mail da compra** (o da Kiwify), aceite os termos e clique em **Ativar**. A chave `ILU1-` de e-mails antigos continua valendo, no link **tenho uma chave**. Vale em até **2 computadores**. Para trocar, clique em **Liberar este computador** no antigo e ative no novo. Sem ativar, nada para: o vídeo final só sai com a marca d'água "versão não ativada". Funciona até 21 dias sem internet.
-:::
-
-:::pergunta Não recebi o acesso. E agora?
-O acesso chega no e-mail da **Kiwify**, no endereço da compra (no boleto, depois que o pagamento compensa). Procure no spam e nas abas Promoções e Atualizações, busque por "Kiwify" e confira se o e-mail da compra estava certo. Não achou? Direct do Instagram **@ilustrandocuriosidades** (ig.me/m/ilustrandocuriosidades) com o e-mail da compra e o seu nome.
+:::pergunta Preciso ativar alguma licença?
+Não. Este estúdio é **open-source**: não há e-mail de compra, chave `ILU1-` nem marca d'água de ativação. Basta instalar, ligar a voz e criar.
 :::
 
 :::pergunta Posso usar o Claude grátis ou o ChatGPT grátis?
@@ -82,7 +78,7 @@ O assistente (cerca de US$ 20 por mês) e a voz: zero na conta grátis da Eleven
 :::
 
 :::pergunta Posso usar em mais de uma página, ou para clientes?
-Pode, inclusive para clientes. Indicar pelo afiliado (70%) pode: Guia 05 e `LICENCA.md`.
+Pode, inclusive para clientes. O estúdio é open-source (MIT): veja `LICENSE`. Monetização da sua página: Guia 05.
 :::
 
 :::pergunta Como recebo uma versão nova?
@@ -172,15 +168,13 @@ Claude Code: troque **Manual** por **Auto**. Codex: mantenha **Ask for approval*
 | `Não consigo gravar na pasta` | Mova a pasta para a sua pasta pessoal, fora de OneDrive e iCloud. |
 | `antivírus está segurando os arquivos` | Espere 1 minuto e **Instalar** de novo. |
 
-### Diagnóstico (Começar > Instalação) e licença
+### Diagnóstico (Começar > Instalação)
 
 | O que aparece | O que fazer |
 |---|---|
 | Linha vermelha de programa | Dois cliques em **Instalar**: instala só o que falta. |
 | Pouco espaço (amarelo ou vermelho) | Libere 2 GB: "apague o cache dos vídeos prontos". |
-| E-mail não encontrado na ativação | Use exatamente o e-mail da compra, sem espaço. No boleto, espere compensar. |
-| Licença já em 2 computadores | **Liberar este computador** no antigo e ative no novo. |
-| `licença cancelada` | Se for engano, direct com o e-mail da compra. |
+| Pedido de licença ou chave `ILU1-` | Ignore: o estúdio open-source não ativa licença. |
 | A página do estúdio não abre | Aparece uma tela simples de ajuda com **Copiar diagnóstico** e **Abrir o direct**. Ou copie o endereço `http://127.0.0.1:...` da janela preta no navegador. |
 
 # Problemas na voz {chave, plano, ID e internet}
@@ -242,7 +236,7 @@ Quando algo falha, o estúdio manda sozinho um **relatório de erro** para a gen
 :::
 
 :::atencao Antes de mandar print ou arquivo
-Nunca envie o `.env` nem mostre chave, para ninguém, nem para o suporte. O e-mail da compra basta para acharmos a sua licença.
+Nunca envie o `.env` nem mostre a chave da voz, para ninguém, nem para o suporte.
 :::
 
 # Glossário {as palavras dos guias, sem tecniquês}

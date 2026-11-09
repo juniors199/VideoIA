@@ -6,7 +6,7 @@ rotulo: Guia 01 de 06 · referência
 sub: A referência completa da instalação, no Mac ou no Windows, com o Claude Code ou com o Codex. Para o caminho mais curto, use o Guia rápido.
 versao: 0.6.4
 data: 08/11/2026
-sumarioIntro: Primeira vez? Comece pelo Guia rápido (guias/00-guia-rapido.pdf), que leva do e-mail ao vídeo de teste. Este guia é a consulta: cada seção resolve uma coisa.
+sumarioIntro: Primeira vez? Comece pelo Guia rápido (guias/00-guia-rapido.pdf), que leva do download ao vídeo de teste. Este guia é a consulta: cada seção resolve uma coisa.
 ---
 
 
@@ -18,7 +18,7 @@ O Método Ilustrando é um estúdio que mora numa pasta do seu computador. Você
 :::
 
 :::atencao Primeira vez? Use o Guia rápido
-O **Guia rápido** (`guias/00-guia-rapido.pdf`) leva do e-mail da compra ao vídeo de teste em uns 30 minutos. Este guia é a referência detalhada: volte a ele quando precisar.
+O **Guia rápido** (`guias/00-guia-rapido.pdf`) leva do download ao vídeo de teste em uns 30 minutos. Este guia é a referência detalhada: volte a ele quando precisar.
 :::
 
 :::atencao Palavras que vão aparecer
@@ -32,7 +32,7 @@ Extrair (ou descompactar) :: abrir a caixa .zip e tirar os arquivos de dentro.
 Assistente (Claude Code ou Codex) :: o programa de conversa que mexe nos arquivos do seu computador e faz o vídeo por você.
 Mensagem :: o texto que você escreve, ou cola, para o assistente.
 Permissão :: quando o assistente pergunta "posso fazer isso?" antes de mexer no computador. Leia e aprove: é normal.
-Licença :: o seu direito de usar o estúdio. Ela é o e-mail da compra, sem chave para digitar.
+Open-source :: o estúdio é livre (MIT): quem baixa usa em produção, sem ativação nem marca d'água.
 :::
 
 :::dois
@@ -146,18 +146,8 @@ O estúdio é o mesmo nos dois, com as mesmas regras e as mesmas habilidades (as
 
 # Baixe e instale {descompactar e dois cliques em Instalar}
 
-:::passo Ache o e-mail da compra
-O e-mail da **Kiwify** dá acesso à **área de membros** (o `.zip`, os guias e as aulas). Guarde o **e-mail que você usou na compra**: ele ativa a licença. No boleto, o acesso chega depois que o pagamento compensa. **Tempo:** 2 min.
-
-**Deu certo se:** você vê o e-mail da Kiwify com o botão de acesso à área de membros.
-:::
-
-:::erro Não achei o e-mail
-Procure no spam e, no Gmail, nas abas **Promoções** e **Atualizações**. Busque por "Kiwify". Confira se o e-mail digitado na compra estava certo. Não achou? Direct do Instagram **@ilustrandocuriosidades** (ig.me/m/ilustrandocuriosidades), com o e-mail da compra e o seu nome.
-:::
-
 :::passo Baixe o zip
-Na área de membros, clique em **BAIXAR O ESTÚDIO** (cerca de 88 MB). Nos passos de 3 a 8, **Mac** pula os marcados Windows e **Windows** pula os marcados Mac.
+Na página de releases do projeto, baixe o arquivo do estúdio (cerca de 88 MB). Não há licença para ativar nem e-mail de compra. Nos passos de 3 a 8, **Mac** pula os marcados Windows e **Windows** pula os marcados Mac.
 
 **Deu certo se:** o arquivo `.zip` aparece na pasta Downloads.
 :::
@@ -319,35 +309,9 @@ Comece pelos primeiros passos.
 
 Skills com cifrão: `$comece`, `$video`, `$carrossel` (só `$` mostra a lista). A OpenAI muda nomes de botões com frequência: se algum estiver diferente, procure o equivalente. Fontes: learn.chatgpt.com/docs (quickstart, codex/cli, permission-modes, agents-md, build-skills), conferidas em 18/10/2026.
 
-# Licença {ativar com o e-mail da compra}
+# Sem licença de ativação {open-source}
 
-Tudo acontece no **estúdio**, a página que abre no navegador (endereço `http://127.0.0.1...`, só no seu computador).
-
-:::passo Abra Começar > Licença
-Para abrir o estúdio de novo: **Abrir Estúdio**.
-
-**Deu certo se:** aparece o campo do e-mail da compra.
-:::
-
-:::passo Digite o e-mail da compra e clique em Ativar
-**Só o e-mail** que você usou na Kiwify. Marque **Li e aceito os termos** e clique em **Ativar**. Precisa de internet só agora. **Tempo:** 1 min. Se o campo da chave (a que começa com `ILU1-`) estiver preenchido sozinho pelo navegador, apague o campo e ative só com o e-mail.
-
-**Deu certo se:** aparece "Licença ativada neste computador".
-:::
-
-Tem a chave `ILU1-...` de um e-mail antigo? Ela continua valendo: clique em **tenho uma chave** e cole.
-
-- Vale em até **2 computadores** seus. Para trocar, no computador antigo clique em **Liberar este computador** e ative no novo.
-- Sem ativar, tudo funciona, mas o vídeo final sai com a marca d'água "versão não ativada".
-- A licença se confere pela internet de vez em quando e funciona até 21 dias sem internet.
-
-:::erro A ativação não deu certo
-- **E-mail não encontrado:** use exatamente o e-mail da compra, sem espaço. No boleto, espere o pagamento compensar.
-- **Já está em 2 computadores:** libere um deles e ative de novo.
-- **Sem internet:** confira a conexão e tente de novo.
-
-Se não resolver, clique em **Copiar diagnóstico** e **Abrir o direct**.
-:::
+O estúdio é **open-source** (MIT): quem baixa recebe o mesmo modo de produção, sem ativação, sem e-mail de compra e sem marca d'água. Pode instalar em quantos computadores quiser. O próximo passo é só a voz.
 
 # Voz {a ElevenLabs, com conta grátis}
 
@@ -525,7 +489,7 @@ Sem Node no computador, ponha `ferramentas/rodar` (Mac) ou `ferramentas\rodar.cm
 # Atualizações {versões novas sem perder nada}
 
 :::passo Baixe o .zip novo
-Na área de membros. Não precisa descompactar.
+Na página de releases do projeto. Não precisa descompactar.
 :::
 
 :::passo Abra a aba Atualizar
@@ -533,14 +497,14 @@ No estúdio. Ele procura o arquivo em Downloads, na Mesa e ao lado da pasta. Nã
 :::
 
 :::passo Confira e atualize
-**Conferir** mostra o que muda. **Atualizar agora** troca só os arquivos do kit: vídeos, carrosséis, marca, chaves e licença ficam, e o que mudou fica numa cópia de segurança.
+**Conferir** mostra o que muda. **Atualizar agora** troca só os arquivos do kit: vídeos, carrosséis, marca e chaves ficam, e o que mudou fica numa cópia de segurança.
 :::
 
 :::passo Feche e abra o estúdio
 Se algo não ficar bom: **Atualizar > Desfazer a última atualização**.
 :::
 
-As versões novas estão incluídas por 12 meses da compra (`LICENCA.md`). Depois disso, a versão instalada continua funcionando, sem data para expirar. Os apps do Claude e do ChatGPT se atualizam sozinhos.
+Atualizações são livres no open-source: sem prazo nem ativação. Os apps do Claude e do ChatGPT se atualizam sozinhos.
 
 <!-- quebra -->
 
@@ -565,7 +529,7 @@ Toda tela de erro mostra **a causa**, **o que fazer**, o botão **Copiar diagnó
 | "O site da voz recusou a chave" | Crie outra chave e cole em **Começar > Voz**. |
 | "A chave foi criada sem a permissão Text to Speech" | No site da voz, crie outra chave com **Text to Speech** ligado. |
 | "Acabaram os créditos deste mês" | Assine um plano ou crie outra conta grátis com outro e-mail e troque a chave. |
-| Não ativa e o campo da chave (`ILU1-`) veio preenchido sozinho | Apague o campo e ative só com o e-mail da compra. |
+| Pedido de licença ou chave `ILU1-` | Ignore: o estúdio open-source não ativa licença. |
 | "O caminho da pasta é comprido demais" ou "não deixou gravar na pasta" | Mova a pasta para `C:\ilustrando` (Windows) ou para a pasta pessoal (Mac), fora de Downloads, OneDrive e iCloud. |
 | "Um arquivo da pasta está em uso" | Pause o OneDrive, libere a pasta no antivírus e clique em **Tentar de novo**. |
 | "Outro programa está usando o vídeo" | Feche o player e a prévia, espere uns segundos e clique em **Tentar de novo**. |
@@ -573,7 +537,6 @@ Toda tela de erro mostra **a causa**, **o que fazer**, o botão **Copiar diagnó
 | O estúdio fechou sozinho no Windows | Abra de novo com **Abrir Estúdio (Windows)**; seus vídeos ficam salvos. Se repetir, **Copiar diagnóstico**. |
 | "A cena que o assistente escreveu tem itens que o estúdio não aceita" | Peça: "Apague a cena.json deste vídeo e refaça." |
 | Aviso no vídeo ("pessoa sem foto livre", "peça sem relação com a fala") | É aviso, o vídeo sai. Peça ao assistente para trocar a imagem ou a peça. |
-| Marca d'água "versão não ativada" | **Começar > Licença**, com o e-mail da compra. |
 
 :::dica Relatório de erro automático
 Quando algo falha, o estúdio manda sozinho um **relatório de erro**: o código da falha e o mesmo texto do **Copiar diagnóstico** (versão, sistema, o que o estúdio disse e o fim do registro), sem chaves, e-mail, roteiro nem dados pessoais. Fica guardado em área privada por 180 dias. Serve para a gente corrigir mais rápido. Para desligar: **Configurações**, na aba **Começar**.
@@ -582,7 +545,7 @@ Quando algo falha, o estúdio manda sozinho um **relatório de erro**: o código
 Mais de 30 mensagens, com a solução, no **Guia 06**.
 
 :::resumo Quando nada resolver
-Peça ao assistente: "Rode o diagnóstico, leia o erro e me explique em português o que fazer". Nunca cole a chave na conversa. Se continuar travado: **Copiar diagnóstico** e **Abrir o direct**. A compra tem 7 dias de garantia, pedida pela Kiwify.
+Peça ao assistente: "Rode o diagnóstico, leia o erro e me explique em português o que fazer". Nunca cole a chave da voz na conversa. Se continuar travado: **Copiar diagnóstico** e **Abrir o direct**.
 :::
 
 # Fontes e datas {de onde vieram preços e requisitos}

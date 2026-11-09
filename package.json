@@ -22,7 +22,6 @@
     "marca": "node scripts/marca.mjs",
     "sincronizar": "node scripts/sincronizar-skills.mjs",
     "sfx-previa": "node scripts/sfx-previa.mjs",
-    "ativar": "node src/licenca/cli.mjs ativar",
     "voz": "node src/voz/cli.mjs",
     "comece": "node src/comece/cli.mjs",
     "licenca": "node src/licenca/cli.mjs",
@@ -40,8 +39,7 @@
     "three": "0.170.0"
   },
   "ilustrando": {
-    "pacote": "C-000000000000",
-    "licenca": "LICENCA.md"
+    "pacote": "C-000000000000"
   },
-  "license": "SEE LICENSE IN LICENCA.md"
+  "license": "MIT"
 }

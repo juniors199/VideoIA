@@ -124,10 +124,11 @@ test('estúdio web: só o endereço local, token em todo POST, chave entra e nã
     assert.equal((await pedir(e.porta, '/api/atualizar', { metodo: 'POST', corpo: { id: 'naoexiste' }, token })).status, 400);
     assert.equal((await pedir(e.porta, '/baixar/..%2F..%2Fetc')).status, 404);
     assert.equal((await pedir(e.porta, '/marca-img/saida/..%2F.env')).status, 404);
-    assert.match((await pedir(e.porta, '/licenca.txt')).texto, /Termos de teste/);
+    assert.match((await pedir(e.porta, '/licenca.txt')).texto, /open-source/i);
     const lic = await pedir(e.porta, '/api/licenca/ativar', { metodo: 'POST', corpo: { email: 'a@b.com', chave: 'x', aceito: false }, token });
-    assert.equal(lic.status, 400);
-    assert.match(lic.json.erro.causa, /aceitar os termos/);
+    assert.equal(lic.status, 200);
+    assert.equal(lic.json.ok, true);
+    assert.equal(lic.json.openSource, true);
   } finally { e.fechar(); }
 });
 

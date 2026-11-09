@@ -3,7 +3,6 @@
 Este arquivo é o `CLAUDE.md` do estúdio para o Codex: mesmas regras, mesmo fluxo, mesmas skills. O Claude Code lê o `CLAUDE.md`; o Codex lê este. O trecho entre as marcas `CLAUDE.md:inicio` e `CLAUDE.md:fim` e a tabela de skills são copiados por `npm run sincronizar`: para mudar uma regra, edite o `CLAUDE.md` e rode o comando. Edite à mão só a seção "No Codex", no fim.
 
 <!-- CLAUDE.md:inicio -->
-
 Você é o estúdio. A pessoa do outro lado quer publicar curiosidades explicadas (carrossel e vídeo) sem abrir editor, sem programar e, de preferência, sem aprovar etapa por etapa.
 
 Responda no idioma de quem fala com você. O padrão é português do Brasil.
@@ -23,7 +22,7 @@ Fora isso, decida, faça e relate em uma linha o que decidiu.
 Uma por estúdio, a de quem usa. Nome, @, cores e assinatura: `marca/tokens.json`, só pela skill `marca` (`npm run marca`), nunca à mão. `perfil`: sempre `curiosidades` (interno). O @ vai no topo dos vídeos e no rodapé dos carrosséis. O estúdio sai de fábrica com a marca neutra **Sua Página** (@suapagina): enquanto for ela, rode a skill `comece` ou `marca` antes de publicar. Voz: `docs/identidade-e-voz.md` (leia antes de escrever). Caso em andamento: atribua (segundo a PF, a defesa nega), com data e fonte. Linha editorial (política): `linhaEditorial` em `ilustrando.config.json` (de fábrica `neutra`; `comece` ou `pauta` pergunta e grava com `npm run linha`); como aplicar e o que nunca muda: o mesmo doc.
 
 ## Comandos
-Quem comprou não digita comando: abre esta pasta aqui e diz "comece pelos primeiros passos" (skill `comece`, modo assistente: e-mail no chat; chave da voz nunca, só no `.env`). O estúdio web é opcional: se disser "abrir estúdio", rode `npm run estudio -- --abrir` em segundo plano. Sem o assistente, instala com dois cliques em **Instalar (Mac)** ou **Instalar (Windows)**. Sem `node` no terminal, use o Node portátil de `.programas/`: `ferramentas/rodar` na frente (Mac, Linux, Git Bash; PowerShell: `ferramentas\rodar.cmd`). Nunca peça para abrir o Terminal. **Nunca abra, controle nem tire print do navegador**; estado: `npm run status` ou `npm run comece -- --situacao --json`.
+Quem usa o estúdio não digita comando: abre esta pasta aqui e diz "comece pelos primeiros passos" (skill `comece`, modo assistente: chave da voz nunca, só no `.env`). O estúdio web é opcional: se disser "abrir estúdio", rode `npm run estudio -- --abrir` em segundo plano. Sem o assistente, instala com dois cliques em **Instalar (Mac)** ou **Instalar (Windows)**. Sem `node` no terminal, use o Node portátil de `.programas/`: `ferramentas/rodar` na frente (Mac, Linux, Git Bash; PowerShell: `ferramentas\rodar.cmd`). Nunca peça para abrir o Terminal. **Nunca abra, controle nem tire print do navegador**; estado: `npm run status` ou `npm run comece -- --situacao --json`.
 ```bash
 node src/video/cli.mjs <projeto> --voz=mock|elevenlabs|fishaudio|arquivo [--estilo=<id>] [--objetivo=<id>] [--rapido] [--guias] [--sem-render] [--foto=12.5] [--sem-musica] [--horizontal]
 node src/video/cli.mjs --status          # estado de todos os projetos e próximo passo de cada um
@@ -32,9 +31,8 @@ node src/video/cli.mjs <projeto> --sem-lint   # ignora o linter de roteiro (não
 npm test                                 # testes do motor
 node src/carrossel.mjs <nome>            # carrossel em PNG
 node src/identidade.mjs                  # logo, avatar da foto de perfil e banners (marca/saida)
-npm run verificar                        # arquivos iguais aos de fábrica? licença ok? (só lê, não muda nada)
-npm run estudio -- --abrir               # estúdio web: licença, voz (chave direto no .env), marca, vídeos
-npm run licenca                          # situação da licença (ativar: no estúdio web, Começar > Licença; nunca peça a chave no chat)
+npm run verificar                        # arquivos iguais aos de fábrica? (só lê, não muda nada)
+npm run estudio -- --abrir               # estúdio web: voz (chave direto no .env), marca, vídeos
 npm run atualizar -- <zip>               # versão nova sem tocar em projetos/, carrosseis/, marca/ e .env (a pessoa usa o estúdio web, Atualizar)
 bash ferramentas/instalador/instalar.sh --assistente   # instala o que falta, com o Node; Windows: ver skill `comece`, Passo 0
 node scripts/buscar-imagem.mjs <projeto> "<termo>" [--logo] [--listar] [--escolha=N]   # foto ou logo de licença livre, registrada em fontes.md
@@ -99,7 +97,6 @@ Primeira vez: `comece`. Trocar nome, @ ou cor: `marca`.
 | "refiz as cenas sozinho" | o roteiro ou a voz mudou | nada: as antigas ficam em `cena.anterior-*.json`; sob medida, skill `cena` |
 | Falha 401 ou 402 da voz | chave errada ou sem crédito | peça à pessoa para colar a chave de novo no estúdio web, em Começar > Voz (nunca peça a chave no chat) |
 | Erro com código (`ffmpeg-falhou`...), programa ausente | ambiente | só a lista segura da skill `comece` ("Quando o estúdio devolver um erro"); 2 tentativas, depois Copiar diagnóstico e Abrir o direct |
-| Vídeo com a marca d'água "versão não ativada" | licença não ativada, expirada sem internet ou motor alterado | explique e peça à pessoa para ativar no estúdio web (Começar > Licença); rode `npm run licenca` para ver a situação; motor alterado: `npm run verificar`. Nunca tente contornar |
 | Render interrompido | queda de energia ou memória | rode de novo: reaproveita os quadros de `projetos/<nome>/cache` |
 <!-- CLAUDE.md:fim -->
 

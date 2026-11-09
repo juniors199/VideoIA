@@ -7,7 +7,7 @@ Leia este arquivo quando a pessoa abriu a pasta direto no Claude Code ou no Code
 ## Regras que valem o tempo todo
 1. **Um passo por vez.** Uma frase para dizer o que vai fazer, o comando, uma frase para dizer o que aconteceu. Mostre `Passo 3 de 7: ...`.
 2. **A chave da voz nunca passa pelo chat.** Você não pede, não lê, não mostra e não repete a chave. Ela entra só pelo arquivo `.env`, que a pessoa edita no editor de texto do computador dela. Nunca rode `cat`, `type`, `Get-Content` nem abra o `.env` (o Claude Code e o Codex do estúdio bloqueiam isso). Quem confere é `npm run voz -- --conferir`, que responde só `ok` ou o motivo.
-3. **O e-mail da compra pode ser digitado no chat.** Ele não é segredo. A chave antiga `ILU1-...` NÃO: se a pessoa tiver só ela, peça para abrir o estúdio web (Abrir Estúdio) ou rodar `npm run ativar` num terminal dela.
+3. **Não há licença de ativação.** O estúdio é open-source; não peça e-mail de compra, chave `ILU1-` nem `npm run ativar`.
 4. **Avise antes de cada pedido de aprovação** do aplicativo. Exemplo: "Vou conferir o seu computador. Vai aparecer um pedido de aprovação: pode aprovar."
 5. **Sem jargão e sem travessão longo com espaços.** Explique a palavra técnica na mesma frase.
 6. **Falhou duas vezes, pare.** No máximo 2 tentativas por problema, só pela lista segura da skill (seção "Quando o estúdio devolver um erro"). Depois: diga em uma frase o que tentou e mande para o direct (https://ig.me/m/ilustrandocuriosidades).
@@ -21,7 +21,7 @@ Diga uma vez, no começo:
 
 ## Passo 1: conferir o computador
 Rode `npm run comece -- --situacao --json` (se `node` não existir, siga o Passo 0 da skill primeiro). Leia o campo `proximo` e vá para o passo dele. Diga em português simples o que já está ok e o que falta, em até 5 linhas. Exemplo:
-> Já está pronto: Node, FFmpeg, peças e navegador interno. Falta: licença, voz e o vídeo de teste. Vamos na ordem.
+> Já está pronto: Node, FFmpeg, peças e navegador interno. Falta: voz e o vídeo de teste. Vamos na ordem.
 
 ## Passo 2: instalar o que faltar (você mesmo)
 Se `proximo.id` for `instalar`, o instalador da pasta resolve (Passo 0 da skill, o mesmo dos dois cliques, sem janela). Diga: "Falta o motor do estúdio neste computador. Vou instalar aqui na pasta, sem mexer em mais nada seu. Baixa uns 500 MB; vai aparecer um pedido de aprovação." Rode em segundo plano, com o maior tempo limite que o terminal permitir. Se parar, rode de novo (até 3 vezes; ele continua do que falta). Depois rode `npm run comece -- --situacao` outra vez.
@@ -32,22 +32,8 @@ Se `proximo.id` for `mover-pasta` (Downloads, OneDrive, iCloud, Dropbox, Google 
 
 Só depois do "sim": Windows `node scripts/copiar-estudio.mjs` (copia para `C:\ilustrando`); Mac `cp -R` da pasta para `~/ilustrando`. Depois peça: "Feche esta conversa, abra a pasta nova no aplicativo e escreva de novo: Comece pelos primeiros passos." (A conversa recomeça na pasta nova; o `comece --situacao` mostra onde parou.) Se ela preferir não mover, siga em frente e avise que, se aparecer erro de pasta, é por isso.
 
-## Passo 4: licença (e-mail no chat)
-1. Pergunte: "Qual e-mail você usou na compra, na Kiwify? Pode digitar aqui, ele não é segredo."
-2. Mostre o resumo dos termos e pergunte se aceita: ""
-3. Só com o "sim", rode `npm run ativar -- <e-mail> --aceito --json`. Leia o campo `codigo` e responda:
-
-| codigo | O que dizer |
-|---|---|
-| `sucesso` | "Licença ativada. Ela vale em até 2 computadores." |
-| `email-nao-confere` | "Não consegui ativar com esse e-mail. Confira em qual e-mail chegou o recibo da Kiwify (procure por Método Ilustrando ou Kiwify, inclusive no spam). Pode ter sido outro endereço, do Google ou de trabalho. Me diga o outro e eu tento de novo." |
-| `limite-maquinas` | "Essa licença já está em 2 computadores. Para trocar, fale no direct do Instagram @ilustrandocuriosidades." |
-| `sem-internet` | "Não consegui falar com o servidor de licença agora. Confira a internet; tento de novo." |
-| `muitas-tentativas` | "Foram muitas tentativas seguidas. Espere uns 5 minutos." |
-| `revogada`, `trocas`, `erro` | Repita a `mensagem` do comando e mande para o direct. |
-
-**Nunca diga se um e-mail "existe" ou "não existe" na base de compradores.** A frase de `email-nao-confere` é a mesma para qualquer falha de e-mail. Depois de 2 e-mails que não conferem, pare e mande para o direct com o comprovante. Para ver só se já está ativada: `npm run ativar -- --situacao --json` (não usa a internet).
-Se a pessoa não quiser ativar agora: tudo funciona, mas o vídeo final sai com marca d'água e as prévias com voz de teste saem normais. Pode seguir e ativar depois.
+## Passo 4: licença (removido)
+Pule este passo. O estúdio é open-source: sem ativação, sem marca d'água e sem e-mail de compra.
 
 ## Passo 5: voz (a chave nunca no chat)
 Primeiro `npm run voz -- --situacao --json`. Se `chave` for `presente`, vá direto à conferência.

@@ -3,7 +3,7 @@ titulo: Instalar e fazer o *1º vídeo*
 tituloCurto: Guia rápido · Instalar e fazer o 1º vídeo
 numero: 00
 rotulo: Guia rápido · comece por este
-sub: Do e-mail da compra ao seu primeiro vídeo pronto, no Mac ou no Windows. Sem Terminal, sem programar e sem gastar nada no primeiro vídeo.
+sub: Do download ao seu primeiro vídeo pronto, no Mac ou no Windows. Sem Terminal, sem programar, sem licença e sem gastar nada no primeiro vídeo.
 versao: 0.6.4
 data: 27/10/2026
 sumarioIntro: Siga na ordem. Cada passo diz o que vai aparecer na tela, quanto tempo leva e o que fazer se der erro. Os outros guias ficam para depois.
@@ -18,14 +18,14 @@ Em uns 30 minutos você instala o estúdio, assiste a um vídeo de demonstraçã
 :::
 
 :::atencao O Método é uma pasta que o seu assistente usa
-O jeito mais curto é abrir a pasta `ilustrando` no **Claude Code** (aba **Code**, modo **Local**) ou no **Codex** e escrever: `Comece pelos primeiros passos.` Ele instala o que faltar, ativa a licença, liga a voz e faz o vídeo de teste. Depois, `Quero um vídeo sobre...`. O estúdio visual é opcional: escreva **abrir estúdio** quando quiser ver tudo em telas. Este guia mostra o caminho por cliques no estúdio, para quem ainda não tem o assistente ou prefere clicar.
+O jeito mais curto é abrir a pasta `ilustrando` no **Claude Code** (aba **Code**, modo **Local**) ou no **Codex** e escrever: `Comece pelos primeiros passos.` Ele instala o que faltar, liga a voz e faz o vídeo de teste. Não há licença para ativar. Depois, `Quero um vídeo sobre...`. O estúdio visual é opcional: escreva **abrir estúdio** quando quiser ver tudo em telas. Este guia mostra o caminho por cliques no estúdio, para quem ainda não tem o assistente ou prefere clicar.
 :::
 
 ### O que você precisa
 
 - Um computador: **Mac** (macOS 13 ou mais novo) ou **Windows 10 ou 11** de 64 bits. Não roda em celular nem tablet.
 - Uns **2 GB livres** no disco (o ideal são 10 GB) e internet.
-- O **e-mail que você usou na compra**. É ele que ativa a licença.
+- O arquivo do estúdio na página de releases (open-source: sem e-mail de compra nem ativação).
 
 ### O que você NÃO precisa
 
@@ -43,28 +43,19 @@ O jeito mais curto é abrir a pasta `ilustrando` no **Claude Code** (aba **Code*
 
 | Passo | O que é | Tempo |
 |---|---|---|
-| 1 e 2 | Achar o e-mail, baixar e descompactar | 5 min |
-| 3 | Dois cliques em Instalar | 5 a 15 min, sozinho |
-| 4 | Assistir à demonstração | 1 min |
-| 5 | Ativar a licença com o e-mail | 1 min |
-| 6 | Ligar a voz da ElevenLabs (conta grátis) | uns 5 min |
-| 7 | Fazer o vídeo de teste | 1 a 3 min (mais em computador lento) |
-| 8 | Primeiro vídeo do seu tema | 10 a 30 min |
+| 1 | Baixar e descompactar | 5 min |
+| 2 | Dois cliques em Instalar | 5 a 15 min, sozinho |
+| 3 | Assistir à demonstração | 1 min |
+| 4 | Ligar a voz da ElevenLabs (conta grátis) | uns 5 min |
+| 5 | Fazer o vídeo de teste | 1 a 3 min (mais em computador lento) |
+| 6 | Primeiro vídeo do seu tema | 10 a 30 min |
 
 Os tempos são de internet e computador comuns. O estúdio mostra o tempo estimado na tela enquanto trabalha.
 
-# Passo a passo {do e-mail da compra ao vídeo de teste}
-
-:::passo Ache o e-mail da compra
-Abra o e-mail da **Kiwify**. Ele leva à **área de membros**, onde ficam o arquivo do estúdio, os guias e as aulas.
-
-**O que você vai ver:** um e-mail da Kiwify com o botão de acesso. **Tempo:** 2 minutos.
-
-**Se der erro:** procure no spam e, no Gmail, nas abas Promoções e Atualizações. Busque por "Kiwify". Não achou? Chame no direct do Instagram @ilustrandocuriosidades: https://ig.me/m/ilustrandocuriosidades
-:::
+# Passo a passo {do download ao vídeo de teste}
 
 :::passo Baixe e descompacte a pasta
-Na área de membros, baixe o arquivo `ilustrando-metodo` que termina em `.zip`.
+Na página de releases, baixe o arquivo `ilustrando-metodo` que termina em `.zip`. Não há licença para ativar.
 
 - **Mac:** dois cliques no `.zip`.
 - **Windows:** botão direito no `.zip` > **Propriedades** > marque **Desbloquear** (se aparecer) > **OK**. Depois, botão direito > **Extrair tudo** > **Procurar...** > **Disco Local (C:)** > **Selecionar pasta** > **Extrair**. Não digite nada e não crie pasta: o kit fica direto no disco C.
@@ -89,20 +80,12 @@ Dê dois cliques em **Instalar (Mac)** ou **Instalar (Windows)**, dentro da past
 :::passo Assista à demonstração
 O estúdio abre na aba **Começar** mostrando um **vídeo de demonstração pronto**, de uns 25 segundos: "Sua hora vai valer 10% a mais". É um exemplo do que você vai fazer. Não gasta nada e não precisa de licença, voz nem assistente.
 
-**O que você vai ver:** o vídeo tocando no alto da página e, embaixo, os passos Licença, Voz, Sua marca, Estilo e objetivo e Vídeo de teste. **Tempo:** 1 minuto.
+**O que você vai ver:** o vídeo tocando no alto da página e, embaixo, os passos Voz, Sua marca, Estilo e objetivo e Vídeo de teste. **Tempo:** 1 minuto.
 
 **Se der erro:** se o navegador não abriu sozinho, a janela preta mostra um endereço que começa com `http://127.0.0.1`. Copie e cole no navegador. Se a página não abrir, aparece uma tela simples de ajuda com os botões **Copiar diagnóstico** e **Abrir o direct**.
 :::
 
 ![A aba Começar do estúdio, no navegador.](modelo/capturas/comecar.png)
-
-:::passo Ative a licença com o e-mail da compra
-Em **Começar > Licença**, digite **só o e-mail da compra** (o mesmo da Kiwify), marque **Li e aceito os termos** e clique em **Ativar**. Precisa de internet só agora. Tem a chave `ILU1-` do e-mail antigo? Ela continua valendo: clique em **tenho uma chave**.
-
-**O que você vai ver:** "Licença ativada neste computador". Vale em até **2 computadores** seus. **Tempo:** 1 minuto.
-
-**Se der erro:** use exatamente o e-mail da compra, sem espaço no fim. Comprou no boleto? A licença só existe depois que o pagamento compensa. Sem ativar, nada trava: o vídeo final só sai com a marca d'água "versão não ativada".
-:::
 
 :::passo Ligue a voz da ElevenLabs
 A **ElevenLabs** é a voz do estúdio. A conta é grátis e o passo a passo está na tela **Começar > Voz**, na ordem: (1) crie a conta em elevenlabs.io, com e-mail e senha; (2) no seu perfil, abra **API Keys** e clique em **Create API Key**, liberando **Text to Speech** e a leitura das vozes (**Voices**); (3) cole a chave no campo do estúdio (nunca no chat com o assistente); (4) clique em **Ouvir** nas 10 vozes e em **Usar esta** na que gostar; (5) clique em **Salvar a voz**.
@@ -215,7 +198,7 @@ Quando algo falha, o estúdio manda um **relatório de erro**: o código da falh
 | "Falta ligar a voz da ElevenLabs" | Siga o passo a passo em **Começar > Voz** (conta grátis, chave, voz). |
 | "Esta voz exige plano pago" (ElevenLabs) | Escolha uma das 10 vozes padrão em **Começar > Voz** (funcionam na conta grátis), ou assine um plano. |
 | "Acabaram os créditos deste mês" (ElevenLabs) | Assine um plano na ElevenLabs, ou crie outra conta grátis com outro e-mail e troque a chave em **Começar > Voz**. |
-| Vídeo com a marca d'água "versão não ativada" | Ative em **Começar > Licença**, com o e-mail da compra. |
+| Pedido de licença ou marca d'água de ativação | Ignore: o estúdio open-source não ativa licença nem põe marca d'água. |
 
 :::atencao Chave nunca na conversa
 A chave de uma voz paga entra só no estúdio, em **Começar > Voz**. Nunca cole chave na conversa com o assistente, em print ou no direct.
@@ -242,7 +225,7 @@ A chave de uma voz paga entra só no estúdio, em **Começar > Voz**. Nunca cole
 | 06 · Perguntas e soluções | Cada mensagem de erro e como pedir mudanças |
 
 :::resumo Travou?
-Clique em **Copiar diagnóstico** e depois em **Abrir o direct** (https://ig.me/m/ilustrandocuriosidades). A compra tem 7 dias de garantia, pedida pela Kiwify. Antes de desistir por um erro na instalação, mande a mensagem: quase sempre é um passo simples.
+Clique em **Copiar diagnóstico** e depois em **Abrir o direct** (https://ig.me/m/ilustrandocuriosidades). Antes de desistir por um erro na instalação, mande a mensagem: quase sempre é um passo simples.
 :::
 
 
