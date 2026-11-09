@@ -1,0 +1,676 @@
+{
+ "perfil": "curiosidades",
+ "tema": "TRÊS INVENÇÕES BRASILEIRAS",
+ "estilo": "mundos",
+ "beats": [
+  {
+   "id": "gancho",
+   "palavras": [
+    0,
+    10
+   ],
+   "titulo": {
+    "texto": "Três invenções *brasileiras*"
+   },
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "ampola-soro",
+     "gira": 0,
+     "entra": -1,
+     "papel": "frente",
+     "pos": [
+      -1.15,
+      1.0,
+      0
+     ],
+     "atraso": 0
+    },
+    {
+     "tipo": "peca",
+     "forma": "orelhao-ovo",
+     "gira": 0,
+     "entra": -1,
+     "papel": "frente",
+     "pos": [
+      1.15,
+      1.0,
+      0
+     ],
+     "rot": [
+      0,
+      -0.3,
+      0
+     ],
+     "atraso": 0
+    },
+    {
+     "tipo": "peca",
+     "forma": "chuveiro-eletrico",
+     "gira": 0,
+     "entra": -1,
+     "papel": "frente",
+     "pos": [
+      0,
+      -1.0,
+      0
+     ],
+     "rot": [
+      0,
+      -0.55,
+      0
+     ],
+     "atraso": 0
+    },
+    {
+     "tipo": "mundos",
+     "forma": "trio",
+     "mundos": [
+      "vinho",
+      "cobalto",
+      "terracota"
+     ],
+     "entra": -0.7
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "nenhum"
+   },
+   "transicao": "corte",
+   "cenario": "vazio"
+  },
+  {
+   "id": "um",
+   "palavras": [
+    11,
+    23
+   ],
+   "elementos": [
+    {
+     "tipo": "mundos",
+     "forma": "emblema",
+     "mundo": "vinho",
+     "entra": "Número"
+    },
+    {
+     "tipo": "mundos",
+     "forma": "etiqueta",
+     "numero": 1,
+     "entra": "Número",
+     "digito": "um:"
+    },
+    {
+     "tipo": "mundos",
+     "forma": "foco",
+     "entra": 2.3,
+     "zoom": 1.085
+    },
+    {
+     "tipo": "mundos",
+     "forma": "mundo",
+     "paleta": "vinho",
+     "entra": "Número"
+    },
+    {
+     "tipo": "peca",
+     "forma": "ampola-soro",
+     "gira": 0,
+     "entra": 0,
+     "papel": "frente",
+     "pos": [
+      -0.5,
+      0,
+      0.25
+     ],
+     "rot": [
+      0,
+      0.3,
+      0
+     ]
+    },
+    {
+     "tipo": "peca",
+     "forma": "glb-cobra",
+     "gira": 0,
+     "entra": "cobra.",
+     "papel": "apoio",
+     "dados": {
+      "material": "clay",
+      "giro": -35
+     },
+     "sobre": true,
+     "pos": [
+      0.55,
+      0,
+      -0.35
+     ]
+    },
+    {
+     "tipo": "mundos",
+     "forma": "carimbo",
+     "texto": "1901",
+     "entra": "1901,"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "nenhum"
+   },
+   "transicao": "corte",
+   "cenario": "vazio"
+  },
+  {
+   "id": "vital",
+   "palavras": [
+    24,
+    33
+   ],
+   "elementos": [
+    {
+     "tipo": "imagem",
+     "arquivo": "assets/vital-brazil.jpg",
+     "largura": 600,
+     "altura": 750,
+     "pos": [
+      0.5,
+      0.26
+     ],
+     "entra": "Vital",
+     "credito": "Harris & Ewing (domínio público)"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "nenhum"
+   },
+   "transicao": "corte",
+   "cenario": "vazio"
+  },
+  {
+   "id": "cada-soro",
+   "palavras": [
+    34,
+    44
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "ampola-soro",
+     "gira": 0,
+     "entra": -1,
+     "papel": "frente",
+     "pos": [
+      -0.5,
+      0,
+      0.25
+     ],
+     "rot": [
+      0,
+      0.3,
+      0
+     ]
+    },
+    {
+     "tipo": "peca",
+     "forma": "glb-cobra",
+     "gira": 0,
+     "entra": -1,
+     "papel": "apoio",
+     "dados": {
+      "material": "clay",
+      "giro": -35
+     },
+     "sobre": true,
+     "pos": [
+      0.55,
+      0,
+      -0.35
+     ]
+    },
+    {
+     "tipo": "mundos",
+     "forma": "ligacao",
+     "entra": "contra",
+     "trava": "tipo"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "nenhum"
+   },
+   "transicao": "corte",
+   "cenario": "vazio"
+  },
+  {
+   "id": "dois",
+   "palavras": [
+    45,
+    48
+   ],
+   "elementos": [
+    {
+     "tipo": "mundos",
+     "forma": "emblema",
+     "mundo": "cobalto",
+     "entra": "Número"
+    },
+    {
+     "tipo": "mundos",
+     "forma": "etiqueta",
+     "numero": 2,
+     "entra": "Número",
+     "digito": "dois:"
+    },
+    {
+     "tipo": "mundos",
+     "forma": "foco",
+     "entra": 2.3,
+     "zoom": 1.085
+    },
+    {
+     "tipo": "mundos",
+     "forma": "mundo",
+     "paleta": "cobalto",
+     "entra": "Número"
+    },
+    {
+     "tipo": "peca",
+     "forma": "orelhao-ovo",
+     "gira": 0,
+     "entra": 0,
+     "papel": "frente",
+     "rot": [
+      0,
+      -0.3,
+      0
+     ]
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "nenhum"
+   },
+   "transicao": "corte",
+   "cenario": "vazio"
+  },
+  {
+   "id": "1971",
+   "palavras": [
+    49,
+    53
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "orelhao-ovo",
+     "gira": 0,
+     "entra": -1,
+     "papel": "frente",
+     "rot": [
+      0,
+      -0.3,
+      0
+     ]
+    },
+    {
+     "tipo": "mundos",
+     "forma": "carimbo",
+     "texto": "1971",
+     "entra": "1971"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "nenhum"
+   },
+   "transicao": "corte",
+   "cenario": "vazio"
+  },
+  {
+   "id": "chu-ming",
+   "palavras": [
+    54,
+    57
+   ],
+   "elementos": [
+    {
+     "tipo": "imagem",
+     "arquivo": "assets/chu-ming-silveira.png",
+     "largura": 920,
+     "altura": 685,
+     "pos": [
+      0.5,
+      0.26
+     ],
+     "entra": "arquiteta",
+     "credito": "Chu Ming Silveira (CC BY-SA 3.0)"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "nenhum"
+   },
+   "transicao": "corte",
+   "cenario": "vazio"
+  },
+  {
+   "id": "ovo",
+   "palavras": [
+    58,
+    69
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "orelhao-ovo",
+     "gira": 0,
+     "entra": -1,
+     "papel": "frente",
+     "rot": [
+      0,
+      -0.3,
+      0
+     ]
+    },
+    {
+     "tipo": "mundos",
+     "forma": "contorno",
+     "entra": "ovo"
+    },
+    {
+     "tipo": "mundos",
+     "forma": "ondas",
+     "entra": "acústica."
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "nenhum"
+   },
+   "transicao": "corte",
+   "cenario": "vazio"
+  },
+  {
+   "id": "tres",
+   "palavras": [
+    70,
+    74
+   ],
+   "elementos": [
+    {
+     "tipo": "mundos",
+     "forma": "emblema",
+     "mundo": "terracota",
+     "entra": "Número"
+    },
+    {
+     "tipo": "mundos",
+     "forma": "etiqueta",
+     "numero": 3,
+     "entra": "Número",
+     "digito": "três:"
+    },
+    {
+     "tipo": "mundos",
+     "forma": "mundo",
+     "paleta": "terracota",
+     "entra": "Número"
+    },
+    {
+     "tipo": "peca",
+     "forma": "chuveiro-eletrico",
+     "gira": 0,
+     "entra": 0,
+     "papel": "frente",
+     "rot": [
+      0,
+      -0.55,
+      0
+     ]
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "nenhum"
+   },
+   "transicao": "corte",
+   "cenario": "vazio"
+  },
+  {
+   "id": "canhos",
+   "palavras": [
+    75,
+    83
+   ],
+   "elementos": [
+    {
+     "tipo": "imagem",
+     "arquivo": "assets/francisco-canhos.jpg",
+     "largura": 800,
+     "altura": 709,
+     "pos": [
+      0.5,
+      0.26
+     ],
+     "entra": "Francisco",
+     "credito": "autor desconhecido (domínio público)"
+    },
+    {
+     "tipo": "mundos",
+     "forma": "carimbo",
+     "texto": "JAÚ",
+     "entra": "Jaú,"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "nenhum"
+   },
+   "transicao": "corte",
+   "cenario": "vazio"
+  },
+  {
+   "id": "liga",
+   "palavras": [
+    84,
+    93
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "chuveiro-eletrico",
+     "gira": 0,
+     "entra": -1,
+     "papel": "frente",
+     "rot": [
+      0,
+      -0.55,
+      0
+     ],
+     "dados": {
+      "liga": 1.87,
+      "agua": 2.77
+     }
+    },
+    {
+     "tipo": "mundos",
+     "forma": "foco",
+     "entra": "liga"
+    },
+    {
+     "tipo": "mundos",
+     "forma": "foco",
+     "entra": "água"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "nenhum"
+   },
+   "transicao": "corte",
+   "cenario": "vazio"
+  },
+  {
+   "id": "qual",
+   "palavras": [
+    94,
+    99
+   ],
+   "titulo": {
+    "texto": "Qual dos três te *surpreendeu* mais?"
+   },
+   "elementos": [
+    {
+     "tipo": "mundos",
+     "forma": "mundo",
+     "paleta": "mae",
+     "entra": "Qual"
+    },
+    {
+     "tipo": "peca",
+     "forma": "ampola-soro",
+     "gira": 0,
+     "entra": "Qual",
+     "papel": "frente",
+     "pos": [
+      -1.15,
+      1.0,
+      0
+     ],
+     "atraso": 0
+    },
+    {
+     "tipo": "peca",
+     "forma": "orelhao-ovo",
+     "gira": 0,
+     "entra": "Qual",
+     "papel": "frente",
+     "pos": [
+      1.15,
+      1.0,
+      0
+     ],
+     "rot": [
+      0,
+      -0.3,
+      0
+     ],
+     "atraso": 0.12
+    },
+    {
+     "tipo": "peca",
+     "forma": "chuveiro-eletrico",
+     "gira": 0,
+     "entra": "Qual",
+     "papel": "frente",
+     "pos": [
+      0,
+      -1.0,
+      0
+     ],
+     "rot": [
+      0,
+      -0.55,
+      0
+     ],
+     "atraso": 0.24
+    },
+    {
+     "tipo": "mundos",
+     "forma": "trio",
+     "mundos": [
+      "vinho",
+      "cobalto",
+      "terracota"
+     ],
+     "entra": "Qual"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "nenhum"
+   },
+   "transicao": "corte",
+   "cenario": "vazio"
+  },
+  {
+   "id": "segue",
+   "palavras": [
+    100,
+    106
+   ],
+   "titulo": {
+    "texto": "Segue a página pra ver a *próxima*"
+   },
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "ampola-soro",
+     "gira": 0,
+     "entra": -1,
+     "papel": "frente",
+     "pos": [
+      -1.15,
+      1.0,
+      0
+     ],
+     "atraso": 0
+    },
+    {
+     "tipo": "peca",
+     "forma": "orelhao-ovo",
+     "gira": 0,
+     "entra": -1,
+     "papel": "frente",
+     "pos": [
+      1.15,
+      1.0,
+      0
+     ],
+     "rot": [
+      0,
+      -0.3,
+      0
+     ],
+     "atraso": 0
+    },
+    {
+     "tipo": "peca",
+     "forma": "chuveiro-eletrico",
+     "gira": 0,
+     "entra": -1,
+     "papel": "frente",
+     "pos": [
+      0,
+      -1.0,
+      0
+     ],
+     "rot": [
+      0,
+      -0.55,
+      0
+     ],
+     "atraso": 0
+    },
+    {
+     "tipo": "mundos",
+     "forma": "trio",
+     "mundos": [
+      "vinho",
+      "cobalto",
+      "terracota"
+     ],
+     "entra": -1
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "nenhum"
+   },
+   "transicao": "corte",
+   "cenario": "vazio"
+  }
+ ],
+ "hashPalavras": "8f139cee9e9c"
+}

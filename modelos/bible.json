@@ -1,0 +1,160 @@
+{
+  "id": "bible",
+  "nome": "Bible (Bíblia em dados e luz)",
+  "versao": 1,
+  "paraQuem": "curiosidades da Bíblia contadas com número, medida e cena: um fato conferido vira desenho de traço que brilha (bonecos, fogo, luz), campo de pontos, régua e linha do tempo do Antigo ao Novo Testamento, com o texto em serifa e a palavra-chave na cor da página",
+  "exemplosDePedido": [
+    "Quantos caminhões de água o povo de Israel precisaria por dia no deserto",
+    "Golias mede quanto, comparado a um jogador da NBA",
+    "Quantas vezes a Bíblia cita \"o justo viverá pela fé\""
+  ],
+  "apelidos": [
+    "bible",
+    "biblia",
+    "lume",
+    "luz",
+    "biblico",
+    "curiosidade-biblica"
+  ],
+  "formato": {
+    "preferidos": [
+      "revelacao",
+      "numero-impossivel",
+      "comparativo"
+    ],
+    "proibidos": [],
+    "padrao": "revelacao"
+  },
+  "roteiro": {
+    "palavras": [
+      110,
+      190
+    ],
+    "alvoSegundos": [
+      40,
+      60
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "uma afirmação concreta e estranha sobre a Bíblia, com número ou medida (\"Só 7 pessoas ouviram Deus chamar o nome delas duas vezes\")",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "exposicao",
+        "seg": [
+          12,
+          30
+        ],
+        "instrucao": "um fato por frase, com a conta (número, medida, comparação). A REFERÊNCIA (livro e versículo) NÃO é falada: vai no fim do parágrafo como <!-- ref: GÊNESIS 7:24 --> e aparece só escrita na tela; o desenho acompanha a ação dita",
+        "n": [
+          4,
+          9
+        ]
+      },
+      {
+        "bloco": "realidade",
+        "seg": [
+          4,
+          10
+        ],
+        "instrucao": "a virada para quem assiste, sem promessa: o que o fato diz sobre cuidado, fé ou escolha, em uma frase falada"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "uma pergunta curta que a pessoa responde nos comentários"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "PD",
+      "EN"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.5,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "direto, falado, frases curtas, número concreto; a fala conta o fato, nunca lê \"Gênesis 7, versículo 11\"; fato conferido em 2 fontes e atribuído",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[calm, warm]",
+    "pausaEntreBlocos": 0.2
+  },
+  "visual": {
+    "pecasPorTema": false,
+    "imagens": "nunca",
+    "contador": "quando-houver-numero",
+    "estilo": "bible",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [],
+    "reserva": [],
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      1.5,
+      4.5
+    ],
+    "trocaVisualMaxSeg": 4.5
+  },
+  "som": {
+    "musica": true,
+    "sfx": "discreto"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "dado",
+      "dado",
+      "texto",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      9
+    ],
+    "estilo": "padrao"
+  },
+  "publicar": {
+    "legenda": "a escala em uma linha (\"Se o mundo fosse 2.500 quadradinhos...\"), os grupos com a fonte, pergunta curta",
+    "hashtags": [
+      "#curiosidades",
+      "#dados"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "perfil": "curiosidades",
+  "tema": "SAÚDE",
+  "legenda": "SAMU: Sorria, Abrace, Música, Urgente. São os 4 sinais que o Ministério da Saúde e a Sociedade Brasileira de AVC ensinam para reconhecer um AVC. Ao menor sinal, ligue 192.\n\nManda para alguém da sua família.\n\nSegue a página pra ver a próxima.\n\nFoto: Prefeitura de Olinda (CC BY 2.0)",
+  "marcadores": [
+    "avc",
+    "samu",
+    "saude",
+    "primeirossocorros"
+  ],
+  "fontes": [
+    "Ministério da Saúde, Linhas de Cuidado AVC: https://linhasdecuidado.saude.gov.br/portal/acidente-vascular-cerebral-(AVC)-no-adulto/sou-paciente",
+    "Ministério da Saúde, AVC: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/avc",
+    "Sociedade Brasileira de AVC: https://avc.org.br/pacientes/acidente-vascular-cerebral/",
+    "HC-UFMG/Ebserh, protocolo de trombólise: https://www.gov.br/hubrasil/pt-br/hospitais-universitarios/regiao-sudeste/hc-ufmg/saude/protocolos-assistenciais-hc-ufmg-ebserh/PR_042_Trombolise_AVC_agudo_V03.pdf",
+    "NHS, Stroke symptoms: https://www.nhs.uk/conditions/stroke/symptoms/",
+    "American Stroke Association: https://www.stroke.org/en/about-stroke/stroke-symptoms"
+  ],
+  "slides": [
+    {
+      "tipo": "capa",
+      "titulo": "4 letras que ajudam a reconhecer um *AVC*",
+      "sub": "SAMU: Sorria, Abrace, Música, Urgente."
+    },
+    {
+      "tipo": "passo",
+      "numero": "S",
+      "titulo": "Sorria",
+      "texto": "Peça para a pessoa sorrir. Se a boca ficar torta, é sinal de alerta.",
+      "fotoFundo": "assets/ambulancia.jpg"
+    },
+    {
+      "tipo": "passo",
+      "numero": "A",
+      "titulo": "Abrace",
+      "texto": "Peça para erguer os dois braços. Se um deles cair, é alerta.",
+      "fotoFundo": "assets/ambulancia.jpg"
+    },
+    {
+      "tipo": "passo",
+      "numero": "M",
+      "titulo": "Música",
+      "texto": "Peça para repetir uma frase. Fala enrolada é alerta.",
+      "fotoFundo": "assets/ambulancia.jpg"
+    },
+    {
+      "tipo": "passo",
+      "numero": "U",
+      "titulo": "Urgente",
+      "icone": "telefone",
+      "texto": "Ligue 192, o SAMU, na hora.",
+      "fotoFundo": "assets/ambulancia.jpg"
+    },
+    {
+      "tipo": "dado",
+      "numero": "4,5 h",
+      "legenda": "é o limite para o remédio que *dissolve* o coágulo",
+      "texto": "No AVC isquêmico, o trombolítico pode ser dado até 4,5 horas depois dos sintomas.",
+      "fotoFundo": "assets/ambulancia.jpg"
+    },
+    {
+      "tipo": "fecho",
+      "titulo": "Manda para alguém que precisa *saber disso*",
+      "texto": "Em inglês, o mesmo teste se chama FAST.",
+      "fotoFundo": "assets/ambulancia.jpg"
+    }
+  ]
+}

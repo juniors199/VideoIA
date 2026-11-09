@@ -1,0 +1,204 @@
+{
+  "id": "curiosidades",
+  "nome": "Curiosidades",
+  "versao": 1,
+  "paraQuem": "páginas de curiosidades, cotidiano, \"por que as coisas são assim\"",
+  "exemplosDePedido": [
+    "Por que a tampa do bueiro é redonda?",
+    "Por que o céu é azul?"
+  ],
+  "apelidos": [
+    "curiosidade",
+    "ilustrando",
+    "cotidiano"
+  ],
+  "formato": {
+    "preferidos": [
+      "revelacao",
+      "mito-fato",
+      "numero-impossivel",
+      "causa-efeito"
+    ],
+    "proibidos": [],
+    "padrao": "revelacao"
+  },
+  "roteiro": {
+    "palavras": [
+      150,
+      230
+    ],
+    "alvoSegundos": [
+      55,
+      80
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "pergunta direta ou afirmação forte, com o nome quente; até 12 palavras, tensão (número, pergunta, contraste ou conflito) nas 8 primeiras, dois ingredientes, verdadeiro e atribuível; escolhido entre 3 opções registradas na linha GANCHOS (docs/ganchos.md)",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "loop",
+        "seg": [
+          2,
+          3
+        ],
+        "instrucao": "loop aberto para o final, fechado de verdade no fim"
+      },
+      {
+        "bloco": "mecanismo",
+        "seg": [
+          20,
+          35
+        ],
+        "instrucao": "causa e efeito, um passo por frase",
+        "n": [
+          2,
+          3
+        ]
+      },
+      {
+        "bloco": "rehook",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "por volta de 55%: número novo, virada ou troca de objeto"
+      },
+      {
+        "bloco": "virada",
+        "seg": [
+          5,
+          10
+        ],
+        "instrucao": "o detalhe que recontextualiza",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "pergunta",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "pergunta de opinião, nunca sim ou não"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "convite de cta.texto do ilustrando.config.json"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "EN",
+      "PD"
+    ],
+    "abertura3Tempos": true,
+    "promessaMarca": null,
+    "loopAberto": true,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "direto, curioso, frases curtas",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[calm, clear]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "efeitos": {
+      "reels0612": true
+    },
+    "estilo": "padrao",
+    "cenarios": [
+      "sala",
+      "cidade",
+      "rua-dia",
+      "laboratorio"
+    ],
+    "pecasBase": [
+      "lupa",
+      "lampadaideia",
+      "relogio3d",
+      "celular",
+      "casa"
+    ],
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "transicao": "desfoque",
+    "contador": "quando-houver-numero",
+    "titulos": "gancho"
+  },
+  "ritmo": {
+    "beatSeg": [
+      3,
+      9
+    ],
+    "trocaVisualMaxSeg": 5
+  },
+  "som": {
+    "musica": true,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "padrao",
+    "virais": [
+      "tweet",
+      "vocesabia",
+      "capafoto",
+      "reacao",
+      "veredito",
+      "anotada",
+      "tipografico"
+    ]
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, o porquê em 2 linhas, pergunta de opinião",
+    "hashtags": [
+      "#curiosidades",
+      "#vocesabia"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

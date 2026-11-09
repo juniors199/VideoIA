@@ -1,0 +1,4656 @@
+{
+"pulmoes": [
+"pulmon",
+"pulmones",
+"respirar",
+"respiracion",
+"asma",
+"fumador"
+],
+"estomago": [
+"estomago",
+"acidez",
+"gastritis",
+"digestion",
+"jugo gastrico"
+],
+"rim": [
+"rinon",
+"rinones",
+"renal",
+"calculo renal",
+"piedra en el rinon",
+"dialisis"
+],
+"figado": [
+"higado",
+"hepatico",
+"hepatitis",
+"cirrosis",
+"resaca"
+],
+"intestino": [
+"intestino",
+"intestinos",
+"flora intestinal",
+"estrenimiento",
+"diarrea"
+],
+"cranio": [
+"craneo",
+"calavera",
+"fractura de craneo"
+],
+"neuronio": [
+"neurona",
+"neuronas",
+"sinapsis",
+"sistema nervioso"
+],
+"hemacia": [
+"globulo rojo",
+"globulos rojos",
+"celula sanguinea",
+"celulas sanguineas"
+],
+"comprimido": [
+"pastilla",
+"pastillas",
+"comprimido",
+"comprimidos",
+"medicina",
+"medicamento",
+"medicamentos"
+],
+"blister": [
+"blister",
+"tira de pastillas",
+"tomar la medicina"
+],
+"curativo": [
+"curita",
+"tirita",
+"vendaje",
+"herida",
+"lesion"
+],
+"mascara": [
+"mascarilla",
+"cubrebocas",
+"tapabocas",
+"pandemia",
+"covid"
+],
+"bolsasangue": [
+"donacion de sangre",
+"donar sangre",
+"bolsa de sangre",
+"transfusion"
+],
+"balancabanheiro": [
+"bascula",
+"peso",
+"adelgazar",
+"engordar",
+"kilos de mas",
+"dieta"
+],
+"biceps": [
+"biceps",
+"musculo",
+"musculos",
+"gimnasio",
+"musculacion"
+],
+"cigarro": [
+"cigarrillo",
+"cigarrillos",
+"fumar",
+"tabaco"
+],
+"mosquito": [
+"mosquito",
+"mosquitos",
+"dengue",
+"aedes"
+],
+"garrafaagua": [
+"botella de agua",
+"beber agua",
+"hidratacion",
+"vasos de agua"
+],
+"coluna": [
+"columna",
+"columna vertebral",
+"vertebra",
+"vertebras",
+"dolor de espalda"
+],
+"lousa": [
+"pizarra",
+"pizarron",
+"tablero",
+"aula",
+"salon de clases"
+],
+"regua": [
+"regla",
+"centimetro",
+"centimetros",
+"milimetro",
+"medir"
+],
+"compasso": [
+"compas",
+"geometria",
+"circunferencia",
+"dibujo tecnico"
+],
+"caderno": [
+"cuaderno",
+"cuadernos",
+"apuntes",
+"anotar",
+"tomar notas"
+],
+"capelo": [
+"graduacion",
+"diploma",
+"universidad",
+"facultad",
+"titulo"
+],
+"bequer": [
+"vaso de precipitados",
+"laboratorio",
+"experimento",
+"reaccion quimica",
+"quimica"
+],
+"placapetri": [
+"placa de petri",
+"cultivo de bacterias",
+"colonia de bacterias",
+"microbiologia"
+],
+"bicobunsen": [
+"mechero bunsen",
+"llama azul",
+"calentar en el laboratorio"
+],
+"cristal": [
+"cristal",
+"cristales",
+"cuarzo",
+"mineral",
+"minerales"
+],
+"amonite": [
+"fosil",
+"fosiles",
+"amonita",
+"paleontologia"
+],
+"telefoneantigo": [
+"telefono antiguo",
+"telefono fijo",
+"telefono publico",
+"telefono de disco"
+],
+"maquinaescrever": [
+"maquina de escribir",
+"mecanografia",
+"escritor"
+],
+"gramofone": [
+"gramofono",
+"fonografo",
+"tocadiscos",
+"disco antiguo",
+"vinilo"
+],
+"penatinteiro": [
+"pluma",
+"tintero",
+"firmo",
+"firma de la ley"
+],
+"esferaarmilar": [
+"esfera armilar",
+"navegacion",
+"navegantes",
+"grandes descubrimientos",
+"exploradores"
+],
+"elmoromano": [
+"romano",
+"romanos",
+"imperio romano",
+"legion",
+"legionario"
+],
+"correntequebrada": [
+"abolicion",
+"esclavitud",
+"cadena rota",
+"liberacion",
+"libertad"
+],
+"chapeucangaceiro": [
+"bandolero",
+"forajido",
+"sombrero de cuero",
+"vaquero"
+],
+"sacacafe": [
+"saco de cafe",
+"sacos de cafe",
+"cafetal",
+"ciclo del cafe"
+],
+"canadeacucar": [
+"cana de azucar",
+"canaveral",
+"ciclo del azucar"
+],
+"bateia": [
+"bateas",
+"mineria artesanal",
+"buscador de oro",
+"fiebre del oro"
+],
+"oca": [
+"aldea",
+"indigena",
+"indigenas",
+"pueblos originarios",
+"tribu"
+],
+"botijao": [
+"garrafa de gas",
+"gas de cocina",
+"bombona de gas",
+"precio del gas"
+],
+"panelapressao": [
+"olla a presion",
+"cocinar frijoles",
+"cocer frijoles"
+],
+"escovadente": [
+"cepillo de dientes",
+"cepillarse los dientes",
+"pasta de dientes",
+"higiene bucal",
+"dental"
+],
+"vassoura": [
+"escoba",
+"barrer",
+"limpieza",
+"limpieza de la casa"
+],
+"balde": [
+"balde",
+"baldes",
+"cubo",
+"cubeta"
+],
+"ferropassar": [
+"plancha",
+"planchar",
+"ropa arrugada",
+"planchar la ropa"
+],
+"conetransito": [
+"obra en la calzada",
+"cono de transito",
+"desvio",
+"trafico detenido",
+"atasco"
+],
+"despertador": [
+"despertador",
+"levantarse temprano",
+"sono la alarma",
+"hora de despertar",
+"alarma"
+],
+"lixeira": [
+"basurero",
+"papelera",
+"basura",
+"reciclaje",
+"reciclar",
+"residuos"
+],
+"chaveinglesa": [
+"llave inglesa",
+"herramienta",
+"herramientas",
+"reparacion",
+"arreglo"
+],
+"tesoura": [
+"tijeras",
+"corte de pelo",
+"barbero",
+"peluquero",
+"peluqueria"
+],
+"secador": [
+"secador",
+"secador de pelo",
+"salon de belleza",
+"peluqueria"
+],
+"fitametrica": [
+"cinta metrica",
+"metro de costura",
+"medida de la cintura",
+"sastre"
+],
+"bauentrega": [
+"repartidor",
+"repartidores",
+"reparto",
+"entrega a domicilio",
+"aplicacion de entrega"
+],
+"apito": [
+"silbato",
+"pito",
+"arbitro",
+"arbitro de futbol",
+"final del partido"
+],
+"chuteira": [
+"botines",
+"tacos de futbol",
+"futbolista",
+"jugador de futbol"
+],
+"tenis": [
+"zapatillas",
+"tenis de correr",
+"maraton",
+"caminata",
+"corredor",
+"trotar"
+],
+"luvaboxe": [
+"boxeo",
+"guante de boxeo",
+"boxeador",
+"luchador",
+"nocaut"
+],
+"bolavolei": [
+"voleibol",
+"voley",
+"pelota de voleibol",
+"voley playa"
+],
+"prancha": [
+"surf",
+"surfear",
+"tabla de surf",
+"surfista"
+],
+"skate": [
+"patineta",
+"skate",
+"skateboard",
+"patinador",
+"andar en patineta"
+],
+"bandeiraquadriculada": [
+"formula 1",
+"bandera a cuadros",
+"carrera de autos",
+"automovilismo"
+],
+"cartaoarbitro": [
+"tarjeta amarilla",
+"tarjeta roja",
+"expulsado",
+"expulsion"
+],
+"qrcode": [
+"codigo qr",
+"qr",
+"escanear el codigo",
+"escanear"
+],
+"codigobarras": [
+"codigo de barras",
+"lector de codigo",
+"caja del supermercado"
+],
+"cupomfiscal": [
+"recibo",
+"ticket",
+"factura",
+"comprobante fiscal"
+],
+"cheque": [
+"cheque",
+"cheques",
+"chequera",
+"cheque sin fondos"
+],
+"tituloeleitor": [
+"credencial de elector",
+"padron electoral",
+"tribunal electoral",
+"biometria"
+],
+"tornozeleira": [
+"tobillera electronica",
+"tobillera",
+"arresto domiciliario",
+"monitoreo electronico"
+],
+"cestabasica": [
+"canasta basica",
+"canastas basicas",
+"compras del mes",
+"alimentos basicos"
+],
+"carregador": [
+"cargador",
+"cargar el celular",
+"cargador del celular",
+"bateria baja",
+"bateria agotada"
+],
+"smartwatch": [
+"smartwatch",
+"reloj inteligente",
+"reloj digital",
+"contar pasos"
+],
+"disquete": [
+"disquete",
+"archivo guardado",
+"icono de guardar",
+"anos noventa"
+],
+"torrecelular": [
+"torre de celular",
+"antena de celular",
+"senal del celular",
+"operadora",
+"antena"
+],
+"parabolica": [
+"antena parabolica",
+"parabolica",
+"tv satelital",
+"senal de tv"
+],
+"giroflex": [
+"sirena de policia",
+"sirena",
+"operativo policial",
+"patrulla",
+"patrullera"
+],
+"terco": [
+"rosario",
+"rezar el rosario",
+"ave maria",
+"cuentas de oracion"
+],
+"maosoracao": [
+"oracion",
+"orar",
+"rezar",
+"plegaria"
+],
+"asasanjo": [
+"angel",
+"angeles",
+"angel de la guarda",
+"alas de angel"
+],
+"arca": [
+"arca",
+"noe",
+"diluvio",
+"gran diluvio",
+"embarcacion"
+],
+"pomba": [
+"paloma",
+"palomas",
+"rama de olivo",
+"olivo"
+],
+"cruz": [
+"cruz",
+"crucifijo",
+"cristianismo",
+"cristo"
+],
+"tabuas": [
+"tablas",
+"mandamientos",
+"decalogo",
+"moises",
+"diez mandamientos"
+],
+"cajado": [
+"cayado",
+"baculo",
+"bastón",
+"vara de pastor"
+],
+"maradividido": [
+"mar rojo",
+"mar dividido",
+"travesia",
+"exodo"
+],
+"sarca": [
+"zarza ardiente",
+"arbusto ardiente",
+"fuego"
+],
+"candelabro": [
+"menora",
+"candelabro",
+"siete brazos",
+"candelero"
+],
+"harpa": [
+"arpa",
+"david",
+"salmo",
+"salmos"
+],
+"shofar": [
+"shofar",
+"trompeta",
+"cuerno de carnero",
+"cuerno"
+],
+"calice": [
+"caliz",
+"copa",
+"cena",
+"comunion",
+"santa cena"
+],
+"paopeixes": [
+"panes y peces",
+"pan y pescado",
+"multiplicacion",
+"canastas"
+],
+"ovelha": [
+"oveja",
+"ovejas",
+"rebano",
+"cordero"
+],
+"pastor": [
+"pastor",
+"pastores",
+"pastoreo",
+"guia"
+],
+"estrelabelem": [
+"belen",
+"estrella de belen",
+"navidad",
+"pesebre",
+"nacimiento"
+],
+"babel": [
+"babel",
+"torre de babel",
+"torre",
+"idiomas"
+],
+"jerico": [
+"jerico",
+"muralla",
+"murallas",
+"asedio"
+],
+"escadaja": [
+"jacob",
+"escalera de jacob",
+"escalera",
+"sueno"
+],
+"arvorejardim": [
+"eden",
+"jardin del eden",
+"arbol",
+"fruto prohibido"
+],
+"serpente": [
+"serpiente",
+"serpientes",
+"culebra",
+"tentacion"
+],
+"barcopesca": [
+"barco de pesca",
+"pescador",
+"pescadores",
+"pesca"
+],
+"ancora": [
+"ancla",
+"anclas",
+"esperanza",
+"firmeza"
+],
+"tendadeserto": [
+"desierto",
+"tienda",
+"tiendas",
+"nomada",
+"nomadas"
+],
+"montanhachama": [
+"sinai",
+"monte sinai",
+"montana",
+"monte"
+],
+"vela": [
+"vela",
+"velas",
+"vigilia",
+"cirio"
+],
+"livrosanto": [
+"biblia",
+"libro sagrado",
+"escritura",
+"escrituras"
+],
+"rolo": [
+"rollo",
+"pergamino",
+"manuscrito",
+"manuscritos"
+],
+"coroalouros": [
+"laurel",
+"corona de laurel",
+"victoria",
+"triunfo"
+],
+"altar": [
+"altar",
+"altares",
+"sacrificio",
+"ofrenda"
+],
+"jarro": [
+"jarra",
+"jarron",
+"tinaja",
+"boda de cana"
+],
+"trigo": [
+"trigo",
+"espiga",
+"espigas",
+"cosecha"
+],
+"videira": [
+"vid",
+"parra",
+"uva",
+"uvas",
+"vinedo",
+"vina"
+],
+"temploantigo": [
+"templo",
+"templos",
+"santuario",
+"jerusalen"
+],
+"relogiodias": [
+"siete dias",
+"creacion",
+"genesis",
+"semana"
+],
+"arcaalianca": [
+"arca de la alianza",
+"alianza",
+"reliquia",
+"querubines"
+],
+"baleia": [
+"ballena",
+"jonas",
+"gran pez",
+"ninive"
+],
+"cestajunco": [
+"cesta de junco",
+"cesta",
+"nilo",
+"rio nilo"
+],
+"semeadura": [
+"sembrador",
+"siembra",
+"semilla",
+"semillas",
+"sembrar"
+],
+"lamparina": [
+"lampara de aceite",
+"lampara",
+"candil",
+"aceite de oliva"
+],
+"mostarda": [
+"mostaza",
+"grano de mostaza",
+"crecimiento"
+],
+"bandeirabrasil": [
+"bandera de brasil",
+"bandera brasilena",
+"verde y amarillo",
+"patriotismo"
+],
+"camisaselecao": [
+"camiseta de la seleccion",
+"camiseta amarilla",
+"seleccion brasilena"
+],
+"bolabrasil": [
+"balon de futbol",
+"pelota de futbol",
+"golazo"
+],
+"tacacampeao": [
+"copa del mundo",
+"titulo mundial",
+"campeonato",
+"campeon",
+"trofeo"
+],
+"mapabrasil": [
+"mapa de brasil",
+"territorio brasileno",
+"estados brasilenos",
+"todo brasil"
+],
+"cristoredentor": [
+"cristo redentor",
+"corcovado",
+"rio de janeiro",
+"ciudad maravillosa"
+],
+"paodeacucar": [
+"pan de azucar",
+"teleferico",
+"bahia de guanabara"
+],
+"coqueiropraia": [
+"playa",
+"playas",
+"cocotero",
+"palmera",
+"litoral"
+],
+"cuiachimarrao": [
+"mate",
+"chimarrao",
+"yerba mate",
+"gaucho"
+],
+"carrinhopipoca": [
+"vendedor de palomitas",
+"carrito de palomitas",
+"vendedor ambulante",
+"ambulante"
+],
+"carteiratrabalho": [
+"cartera de trabajo",
+"contrato firmado",
+"libreta de trabajo",
+"ley laboral"
+],
+"cedulareal": [
+"billete de real",
+"billetes de real",
+"real brasileno"
+],
+"pilhareais": [
+"monedas de real",
+"monedas",
+"moneditas"
+],
+"tochaolimpica": [
+"antorcha olimpica",
+"juegos olimpicos",
+"olimpiadas",
+"atleta olimpico"
+],
+"mascaracarnaval": [
+"carnaval",
+"fiesta",
+"comparsa",
+"desfile",
+"sambodromo"
+],
+"bandeirinhas": [
+"fiesta junina",
+"san juan",
+"hoguera",
+"banderines"
+],
+"feijoada": [
+"feijoada",
+"frijoles negros",
+"olla de barro",
+"comida brasilena"
+],
+"cafecoado": [
+"cafe filtrado",
+"colador de tela",
+"cafe colado",
+"cafe de olla"
+],
+"rededormir": [
+"hamaca",
+"acostarse en la hamaca",
+"descanso",
+"siesta"
+],
+"amazonia": [
+"amazonia",
+"selva amazonica",
+"deforestacion",
+"rio amazonas",
+"selva"
+],
+"tuiuiu": [
+"jabiru",
+"pantanal",
+"ave del pantanal",
+"humedal"
+],
+"brigadeiro": [
+"brigadeiro",
+"trufa de chocolate",
+"dulce de fiesta",
+"fiesta de cumpleanos"
+],
+"chinelo": [
+"chancla",
+"chanclas",
+"chancleta",
+"sandalia",
+"sandalias"
+],
+"berimbau": [
+"berimbau",
+"capoeira",
+"roda de capoeira",
+"cultura afrobrasilena"
+],
+"jangada": [
+"balsa",
+"jangada",
+"pescador artesanal",
+"pesca artesanal"
+],
+"esteiracena": [
+"cinta transportadora",
+"linea de montaje",
+"pila de monedas",
+"monedas"
+],
+"painelbotoes": [
+"panel",
+"boton",
+"botones",
+"presidente",
+"panel de control"
+],
+"ruatopo": [
+"calle",
+"via",
+"carril",
+"calzada"
+],
+"plenario3d": [
+"pleno",
+"senado",
+"camara",
+"senador",
+"congreso",
+"parlamento"
+],
+"multidaopraca": [
+"multitud",
+"plaza",
+"protesta",
+"manifestacion",
+"pueblo",
+"gente"
+],
+"escritorio3d": [
+"oficina",
+"escritorio",
+"computadora",
+"burocracia",
+"papeleo"
+],
+"fabricalinha": [
+"fabrica",
+"linea de produccion",
+"produccion",
+"industria",
+"manufactura"
+],
+"cidadecresce": [
+"la ciudad crece",
+"urbanizacion",
+"edificios",
+"construccion",
+"crecimiento urbano"
+],
+"ilhacena": [
+"isla",
+"islas",
+"palmera",
+"naufrago",
+"varado"
+],
+"bancocofre": [
+"caja fuerte",
+"boveda",
+"banco",
+"cofre",
+"reserva de oro"
+],
+"tribunalcena": [
+"tribunal",
+"sala del tribunal",
+"juez",
+"juicio",
+"justicia"
+],
+"urnafila": [
+"urna",
+"votante",
+"votantes",
+"eleccion",
+"elecciones",
+"votacion"
+],
+"laboratorio3d": [
+"laboratorio",
+"investigacion",
+"cientifico",
+"experimento"
+],
+"cidadenoite": [
+"ciudad de noche",
+"noche",
+"luces de la ciudad",
+"ventanas encendidas"
+],
+"estradaonibus": [
+"carretera",
+"autobus",
+"viaje",
+"terminal de autobuses",
+"trayecto"
+],
+"mercado3d": [
+"mercado",
+"feria",
+"puesto",
+"comerciante",
+"vendedor"
+],
+"arenacena": [
+"coliseo",
+"arena",
+"gladiador",
+"roma antigua"
+],
+"planeta_terra_cena": [
+"planeta",
+"tierra",
+"globo",
+"mundo"
+],
+"bolsacena": [
+"bolsa de valores",
+"bolsa",
+"acciones",
+"velas japonesas"
+],
+"igrejacena": [
+"iglesia",
+"templo",
+"vitral",
+"culto",
+"capilla"
+],
+"ponte": [
+"puente",
+"puentes",
+"viaducto",
+"cruce"
+],
+"semaforo": [
+"semaforo",
+"semaforos",
+"luz roja",
+"semaforo en rojo"
+],
+"hidrante": [
+"hidrante",
+"bombero",
+"bomberos",
+"boca de incendio"
+],
+"poste": [
+"poste",
+"postes",
+"alumbrado publico",
+"farola",
+"farolas"
+],
+"placapare": [
+"senal de alto",
+"senalizacion",
+"transito",
+"senal de transito"
+],
+"onibus": [
+"autobus",
+"autobuses",
+"bus",
+"parada de autobus",
+"pasajero",
+"pasajeros"
+],
+"aviao": [
+"avion",
+"aviones",
+"vuelo",
+"vuelos",
+"aeronave"
+],
+"trem": [
+"tren",
+"trenes",
+"locomotora",
+"ferrocarril"
+],
+"bicicleta": [
+"bicicleta",
+"bicicletas",
+"bici",
+"ciclista"
+],
+"moto": [
+"moto",
+"motos",
+"motocicleta",
+"motociclista"
+],
+"caminhao": [
+"camion",
+"camiones",
+"camionero",
+"flete"
+],
+"navio": [
+"barco",
+"barcos",
+"buque",
+"buques",
+"carguero",
+"puerto"
+],
+"veleiro": [
+"velero",
+"veleros",
+"embarcacion",
+"navegar",
+"vela"
+],
+"foguete3d": [
+"cohete",
+"cohetes",
+"espacial",
+"lanzamiento",
+"nave espacial"
+],
+"helicoptero": [
+"helicoptero",
+"helicopteros",
+"helice"
+],
+"escola": [
+"escuela",
+"escuelas",
+"alumno",
+"alumnos",
+"colegio"
+],
+"hospital": [
+"hospital",
+"hospitales",
+"salud",
+"urgencias"
+],
+"fabrica": [
+"fabrica",
+"fabricas",
+"industria",
+"industrial"
+],
+"agencia": [
+"sucursal bancaria",
+"banco",
+"bancos",
+"bancario"
+],
+"mercado": [
+"supermercado",
+"tienda",
+"tiendas",
+"comercio",
+"mercado"
+],
+"correio": [
+"correo",
+"correos",
+"carta",
+"cartas",
+"postal"
+],
+"cerca": [
+"cerca",
+"cercas",
+"valla",
+"patio",
+"limite"
+],
+"casamoderna": [
+"apartamento",
+"departamento",
+"condominio",
+"inmueble",
+"inmuebles"
+],
+"sofa3d": [
+"sofa",
+"sofas",
+"sala de estar",
+"tapizado"
+],
+"cama3d": [
+"cama",
+"camas",
+"dormir",
+"sueno",
+"dormitorio"
+],
+"mesa3d": [
+"mesa",
+"mesas",
+"cena",
+"comida",
+"comedor"
+],
+"cadeira3d": [
+"silla",
+"sillas",
+"sentar",
+"asiento"
+],
+"geladeira3d": [
+"nevera",
+"heladera",
+"refrigerador",
+"congelador",
+"frigorifico"
+],
+"porta3d": [
+"puerta",
+"puertas",
+"porteria",
+"portal"
+],
+"janela3d": [
+"ventana",
+"ventanas",
+"vidrio",
+"ventilacion"
+],
+"chave3d": [
+"llave",
+"llaves",
+"cerrajero",
+"cerradura"
+],
+"ventilador3d": [
+"ventilador",
+"ventiladores",
+"ventilar",
+"calor"
+],
+"tomada3d": [
+"enchufe",
+"enchufes",
+"toma de corriente",
+"electricidad",
+"voltaje"
+],
+"plugue3d": [
+"clavija",
+"clavijas",
+"cargador",
+"cable de energia"
+],
+"interruptor3d": [
+"interruptor",
+"interruptores",
+"encender la luz",
+"apagar la luz"
+],
+"torneira3d": [
+"grifo",
+"grifos",
+"llave de agua",
+"fregadero",
+"fuga",
+"gotera"
+],
+"vaso3d": [
+"maceta",
+"macetas",
+"jarron",
+"planta",
+"plantas"
+],
+"tenda": [
+"tienda de campana",
+"carpa",
+"acampada",
+"camping",
+"campamento"
+],
+"torrecontrole": [
+"torre de control",
+"aeropuerto",
+"aeropuertos",
+"aterrizaje"
+],
+"farol": [
+"faro",
+"faros",
+"navegantes",
+"marineros"
+],
+"moinho": [
+"molino",
+"molinos",
+"eolica",
+"energia eolica",
+"aerogenerador"
+],
+"silo": [
+"silo",
+"silos",
+"grano",
+"granos"
+],
+"guindaste": [
+"grua",
+"gruas",
+"obra",
+"obras",
+"construccion"
+],
+"rede": [
+"red",
+"redes",
+"conexion",
+"conexiones"
+],
+"decisao": [
+"decision",
+"decisiones",
+"decidir",
+"eleccion",
+"elegir"
+],
+"linhatempo": [
+"linea de tiempo",
+"cronologia",
+"historia",
+"hitos"
+],
+"piramide": [
+"piramide",
+"jerarquia",
+"niveles",
+"escalon"
+],
+"engrenagens": [
+"engranajes",
+"mecanismo",
+"mecanismos",
+"funcionan juntos"
+],
+"ciclo": [
+"ciclo",
+"ciclos",
+"se repite",
+"repeticion",
+"bucle"
+],
+"fluxo": [
+"transferencia",
+"transferencias",
+"flujo",
+"flujos"
+],
+"empilhado": [
+"apilado",
+"composicion",
+"suma de las partes",
+"cuotas"
+],
+"fatias": [
+"pizza",
+"porcion",
+"porciones",
+"rebanada",
+"proporcion",
+"reparto"
+],
+"labirinto": [
+"laberinto",
+"burocracia",
+"camino dificil",
+"salida"
+],
+"bussola": [
+"brujula",
+"orientacion",
+"norte",
+"direccion",
+"rumbo"
+],
+"dardo": [
+"dardo",
+"acertar",
+"en el blanco",
+"punteria",
+"diana"
+],
+"corrente": [
+"cadena",
+"eslabon",
+"eslabones",
+"cadena de hechos"
+],
+"dado": [
+"dado",
+"suerte",
+"sorteo",
+"azar",
+"casualidad"
+],
+"quebracabeca": [
+"rompecabezas",
+"puzle",
+"encaja",
+"encajar",
+"pieza"
+],
+"cofreabre": [
+"abrir la caja fuerte",
+"abre la caja fuerte",
+"forzaron",
+"forzada"
+],
+"portaabre": [
+"abre la puerta",
+"abrir la puerta",
+"las puertas se abren",
+"oportunidad"
+],
+"areia": [
+"arena",
+"reloj de arena",
+"se acaba el tiempo",
+"tiempo agotado"
+],
+"temperatura": [
+"temperatura",
+"fiebre",
+"se calento",
+"calentamiento",
+"calor"
+],
+"velocimetro": [
+"velocidad",
+"velocimetro",
+"acelerar",
+"acelero"
+],
+"linhacresce": [
+"crecimiento",
+"crecio",
+"crecer",
+"subio",
+"aumento"
+],
+"pendulo": [
+"pendulo",
+"oscila",
+"oscilacion",
+"va y viene"
+],
+"orbita": [
+"orbita",
+"orbitas",
+"orbitar",
+"gira alrededor"
+],
+"vasos": [
+"vasos comunicantes",
+"nivelar",
+"equilibrio",
+"igualar"
+],
+"pesagem": [
+"pesa mas",
+"pesar",
+"la balanza se inclina",
+"desequilibrio"
+],
+"funilbolas": [
+"embudo de ventas",
+"embudo",
+"se estrecha",
+"filtrado",
+"seleccion"
+],
+"esteira": [
+"cinta transportadora",
+"cadena de montaje",
+"produccion en serie",
+"logistica"
+],
+"catapulta": [
+"catapulta",
+"catapultar",
+"lanzar",
+"lanzamiento"
+],
+"elevador": [
+"ascensor",
+"elevador",
+"sube y baja",
+"piso",
+"pisos"
+],
+"blocos": [
+"bloques",
+"bloque por bloque",
+"ladrillo",
+"ladrillos"
+],
+"escadarolante": [
+"escalera mecanica",
+"escaleras mecanicas",
+"centro comercial"
+],
+"sanduiche": [
+"sandwich",
+"bocadillo",
+"hamburguesa",
+"merienda",
+"relleno"
+],
+"bolha": [
+"burbuja",
+"burbujas",
+"estallar",
+"estallo",
+"exploto"
+],
+"sinalwifi": [
+"wifi",
+"wi-fi",
+"senal",
+"internet"
+],
+"boneco": [
+"persona",
+"personas",
+"gente",
+"alguien",
+"humano"
+],
+"bonecodepe": [
+"de pie",
+"parado",
+"esperando",
+"nadie"
+],
+"bonecoabracos": [
+"acoger",
+"abrazar",
+"recibir",
+"brazos abiertos",
+"bienvenida"
+],
+"bonecoaponta": [
+"senalar",
+"senala",
+"senalando",
+"culpable",
+"culpa"
+],
+"bonecosentado": [
+"sentado",
+"sentarse",
+"sesion",
+"reunion"
+],
+"bonecoandando": [
+"andar",
+"caminar",
+"caminata",
+"camino",
+"a pie"
+],
+"bonecocorrendo": [
+"correr",
+"carrera",
+"huir",
+"fuga",
+"escapar"
+],
+"bonecomaosacima": [
+"celebrar",
+"festejar",
+"victoria",
+"celebracion"
+],
+"bonecocruzado": [
+"rechazar",
+"rechazo",
+"negar",
+"indiferente",
+"brazos cruzados"
+],
+"bonecoajoelhado": [
+"arrodillar",
+"arrodillado",
+"suplicar",
+"humildad"
+],
+"bonecodiscursa": [
+"discurso",
+"discursar",
+"tribuna",
+"orador",
+"pronunciar un discurso"
+],
+"bonecoacena": [
+"saludar",
+"saludo",
+"despedirse",
+"hola",
+"agitar la mano"
+],
+"bonecopensa": [
+"pensar",
+"duda",
+"reflexionar",
+"dudar",
+"pensando"
+],
+"bonecorendido": [
+"rendirse",
+"rendicion",
+"asalto",
+"asaltar",
+"atraco"
+],
+"bonecotriste": [
+"triste",
+"tristeza",
+"derrota",
+"perder",
+"perdida"
+],
+"presidentefaixa": [
+"presidente",
+"presidencia",
+"investidura",
+"toma de posesion",
+"lider"
+],
+"juizmartelo": [
+"juez",
+"jueza",
+"sentencia",
+"juicio",
+"fallo",
+"mazo"
+],
+"politicoterno": [
+"politico",
+"politica",
+"diputado",
+"senador",
+"legislador"
+],
+"operariocapacete": [
+"obrero",
+"obra",
+"construccion",
+"trabajador",
+"casco"
+],
+"medicojaleco": [
+"medico",
+"medica",
+"doctor",
+"doctora",
+"hospital"
+],
+"professorlousa": [
+"profesor",
+"profesora",
+"maestro",
+"maestra",
+"clase",
+"ensenar"
+],
+"estudantemochila": [
+"estudiante",
+"alumno",
+"alumna",
+"universitario",
+"mochila"
+],
+"soldadocapacete": [
+"soldado",
+"ejercito",
+"militar",
+"guerra"
+],
+"reicoroa": [
+"rey",
+"reina",
+"monarquia",
+"realeza",
+"corona"
+],
+"viajantecajado": [
+"viajero",
+"peregrino",
+"profeta",
+"caminante"
+],
+"cientistaoculos": [
+"cientifico",
+"investigador",
+"laboratorio",
+"experimento"
+],
+"reportermicrofone": [
+"periodista",
+"reportero",
+"reportaje",
+"prensa",
+"noticias"
+],
+"torcedorbandeira": [
+"hincha",
+"aficionado",
+"aficion",
+"seguidor",
+"seguidores",
+"futbol"
+],
+"eleitorvotando": [
+"votante",
+"elector",
+"votar",
+"voto",
+"eleccion"
+],
+"multidao": [
+"multitud",
+"pueblo",
+"poblacion",
+"manifestacion",
+"gente"
+],
+"filapessoas": [
+"fila",
+"filas",
+"cola",
+"colas",
+"esperar",
+"espera"
+],
+"esteiramoedas": [
+"cinta transportadora",
+"cadena de montaje",
+"recaudacion",
+"monedas"
+],
+"graficovelas": [
+"velas japonesas",
+"grafico de velas",
+"cotizacion",
+"candlestick"
+],
+"painelbolsa": [
+"bolsa",
+"bolsa de valores",
+"cotizaciones",
+"panel de cotizaciones"
+],
+"bolaneve": [
+"bola de nieve",
+"interes compuesto",
+"efecto bola de nieve",
+"se acumula"
+],
+"piramidefinanceira": [
+"piramide financiera",
+"esquema piramidal",
+"ponzi",
+"estafa piramidal"
+],
+"funilimposto": [
+"impuesto",
+"impuestos",
+"tributo",
+"tributos",
+"tasa"
+],
+"inflacao": [
+"inflacion",
+"carrito de compras",
+"suben los precios",
+"costo de vida"
+],
+"etiquetasobe": [
+"precio",
+"precios",
+"reajuste",
+"aumento",
+"subida"
+],
+"bolaferro": [
+"deuda",
+"deudas",
+"endeudado",
+"endeudamiento"
+],
+"leilaomartelo": [
+"subasta",
+"subastar",
+"puja",
+"pujas",
+"martillo"
+],
+"balancacomercial": [
+"balanza comercial",
+"exportacion",
+"exportaciones",
+"importacion",
+"importaciones"
+],
+"navioconteiner": [
+"barco",
+"contenedor",
+"contenedores",
+"puerto",
+"carguero"
+],
+"barrilpetroleo": [
+"barril",
+"petroleo",
+"barriles",
+"crudo"
+],
+"torrepetroleo": [
+"torre petrolera",
+"perforacion",
+"pozo petrolero",
+"presal",
+"plataforma petrolera"
+],
+"bombapetroleo": [
+"bomba de petroleo",
+"balancin",
+"pozo",
+"extraer petroleo"
+],
+"ourotorre": [
+"oro",
+"lingote",
+"lingotes",
+"barra de oro"
+],
+"caixaeletronico": [
+"cajero automatico",
+"retiro",
+"retirar",
+"sacar dinero"
+],
+"maquininha": [
+"terminal de pago",
+"pago",
+"pagar con tarjeta",
+"pago sin contacto"
+],
+"boleto": [
+"boleto",
+"boletos",
+"recibo",
+"codigo de barras",
+"vencimiento"
+],
+"moedacifrao": [
+"dolar",
+"signo de dolar",
+"moneda",
+"tipo de cambio",
+"cambio"
+],
+"macosdinheiro": [
+"fajos",
+"billetes",
+"dinero en efectivo",
+"efectivo"
+],
+"carteiradigital": [
+"billetera digital",
+"pago digital",
+"celular",
+"pagar con el celular"
+],
+"termometrorisco": [
+"riesgo",
+"termometro",
+"nivel de riesgo",
+"alerta",
+"advertencia"
+],
+"graficorussa": [
+"montana rusa",
+"sube y baja",
+"volatilidad",
+"oscilacion"
+],
+"relogiojuros": [
+"interes",
+"intereses",
+"tiempo",
+"con el tiempo",
+"rendimiento"
+],
+"cedulasvoando": [
+"billetes volando",
+"lluvia de dinero",
+"dinero volando",
+"gastar",
+"gasto"
+],
+"salarioenvelope": [
+"salario",
+"salarios",
+"sueldo",
+"nomina",
+"pago del mes"
+],
+"prateleiramercado": [
+"supermercado",
+"estante",
+"estanteria",
+"compras del mes",
+"canasta"
+],
+"casafinanciada": [
+"hipoteca",
+"financiacion",
+"financiada",
+"casa propia",
+"credito hipotecario"
+],
+"balaoestoura": [
+"burbuja",
+"estallo",
+"estalla",
+"burbuja financiera"
+],
+"raiocrise": [
+"crisis",
+"quiebra",
+"crash",
+"colapso",
+"recesion"
+],
+"transferencia": [
+"transferencia",
+"transferir",
+"enviar dinero",
+"giro",
+"pago instantaneo"
+],
+"ourodolar": [
+"oro y dolar",
+"oro versus dolar",
+"reserva de valor",
+"refugio"
+],
+"taxajuros": [
+"tasa de interes",
+"tipo de interes",
+"intereses altos",
+"porcentaje",
+"selic"
+],
+"banco": [
+"banco",
+"bancos",
+"banco central",
+"entidad financiera"
+],
+"arvoremoedas": [
+"inversion",
+"invertir",
+"el dinero crece",
+"rendimientos"
+],
+"globo": [
+"globo",
+"planeta",
+"continente",
+"continentes",
+"mapamundi"
+],
+"terralua": [
+"luna",
+"lunar",
+"orbita",
+"satelite natural",
+"marea",
+"mareas"
+],
+"solcoroa": [
+"sol",
+"corona solar",
+"calor del sol",
+"luz del sol",
+"soleado"
+],
+"galaxia": [
+"galaxia",
+"via lactea",
+"universo",
+"espiral"
+],
+"buraconegro": [
+"agujero negro",
+"horizonte de sucesos",
+"singularidad",
+"gravedad"
+],
+"onibusespacial": [
+"transbordador espacial",
+"nave",
+"lanzamiento",
+"nasa"
+],
+"astronauta": [
+"astronauta",
+"astronautas",
+"espacio",
+"gravedad cero",
+"ingravidez"
+],
+"estacaoespacial": [
+"estacion espacial",
+"orbita baja",
+"laboratorio espacial",
+"satelite artificial",
+"satelite"
+],
+"meteoro": [
+"meteoro",
+"meteoros",
+"meteorito",
+"estrella fugaz"
+],
+"eclipse": [
+"eclipse",
+"eclipses",
+"sombra de la luna",
+"la luna cubre el sol"
+],
+"cometa": [
+"cometa",
+"cometas",
+"halley"
+],
+"terremoto": [
+"terremoto",
+"terremotos",
+"temblor",
+"sismo",
+"sismico"
+],
+"tsunami": [
+"tsunami",
+"tsunamis",
+"maremoto",
+"ola gigante"
+],
+"furacao": [
+"huracan",
+"huracanes",
+"ciclon",
+"tifon"
+],
+"bolafutebol": [
+"futbol",
+"gol",
+"copa del mundo",
+"jugador"
+],
+"trave": [
+"poste",
+"portero",
+"penal",
+"arquero",
+"porteria"
+],
+"campofutebol": [
+"estadio",
+"partido",
+"alineacion",
+"campo de futbol",
+"cancha"
+],
+"cestabasquete": [
+"baloncesto",
+"basquetbol",
+"canasta",
+"nba",
+"clavada"
+],
+"raquete": [
+"tenis",
+"raqueta",
+"wimbledon",
+"tenista"
+],
+"haltere": [
+"mancuerna",
+"mancuernas",
+"pesas",
+"gimnasio",
+"levantamiento de pesas"
+],
+"violao": [
+"guitarra",
+"guitarra acustica",
+"guitarras",
+"cuerdas",
+"acordes"
+],
+"piano": [
+"piano",
+"pianista",
+"teclas",
+"concierto"
+],
+"notamusical": [
+"nota musical",
+"musica",
+"melodia",
+"cancion"
+],
+"discovinil": [
+"vinilo",
+"disco de vinilo",
+"tocadiscos",
+"giradiscos"
+],
+"cameracinema": [
+"cine",
+"rodaje",
+"director",
+"pelicula",
+"filmacion"
+],
+"claquete": [
+"claqueta",
+"grabacion",
+"set de rodaje",
+"toma"
+],
+"palcoholofotes": [
+"escenario",
+"espectaculo",
+"teatro",
+"foco",
+"reflector"
+],
+"pincelpaleta": [
+"pintura",
+"pintor",
+"artista",
+"pintar",
+"arte"
+],
+"escultura": [
+"escultura",
+"escultor",
+"busto",
+"estatua"
+],
+"relogiobolso": [
+"reloj de bolsillo",
+"antiguamente",
+"puntualidad"
+],
+"ovoquebrando": [
+"huevo",
+"huevos",
+"cascara",
+"yema"
+],
+"piramidealimentos": [
+"alimentacion",
+"dieta",
+"nutricion",
+"alimentos",
+"comer"
+],
+"microondas": [
+"microondas",
+"calentar",
+"calentar comida",
+"recalentar"
+],
+"chuveiro": [
+"ducha",
+"regadera",
+"banarse",
+"bano",
+"agua caliente"
+],
+"privada": [
+"inodoro",
+"retrete",
+"bano",
+"saneamiento",
+"sanitario"
+],
+"espelho": [
+"espejo",
+"reflejo",
+"refleja",
+"imagen reflejada"
+],
+"moedareal": [
+"moneda de un real",
+"moneda",
+"un real",
+"centavos"
+],
+"senha": [
+"contrasena",
+"clave",
+"contrasenas",
+"inicio de sesion",
+"autenticacion",
+"pin"
+],
+"nuvemdados": [
+"nube de datos",
+"almacenamiento en la nube",
+"almacenamiento",
+"servidor",
+"base de datos"
+],
+"ondacerebral": [
+"onda cerebral",
+"ondas cerebrales",
+"electroencefalograma",
+"actividad cerebral"
+],
+"virus": [
+"virus",
+"viral",
+"infeccion",
+"pandemia"
+],
+"celula": [
+"celula",
+"celulas",
+"nucleo",
+"organulo"
+],
+"bacteria": [
+"bacteria",
+"bacterias",
+"microbio",
+"microbios",
+"germenes"
+],
+"esqueletodino": [
+"dinosaurio",
+"dinosaurios",
+"fosil",
+"fosiles",
+"esqueleto"
+],
+"mamute": [
+"mamut",
+"mamuts",
+"era de hielo",
+"prehistoria",
+"prehistorico"
+],
+"arvoregenealogica": [
+"arbol genealogico",
+"antepasados",
+"ancestros",
+"descendientes",
+"genealogia"
+],
+"impressaodigital": [
+"huella digital",
+"huellas dactilares",
+"biometria",
+"biometrico"
+],
+"curtida": [
+"me gusta",
+"likes",
+"like",
+"corazon",
+"dar like"
+],
+"comentario": [
+"comentario",
+"comentarios",
+"comentar"
+],
+"compartilhar": [
+"compartir",
+"comparte",
+"compartido",
+"compartidos",
+"republicar"
+],
+"marcadorsalvar": [
+"guardar la publicacion",
+"guarda esto",
+"guardados",
+"guardo la publicacion"
+],
+"sino": [
+"activar notificaciones",
+"campanita",
+"activa la campana",
+"recordatorio de la app"
+],
+"botaoplay": [
+"dale play",
+"darle play",
+"reproducir",
+"ver el video",
+"reproduccion"
+],
+"hashtag": [
+"hashtag",
+"hashtags",
+"etiqueta",
+"palabra clave"
+],
+"arroba": [
+"arroba",
+"etiquetar a un amigo",
+"etiqueta a alguien",
+"mencion"
+],
+"contadorseguidores": [
+"seguidores",
+"seguidor",
+"numero de seguidores",
+"audiencia"
+],
+"feedcelular": [
+"feed",
+"desplazar el feed",
+"perfil de instagram",
+"cuadricula del perfil"
+],
+"storycirculo": [
+"historia",
+"historias",
+"stories",
+"foto de perfil"
+],
+"aovivo": [
+"en vivo",
+"en directo",
+"directo",
+"transmision",
+"transmitir en vivo"
+],
+"algoritmofunil": [
+"algoritmo",
+"algoritmos",
+"alcance",
+"entrega del contenido",
+"recomendar"
+],
+"viralonda": [
+"viral",
+"viralizar",
+"se hizo viral",
+"viralizacion"
+],
+"notificacao": [
+"notificacion",
+"notificaciones",
+"alerta en el celular",
+"aviso en el celular"
+],
+"linkbio": [
+"enlace en la bio",
+"link en la bio",
+"enlace de la bio",
+"link"
+],
+"celulartripe": [
+"tripode",
+"grabar video",
+"grabacion",
+"filmar"
+],
+"ringlight": [
+"aro de luz",
+"ring light",
+"iluminacion",
+"luz de grabacion"
+],
+"microfonelapela": [
+"microfono de solapa",
+"microfono corbatero",
+"captacion de audio",
+"audio del video"
+],
+"timelineedicao": [
+"editar el video",
+"editor de video",
+"edicion de video",
+"cortes",
+"edicion"
+],
+"cursorclique": [
+"clic",
+"clicar",
+"hacer clic",
+"clics",
+"pulsar"
+],
+"visualizacoes": [
+"visualizacion",
+"visualizaciones",
+"vistas",
+"reproducciones",
+"vieron"
+],
+"graficoseguidores": [
+"crecimiento del perfil",
+"crecer en instagram",
+"ganar seguidores",
+"crecimiento organico"
+],
+"moedacriador": [
+"creador de contenido",
+"creadores de contenido",
+"monetizacion",
+"monetizar"
+],
+"presentelive": [
+"regalo en vivo",
+"regalo",
+"donacion",
+"propina"
+],
+"trofeucriador": [
+"premio de creador",
+"placa de suscriptores",
+"hito de suscriptores"
+],
+"seloverificado": [
+"verificado",
+"verificada",
+"insignia azul",
+"sello de verificacion",
+"tilde azul"
+],
+"mensagemdm": [
+"mensaje directo",
+"mensaje privado",
+"dm",
+"bandeja de entrada"
+],
+"lojaperfil": [
+"tienda en el perfil",
+"tienda virtual",
+"vender por instagram",
+"escaparate"
+],
+"botaoseguir": [
+"boton de seguir",
+"sigue la pagina",
+"seguir la pagina",
+"sigue el perfil"
+],
+"congresso": [
+"congreso",
+"senado",
+"camara",
+"diputado",
+"parlamento"
+],
+"palacio": [
+"palacio",
+"palacio presidencial",
+"presidencia",
+"gobierno"
+],
+"tribunal": [
+"tribunal",
+"corte suprema",
+"justicia",
+"corte"
+],
+"urnaeletronica": [
+"urna electronica",
+"urna",
+"eleccion",
+"elecciones",
+"maquina de votacion"
+],
+"cabinevotacao": [
+"cabina",
+"cabina de votacion",
+"casilla electoral",
+"voto secreto",
+"votante"
+],
+"votonaurna": [
+"voto",
+"votos",
+"votar",
+"boleta",
+"papeleta"
+],
+"palanque": [
+"mitin",
+"tarima",
+"campana",
+"candidato",
+"acto de campana"
+],
+"faixapresidencial": [
+"banda presidencial",
+"investidura",
+"toma de posesion",
+"banda",
+"traspaso"
+],
+"mesaplenario": [
+"pleno",
+"mesa directiva",
+"sesion",
+"legisladores",
+"asamblea"
+],
+"painelvotacao": [
+"marcador",
+"panel de votacion",
+"votos a favor",
+"en contra"
+],
+"balancajustica": [
+"justicia",
+"balanza",
+"juzgar",
+"sentencia",
+"fallo"
+],
+"livroleis": [
+"ley",
+"leyes",
+"constitucion",
+"codigo",
+"codigo legal"
+],
+"cofrepublico": [
+"tesoro publico",
+"tesoro",
+"erario",
+"dinero publico",
+"fondos publicos"
+],
+"orcamento": [
+"presupuesto",
+"porcion",
+"impuesto",
+"impuestos"
+],
+"mastrobandeira": [
+"bandera",
+"asta",
+"izar",
+"nacion",
+"mastil"
+],
+"cadeirapresidencial": [
+"silla presidencial",
+"cargo",
+"sillon",
+"poder"
+],
+"microfonedebate": [
+"debate",
+"microfono",
+"candidatos",
+"entrevista"
+],
+"tribuna": [
+"tribuna",
+"podio",
+"discurso",
+"orador",
+"atril"
+],
+"cameratv": [
+"television",
+"tv",
+"transmision",
+"en vivo",
+"cobertura"
+],
+"jornal": [
+"periodico",
+"diario",
+"titular",
+"noticia",
+"noticias",
+"portada"
+],
+"piramideegito": [
+"piramide",
+"piramides",
+"egipto",
+"egipcio"
+],
+"coliseu": [
+"coliseo",
+"roma",
+"romano",
+"gladiador"
+],
+"templogrego": [
+"templo griego",
+"grecia",
+"griego",
+"griegos"
+],
+"muralha": [
+"muralla",
+"murallas",
+"fortificacion",
+"asedio"
+],
+"castelo": [
+"castillo",
+"castillos",
+"edad media",
+"medieval"
+],
+"caravela": [
+"carabela",
+"carabelas",
+"descubrimiento",
+"navegacion",
+"travesia"
+],
+"canhao": [
+"canon",
+"canones",
+"artilleria",
+"guerra"
+],
+"espada": [
+"espada",
+"espadas",
+"caballero",
+"duelo"
+],
+"escudomedieval": [
+"escudo",
+"defensa",
+"proteger",
+"cruzada"
+],
+"armadura": [
+"armadura",
+"armaduras",
+"caballero",
+"caballeros"
+],
+"trono": [
+"trono",
+"rey",
+"reina",
+"monarquia"
+],
+"pergaminho": [
+"pergamino",
+"manuscrito",
+"decreto",
+"antiguo"
+],
+"tocha": [
+"antorcha",
+"antorchas",
+"fuego",
+"olimpiada"
+],
+"relogiosol": [
+"reloj de sol",
+"sol",
+"sombra",
+"antiguedad"
+],
+"anfora": [
+"anfora",
+"anforas",
+"vasija griega",
+"ceramica"
+],
+"colunajonica": [
+"columna",
+"columnas",
+"clasico",
+"arquitectura griega"
+],
+"moedasantigas": [
+"monedas antiguas",
+"moneda antigua",
+"numismatica",
+"tesoro antiguo"
+],
+"rodacarroca": [
+"rueda",
+"carreta",
+"carro",
+"invencion de la rueda"
+],
+"maquinavapor": [
+"maquina de vapor",
+"vapor",
+"revolucion industrial",
+"industrial"
+],
+"locomotivaantiga": [
+"locomotora",
+"tren de vapor",
+"ferrocarril",
+"via ferrea"
+],
+"linhaeras": [
+"eras",
+"era",
+"linea de tiempo",
+"siglos"
+],
+"mapamundi": [
+"mapamundi",
+"mapa del mundo",
+"continentes",
+"mundo"
+],
+"notebook": [
+"portatil",
+"laptop",
+"laptops",
+"ordenador portatil",
+"computadora portatil"
+],
+"servidor": [
+"servidor",
+"servidores",
+"centro de datos",
+"datacenter"
+],
+"chip": [
+"chip",
+"chips",
+"semiconductor",
+"semiconductores",
+"microchip"
+],
+"roteador": [
+"router",
+"routers",
+"enrutador",
+"wifi",
+"wi-fi"
+],
+"antena": [
+"antena",
+"antenas",
+"torre de celular",
+"telecomunicaciones"
+],
+"satelite": [
+"satelite",
+"satelites",
+"orbita",
+"orbitas"
+],
+"robo": [
+"robot",
+"robots",
+"robotica",
+"androide"
+],
+"drone": [
+"dron",
+"drones",
+"vehiculo aereo",
+"cuadricoptero"
+],
+"blockchain": [
+"blockchain",
+"bitcoin",
+"criptomoneda",
+"criptomonedas",
+"cripto"
+],
+"teclado": [
+"teclado",
+"teclados",
+"teclear",
+"escribir a maquina"
+],
+"mouse": [
+"raton",
+"mouse",
+"cursor",
+"puntero"
+],
+"monitor": [
+"monitor",
+"monitores",
+"pantalla de la computadora",
+"computadora",
+"ordenador",
+"pantalla"
+],
+"fones": [
+"audifonos",
+"auriculares",
+"cascos",
+"fones"
+],
+"solar": [
+"panel solar",
+"paneles solares",
+"energia solar",
+"fotovoltaica"
+],
+"eolica": [
+"eolica",
+"turbina eolica",
+"turbinas",
+"aerogenerador",
+"parque eolico"
+],
+"atomo": [
+"atomo",
+"atomos",
+"atomico",
+"nuclear"
+],
+"dna": [
+"adn",
+"genetica",
+"genetico",
+"genoma",
+"gen",
+"genes"
+],
+"molecula": [
+"molecula",
+"moleculas",
+"molecular",
+"quimica"
+],
+"saturno": [
+"saturno",
+"anillos de saturno",
+"planeta",
+"planetas"
+],
+"sistemasolar": [
+"sistema solar",
+"planetas del sistema",
+"orbitan el sol",
+"orbita del sol"
+],
+"lua": [
+"luna",
+"lunar",
+"lunas",
+"luz de luna"
+],
+"estrela": [
+"estrella",
+"estrellas",
+"estrellato"
+],
+"telescopio": [
+"telescopio",
+"telescopios",
+"observatorio",
+"observar el cielo"
+],
+"microscopio": [
+"microscopio",
+"microscopios",
+"microscopico",
+"microscopica"
+],
+"tubos": [
+"tubo de ensayo",
+"tubos de ensayo",
+"laboratorio",
+"laboratorios"
+],
+"frasco": [
+"frasco",
+"frascos",
+"matraz",
+"erlenmeyer",
+"reactivo"
+],
+"ima": [
+"iman",
+"imanes",
+"magnetismo",
+"magnetico",
+"magnetica"
+],
+"prismaluz": [
+"prisma",
+"prisma de luz",
+"refraccion",
+"arcoiris",
+"espectro"
+],
+"circuito": [
+"circuito",
+"circuitos",
+"placa de circuito",
+"electronica"
+],
+"tomada": [
+"enchufe",
+"enchufes",
+"toma de corriente",
+"enchufar"
+],
+"lanterna": [
+"linterna",
+"linternas",
+"haz de luz",
+"iluminar"
+],
+"pilha2": [
+"pila",
+"pilas",
+"bateria aa",
+"pilas aa"
+],
+"cameraseg": [
+"camara de seguridad",
+"camaras de seguridad",
+"vigilancia",
+"monitoreo"
+],
+"hdd": [
+"disco duro",
+"almacenamiento",
+"memoria de la computadora",
+"hdd"
+],
+"pendrive": [
+"memoria usb",
+"pendrive",
+"usb",
+"pen drive",
+"llave usb"
+],
+"controletv": [
+"control remoto",
+"controles remotos",
+"mando a distancia",
+"control de la tv"
+],
+"gamepad": [
+"joystick",
+"mando",
+"gamepad",
+"videojuego",
+"videojuegos"
+],
+"oculosvr": [
+"realidad virtual",
+"gafas vr",
+"lentes de realidad virtual",
+"metaverso",
+"visor vr"
+],
+"impressora3d": [
+"impresora 3d",
+"impresoras 3d",
+"impresion 3d",
+"manufactura aditiva"
+],
+"radar": [
+"radar",
+"radares",
+"sonar",
+"barrido"
+],
+"newton": [
+"pendulo",
+"pendulos",
+"newton",
+"conservacion de la energia",
+"cuna de newton"
+],
+"ondasom": [
+"onda sonora",
+"ondas sonoras",
+"audio",
+"frecuencia sonora",
+"frecuencia"
+],
+"altofalante": [
+"altavoz",
+"altavoces",
+"parlante",
+"parlantes",
+"bocina",
+"bocinas"
+],
+"cofrinho": [
+"alcancia",
+"hucha",
+"ahorro",
+"ahorrar",
+"cerdito"
+],
+"carteira": [
+"cartera",
+"carteras",
+"billetera",
+"bolsillo"
+],
+"cartaocredito": [
+"tarjeta de credito",
+"tarjetas de credito",
+"tarjeta",
+"tarjetas",
+"debito"
+],
+"cedula": [
+"billete",
+"billetes",
+"dinero",
+"efectivo",
+"plata"
+],
+"maleta": [
+"maletin",
+"maletines",
+"maleta",
+"soborno",
+"coima"
+],
+"graficolinha": [
+"grafico de lineas",
+"grafico",
+"crecimiento",
+"crecer",
+"valorizacion"
+],
+"pizzagrafico": [
+"grafico circular",
+"porcion",
+"porciones",
+"proporcion",
+"reparto"
+],
+"calculadora": [
+"calculadora",
+"calcular",
+"calculo",
+"cuentas",
+"matematicas"
+],
+"martelo": [
+"mazo",
+"juez",
+"jueza",
+"sentencia",
+"martillo"
+],
+"urna": [
+"urna",
+"urnas",
+"voto",
+"votos"
+],
+"bandeira": [
+"bandera",
+"banderas",
+"patria",
+"nacional"
+],
+"contrato": [
+"contrato",
+"contratos",
+"firma",
+"firmar",
+"acuerdo"
+],
+"carimbo": [
+"sello",
+"sellar",
+"aprobado",
+"aprobacion"
+],
+"registradora": [
+"caja registradora",
+"registradora",
+"caja",
+"ventas",
+"venta"
+],
+"cofre": [
+"caja fuerte",
+"cofre",
+"cofres",
+"boveda",
+"guardar",
+"reserva"
+],
+"sacodinheiro": [
+"bolsa de dinero",
+"saco de dinero",
+"fortuna",
+"pastizal",
+"jackpot"
+],
+"lingote": [
+"lingote",
+"lingotes",
+"oro",
+"dorado"
+],
+"moedas": [
+"moneda",
+"monedas",
+"cambio",
+"centavo",
+"suelto"
+],
+"calendario": [
+"calendario",
+"calendarios",
+"fechas",
+"plazo",
+"agenda"
+],
+"prancheta": [
+"portapapeles",
+"tablilla",
+"lista de verificacion",
+"tarea",
+"tareas"
+],
+"relogioparede": [
+"reloj",
+"reloj de pared",
+"horario",
+"horas",
+"puntualidad"
+],
+"ampulheta": [
+"reloj de arena",
+"tiempo",
+"urgencia",
+"espera",
+"esperar"
+],
+"cracha": [
+"credencial",
+"gafete",
+"empleado",
+"empleados",
+"identificacion"
+],
+"mesareuniao": [
+"reunion",
+"reuniones",
+"consejo",
+"directorio",
+"junta directiva"
+],
+"megafone": [
+"megafono",
+"anuncio",
+"anunciar",
+"difundir",
+"promocionar"
+],
+"cartaz": [
+"cartel",
+"carteles",
+"pancarta",
+"protesta",
+"protestas"
+],
+"etiqueta": [
+"etiqueta",
+"precio",
+"precios",
+"descuento",
+"oferta"
+],
+"selo": [
+"sello",
+"sellos",
+"certificado",
+"garantia"
+],
+"algemas": [
+"esposas",
+"esposado",
+"preso",
+"presos",
+"detenido"
+],
+"microfone": [
+"microfono",
+"entrevista",
+"reportero",
+"discurso"
+],
+"camerafoto": [
+"foto",
+"fotos",
+"fotografia",
+"fotografiar",
+"camara"
+],
+"televisor": [
+"television",
+"tv",
+"noticiero",
+"telenovela",
+"programa de tv"
+],
+"escudo": [
+"escudo",
+"proteccion",
+"proteger",
+"defensa"
+],
+"coroa": [
+"corona",
+"rey",
+"reina",
+"realeza",
+"real"
+],
+"trofeu": [
+"trofeo",
+"trofeos",
+"campeon",
+"campeonato"
+],
+"medalha": [
+"medalla",
+"medallas",
+"premio",
+"galardon",
+"premiacion"
+],
+"podio": [
+"podio",
+"ranking",
+"clasificacion",
+"liderazgo",
+"los tres primeros"
+],
+"alvo": [
+"objetivo",
+"objetivos",
+"meta",
+"metas",
+"blanco"
+],
+"lampadaideia": [
+"idea",
+"ideas",
+"innovacion",
+"creatividad",
+"bombilla"
+],
+"carrinhocompras": [
+"carrito de compras",
+"carrito",
+"compras",
+"comprar",
+"consumo"
+],
+"sacola": [
+"bolsa",
+"bolsas",
+"bolsa de compras",
+"bolsa de regalo"
+],
+"caixapapelao": [
+"paquete",
+"encomienda",
+"pedido",
+"entrega",
+"entregas",
+"caja de carton"
+],
+"balcao": [
+"mostrador",
+"atencion al cliente",
+"atencion",
+"recepcion",
+"empleado"
+],
+"relogioponto": [
+"reloj de fichar",
+"jornada",
+"fichaje",
+"marcar entrada",
+"ausencia"
+],
+"cadeiraescritorio": [
+"silla de oficina",
+"oficina",
+"cargo",
+"empleo",
+"trabajador"
+],
+"escrivaninha": [
+"escritorio",
+"despacho",
+"horario de trabajo",
+"papeleo"
+],
+"pasta": [
+"carpeta",
+"carpetas",
+"archivo",
+"archivos",
+"expediente"
+],
+"grampeador": [
+"grapadora",
+"grapadoras",
+"papeleria"
+],
+"coracao": [
+"corazon",
+"corazones",
+"cardiaco",
+"infarto"
+],
+"cerebro": [
+"cerebro",
+"cerebros",
+"neurona",
+"neuronas",
+"mente"
+],
+"olho": [
+"ojo",
+"ojos",
+"vision",
+"ver",
+"vista"
+],
+"dente": [
+"diente",
+"dientes",
+"dentista",
+"dental"
+],
+"osso": [
+"hueso",
+"huesos",
+"esqueleto",
+"fractura"
+],
+"cruzmedica": [
+"salud",
+"medico",
+"medica",
+"hospitalario",
+"sanitario"
+],
+"capsula": [
+"capsula",
+"capsulas",
+"medicina",
+"pastilla",
+"suplemento"
+],
+"seringa": [
+"jeringa",
+"vacuna",
+"vacunas",
+"vacunacion",
+"inyeccion"
+],
+"estetoscopio": [
+"estetoscopio",
+"consulta",
+"diagnostico",
+"pediatra",
+"chequeo"
+],
+"folha": [
+"hoja",
+"hojas",
+"follaje",
+"planta",
+"vegetal"
+],
+"flor": [
+"flor",
+"flores",
+"florecer",
+"margarita"
+],
+"tulipa": [
+"tulipan",
+"tulipanes",
+"ramo",
+"jardin"
+],
+"cogumelo": [
+"hongo",
+"hongos",
+"champinon",
+"champinones",
+"seta",
+"setas"
+],
+"montanha": [
+"montana",
+"montanas",
+"sierra",
+"cordillera",
+"cima"
+],
+"vulcao": [
+"volcan",
+"volcanes",
+"erupcion",
+"lava"
+],
+"sol": [
+"sol",
+"solar",
+"soleado",
+"rayos de sol"
+],
+"nuvemchuva": [
+"lluvia",
+"lluvias",
+"lluvioso",
+"tormenta",
+"aguacero"
+],
+"floco": [
+"copo de nieve",
+"copos de nieve",
+"nieve",
+"nevada",
+"ventisca"
+],
+"arcoiris": [
+"arcoiris",
+"arco iris",
+"colorido",
+"colorida"
+],
+"cacto": [
+"cactus",
+"cacto",
+"desierto",
+"desertico",
+"arido"
+],
+"peixe": [
+"pez",
+"peces",
+"pescado",
+"pesca",
+"pescador"
+],
+"passaro": [
+"pajaro",
+"pajaros",
+"ave",
+"aves"
+],
+"abelha": [
+"abeja",
+"abejas",
+"miel",
+"colmena"
+],
+"gato": [
+"gato",
+"gatos",
+"gata",
+"felino",
+"gatito"
+],
+"cachorro": [
+"perro",
+"perros",
+"cachorro",
+"cachorros",
+"perrito",
+"canino"
+],
+"tartaruga": [
+"tortuga",
+"tortugas",
+"caparazon",
+"galapago"
+],
+"maca": [
+"manzana",
+"manzanas",
+"fruta",
+"frutas"
+],
+"banana": [
+"banana",
+"bananas",
+"platano",
+"platanos",
+"potasio"
+],
+"pao": [
+"pan",
+"panes",
+"panaderia",
+"panadero"
+],
+"queijo": [
+"queso",
+"quesos",
+"lacteo",
+"lacteos",
+"productos lacteos"
+],
+"xicara": [
+"cafe",
+"cafetera",
+"cafecito",
+"taza",
+"taza de cafe"
+],
+"copo": [
+"vaso",
+"vasos",
+"bebida",
+"bebidas",
+"copa"
+],
+"garrafa": [
+"botella",
+"botellas",
+"garrafon",
+"embotellado"
+],
+"pizza": [
+"pizza",
+"pizzas",
+"pizzeria",
+"porcion de pizza"
+],
+"ovo": [
+"huevo",
+"huevos",
+"gallina",
+"tortilla"
+],
+"ovofrito": [
+"huevo frito",
+"desayuno",
+"sarten",
+"freir"
+],
+"prato": [
+"plato",
+"platos",
+"comida",
+"comidas",
+"platillo"
+],
+"melancia": [
+"sandia",
+"sandias",
+"verano",
+"refrescante"
+],
+"cenoura": [
+"zanahoria",
+"zanahorias",
+"verdura",
+"verduras",
+"hortaliza"
+],
+"milho": [
+"maiz",
+"palomitas",
+"mazorca",
+"elote",
+"choclo"
+],
+"camiseta": [
+"camiseta",
+"camisetas",
+"playera",
+"remera",
+"camisa"
+],
+"cartola": [
+"sombrero de copa",
+"mago",
+"magia",
+"magico"
+],
+"oculos": [
+"gafas",
+"lentes",
+"anteojos",
+"lente",
+"lentes de graduacion"
+],
+"guardachuva": [
+"paraguas",
+"sombrilla",
+"sombrillas"
+],
+"mochila": [
+"mochila",
+"mochilas",
+"viaje",
+"viajero",
+"mochilero"
+],
+"livroaberto": [
+"lectura",
+"lector",
+"lectores",
+"leer",
+"libro abierto"
+],
+"lapis": [
+"lapiz",
+"lapices",
+"grafito",
+"dibujo",
+"dibujar"
+],
+"caneta": [
+"boligrafo",
+"pluma",
+"lapicera",
+"escribir",
+"firma"
+],
+"mao": [
+"mano",
+"manos",
+"manual",
+"apreton de manos"
+],
+"pegada": [
+"huella",
+"huellas",
+"pasos",
+"caminata",
+"rastro"
+],
+"balao": [
+"globo",
+"globos",
+"fiesta",
+"fiestas"
+],
+"presente": [
+"regalo",
+"regalos",
+"obsequio",
+"obsequios",
+"navidad"
+],
+"bolo": [
+"pastel",
+"torta",
+"bizcocho",
+"pasteles",
+"reposteria",
+"postre"
+],
+"morango": [
+"fresa",
+"fresas",
+"frutilla",
+"frutillas",
+"baya"
+],
+"uvas": [
+"uva",
+"uvas",
+"racimo de uvas",
+"racimo"
+],
+"glb-vaca": [
+"vaca",
+"vacas",
+"ganado",
+"buey",
+"res"
+],
+"glb-porco": [
+"cerdo",
+"cerdos",
+"puerco",
+"chancho",
+"marrano"
+],
+"glb-cavalo": [
+"caballo",
+"caballos",
+"yegua",
+"corcel"
+],
+"glb-ovelha": [
+"oveja",
+"ovejas",
+"cordero",
+"carnero"
+],
+"glb-zebra": [
+"cebra",
+"cebras",
+"rayas de la cebra"
+],
+"glb-cachorro": [
+"perro",
+"perros",
+"cachorro",
+"can"
+],
+"glb-gato": [
+"gato",
+"gatos",
+"gata",
+"gatito"
+],
+"glb-aguia": [
+"aguila",
+"aguilas",
+"halcon",
+"gavilan"
+],
+"glb-passaro": [
+"pajaro",
+"pajaros",
+"pajarito",
+"avecilla"
+],
+"glb-baleia": [
+"ballena",
+"ballenas",
+"jorobada"
+],
+"glb-golfinho": [
+"delfin",
+"delfines",
+"marsopa"
+],
+"glb-tubarao": [
+"tiburon",
+"tiburones"
+],
+"glb-peixe": [
+"pez",
+"peces",
+"cardumen",
+"pescado"
+],
+"glb-abelha": [
+"abeja",
+"abejas",
+"colmena"
+],
+"glb-leao": [
+"leon",
+"leones",
+"leona"
+],
+"glb-panda": [
+"panda",
+"pandas",
+"oso panda"
+],
+"glb-pinguim": [
+"pinguino",
+"pinguinos",
+"antartida"
+],
+"glb-carro": [
+"coche",
+"carro",
+"auto",
+"automovil",
+"vehiculo"
+],
+"glb-taxi": [
+"taxi",
+"taxis",
+"taxista"
+],
+"glb-viatura": [
+"patrulla",
+"patrullas",
+"coche de policia",
+"auto de policia",
+"patrullero"
+],
+"glb-ambulancia": [
+"ambulancia",
+"ambulancias",
+"paramedicos"
+],
+"glb-bombeiros": [
+"bombero",
+"bomberos",
+"camion de bomberos"
+],
+"glb-caminhao": [
+"camion",
+"camiones",
+"camionero"
+],
+"glb-trator": [
+"tractor",
+"tractores",
+"agronegocio",
+"agricultura"
+],
+"glb-onibus": [
+"autobus",
+"autobuses",
+"transporte publico",
+"colectivo",
+"micro"
+],
+"glb-bicicleta": [
+"bicicleta",
+"bicicletas",
+"bici"
+],
+"glb-trem": [
+"tren",
+"trenes",
+"locomotora"
+],
+"glb-navio": [
+"barco",
+"barcos",
+"buque",
+"carguero"
+],
+"glb-transatlantico": [
+"transatlantico",
+"titanic",
+"barco de pasajeros",
+"crucero"
+],
+"glb-veleiro": [
+"velero",
+"barco de vela",
+"navegar a vela",
+"yate"
+],
+"glb-aviao": [
+"avion",
+"aviones",
+"aeronave",
+"jet"
+],
+"glb-aviao-biplano": [
+"biplano",
+"avion antiguo",
+"santos dumont",
+"hermanos wright"
+],
+"glb-helicoptero": [
+"helicoptero",
+"helicopteros"
+],
+"glb-abacaxi": [
+"pina",
+"pinas",
+"ananas"
+],
+"glb-banana": [
+"banana",
+"bananas",
+"racimo de bananas",
+"platano"
+],
+"glb-laranja": [
+"naranja",
+"naranjas",
+"jugo de naranja"
+],
+"glb-maca": [
+"manzana",
+"manzanas",
+"manzano"
+],
+"glb-morango": [
+"fresa",
+"fresas",
+"frutilla"
+],
+"glb-uvas": [
+"uva",
+"uvas",
+"racimo de uvas"
+],
+"glb-cenoura": [
+"zanahoria",
+"zanahorias"
+],
+"glb-milho": [
+"maiz",
+"mazorca",
+"elote",
+"maizal"
+],
+"glb-brocolis": [
+"brocoli",
+"verdura",
+"verduras",
+"hortalizas"
+],
+"glb-pao": [
+"pan",
+"panes",
+"panaderia"
+],
+"glb-pizza": [
+"pizza",
+"pizzas",
+"pizzeria"
+],
+"glb-hamburguer": [
+"hamburguesa",
+"hamburguesas",
+"cheeseburger"
+],
+"glb-batata-frita": [
+"papas fritas",
+"patatas fritas",
+"fritas"
+],
+"glb-cachorro-quente": [
+"perro caliente",
+"hot dog",
+"pancho",
+"completo"
+],
+"glb-rosquinha": [
+"dona",
+"donas",
+"rosquilla",
+"dona de chocolate"
+],
+"glb-bolo": [
+"pastel",
+"torta",
+"bizcocho",
+"pastel de cumpleanos"
+],
+"glb-sorvete": [
+"helado",
+"helados",
+"heladeria",
+"nieve"
+],
+"glb-vinho": [
+"vino",
+"vinos",
+"botella de vino"
+],
+"glb-notebook": [
+"portatil",
+"laptop",
+"computadora portatil"
+],
+"glb-televisao": [
+"television",
+"tv",
+"televisor",
+"pantalla plana"
+],
+"glb-geladeira": [
+"nevera",
+"heladera",
+"refrigerador",
+"congelador"
+],
+"glb-lava-roupa": [
+"lavadora",
+"lavarropas",
+"lavar la ropa",
+"lavanderia"
+],
+"glb-sofa": [
+"sofa",
+"sofas",
+"canape"
+],
+"glb-cadeira-escritorio": [
+"silla de oficina",
+"home office",
+"silla giratoria",
+"teletrabajo"
+],
+"glb-privada": [
+"inodoro",
+"retrete",
+"vater",
+"descarga"
+],
+"glb-luminaria": [
+"lampara",
+"lampara de pie",
+"luminaria"
+],
+"glb-livros": [
+"libros",
+"biblioteca",
+"pila de libros",
+"monton de libros"
+],
+"glb-vaso-planta": [
+"maceta",
+"planta de interior",
+"suculenta",
+"planta en maceta"
+],
+"glb-carrinho-mercado": [
+"carrito de compras",
+"carrito del supermercado",
+"supermercado",
+"carrito"
+],
+"glb-cadeira-rodas": [
+"silla de ruedas",
+"usuario de silla de ruedas",
+"accesibilidad"
+],
+"glb-arvore": [
+"arbol",
+"arboles",
+"bosque",
+"floresta"
+],
+"glb-pinheiro": [
+"pino",
+"pinos",
+"conifera"
+],
+"glb-palmeira": [
+"palmera",
+"palmeras",
+"cocotero",
+"palma"
+],
+"glb-cacto": [
+"cactus",
+"cacto",
+"planta del desierto"
+],
+"glb-flor": [
+"flor",
+"flores",
+"tulipan"
+],
+"glb-cogumelo": [
+"hongo",
+"hongos",
+"champinon",
+"seta"
+],
+"glb-rochas": [
+"roca",
+"rocas",
+"piedra",
+"peasco"
+],
+"glb-homem": [
+"hombre",
+"hombres",
+"chico",
+"muchacho"
+],
+"glb-mulher": [
+"mujer",
+"mujeres",
+"chica",
+"senora"
+],
+"glb-homem-2": [
+"ejecutivo",
+"empresario",
+"gerente",
+"jefe"
+],
+"glb-mulher-2": [
+"ejecutiva",
+"empresaria",
+"abogada",
+"emprendedora"
+],
+"glb-arranha-ceu": [
+"rascacielos",
+"torre comercial",
+"torre de oficinas",
+"edificio alto"
+],
+"glb-arranha-ceu-2": [
+"edificio alto",
+"torre de oficinas",
+"torre"
+],
+"glb-predio": [
+"edificio",
+"edificios",
+"bloque de apartamentos"
+],
+"glb-predio-2": [
+"local comercial",
+"comercio de calle",
+"tienda de calle",
+"casa adosada"
+],
+"glb-casa": [
+"casa",
+"casas",
+"vivienda",
+"hogar"
+],
+"glb-casa-2": [
+"casa propia",
+"hipoteca",
+"alquiler",
+"credito inmobiliario",
+"renta"
+],
+"glb-frigideira": [
+"sarten",
+"sartenes",
+"freir"
+],
+"glb-panela": [
+"olla",
+"ollas",
+"cacerola",
+"caldero"
+],
+"glb-colher-pau": [
+"cuchara de madera",
+"revolver la olla",
+"revolver"
+],
+"glb-batedor": [
+"batidor",
+"varillas",
+"batir los huevos",
+"batir"
+],
+"glb-rolo-massa": [
+"rodillo",
+"extender la masa",
+"estirar la masa"
+],
+"glb-tabua-corte": [
+"tabla de cortar",
+"tabla de picar",
+"picar",
+"cortar"
+],
+"glb-tomate": [
+"tomate",
+"tomates",
+"salsa de tomate"
+],
+"glb-cebola": [
+"cebolla",
+"cebollas",
+"picar cebolla"
+],
+"glb-limao": [
+"limon",
+"limones",
+"lima",
+"limonada"
+],
+"glb-abobora": [
+"calabaza",
+"calabazas",
+"zapallo",
+"auyama"
+],
+"glb-berinjela": [
+"berenjena",
+"berenjenas"
+],
+"glb-pimentao": [
+"pimiento",
+"pimientos",
+"morron",
+"paprika"
+],
+"glb-cereja": [
+"cereza",
+"cerezas"
+],
+"glb-pera": [
+"pera",
+"peras"
+],
+"glb-carne": [
+"carne roja",
+"carne de res",
+"bistec",
+"carne"
+],
+"glb-costela": [
+"costilla",
+"costillas",
+"costillar"
+],
+"glb-espetinho": [
+"brocheta",
+"brochetas",
+"pincho",
+"pinchos",
+"espeto"
+],
+"glb-linguica": [
+"chorizo",
+"salchicha",
+"embutido",
+"embutidos"
+],
+"glb-sanduiche": [
+"sandwich",
+"bocadillo",
+"emparedado",
+"tostada"
+],
+"glb-croissant": [
+"croissant",
+"cruasan",
+"medialuna",
+"panaderia francesa"
+],
+"glb-cupcake": [
+"cupcake",
+"magdalena",
+"muffin",
+"reposteria"
+],
+"glb-biscoito": [
+"galleta",
+"galletas",
+"galletita",
+"cookie"
+],
+"glb-chocolate": [
+"chocolate",
+"barra de chocolate",
+"cacao",
+"tableta de chocolate"
+],
+"glb-panqueca": [
+"panqueque",
+"panqueques",
+"hotcakes",
+"desayuno americano"
+],
+"glb-mel": [
+"miel",
+"tarro de miel",
+"panal",
+"miel de abeja"
+],
+"glb-lata-refri": [
+"refresco",
+"lata de refresco",
+"gaseosa",
+"soda"
+],
+"glb-garrafa-refri": [
+"botella de refresco",
+"botella de plastico",
+"botella de dos litros",
+"botella pet"
+],
+"glb-caneca": [
+"jarra",
+"tarro",
+"caneca",
+"jarra de cerveza"
+],
+"glb-picole": [
+"paleta helada",
+"helado de palo",
+"polo",
+"paletas"
+],
+"glb-salada": [
+"ensalada",
+"ensaladas",
+"verduras"
+],
+"glb-sopa": [
+"sopa",
+"caldo",
+"tazon de sopa"
+],
+"glb-sushi": [
+"sushi",
+"comida japonesa",
+"rollo de sushi"
+],
+"glb-taco": [
+"taco",
+"tacos",
+"comida mexicana",
+"tortilla"
+],
+"glb-caixa-leite": [
+"caja de leche",
+"carton de leche",
+"leche larga vida",
+"litro de leche"
+],
+"glb-oleo": [
+"aceite",
+"aceite de soja",
+"aceite de cocina",
+"aceite vegetal"
+],
+"glb-lata": [
+"enlatado",
+"enlatados",
+"lata de conserva",
+"conserva"
+],
+"glb-torta": [
+"tarta",
+"tartas",
+"quiche",
+"pastel salado"
+],
+"glb-pao-forma": [
+"pan de molde",
+"pan de sandwich",
+"rebanada de pan",
+"pan lactal"
+],
+"glb-baguete": [
+"baguette",
+"pan frances",
+"panaderia"
+],
+"glb-ketchup": [
+"ketchup",
+"catsup",
+"salsa de tomate"
+],
+"glb-frango-assado": [
+"pollo asado",
+"pollo",
+"pollo al horno"
+],
+"glb-melancia": [
+"sandia entera",
+"sandia"
+],
+"glb-fogao": [
+"cocina",
+"estufa",
+"hornilla",
+"cocina a gas",
+"horno"
+],
+"glb-liquidificador": [
+"licuadora",
+"batido",
+"jugo licuado",
+"smoothie"
+],
+"glb-cafeteira": [
+"cafetera",
+"maquina de cafe",
+"espresso",
+"cafe expreso"
+],
+"glb-torradeira": [
+"tostadora",
+"tostada",
+"tostadas",
+"pan tostado"
+],
+"glb-micro-ondas": [
+"microondas",
+"horno microondas",
+"calentar la comida"
+],
+"glb-radio": [
+"radio",
+"escuchar la radio",
+"emisora de radio"
+],
+"glb-tv-antiga": [
+"tv antigua",
+"television antigua",
+"television de tubo"
+],
+"glb-banheira": [
+"banera",
+"banera de hidromasaje",
+"jacuzzi",
+"banio"
+],
+"glb-cama": [
+"cama de matrimonio",
+"colchon",
+"en la cama",
+"cama"
+],
+"glb-beliche": [
+"litera",
+"literas",
+"alojamiento",
+"cucheta"
+],
+"glb-computador": [
+"computadora",
+"computador",
+"ordenador",
+"pc"
+],
+"glb-caixa-som": [
+"altavoz",
+"bocina",
+"parlante",
+"sonido alto"
+],
+"glb-estante": [
+"estanteria",
+"estante",
+"repisa",
+"biblioteca de casa"
+],
+"glb-poltrona": [
+"sillon",
+"sillones",
+"butaca",
+"poltrona"
+],
+"glb-abajur": [
+"lampara de mesa",
+"lampara de noche",
+"luz de mesita",
+"lampara de escritorio"
+],
+"glb-escrivaninha": [
+"escritorio de madera",
+"mesa de estudio",
+"escritorio",
+"home office"
+],
+"glb-mesa-jantar": [
+"mesa de comedor",
+"cena en familia",
+"mantel",
+"mesa de cena"
+],
+"glb-macaco": [
+"mono",
+"monos",
+"primate",
+"simio"
+],
+"glb-elefante": [
+"elefante",
+"elefantes",
+"paquidermo"
+],
+"glb-girafa": [
+"jirafa",
+"jirafas",
+"cuello largo"
+],
+"glb-tigre": [
+"tigre",
+"tigres",
+"felino grande"
+],
+"glb-papagaio": [
+"loro",
+"loros",
+"papagayo",
+"guacamayo"
+],
+"glb-caranguejo": [
+"cangrejo",
+"cangrejos",
+"crustaceo"
+],
+"glb-coala": [
+"koala",
+"koalas",
+"australia"
+],
+"glb-urso-polar": [
+"oso polar",
+"osos polares",
+"polo norte",
+"artico"
+],
+"glb-pintinho": [
+"pollito",
+"pollitos",
+"cria de gallina"
+],
+"glb-castor": [
+"castor",
+"castores",
+"presa de castor"
+],
+"glb-lagarta": [
+"oruga",
+"orugas",
+"larva"
+],
+"glb-cobra": [
+"serpiente",
+"serpientes",
+"culebra",
+"serpiente venenosa"
+],
+"glb-sapo": [
+"sapo",
+"sapos",
+"rana",
+"ranas"
+],
+"glb-touro": [
+"toro",
+"toros",
+"toro bravo"
+],
+"glb-lhama": [
+"llama",
+"llamas",
+"alpaca"
+],
+"glb-morcego": [
+"murcielago",
+"murcielagos",
+"vampiro"
+],
+"glb-galinha": [
+"gallina",
+"gallinas",
+"gallo",
+"pollo"
+],
+"glb-cervo": [
+"ciervo",
+"ciervos",
+"venado",
+"reno"
+],
+"glb-burro": [
+"burro",
+"burros",
+"mula",
+"asno"
+],
+"glb-raposa": [
+"zorro",
+"zorros",
+"lobo de crin"
+],
+"glb-rato": [
+"raton",
+"rata",
+"ratas",
+"ratones"
+],
+"glb-lobo": [
+"lobo",
+"lobos",
+"manada de lobos",
+"manada"
+],
+"glb-aranha": [
+"arana",
+"aranas",
+"telarana",
+"tela de arana"
+],
+"glb-tiranossauro": [
+"tiranosaurio",
+"t-rex",
+"t rex",
+"tiranosaurio rex"
+],
+"glb-triceratope": [
+"triceratops",
+"triceratopo"
+],
+"glb-velociraptor": [
+"velociraptor",
+"raptor",
+"velociraptores"
+],
+"glb-estegossauro": [
+"estegosaurio",
+"estegosaurios"
+],
+"glb-apatossauro": [
+"apatosaurio",
+"brontosaurio",
+"dinosaurio de cuello largo",
+"saurópodo"
+],
+"glb-esqueleto": [
+"esqueleto",
+"esqueletos",
+"huesos del cuerpo"
+]
+}

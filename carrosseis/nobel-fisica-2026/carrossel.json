@@ -1,0 +1,81 @@
+{
+  "perfil": "curiosidades",
+  "tema": "NOBEL 2026",
+  "legenda": "O Nobel de Física de 2026, anunciado em 6 de outubro, foi para o belga Francis Halzen, da Universidade de Wisconsin-Madison, pelo observatório IceCube e pela descoberta de neutrinos cósmicos de alta energia.\n\nVocê sabia que existe um detector enterrado no gelo da Antártida?\n\nSegue a página pra ver a próxima.\n\nFoto: John Hardin (CC BY 4.0)",
+  "marcadores": [
+    "nobel",
+    "fisica",
+    "icecube",
+    "ciencia"
+  ],
+  "fontes": [
+    "EPS, The Nobel Prize in Physics 2026: https://eps.org/the-nobel-prize-in-physics-2026/",
+    "CNN (06/10/2026): https://www.cnn.com/2026/10/06/science/nobel-prize-physics-francis-halzen-winner-intl",
+    "Khaleej Times: https://www.khaleejtimes.com/world/belgium-francis-halzen-wins-nobel-prize-in-physics-2026",
+    "Interesting Engineering: https://interestingengineering.com/science/francis-halzen-nobel-prize-icecube",
+    "Deccan Chronicle: https://www.deccanchronicle.com/world/2026-nobel-prize-in-physics-awarded-to-francis-halzen-1993564",
+    "Nobel Prize, comunicado: https://www.nobelprize.org/prizes/physics/2026/press-release/"
+  ],
+  "slides": [
+    {
+      "tipo": "plantao",
+      "rotulo": "Nobel 2026",
+      "titulo": "Nobel de Física vai para Francis Halzen, do *IceCube*",
+      "texto": "O belga foi premiado pela descoberta de neutrinos cósmicos de alta energia.",
+      "hora": "6 out 2026",
+      "fonte": "Fundação Nobel",
+      "imagem": "assets/icecube.jpg",
+      "foco": "50% 60%"
+    },
+    {
+      "tipo": "texto",
+      "titulo": "O que é o *IceCube*",
+      "texto": "Um detector enterrado em 1 km³ de gelo no Polo Sul, na Antártida.",
+      "fotoFundo": "assets/icecube.jpg"
+    },
+    {
+      "tipo": "numeros",
+      "titulo": "O prêmio em *números*",
+      "itens": [
+        {
+          "numero": "82",
+          "legenda": "anos tem Francis Halzen"
+        },
+        {
+          "numero": "1 km³",
+          "legenda": "de gelo forma o detector"
+        },
+        {
+          "numero": "6/10",
+          "legenda": "dia do anúncio, em 2026"
+        }
+      ],
+      "destaque": 1
+    },
+    {
+      "tipo": "quiz",
+      "pergunta": "Onde fica o *IceCube*?",
+      "opcoes": [
+        "Nos Alpes",
+        "No Polo Sul",
+        "No Chile",
+        "Na Islândia"
+      ],
+      "resposta": 1,
+      "revelar": true,
+      "explicacao": "Enterrado em 1 km³ de gelo, na Antártida."
+    },
+    {
+      "tipo": "texto",
+      "titulo": "De *Wisconsin* para o gelo",
+      "texto": "Halzen trabalha na Universidade de Wisconsin-Madison, nos EUA. Ele chamou o prêmio de grande surpresa.",
+      "fotoFundo": "assets/icecube.jpg"
+    },
+    {
+      "tipo": "fecho",
+      "titulo": "Você sabia que o Polo Sul tinha um *observatório*?",
+      "texto": "Conta nos comentários.",
+      "fotoFundo": "assets/icecube.jpg"
+    }
+  ]
+}

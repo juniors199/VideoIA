@@ -1,0 +1,206 @@
+{
+  "id": "tutorial",
+  "nome": "Tutorial (como fazer, passo a passo)",
+  "versao": 1,
+  "paraQuem": "quem ensina a fazer algo: ferramenta, aplicativo, receita de processo, configuração, truque do dia a dia",
+  "exemplosDePedido": [
+    "Como tirar o fundo de uma foto em 3 passos",
+    "Como agendar um post sem abrir o computador"
+  ],
+  "apelidos": [
+    "como-fazer",
+    "passo-a-passo",
+    "how-to",
+    "dica"
+  ],
+  "formato": {
+    "preferidos": [
+      "passo-a-passo",
+      "antes-depois",
+      "causa-efeito"
+    ],
+    "proibidos": [
+      "ranking"
+    ],
+    "padrao": "passo-a-passo"
+  },
+  "roteiro": {
+    "palavras": [
+      100,
+      170
+    ],
+    "alvoSegundos": [
+      40,
+      65
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "o resultado pronto ou o problema que o tutorial resolve, em até 12 palavras (mostre o fim antes do começo)",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "promessa",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "quantos passos e quanto tempo leva, de verdade (\"são 3 passos\")"
+      },
+      {
+        "bloco": "passos",
+        "seg": [
+          20,
+          40
+        ],
+        "instrucao": "um passo por frase, numerado na fala (\"Um\", \"Dois\", \"Três\"), com o nome exato do botão ou da ação; conversa, não ditado",
+        "n": [
+          2,
+          5
+        ],
+        "obrigatorio": true
+      },
+      {
+        "bloco": "erro",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "o erro mais comum e como evitar"
+      },
+      {
+        "bloco": "resultado",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "o resultado de novo, agora feito",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "salvar para fazer depois e seguir para o próximo tutorial"
+      }
+    ],
+    "gatilhos": [
+      "PD",
+      "CC",
+      "PT"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0,
+    "alfinetadas": [
+      0,
+      0
+    ],
+    "pessoa": "você",
+    "tom": "colega que já fez e mostra o atalho; claro, sem pressa e sem jargão",
+    "vocabulario": "simples",
+    "proibir": [
+      "primeiro faça isso",
+      "é muito fácil"
+    ]
+  },
+  "voz": {
+    "velocidade": 0.97,
+    "direcao": "[calm, clear]",
+    "pausaEntreBlocos": 0.2
+  },
+  "visual": {
+    "estilo": "padrao",
+    "cenarios": [
+      "mesa",
+      "sala"
+    ],
+    "pecasBase": [
+      "celular",
+      "notebook",
+      "lapis",
+      "engrenagens",
+      "fluxo",
+      "lampadaideia",
+      "relogio3d"
+    ],
+    "reserva": [
+      "celular",
+      "notebook",
+      "engrenagens",
+      "lampadaideia"
+    ],
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "camera": {
+      "padrao": "normal",
+      "revelar": "avanca",
+      "numero": "nenhum"
+    },
+    "transicao": "desfoque",
+    "contador": "quando-houver-numero",
+    "titulos": "por-etapa"
+  },
+  "ritmo": {
+    "beatSeg": [
+      3,
+      7
+    ],
+    "trocaVisualMaxSeg": 4,
+    "beatsMax": 14
+  },
+  "som": {
+    "musica": true,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "salvar",
+    "texto": "Salva para fazer depois e segue para o próximo.",
+    "palavra": null,
+    "perguntaFinal": "Qual tutorial você quer no próximo?"
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "passos",
+      "texto",
+      "fecho"
+    ],
+    "slides": [
+      5,
+      9
+    ],
+    "estilo": "padrao",
+    "virais": [
+      "passo",
+      "chat",
+      "informativo",
+      "nota"
+    ]
+  },
+  "publicar": {
+    "legenda": "o resultado em uma linha, os passos numerados e a pergunta do próximo tutorial",
+    "hashtags": [
+      "#tutorial",
+      "#dica"
+    ],
+    "fontesNaLegenda": false,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 1,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

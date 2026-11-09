@@ -1,0 +1,160 @@
+{
+  "id": "mindset3",
+  "nome": "Mindset 3 (ilustração em giz luminoso e retícula)",
+  "versao": 1,
+  "paraQuem": "mente, hábitos, comportamento, corpo, sono, dinheiro e tecnologia explicados num plano contínuo: cada frase vira um desenho de traço fino luminoso que se faz na tela (figura, número que conta, diagrama, ficha), com retícula, etiqueta mono e a legenda que acende palavra por palavra",
+  "exemplosDePedido": [
+    "Por que você decide antes de perceber",
+    "O que o celular faz com o seu sono"
+  ],
+  "apelidos": [
+    "mindset-3",
+    "mindset3",
+    "giz",
+    "giz-luminoso",
+    "reticula"
+  ],
+  "formato": {
+    "preferidos": [
+      "revelacao",
+      "causa-efeito",
+      "mito-fato",
+      "antes-depois"
+    ],
+    "proibidos": [],
+    "padrao": "revelacao"
+  },
+  "roteiro": {
+    "palavras": [
+      110,
+      190
+    ],
+    "alvoSegundos": [
+      40,
+      60
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "a frase que contraria o senso comum, com uma coisa que dá para desenhar (\"Seu cérebro decide antes de você perceber\")",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "exposicao",
+        "seg": [
+          16,
+          34
+        ],
+        "instrucao": "o fato ou a analogia em frases curtas, uma imagem por frase: o órgão, o objeto, o número com fonte, a comparação lado a lado; a palavra que importa é dita com clareza",
+        "n": [
+          5,
+          10
+        ]
+      },
+      {
+        "bloco": "realidade",
+        "seg": [
+          6,
+          12
+        ],
+        "instrucao": "a virada honesta (começa com \"Mas\" ou \"Só que\"): o que isso muda no dia a dia, na segunda pessoa, sem promessa"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "pedido de compartilhar (story ou amigo) e o convite padrão: seguir e comentar a palavra"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "PD",
+      "HE"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "ele/ela",
+    "tom": "calmo e direto, na segunda pessoa, frases curtas e concretas; ciência explicada sem jargão, com um fato conferido por bloco",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[calm, warm, intimate]",
+    "pausaEntreBlocos": 0.18
+  },
+  "visual": {
+    "pecasPorTema": false,
+    "imagens": "opcional",
+    "contador": "quando-houver-numero",
+    "estilo": "mindset3",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [],
+    "reserva": [],
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      1.8,
+      4.5
+    ],
+    "trocaVisualMaxSeg": 4.5
+  },
+  "som": {
+    "musica": true,
+    "sfx": "discreto"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, o fato em 2 linhas com a fonte, pergunta curta",
+    "hashtags": [
+      "#curiosidades",
+      "#mente"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

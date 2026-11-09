@@ -1,0 +1,107 @@
+# Estúdio Ilustrando: comandos que o Codex pode rodar fora do sandbox sem perguntar.
+# Só valem quando a pasta do estúdio está marcada como confiável no Codex.
+# Por que: a narração (ElevenLabs, Fish Audio) e o download do Chromium precisam de internet,
+# e o sandbox padrão do Codex não tem internet. Nada além dos comandos do estúdio fica liberado.
+# Fonte: https://learn.chatgpt.com/docs/agent-configuration/rules (checado em 18/10/2026; recurso experimental).
+# Conferir: codex execpolicy check --rules .codex/rules/ilustrando.rules node src/video/cli.mjs --doctor
+
+prefix_rule(
+    pattern = ["node", ["src/video/cli.mjs", "src/carrossel.mjs", "src/identidade.mjs", "src/video/previa.mjs", "src/estudio/servidor.mjs", "scripts/marca.mjs", "scripts/sincronizar-skills.mjs", "scripts/buscar-imagem.mjs", "scripts/linha-editorial.mjs", "scripts/modelos.mjs", "scripts/estilos.mjs", "scripts/objetivos.mjs", "scripts/imagem-para-pontos.mjs", "scripts/folha-pontos.mjs", "scripts/respiros.mjs", "scripts/verificar.mjs", "ferramentas/instalador/instalar.mjs"]],
+    decision = "allow",
+    justification = "Motor do estúdio Ilustrando (vídeo, carrossel, marca)",
+    match = [["node", "src/video/cli.mjs", "--doctor"], ["node", "src/carrossel.mjs", "exemplo-formatos"]],
+    not_match = [["node", "outro.mjs"]],
+)
+
+prefix_rule(
+    pattern = ["npm", "run", ["estudio", "status", "doctor", "prova", "video", "previa", "carrossel", "identidade", "marca", "sincronizar", "galeria", "checar", "imagem", "linha", "modelos", "estilos", "objetivos", "verificar", "licenca", "ativar", "voz", "comece"]],
+    decision = "allow",
+    justification = "Scripts do estúdio Ilustrando",
+    match = [["npm", "run", "doctor"], ["npm", "run", "video", "--", "exemplo", "--voz=elevenlabs"]],
+    not_match = [["npm", "run", "outro"]],
+)
+
+prefix_rule(
+    pattern = ["npm", ["test", "ci"]],
+    decision = "allow",
+    justification = "Testes do estúdio e instalação exata do package-lock.json",
+)
+
+prefix_rule(
+    pattern = ["npx", "playwright", "install", "chromium"],
+    decision = "allow",
+    justification = "Baixar o navegador que renderiza os vídeos",
+)
+
+prefix_rule(
+    pattern = [["ffmpeg", "ffprobe"]],
+    decision = "allow",
+    justification = "Conferir e converter áudio e vídeo",
+)
+
+# Instalar pacote novo sempre pede aprovação da pessoa.
+prefix_rule(
+    pattern = ["npm", "install"],
+    decision = "prompt",
+    justification = "Instalar pacote baixa código da internet: confira o que vai ser instalado",
+)
+
+prefix_rule(
+    pattern = ["rm", "-rf"],
+    decision = "prompt",
+    justification = "Apagar pastas sem volta",
+)
+
+# Node portátil: quando o Node não está instalado no computador, o instalador de um clique deixa um Node dentro
+# da pasta (.programas/) e o assistente roda os mesmos comandos através de ferramentas/rodar (Mac, Linux e Git Bash)
+# ou ferramentas\rodar.cmd (PowerShell). Liberados só os mesmos comandos de cima.
+prefix_rule(
+    pattern = [["ferramentas/rodar", "ferramentas\\rodar.cmd", "ferramentas/rodar.cmd"], "npm", "run", ["estudio", "status", "doctor", "prova", "video", "previa", "carrossel", "identidade", "marca", "sincronizar", "galeria", "checar", "imagem", "linha", "modelos", "estilos", "objetivos", "verificar", "licenca", "ativar", "voz", "comece"]],
+    decision = "allow",
+    justification = "Scripts do estúdio Ilustrando com o Node portátil da pasta",
+    match = [["ferramentas/rodar", "npm", "run", "doctor"]],
+    not_match = [["ferramentas/rodar", "npm", "run", "outro"]],
+)
+
+prefix_rule(
+    pattern = [["ferramentas/rodar", "ferramentas\\rodar.cmd", "ferramentas/rodar.cmd"], "node", ["src/video/cli.mjs", "src/carrossel.mjs", "src/identidade.mjs", "src/video/previa.mjs", "src/estudio/servidor.mjs", "scripts/marca.mjs", "scripts/buscar-imagem.mjs", "scripts/linha-editorial.mjs", "scripts/modelos.mjs", "scripts/estilos.mjs", "scripts/objetivos.mjs", "scripts/imagem-para-pontos.mjs", "scripts/folha-pontos.mjs", "scripts/respiros.mjs", "scripts/verificar.mjs", "ferramentas/instalador/instalar.mjs"]],
+    decision = "allow",
+    justification = "Motor do estúdio Ilustrando com o Node portátil da pasta",
+    match = [["ferramentas/rodar", "node", "src/video/cli.mjs", "--doctor"]],
+    not_match = [["ferramentas/rodar", "node", "outro.mjs"]],
+)
+
+prefix_rule(
+    pattern = [["ferramentas/rodar", "ferramentas\\rodar.cmd", "ferramentas/rodar.cmd"], "npm", ["test", "ci"]],
+    decision = "allow",
+    justification = "Testes e instalação exata do package-lock.json com o Node portátil da pasta",
+)
+
+# Rota sem os dois cliques: a pessoa abre a pasta direto no Codex e ele roda o mesmo instalador da pasta, sem janela
+# (baixa o Node portátil se faltar, o FFmpeg, as peças, o navegador e o alinhador, tudo dentro da pasta e com SHA-256
+# conferido). No Windows, o ExecutionPolicy Bypass vale só para esse processo do PowerShell.
+prefix_rule(
+    pattern = ["bash", "ferramentas/instalador/instalar.sh"],
+    decision = "allow",
+    justification = "Instalador do estúdio Ilustrando (Mac e Linux), o mesmo dos dois cliques",
+    match = [["bash", "ferramentas/instalador/instalar.sh", "--assistente"]],
+    not_match = [["bash", "outro.sh"]],
+)
+
+prefix_rule(
+    pattern = [["powershell.exe", "powershell"], "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", ["ferramentas/instalador/instalar.ps1", "ferramentas\\instalador\\instalar.ps1"]],
+    decision = "allow",
+    justification = "Instalador do estúdio Ilustrando (Windows), o mesmo dos dois cliques",
+    match = [["powershell.exe", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "ferramentas/instalador/instalar.ps1", "-Assistente"]],
+    not_match = [["powershell.exe", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "outro.ps1"]],
+)
+
+# A chave da voz mora no arquivo .env e nunca pode ir para a conversa: o Codex não lê esse arquivo por comando.
+# (Quem liga a voz é o comando npm run voz, que nunca imprime a chave.) Os padrões cobrem o .env da pasta do estúdio.
+prefix_rule(
+    pattern = [["cat", "type", "head", "tail", "less", "more", "bat", "Get-Content", "gc"], [".env", "./.env", ".\\.env", "studio/.env"]],
+    decision = "forbidden",
+    justification = "O arquivo .env guarda a chave da voz: nunca deve ser lido na conversa. Use npm run voz -- --situacao.",
+    match = [["cat", ".env"], ["Get-Content", ".env"]],
+    not_match = [["cat", "README.md"]],
+)

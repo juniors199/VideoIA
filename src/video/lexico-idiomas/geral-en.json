@@ -1,0 +1,146 @@
+[
+[
+"hemiciclo",
+"congress|senate|senator|lawmaker|parliament|assembly|legislature|voting session"
+],
+[
+"documento",
+"\\blaw\\b|\\blaws\\b|regulation|article|rules?\\b|contract|document|invoice|form\\b|clause|decree|paperwork"
+],
+[
+"mapa",
+"\\bmap\\b|\\broute\\b|region|regions|\\bcity\\b|\\bcountry\\b|location|border|address|itinerary"
+],
+[
+"cela",
+"prison|jail|arrested|convicted|crime|cell\\b|inmate"
+],
+[
+"templo",
+"supreme court|court|justice|constitution|government|city hall"
+],
+[
+"chuva",
+"billion|billions|million|millions|public money|tax revenue|profit|revenue"
+],
+[
+"domino",
+"domino effect|chain reaction|one after another|one after the other|sequence of"
+],
+[
+"cubo",
+"square|cube|box|block|rectangle|rectangular"
+],
+[
+"moeda",
+"round|circle|circular|disc|coin|diameter|wheel\\b"
+],
+[
+"anel",
+"\\bring\\b|loop|cycle|orbit"
+],
+[
+"casa",
+"\\bhouse\\b|\\bhome\\b|dwelling|residence|residential|lives at"
+],
+[
+"predio",
+"building|company|bank\\b|shops?\\b|factory|congress|senate|court|office tower"
+],
+[
+"celular",
+"cell phone|smartphone|phone|\\bapp\\b|application|screen|digital|alert|message|website|internet|wifi|bluetooth|headset"
+],
+[
+"carro",
+"\\bcar\\b|vehicle|\\bbus\\b|traffic|highway|road trip|travel|airplane|driver"
+],
+[
+"relogio3d",
+"\\btime\\b|\\bhours?\\b|deadline|\\bdate\\b|\\bdays?\\b|\\byear\\b|\\byears\\b|expiration|clock|\\bseconds?\\b|\\bminutes?\\b"
+],
+[
+"balanca",
+"weight|balance|scale\\b|calculate|compare|fair|\\blaw\\b|rights?\\b"
+],
+[
+"engrenagem",
+"gear|gears|works\\b|system|mechanism|process|machine|algorithm|engine"
+],
+[
+"cadeado",
+"padlock|security|password|protect|privacy|\\bkey\\b|block|refuse|lock\\b|locked"
+],
+[
+"pino",
+"where|location|\\bplace\\b|region|\\bmap\\b|\\bcountry\\b|\\bcity\\b|\\bstate\\b|border|path|route"
+],
+[
+"lampada3d",
+"\\blight\\b|\\bidea\\b|lightbulb|discover|invent|bright|\\bsee\\b|vision|\\beye\\b|illusion|brain|think"
+],
+[
+"bateria3d",
+"energy|battery|charge|electric current|power\\b|ampere|outlet|plug"
+],
+[
+"termometro",
+"temperature|\\bhot\\b|\\bheat\\b|\\bcold\\b|degrees|fever|thermometer"
+],
+[
+"livro",
+"\\bbook\\b|\\btext\\b|written|article|history|novel|document|magazine"
+],
+[
+"arvore",
+"\\btree\\b|\\bplant\\b|nature|\\bsoil\\b|\\bearth\\b|seed|forest|bacteria"
+],
+[
+"nuvem",
+"\\bcloud\\b|\\bair\\b|\\bwind\\b|atmosphere|\\bsky\\b|climate|\\bgas\\b"
+],
+[
+"gota",
+"water|droplet|\\bdrop\\b|liquid|ocean|\\bsea\\b|\\briver\\b|sweat|humidity|moisture"
+],
+[
+"pessoa",
+"\\bperson\\b|\\bpeople\\b|\\byou\\b|someone|human|\\bbody\\b|patient|customer|\\buser\\b|voter"
+],
+[
+"grupo",
+"\\bgroup\\b|population|crowd|everyone|nobody|market|society"
+],
+[
+"pilha",
+"money|\\bdollars?\\b|price|value|interest|\\bcost\\b|\\bpay\\b|\\bpaid\\b|\\btax\\b|salary|\\bfee\\b|credit card|\\bbill\\b|\\bcents?\\b"
+],
+[
+"barras",
+"number|percent|chart|\\bdata\\b|statistic|grows|increase|quantity|total"
+],
+[
+"escada",
+"step|stage|ladder|level|stairs|evolution|sequence|hierarchy|narrows|siege"
+],
+[
+"seta",
+"arrow|direction|indicates|points to|leads to|results in"
+],
+[
+"esfera",
+"\\bsun\\b|\\bstar\\b|planet|\\bmoon\\b|sphere|\\bball\\b|\\bray\\b|shine"
+],
+[
+"prisma",
+"prism|triangle|electric shock|shock|discharge"
+],
+[
+"pontos",
+"\\bcode\\b|sequence of numbers|digits?|\\bbinary\\b|\\bzip\\b|\\bqr\\b"
+],
+[
+"lamina",
+"\\bsheet\\b|\\bcard\\b|\\bid card\\b|\\blabel\\b|\\bplate\\b|\\bsign\\b"
+]
+]

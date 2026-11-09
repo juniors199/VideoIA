@@ -1,0 +1,216 @@
+{
+  "id": "fe",
+  "nome": "Bíblia, fé e tradição",
+  "versao": 1,
+  "paraQuem": "páginas cristãs, estudo bíblico, história das religiões",
+  "exemplosDePedido": [
+    "O fruto proibido nunca foi maçã",
+    "Os três reis magos eram mesmo três?"
+  ],
+  "apelidos": [
+    "biblia",
+    "religiao",
+    "biblia-e-fe"
+  ],
+  "formato": {
+    "preferidos": [
+      "mito-fato",
+      "revelacao",
+      "causa-efeito",
+      "antes-depois"
+    ],
+    "proibidos": [
+      "comparativo"
+    ],
+    "padrao": "mito-fato"
+  },
+  "roteiro": {
+    "palavras": [
+      150,
+      220
+    ],
+    "alvoSegundos": [
+      55,
+      80
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "a crença popular",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "texto",
+        "seg": [
+          8,
+          15
+        ],
+        "instrucao": "o que o texto diz, com livro, capítulo e versículo",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "contexto",
+        "seg": [
+          10,
+          20
+        ],
+        "instrucao": "contexto histórico ou de tradução"
+      },
+      {
+        "bloco": "porque",
+        "seg": [
+          8,
+          12
+        ],
+        "instrucao": "por que a versão popular pegou"
+      },
+      {
+        "bloco": "reflexao",
+        "seg": [
+          4,
+          8
+        ],
+        "instrucao": "reflexão curta"
+      },
+      {
+        "bloco": "pergunta",
+        "seg": [
+          3,
+          5
+        ]
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          3,
+          5
+        ]
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "HE",
+      "EE"
+    ],
+    "abertura3Tempos": true,
+    "promessaMarca": null,
+    "loopAberto": true,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "respeitoso, acolhedor, sem pregação nem deboche; alfinetada só no costume, nunca na fé",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 0.95,
+    "direcao": "[warm, calm]",
+    "pausaEntreBlocos": 0.15
+  },
+  "visual": {
+    "estilo": "padrao",
+    "efeitos": {
+      "bloom": 0.3
+    },
+    "cenarios": [
+      "templo",
+      "deserto",
+      "campo",
+      "agua"
+    ],
+    "cenas": [
+      "igrejacena"
+    ],
+    "pecasBase": [
+      "livrosanto",
+      "rolo",
+      "pomba",
+      "vela",
+      "candelabro",
+      "ovelha",
+      "pastor",
+      "trigo",
+      "paopeixes",
+      "arcaalianca",
+      "tabuas",
+      "arvorejardim"
+    ],
+    "reserva": [
+      "livrosanto",
+      "rolo",
+      "vela",
+      "pomba"
+    ],
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "transicao": "desfoque",
+    "contador": "quando-houver-numero",
+    "titulos": "gancho"
+  },
+  "ritmo": {
+    "beatSeg": [
+      3,
+      9
+    ],
+    "trocaVisualMaxSeg": 5
+  },
+  "som": {
+    "musica": true,
+    "sfx": "discreto"
+  },
+  "cta": {
+    "tipo": "compartilhar",
+    "texto": "Manda para alguém que ainda acredita nessa versão.",
+    "palavra": null,
+    "perguntaFinal": "Você conhecia essa história?"
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "mitofato",
+      "texto",
+      "dado",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      8
+    ],
+    "estilo": "padrao",
+    "virais": [
+      "versiculo",
+      "citacao",
+      "tipografico",
+      "nota",
+      "quiz",
+      "tweet"
+    ]
+  },
+  "publicar": {
+    "legenda": "a crença, o que o texto diz (com a referência) e a tradução usada",
+    "hashtags": [
+      "#biblia",
+      "#fe"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [
+      "ataque a religião"
+    ],
+    "revisaoHumana": false
+  }
+}

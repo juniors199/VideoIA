@@ -1,0 +1,314 @@
+{
+ "tema": "MORANGO",
+ "estilo": "letreiro",
+ "capa": {
+  "texto": "Para a botânica, o morango *não é* fruto"
+ },
+ "beats": [
+  {
+   "id": "gancho",
+   "palavras": [
+    0,
+    10
+   ],
+   "titulo": {
+    "texto": "Para a botânica, o morango *não é* fruto"
+   },
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "morango",
+     "entra": 0
+    }
+   ]
+  },
+  {
+   "id": "banana",
+   "palavras": [
+    11,
+    16
+   ],
+   "tom": "claro",
+   "titulo": {
+    "texto": "E a banana é *baga*"
+   },
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "banana",
+     "entra": 0
+    }
+   ]
+  },
+  {
+   "id": "ovario",
+   "palavras": [
+    17,
+    27
+   ],
+   "titulo": {
+    "texto": "Na botânica, fruto nasce do *ovário*"
+   },
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "flor",
+     "entra": 0,
+     "dados": {
+      "estado": "ovario"
+     }
+    }
+   ]
+  },
+  {
+   "id": "vermelho",
+   "palavras": [
+    28,
+    36
+   ],
+   "titulo": {
+    "texto": "A parte vermelha *não* vem do ovário"
+   },
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "morango",
+     "entra": "parte"
+    }
+   ]
+  },
+  {
+   "id": "receptaculo",
+   "palavras": [
+    37,
+    45
+   ],
+   "titulo": {
+    "texto": "Vem do | *receptáculo*"
+   },
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "morango",
+     "entra": 0,
+     "dados": {
+      "estado": "flor"
+     }
+    },
+    {
+     "tipo": "letreiro",
+     "forma": "frase",
+     "texto": "A base da flor *incha*",
+     "entra": "base"
+    }
+   ],
+   "fator": 0.85
+  },
+  {
+   "id": "embrapa",
+   "palavras": [
+    46,
+    54
+   ],
+   "elementos": [
+    {
+     "tipo": "letreiro",
+     "forma": "risco",
+     "texto": "fruto",
+     "troca": "pseudofruto",
+     "entra": "chama",
+     "em": "pseudofruto."
+    },
+    {
+     "tipo": "peca",
+     "forma": "morango",
+     "entra": 0,
+     "dados": {
+      "estado": "corte"
+     }
+    }
+   ]
+  },
+  {
+   "id": "pontinhos",
+   "palavras": [
+    55,
+    60
+   ],
+   "titulo": {
+    "texto": "Os pontinhos? *Não* são sementes"
+   },
+   "camera": {
+    "plano": "normal",
+    "mov": "avanca"
+   },
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "morango",
+     "entra": 0,
+     "dados": {
+      "estado": "close"
+     }
+    }
+   ],
+   "fator": 0.85
+  },
+  {
+   "id": "aquenio",
+   "palavras": [
+    61,
+    68
+   ],
+   "titulo": {
+    "texto": "Cada um é um *fruto*"
+   },
+   "camera": {
+    "plano": "fechado",
+    "mov": "avanca"
+   },
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "morango",
+     "entra": 0,
+     "dados": {
+      "estado": "aquenio"
+     }
+    },
+    {
+     "tipo": "letreiro",
+     "forma": "frase",
+     "texto": "Chamado *aquênio*",
+     "entra": "chamado"
+    }
+   ]
+  },
+  {
+   "id": "duzentos",
+   "palavras": [
+    69,
+    73
+   ],
+   "som": "virada",
+   "elementos": [
+    {
+     "tipo": "contador",
+     "valor": 200,
+     "prefixo": "~",
+     "legenda": "frutos em cada morango",
+     "entra": "São",
+     "pos": [
+      0.5,
+      0.25
+     ],
+     "dur": 0.6
+    },
+    {
+     "tipo": "peca",
+     "forma": "morango",
+     "entra": "São"
+    }
+   ],
+   "camera": {
+    "plano": "fechado",
+    "mov": "deriva"
+   }
+  },
+  {
+   "id": "banana-ovario",
+   "palavras": [
+    74,
+    86
+   ],
+   "titulo": {
+    "texto": "Banana: *um* ovário"
+   },
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "banana",
+     "entra": 0,
+     "dados": {
+      "estado": "aberta"
+     }
+    },
+    {
+     "tipo": "letreiro",
+     "forma": "frase",
+     "texto": "Sementes na *polpa*",
+     "entra": "sementes"
+    }
+   ],
+   "camera": {
+    "plano": "fechado",
+    "mov": "deriva"
+   }
+  },
+  {
+   "id": "bagas",
+   "palavras": [
+    87,
+    90
+   ],
+   "titulo": {
+    "texto": "Por isso é *baga*"
+   },
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "banana",
+     "entra": 0
+    }
+   ],
+   "camera": {
+    "plano": "fechado",
+    "mov": "deriva"
+   }
+  },
+  {
+   "id": "uva",
+   "palavras": [
+    91,
+    96
+   ],
+   "titulo": {
+    "texto": "Como a *uva*"
+   },
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "uvas",
+     "entra": 0
+    }
+   ],
+   "camera": {
+    "plano": "fechado",
+    "mov": "avanca"
+   }
+  },
+  {
+   "id": "cta",
+   "palavras": [
+    97,
+    103
+   ],
+   "titulo": {
+    "texto": "Segue pra ver a *próxima*"
+   },
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "morango",
+     "entra": "Segue"
+    },
+    {
+     "tipo": "letreiro",
+     "forma": "desliga",
+     "entra": "próxima."
+    }
+   ]
+  }
+ ],
+ "hashPalavras": "24744fff1ace"
+}

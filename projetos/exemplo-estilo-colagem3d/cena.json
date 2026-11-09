@@ -1,0 +1,586 @@
+{
+ "perfil": "curiosidades",
+ "tema": "TESTE ESTILO COLAGEM3D",
+ "efeitos": {
+  "continuidade": true,
+  "entrada": "queda",
+  "fisica": true,
+  "luz": "estudio",
+  "reels0612": true
+ },
+ "beats": [
+  {
+   "id": "b01",
+   "palavras": [
+    0,
+    1
+   ],
+   "elementos": [
+    {
+     "tipo": "contador",
+     "valor": 1909,
+     "papel": "destaque",
+     "legenda": "a Torre Eiffel",
+     "entra": "1909,",
+     "pos": [
+      0.5,
+      0.5
+     ],
+     "formato": "ano",
+     "entrada": "rolo"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "avanca"
+   },
+   "cenario": "estudio-tv",
+   "titulo": {
+    "texto": "Em *1909*"
+   }
+  },
+  {
+   "id": "b01f",
+   "palavras": [
+    2,
+    9
+   ],
+   "elementos": [
+    {
+     "tipo": "imagem",
+     "forma": "card",
+     "largura": 600,
+     "papel": "destaque",
+     "entra": "Torre",
+     "_foto": "Torre Eiffel",
+     "entrada": "recua",
+     "arquivo": "assets/torre-eiffel.jpg",
+     "credito": "Gordon Gartrell (CC BY-SA 2.0)",
+     "altura": 750
+    }
+   ],
+   "camera": {
+    "plano": "lateral",
+    "mov": "orbita"
+   },
+   "cenario": "estudio-tv"
+  },
+  {
+   "id": "b02",
+   "palavras": [
+    10,
+    18
+   ],
+   "elementos": [
+    {
+     "tipo": "imagem",
+     "forma": "card",
+     "largura": 600,
+     "papel": "destaque",
+     "entra": "Exposição",
+     "_foto": "Exposição Universal de Paris",
+     "entrada": "iris",
+     "arquivo": "assets/exposicao-universal-de-paris.jpg",
+     "credito": "Auguste Trichon (1814-1898) ? Guirimier (Public domain)",
+     "altura": 407
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "recua"
+   },
+   "cenario": "estudio-tv"
+  },
+  {
+   "id": "b03",
+   "palavras": [
+    19,
+    20
+   ],
+   "elementos": [
+    {
+     "tipo": "contador",
+     "valor": 1889,
+     "papel": "destaque",
+     "legenda": "",
+     "entra": "1889.",
+     "pos": [
+      0.5,
+      0.5
+     ],
+     "formato": "ano",
+     "entrada": "dispara"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "nenhum"
+   },
+   "cenario": "sala"
+  },
+  {
+   "id": "b04",
+   "palavras": [
+    21,
+    29
+   ],
+   "elementos": [
+    {
+     "tipo": "imagem",
+     "forma": "card",
+     "largura": 600,
+     "papel": "destaque",
+     "entra": "Gustave",
+     "_foto": "Gustave Eiffel",
+     "entrada": "recua",
+     "arquivo": "assets/gustave-eiffel.jpg",
+     "credito": "François Touranchet (Public domain)",
+     "altura": 720
+    }
+   ],
+   "camera": {
+    "plano": "fechado",
+    "mov": "avanca"
+   },
+   "cenario": "estudio-tv",
+   "transicao": "varredura"
+  },
+  {
+   "id": "b05",
+   "palavras": [
+    30,
+    39
+   ],
+   "modelo": {
+    "nome": "comparativo",
+    "vencedor": "b",
+    "a": {
+     "forma": "pincelpaleta",
+     "rotulo": "Um lado"
+    },
+    "b": {
+     "forma": "multidaopraca",
+     "rotulo": "Outro"
+    }
+   },
+   "camera": {
+    "plano": "aberto",
+    "mov": "deriva"
+   }
+  },
+  {
+   "id": "b06",
+   "palavras": [
+    40,
+    50
+   ],
+   "modelo": {
+    "nome": "causa-efeito",
+    "a": {
+     "forma": "bequer",
+     "rotulo": "Causa"
+    },
+    "b": {
+     "forma": "laboratorio3d",
+     "rotulo": "Efeito"
+    }
+   },
+   "camera": {
+    "plano": "aberto",
+    "mov": "deriva"
+   },
+   "transicao": "corte"
+  },
+  {
+   "id": "b07",
+   "palavras": [
+    51,
+    58
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "microscopio",
+     "papel": "destaque",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "escala": 1.6,
+     "entra": 0.1,
+     "entrada": "desliza"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "avanca"
+   },
+   "cenario": "estudio-tv",
+   "transicao": "corte"
+  },
+  {
+   "id": "b08",
+   "palavras": [
+    59,
+    64
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "antena",
+     "papel": "destaque",
+     "pos": [
+      -1.1,
+      0,
+      0
+     ],
+     "escala": 1.2,
+     "entra": 0.1,
+     "entrada": "queda"
+    },
+    {
+     "tipo": "peca",
+     "forma": "soldadocapacete",
+     "papel": "frente",
+     "pos": [
+      1.1,
+      0,
+      0
+     ],
+     "escala": 1.2,
+     "entra": 0.6
+    }
+   ],
+   "camera": {
+    "plano": "lateral",
+    "mov": "orbita"
+   },
+   "cenario": "estudio-tv"
+  },
+  {
+   "id": "b09",
+   "palavras": [
+    65,
+    75
+   ],
+   "elementos": [
+    {
+     "tipo": "contador",
+     "valor": 6000000,
+     "papel": "destaque",
+     "legenda": "pessoas sobem nela",
+     "entra": "seis",
+     "pos": [
+      0.5,
+      0.5
+     ],
+     "entrada": "rolo"
+    }
+   ],
+   "camera": {
+    "plano": "normal",
+    "mov": "nenhum"
+   },
+   "cenario": "estudio-tv",
+   "transicao": "varredura"
+  },
+  {
+   "id": "b10",
+   "palavras": [
+    76,
+    82
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "compartilhar",
+     "papel": "destaque",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "escala": 1.6,
+     "entra": 0.1,
+     "entrada": "gira"
+    }
+   ],
+   "camera": {
+    "plano": "lateralEsq",
+    "mov": "panDir"
+   },
+   "cenario": "sala"
+  },
+  {
+   "id": "b11",
+   "palavras": [
+    83,
+    95
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "seguirperfil",
+     "papel": "destaque",
+     "pos": [
+      -1.1,
+      0,
+      0
+     ],
+     "escala": 1.2,
+     "entra": 0.1,
+     "entrada": "desliza"
+    },
+    {
+     "tipo": "peca",
+     "forma": "comentario",
+     "papel": "frente",
+     "pos": [
+      1.1,
+      0,
+      0
+     ],
+     "escala": 1.2,
+     "entra": 0.6
+    }
+   ],
+   "camera": {
+    "plano": "fechado",
+    "mov": "avanca"
+   },
+   "cenario": "estudio-tv",
+   "titulo": {
+    "texto": "Segue a página e comenta *ILUSTRANDO*",
+    "entrada": "marca"
+   }
+  }
+ ],
+ "gerado": "autoplano",
+ "relevancia": {
+  "versao": 1,
+  "familias": [
+   "ciencia",
+   "redes"
+  ],
+  "beats": [
+   {
+    "beat": "b01",
+    "palavras": [
+     0,
+     1
+    ],
+    "casou": [],
+    "motivo": "número da fala"
+   },
+   {
+    "beat": "b01f",
+    "palavras": [
+     2,
+     9
+    ],
+    "casou": [],
+    "motivo": "nome próprio \"Torre Eiffel\": foto real buscada sozinha",
+    "foto": "Torre Eiffel"
+   },
+   {
+    "beat": "b02",
+    "palavras": [
+     10,
+     18
+    ],
+    "casou": [],
+    "motivo": "nome próprio \"Exposição Universal de Paris\": foto real buscada sozinha",
+    "foto": "Exposição Universal de Paris"
+   },
+   {
+    "beat": "b03",
+    "palavras": [
+     19,
+     20
+    ],
+    "casou": [],
+    "motivo": "número da fala"
+   },
+   {
+    "beat": "b04",
+    "palavras": [
+     21,
+     29
+    ],
+    "casou": [],
+    "motivo": "nome próprio \"Gustave Eiffel\": foto real buscada sozinha",
+    "foto": "Gustave Eiffel"
+   },
+   {
+    "beat": "b05",
+    "palavras": [
+     30,
+     39
+    ],
+    "casou": [
+     {
+      "forma": "multidaopraca",
+      "nota": 1.5,
+      "termos": [
+       "protesto"
+      ]
+     },
+     {
+      "forma": "multidao",
+      "nota": 1.5,
+      "termos": [
+       "protesto"
+      ]
+     },
+     {
+      "forma": "cartaz",
+      "nota": 1.5,
+      "termos": [
+       "protesto"
+      ]
+     }
+    ]
+   },
+   {
+    "beat": "b06",
+    "palavras": [
+     40,
+     50
+    ],
+    "casou": [
+     {
+      "forma": "bequer",
+      "nota": 1.5,
+      "termos": [
+       "laboratorio"
+      ]
+     },
+     {
+      "forma": "laboratorio3d",
+      "nota": 1.5,
+      "termos": [
+       "laboratorio"
+      ]
+     },
+     {
+      "forma": "cientistaoculos",
+      "nota": 1.5,
+      "termos": [
+       "laboratorio"
+      ]
+     }
+    ]
+   },
+   {
+    "beat": "b07",
+    "palavras": [
+     51,
+     58
+    ],
+    "casou": [],
+    "motivo": "nada casou; peça de apoio coerente (microscopio)",
+    "apoio": true
+   },
+   {
+    "beat": "b08",
+    "palavras": [
+     59,
+     64
+    ],
+    "casou": [
+     {
+      "forma": "antena",
+      "nota": 1.5,
+      "termos": [
+       "antena"
+      ]
+     },
+     {
+      "forma": "soldadocapacete",
+      "nota": 1.5,
+      "termos": [
+       "exercito"
+      ]
+     }
+    ],
+    "motivo": "peça casada com a fala"
+   },
+   {
+    "beat": "b09",
+    "palavras": [
+     65,
+     75
+    ],
+    "casou": [
+     {
+      "forma": "boneco",
+      "nota": 2,
+      "termos": [
+       "pessoas",
+       "pessoa"
+      ]
+     },
+     {
+      "forma": "sacodinheiro",
+      "nota": 1.5,
+      "termos": [
+       "milhoes"
+      ]
+     },
+     {
+      "forma": "pessoa",
+      "nota": 1.19,
+      "termos": [
+       "pessoa"
+      ]
+     }
+    ],
+    "motivo": "número da fala"
+   },
+   {
+    "beat": "b10",
+    "palavras": [
+     76,
+     82
+    ],
+    "casou": [
+     {
+      "forma": "compartilhar",
+      "nota": 2.5,
+      "termos": [
+       "manda pra um amigo"
+      ]
+     }
+    ],
+    "motivo": "peça casada com a fala"
+   },
+   {
+    "beat": "b11",
+    "palavras": [
+     83,
+     95
+    ],
+    "casou": [
+     {
+      "forma": "botaoseguir",
+      "nota": 2.5,
+      "termos": [
+       "segue a pagina"
+      ]
+     },
+     {
+      "forma": "comentario",
+      "nota": 1.8,
+      "termos": [
+       "comenta"
+      ]
+     }
+    ],
+    "motivo": "peça casada com a fala"
+   }
+  ]
+ },
+ "hashPalavras": "b22b47bf15ba",
+ "automatica": true
+}

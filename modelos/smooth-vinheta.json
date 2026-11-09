@@ -1,0 +1,160 @@
+{
+  "id": "smooth-vinheta",
+  "nome": "Smooth Vinheta (editorial em papel, serifa e traço)",
+  "versao": 1,
+  "paraQuem": "abertura, frase de impacto e curiosidade calma: papel claro, serifa grande letra a letra, traço que se desenha e o selo final invertido",
+  "exemplosDePedido": [
+    "A palavra mais antiga do português",
+    "O que significa o nome do seu estado"
+  ],
+  "apelidos": [
+    "fluido-vinheta",
+    "vinheta",
+    "editorial-papel"
+  ],
+  "formato": {
+    "preferidos": [
+      "revelacao",
+      "mito-fato"
+    ],
+    "proibidos": [],
+    "padrao": "revelacao"
+  },
+  "roteiro": {
+    "palavras": [
+      80,
+      125
+    ],
+    "alvoSegundos": [
+      30,
+      50
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "o fato que contraria, um número ou um contraste nos 2 primeiros segundos; começa pelo fato, sem \"você sabia que\"",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "passos",
+        "seg": [
+          15,
+          32
+        ],
+        "instrucao": "frases curtas, cada uma com um desenho claro (número que conta, botão, card, gráfico, notificação, comparação); frase que não dá desenho é fraca",
+        "n": [
+          3,
+          7
+        ]
+      },
+      {
+        "bloco": "virada",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "o detalhe que muda tudo, perto do fim, em uma frase curta"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "convite final curto: seguir e comentar a palavra"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "HE"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "calmo e elegante, frases curtas com respiro",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[confident, clear]",
+    "pausaEntreBlocos": 0.12
+  },
+  "visual": {
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "contador": "quando-houver-numero",
+    "estilo": "smooth-vinheta",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [
+      "botaoseguir",
+      "lupa"
+    ],
+    "reserva": [
+      "lupa"
+    ],
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2,
+      5
+    ],
+    "trocaVisualMaxSeg": 5
+  },
+  "som": {
+    "musica": true,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, o porquê em 2 linhas, pergunta de opinião",
+    "hashtags": [
+      "#curiosidades",
+      "#lingua"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

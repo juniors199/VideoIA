@@ -1,0 +1,183 @@
+{
+  "id": "teologia",
+  "nome": "Teologia (arte sacra, papel e ouro)",
+  "versao": 1,
+  "paraQuem": "explicações de fé, Bíblia, história das religiões e doutrina em tom respeitoso: uma pergunta ou objeção, o texto, o contexto e a resposta, ilustrados com arte sacra de domínio público",
+  "exemplosDePedido": [
+    "Quem traduziu a Bíblia para o latim?",
+    "Por que a Igreja usa imagens se Deus proíbe ídolos?",
+    "O que significa Mãe de Deus"
+  ],
+  "apelidos": [
+    "teologales",
+    "arte-sacra",
+    "biblia-ilustrada",
+    "doutrina"
+  ],
+  "formato": {
+    "preferidos": [
+      "causa-efeito",
+      "mito-fato",
+      "revelacao",
+      "passo-a-passo"
+    ],
+    "proibidos": [
+      "ranking"
+    ],
+    "padrao": "causa-efeito"
+  },
+  "roteiro": {
+    "palavras": [
+      70,
+      230
+    ],
+    "alvoSegundos": [
+      28,
+      90
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "a pergunta ou a objeção em uma frase; vira o título da abertura com a obra na auréola de ouro",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "texto",
+        "seg": [
+          8,
+          18
+        ],
+        "instrucao": "o que o texto diz, com livro, capítulo e versículo, ou o que a fonte histórica registra; vira citação, ficha ou lista",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "contexto",
+        "seg": [
+          10,
+          25
+        ],
+        "instrucao": "onde e quando aconteceu (mapa, linha do tempo), quem estava envolvido (obra de época), o que a palavra significava na língua original (inscrição)"
+      },
+      {
+        "bloco": "resposta",
+        "seg": [
+          6,
+          14
+        ],
+        "instrucao": "o que isso significa e o que não significa (fichas com carimbo NÃO), sem ataque a ninguém"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "pedido de compartilhar e o convite final padrão (seguir e comentar); vira o fecho"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "HE",
+      "EE"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      0
+    ],
+    "pessoa": "você",
+    "tom": "respeitoso, claro, de quem ensina sem pregar nem debochar; atribui cada afirmação a uma fonte e diz quando há mais de uma leitura",
+    "vocabulario": "normal",
+    "proibir": [
+      "ofensa a qualquer religião"
+    ]
+  },
+  "voz": {
+    "velocidade": 0.98,
+    "direcao": "[warm, calm]",
+    "pausaEntreBlocos": 0.1
+  },
+  "visual": {
+    "pecasPorTema": false,
+    "imagens": "recomendada",
+    "contador": "quando-houver-numero",
+    "estilo": "teologia",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [
+      "livro"
+    ],
+    "reserva": [
+      "livro"
+    ],
+    "titulos": "por-etapa"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2.2,
+      5.5
+    ],
+    "trocaVisualMaxSeg": 5
+  },
+  "som": {
+    "musica": true,
+    "sfx": "discreto"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "mitofato",
+      "texto",
+      "dado",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      8
+    ],
+    "estilo": "padrao",
+    "virais": [
+      "versiculo",
+      "citacao",
+      "tipografico",
+      "nota",
+      "quiz",
+      "tweet"
+    ]
+  },
+  "publicar": {
+    "legenda": "a pergunta, a resposta em 2 linhas, as fontes e o crédito de cada obra (autor, título, data e licença)",
+    "hashtags": [
+      "#biblia",
+      "#fe",
+      "#historia"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [
+      "ataque a religião"
+    ],
+    "revisaoHumana": false
+  }
+}

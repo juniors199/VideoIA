@@ -1,0 +1,51 @@
+{
+  "perfil": "curiosidades",
+  "tema": "POLVO",
+  "legenda": "O polvo tem três corações, sangue azul e uns 500 milhões de neurônios, dois terços deles nos braços.\n\nQual bicho você quer ver explicado aqui?\n\nSegue a página pra ver a próxima.\n\nFoto: Diego Delso (CC BY-SA 4.0) | Foto: Betty Wills (Atsme) (CC BY-SA 4.0) | Foto: ImagePerson (CC BY-SA 4.0)",
+  "marcadores": [
+    "polvo",
+    "animais",
+    "ciencia",
+    "curiosidades"
+  ],
+  "fontes": [
+    "PBS Nature, Octopus: https://www.pbs.org/wnet/nature/group/other-species/octopus/",
+    "Smithsonian Magazine, Ten wild facts about octopuses: https://www.smithsonianmag.com/science-nature/ten-wild-facts-about-octopuses-they-have-three-hearts-big-brains-and-blue-blood-7625828/",
+    "Live Science, How many hearts does an octopus have: https://www.livescience.com/how-many-hearts-does-an-octopus-have",
+    "OIST: https://www.oist.jp/node/35601",
+    "ScienceAlert, octopus arms: https://www.sciencealert.com/here-s-how-octopus-arms-make-decisions-without-input-from-the-brain"
+  ],
+  "slides": [
+    {
+      "tipo": "tweet",
+      "texto": "O polvo tem *três corações*. E isso nem é a coisa mais estranha nele.",
+      "imagem": "assets/polvo.jpg",
+      "foco": "50% 40%"
+    },
+    {
+      "tipo": "tweet",
+      "texto": "Dois corações bombeiam sangue só para as brânquias.\n\nO terceiro manda o sangue para o resto do corpo.",
+      "imagem": "assets/ventosas.jpg"
+    },
+    {
+      "tipo": "tweet",
+      "texto": "E o sangue dele é *azul*.\n\nA culpa é da hemocianina, uma proteína que carrega oxigênio usando cobre. O nosso sangue usa ferro, por isso é vermelho.",
+      "imagem": "assets/polvo-azul.jpg"
+    },
+    {
+      "tipo": "tweet",
+      "texto": "O polvo tem cerca de 500 milhões de neurônios.\n\nÉ um número parecido com o de um cão.",
+      "imagem": "assets/polvo-recife.jpg"
+    },
+    {
+      "tipo": "tweet",
+      "texto": "O mais doido: cerca de *2 em cada 3* neurônios ficam nos braços, e não no cérebro.\n\nPor isso cada braço consegue agir com certa independência.",
+      "imagem": "assets/polvo-dia.jpg"
+    },
+    {
+      "tipo": "tweet",
+      "texto": "Qual bicho você quer ver explicado aqui?\n\nSegue a página pra ver a próxima.",
+      "imagem": "assets/polvo-azul.jpg"
+    }
+  ]
+}

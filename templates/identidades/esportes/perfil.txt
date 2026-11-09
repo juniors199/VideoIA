@@ -1,0 +1,24 @@
+PERFIL DA PÁGINA (Esportes)
+Gerado por npm run marca. Use o mesmo nome, @ e foto nas 4 redes.
+
+Nome: Lance Explicado
+@: @lanceexplicado
+
+Bio (Instagram e Facebook, até 150 caracteres):
+O esporte além do placar ⚽
+Regras, recordes e bastidores explicados em 1 minuto.
+Página independente, sem ligação com clubes.
+
+Bio curta (TikTok, até 80 caracteres):
+O esporte além do placar: regras, recordes e bastidores.
+
+Onde vai cada arquivo (esta pasta):
+- avatar.png: foto de perfil no Instagram, TikTok, YouTube e Facebook (as redes cortam em círculo; veja avatar-previa-circulo.png).
+- banner-youtube.png: imagem do banner do canal do YouTube (2560x1440).
+- banner-facebook.png: foto de capa da Página do Facebook.
+- destaque-instagram.png: capa dos destaques do Instagram.
+- logotipo.png: nome da página com fundo transparente (para assinar materiais).
+- icone-app.png: ícone quadrado arredondado.
+- design-system.png: folha com tudo junto, para conferir.
+
+Cores: destaque #B6F23A, apoio #E0FAAC, texto sobre o destaque #161D07.

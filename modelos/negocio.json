@@ -1,0 +1,211 @@
+{
+  "id": "negocio",
+  "nome": "Negócio local, produto e serviço",
+  "versao": 1,
+  "paraQuem": "padaria, oficina, clínica, loja, prestador de serviço, social media que atende clientes",
+  "exemplosDePedido": [
+    "Por que o nosso pão leva 24 horas",
+    "Por que a revisão da oficina custa isso"
+  ],
+  "apelidos": [
+    "negocio-local",
+    "loja",
+    "empresa",
+    "servico"
+  ],
+  "formato": {
+    "preferidos": [
+      "causa-efeito",
+      "mito-fato",
+      "passo-a-passo",
+      "antes-depois"
+    ],
+    "proibidos": [],
+    "padrao": "causa-efeito"
+  },
+  "roteiro": {
+    "palavras": [
+      90,
+      150
+    ],
+    "alvoSegundos": [
+      35,
+      55
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "a dúvida do cliente",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "explicacao",
+        "seg": [
+          10,
+          20
+        ],
+        "instrucao": "o processo ou o diferencial"
+      },
+      {
+        "bloco": "prova",
+        "seg": [
+          5,
+          10
+        ],
+        "instrucao": "prova concreta: ingrediente, prazo, garantia, número",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "onde",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "onde encontrar (endereço, horário, link)"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "visitar ou pedir pelo link",
+        "obrigatorio": true
+      }
+    ],
+    "gatilhos": [
+      "PD",
+      "CI",
+      "EN"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0,
+    "alfinetadas": [
+      0,
+      0
+    ],
+    "pessoa": "você",
+    "tom": "dono que explica com orgulho, sem superlativo vazio",
+    "vocabulario": "simples",
+    "proibir": [
+      "o melhor da cidade",
+      "o melhor do brasil",
+      "o melhor do mundo",
+      "imperdível",
+      "resultado garantido"
+    ]
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[warm]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "estilo": "editorial",
+    "cenarios": [
+      "sala",
+      "mesa",
+      "fabrica",
+      "rua",
+      "cidade"
+    ],
+    "cenas": [
+      "mercado3d",
+      "fabricalinha",
+      "escritorio3d"
+    ],
+    "pecasBase": [
+      "mercado",
+      "sacola",
+      "etiqueta",
+      "maquininha",
+      "carrinhocompras",
+      "registradora",
+      "prateleiramercado",
+      "lojaperfil",
+      "relogio3d",
+      "mapa"
+    ],
+    "reserva": [
+      "lojaperfil",
+      "sacola",
+      "etiqueta",
+      "relogio3d"
+    ],
+    "pecasPorTema": true,
+    "imagens": "recomendada",
+    "transicao": "varredura",
+    "contador": "quando-houver-numero",
+    "titulos": "gancho"
+  },
+  "ritmo": {
+    "beatSeg": [
+      3,
+      7
+    ],
+    "trocaVisualMaxSeg": 4,
+    "beatsMax": 12
+  },
+  "som": {
+    "musica": true,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "visitar",
+    "texto": "Passa aqui na loja ou pede pelo link da bio.",
+    "palavra": null,
+    "perguntaFinal": null,
+    "endereco": null,
+    "whatsapp": null,
+    "horario": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "passos",
+      "texto",
+      "dado",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      8
+    ],
+    "estilo": "editorial",
+    "virais": [
+      "informativo",
+      "chat",
+      "passo",
+      "tabela",
+      "nota",
+      "colagem",
+      "receita"
+    ]
+  },
+  "publicar": {
+    "legenda": "a dúvida, a resposta e onde encontrar (endereço, horário, link)",
+    "hashtags": [
+      "#comerciolocal"
+    ],
+    "fontesNaLegenda": false,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 1,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [
+      "antes e depois de paciente",
+      "promessa de resultado em saúde ou estética"
+    ],
+    "revisaoHumana": false
+  }
+}

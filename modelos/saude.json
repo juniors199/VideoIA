@@ -1,0 +1,146 @@
+{
+  "id": "saude",
+  "nome": "Saúde",
+  "versao": 1,
+  "paraQuem": "perfis de saúde e bem-estar com responsabilidade",
+  "exemplosDePedido": [
+    "Tomar banho depois de comer faz mal?"
+  ],
+  "apelidos": [
+    "bem-estar"
+  ],
+  "formato": {
+    "preferidos": [
+      "mito-fato",
+      "causa-efeito",
+      "revelacao"
+    ],
+    "proibidos": [
+      "ranking"
+    ],
+    "padrao": "mito-fato"
+  },
+  "roteiro": {
+    "palavras": [
+      140,
+      210
+    ],
+    "alvoSegundos": [
+      50,
+      75
+    ],
+    "gatilhos": [
+      "PD",
+      "CI"
+    ],
+    "abertura3Tempos": true,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      0
+    ],
+    "pessoa": "você",
+    "tom": "calmo, preciso, sem alarme",
+    "vocabulario": "simples",
+    "proibir": [
+      "cura",
+      "milagre",
+      "emagrece rápido"
+    ]
+  },
+  "voz": {
+    "velocidade": 0.97,
+    "direcao": "[calm, clear]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "estilo": "papel",
+    "cenarios": [
+      "sala",
+      "mesa"
+    ],
+    "pecasBase": [
+      "cruzmedica",
+      "estetoscopio",
+      "coracao",
+      "cerebro",
+      "capsula",
+      "gota",
+      "termometro",
+      "piramidealimentos",
+      "medicojaleco"
+    ],
+    "reserva": [
+      "estetoscopio",
+      "coracao",
+      "cruzmedica"
+    ],
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "transicao": "desfoque",
+    "contador": "quando-houver-numero",
+    "titulos": "gancho"
+  },
+  "ritmo": {
+    "beatSeg": [
+      3,
+      9
+    ],
+    "trocaVisualMaxSeg": 5
+  },
+  "som": {
+    "musica": true,
+    "sfx": "discreto"
+  },
+  "cta": {
+    "tipo": "salvar",
+    "texto": "Salva e manda para quem acredita nisso.",
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "mitofato",
+      "texto",
+      "dado",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      8
+    ],
+    "estilo": "papel",
+    "virais": [
+      "veredito",
+      "nota",
+      "passo",
+      "informativo",
+      "chat",
+      "quiz"
+    ]
+  },
+  "publicar": {
+    "legenda": "mito, fato e a fonte oficial",
+    "hashtags": [
+      "#saude"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": "Isso não substitui consulta. Procure um profissional."
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": true,
+    "atribuicao": "sempre",
+    "avisoFalado": "Isso não substitui consulta. Procure um profissional.",
+    "avisoLegenda": "Isso não substitui consulta. Procure um profissional.",
+    "temasBloqueados": [
+      "automedicação",
+      "dieta para doença",
+      "suplemento milagroso"
+    ],
+    "revisaoHumana": true
+  }
+}

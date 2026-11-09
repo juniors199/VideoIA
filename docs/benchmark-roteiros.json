@@ -1,0 +1,30 @@
+{
+ "n_roteiros": 36,
+ "fonte": "36 transcrições de vídeos virais em português (apenas métricas, sem texto)",
+ "palavras": {
+  "p10": 155.0,
+  "p50": 187.5,
+  "p90": 283.5
+ },
+ "frase_media": {
+  "p10": 7.5,
+  "p50": 9.1,
+  "p90": 10.7
+ },
+ "numeros": {
+  "p10": 1.5,
+  "p50": 6.5,
+  "p90": 14.5
+ },
+ "frases": {
+  "p10": 15.0,
+  "p50": 22.0,
+  "p90": 34.5
+ },
+ "micro_hooks_por_100": {
+  "p10": 0.5,
+  "p50": 1.3,
+  "p90": 2.2
+ },
+ "abertura_pergunta_pct": 50
+}

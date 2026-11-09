@@ -1,0 +1,21 @@
+{
+ "_sobre": "Temas prontos do botão \"Fazer meu primeiro vídeo\" do estúdio web: roteiro, fontes e cena já conferidos (a cena é a do exemplo de estilo, aprovada no controle de qualidade com a voz de teste), para quem ainda não tem tema nem assistente aberto. O estúdio copia a pasta para projetos/ e produz.",
+ "exemplos": [
+  {
+   "id": "ceu-azul",
+   "titulo": "Por que o céu é azul"
+  },
+  {
+   "id": "qr-code-rasgado",
+   "titulo": "Por que o QR code funciona rasgado"
+  },
+  {
+   "id": "cabos-no-fundo-do-mar",
+   "titulo": "Por onde a internet atravessa o oceano"
+  },
+  {
+   "id": "mel-nao-estraga",
+   "titulo": "Por que o mel não estraga"
+  }
+ ]
+}

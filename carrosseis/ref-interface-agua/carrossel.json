@@ -1,0 +1,107 @@
+{
+  "perfil": "curiosidades",
+  "tema": "SAÚDE",
+  "visual": "interface",
+  "legenda": "A regra dos 8 copos provavelmente nasceu de uma recomendação de 1945 lida pela metade. As National Academies indicam cerca de 3,7 L de água total por dia para homens e 2,7 L para mulheres, contando a comida.\n\nInformação geral: em caso de doença, fale com seu médico.\n\nSegue a página pra ver a próxima.\n\nFoto: Mia Gaitanidis (CC BY-SA 4.0)",
+  "marcadores": [
+    "agua",
+    "saude",
+    "mito"
+  ],
+  "fontes": [
+    "Dartmouth Medical School, Valtin (2002): https://geiselmed.dartmouth.edu/news/2002_h2/08aug2002_water.shtml",
+    "MDLinx, 8 glasses of water a day: https://mdlinx.com/article/8-glasses-of-water-a-day-myth-or-medicine/lfc-2814",
+    "The Dartmouth (2002): https://www.thedartmouth.com/article/2002/08/professor-finds-8x8-water-consumption-is-not-so-great",
+    "National Academies (2004): https://www.nationalacademies.org/news/report-sets-dietary-intake-levels-for-water-salt-and-potassium-to-maintain-health-and-reduce-chronic-disease-risk",
+    "ScienceDaily (2004): https://www.sciencedaily.com/releases/2004/02/040212092439.htm"
+  ],
+  "slides": [
+    {
+      "tipo": "notificacao",
+      "imagem": "assets/copo.jpg",
+      "notificacoes": [
+        {
+          "titulo": "Beba *8 copos* de água por dia",
+          "quando": "agora"
+        },
+        {
+          "texto": "A regra mais famosa da hidratação não tem estudo por trás."
+        }
+      ]
+    },
+    {
+      "tipo": "nota",
+      "titulo": "De onde veio a *regra*",
+      "texto": "Em 1945, um conselho dos EUA sugeriu 1 mL de água por caloria. A frase seguinte dizia que a maior parte já vem nos alimentos.",
+      "itens": [
+        "1945: 1 mL de água por caloria",
+        "A maior parte já vem da comida",
+        {
+          "texto": "Contar 8 copos fixos",
+          "feito": true
+        }
+      ]
+    },
+    {
+      "tipo": "painel",
+      "rotulo": "National Academies · 2004",
+      "titulo": "O que a ciência *indica*",
+      "sub": "Água total por dia, contando a comida:",
+      "cards": [
+        {
+          "rotulo": "Homens",
+          "numero": "3,7 L",
+          "texto": "de água total"
+        },
+        {
+          "rotulo": "Mulheres",
+          "numero": "2,7 L",
+          "texto": "de água total"
+        },
+        {
+          "rotulo": "Da comida",
+          "numero": "20%",
+          "texto": "vem dos alimentos"
+        },
+        {
+          "rotulo": "A regra",
+          "numero": "1945",
+          "texto": "é de uma frase lida pela metade"
+        }
+      ]
+    },
+    {
+      "tipo": "marcados",
+      "titulo": "Sem estudo por *trás*",
+      "itens": [
+        {
+          "texto": "Em 2002, o fisiologista Heinz Valtin foi atrás das provas",
+          "marca": "seta"
+        },
+        {
+          "texto": "Não achou estudo que sustente os 8 copos",
+          "marca": "nao"
+        },
+        {
+          "texto": "Para quem é saudável, a sede é um bom guia",
+          "marca": "sim"
+        }
+      ],
+      "nota": "Dartmouth Medical School, 2002."
+    },
+    {
+      "tipo": "dialogo",
+      "imagem": "assets/copo.jpg",
+      "titulo": "Para quem é saudável, a sede é um bom *guia*",
+      "pergunta": "Você ainda conta os copos?",
+      "sim": "Conto, sim",
+      "nao": "Bebo na sede"
+    },
+    {
+      "tipo": "fecho",
+      "titulo": "Quantos copos você bebe por *dia*?",
+      "texto": "Conta nos comentários.",
+      "fotoFundo": "assets/copo.jpg"
+    }
+  ]
+}

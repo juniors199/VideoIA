@@ -1,0 +1,160 @@
+{
+  "id": "paper-rocket",
+  "nome": "Paper Rocket (desenho animado de feltro, vivo)",
+  "versao": 1,
+  "paraQuem": "histórias curtas e curiosidades contadas como fábula para todas as idades, com energia: um bicho de feltro que sonha, constrói e vai longe (céu, espaço, lua), em feltro com costura, painel de papel recortado entre as cenas e palavras que pipocam na hora em que são ditas",
+  "exemplosDePedido": [
+    "Por que o foguete precisa de tanta força para sair do chão",
+    "Uma raposa que queria tocar a lua"
+  ],
+  "apelidos": [
+    "paper-rocket",
+    "foguete-de-papel",
+    "feltro",
+    "desenho-animado",
+    "cartoon"
+  ],
+  "formato": {
+    "preferidos": [
+      "revelacao",
+      "causa-efeito",
+      "passo-a-passo"
+    ],
+    "proibidos": [],
+    "padrao": "revelacao"
+  },
+  "roteiro": {
+    "palavras": [
+      80,
+      150
+    ],
+    "alvoSegundos": [
+      35,
+      60
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "uma linha que pinta o mundo e o herói com uma vontade (\"Uma raposa chamada Pipa queria tocar a lua\")",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "exposicao",
+        "seg": [
+          12,
+          30
+        ],
+        "instrucao": "a história em frases curtas, uma cena por frase: o herói quer algo, tenta (uma ação que dá para ver), um problema pequeno e gentil; diga o bicho, o lugar e o objeto (o plano automático escolhe o cenário, o bicho e a ação pela fala)",
+        "n": [
+          4,
+          9
+        ]
+      },
+      {
+        "bloco": "realidade",
+        "seg": [
+          4,
+          10
+        ],
+        "instrucao": "os amigos ajudam (cada um traz uma coisa: uma luz, um caminho) e a frase final curta e quente; se citar fato real, 2 fontes em fontes.md"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "pedido de compartilhar e o convite final curto: seguir e comentar a palavra (as letras de feltro caem nela)"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "HE",
+      "PD"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "ele/ela",
+    "tom": "contador de histórias animado: frases curtas, sons que as crianças repetem (\"Três, dois, um!\"), o nome do herói cedo e repetido, uma ideia por frase",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[bright, playful storyteller, lively pace]",
+    "pausaEntreBlocos": 0.12
+  },
+  "visual": {
+    "pecasPorTema": false,
+    "imagens": "opcional",
+    "contador": "quando-houver-numero",
+    "estilo": "paper-rocket",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [],
+    "reserva": [],
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      1.5,
+      3.5
+    ],
+    "trocaVisualMaxSeg": 4.5
+  },
+  "som": {
+    "musica": true,
+    "sfx": "discreto"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, a história em 2 linhas, pergunta gentil",
+    "hashtags": [
+      "#historiasinfantis",
+      "#curiosidades",
+      "#animacao"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "ilustrando-studio",
+  "version": "0.6.45",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "description": "Ilustrando Studio: carrosséis e vídeos de curiosidades no Claude Code ou no Codex.",
+  "scripts": {
+    "video": "node src/video/cli.mjs",
+    "carrossel": "node src/carrossel.mjs",
+    "identidade": "node src/identidade.mjs",
+    "prova": "node src/video/cli.mjs exemplo --voz=mock --rapido",
+    "checar": "node src/video/cli.mjs --doctor && node --test test/motor.test.mjs test/assistentes.test.mjs test/licenca.test.mjs test/locais.test.mjs test/modelos.test.mjs test/glb.test.mjs test/instalador.test.mjs test/estudio.test.mjs test/novidade.test.mjs test/pontos.test.mjs test/estilos.test.mjs test/estilo-antiguidade.test.mjs test/carrossel-virais.test.mjs test/broll.test.mjs test/estilos-marca.test.mjs test/camera.test.mjs test/audio.test.mjs",
+    "test": "node --test \"test/*.test.mjs\"",
+    "previa": "node src/video/previa.mjs",
+    "estudio": "node src/estudio/servidor.mjs",
+    "status": "node src/video/cli.mjs --status",
+    "doctor": "node src/video/cli.mjs --doctor",
+    "galeria": "node src/video/cli.mjs --galeria",
+    "marca": "node scripts/marca.mjs",
+    "sincronizar": "node scripts/sincronizar-skills.mjs",
+    "sfx-previa": "node scripts/sfx-previa.mjs",
+    "ativar": "node src/licenca/cli.mjs ativar",
+    "voz": "node src/voz/cli.mjs",
+    "comece": "node src/comece/cli.mjs",
+    "licenca": "node src/licenca/cli.mjs",
+    "verificar": "node scripts/verificar.mjs",
+    "atualizar": "node scripts/atualizar.mjs",
+    "imagem": "node scripts/buscar-imagem.mjs",
+    "linha": "node scripts/linha-editorial.mjs",
+    "estilos": "node scripts/estilos.mjs",
+    "objetivos": "node scripts/objetivos.mjs",
+    "modelos": "node scripts/modelos.mjs",
+    "broll": "node scripts/buscar-broll.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.56.1",
+    "three": "0.170.0"
+  },
+  "ilustrando": {
+    "pacote": "C-000000000000",
+    "licenca": "LICENCA.md"
+  },
+  "license": "SEE LICENSE IN LICENCA.md"
+}

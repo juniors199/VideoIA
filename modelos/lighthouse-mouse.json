@@ -1,0 +1,160 @@
+{
+  "id": "lighthouse-mouse",
+  "nome": "Lighthouse Mouse (diorama de feltro quente, de ninar)",
+  "versao": 1,
+  "paraQuem": "histórias de ninar e fábulas gentis, à noite: um bicho de feltro pequeno com uma tarefa grande (a luz do farol, a vela, a lanterna), luz quente em camadas, janela de noite com mar e lua, piso de madeira e amigos que chegam cada um com uma luzinha",
+  "exemplosDePedido": [
+    "O ratinho que cuidava da luz do farol",
+    "Por que o farol pisca de jeitos diferentes"
+  ],
+  "apelidos": [
+    "lighthouse-mouse",
+    "ratinho-do-farol",
+    "farol",
+    "ninar",
+    "diorama"
+  ],
+  "formato": {
+    "preferidos": [
+      "revelacao",
+      "causa-efeito",
+      "passo-a-passo"
+    ],
+    "proibidos": [],
+    "padrao": "revelacao"
+  },
+  "roteiro": {
+    "palavras": [
+      80,
+      150
+    ],
+    "alvoSegundos": [
+      35,
+      60
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "onde e quem, numa linha que dá vontade de ouvir (\"Toda noite, um ratinho do tamanho de um botão cuidava da luz de um farol\")",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "exposicao",
+        "seg": [
+          12,
+          30
+        ],
+        "instrucao": "a história em frases curtas, uma cena por frase: o herói quer algo, tenta (uma ação que dá para ver), um problema pequeno e gentil; diga o bicho, o lugar e o objeto (o plano automático escolhe o cenário, o bicho e a ação pela fala)",
+        "n": [
+          4,
+          9
+        ]
+      },
+      {
+        "bloco": "realidade",
+        "seg": [
+          4,
+          10
+        ],
+        "instrucao": "os amigos ajudam (cada um traz uma coisa: uma luz, um caminho) e a frase final curta e quente; se citar fato real, 2 fontes em fontes.md"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "pedido de compartilhar e o convite final curto: seguir e comentar a palavra (as letras de feltro caem nela)"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "HE",
+      "PD"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "ele/ela",
+    "tom": "contadora de histórias de ninar: calma, frases curtas com pausa, o nome do herói cedo, a virada gentil e uma frase final curta e sábia",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 0.95,
+    "direcao": "[slowly, softly, a warm bedtime storyteller]",
+    "pausaEntreBlocos": 0.22
+  },
+  "visual": {
+    "pecasPorTema": false,
+    "imagens": "opcional",
+    "contador": "quando-houver-numero",
+    "estilo": "lighthouse-mouse",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [],
+    "reserva": [],
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2.5,
+      5
+    ],
+    "trocaVisualMaxSeg": 6
+  },
+  "som": {
+    "musica": true,
+    "sfx": "discreto"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, a história em 2 linhas, pergunta gentil",
+    "hashtags": [
+      "#historiadeninar",
+      "#curiosidades",
+      "#animacao"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

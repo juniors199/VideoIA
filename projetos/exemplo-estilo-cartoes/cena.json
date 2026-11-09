@@ -1,0 +1,214 @@
+{
+ "tema": "QR CODE",
+ "estilo": "cartoes",
+ "capa": {
+  "texto": "O QR code funciona *rasgado*"
+ },
+ "beats": [
+  {
+   "id": "gancho",
+   "palavras": [
+    0,
+    9
+   ],
+   "titulo": {
+    "texto": "Um QR code funciona *rasgado*"
+   },
+   "elementos": [
+    {
+     "tipo": "cartoes",
+     "forma": "qr",
+     "entra": 0.05,
+     "pos": [
+      0.5,
+      0.7
+     ],
+     "tamanho": 1.38,
+     "dados": {
+      "rasgo": "mesmo",
+      "leitura": true,
+      "emLeitura": "pedaço"
+     }
+    }
+   ]
+  },
+  {
+   "id": "origem",
+   "palavras": [
+    10,
+    19
+   ],
+   "elementos": [
+    {
+     "tipo": "cartoes",
+     "forma": "chip",
+     "valor": 1994,
+     "formato": "ano",
+     "de": 1994,
+     "dur": 0.6,
+     "entra": 0.05,
+     "pos": [
+      0.5,
+      0.7
+     ],
+     "grande": true,
+     "tamanho": 1.7
+    }
+   ]
+  },
+  {
+   "id": "japao",
+   "palavras": [
+    20,
+    26
+   ],
+   "elementos": [
+    {
+     "tipo": "cartoes",
+     "forma": "qr",
+     "entra": 0.05,
+     "pos": [
+      0.5,
+      0.7
+     ],
+     "tamanho": 1,
+     "dados": {
+      "etiqueta": "JAPÃO 1994",
+      "leitura": true,
+      "emLeitura": "carro"
+     }
+    }
+   ]
+  },
+  {
+   "id": "quadradinho",
+   "palavras": [
+    27,
+    33
+   ],
+   "elementos": [
+    {
+     "tipo": "cartoes",
+     "forma": "qr",
+     "entra": 0.05,
+     "pos": [
+      0.5,
+      0.7
+     ],
+     "tamanho": 1.38,
+     "dados": {
+      "modulos": true,
+      "emModulos": "quadradinho"
+     }
+    }
+   ]
+  },
+  {
+   "id": "matematica",
+   "palavras": [
+    34,
+    45
+   ],
+   "som": "virada",
+   "elementos": [
+    {
+     "tipo": "cartoes",
+     "forma": "qr",
+     "entra": 0.05,
+     "pos": [
+      0.5,
+      0.7
+     ],
+     "tamanho": 1.38,
+     "dados": {
+      "dano": 0.22,
+      "emDano": "cópia",
+      "recupera": true,
+      "emRecupera": "matemática"
+     }
+    }
+   ]
+  },
+  {
+   "id": "trinta",
+   "palavras": [
+    46,
+    64
+   ],
+   "elementos": [
+    {
+     "tipo": "cartoes",
+     "forma": "qr",
+     "entra": 0.05,
+     "pos": [
+      0.5,
+      0.62
+     ],
+     "tamanho": 1.05,
+     "dados": {
+      "niveis": true,
+      "emNiveis": "nível",
+      "dano": 0.3,
+      "emDano": "trinta",
+      "rotuloDano": "30%",
+      "leitura": true,
+      "emLeitura": "câmera"
+     }
+    }
+   ]
+  },
+  {
+   "id": "cantos",
+   "palavras": [
+    65,
+    77
+   ],
+   "elementos": [
+    {
+     "tipo": "cartoes",
+     "forma": "qr",
+     "entra": 0.05,
+     "pos": [
+      0.5,
+      0.7
+     ],
+     "tamanho": 1.38,
+     "dados": {
+      "guias": true,
+      "emGuias": "quadrados",
+      "gira": "qualquer",
+      "leitura": true,
+      "emLeitura": "ângulo"
+     }
+    }
+   ]
+  },
+  {
+   "id": "logo",
+   "palavras": [
+    78,
+    94
+   ],
+   "elementos": [
+    {
+     "tipo": "cartoes",
+     "forma": "celular",
+     "qr": true,
+     "texto": "código lido",
+     "entra": 0.05,
+     "pos": [
+      0.5,
+      0.715
+     ],
+     "tamanho": 1.34,
+     "dados": {
+      "emLogo": "logo",
+      "emLeitura": "meio"
+     }
+    }
+   ],
+   "fator": 0.85
+  }
+ ],
+ "hashPalavras": "26db3ebdf556"
+}

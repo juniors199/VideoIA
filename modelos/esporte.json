@@ -1,0 +1,202 @@
+{
+  "id": "esporte",
+  "nome": "Esporte",
+  "versao": 1,
+  "paraQuem": "futebol, esportes olímpicos, história e curiosidades do esporte",
+  "exemplosDePedido": [
+    "Os 4 maiores artilheiros da seleção",
+    "O recorde que ninguém bateu"
+  ],
+  "apelidos": [
+    "esportes",
+    "futebol"
+  ],
+  "formato": {
+    "preferidos": [
+      "ranking",
+      "numero-impossivel",
+      "comparativo",
+      "antes-depois"
+    ],
+    "proibidos": [],
+    "padrao": "ranking"
+  },
+  "roteiro": {
+    "palavras": [
+      140,
+      210
+    ],
+    "alvoSegundos": [
+      50,
+      75
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "promessa numerada",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "itens",
+        "seg": [
+          30,
+          45
+        ],
+        "instrucao": "do último ao primeiro, um número por item",
+        "n": [
+          3,
+          4
+        ]
+      },
+      {
+        "bloco": "primeiro",
+        "seg": [
+          6,
+          10
+        ],
+        "instrucao": "o 1º lugar com a virada",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "pergunta",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "pergunta polêmica de opinião (\"Qual faltou?\")"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          3,
+          5
+        ]
+      }
+    ],
+    "gatilhos": [
+      "EN",
+      "EE",
+      "CI"
+    ],
+    "abertura3Tempos": true,
+    "promessaMarca": null,
+    "loopAberto": true,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "narrador animado, sem grito; rivalidade com respeito",
+    "vocabulario": "normal",
+    "proibir": [
+      "aposta"
+    ]
+  },
+  "voz": {
+    "velocidade": 1.05,
+    "direcao": "[confident, clear]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "estilo": "editorial",
+    "cenarios": [
+      "campo",
+      "cidade",
+      "palanque"
+    ],
+    "cenas": [
+      "arenacena"
+    ],
+    "pecasBase": [
+      "bolafutebol",
+      "campofutebol",
+      "trave",
+      "tacacampeao",
+      "torcedorbandeira",
+      "podio",
+      "trofeu",
+      "medalha",
+      "cronometro",
+      "haltere",
+      "raquete",
+      "cestabasquete",
+      "camisaselecao"
+    ],
+    "reserva": [
+      "trofeu",
+      "medalha",
+      "bolafutebol",
+      "podio"
+    ],
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "transicao": "varredura",
+    "contador": "sempre",
+    "titulos": "gancho"
+  },
+  "ritmo": {
+    "beatSeg": [
+      3,
+      8
+    ],
+    "trocaVisualMaxSeg": 4
+  },
+  "som": {
+    "musica": true,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": "Comenta quem faltou na lista."
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "ranking",
+      "texto",
+      "dado",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      8
+    ],
+    "estilo": "editorial",
+    "virais": [
+      "placar",
+      "podio",
+      "numeros",
+      "plantao",
+      "linhatempo",
+      "grafico",
+      "quiz"
+    ]
+  },
+  "publicar": {
+    "legenda": "a lista em uma linha e a pergunta de quem faltou",
+    "hashtags": [
+      "#futebol",
+      "#esporte"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [
+      "apostas"
+    ],
+    "revisaoHumana": false
+  }
+}

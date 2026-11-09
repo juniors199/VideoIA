@@ -1,0 +1,820 @@
+{
+ "$comentario": "Dicionário comum fala -> ação/objeto -> forma (regra do dono de 05/11/2026: o que aparece em cada beat vem da AÇÃO e do OBJETO que a fala diz). Cada conceito: tipo (acao, objeto, lugar, pessoas, tempo), forma (peça 3D do catálogo, usada pelos estilos de peça) e temas (termos no formato do léxico: '*' no fim aceita flexão, '~' no começo é fraco, frase com espaço vale mais). Os estilos que desenham as próprias formas ligam o id do conceito à forma deles em fala-forma-estilos.mjs. Conceito novo: acrescente aqui e rode node --test test/fala-forma.test.mjs.",
+ "acordar": {
+  "tipo": "acao",
+  "forma": "despertador",
+  "temas": [
+   "acorda",
+   "acordar",
+   "acordou",
+   "acordam",
+   "acordei",
+   "acordando",
+   "acordado",
+   "acordada",
+   "acordamos",
+   "despertador*",
+   "despertar",
+   "desperta",
+   "despertou",
+   "alarme",
+   "alarmes",
+   "soneca"
+  ]
+ },
+ "dormir": {
+  "tipo": "acao",
+  "forma": "cama3d",
+  "temas": [
+   "dorme",
+   "dormem",
+   "dormiu",
+   "dormir",
+   "dormindo",
+   "dormia",
+   "dormimos",
+   "dorm*",
+   "sono",
+   "insonia",
+   "cochil*",
+   "deitar",
+   "deita",
+   "deitou",
+   "deitado",
+   "deitada",
+   "cama",
+   "camas",
+   "travesseiro*",
+   "colchao"
+  ]
+ },
+ "compartilhar": {
+  "tipo": "acao",
+  "forma": "compartilhar",
+  "temas": [
+   "compartilh*",
+   "manda pra",
+   "manda para",
+   "mande pra",
+   "mande para",
+   "envia pra",
+   "envia para",
+   "enviar",
+   "enviou",
+   "encaminh*",
+   "repost*",
+   "marca um amigo",
+   "marque um amigo",
+   "manda esse",
+   "mande esse",
+   "manda pro",
+   "manda isso",
+   "envia esse",
+   "compartilha"
+  ]
+ },
+ "medir": {
+  "tipo": "acao",
+  "forma": "regua",
+  "temas": [
+   "medir",
+   "mediu",
+   "mediram",
+   "medindo",
+   "medida",
+   "medidas",
+   "medicao",
+   "medicoes",
+   "mede",
+   "medem",
+   "fita metrica",
+   "regua*",
+   "centimetr*",
+   "milimetr*",
+   "~altura",
+   "~tamanho"
+  ]
+ },
+ "esperar": {
+  "tipo": "acao",
+  "forma": "ampulheta",
+  "temas": [
+   "esperar",
+   "esperou",
+   "esperando",
+   "esperam",
+   "aguard*",
+   "paciencia",
+   "demor*",
+   "ampulheta*"
+  ]
+ },
+ "abracar": {
+  "tipo": "acao",
+  "forma": "bonecoabracos",
+  "temas": [
+   "abraco*",
+   "abracar",
+   "abracou",
+   "abracando",
+   "abraca"
+  ]
+ },
+ "pensar": {
+  "tipo": "acao",
+  "forma": "bonecopensa",
+  "temas": [
+   "pensar",
+   "pensa",
+   "pensou",
+   "pensando",
+   "pensam",
+   "pensamento*",
+   "refletir",
+   "reflete",
+   "refletiu",
+   "raciocin*",
+   "pensa demais"
+  ]
+ },
+ "lembrar": {
+  "tipo": "acao",
+  "forma": "cerebro",
+  "temas": [
+   "lembra",
+   "lembrou",
+   "lembrar",
+   "esquece",
+   "esqueceu",
+   "esquecer",
+   "lembr*",
+   "memoria*",
+   "esquec*",
+   "decorar",
+   "decorou"
+  ]
+ },
+ "correr": {
+  "tipo": "acao",
+  "forma": "bonecocorrendo",
+  "temas": [
+   "correr",
+   "correu",
+   "correndo",
+   "corre",
+   "corrida",
+   "corridas",
+   "maratona*",
+   "corredor*"
+  ]
+ },
+ "caminhar": {
+  "tipo": "acao",
+  "forma": "bonecoandando",
+  "temas": [
+   "caminhar",
+   "caminha",
+   "caminhou",
+   "caminhando",
+   "caminhada",
+   "caminhadas",
+   "andar",
+   "anda",
+   "andou",
+   "andando",
+   "a pe"
+  ]
+ },
+ "falar": {
+  "tipo": "acao",
+  "forma": "bonecodiscursa",
+  "temas": [
+   "discurs*",
+   "palestra*",
+   "discursar",
+   "falar em publico",
+   "em voz alta",
+   "~falou",
+   "~falar"
+  ]
+ },
+ "anunciar": {
+  "tipo": "acao",
+  "forma": "megafone",
+  "temas": [
+   "grit*",
+   "anunci*",
+   "megafone*",
+   "berr*"
+  ]
+ },
+ "ler": {
+  "tipo": "acao",
+  "forma": "livroaberto",
+  "temas": [
+   "ler",
+   "leu",
+   "lendo",
+   "leem",
+   "leitura*",
+   "leitor*",
+   "lia"
+  ]
+ },
+ "estudar": {
+  "tipo": "acao",
+  "forma": "estudantemochila",
+  "temas": [
+   "estuda",
+   "estudou",
+   "estudar",
+   "estudando",
+   "aprende",
+   "aprendeu",
+   "aprender",
+   "estud*",
+   "aprend*",
+   "aula",
+   "aulas",
+   "vestibular*",
+   "enem",
+   "faculdade*",
+   "aluno*",
+   "aluna*"
+  ]
+ },
+ "ensinar": {
+  "tipo": "acao",
+  "forma": "professorlousa",
+  "temas": [
+   "ensina",
+   "ensinou",
+   "ensinar",
+   "ensin*",
+   "professor*",
+   "professora*",
+   "lousa*",
+   "explicou"
+  ]
+ },
+ "escrever": {
+  "tipo": "acao",
+  "forma": "caneta",
+  "temas": [
+   "escreve",
+   "escreveu",
+   "escrever",
+   "escrevendo",
+   "anota",
+   "anotou",
+   "escrev*",
+   "escrita",
+   "anot*",
+   "caneta*",
+   "lapis"
+  ]
+ },
+ "trabalhar": {
+  "tipo": "acao",
+  "forma": "cadeiraescritorio",
+  "temas": [
+   "trabalha",
+   "trabalhou",
+   "trabalhar",
+   "trabalhando",
+   "trabalh*",
+   "emprego*",
+   "expediente",
+   "escritorio*",
+   "chefe*",
+   "patrao"
+  ]
+ },
+ "comprar": {
+  "tipo": "acao",
+  "forma": "carrinhocompras",
+  "temas": [
+   "comprar",
+   "comprou",
+   "compra",
+   "compras",
+   "comprando",
+   "compram",
+   "comprador*",
+   "supermercado*",
+   "fazer compras",
+   "carrinho de compras"
+  ]
+ },
+ "ganhar": {
+  "tipo": "acao",
+  "forma": "trofeu",
+  "temas": [
+   "ganhar",
+   "ganhou",
+   "vencer",
+   "venceu",
+   "vencedor*",
+   "vitoria*",
+   "campea*",
+   "premio*",
+   "trofeu*"
+  ]
+ },
+ "comer": {
+  "tipo": "acao",
+  "forma": "prato",
+  "temas": [
+   "comer",
+   "comeu",
+   "come",
+   "comendo",
+   "comem",
+   "comida*",
+   "refeic*",
+   "almoco*",
+   "almocar",
+   "jantar",
+   "janta",
+   "fome",
+   "lanche*",
+   "prato*"
+  ]
+ },
+ "beber": {
+  "tipo": "acao",
+  "forma": "copo",
+  "temas": [
+   "beber",
+   "bebeu",
+   "bebe",
+   "bebendo",
+   "bebem",
+   "hidrat*",
+   "copo d agua",
+   "copo de agua",
+   "garrafa*"
+  ]
+ },
+ "cozinhar": {
+  "tipo": "acao",
+  "forma": "panelapressao",
+  "temas": [
+   "cozinha",
+   "cozinhou",
+   "cozinhar",
+   "cozinh*",
+   "fogao",
+   "panela*",
+   "assar",
+   "fritar",
+   "ferver"
+  ]
+ },
+ "viajar": {
+  "tipo": "acao",
+  "forma": "aviao",
+  "temas": [
+   "viaja",
+   "viajou",
+   "viajar",
+   "viajando",
+   "viaj*",
+   "viagem",
+   "viagens",
+   "ferias",
+   "turista*",
+   "turismo",
+   "voo",
+   "voos",
+   "aeroporto*",
+   "avioes"
+  ]
+ },
+ "dirigir": {
+  "tipo": "acao",
+  "forma": "carro",
+  "temas": [
+   "dirigir",
+   "dirigiu",
+   "dirigindo",
+   "dirige",
+   "motorista*",
+   "volante"
+  ]
+ },
+ "banho": {
+  "tipo": "acao",
+  "forma": "chuveiro",
+  "temas": [
+   "banho",
+   "banhos",
+   "chuveiro*",
+   "tomar banho"
+  ]
+ },
+ "escovar": {
+  "tipo": "acao",
+  "forma": "escovadente",
+  "temas": [
+   "escov*",
+   "dente",
+   "dentes",
+   "dentista*"
+  ]
+ },
+ "chover": {
+  "tipo": "acao",
+  "forma": "nuvemchuva",
+  "temas": [
+   "chover",
+   "choveu",
+   "chove",
+   "chovendo",
+   "tempestade*",
+   "temporal",
+   "~chuva",
+   "~chuvas"
+  ]
+ },
+ "amar": {
+  "tipo": "acao",
+  "forma": "coracao",
+  "temas": [
+   "amor",
+   "amar",
+   "amou",
+   "apaixon*",
+   "namor*",
+   "carinho"
+  ]
+ },
+ "chorar": {
+  "tipo": "acao",
+  "forma": "bonecotriste",
+  "temas": [
+   "chorar",
+   "chorou",
+   "chorando",
+   "chora",
+   "triste",
+   "tristeza",
+   "deprimid*",
+   "solidao"
+  ]
+ },
+ "comemorar": {
+  "tipo": "acao",
+  "forma": "bolo",
+  "temas": [
+   "aniversari*",
+   "parabens",
+   "festa",
+   "festas",
+   "comemor*",
+   "celebr*"
+  ]
+ },
+ "presentear": {
+  "tipo": "acao",
+  "forma": "presente",
+  "temas": [
+   "presentear",
+   "presenteou",
+   "de presente",
+   "ganhou de presente",
+   "embrulho"
+  ]
+ },
+ "casar": {
+  "tipo": "acao",
+  "forma": "arcaalianca",
+  "temas": [
+   "casar",
+   "casou",
+   "casamento*",
+   "alianca*",
+   "noivo*",
+   "noiva*",
+   "noivado"
+  ]
+ },
+ "vacinar": {
+  "tipo": "acao",
+  "forma": "seringa",
+  "temas": [
+   "vacin*",
+   "injec*",
+   "seringa*",
+   "agulha*"
+  ]
+ },
+ "consertar": {
+  "tipo": "acao",
+  "forma": "chaveinglesa",
+  "temas": [
+   "consert*",
+   "ferramenta*",
+   "chave inglesa",
+   "reparo"
+  ]
+ },
+ "construir": {
+  "tipo": "acao",
+  "forma": "martelo",
+  "temas": [
+   "constru*",
+   "pedreiro*",
+   "martel*",
+   "obra de construcao"
+  ]
+ },
+ "fotografar": {
+  "tipo": "acao",
+  "forma": "camerafoto",
+  "temas": [
+   "fotograf*",
+   "selfie*",
+   "tirar foto",
+   "tirou uma foto",
+   "camera fotografica"
+  ]
+ },
+ "assistir": {
+  "tipo": "acao",
+  "forma": "televisor",
+  "temas": [
+   "assistir",
+   "assistiu",
+   "assistindo",
+   "assiste",
+   "televis*",
+   "tv",
+   "novela",
+   "novelas",
+   "filme",
+   "filmes"
+  ]
+ },
+ "ouvir": {
+  "tipo": "acao",
+  "forma": "fones",
+  "temas": [
+   "ouvir",
+   "ouviu",
+   "ouvindo",
+   "ouve",
+   "escut*",
+   "musica*",
+   "fone de ouvido",
+   "fones de ouvido"
+  ]
+ },
+ "olhar": {
+  "tipo": "acao",
+  "forma": "olho",
+  "temas": [
+   "olhar",
+   "olhou",
+   "olhando",
+   "olha",
+   "enxerg*",
+   "observ*",
+   "olhos",
+   "visao"
+  ]
+ },
+ "economizar": {
+  "tipo": "acao",
+  "forma": "cofre",
+  "temas": [
+   "poupanca",
+   "poupar",
+   "poupou",
+   "cofrinho",
+   "cofre",
+   "cofres",
+   "guardar dinheiro",
+   "economizar",
+   "economizou"
+  ]
+ },
+ "votar": {
+  "tipo": "acao",
+  "forma": "urnafila",
+  "temas": [
+   "votar",
+   "votou",
+   "voto",
+   "votos",
+   "eleicao",
+   "eleicoes",
+   "urna*"
+  ]
+ },
+ "pessoas-grupo": {
+  "tipo": "pessoas",
+  "forma": "grupo",
+  "temas": [
+   "amigo",
+   "amigos",
+   "amiga",
+   "amigas",
+   "familia*",
+   "equipe*",
+   "turma*",
+   "galera",
+   "juntos",
+   "juntas",
+   "colega*",
+   "vizinho*"
+  ]
+ },
+ "multidao": {
+  "tipo": "pessoas",
+  "forma": "multidao",
+  "temas": [
+   "multidao",
+   "todo mundo",
+   "plateia",
+   "milhares de pessoas",
+   "milhoes de pessoas",
+   "torcida*",
+   "manifestac*"
+  ]
+ },
+ "fila": {
+  "tipo": "pessoas",
+  "forma": "filapessoas",
+  "temas": [
+   "fila",
+   "filas",
+   "na fila"
+  ]
+ },
+ "horario": {
+  "tipo": "tempo",
+  "forma": "relogioparede",
+  "temas": [
+   "da manha",
+   "de manha",
+   "da tarde",
+   "da noite",
+   "meia noite",
+   "meio dia",
+   "em ponto",
+   "horario*"
+  ]
+ },
+ "calendario": {
+  "tipo": "tempo",
+  "forma": "calendario",
+  "temas": [
+   "calendario*",
+   "semana",
+   "semanas",
+   "mes",
+   "meses",
+   "feriado*",
+   "segunda feira",
+   "sexta feira",
+   "fim de semana"
+  ]
+ },
+ "cidade": {
+  "tipo": "lugar",
+  "forma": "cidadecresce",
+  "temas": [
+   "cidade",
+   "cidades",
+   "urban*",
+   "metropole*",
+   "capital"
+  ]
+ },
+ "praia": {
+  "tipo": "lugar",
+  "forma": "coqueiropraia",
+  "temas": [
+   "praia*",
+   "litoral",
+   "areia",
+   "coqueiro*"
+  ]
+ },
+ "montanha": {
+  "tipo": "lugar",
+  "forma": "montanha",
+  "temas": [
+   "montanha*",
+   "serra",
+   "pico",
+   "escalar",
+   "escalou"
+  ]
+ },
+ "escola": {
+  "tipo": "lugar",
+  "forma": "escola",
+  "temas": [
+   "escola*",
+   "colegio*",
+   "sala de aula"
+  ]
+ },
+ "hospital": {
+  "tipo": "lugar",
+  "forma": "hospital",
+  "temas": [
+   "hospital*",
+   "pronto socorro",
+   "uti",
+   "internad*"
+  ]
+ },
+ "casa": {
+  "tipo": "lugar",
+  "forma": "casa",
+  "temas": [
+   "em casa",
+   "sua casa",
+   "minha casa",
+   "lar"
+  ]
+ },
+ "porta": {
+  "tipo": "objeto",
+  "forma": "portaabre",
+  "temas": [
+   "porta",
+   "portas",
+   "abrir a porta",
+   "abriu a porta",
+   "bateu na porta"
+  ]
+ },
+ "celular": {
+  "tipo": "objeto",
+  "forma": "celular",
+  "temas": [
+   "celular*",
+   "smartphone*",
+   "notificac*",
+   "rede social",
+   "redes sociais",
+   "postar",
+   "postou",
+   "postagem",
+   "rolar o feed",
+   "feed"
+  ]
+ },
+ "dinheiro": {
+  "tipo": "objeto",
+  "forma": "pilha",
+  "temas": [
+   "dinheiro",
+   "reais",
+   "grana",
+   "salario*",
+   "pagar",
+   "pagou",
+   "pagamento*",
+   "gastar",
+   "gastou",
+   "gasto*"
+  ]
+ },
+ "cachorro": {
+  "tipo": "objeto",
+  "forma": "cachorro",
+  "temas": [
+   "cachorro*",
+   "cao",
+   "caes",
+   "cachorrinho"
+  ]
+ },
+ "gato": {
+  "tipo": "objeto",
+  "forma": "gato",
+  "temas": [
+   "gato",
+   "gatos",
+   "gata",
+   "gatinho*",
+   "felino*"
+  ]
+ },
+ "bicicleta": {
+  "tipo": "objeto",
+  "forma": "bicicleta",
+  "temas": [
+   "bicicleta*",
+   "bike",
+   "pedalar",
+   "pedalou",
+   "ciclista*"
+  ]
+ }
+}

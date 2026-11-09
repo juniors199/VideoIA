@@ -1,0 +1,245 @@
+{
+ "tema": "VITRINE DO QUADRO ANTIGO",
+ "estilo": "quadro-antigo",
+ "tom": "ouro",
+ "beats": [
+  {
+   "id": "lupa",
+   "palavras": [
+    0,
+    8
+   ],
+   "elementos": [
+    {
+     "tipo": "quadro-antigo",
+     "forma": "pintura",
+     "arquivo": "assets/quadro-inteiro.jpg",
+     "foco": [
+      0.42,
+      0.4
+     ],
+     "zoom": 1.2,
+     "movimento": "direita"
+    },
+    {
+     "tipo": "quadro-antigo",
+     "forma": "marca",
+     "marca": "lupa",
+     "pos": [
+      0.41,
+      0.31
+     ],
+     "raio": 0.07,
+     "entra": "lupa"
+    },
+    {
+     "tipo": "quadro-antigo",
+     "forma": "texto",
+     "texto": "Olhe a lupa e veja|o detalhe da obra.",
+     "zona": "baixo"
+    }
+   ]
+  },
+  {
+   "id": "seta",
+   "palavras": [
+    9,
+    15
+   ],
+   "passagem": "rasgo",
+   "elementos": [
+    {
+     "tipo": "quadro-antigo",
+     "forma": "pintura",
+     "arquivo": "assets/quadro-inteiro.jpg",
+     "foco": [
+      0.7,
+      0.5
+     ],
+     "zoom": 1.1,
+     "movimento": "esquerda"
+    },
+    {
+     "tipo": "quadro-antigo",
+     "forma": "marca",
+     "marca": "seta",
+     "pos": [
+      0.78,
+      0.52
+     ],
+     "de": -120,
+     "distancia": 300,
+     "entra": "seta"
+    },
+    {
+     "tipo": "quadro-antigo",
+     "forma": "etiqueta",
+     "texto": "o alvo",
+     "ordem": 2,
+     "alvo": [
+      0.72,
+      0.5
+     ],
+     "entra": "alvo."
+    },
+    {
+     "tipo": "quadro-antigo",
+     "forma": "texto",
+     "texto": "Depois siga a seta|até o alvo.",
+     "zona": "topo"
+    }
+   ]
+  },
+  {
+   "id": "numeros",
+   "palavras": [
+    16,
+    27
+   ],
+   "passagem": "desliza",
+   "elementos": [
+    {
+     "tipo": "quadro-antigo",
+     "forma": "pintura",
+     "arquivo": "assets/daguerre-boulevard.jpg",
+     "moldura": "pagina",
+     "zoom": 1.2
+    },
+    {
+     "tipo": "quadro-antigo",
+     "forma": "numero",
+     "valor": "1839",
+     "rotulo": "a fotografia",
+     "layout": "grande",
+     "contagem": true,
+     "de": 1800,
+     "zona": "baixo",
+     "entra": "1839"
+    },
+    {
+     "tipo": "quadro-antigo",
+     "forma": "texto",
+     "texto": "Em 1839 nasceu",
+     "zona": "topo"
+    }
+   ]
+  },
+  {
+   "id": "painel",
+   "palavras": [
+    28,
+    32
+   ],
+   "passagem": "desfoque",
+   "elementos": [
+    {
+     "tipo": "quadro-antigo",
+     "forma": "painel",
+     "arquivo": "assets/quadro-inteiro.jpg",
+     "numero": "1ª",
+     "rotulo": "ler com calma.",
+     "emNumero": "Primeira"
+    }
+   ]
+  },
+  {
+   "id": "lista",
+   "palavras": [
+    33,
+    39
+   ],
+   "passagem": "rasgo",
+   "elementos": [
+    {
+     "tipo": "quadro-antigo",
+     "forma": "folha",
+     "texto": "Segundo, a lista:",
+     "corpo": 64,
+     "altura": 700,
+     "y": 0.34
+    },
+    {
+     "tipo": "quadro-antigo",
+     "forma": "lista",
+     "itens": [
+      "tinta",
+      "papel",
+      "e tempo."
+     ],
+     "zona": "baixo"
+    }
+   ]
+  },
+  {
+   "id": "titulo",
+   "palavras": [
+    40,
+    43
+   ],
+   "passagem": "desliza",
+   "elementos": [
+    {
+     "tipo": "quadro-antigo",
+     "forma": "pintura",
+     "arquivo": "assets/quadro-inteiro.jpg",
+     "foco": [
+      0.3,
+      0.5
+     ],
+     "zoom": 1,
+     "movimento": "sobe",
+     "desfoque": true,
+     "desfocaEm": "Atenção"
+    },
+    {
+     "tipo": "quadro-antigo",
+     "forma": "texto",
+     "texto": "Atenção ao",
+     "zona": "topo"
+    },
+    {
+     "tipo": "quadro-antigo",
+     "forma": "titulo",
+     "texto": "TÍTULO GRANDE",
+     "zona": "meio",
+     "entra": "título"
+    }
+   ]
+  },
+  {
+   "id": "fim",
+   "palavras": [
+    44,
+    57
+   ],
+   "passagem": "desfoque",
+   "elementos": [
+    {
+     "tipo": "quadro-antigo",
+     "forma": "pintura",
+     "arquivo": "assets/quadro-inteiro.jpg",
+     "moldura": "dourada",
+     "placa": "A obra",
+     "y": 0.45,
+     "zoom": 1.5,
+     "foco": [
+      0.4,
+      0.4
+     ]
+    },
+    {
+     "tipo": "quadro-antigo",
+     "forma": "citacao",
+     "texto": "E a frase final: a obra conta *mais* que a foto.",
+     "zona": "baixo"
+    },
+    {
+     "tipo": "quadro-antigo",
+     "forma": "fonte",
+     "texto": "segundo o autor"
+    }
+   ]
+  }
+ ],
+ "hashPalavras": "bdcb008bf706"
+}

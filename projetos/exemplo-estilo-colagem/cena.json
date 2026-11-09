@@ -1,0 +1,332 @@
+{
+ "tema": "PEDRO II",
+ "estilo": "colagem",
+ "capa": {
+  "texto": "O Brasil já teve um imperador de *5 anos*"
+ },
+ "beats": [
+  {
+   "id": "gancho",
+   "palavras": [
+    0,
+    8
+   ],
+   "titulo": {
+    "texto": "O Brasil teve um imperador de *cinco anos*"
+   },
+   "elementos": [
+    {
+     "tipo": "imagem",
+     "arquivo": "assets/pedro-crianca.jpg",
+     "obra": "Pedro e as irmãs",
+     "largura": 840,
+     "altura": 800,
+     "foco": [
+      0.45,
+      0.35
+     ],
+     "entra": 0,
+     "credito": "Félix-Émile Taunay (domínio público)",
+     "pos": [
+      0.5,
+      0.63
+     ]
+    }
+   ]
+  },
+  {
+   "id": "abdicacao",
+   "palavras": [
+    9,
+    20
+   ],
+   "titulo": {
+    "texto": "Em 1831, Pedro Primeiro *abdicou*"
+   },
+   "elementos": [
+    {
+     "tipo": "imagem",
+     "arquivo": "assets/abdicacao.jpg",
+     "obra": "A abdicação",
+     "largura": 880,
+     "altura": 540,
+     "entra": "Em",
+     "credito": "Aurélio de Figueiredo (domínio público)",
+     "pos": [
+      0.5,
+      0.63
+     ]
+    },
+    {
+     "tipo": "colagem",
+     "forma": "carimbo",
+     "texto": "1831",
+     "entra": "1831,",
+     "pos": [
+      0.76,
+      0.78
+     ]
+    }
+   ]
+  },
+  {
+   "id": "herdeiro",
+   "palavras": [
+    21,
+    29
+   ],
+   "titulo": {
+    "texto": "Herdeiro: o filho Pedro, de *cinco anos*"
+   },
+   "elementos": [
+    {
+     "tipo": "imagem",
+     "arquivo": "assets/pedro-crianca.jpg",
+     "obra": "Pedro e as irmãs",
+     "largura": 840,
+     "altura": 800,
+     "foco": [
+      0.45,
+      0.35
+     ],
+     "entra": 0,
+     "fundo": false,
+     "credito": "Félix-Émile Taunay (domínio público)",
+     "pos": [
+      0.5,
+      0.63
+     ]
+    },
+    {
+     "tipo": "colagem",
+     "forma": "carimbo",
+     "texto": "5 anos",
+     "entra": "cinco",
+     "pos": [
+      0.76,
+      0.78
+     ]
+    }
+   ]
+  },
+  {
+   "id": "regencia",
+   "palavras": [
+    30,
+    44
+   ],
+   "titulo": {
+    "texto": "Regência e a *tutela* de José Bonifácio"
+   },
+   "elementos": [
+    {
+     "tipo": "imagem",
+     "arquivo": "assets/bonifacio.jpg",
+     "obra": "José Bonifácio",
+     "largura": 600,
+     "altura": 800,
+     "foco": [
+      0.5,
+      0.2
+     ],
+     "entra": 0,
+     "credito": "Benedito Calixto (domínio público)",
+     "pos": [
+      0.5,
+      0.63
+     ]
+    },
+    {
+     "tipo": "colagem",
+     "forma": "carimbo",
+     "texto": "regência",
+     "entra": "regência.",
+     "pos": [
+      0.76,
+      0.78
+     ]
+    }
+   ]
+  },
+  {
+   "id": "maioridade",
+   "palavras": [
+    45,
+    57
+   ],
+   "titulo": {
+    "texto": "Em 23 de julho de 1840: *maioridade*"
+   },
+   "elementos": [
+    {
+     "tipo": "imagem",
+     "arquivo": "assets/coroacao.png",
+     "obra": "Coroação, 1841",
+     "largura": 880,
+     "altura": 500,
+     "entra": 0,
+     "credito": "Manuel de Araújo Porto-Alegre (domínio público)",
+     "pos": [
+      0.5,
+      0.63
+     ]
+    },
+    {
+     "tipo": "colagem",
+     "forma": "carimbo",
+     "texto": "Senado",
+     "entra": "Senado",
+     "pos": [
+      0.76,
+      0.78
+     ]
+    }
+   ]
+  },
+  {
+   "id": "catorze",
+   "palavras": [
+    58,
+    61
+   ],
+   "titulo": {
+    "texto": "Ele tinha *catorze anos*"
+   },
+   "elementos": [
+    {
+     "tipo": "imagem",
+     "arquivo": "assets/pedro-crianca.jpg",
+     "obra": "Pedro e as irmãs",
+     "largura": 840,
+     "altura": 800,
+     "foco": [
+      0.45,
+      0.35
+     ],
+     "entra": 0,
+     "credito": "Félix-Émile Taunay (domínio público)",
+     "pos": [
+      0.5,
+      0.63
+     ]
+    },
+    {
+     "tipo": "colagem",
+     "forma": "carimbo",
+     "texto": "14 anos",
+     "entra": "catorze",
+     "pos": [
+      0.76,
+      0.78
+     ]
+    }
+   ]
+  },
+  {
+   "id": "constituicao",
+   "palavras": [
+    62,
+    76
+   ],
+   "titulo": {
+    "texto": "Constituição de 1824: menor até os *dezoito*"
+   },
+   "elementos": [
+    {
+     "tipo": "imagem",
+     "arquivo": "assets/constituicao.jpg",
+     "obra": "Constituição de 1824",
+     "largura": 600,
+     "altura": 800,
+     "entra": "Só",
+     "credito": "Arquivo Nacional (CC0)",
+     "pos": [
+      0.5,
+      0.63
+     ]
+    },
+    {
+     "tipo": "colagem",
+     "forma": "carimbo",
+     "texto": "18 anos",
+     "entra": "dezoito.",
+     "pos": [
+      0.76,
+      0.78
+     ]
+    },
+    {
+     "tipo": "colagem",
+     "forma": "carimbo",
+     "texto": "art. 121",
+     "entra": "imperador",
+     "pos": [
+      0.26,
+      0.78
+     ]
+    }
+   ]
+  },
+  {
+   "id": "governo",
+   "palavras": [
+    77,
+    87
+   ],
+   "som": "virada",
+   "titulo": {
+    "texto": "Governou *quarenta e nove* anos"
+   },
+   "elementos": [
+    {
+     "tipo": "imagem",
+     "arquivo": "assets/pedro-velho.jpg",
+     "obra": "Pedro II",
+     "largura": 600,
+     "altura": 800,
+     "foco": [
+      0.5,
+      0.15
+     ],
+     "entra": "E",
+     "credito": "Mathew Brady / Levin Corbin Handy (domínio público)",
+     "pos": [
+      0.5,
+      0.63
+     ]
+    },
+    {
+     "tipo": "colagem",
+     "forma": "carimbo",
+     "texto": "República",
+     "entra": "República.",
+     "pos": [
+      0.76,
+      0.78
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "palavras": [
+    88,
+    94
+   ],
+   "titulo": {
+    "texto": "Segue pra ver a *próxima*"
+   },
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "feedcelular",
+     "entra": "Segue",
+     "escala": 1.4,
+     "gira": 0.4
+    }
+   ],
+   "fator": 0.722
+  }
+ ],
+ "hashPalavras": "e826d3809a28"
+}

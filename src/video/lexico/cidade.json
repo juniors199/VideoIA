@@ -1,0 +1,291 @@
+{
+ "ponte": [
+  "ponte",
+  "pontes",
+  "viaduto",
+  "travessia"
+ ],
+ "semaforo": [
+  "semaforo",
+  "semaforos",
+  "sinal vermelho",
+  "sinaleira"
+ ],
+ "hidrante": [
+  "hidrante",
+  "hidrantes",
+  "bombeiro",
+  "bombeiros"
+ ],
+ "poste": [
+  "poste",
+  "postes",
+  "iluminacao publica",
+  "luminaria"
+ ],
+ "placapare": [
+  "placa de pare",
+  "sinalizacao",
+  "transito"
+ ],
+ "onibus": [
+  "onibus",
+  "ponto de onibus",
+  "passageiro",
+  "passageiros",
+  "transporte publico"
+ ],
+ "aviao": [
+  "aviao",
+  "avioes",
+  "voo",
+  "voos",
+  "aeronave",
+  "companhia aerea"
+ ],
+ "trem": [
+  "trem",
+  "trens",
+  "locomotiva",
+  "ferrovia",
+  "ferroviario"
+ ],
+ "bicicleta": [
+  "bicicleta",
+  "bicicletas",
+  "bike",
+  "ciclista",
+  "ciclovia",
+  "pedalar"
+ ],
+ "moto": [
+  "moto",
+  "motos",
+  "motocicleta",
+  "motociclista",
+  "motoboy"
+ ],
+ "caminhao": [
+  "caminhao",
+  "caminhoes",
+  "caminhoneiro",
+  "frete"
+ ],
+ "navio": [
+  "navio",
+  "navios",
+  "cargueiro",
+  "porto",
+  "conteiner",
+  "maritimo"
+ ],
+ "veleiro": [
+  "veleiro",
+  "barco",
+  "barcos",
+  "navegar",
+  "navegacao"
+ ],
+ "foguete3d": [
+  "foguete",
+  "foguetes",
+  "espacial",
+  "lancamento",
+  "nasa",
+  "orbita"
+ ],
+ "helicoptero": [
+  "helicoptero",
+  "helicopteros",
+  "helice"
+ ],
+ "escola": [
+  "escola",
+  "escolas",
+  "aluno",
+  "alunos",
+  "colegio",
+  "ensino"
+ ],
+ "hospital": [
+  "hospital",
+  "hospitais",
+  "saude",
+  "pronto socorro",
+  "ubs"
+ ],
+ "fabrica": [
+  "fabrica",
+  "fabricas",
+  "industria",
+  "industrial",
+  "producao",
+  "poluicao"
+ ],
+ "agencia": [
+  "agencia bancaria",
+  "banco",
+  "bancos",
+  "bancario"
+ ],
+ "mercado": [
+  "mercado",
+  "mercados",
+  "supermercado",
+  "loja",
+  "lojas",
+  "comercio"
+ ],
+ "correio": [
+  "correio",
+  "correios",
+  "carta",
+  "cartas",
+  "encomenda"
+ ],
+ "cerca": [
+  "cerca",
+  "cercas",
+  "quintal",
+  "divisa",
+  "muro"
+ ],
+ "casamoderna": [
+  "apartamento",
+  "condominio",
+  "imovel",
+  "imoveis",
+  "moradia"
+ ],
+ "sofa3d": [
+  "sofa",
+  "sofas",
+  "sala de estar",
+  "estofado"
+ ],
+ "cama3d": [
+  "cama",
+  "camas",
+  "dormir",
+  "sono",
+  "colchao",
+  "quarto de dormir"
+ ],
+ "mesa3d": [
+  "mesa",
+  "mesas",
+  "jantar",
+  "refeicao"
+ ],
+ "cadeira3d": [
+  "cadeira",
+  "cadeiras",
+  "sentar",
+  "assento"
+ ],
+ "geladeira3d": [
+  "geladeira",
+  "geladeiras",
+  "refrigerador",
+  "freezer",
+  "eletrodomestico"
+ ],
+ "porta3d": [
+  "porta",
+  "portas",
+  "portaria"
+ ],
+ "janela3d": [
+  "janela",
+  "janelas",
+  "vidraca",
+  "ventilacao"
+ ],
+ "chave3d": [
+  "chave",
+  "chaves",
+  "chaveiro",
+  "fechadura"
+ ],
+ "ventilador3d": [
+  "ventilador",
+  "ventiladores",
+  "ventilar",
+  "abafado"
+ ],
+ "tomada3d": [
+  "tomada",
+  "tomadas",
+  "energia eletrica",
+  "voltagem"
+ ],
+ "plugue3d": [
+  "plugue",
+  "plugues",
+  "carregador",
+  "cabo de energia",
+  "ligar na tomada"
+ ],
+ "interruptor3d": [
+  "interruptor",
+  "interruptores",
+  "acender a luz",
+  "apagar a luz"
+ ],
+ "torneira3d": [
+  "torneira",
+  "torneiras",
+  "pia",
+  "vazamento",
+  "desperdicio de agua"
+ ],
+ "vaso3d": [
+  "vaso",
+  "vasos",
+  "planta",
+  "plantas",
+  "jardim",
+  "jardinagem"
+ ],
+ "tenda": [
+  "tenda",
+  "barraca",
+  "acampamento",
+  "camping",
+  "acampar"
+ ],
+ "torrecontrole": [
+  "torre de controle",
+  "aeroporto",
+  "aeroportos",
+  "pouso",
+  "decolagem"
+ ],
+ "farol": [
+  "farol",
+  "farois",
+  "navegantes"
+ ],
+ "moinho": [
+  "moinho",
+  "moinhos",
+  "eolica",
+  "energia eolica"
+ ],
+ "silo": [
+  "silo",
+  "silos",
+  "grao",
+  "graos",
+  "armazenagem",
+  "safra"
+ ],
+ "guindaste": [
+  "guindaste",
+  "guindastes",
+  "obra",
+  "obras",
+  "construcao",
+  "construtora"
+ ]
+}

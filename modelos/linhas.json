@@ -1,0 +1,172 @@
+{
+  "id": "linhas",
+  "nome": "Linhas (ponto e traço branco)",
+  "versao": 1,
+  "paraQuem": "páginas de explicação abstrata: tecnologia, ideias, processos, redes e números",
+  "exemplosDePedido": [
+    "Como a internet cruza o oceano",
+    "Como uma ideia vira um produto"
+  ],
+  "apelidos": [
+    "minimal-motion",
+    "traco",
+    "ponto-branco"
+  ],
+  "formato": {
+    "preferidos": [
+      "revelacao",
+      "causa-efeito",
+      "mito-fato",
+      "passo-a-passo"
+    ],
+    "proibidos": [],
+    "padrao": "revelacao"
+  },
+  "roteiro": {
+    "palavras": [
+      90,
+      130
+    ],
+    "alvoSegundos": [
+      32,
+      46
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "uma frase curta com o fato que provoca (número, contraste ou pergunta), verdadeira e atribuível",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "mecanismo",
+        "seg": [
+          18,
+          30
+        ],
+        "instrucao": "um passo por frase, cada frase uma imagem (o estilo ilustra frase a frase)",
+        "n": [
+          3,
+          5
+        ]
+      },
+      {
+        "bloco": "virada",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "o detalhe que muda o jeito de ver"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "convite final curto"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "EN",
+      "PD"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "direto, curioso, frases curtas",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[calm, clear]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "contador": "quando-houver-numero",
+    "estilo": "linhas",
+    "cenarios": [
+      "palco"
+    ],
+    "pecasBase": [
+      "esfera",
+      "cubo",
+      "anel",
+      "engrenagem"
+    ],
+    "reserva": [
+      "esfera",
+      "anel",
+      "cubo"
+    ],
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2,
+      6
+    ],
+    "trocaVisualMaxSeg": 4
+  },
+  "som": {
+    "musica": false,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "minimalista",
+    "virais": [
+      "tipografico",
+      "definicao",
+      "tweet"
+    ]
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, o porquê em 2 linhas, pergunta de opinião",
+    "hashtags": [
+      "#curiosidades",
+      "#vocesabia"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

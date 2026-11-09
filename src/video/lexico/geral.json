@@ -1,0 +1,309 @@
+{
+ "globo": [
+  "globo",
+  "planeta",
+  "continente",
+  "continentes",
+  "geografia",
+  "mapa-mundi"
+ ],
+ "terralua": [
+  "lua",
+  "orbita",
+  "satelite natural",
+  "mare"
+ ],
+ "solcoroa": [
+  "sol",
+  "coroa solar",
+  "calor do sol"
+ ],
+ "galaxia": [
+  "galaxia",
+  "via lactea",
+  "universo",
+  "espiral"
+ ],
+ "buraconegro": [
+  "buraco negro",
+  "horizonte de eventos",
+  "singularidade",
+  "gravidade"
+ ],
+ "onibusespacial": [
+  "onibus espacial",
+  "nave",
+  "lancamento",
+  "nasa"
+ ],
+ "astronauta": [
+  "astronauta",
+  "astronautas",
+  "espaco",
+  "gravidade zero",
+  "traje espacial"
+ ],
+ "estacaoespacial": [
+  "estacao espacial",
+  "orbita baixa",
+  "laboratorio espacial",
+  "satelite artificial"
+ ],
+ "meteoro": [
+  "meteoro",
+  "meteoros",
+  "meteorito",
+  "estrela cadente",
+  "asteroide"
+ ],
+ "eclipse": [
+  "eclipse",
+  "eclipses",
+  "sombra da lua",
+  "lua cobre o sol"
+ ],
+ "cometa": [
+  "cometa",
+  "cometas",
+  "halley"
+ ],
+ "terremoto": [
+  "terremoto",
+  "terremotos",
+  "tremor",
+  "sismo",
+  "placas tectonicas",
+  "falha geologica"
+ ],
+ "tsunami": [
+  "tsunami",
+  "tsunamis",
+  "maremoto",
+  "onda gigante"
+ ],
+ "furacao": [
+  "furacao",
+  "furacoes",
+  "ciclone",
+  "tufao",
+  "tempestade tropical"
+ ],
+ "bolafutebol": [
+  "futebol",
+  "gol",
+  "copa do mundo",
+  "jogador"
+ ],
+ "trave": [
+  "trave",
+  "goleiro",
+  "penalti"
+ ],
+ "campofutebol": [
+  "estadio",
+  "partida",
+  "escalacao"
+ ],
+ "cestabasquete": [
+  "basquete",
+  "cesta",
+  "nba",
+  "enterrada"
+ ],
+ "raquete": [
+  "tenis",
+  "raquete",
+  "wimbledon",
+  "tenista"
+ ],
+ "haltere": [
+  "haltere",
+  "halteres",
+  "musculacao",
+  "academia",
+  "levantamento de peso",
+  "treino"
+ ],
+ "violao": [
+  "violao",
+  "violoes",
+  "guitarra",
+  "cordas",
+  "musico"
+ ],
+ "piano": [
+  "piano",
+  "pianista",
+  "teclas",
+  "concerto",
+  "orquestra"
+ ],
+ "notamusical": [
+  "nota musical",
+  "musica",
+  "melodia",
+  "cancao"
+ ],
+ "discovinil": [
+  "vinil",
+  "disco de vinil",
+  "toca-discos",
+  "vitrola",
+  "gravadora"
+ ],
+ "cameracinema": [
+  "cinema",
+  "filmagem",
+  "diretor",
+  "filme",
+  "camera de cinema"
+ ],
+ "claquete": [
+  "claquete",
+  "gravacao",
+  "set de filmagem"
+ ],
+ "palcoholofotes": [
+  "palco",
+  "show",
+  "teatro",
+  "holofote",
+  "espetaculo",
+  "plateia"
+ ],
+ "pincelpaleta": [
+  "pintura",
+  "pintor",
+  "artista",
+  "tinta",
+  "arte"
+ ],
+ "escultura": [
+  "escultura",
+  "escultor",
+  "busto",
+  "estatua",
+  "marmore"
+ ],
+ "relogiobolso": [
+  "relogio de bolso",
+  "antigamente",
+  "pontualidade"
+ ],
+ "ovoquebrando": [
+  "ovo",
+  "ovos",
+  "casca",
+  "gema",
+  "galinha"
+ ],
+ "piramidealimentos": [
+  "alimentacao",
+  "dieta",
+  "nutricao",
+  "alimentos",
+  "cardapio",
+  "comida"
+ ],
+ "microondas": [
+  "microondas",
+  "micro-ondas",
+  "esquentar",
+  "aquecer comida",
+  "radiacao"
+ ],
+ "chuveiro": [
+  "chuveiro",
+  "banho",
+  "ducha",
+  "agua quente",
+  "higiene"
+ ],
+ "privada": [
+  "privada",
+  "vaso sanitario",
+  "banheiro",
+  "saneamento",
+  "descarga"
+ ],
+ "espelho": [
+  "espelho",
+  "reflexo",
+  "reflete",
+  "imagem refletida"
+ ],
+ "moedareal": [
+  "moeda de um real",
+  "moeda",
+  "um real",
+  "centavos",
+  "troco"
+ ],
+ "senha": [
+  "senha",
+  "senhas",
+  "login",
+  "autenticacao"
+ ],
+ "nuvemdados": [
+  "nuvem de dados",
+  "armazenamento",
+  "servidor",
+  "banco de dados",
+  "backup"
+ ],
+ "ondacerebral": [
+  "onda cerebral",
+  "ondas cerebrais",
+  "eletroencefalograma",
+  "atividade cerebral"
+ ],
+ "virus": [
+  "virus",
+  "viral",
+  "infeccao",
+  "pandemia",
+  "contagio"
+ ],
+ "celula": [
+  "celula",
+  "celulas",
+  "nucleo",
+  "organela",
+  "biologia"
+ ],
+ "bacteria": [
+  "bacteria",
+  "bacterias",
+  "microbio",
+  "microbios",
+  "antibiotico"
+ ],
+ "esqueletodino": [
+  "dinossauro",
+  "dinossauros",
+  "fossil",
+  "fosseis",
+  "paleontologo",
+  "t-rex"
+ ],
+ "mamute": [
+  "mamute",
+  "mamutes",
+  "era do gelo",
+  "pre-historia",
+  "glacial"
+ ],
+ "arvoregenealogica": [
+  "arvore genealogica",
+  "antepassados",
+  "ancestrais",
+  "descendentes",
+  "heranca"
+ ],
+ "impressaodigital": [
+  "impressao digital",
+  "biometria",
+  "papiloscopia"
+ ]
+}

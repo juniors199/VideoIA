@@ -1,0 +1,166 @@
+{
+  "id": "letreiro",
+  "nome": "Letreiro (lettering editorial na marca)",
+  "versao": 1,
+  "paraQuem": "qualquer página: curiosidades, aula, finanças, notícia, fé, saúde, negócio local, receita, tecnologia",
+  "exemplosDePedido": [
+    "Para a botânica, o morango não é fruto",
+    "Selic: o número que mexe no seu boleto"
+  ],
+  "apelidos": [
+    "lettering",
+    "tipografia",
+    "tela-cheia",
+    "manchete"
+  ],
+  "formato": {
+    "preferidos": [
+      "mito-fato",
+      "numero-impossivel",
+      "revelacao",
+      "comparativo"
+    ],
+    "proibidos": [],
+    "padrao": "mito-fato"
+  },
+  "roteiro": {
+    "palavras": [
+      80,
+      130
+    ],
+    "alvoSegundos": [
+      28,
+      46
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "a tese em uma frase curta (o letreiro escreve a síntese, não a fala inteira)",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "mecanismo",
+        "seg": [
+          15,
+          28
+        ],
+        "instrucao": "um passo por frase, cada uma com o objeto real do assunto (peça, foto ou número)",
+        "n": [
+          3,
+          5
+        ]
+      },
+      {
+        "bloco": "virada",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "o contraste: frase riscada e trocada ou número gigante; o fundo vira a cor de destaque"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "convite final curto"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "EN",
+      "PD"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "frases curtas que cabem em 2 linhas; uma tese por frase",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[calm, clear]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "contador": "quando-houver-numero",
+    "estilo": "letreiro",
+    "cenarios": [
+      "palco"
+    ],
+    "pecasBase": [
+      "lupa",
+      "livroaberto",
+      "lampadaideia"
+    ],
+    "reserva": [
+      "lupa",
+      "livroaberto"
+    ],
+    "titulos": "por-etapa"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2,
+      6
+    ],
+    "trocaVisualMaxSeg": 4
+  },
+  "som": {
+    "musica": false,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, o porquê em 2 linhas, pergunta de opinião",
+    "hashtags": [
+      "#curiosidades",
+      "#vocesabia"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

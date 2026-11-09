@@ -1,0 +1,135 @@
+{
+  "id": "historia",
+  "nome": "História",
+  "versao": 2,
+  "paraQuem": "perfis de história do Brasil e do mundo",
+  "exemplosDePedido": [
+    "O presidente que perdeu e assumiu"
+  ],
+  "apelidos": [
+    "historico"
+  ],
+  "formato": {
+    "preferidos": [
+      "antes-depois",
+      "revelacao",
+      "causa-efeito"
+    ],
+    "proibidos": [],
+    "padrao": "antes-depois"
+  },
+  "roteiro": {
+    "palavras": [
+      150,
+      230
+    ],
+    "alvoSegundos": [
+      55,
+      80
+    ],
+    "gatilhos": [
+      "HE",
+      "CI",
+      "EE"
+    ],
+    "abertura3Tempos": true,
+    "promessaMarca": null,
+    "loopAberto": true,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "contador de histórias, datas por extenso conferidas",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[calm, clear]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "estilo": "antiguidade",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [
+      "pergaminho",
+      "linhaeras",
+      "castelo",
+      "coroa",
+      "caravela",
+      "mapamundi",
+      "presidentefaixa",
+      "linhatempo"
+    ],
+    "reserva": [
+      "pergaminho",
+      "linhatempo",
+      "mapamundi"
+    ],
+    "pecasPorTema": true,
+    "imagens": "recomendada",
+    "contador": "quando-houver-numero",
+    "titulos": "gancho"
+  },
+  "ritmo": {
+    "beatSeg": [
+      3,
+      9
+    ],
+    "trocaVisualMaxSeg": 5
+  },
+  "som": {
+    "musica": true,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "antesdepois",
+      "texto",
+      "dado",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      8
+    ],
+    "estilo": "editorial",
+    "virais": [
+      "revista",
+      "linhatempo",
+      "citacao",
+      "colagem",
+      "anotada",
+      "divisao",
+      "manchete"
+    ]
+  },
+  "publicar": {
+    "legenda": "o fato, a data e a virada",
+    "hashtags": [
+      "#historia"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

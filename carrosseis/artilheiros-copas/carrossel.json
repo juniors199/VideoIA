@@ -1,0 +1,106 @@
+{
+  "perfil": "curiosidades",
+  "tema": "COPA DO MUNDO",
+  "legenda": "Mbappé fez 2 gols na disputa do 3º lugar, em 18/07/2026, chegou a 22 gols em Copas e passou Messi (21). A Espanha ganhou a final por 1 a 0 na Argentina, na prorrogação.\n\nQuem passa Mbappé um dia?\n\nSegue a página pra ver a próxima.\n\nFoto: Zo Yout (CC BY-SA 4.0) | Foto: Hossein Zohrevand (CC BY 4.0) | Foto: Dr.BenitaMartin (CC BY-SA 4.0)",
+  "marcadores": [
+    "copa2026",
+    "mbappe",
+    "futebol",
+    "esporte"
+  ],
+  "fontes": [
+    "ESPN, Mbappé passa Messi: https://www.espn.com/soccer/story/_/id/49257085/",
+    "Yahoo Sports, artilheiros das Copas: https://sports.yahoo.com/soccer/article/who-has-most-goals-in-world-cup-history-kylian-mbappe-passes-lionel-messi-with-2-goals-in-third-place-game-161623449.html",
+    "Jamaica Gleaner (AP), 18/07/2026: https://jamaica-gleaner.com/article/sports/20260718/kylian-mbappe-passes-lionel-messi-career-world-cup-scoring-record-22-goals",
+    "Fox Sports, Chuteira de Ouro: https://www.foxsports.com/stories/soccer/frances-kylian-mbappe-wins-golden-boot-world-cups-top-goalscorer",
+    "Fox 13: https://www.fox13news.com/news/mbappe-tops-messi-golden-boot-all-time-record",
+    "CBS News, final: https://www.cbsnews.com/news/2026-fifa-world-cup-final-spain-argentina-sunday/",
+    "NPR, final: https://www.npr.org/2026/07/19/nx-s1-5899071/2026-world-cup-fifa-argentina-spain-final-championship",
+    "ESPN, Argentina x Espanha: https://www.espn.com/soccer/match/_/gameId/760517/argentina-spain"
+  ],
+  "slides": [
+    {
+      "tipo": "capafoto",
+      "imagem": "assets/mbappe.jpg",
+      "foco": "50% 22%",
+      "rotulo": "Copa 2026",
+      "titulo": "Mbappé virou o *maior* artilheiro das Copas",
+      "sub": "Dois gols na disputa do 3º lugar, em 18/07/2026, e ele passou Messi."
+    },
+    {
+      "tipo": "podio",
+      "titulo": "Quem fez mais gols em *Copas*",
+      "itens": [
+        {
+          "nome": "Mbappé",
+          "valor": "22 gols",
+          "imagem": "assets/mbappe.jpg",
+          "foco": "50% 18%"
+        },
+        {
+          "nome": "Messi",
+          "valor": "21 gols",
+          "imagem": "assets/messi.jpg",
+          "foco": "50% 16%"
+        },
+        {
+          "nome": "Klose",
+          "valor": "16 gols",
+          "imagem": "assets/klose.jpg",
+          "foco": "50% 25%"
+        }
+      ]
+    },
+    {
+      "tipo": "numeros",
+      "titulo": "A Copa de *Mbappé*",
+      "itens": [
+        {
+          "numero": "22",
+          "legenda": "gols em Copas do Mundo"
+        },
+        {
+          "numero": "10",
+          "legenda": "gols só em 2026"
+        },
+        {
+          "numero": "2",
+          "legenda": "Chuteiras de Ouro: o primeiro a ganhar duas"
+        }
+      ]
+    },
+    {
+      "tipo": "placar",
+      "competicao": "Final da Copa do Mundo de 2026",
+      "casa": {
+        "nome": "Espanha",
+        "sigla": "ESP",
+        "gols": 1
+      },
+      "fora": {
+        "nome": "Argentina",
+        "sigla": "ARG",
+        "gols": 0
+      },
+      "info": "19/07/2026 · MetLife Stadium · na prorrogação",
+      "lances": [
+        {
+          "minuto": "106'",
+          "texto": "Ferran Torres"
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Espanha *bicampeã*",
+      "texto": "É o segundo título mundial da Espanha. O primeiro foi em 2010.",
+      "fotoFundo": "assets/klose.jpg"
+    },
+    {
+      "tipo": "fecho",
+      "titulo": "Quem passa Mbappé um *dia*?",
+      "texto": "Deixa o seu palpite.",
+      "fotoFundo": "assets/mbappe.jpg"
+    }
+  ]
+}

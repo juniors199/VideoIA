@@ -1,0 +1,71 @@
+{
+  "perfil": "curiosidades",
+  "tema": "RECEITA",
+  "visual": "claro",
+  "legenda": "Segundo a tradição, o brigadeiro ganhou o nome na campanha do Brigadeiro Eduardo Gomes à Presidência, em 1945 (ele perdeu para Eurico Gaspar Dutra). A receita clássica: leite condensado, manteiga, chocolate ou cacau em pó e granulado.\n\nVocê come de colher ou enrolado?\n\nSegue a página pra ver a próxima.\n\nFoto: Rodrigo Senna from Brasília, DF, Brasil (CC BY 2.0)",
+  "marcadores": [
+    "brigadeiro",
+    "receita",
+    "doce",
+    "historia"
+  ],
+  "fontes": [
+    "Wikipedia, Brigadeiro: https://en.wikipedia.org/wiki/Brigadeiro",
+    "Tudo Gostoso, história do brigadeiro: https://www.tudogostoso.com.br/noticias/quem-inventou-o-brigadeiro-conheca-a-verdadeira-historia-do-doce-mais-amado-do-brasil-a22913.htm",
+    "Band Receitas, origem do brigadeiro: https://www.band.com.br/receitas/noticias/qual-a-origem-do-brigadeiro-202509101352",
+    "Pão de Açúcar, lata 395 g: https://www.paodeacucar.com/produto/50670/leite-condensado-integral-moca-lata-395g",
+    "Tenda Atacado, lata 395 g: https://www.tendaatacado.com.br/produto/leite-condensado-moca-integral-lata-395g"
+  ],
+  "slides": [
+    {
+      "tipo": "capafoto",
+      "imagem": "assets/brigadeiro.jpg",
+      "rotulo": "Receita",
+      "titulo": "O brigadeiro tem nome de *campanha*",
+      "sub": "Segundo a tradição, de 1945. E a receita cabe num slide."
+    },
+    {
+      "tipo": "receita",
+      "imagem": "assets/brigadeiro.jpg",
+      "titulo": "Brigadeiro de *panela*",
+      "dificuldade": "Fácil",
+      "ingredientes": [
+        "1 lata de leite condensado (395 g)",
+        "1 colher (sopa) de manteiga",
+        "3 colheres (sopa) de chocolate",
+        "Chocolate granulado para enrolar"
+      ]
+    },
+    {
+      "tipo": "passo",
+      "icone": "fogo",
+      "titulo": "Fogo baixo",
+      "texto": "Junte leite condensado, manteiga e chocolate na panela e mexa sem parar.",
+      "fotoFundo": "assets/brigadeiro.jpg"
+    },
+    {
+      "tipo": "passo",
+      "titulo": "Mexa até desgrudar",
+      "texto": "Quando a massa soltar do fundo da panela, está no ponto.",
+      "fotoFundo": "assets/brigadeiro.jpg"
+    },
+    {
+      "tipo": "passo",
+      "titulo": "Esfrie e enrole",
+      "texto": "Com as mãos untadas, faça bolinhas e passe no granulado.",
+      "fotoFundo": "assets/brigadeiro.jpg"
+    },
+    {
+      "tipo": "texto",
+      "titulo": "A história do *nome*",
+      "texto": "Segundo a tradição, o doce homenageia o Brigadeiro Eduardo Gomes, candidato a presidente em 1945. Ele perdeu para Eurico Gaspar Dutra.",
+      "fotoFundo": "assets/brigadeiro.jpg"
+    },
+    {
+      "tipo": "fecho",
+      "titulo": "De colher ou *enrolado*?",
+      "texto": "Conta nos comentários.",
+      "fotoFundo": "assets/brigadeiro.jpg"
+    }
+  ]
+}

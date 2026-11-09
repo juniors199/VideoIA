@@ -1,0 +1,34 @@
+#!/bin/bash
+ 
+ # Abre o estúdio web (Mac e Linux). Quem chama: "Abrir Estúdio (Mac).command" e o atalho da Mesa.
+cd "$(dirname "$0")/../.." || exit 1
+STUDIO="$(pwd)"
+printf '\033]0;Ilustrando Studio\007'
+# shellcheck source=node.sh
+. "$STUDIO/ferramentas/instalador/node.sh"
+if ! ilu_achar_node "$STUDIO" || [ ! -d "$STUDIO/node_modules/playwright" ]; then
+  echo
+  echo "  O estúdio ainda não foi instalado neste computador."
+  echo "  Feche esta janela e dê dois cliques em \"Instalar (Mac)\", na pasta do estúdio."
+  echo
+  ilu_tela_ajuda "$STUDIO" "O estúdio ainda não foi instalado neste computador." "Feche a janela preta e dê dois cliques em \"Instalar (Mac)\", na pasta do estúdio. Ele instala tudo sozinho." "abrir o estúdio" 2>/dev/null
+  exit 1
+fi
+# proxy da empresa ou da escola: o Node só usa HTTPS_PROXY com esta opção (licença e voz precisam de internet)
+if [ -n "${HTTPS_PROXY:-}${https_proxy:-}" ]; then export NODE_USE_ENV_PROXY=1 NODE_NO_WARNINGS=1; fi
+echo
+echo "  Ilustrando Studio"
+echo "  Abrindo no navegador. Deixe esta janela aberta enquanto usa o estúdio; para fechar o estúdio, feche esta janela."
+echo
+# 0.6.4: se o estúdio cair sem explicar (código diferente de 0, 10 e 130), abre a tela de ajuda com o diagnóstico
+LOG="$STUDIO/.estudio/ultimo-erro.log"
+mkdir -p "$STUDIO/.estudio" 2>/dev/null
+"$NODE" "$STUDIO/src/estudio/servidor.mjs" --abrir 2> >(tee "$LOG" >&2)
+CODIGO=$?
+case "$CODIGO" in
+  0|10|130|143) ;;
+  *)
+    "$NODE" "$STUDIO/src/estudio/socorro.mjs" --etapa=estudio-abrir --codigo=saida-$CODIGO --log="$LOG" 2>/dev/null \
+      || { ilu_aviso_anonimo "$STUDIO" "estudio-abrir" "saida-$CODIGO" "O estúdio fechou sozinho (código $CODIGO)."; ilu_tela_ajuda "$STUDIO" "O estúdio fechou sozinho (código $CODIGO)." "Abra de novo pelo \"Abrir Estúdio\". Se repetir, dê dois cliques em \"Instalar (Mac)\" para conferir a instalação." "abrir o estúdio"; } ;;
+esac
+exit "$CODIGO"

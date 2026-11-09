@@ -1,0 +1,80 @@
+{
+  "perfil": "curiosidades",
+  "tema": "TECNOLOGIA",
+  "legenda": "Em 3 de abril de 1973, Martin Cooper, da Motorola, fez a primeira ligação de um celular portátil. O DynaTAC 8000X foi aprovado em 1983 e custava US$ 3.995. O celular chegou ao Brasil em 1990, no Rio, e o iPhone foi anunciado em 2007.\n\nQual foi o seu primeiro celular?\n\nSegue a página pra ver a próxima.\n\nFoto: Avicente05 (CC BY-SA 4.0)",
+  "marcadores": [
+    "celular",
+    "tecnologia",
+    "historia",
+    "motorola"
+  ],
+  "fontes": [
+    "AARP, first cell phone call: https://www.aarp.org/politics-society/history/info-2018/first-cell-phone-call.html",
+    "ABC7, Martin Cooper: https://abc7news.com/post/martin-cooper-first-cell-phone-call-motorola-april-3/13077296/",
+    "Motorola Solutions, história: https://www.motorolasolutions.com/en_us/about/history/explore-motorola-heritage/cell-phone-development.html",
+    "Wikipedia, DynaTAC: https://en.wikipedia.org/wiki/DynaTAC",
+    "Industrial Design History: https://industrialdesignhistory.com/book/export/html/142",
+    "Mobile Time, primeiro celular do Brasil: https://www.mobiletime.com.br/museu-movel/27/01/2023/motorola-pt-550-o-primeiro-celular-do-brasil/",
+    "Hardware.com.br: https://www.hardware.com.br/artigos/o-dia-em-que-celular-chegou-ao-brasil/amp/",
+    "Apple Newsroom (09/01/2007): https://www.apple.com/newsroom/2007/01/09Apple-Reinvents-the-Phone-with-iPhone/",
+    "Apple Newsroom (28/06/2007): https://www.apple.com/newsroom/2007/06/28iPhone-Premieres-This-Friday-Night-at-Apple-Retail-Stores/",
+    "Mental Floss: https://mentalfloss.com/article/90663/10-years-ago-today-steve-jobs-announced-iphone"
+  ],
+  "slides": [
+    {
+      "tipo": "capafoto",
+      "imagem": "assets/dynatac.png",
+      "foco": "50% 40%",
+      "rotulo": "1983",
+      "titulo": "O primeiro celular à venda custava *US$ 3.995*",
+      "sub": "Do tijolo à tela, em quatro datas."
+    },
+    {
+      "tipo": "linhatempo",
+      "titulo": "Do tijolo ao *touch*",
+      "marcos": [
+        {
+          "ano": "1973",
+          "texto": "Martin Cooper faz a 1ª ligação de um celular portátil"
+        },
+        {
+          "ano": "1983",
+          "texto": "O DynaTAC 8000X é aprovado nos EUA"
+        },
+        {
+          "ano": "1990",
+          "texto": "O celular chega ao Brasil, no Rio"
+        },
+        {
+          "ano": "2007",
+          "texto": "O iPhone é anunciado"
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "A primeira ligação foi para o *rival*",
+      "texto": "Martin Cooper, da Motorola, ligou para Joel Engel, chefe de pesquisa da Bell Labs, em 3 de abril de 1973.",
+      "fotoFundo": "assets/dynatac.png"
+    },
+    {
+      "tipo": "dado",
+      "numero": "1990",
+      "legenda": "o celular chega ao *Brasil*",
+      "texto": "No Rio de Janeiro, pela Telerj. A ligação de teste foi em 30 de dezembro, no Aterro do Flamengo.",
+      "fotoFundo": "assets/dynatac.png"
+    },
+    {
+      "tipo": "texto",
+      "titulo": "2007: o celular vira *tela*",
+      "texto": "Steve Jobs anunciou o iPhone em 9 de janeiro. A venda nos EUA começou em 29 de junho.",
+      "fotoFundo": "assets/dynatac.png"
+    },
+    {
+      "tipo": "fecho",
+      "titulo": "Qual foi o seu primeiro *celular*?",
+      "texto": "Conta nos comentários.",
+      "fotoFundo": "assets/dynatac.png"
+    }
+  ]
+}

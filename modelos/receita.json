@@ -1,0 +1,201 @@
+{
+  "id": "receita",
+  "nome": "Cozinha e receitas",
+  "versao": 1,
+  "paraQuem": "perfis de culinária, confeitaria, nutrição de cozinha (não clínica)",
+  "exemplosDePedido": [
+    "Por que o bolo murcha",
+    "O segredo do arroz soltinho"
+  ],
+  "apelidos": [
+    "cozinha",
+    "culinaria",
+    "receitas"
+  ],
+  "formato": {
+    "preferidos": [
+      "causa-efeito",
+      "passo-a-passo",
+      "mito-fato"
+    ],
+    "proibidos": [],
+    "padrao": "causa-efeito"
+  },
+  "roteiro": {
+    "palavras": [
+      120,
+      180
+    ],
+    "alvoSegundos": [
+      45,
+      65
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "o erro comum",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "porque",
+        "seg": [
+          10,
+          20
+        ],
+        "instrucao": "a química ou a física da cozinha",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "passos",
+        "seg": [
+          15,
+          25
+        ],
+        "instrucao": "3 passos para acertar, com medidas claras",
+        "n": [
+          3,
+          3
+        ]
+      },
+      {
+        "bloco": "resultado",
+        "seg": [
+          3,
+          6
+        ]
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          3,
+          5
+        ]
+      }
+    ],
+    "gatilhos": [
+      "PD",
+      "CI",
+      "PT"
+    ],
+    "abertura3Tempos": true,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.5,
+    "alfinetadas": [
+      0,
+      0
+    ],
+    "pessoa": "você",
+    "tom": "amigo na cozinha, prático, medidas claras (\"2 xícaras\", \"180 graus\")",
+    "vocabulario": "simples",
+    "proibir": [
+      "emagrece",
+      "desintoxica",
+      "detox"
+    ]
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[warm]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "estilo": "papel",
+    "cenarios": [
+      "mesa",
+      "sala"
+    ],
+    "pecasBase": [
+      "bolo",
+      "ovo",
+      "pao",
+      "xicara",
+      "prato",
+      "queijo",
+      "cenoura",
+      "termometro",
+      "cronometro",
+      "microondas",
+      "temperatura"
+    ],
+    "reserva": [
+      "bolo",
+      "xicara",
+      "prato",
+      "ovo"
+    ],
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "camera": {
+      "padrao": "normal",
+      "revelar": "avanca",
+      "numero": "nenhum"
+    },
+    "transicao": "desfoque",
+    "contador": "quando-houver-numero",
+    "titulos": "por-etapa"
+  },
+  "ritmo": {
+    "beatSeg": [
+      3,
+      8
+    ],
+    "trocaVisualMaxSeg": 5
+  },
+  "som": {
+    "musica": true,
+    "sfx": "discreto"
+  },
+  "cta": {
+    "tipo": "salvar",
+    "texto": "Salva para fazer no fim de semana.",
+    "palavra": null,
+    "perguntaFinal": "Qual receita você quer na próxima?"
+  },
+  "carrossel": {
+    "sequencia": [
+      "capafoto",
+      "receita",
+      "passo",
+      "passo",
+      "texto",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      8
+    ],
+    "estilo": "papel",
+    "virais": [
+      "receita",
+      "capafoto",
+      "passo",
+      "colagem",
+      "nota"
+    ]
+  },
+  "publicar": {
+    "legenda": "o erro, o porquê e a receita completa no carrossel",
+    "hashtags": [
+      "#receitas",
+      "#cozinha"
+    ],
+    "fontesNaLegenda": false,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 1,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [
+      "alegação de saúde"
+    ],
+    "revisaoHumana": false
+  }
+}

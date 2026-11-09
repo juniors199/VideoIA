@@ -1,0 +1,165 @@
+{
+  "id": "mundos",
+  "nome": "Mundos (um mundo de cor para cada item da lista)",
+  "versao": 1,
+  "paraQuem": "listas e rankings de 3 a 5 itens (invenções, lugares, hábitos, curiosidades numeradas): cada item ganha o próprio mundo de cor, aberto por uma íris, com o objeto real no centro",
+  "exemplosDePedido": [
+    "Três invenções brasileiras",
+    "Cinco lugares que parecem de outro planeta"
+  ],
+  "apelidos": [
+    "lista",
+    "ranking",
+    "top"
+  ],
+  "formato": {
+    "preferidos": [
+      "ranking",
+      "revelacao",
+      "comparativo",
+      "passo-a-passo"
+    ],
+    "proibidos": [],
+    "padrao": "ranking"
+  },
+  "roteiro": {
+    "palavras": [
+      80,
+      130
+    ],
+    "alvoSegundos": [
+      28,
+      46
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "a lista em uma frase: quantos itens e por que importam (o título escreve a síntese; os itens ainda não aparecem)",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "itens",
+        "seg": [
+          18,
+          30
+        ],
+        "instrucao": "cada item abre com \"Número N: o <nome>\" (a íris dispara no nome) e segue com 1 a 2 frases: o fato com data, lugar ou pessoa (o carimbo pousa nele) e um detalhe do objeto; pessoa citada só com foto de licença livre",
+        "n": [
+          3,
+          5
+        ]
+      },
+      {
+        "bloco": "fecho",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "volta ao mundo-mãe: pergunta de opinião sobre os itens (os objetos voltam em janelas, como no gancho)"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "convite final curto"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "EN",
+      "PD"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "uma ideia por frase; o nome de cada item dito logo depois do número; uma data, lugar ou pessoa por item para o carimbo",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[calm, clear]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "pecasPorTema": true,
+    "imagens": "recomendada",
+    "contador": "quando-houver-numero",
+    "estilo": "mundos",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [
+      "lupa",
+      "livroaberto",
+      "lampadaideia"
+    ],
+    "reserva": [
+      "lupa",
+      "livroaberto"
+    ],
+    "titulos": "por-etapa"
+  },
+  "ritmo": {
+    "beatSeg": [
+      1.5,
+      7
+    ],
+    "trocaVisualMaxSeg": 4
+  },
+  "som": {
+    "musica": false,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, o porquê em 2 linhas, pergunta de opinião",
+    "hashtags": [
+      "#curiosidades",
+      "#vocesabia"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

@@ -1,0 +1,497 @@
+{
+ "perfil": "curiosidades",
+ "tema": "TESTE ESTILO FATOS",
+ "estilo": "fatos",
+ "efeitos": {
+  "continuidade": true,
+  "entrada": "queda",
+  "fisica": true,
+  "luz": "estudio"
+ },
+ "beats": [
+  {
+   "id": "b01",
+   "palavras": [
+    0,
+    1
+   ],
+   "elementos": [
+    {
+     "tipo": "fatos",
+     "entra": 0,
+     "forma": "numero",
+     "valor": 41,
+     "foco": "BR-DF"
+    }
+   ],
+   "cenario": "satelite",
+   "camera": {
+    "mov": "empurrao"
+   }
+  },
+  {
+   "id": "b02",
+   "palavras": [
+    2,
+    11
+   ],
+   "elementos": [
+    {
+     "tipo": "fatos",
+     "entra": 0,
+     "forma": "mapa",
+     "foco": "BR-DF",
+     "chave": "Brasília"
+    }
+   ],
+   "cenario": "satelite",
+   "camera": {
+    "mov": "empurrao"
+   }
+  },
+  {
+   "id": "b03",
+   "palavras": [
+    12,
+    22
+   ],
+   "elementos": [
+    {
+     "tipo": "fatos",
+     "entra": 0,
+     "forma": "numero",
+     "valor": 1960,
+     "ano": true,
+     "de": 1936,
+     "foco": "BR-RJ"
+    }
+   ],
+   "cenario": "satelite",
+   "camera": {
+    "mov": "empurrao"
+   }
+  },
+  {
+   "id": "b04",
+   "palavras": [
+    23,
+    29
+   ],
+   "elementos": [
+    {
+     "tipo": "imagem",
+     "forma": "circulo",
+     "largura": 600,
+     "papel": "destaque",
+     "entra": "Juscelino",
+     "_foto": "Juscelino Kubitschek",
+     "arquivo": "assets/juscelino-kubitschek.jpg",
+     "credito": "Governo do Brasil (Public domain)"
+    },
+    {
+     "tipo": "fatos",
+     "entra": 0,
+     "forma": "foto",
+     "chave": "Kubitschek"
+    }
+   ],
+   "cenario": "painel",
+   "camera": {
+    "mov": "deriva"
+   }
+  },
+  {
+   "id": "b05",
+   "palavras": [
+    30,
+    41
+   ],
+   "elementos": [
+    {
+     "tipo": "fatos",
+     "entra": 0,
+     "forma": "mapa",
+     "foco": "BR-DF",
+     "fluxo": true,
+     "italico": "para"
+    }
+   ],
+   "cenario": "satelite",
+   "camera": {
+    "mov": "empurrao"
+   }
+  },
+  {
+   "id": "b07",
+   "palavras": [
+    42,
+    52
+   ],
+   "elementos": [
+    {
+     "tipo": "fatos",
+     "entra": 0,
+     "forma": "linhatempo",
+     "marcos": [
+      {
+       "data": "1956",
+       "chave": "1956",
+       "rotulo": "começaram"
+      },
+      {
+       "data": "1960",
+       "chave": "1960",
+       "rotulo": "inauguração"
+      }
+     ],
+     "italico": "e"
+    }
+   ],
+   "cenario": "painel",
+   "camera": {
+    "mov": "deriva"
+   }
+  },
+  {
+   "id": "b09",
+   "palavras": [
+    53,
+    64
+   ],
+   "elementos": [
+    {
+     "tipo": "fatos",
+     "entra": 0,
+     "forma": "numero",
+     "valor": 2.8,
+     "casas": 1,
+     "foco": "BR-DF",
+     "fluxo": true
+    }
+   ],
+   "cenario": "satelite",
+   "camera": {
+    "mov": "recuo"
+   }
+  },
+  {
+   "id": "b11",
+   "palavras": [
+    65,
+    73
+   ],
+   "elementos": [
+    {
+     "tipo": "fatos",
+     "entra": 0,
+     "forma": "frase",
+     "chave": "amigo"
+    }
+   ],
+   "cenario": "palco",
+   "camera": {
+    "mov": "orbita"
+   }
+  },
+  {
+   "id": "b12",
+   "palavras": [
+    74,
+    86
+   ],
+   "elementos": [
+    {
+     "tipo": "fatos",
+     "entra": 0,
+     "forma": "cta",
+     "chave": "ILUSTRANDO"
+    }
+   ],
+   "cenario": "palco",
+   "camera": {
+    "mov": "orbita"
+   }
+  }
+ ],
+ "gerado": "autoplano",
+ "relevancia": {
+  "versao": 1,
+  "familias": [
+   "redes"
+  ],
+  "beats": [
+   {
+    "beat": "b01",
+    "palavras": [
+     0,
+     1
+    ],
+    "casou": [],
+    "motivo": "nada casou; peça de apoio coerente (celular)",
+    "apoio": true
+   },
+   {
+    "beat": "b02",
+    "palavras": [
+     2,
+     11
+    ],
+    "casou": [
+     {
+      "forma": "ampulheta",
+      "nota": 1.5,
+      "termos": [
+       "tempo"
+      ]
+     },
+     {
+      "forma": "congresso",
+      "nota": 1.5,
+      "termos": [
+       "brasilia"
+      ]
+     },
+     {
+      "forma": "relogio3d",
+      "nota": 1.27,
+      "termos": [
+       "tempo"
+      ]
+     }
+    ],
+    "motivo": "nome próprio \"Brasília\": foto real buscada sozinha",
+    "foto": "Brasília"
+   },
+   {
+    "beat": "b03",
+    "palavras": [
+     12,
+     13
+    ],
+    "casou": [
+     {
+      "forma": "cristoredentor",
+      "nota": 2.2,
+      "termos": [
+       "rio de janeiro"
+      ]
+     }
+    ],
+    "motivo": "número da fala"
+   },
+   {
+    "beat": "b03f",
+    "palavras": [
+     14,
+     22
+    ],
+    "casou": [
+     {
+      "forma": "cristoredentor",
+      "nota": 2.2,
+      "termos": [
+       "rio de janeiro"
+      ]
+     }
+    ],
+    "motivo": "nome próprio \"Rio de Janeiro\": foto real buscada sozinha",
+    "foto": "Rio de Janeiro"
+   },
+   {
+    "beat": "b04",
+    "palavras": [
+     23,
+     25
+    ],
+    "casou": [],
+    "motivo": "nome próprio \"Juscelino Kubitschek\": foto real buscada sozinha",
+    "foto": "Juscelino Kubitschek"
+   },
+   {
+    "beat": "b04n",
+    "palavras": [
+     26,
+     29
+    ],
+    "casou": [],
+    "motivo": "número da fala"
+   },
+   {
+    "beat": "b05",
+    "palavras": [
+     30,
+     37
+    ],
+    "casou": [
+     {
+      "forma": "mastrobandeira",
+      "nota": 1.5,
+      "termos": [
+       "pais"
+      ]
+     },
+     {
+      "forma": "operariocapacete",
+      "nota": 1.3,
+      "termos": [
+       "trabalhador"
+      ]
+     },
+     {
+      "forma": "salarioenvelope",
+      "nota": 1.3,
+      "termos": [
+       "trabalhador"
+      ]
+     }
+    ],
+    "motivo": "peça casada com a fala"
+   },
+   {
+    "beat": "b06",
+    "palavras": [
+     38,
+     41
+    ],
+    "casou": [
+     {
+      "forma": "presidentefaixa",
+      "nota": 1.5,
+      "termos": [
+       "planalto"
+      ]
+     },
+     {
+      "forma": "palacio",
+      "nota": 1.5,
+      "termos": [
+       "planalto"
+      ]
+     }
+    ],
+    "motivo": "nome próprio \"Planalto Central\": foto real buscada sozinha",
+    "foto": "Planalto Central"
+   },
+   {
+    "beat": "b07",
+    "palavras": [
+     42,
+     46
+    ],
+    "casou": [
+     {
+      "forma": "guindaste",
+      "nota": 2,
+      "termos": [
+       "obras",
+       "obra"
+      ]
+     },
+     {
+      "forma": "operariocapacete",
+      "nota": 1.4,
+      "termos": [
+       "obra"
+      ]
+     }
+    ],
+    "motivo": "número da fala"
+   },
+   {
+    "beat": "b08",
+    "palavras": [
+     47,
+     52
+    ],
+    "casou": [],
+    "motivo": "número da fala"
+   },
+   {
+    "beat": "b09",
+    "palavras": [
+     53,
+     61
+    ],
+    "casou": [
+     {
+      "forma": "boneco",
+      "nota": 2,
+      "termos": [
+       "pessoas",
+       "pessoa"
+      ]
+     },
+     {
+      "forma": "sacodinheiro",
+      "nota": 1.5,
+      "termos": [
+       "milhoes"
+      ]
+     },
+     {
+      "forma": "pessoa",
+      "nota": 1.19,
+      "termos": [
+       "pessoa"
+      ]
+     }
+    ],
+    "motivo": "nome próprio \"Distrito Federal\": foto real buscada sozinha",
+    "foto": "Distrito Federal"
+   },
+   {
+    "beat": "b10",
+    "palavras": [
+     62,
+     64
+    ],
+    "casou": [],
+    "motivo": "nada casou; peça de apoio coerente (celular)",
+    "apoio": true
+   },
+   {
+    "beat": "b11",
+    "palavras": [
+     65,
+     73
+    ],
+    "casou": [
+     {
+      "forma": "compartilhar",
+      "nota": 2.5,
+      "termos": [
+       "manda pra um amigo"
+      ]
+     }
+    ],
+    "motivo": "peça casada com a fala"
+   },
+   {
+    "beat": "b12",
+    "palavras": [
+     74,
+     86
+    ],
+    "casou": [
+     {
+      "forma": "botaoseguir",
+      "nota": 2.5,
+      "termos": [
+       "segue a pagina"
+      ]
+     },
+     {
+      "forma": "comentario",
+      "nota": 1.8,
+      "termos": [
+       "comenta"
+      ]
+     }
+    ],
+    "motivo": "peça casada com a fala"
+   }
+  ]
+ },
+ "hashPalavras": "ac1d433c55aa",
+ "automatica": true
+}

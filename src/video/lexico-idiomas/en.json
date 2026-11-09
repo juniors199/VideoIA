@@ -1,0 +1,4598 @@
+{
+"pulmoes": [
+"lung",
+"lungs",
+"breathe",
+"breathing",
+"asthma",
+"smoker"
+],
+"estomago": [
+"stomach",
+"heartburn",
+"gastritis",
+"digestion",
+"gastric"
+],
+"rim": [
+"kidney",
+"kidneys",
+"renal",
+"kidney stone",
+"dialysis"
+],
+"figado": [
+"liver",
+"hepatic",
+"hepatitis",
+"cirrhosis",
+"hangover"
+],
+"intestino": [
+"intestine",
+"intestines",
+"gut",
+"gut flora",
+"constipation",
+"diarrhea"
+],
+"cranio": [
+"skull",
+"skeleton head",
+"skull fracture"
+],
+"neuronio": [
+"neuron",
+"neurons",
+"synapse",
+"nervous system"
+],
+"hemacia": [
+"red blood cell",
+"red blood cells",
+"blood cell",
+"blood cells"
+],
+"comprimido": [
+"pill",
+"pills",
+"tablet",
+"tablets",
+"medicine",
+"medication",
+"drug",
+"drugs"
+],
+"blister": [
+"blister pack",
+"take the medicine",
+"medicine strip"
+],
+"curativo": [
+"bandage",
+"band-aid",
+"wound",
+"injury",
+"cut"
+],
+"mascara": [
+"surgical mask",
+"face mask",
+"mask",
+"pandemic",
+"covid"
+],
+"bolsasangue": [
+"blood donation",
+"donate blood",
+"blood bag",
+"transfusion"
+],
+"balancabanheiro": [
+"bathroom scale",
+"lose weight",
+"gain weight",
+"extra pounds",
+"diet"
+],
+"biceps": [
+"biceps",
+"muscle",
+"muscles",
+"workout",
+"bodybuilding"
+],
+"cigarro": [
+"cigarette",
+"cigarettes",
+"smoking",
+"tobacco"
+],
+"mosquito": [
+"mosquito",
+"mosquitoes",
+"dengue",
+"aedes"
+],
+"garrafaagua": [
+"water bottle",
+"drink water",
+"hydration",
+"glasses of water"
+],
+"coluna": [
+"spine",
+"backbone",
+"vertebra",
+"vertebrae",
+"back pain"
+],
+"lousa": [
+"blackboard",
+"chalkboard",
+"classroom",
+"whiteboard"
+],
+"regua": [
+"ruler",
+"centimeter",
+"centimeters",
+"millimeter",
+"measure"
+],
+"compasso": [
+"compass",
+"geometry",
+"circumference",
+"technical drawing"
+],
+"caderno": [
+"notebook",
+"notebooks",
+"note taking",
+"take notes"
+],
+"capelo": [
+"graduation",
+"diploma",
+"college",
+"university",
+"degree"
+],
+"bequer": [
+"beaker",
+"laboratory",
+"experiment",
+"chemical reaction",
+"chemistry"
+],
+"placapetri": [
+"petri dish",
+"bacteria culture",
+"bacteria colony",
+"microbiology"
+],
+"bicobunsen": [
+"bunsen burner",
+"blue flame",
+"heat in the lab"
+],
+"cristal": [
+"crystal",
+"crystals",
+"quartz",
+"mineral",
+"minerals"
+],
+"amonite": [
+"fossil",
+"fossils",
+"ammonite",
+"paleontology"
+],
+"telefoneantigo": [
+"old phone",
+"landline",
+"rotary phone",
+"payphone"
+],
+"maquinaescrever": [
+"typewriter",
+"typing",
+"writer"
+],
+"gramofone": [
+"gramophone",
+"phonograph",
+"record player",
+"vinyl"
+],
+"penatinteiro": [
+"quill",
+"inkwell",
+"signed",
+"signature of the law"
+],
+"esferaarmilar": [
+"armillary sphere",
+"navigation",
+"navigators",
+"age of discovery",
+"explorers"
+],
+"elmoromano": [
+"roman",
+"romans",
+"roman empire",
+"legion",
+"legionary"
+],
+"correntequebrada": [
+"abolition",
+"slavery",
+"broken chain",
+"liberation",
+"freedom"
+],
+"chapeucangaceiro": [
+"outlaw",
+"bandit",
+"cowboy hat"
+],
+"sacacafe": [
+"coffee sack",
+"coffee bag",
+"coffee plantation",
+"coffee cycle"
+],
+"canadeacucar": [
+"sugarcane",
+"sugar cane",
+"sugar cycle",
+"cane field"
+],
+"bateia": [
+"gold panning",
+"prospector",
+"gold rush",
+"gold cycle"
+],
+"oca": [
+"village",
+"indigenous",
+"native peoples",
+"tribe",
+"tribes"
+],
+"botijao": [
+"gas cylinder",
+"cooking gas",
+"gas bottle",
+"gas price"
+],
+"panelapressao": [
+"pressure cooker",
+"cooking beans",
+"cook beans"
+],
+"escovadente": [
+"toothbrush",
+"brush your teeth",
+"toothpaste",
+"oral hygiene",
+"dental"
+],
+"vassoura": [
+"broom",
+"sweep",
+"cleaning",
+"housework"
+],
+"balde": [
+"bucket",
+"buckets",
+"pail"
+],
+"ferropassar": [
+"iron",
+"ironing",
+"wrinkled clothes",
+"iron the clothes"
+],
+"conetransito": [
+"roadwork",
+"road work",
+"traffic cone",
+"detour",
+"traffic jam",
+"roadblock"
+],
+"despertador": [
+"alarm clock",
+"wake up early",
+"alarm went off",
+"time to wake up"
+],
+"lixeira": [
+"trash can",
+"garbage",
+"recycling",
+"recycle",
+"waste",
+"trash"
+],
+"chaveinglesa": [
+"wrench",
+"tool",
+"tools",
+"repair",
+"fix"
+],
+"tesoura": [
+"scissors",
+"haircut",
+"barber",
+"hairdresser",
+"cut hair"
+],
+"secador": [
+"hair dryer",
+"blow dryer",
+"hair salon",
+"salon"
+],
+"fitametrica": [
+"tape measure",
+"measuring tape",
+"waist measurement",
+"tailor"
+],
+"bauentrega": [
+"delivery driver",
+"delivery drivers",
+"delivery",
+"delivery app",
+"courier"
+],
+"apito": [
+"whistle",
+"referee",
+"soccer referee",
+"final whistle"
+],
+"chuteira": [
+"cleats",
+"soccer cleats",
+"soccer player",
+"football boots"
+],
+"tenis": [
+"running shoes",
+"sneakers",
+"marathon",
+"jogging",
+"runner",
+"walking"
+],
+"luvaboxe": [
+"boxing",
+"boxing glove",
+"boxer",
+"fighter",
+"knockout"
+],
+"bolavolei": [
+"volleyball",
+"beach volleyball",
+"volleyball ball"
+],
+"prancha": [
+"surf",
+"surfing",
+"surfboard",
+"surfer"
+],
+"skate": [
+"skateboard",
+"skateboarding",
+"skater"
+],
+"bandeiraquadriculada": [
+"formula 1",
+"checkered flag",
+"car racing",
+"motorsport",
+"race car"
+],
+"cartaoarbitro": [
+"yellow card",
+"red card",
+"sent off",
+"ejection"
+],
+"qrcode": [
+"qr code",
+"qrcode",
+"scan the code",
+"scan"
+],
+"codigobarras": [
+"barcode",
+"bar code",
+"barcode scanner",
+"checkout"
+],
+"cupomfiscal": [
+"receipt",
+"receipts",
+"invoice",
+"tax receipt"
+],
+"cheque": [
+"check",
+"checks",
+"checkbook",
+"bounced check"
+],
+"tituloeleitor": [
+"voter id",
+"voter registration",
+"electoral court",
+"biometrics"
+],
+"tornozeleira": [
+"ankle monitor",
+"ankle bracelet",
+"house arrest",
+"electronic monitoring"
+],
+"cestabasica": [
+"basic food basket",
+"groceries",
+"monthly groceries",
+"staple foods"
+],
+"carregador": [
+"charger",
+"charge the phone",
+"phone charger",
+"battery dying",
+"low battery"
+],
+"smartwatch": [
+"smartwatch",
+"smart watch",
+"digital watch",
+"step counter",
+"count steps"
+],
+"disquete": [
+"floppy disk",
+"saved file",
+"save icon",
+"nineties"
+],
+"torrecelular": [
+"cell tower",
+"cell phone tower",
+"phone signal",
+"mobile carrier",
+"antenna"
+],
+"parabolica": [
+"satellite dish",
+"satellite tv",
+"tv signal"
+],
+"giroflex": [
+"police siren",
+"siren",
+"police operation",
+"police car",
+"patrol car"
+],
+"terco": [
+"rosary",
+"pray the rosary",
+"hail mary",
+"prayer beads"
+],
+"maosoracao": [
+"prayer",
+"pray",
+"praying",
+"pray for"
+],
+"asasanjo": [
+"angel",
+"angels",
+"guardian angel",
+"angel wings"
+],
+"arca": [
+"ark",
+"noah",
+"flood",
+"great flood",
+"boat"
+],
+"pomba": [
+"dove",
+"doves",
+"olive branch",
+"olive tree",
+"pigeon"
+],
+"cruz": [
+"cross",
+"crucifix",
+"christianity",
+"christ"
+],
+"tabuas": [
+"tablets",
+"commandments",
+"ten commandments",
+"moses"
+],
+"cajado": [
+"staff",
+"shepherds staff",
+"walking stick"
+],
+"maradividido": [
+"red sea",
+"parted sea",
+"crossing",
+"exodus"
+],
+"sarca": [
+"burning bush",
+"bush on fire"
+],
+"candelabro": [
+"menorah",
+"candelabra",
+"seven branches",
+"candlestick"
+],
+"harpa": [
+"harp",
+"david",
+"psalm",
+"psalms"
+],
+"shofar": [
+"shofar",
+"trumpet",
+"rams horn",
+"horn"
+],
+"calice": [
+"chalice",
+"goblet",
+"communion",
+"last supper",
+"holy cup"
+],
+"paopeixes": [
+"loaves and fishes",
+"bread and fish",
+"multiplication",
+"baskets"
+],
+"ovelha": [
+"sheep",
+"lamb",
+"flock",
+"herd"
+],
+"pastor": [
+"shepherd",
+"shepherds",
+"pastor",
+"herding",
+"guide"
+],
+"estrelabelem": [
+"bethlehem",
+"star of bethlehem",
+"christmas",
+"manger",
+"nativity"
+],
+"babel": [
+"babel",
+"tower of babel",
+"tower",
+"languages"
+],
+"jerico": [
+"jericho",
+"city wall",
+"walls",
+"siege"
+],
+"escadaja": [
+"jacob",
+"jacobs ladder",
+"ladder",
+"dream"
+],
+"arvorejardim": [
+"eden",
+"garden of eden",
+"tree",
+"forbidden fruit"
+],
+"serpente": [
+"serpent",
+"snake",
+"snakes",
+"temptation"
+],
+"barcopesca": [
+"fishing boat",
+"fisherman",
+"fishermen",
+"fishing"
+],
+"ancora": [
+"anchor",
+"anchors",
+"hope",
+"steadiness"
+],
+"tendadeserto": [
+"desert",
+"tent",
+"tents",
+"nomad",
+"nomads"
+],
+"montanhachama": [
+"sinai",
+"mount sinai",
+"mountain",
+"mount"
+],
+"vela": [
+"candle",
+"candles",
+"vigil",
+"prayer candle"
+],
+"livrosanto": [
+"bible",
+"holy book",
+"scripture",
+"scriptures"
+],
+"rolo": [
+"scroll",
+"parchment",
+"manuscript",
+"manuscripts"
+],
+"coroalouros": [
+"laurel",
+"laurel wreath",
+"victory",
+"triumph"
+],
+"altar": [
+"altar",
+"altars",
+"sacrifice",
+"offering"
+],
+"jarro": [
+"jar",
+"jug",
+"water jar",
+"wedding at cana"
+],
+"trigo": [
+"wheat",
+"ear of wheat",
+"harvest",
+"grain"
+],
+"videira": [
+"vine",
+"grapevine",
+"grape",
+"grapes",
+"vineyard"
+],
+"temploantigo": [
+"temple",
+"temples",
+"sanctuary",
+"jerusalem"
+],
+"relogiodias": [
+"seven days",
+"creation",
+"genesis",
+"week"
+],
+"arcaalianca": [
+"ark of the covenant",
+"covenant",
+"relic",
+"cherubim"
+],
+"baleia": [
+"whale",
+"jonah",
+"great fish",
+"nineveh"
+],
+"cestajunco": [
+"reed basket",
+"basket",
+"nile",
+"nile river"
+],
+"semeadura": [
+"sower",
+"sowing",
+"seed",
+"seeds",
+"plant seeds"
+],
+"lamparina": [
+"oil lamp",
+"lamp",
+"lantern",
+"olive oil"
+],
+"mostarda": [
+"mustard",
+"mustard seed",
+"growth"
+],
+"bandeirabrasil": [
+"brazilian flag",
+"flag of brazil",
+"green and yellow",
+"patriotism"
+],
+"camisaselecao": [
+"national team jersey",
+"yellow jersey",
+"brazilian national team"
+],
+"bolabrasil": [
+"soccer ball",
+"football",
+"great goal"
+],
+"tacacampeao": [
+"world cup",
+"world title",
+"championship",
+"champion",
+"trophy"
+],
+"mapabrasil": [
+"map of brazil",
+"brazilian territory",
+"brazilian states",
+"all of brazil"
+],
+"cristoredentor": [
+"christ the redeemer",
+"corcovado",
+"rio de janeiro",
+"marvelous city"
+],
+"paodeacucar": [
+"sugarloaf",
+"cable car",
+"guanabara bay"
+],
+"coqueiropraia": [
+"beach",
+"beaches",
+"coconut tree",
+"palm tree",
+"coast"
+],
+"cuiachimarrao": [
+"mate",
+"chimarrao",
+"yerba mate",
+"gaucho"
+],
+"carrinhopipoca": [
+"popcorn vendor",
+"popcorn cart",
+"street vendor",
+"peddler"
+],
+"carteiratrabalho": [
+"work permit",
+"employment card",
+"signed work card",
+"labor law"
+],
+"cedulareal": [
+"brazilian real bill",
+"real banknote",
+"real bills"
+],
+"pilhareais": [
+"real coins",
+"small change",
+"coins"
+],
+"tochaolimpica": [
+"olympic torch",
+"olympic games",
+"olympics",
+"olympic athlete"
+],
+"mascaracarnaval": [
+"carnival",
+"revelry",
+"street party",
+"samba parade"
+],
+"bandeirinhas": [
+"june festival",
+"festa junina",
+"bonfire",
+"bunting"
+],
+"feijoada": [
+"feijoada",
+"black beans",
+"clay pot",
+"brazilian food"
+],
+"cafecoado": [
+"filtered coffee",
+"coffee strainer",
+"brewed coffee",
+"cloth filter"
+],
+"rededormir": [
+"hammock",
+"lie in a hammock",
+"rest",
+"nap"
+],
+"amazonia": [
+"amazon",
+"amazon rainforest",
+"deforestation",
+"amazon river",
+"rainforest"
+],
+"tuiuiu": [
+"jabiru",
+"pantanal",
+"wetland bird",
+"wetlands"
+],
+"brigadeiro": [
+"brigadeiro",
+"chocolate truffle",
+"party sweet",
+"birthday party"
+],
+"chinelo": [
+"flip flop",
+"flip flops",
+"sandal",
+"sandals"
+],
+"berimbau": [
+"berimbau",
+"capoeira",
+"capoeira circle",
+"afro-brazilian culture"
+],
+"jangada": [
+"raft",
+"sailing raft",
+"artisanal fisherman",
+"artisanal fishing"
+],
+"esteiracena": [
+"conveyor belt",
+"assembly line",
+"pile of coins",
+"coins"
+],
+"painelbotoes": [
+"panel",
+"button",
+"buttons",
+"president",
+"control panel"
+],
+"ruatopo": [
+"street",
+"road",
+"lane",
+"roadway"
+],
+"plenario3d": [
+"plenary",
+"senate",
+"chamber",
+"senator",
+"congress",
+"parliament"
+],
+"multidaopraca": [
+"crowd",
+"square",
+"protest",
+"demonstration",
+"people"
+],
+"escritorio3d": [
+"office",
+"desk",
+"computer",
+"bureaucracy",
+"paperwork"
+],
+"fabricalinha": [
+"factory",
+"production line",
+"production",
+"industry",
+"manufacturing"
+],
+"cidadecresce": [
+"city grows",
+"urbanization",
+"buildings",
+"construction",
+"urban growth"
+],
+"ilhacena": [
+"island",
+"islands",
+"palm tree",
+"castaway",
+"stranded"
+],
+"bancocofre": [
+"safe",
+"vault",
+"bank",
+"strongbox",
+"gold reserve"
+],
+"tribunalcena": [
+"court",
+"courtroom",
+"judge",
+"trial",
+"justice"
+],
+"urnafila": [
+"ballot box",
+"voter",
+"voters",
+"election",
+"voting"
+],
+"laboratorio3d": [
+"laboratory",
+"lab",
+"research",
+"scientist",
+"experiment"
+],
+"cidadenoite": [
+"city at night",
+"night",
+"city lights",
+"lit windows"
+],
+"estradaonibus": [
+"highway",
+"bus",
+"road trip",
+"bus station",
+"journey"
+],
+"mercado3d": [
+"market",
+"street market",
+"stall",
+"vendor",
+"merchant"
+],
+"arenacena": [
+"colosseum",
+"arena",
+"gladiator",
+"ancient rome"
+],
+"planeta_terra_cena": [
+"planet",
+"earth",
+"globe",
+"world"
+],
+"bolsacena": [
+"stock exchange",
+"stock market",
+"shares",
+"stocks",
+"candlestick"
+],
+"igrejacena": [
+"church",
+"stained glass",
+"worship",
+"chapel"
+],
+"ponte": [
+"bridge",
+"bridges",
+"viaduct",
+"crossing"
+],
+"semaforo": [
+"traffic light",
+"traffic lights",
+"red light",
+"stoplight"
+],
+"hidrante": [
+"fire hydrant",
+"hydrant",
+"firefighter",
+"firefighters"
+],
+"poste": [
+"lamp post",
+"pole",
+"poles",
+"street light",
+"street lighting"
+],
+"placapare": [
+"stop sign",
+"signage",
+"traffic sign",
+"traffic"
+],
+"onibus": [
+"bus",
+"buses",
+"bus stop",
+"passenger",
+"passengers"
+],
+"aviao": [
+"airplane",
+"plane",
+"planes",
+"flight",
+"flights",
+"aircraft"
+],
+"trem": [
+"train",
+"trains",
+"locomotive",
+"railway",
+"railroad"
+],
+"bicicleta": [
+"bicycle",
+"bicycles",
+"bike",
+"bikes",
+"cyclist"
+],
+"moto": [
+"motorcycle",
+"motorcycles",
+"motorbike",
+"biker"
+],
+"caminhao": [
+"truck",
+"trucks",
+"trucker",
+"freight"
+],
+"navio": [
+"ship",
+"ships",
+"cargo ship",
+"port",
+"harbor"
+],
+"veleiro": [
+"sailboat",
+"boat",
+"boats",
+"sailing",
+"sail"
+],
+"foguete3d": [
+"rocket",
+"rockets",
+"space",
+"spacecraft",
+"launch"
+],
+"helicoptero": [
+"helicopter",
+"helicopters",
+"rotor"
+],
+"escola": [
+"school",
+"schools",
+"student",
+"students",
+"pupil"
+],
+"hospital": [
+"hospital",
+"hospitals",
+"health",
+"emergency room"
+],
+"fabrica": [
+"factory",
+"factories",
+"industry",
+"industrial",
+"plant"
+],
+"agencia": [
+"bank branch",
+"bank",
+"banks",
+"banking"
+],
+"mercado": [
+"supermarket",
+"grocery store",
+"store",
+"shop",
+"market"
+],
+"correio": [
+"post office",
+"mail",
+"letter",
+"letters",
+"postal"
+],
+"cerca": [
+"fence",
+"fences",
+"backyard",
+"boundary"
+],
+"casamoderna": [
+"apartment",
+"condo",
+"condominium",
+"real estate",
+"property"
+],
+"sofa3d": [
+"sofa",
+"couch",
+"living room",
+"upholstery"
+],
+"cama3d": [
+"bed",
+"beds",
+"sleep",
+"bedroom"
+],
+"mesa3d": [
+"table",
+"tables",
+"dinner",
+"meal",
+"dining"
+],
+"cadeira3d": [
+"chair",
+"chairs",
+"sit",
+"seat"
+],
+"geladeira3d": [
+"fridge",
+"refrigerator",
+"freezer",
+"refrigerators"
+],
+"porta3d": [
+"door",
+"doors",
+"doorway"
+],
+"janela3d": [
+"window",
+"windows",
+"glass pane",
+"ventilation"
+],
+"chave3d": [
+"key",
+"keys",
+"locksmith",
+"lock"
+],
+"ventilador3d": [
+"fan",
+"fans",
+"ventilate",
+"heat wave"
+],
+"tomada3d": [
+"outlet",
+"socket",
+"electric power",
+"voltage"
+],
+"plugue3d": [
+"plug",
+"plugs",
+"power cable",
+"charger cable"
+],
+"interruptor3d": [
+"light switch",
+"switch",
+"switches",
+"turn on the light",
+"turn off the light"
+],
+"torneira3d": [
+"faucet",
+"tap",
+"taps",
+"sink",
+"leak",
+"leaking"
+],
+"vaso3d": [
+"flower pot",
+"vase",
+"houseplant",
+"plants"
+],
+"tenda": [
+"tent",
+"tents",
+"campsite",
+"camping",
+"camp"
+],
+"torrecontrole": [
+"control tower",
+"airport",
+"airports",
+"landing"
+],
+"farol": [
+"lighthouse",
+"lighthouses",
+"beacon",
+"sailors"
+],
+"moinho": [
+"windmill",
+"windmills",
+"wind power",
+"wind energy",
+"wind turbine"
+],
+"silo": [
+"silo",
+"silos",
+"grain",
+"grains"
+],
+"guindaste": [
+"crane",
+"cranes",
+"construction site",
+"construction"
+],
+"rede": [
+"network",
+"networks",
+"connection",
+"connections"
+],
+"decisao": [
+"decision",
+"decisions",
+"decide",
+"choice",
+"choose"
+],
+"linhatempo": [
+"timeline",
+"chronology",
+"history",
+"milestones"
+],
+"piramide": [
+"pyramid",
+"hierarchy",
+"levels",
+"tiers"
+],
+"engrenagens": [
+"gears",
+"mechanism",
+"mechanisms",
+"work together"
+],
+"ciclo": [
+"cycle",
+"cycles",
+"repeats",
+"repetition",
+"loop"
+],
+"fluxo": [
+"transfer",
+"transfers",
+"flow",
+"flows"
+],
+"empilhado": [
+"stacked",
+"composition",
+"sum of the parts",
+"installments"
+],
+"fatias": [
+"pie chart",
+"slice",
+"slices",
+"proportion",
+"share"
+],
+"labirinto": [
+"maze",
+"labyrinth",
+"red tape",
+"hard way",
+"way out"
+],
+"bussola": [
+"compass",
+"orientation",
+"north",
+"direction",
+"heading"
+],
+"dardo": [
+"dart",
+"bullseye",
+"hit the target",
+"aim"
+],
+"corrente": [
+"chain",
+"link",
+"links",
+"chain of events"
+],
+"dado": [
+"dice",
+"luck",
+"lottery",
+"chance",
+"random"
+],
+"quebracabeca": [
+"puzzle",
+"jigsaw",
+"fits",
+"fit together",
+"piece of the puzzle"
+],
+"cofreabre": [
+"open the safe",
+"safe opens",
+"safe was cracked",
+"broke into"
+],
+"portaabre": [
+"door opens",
+"open the door",
+"doors open",
+"opportunity"
+],
+"areia": [
+"sand",
+"hourglass",
+"time running out",
+"time is up"
+],
+"temperatura": [
+"temperature",
+"fever",
+"heated up",
+"warming",
+"heat"
+],
+"velocimetro": [
+"speed",
+"speedometer",
+"accelerate",
+"accelerated",
+"speeding"
+],
+"linhacresce": [
+"growth",
+"grew",
+"grow",
+"rose",
+"increase"
+],
+"pendulo": [
+"pendulum",
+"swings",
+"swing",
+"back and forth"
+],
+"orbita": [
+"orbit",
+"orbits",
+"orbiting",
+"revolves around"
+],
+"vasos": [
+"communicating vessels",
+"level out",
+"balance",
+"equalize"
+],
+"pesagem": [
+"weighs more",
+"weigh",
+"scale tips",
+"imbalance"
+],
+"funilbolas": [
+"sales funnel",
+"funnel",
+"narrows",
+"screening"
+],
+"esteira": [
+"conveyor",
+"assembly line",
+"mass production",
+"logistics"
+],
+"catapulta": [
+"catapult",
+"launch",
+"throw",
+"throwing"
+],
+"elevador": [
+"elevator",
+"lift",
+"up and down",
+"floor",
+"floors"
+],
+"blocos": [
+"blocks",
+"block by block",
+"brick",
+"bricks"
+],
+"escadarolante": [
+"escalator",
+"escalators",
+"moving stairs",
+"mall",
+"shopping mall"
+],
+"sanduiche": [
+"sandwich",
+"burger",
+"hamburger",
+"snack",
+"filling"
+],
+"bolha": [
+"bubble",
+"bubbles",
+"burst",
+"popped"
+],
+"sinalwifi": [
+"wifi",
+"wi-fi",
+"signal",
+"internet"
+],
+"boneco": [
+"person",
+"people",
+"someone",
+"somebody",
+"human"
+],
+"bonecodepe": [
+"standing",
+"waiting",
+"nobody",
+"stand still"
+],
+"bonecoabracos": [
+"welcome",
+"hug",
+"embrace",
+"receive",
+"open arms"
+],
+"bonecoaponta": [
+"point",
+"points",
+"pointing",
+"blame",
+"guilty"
+],
+"bonecosentado": [
+"sitting",
+"sit down",
+"session",
+"meeting"
+],
+"bonecoandando": [
+"walk",
+"walking",
+"stroll",
+"path",
+"on foot"
+],
+"bonecocorrendo": [
+"run",
+"running",
+"race",
+"flee",
+"escape"
+],
+"bonecomaosacima": [
+"celebrate",
+"celebrating",
+"victory",
+"cheer"
+],
+"bonecocruzado": [
+"refuse",
+"refusal",
+"deny",
+"indifferent",
+"arms crossed"
+],
+"bonecoajoelhado": [
+"kneel",
+"kneeling",
+"beg",
+"humility"
+],
+"bonecodiscursa": [
+"speech",
+"give a speech",
+"podium",
+"speaker"
+],
+"bonecoacena": [
+"wave",
+"waving",
+"greet",
+"greeting",
+"hello"
+],
+"bonecopensa": [
+"think",
+"doubt",
+"reflect",
+"wonder",
+"thinking"
+],
+"bonecorendido": [
+"surrender",
+"hold up",
+"robbery",
+"rob",
+"mugging"
+],
+"bonecotriste": [
+"sad",
+"sadness",
+"defeat",
+"lose",
+"loss"
+],
+"presidentefaixa": [
+"president",
+"presidency",
+"inauguration",
+"leader",
+"head of state"
+],
+"juizmartelo": [
+"judge",
+"ruling",
+"sentence",
+"verdict",
+"gavel"
+],
+"politicoterno": [
+"politician",
+"politics",
+"lawmaker",
+"congressman",
+"senator"
+],
+"operariocapacete": [
+"worker",
+"construction worker",
+"hard hat",
+"laborer"
+],
+"medicojaleco": [
+"doctor",
+"physician",
+"nurse",
+"clinic"
+],
+"professorlousa": [
+"teacher",
+"professor",
+"class",
+"lesson",
+"teach"
+],
+"estudantemochila": [
+"student",
+"backpack",
+"college student",
+"pupil"
+],
+"soldadocapacete": [
+"soldier",
+"army",
+"military",
+"war"
+],
+"reicoroa": [
+"king",
+"queen",
+"monarchy",
+"royalty",
+"crown"
+],
+"viajantecajado": [
+"traveler",
+"pilgrim",
+"prophet",
+"wanderer"
+],
+"cientistaoculos": [
+"scientist",
+"researcher",
+"lab",
+"experiment"
+],
+"reportermicrofone": [
+"journalist",
+"reporter",
+"report",
+"press",
+"news"
+],
+"torcedorbandeira": [
+"fan",
+"fans",
+"supporter",
+"supporters",
+"cheering",
+"soccer"
+],
+"eleitorvotando": [
+"voter",
+"vote",
+"voting",
+"election",
+"ballot"
+],
+"multidao": [
+"crowd",
+"people",
+"population",
+"rally",
+"mob"
+],
+"filapessoas": [
+"queue",
+"line",
+"lines",
+"wait",
+"waiting"
+],
+"esteiramoedas": [
+"conveyor",
+"assembly line",
+"tax collection",
+"coins"
+],
+"graficovelas": [
+"candlestick",
+"candlesticks",
+"candle chart",
+"stock quote"
+],
+"painelbolsa": [
+"stock exchange",
+"stock market",
+"quotes",
+"ticker board"
+],
+"bolaneve": [
+"snowball",
+"compound interest",
+"snowball effect",
+"accumulates"
+],
+"piramidefinanceira": [
+"pyramid scheme",
+"ponzi",
+"ponzi scheme",
+"pyramid scam"
+],
+"funilimposto": [
+"tax",
+"taxes",
+"levy",
+"duty",
+"duties"
+],
+"inflacao": [
+"inflation",
+"shopping cart",
+"prices rise",
+"cost of living"
+],
+"etiquetasobe": [
+"price",
+"prices",
+"price hike",
+"increase",
+"raise"
+],
+"bolaferro": [
+"debt",
+"debts",
+"indebted",
+"in debt",
+"borrowing"
+],
+"leilaomartelo": [
+"auction",
+"auction off",
+"bid",
+"bids",
+"auctioneer"
+],
+"balancacomercial": [
+"trade balance",
+"exports",
+"export",
+"imports",
+"import"
+],
+"navioconteiner": [
+"ship",
+"container",
+"containers",
+"port",
+"shipping"
+],
+"barrilpetroleo": [
+"barrel",
+"oil",
+"barrels",
+"crude oil"
+],
+"torrepetroleo": [
+"oil rig",
+"drilling",
+"oil well",
+"pre-salt",
+"derrick"
+],
+"bombapetroleo": [
+"oil pump",
+"pumpjack",
+"well",
+"extract oil"
+],
+"ourotorre": [
+"gold",
+"gold bar",
+"gold bars",
+"bullion"
+],
+"caixaeletronico": [
+"atm",
+"cash machine",
+"withdraw",
+"withdrawal"
+],
+"maquininha": [
+"card machine",
+"payment",
+"pay by card",
+"tap to pay"
+],
+"boleto": [
+"bank slip",
+"bill",
+"bills",
+"barcode bill",
+"due date"
+],
+"moedacifrao": [
+"dollar",
+"dollar sign",
+"currency",
+"exchange rate",
+"exchange"
+],
+"macosdinheiro": [
+"stacks of cash",
+"banknotes",
+"cash",
+"bills"
+],
+"carteiradigital": [
+"digital wallet",
+"mobile payment",
+"phone",
+"pay with your phone"
+],
+"termometrorisco": [
+"risk",
+"thermometer",
+"risk level",
+"alert",
+"warning"
+],
+"graficorussa": [
+"roller coaster",
+"ups and downs",
+"volatility",
+"swings"
+],
+"relogiojuros": [
+"interest",
+"time",
+"over time",
+"yield",
+"returns"
+],
+"cedulasvoando": [
+"flying bills",
+"money rain",
+"money flying",
+"spend",
+"spending"
+],
+"salarioenvelope": [
+"salary",
+"salaries",
+"paycheck",
+"payslip",
+"pay"
+],
+"prateleiramercado": [
+"supermarket",
+"shelf",
+"shelves",
+"monthly groceries",
+"grocery basket"
+],
+"casafinanciada": [
+"mortgage",
+"financing",
+"financed",
+"own home",
+"home loan"
+],
+"balaoestoura": [
+"bubble",
+"burst",
+"bursts",
+"financial bubble"
+],
+"raiocrise": [
+"crisis",
+"crash",
+"collapse",
+"breakdown",
+"recession"
+],
+"transferencia": [
+"transfer",
+"wire",
+"wire transfer",
+"send money",
+"instant payment"
+],
+"ourodolar": [
+"gold and dollar",
+"gold versus dollar",
+"store of value",
+"safe haven"
+],
+"taxajuros": [
+"interest rate",
+"rates",
+"high interest",
+"percentage",
+"selic"
+],
+"banco": [
+"bank",
+"banks",
+"central bank",
+"financial institution"
+],
+"arvoremoedas": [
+"investment",
+"invest",
+"investing",
+"money grows",
+"returns"
+],
+"globo": [
+"globe",
+"planet",
+"continent",
+"continents",
+"world map"
+],
+"terralua": [
+"moon",
+"lunar",
+"orbit",
+"natural satellite",
+"tide",
+"tides"
+],
+"solcoroa": [
+"sun",
+"solar corona",
+"heat of the sun",
+"sunlight",
+"sunny"
+],
+"galaxia": [
+"galaxy",
+"milky way",
+"universe",
+"spiral"
+],
+"buraconegro": [
+"black hole",
+"event horizon",
+"singularity",
+"gravity"
+],
+"onibusespacial": [
+"space shuttle",
+"spacecraft",
+"launch",
+"nasa"
+],
+"astronauta": [
+"astronaut",
+"astronauts",
+"outer space",
+"zero gravity",
+"weightless"
+],
+"estacaoespacial": [
+"space station",
+"low orbit",
+"space laboratory",
+"artificial satellite",
+"satellite"
+],
+"meteoro": [
+"meteor",
+"meteors",
+"meteorite",
+"shooting star"
+],
+"eclipse": [
+"eclipse",
+"eclipses",
+"moons shadow",
+"moon covers the sun"
+],
+"cometa": [
+"comet",
+"comets",
+"halley"
+],
+"terremoto": [
+"earthquake",
+"earthquakes",
+"tremor",
+"seismic"
+],
+"tsunami": [
+"tsunami",
+"tsunamis",
+"tidal wave",
+"giant wave"
+],
+"furacao": [
+"hurricane",
+"hurricanes",
+"cyclone",
+"typhoon"
+],
+"bolafutebol": [
+"soccer",
+"football",
+"goal",
+"world cup",
+"player"
+],
+"trave": [
+"goalpost",
+"goalkeeper",
+"penalty",
+"goalie"
+],
+"campofutebol": [
+"stadium",
+"match",
+"lineup",
+"soccer field",
+"pitch"
+],
+"cestabasquete": [
+"basketball",
+"hoop",
+"nba",
+"slam dunk"
+],
+"raquete": [
+"tennis",
+"racket",
+"wimbledon",
+"tennis player"
+],
+"haltere": [
+"dumbbell",
+"dumbbells",
+"weights",
+"gym",
+"weightlifting"
+],
+"violao": [
+"acoustic guitar",
+"guitar",
+"guitars",
+"strings",
+"chords"
+],
+"piano": [
+"piano",
+"pianist",
+"keys",
+"concert"
+],
+"notamusical": [
+"musical note",
+"music",
+"melody",
+"song"
+],
+"discovinil": [
+"vinyl",
+"vinyl record",
+"turntable",
+"record player"
+],
+"cameracinema": [
+"cinema",
+"film shoot",
+"filming",
+"director",
+"movie"
+],
+"claquete": [
+"clapperboard",
+"recording",
+"film set",
+"take"
+],
+"palcoholofotes": [
+"stage",
+"show",
+"theater",
+"spotlight",
+"theatre"
+],
+"pincelpaleta": [
+"painting",
+"painter",
+"artist",
+"paint",
+"art"
+],
+"escultura": [
+"sculpture",
+"sculptor",
+"bust",
+"statue"
+],
+"relogiobolso": [
+"pocket watch",
+"the old days",
+"punctuality"
+],
+"ovoquebrando": [
+"egg",
+"eggs",
+"eggshell",
+"yolk"
+],
+"piramidealimentos": [
+"nutrition",
+"diet",
+"food groups",
+"foods",
+"eating"
+],
+"microondas": [
+"microwave",
+"microwave oven",
+"reheat",
+"heat food"
+],
+"chuveiro": [
+"shower",
+"showerhead",
+"bath",
+"hot water"
+],
+"privada": [
+"toilet",
+"bathroom",
+"sanitation",
+"restroom"
+],
+"espelho": [
+"mirror",
+"reflection",
+"reflects",
+"reflected image"
+],
+"moedareal": [
+"coin",
+"one real coin",
+"cents",
+"single coin"
+],
+"senha": [
+"password",
+"passwords",
+"login",
+"authentication",
+"pin"
+],
+"nuvemdados": [
+"data cloud",
+"cloud storage",
+"storage",
+"server",
+"database"
+],
+"ondacerebral": [
+"brain wave",
+"brain waves",
+"eeg",
+"brain activity"
+],
+"virus": [
+"virus",
+"viruses",
+"viral",
+"infection",
+"pandemic"
+],
+"celula": [
+"cell",
+"cells",
+"nucleus",
+"organelle"
+],
+"bacteria": [
+"bacteria",
+"bacterium",
+"microbe",
+"microbes",
+"germs"
+],
+"esqueletodino": [
+"dinosaur",
+"dinosaurs",
+"fossil",
+"fossils",
+"skeleton"
+],
+"mamute": [
+"mammoth",
+"mammoths",
+"ice age",
+"prehistory",
+"prehistoric"
+],
+"arvoregenealogica": [
+"family tree",
+"ancestors",
+"descendants",
+"genealogy",
+"ancestry"
+],
+"impressaodigital": [
+"fingerprint",
+"fingerprints",
+"biometrics",
+"biometric"
+],
+"curtida": [
+"like",
+"likes",
+"heart",
+"liked"
+],
+"comentario": [
+"comment",
+"comments",
+"commenting"
+],
+"compartilhar": [
+"share",
+"shares",
+"sharing",
+"shared",
+"repost"
+],
+"marcadorsalvar": [
+"save the post",
+"save this",
+"saves",
+"bookmark",
+"saved the post"
+],
+"sino": [
+"notifications",
+"turn on notifications",
+"bell",
+"app reminder"
+],
+"botaoplay": [
+"press play",
+"play button",
+"watch the video",
+"playback"
+],
+"hashtag": [
+"hashtag",
+"hashtags",
+"keyword"
+],
+"arroba": [
+"tag a friend",
+"mention",
+"tag someone",
+"at sign"
+],
+"contadorseguidores": [
+"followers",
+"follower",
+"follower count",
+"audience"
+],
+"feedcelular": [
+"feed",
+"scroll the feed",
+"instagram profile",
+"profile grid"
+],
+"storycirculo": [
+"story",
+"stories",
+"profile picture"
+],
+"aovivo": [
+"live",
+"livestream",
+"live stream",
+"broadcast",
+"going live"
+],
+"algoritmofunil": [
+"algorithm",
+"algorithms",
+"reach",
+"content delivery",
+"recommend"
+],
+"viralonda": [
+"viral",
+"go viral",
+"went viral",
+"virality"
+],
+"notificacao": [
+"notification",
+"notifications",
+"phone alert",
+"alert"
+],
+"linkbio": [
+"link in bio",
+"bio link",
+"link"
+],
+"celulartripe": [
+"tripod",
+"record a video",
+"recording",
+"filming"
+],
+"ringlight": [
+"ring light",
+"lighting",
+"recording light"
+],
+"microfonelapela": [
+"lavalier",
+"lapel mic",
+"lapel microphone",
+"audio capture",
+"audio quality"
+],
+"timelineedicao": [
+"edit the video",
+"video editor",
+"video editing",
+"cuts",
+"editing"
+],
+"cursorclique": [
+"click",
+"clicking",
+"clicked",
+"clicks"
+],
+"visualizacoes": [
+"views",
+"view",
+"viewers",
+"watched"
+],
+"graficoseguidores": [
+"profile growth",
+"grow on instagram",
+"gain followers",
+"organic growth"
+],
+"moedacriador": [
+"content creator",
+"content creators",
+"monetization",
+"monetize",
+"creator economy"
+],
+"presentelive": [
+"live gift",
+"gift",
+"donation",
+"tip"
+],
+"trofeucriador": [
+"creator award",
+"play button award",
+"subscriber milestone"
+],
+"seloverificado": [
+"verified",
+"verification badge",
+"blue check",
+"blue badge"
+],
+"mensagemdm": [
+"direct message",
+"dm",
+"private message",
+"inbox"
+],
+"lojaperfil": [
+"shop on profile",
+"online store",
+"sell on instagram",
+"storefront"
+],
+"botaoseguir": [
+"follow button",
+"follow the page",
+"follow this page",
+"follow the profile"
+],
+"congresso": [
+"congress",
+"senate",
+"chamber",
+"deputy",
+"parliament"
+],
+"palacio": [
+"palace",
+"presidential palace",
+"presidency",
+"government"
+],
+"tribunal": [
+"court",
+"supreme court",
+"justice",
+"tribunal"
+],
+"urnaeletronica": [
+"voting machine",
+"ballot box",
+"election",
+"elections"
+],
+"cabinevotacao": [
+"voting booth",
+"polling station",
+"secret ballot",
+"voter"
+],
+"votonaurna": [
+"vote",
+"votes",
+"voting",
+"ballot"
+],
+"palanque": [
+"rally",
+"campaign",
+"candidate",
+"stage",
+"campaign rally"
+],
+"faixapresidencial": [
+"presidential sash",
+"inauguration",
+"sash",
+"handover"
+],
+"mesaplenario": [
+"plenary",
+"session",
+"lawmakers",
+"assembly"
+],
+"painelvotacao": [
+"scoreboard",
+"voting panel",
+"votes in favor",
+"against"
+],
+"balancajustica": [
+"justice",
+"scales of justice",
+"judge",
+"sentence",
+"ruling"
+],
+"livroleis": [
+"law",
+"laws",
+"constitution",
+"code",
+"legal code"
+],
+"cofrepublico": [
+"public treasury",
+"treasury",
+"public money",
+"public funds"
+],
+"orcamento": [
+"budget",
+"slice",
+"tax",
+"taxes"
+],
+"mastrobandeira": [
+"flag",
+"flagpole",
+"raise the flag",
+"nation"
+],
+"cadeirapresidencial": [
+"presidential chair",
+"office",
+"armchair",
+"power"
+],
+"microfonedebate": [
+"debate",
+"microphone",
+"candidates",
+"interview"
+],
+"tribuna": [
+"podium",
+"lectern",
+"speech",
+"speaker",
+"rostrum"
+],
+"cameratv": [
+"television",
+"tv",
+"broadcast",
+"live coverage",
+"coverage"
+],
+"jornal": [
+"newspaper",
+"headline",
+"news",
+"front page"
+],
+"piramideegito": [
+"pyramid",
+"pyramids",
+"egypt",
+"egyptian"
+],
+"coliseu": [
+"colosseum",
+"rome",
+"roman",
+"gladiator"
+],
+"templogrego": [
+"greek temple",
+"greece",
+"greek",
+"greeks"
+],
+"muralha": [
+"wall",
+"great wall",
+"fortification",
+"siege",
+"rampart"
+],
+"castelo": [
+"castle",
+"castles",
+"middle ages",
+"medieval"
+],
+"caravela": [
+"caravel",
+"caravels",
+"discovery",
+"sailing ship",
+"voyage"
+],
+"canhao": [
+"cannon",
+"cannons",
+"artillery",
+"war"
+],
+"espada": [
+"sword",
+"swords",
+"knight",
+"duel"
+],
+"escudomedieval": [
+"shield",
+"defense",
+"protect",
+"crusade"
+],
+"armadura": [
+"armor",
+"armour",
+"suit of armor",
+"knights"
+],
+"trono": [
+"throne",
+"king",
+"queen",
+"monarchy"
+],
+"pergaminho": [
+"parchment",
+"manuscript",
+"decree",
+"ancient"
+],
+"tocha": [
+"torch",
+"torches",
+"fire",
+"olympics"
+],
+"relogiosol": [
+"sundial",
+"sun",
+"shadow",
+"antiquity"
+],
+"anfora": [
+"amphora",
+"amphorae",
+"greek vase",
+"pottery",
+"ceramics"
+],
+"colunajonica": [
+"column",
+"columns",
+"classical",
+"greek architecture"
+],
+"moedasantigas": [
+"ancient coins",
+"old coin",
+"numismatics",
+"ancient treasure"
+],
+"rodacarroca": [
+"wheel",
+"cart",
+"wagon",
+"invention of the wheel"
+],
+"maquinavapor": [
+"steam engine",
+"steam",
+"industrial revolution",
+"industrial"
+],
+"locomotivaantiga": [
+"locomotive",
+"steam train",
+"railway",
+"railroad"
+],
+"linhaeras": [
+"eras",
+"era",
+"timeline",
+"centuries"
+],
+"mapamundi": [
+"world map",
+"map of the world",
+"continents",
+"world"
+],
+"notebook": [
+"laptop",
+"laptops",
+"notebook",
+"portable computer"
+],
+"servidor": [
+"server",
+"servers",
+"data center",
+"datacenter"
+],
+"chip": [
+"chip",
+"chips",
+"semiconductor",
+"semiconductors",
+"microchip"
+],
+"roteador": [
+"router",
+"routers",
+"wifi",
+"wi-fi"
+],
+"antena": [
+"antenna",
+"antennas",
+"cell tower",
+"telecommunications"
+],
+"satelite": [
+"satellite",
+"satellites",
+"orbit",
+"orbits"
+],
+"robo": [
+"robot",
+"robots",
+"robotics",
+"android"
+],
+"drone": [
+"drone",
+"drones",
+"quadcopter",
+"aerial vehicle"
+],
+"blockchain": [
+"blockchain",
+"bitcoin",
+"cryptocurrency",
+"cryptocurrencies",
+"crypto"
+],
+"teclado": [
+"keyboard",
+"keyboards",
+"typing",
+"type"
+],
+"mouse": [
+"mouse",
+"mice",
+"cursor",
+"pointer"
+],
+"monitor": [
+"monitor",
+"monitors",
+"computer screen",
+"computer",
+"screen"
+],
+"fones": [
+"headphones",
+"earphones",
+"earbuds",
+"headset"
+],
+"solar": [
+"solar panel",
+"solar panels",
+"solar energy",
+"photovoltaic",
+"solar power"
+],
+"eolica": [
+"wind turbine",
+"wind turbines",
+"turbine",
+"turbines",
+"wind farm"
+],
+"atomo": [
+"atom",
+"atoms",
+"atomic",
+"nuclear"
+],
+"dna": [
+"dna",
+"genetics",
+"genetic",
+"genome",
+"gene",
+"genes"
+],
+"molecula": [
+"molecule",
+"molecules",
+"molecular",
+"chemistry"
+],
+"saturno": [
+"saturn",
+"rings of saturn",
+"planet",
+"planets"
+],
+"sistemasolar": [
+"solar system",
+"planets of the solar system",
+"orbit the sun",
+"orbit of the sun"
+],
+"lua": [
+"moon",
+"lunar",
+"moons",
+"moonlight"
+],
+"estrela": [
+"star",
+"stars",
+"stardom",
+"starry"
+],
+"telescopio": [
+"telescope",
+"telescopes",
+"observatory",
+"observe the sky",
+"stargazing"
+],
+"microscopio": [
+"microscope",
+"microscopes",
+"microscopic"
+],
+"tubos": [
+"test tube",
+"test tubes",
+"laboratory",
+"laboratories"
+],
+"frasco": [
+"flask",
+"flasks",
+"erlenmeyer",
+"reagent",
+"bottle"
+],
+"ima": [
+"magnet",
+"magnets",
+"magnetism",
+"magnetic"
+],
+"prismaluz": [
+"prism",
+"light prism",
+"refraction",
+"rainbow",
+"spectrum"
+],
+"circuito": [
+"circuit",
+"circuits",
+"circuit board",
+"electronics"
+],
+"tomada": [
+"outlet",
+"outlets",
+"plug",
+"plug in",
+"socket"
+],
+"lanterna": [
+"flashlight",
+"torch light",
+"beam of light",
+"illuminate",
+"lantern"
+],
+"pilha2": [
+"battery",
+"batteries",
+"aa battery",
+"aa batteries"
+],
+"cameraseg": [
+"security camera",
+"security cameras",
+"surveillance",
+"monitoring",
+"cctv"
+],
+"hdd": [
+"hard drive",
+"hard disk",
+"storage",
+"computer memory",
+"hdd"
+],
+"pendrive": [
+"flash drive",
+"usb drive",
+"thumb drive",
+"usb",
+"pen drive"
+],
+"controletv": [
+"remote control",
+"remote",
+"tv remote",
+"remotes"
+],
+"gamepad": [
+"joystick",
+"controller",
+"gamepad",
+"video game",
+"videogame"
+],
+"oculosvr": [
+"virtual reality",
+"vr headset",
+"vr",
+"metaverse",
+"vr goggles"
+],
+"impressora3d": [
+"3d printer",
+"3d printers",
+"3d printing",
+"additive manufacturing"
+],
+"radar": [
+"radar",
+"radars",
+"sonar",
+"sweep",
+"scan"
+],
+"newton": [
+"pendulum",
+"pendulums",
+"newton",
+"energy conservation",
+"newtons cradle"
+],
+"ondasom": [
+"sound wave",
+"sound waves",
+"audio",
+"sound frequency",
+"frequency"
+],
+"altofalante": [
+"speaker",
+"speakers",
+"loudspeaker",
+"sound box",
+"subwoofer"
+],
+"cofrinho": [
+"piggy bank",
+"savings",
+"saving",
+"save money"
+],
+"carteira": [
+"wallet",
+"wallets",
+"pocket",
+"purse"
+],
+"cartaocredito": [
+"credit card",
+"credit cards",
+"card",
+"cards",
+"debit"
+],
+"cedula": [
+"banknote",
+"banknotes",
+"bill",
+"bills",
+"cash",
+"money"
+],
+"maleta": [
+"briefcase",
+"suitcase",
+"bag",
+"bribe",
+"bribery"
+],
+"graficolinha": [
+"line chart",
+"graph",
+"growth",
+"grow",
+"appreciation"
+],
+"pizzagrafico": [
+"pie chart",
+"slice",
+"slices",
+"proportion",
+"share"
+],
+"calculadora": [
+"calculator",
+"calculate",
+"calculation",
+"math",
+"numbers"
+],
+"martelo": [
+"gavel",
+"judge",
+"sentence",
+"hammer"
+],
+"urna": [
+"ballot box",
+"urn",
+"vote",
+"votes"
+],
+"bandeira": [
+"flag",
+"flags",
+"homeland",
+"national"
+],
+"contrato": [
+"contract",
+"contracts",
+"signature",
+"sign",
+"agreement"
+],
+"carimbo": [
+"stamp",
+"stamping",
+"approved",
+"approval"
+],
+"registradora": [
+"cash register",
+"register",
+"checkout",
+"sales",
+"sale"
+],
+"cofre": [
+"safe",
+"safes",
+"vault",
+"store",
+"reserve"
+],
+"sacodinheiro": [
+"money bag",
+"bag of money",
+"bundle",
+"fortune",
+"jackpot"
+],
+"lingote": [
+"ingot",
+"gold bar",
+"gold",
+"golden",
+"bullion"
+],
+"moedas": [
+"coin",
+"coins",
+"change",
+"cent",
+"penny"
+],
+"calendario": [
+"calendar",
+"calendars",
+"dates",
+"deadline",
+"schedule"
+],
+"prancheta": [
+"clipboard",
+"checklist",
+"task",
+"tasks",
+"to-do"
+],
+"relogioparede": [
+"clock",
+"wall clock",
+"schedule",
+"hours",
+"punctuality"
+],
+"ampulheta": [
+"hourglass",
+"time",
+"urgency",
+"waiting",
+"wait"
+],
+"cracha": [
+"badge",
+"badges",
+"employee",
+"employees",
+"id badge"
+],
+"mesareuniao": [
+"meeting",
+"meetings",
+"board",
+"board of directors",
+"boardroom"
+],
+"megafone": [
+"megaphone",
+"announcement",
+"announce",
+"advertise",
+"promote"
+],
+"cartaz": [
+"poster",
+"posters",
+"protest",
+"protests",
+"sign"
+],
+"etiqueta": [
+"tag",
+"price tag",
+"price",
+"prices",
+"discount"
+],
+"selo": [
+"seal",
+"seals",
+"stamp",
+"certificate",
+"guarantee"
+],
+"algemas": [
+"handcuffs",
+"cuffs",
+"arrested",
+"prisoner",
+"prisoners"
+],
+"microfone": [
+"microphone",
+"mic",
+"interview",
+"reporter",
+"speech"
+],
+"camerafoto": [
+"photo",
+"photos",
+"photograph",
+"photography",
+"camera"
+],
+"televisor": [
+"television",
+"tv",
+"news broadcast",
+"soap opera",
+"tv show"
+],
+"escudo": [
+"shield",
+"protection",
+"protect",
+"defense",
+"crest"
+],
+"coroa": [
+"crown",
+"king",
+"queen",
+"royalty",
+"royal"
+],
+"trofeu": [
+"trophy",
+"trophies",
+"champion",
+"championship"
+],
+"medalha": [
+"medal",
+"medals",
+"prize",
+"award",
+"awards"
+],
+"podio": [
+"podium",
+"ranking",
+"placing",
+"leadership",
+"top three"
+],
+"alvo": [
+"target",
+"targets",
+"goal",
+"goals",
+"aim"
+],
+"lampadaideia": [
+"idea",
+"ideas",
+"innovation",
+"creativity",
+"lightbulb"
+],
+"carrinhocompras": [
+"shopping cart",
+"cart",
+"shopping",
+"buy",
+"consumption",
+"purchase"
+],
+"sacola": [
+"shopping bag",
+"bag",
+"bags",
+"gift bag"
+],
+"caixapapelao": [
+"package",
+"parcel",
+"order",
+"delivery",
+"deliveries",
+"cardboard box"
+],
+"balcao": [
+"counter",
+"service desk",
+"customer service",
+"attendant",
+"reception"
+],
+"relogioponto": [
+"time clock",
+"timecard",
+"work hours",
+"punch in",
+"absence"
+],
+"cadeiraescritorio": [
+"office chair",
+"office",
+"job",
+"employment",
+"employee"
+],
+"escrivaninha": [
+"desk",
+"office desk",
+"working hours",
+"paperwork"
+],
+"pasta": [
+"folder",
+"folders",
+"file",
+"files",
+"document folder"
+],
+"grampeador": [
+"stapler",
+"staplers",
+"stationery"
+],
+"coracao": [
+"heart",
+"hearts",
+"cardiac",
+"heart attack"
+],
+"cerebro": [
+"brain",
+"brains",
+"neuron",
+"neurons",
+"mind"
+],
+"olho": [
+"eye",
+"eyes",
+"vision",
+"see",
+"eyesight"
+],
+"dente": [
+"tooth",
+"teeth",
+"dentist",
+"dental"
+],
+"osso": [
+"bone",
+"bones",
+"skeleton",
+"fracture"
+],
+"cruzmedica": [
+"health",
+"medical",
+"doctor",
+"hospital",
+"healthcare"
+],
+"capsula": [
+"capsule",
+"capsules",
+"medicine",
+"pill",
+"supplement"
+],
+"seringa": [
+"syringe",
+"vaccine",
+"vaccines",
+"vaccination",
+"shot",
+"injection"
+],
+"estetoscopio": [
+"stethoscope",
+"appointment",
+"diagnosis",
+"pediatrician",
+"checkup"
+],
+"folha": [
+"leaf",
+"leaves",
+"foliage",
+"plant",
+"green"
+],
+"flor": [
+"flower",
+"flowers",
+"bloom",
+"blossom",
+"daisy"
+],
+"tulipa": [
+"tulip",
+"tulips",
+"bouquet",
+"garden"
+],
+"cogumelo": [
+"mushroom",
+"mushrooms",
+"fungus",
+"fungi"
+],
+"montanha": [
+"mountain",
+"mountains",
+"range",
+"mountain range",
+"peak"
+],
+"vulcao": [
+"volcano",
+"volcanoes",
+"eruption",
+"lava"
+],
+"sol": [
+"sun",
+"solar",
+"sunny",
+"sunlight",
+"sun rays"
+],
+"nuvemchuva": [
+"rain",
+"rainy",
+"storm",
+"thunderstorm",
+"downpour"
+],
+"floco": [
+"snowflake",
+"snowflakes",
+"snow",
+"blizzard",
+"snowfall"
+],
+"arcoiris": [
+"rainbow",
+"colorful",
+"colourful"
+],
+"cacto": [
+"cactus",
+"cacti",
+"desert",
+"arid"
+],
+"peixe": [
+"fish",
+"fishes",
+"fishing",
+"fisherman"
+],
+"passaro": [
+"bird",
+"birds",
+"avian",
+"songbird"
+],
+"abelha": [
+"bee",
+"bees",
+"honey",
+"beehive",
+"hive"
+],
+"gato": [
+"cat",
+"cats",
+"kitten",
+"feline"
+],
+"cachorro": [
+"dog",
+"dogs",
+"puppy",
+"canine"
+],
+"tartaruga": [
+"turtle",
+"turtles",
+"shell",
+"tortoise"
+],
+"maca": [
+"apple",
+"apples",
+"fruit",
+"fruits"
+],
+"banana": [
+"banana",
+"bananas",
+"banana tree",
+"potassium"
+],
+"pao": [
+"bread",
+"loaf",
+"bakery",
+"baker"
+],
+"queijo": [
+"cheese",
+"cheeses",
+"dairy",
+"dairy products"
+],
+"xicara": [
+"coffee",
+"coffee maker",
+"cup of coffee",
+"cup",
+"espresso"
+],
+"copo": [
+"glass",
+"glasses",
+"drink",
+"drinks",
+"cup"
+],
+"garrafa": [
+"bottle",
+"bottles",
+"bottled",
+"jug"
+],
+"pizza": [
+"pizza",
+"pizzas",
+"pizzeria",
+"slice of pizza"
+],
+"ovo": [
+"egg",
+"eggs",
+"hen",
+"chicken",
+"omelet"
+],
+"ovofrito": [
+"fried egg",
+"breakfast",
+"frying pan",
+"fry",
+"skillet"
+],
+"prato": [
+"plate",
+"plates",
+"meal",
+"meals",
+"dish"
+],
+"melancia": [
+"watermelon",
+"watermelons",
+"summer",
+"refreshing"
+],
+"cenoura": [
+"carrot",
+"carrots",
+"vegetable",
+"vegetables",
+"veggies"
+],
+"milho": [
+"corn",
+"popcorn",
+"ear of corn",
+"maize",
+"cob"
+],
+"camiseta": [
+"t-shirt",
+"tshirt",
+"shirt",
+"shirts",
+"tee"
+],
+"cartola": [
+"top hat",
+"magician",
+"magic",
+"wizard"
+],
+"oculos": [
+"glasses",
+"eyeglasses",
+"lens",
+"lenses",
+"spectacles"
+],
+"guardachuva": [
+"umbrella",
+"umbrellas",
+"parasol"
+],
+"mochila": [
+"backpack",
+"backpacks",
+"travel",
+"traveler",
+"rucksack"
+],
+"livroaberto": [
+"reading",
+"reader",
+"readers",
+"read",
+"open book"
+],
+"lapis": [
+"pencil",
+"pencils",
+"graphite",
+"drawing",
+"draw"
+],
+"caneta": [
+"pen",
+"pens",
+"write",
+"writing",
+"signature"
+],
+"mao": [
+"hand",
+"hands",
+"manual",
+"handshake"
+],
+"pegada": [
+"footprint",
+"footprints",
+"steps",
+"walk",
+"track"
+],
+"balao": [
+"balloon",
+"balloons",
+"party",
+"parties"
+],
+"presente": [
+"gift",
+"gifts",
+"present",
+"presents",
+"christmas"
+],
+"bolo": [
+"cake",
+"cakes",
+"bakery",
+"pastry",
+"dessert"
+],
+"morango": [
+"strawberry",
+"strawberries",
+"berry",
+"berries"
+],
+"uvas": [
+"grape",
+"grapes",
+"bunch of grapes",
+"berry"
+],
+"glb-vaca": [
+"cow",
+"cows",
+"cattle",
+"ox",
+"beef cattle"
+],
+"glb-porco": [
+"pig",
+"pigs",
+"swine",
+"hog"
+],
+"glb-cavalo": [
+"horse",
+"horses",
+"mare",
+"stallion"
+],
+"glb-ovelha": [
+"sheep",
+"lamb",
+"ram"
+],
+"glb-zebra": [
+"zebra",
+"zebras",
+"zebra stripes"
+],
+"glb-cachorro": [
+"dog",
+"dogs",
+"puppy",
+"canine"
+],
+"glb-gato": [
+"cat",
+"cats",
+"kitten"
+],
+"glb-aguia": [
+"eagle",
+"eagles",
+"hawk",
+"falcon"
+],
+"glb-passaro": [
+"bird",
+"birds",
+"little bird",
+"songbird"
+],
+"glb-baleia": [
+"whale",
+"whales",
+"humpback"
+],
+"glb-golfinho": [
+"dolphin",
+"dolphins",
+"porpoise"
+],
+"glb-tubarao": [
+"shark",
+"sharks"
+],
+"glb-peixe": [
+"fish",
+"fishes",
+"school of fish"
+],
+"glb-abelha": [
+"bee",
+"bees",
+"beehive"
+],
+"glb-leao": [
+"lion",
+"lions",
+"lioness"
+],
+"glb-panda": [
+"panda",
+"pandas",
+"giant panda"
+],
+"glb-pinguim": [
+"penguin",
+"penguins",
+"antarctica"
+],
+"glb-carro": [
+"car",
+"cars",
+"automobile",
+"vehicle"
+],
+"glb-taxi": [
+"taxi",
+"taxis",
+"cab",
+"cabbie"
+],
+"glb-viatura": [
+"police car",
+"patrol car",
+"cruiser",
+"squad car"
+],
+"glb-ambulancia": [
+"ambulance",
+"ambulances",
+"paramedics"
+],
+"glb-bombeiros": [
+"firefighter",
+"firefighters",
+"fire truck",
+"fire engine"
+],
+"glb-caminhao": [
+"truck",
+"trucks",
+"trucker",
+"lorry"
+],
+"glb-trator": [
+"tractor",
+"tractors",
+"agribusiness",
+"farming"
+],
+"glb-onibus": [
+"bus",
+"buses",
+"public transport",
+"transit"
+],
+"glb-bicicleta": [
+"bicycle",
+"bicycles",
+"bike"
+],
+"glb-trem": [
+"train",
+"trains",
+"locomotive"
+],
+"glb-navio": [
+"ship",
+"ships",
+"cargo ship",
+"freighter"
+],
+"glb-transatlantico": [
+"ocean liner",
+"titanic",
+"passenger ship",
+"cruise ship",
+"liner"
+],
+"glb-veleiro": [
+"sailboat",
+"sailing boat",
+"sail",
+"yacht"
+],
+"glb-aviao": [
+"airplane",
+"airplanes",
+"aircraft",
+"plane",
+"jet"
+],
+"glb-aviao-biplano": [
+"biplane",
+"old airplane",
+"santos dumont",
+"wright brothers"
+],
+"glb-helicoptero": [
+"helicopter",
+"helicopters",
+"chopper"
+],
+"glb-abacaxi": [
+"pineapple",
+"pineapples"
+],
+"glb-banana": [
+"banana",
+"bananas",
+"bunch of bananas"
+],
+"glb-laranja": [
+"orange",
+"oranges",
+"orange juice"
+],
+"glb-maca": [
+"apple",
+"apples",
+"apple tree"
+],
+"glb-morango": [
+"strawberry",
+"strawberries"
+],
+"glb-uvas": [
+"grape",
+"grapes",
+"bunch of grapes"
+],
+"glb-cenoura": [
+"carrot",
+"carrots"
+],
+"glb-milho": [
+"corn",
+"ear of corn",
+"cornfield"
+],
+"glb-brocolis": [
+"broccoli",
+"greens",
+"vegetable",
+"vegetables"
+],
+"glb-pao": [
+"bread",
+"loaf",
+"bakery"
+],
+"glb-pizza": [
+"pizza",
+"pizzas",
+"pizzeria"
+],
+"glb-hamburguer": [
+"hamburger",
+"hamburgers",
+"burger",
+"cheeseburger"
+],
+"glb-batata-frita": [
+"french fries",
+"fries",
+"chips"
+],
+"glb-cachorro-quente": [
+"hot dog",
+"hotdog",
+"hot dogs"
+],
+"glb-rosquinha": [
+"donut",
+"doughnut",
+"donuts"
+],
+"glb-bolo": [
+"cake",
+"cakes",
+"birthday cake"
+],
+"glb-sorvete": [
+"ice cream",
+"gelato",
+"ice cream shop"
+],
+"glb-vinho": [
+"wine",
+"wines",
+"bottle of wine"
+],
+"glb-notebook": [
+"laptop",
+"laptops",
+"notebook computer"
+],
+"glb-televisao": [
+"television",
+"tv",
+"flat screen tv"
+],
+"glb-geladeira": [
+"refrigerator",
+"fridge",
+"freezer"
+],
+"glb-lava-roupa": [
+"washing machine",
+"do laundry",
+"laundry",
+"laundromat"
+],
+"glb-sofa": [
+"sofa",
+"sofas",
+"couch"
+],
+"glb-cadeira-escritorio": [
+"office chair",
+"home office",
+"swivel chair"
+],
+"glb-privada": [
+"toilet",
+"flush",
+"toilet bowl"
+],
+"glb-luminaria": [
+"lamp",
+"floor lamp",
+"light fixture"
+],
+"glb-livros": [
+"books",
+"library",
+"pile of books",
+"stack of books"
+],
+"glb-vaso-planta": [
+"potted plant",
+"flower pot",
+"succulent",
+"houseplant"
+],
+"glb-carrinho-mercado": [
+"shopping cart",
+"supermarket cart",
+"grocery cart",
+"supermarket"
+],
+"glb-cadeira-rodas": [
+"wheelchair",
+"wheelchair user",
+"accessibility"
+],
+"glb-arvore": [
+"tree",
+"trees",
+"forest"
+],
+"glb-pinheiro": [
+"pine",
+"pine tree",
+"pines",
+"conifer"
+],
+"glb-palmeira": [
+"palm",
+"palm tree",
+"palm trees",
+"coconut tree"
+],
+"glb-cacto": [
+"cactus",
+"cacti",
+"desert plant"
+],
+"glb-flor": [
+"flower",
+"flowers",
+"tulip"
+],
+"glb-cogumelo": [
+"mushroom",
+"mushrooms",
+"fungus"
+],
+"glb-rochas": [
+"rock",
+"rocks",
+"stone",
+"boulder"
+],
+"glb-homem": [
+"man",
+"men",
+"guy",
+"boy"
+],
+"glb-mulher": [
+"woman",
+"women",
+"girl",
+"lady"
+],
+"glb-homem-2": [
+"executive",
+"businessman",
+"manager",
+"boss"
+],
+"glb-mulher-2": [
+"businesswoman",
+"female executive",
+"lawyer",
+"entrepreneur"
+],
+"glb-arranha-ceu": [
+"skyscraper",
+"skyscrapers",
+"office tower",
+"high-rise"
+],
+"glb-arranha-ceu-2": [
+"tall building",
+"tower block",
+"office tower"
+],
+"glb-predio": [
+"building",
+"buildings",
+"apartment building"
+],
+"glb-predio-2": [
+"storefront",
+"street shop",
+"row house",
+"shop"
+],
+"glb-casa": [
+"house",
+"houses",
+"home",
+"dwelling"
+],
+"glb-casa-2": [
+"own home",
+"mortgage",
+"rent",
+"renting",
+"real estate loan"
+],
+"glb-frigideira": [
+"frying pan",
+"skillet",
+"frying"
+],
+"glb-panela": [
+"pot",
+"pots",
+"saucepan",
+"cauldron"
+],
+"glb-colher-pau": [
+"wooden spoon",
+"stir the pot",
+"stir"
+],
+"glb-batedor": [
+"whisk",
+"beater",
+"beat the eggs",
+"whisking"
+],
+"glb-rolo-massa": [
+"rolling pin",
+"roll out dough",
+"roll the dough"
+],
+"glb-tabua-corte": [
+"cutting board",
+"chopping board",
+"chop",
+"chopping"
+],
+"glb-tomate": [
+"tomato",
+"tomatoes",
+"tomato sauce"
+],
+"glb-cebola": [
+"onion",
+"onions",
+"chop onions"
+],
+"glb-limao": [
+"lemon",
+"lemons",
+"lime",
+"limes",
+"lemonade"
+],
+"glb-abobora": [
+"pumpkin",
+"pumpkins",
+"squash"
+],
+"glb-berinjela": [
+"eggplant",
+"eggplants",
+"aubergine"
+],
+"glb-pimentao": [
+"bell pepper",
+"bell peppers",
+"paprika",
+"pepper"
+],
+"glb-cereja": [
+"cherry",
+"cherries"
+],
+"glb-pera": [
+"pear",
+"pears"
+],
+"glb-carne": [
+"red meat",
+"beef",
+"steak",
+"meat"
+],
+"glb-costela": [
+"ribs",
+"rib",
+"spare ribs"
+],
+"glb-espetinho": [
+"skewer",
+"skewers",
+"kebab",
+"barbecue skewer"
+],
+"glb-linguica": [
+"sausage",
+"sausages",
+"cold cuts"
+],
+"glb-sanduiche": [
+"sandwich",
+"sandwiches",
+"grilled cheese"
+],
+"glb-croissant": [
+"croissant",
+"croissants",
+"french bakery"
+],
+"glb-cupcake": [
+"cupcake",
+"cupcakes",
+"muffin",
+"bakery"
+],
+"glb-biscoito": [
+"cookie",
+"cookies",
+"biscuit",
+"biscuits"
+],
+"glb-chocolate": [
+"chocolate",
+"chocolate bar",
+"cocoa",
+"cacao"
+],
+"glb-panqueca": [
+"pancake",
+"pancakes",
+"american breakfast"
+],
+"glb-mel": [
+"honey",
+"honey jar",
+"honeycomb",
+"bee honey"
+],
+"glb-lata-refri": [
+"soda",
+"soda can",
+"can of soda",
+"soft drink"
+],
+"glb-garrafa-refri": [
+"soda bottle",
+"plastic bottle",
+"two liter bottle",
+"pet bottle"
+],
+"glb-caneca": [
+"mug",
+"mugs",
+"beer mug",
+"draft beer"
+],
+"glb-picole": [
+"popsicle",
+"popsicles",
+"ice pop",
+"ice lolly"
+],
+"glb-salada": [
+"salad",
+"salads",
+"greens"
+],
+"glb-sopa": [
+"soup",
+"broth",
+"bowl of soup"
+],
+"glb-sushi": [
+"sushi",
+"japanese food",
+"sushi roll"
+],
+"glb-taco": [
+"taco",
+"tacos",
+"mexican food",
+"tortilla"
+],
+"glb-caixa-leite": [
+"milk carton",
+"carton of milk",
+"long life milk",
+"liter of milk"
+],
+"glb-oleo": [
+"cooking oil",
+"vegetable oil",
+"soybean oil",
+"oil"
+],
+"glb-lata": [
+"canned food",
+"canned goods",
+"tin can",
+"can"
+],
+"glb-torta": [
+"pie",
+"pies",
+"quiche",
+"tart"
+],
+"glb-pao-forma": [
+"sliced bread",
+"sandwich bread",
+"slice of bread",
+"loaf of bread"
+],
+"glb-baguete": [
+"baguette",
+"french bread",
+"bakery"
+],
+"glb-ketchup": [
+"ketchup",
+"catsup",
+"tomato ketchup"
+],
+"glb-frango-assado": [
+"roast chicken",
+"roasted chicken",
+"chicken"
+],
+"glb-melancia": [
+"whole watermelon",
+"watermelon"
+],
+"glb-fogao": [
+"stove",
+"stoves",
+"gas stove",
+"oven"
+],
+"glb-liquidificador": [
+"blender",
+"smoothie",
+"milkshake",
+"juice"
+],
+"glb-cafeteira": [
+"coffee maker",
+"coffee machine",
+"espresso machine",
+"espresso"
+],
+"glb-torradeira": [
+"toaster",
+"toast",
+"toasted bread"
+],
+"glb-micro-ondas": [
+"microwave",
+"microwave oven",
+"reheat food",
+"heat up the food"
+],
+"glb-radio": [
+"radio",
+"listen to the radio",
+"radio station"
+],
+"glb-tv-antiga": [
+"old tv",
+"old television",
+"crt tv",
+"tube tv"
+],
+"glb-banheira": [
+"bathtub",
+"tub",
+"bubble bath",
+"jacuzzi"
+],
+"glb-cama": [
+"double bed",
+"mattress",
+"in bed",
+"bed"
+],
+"glb-beliche": [
+"bunk bed",
+"bunk beds",
+"dormitory",
+"bunk"
+],
+"glb-computador": [
+"computer",
+"computers",
+"desktop",
+"pc"
+],
+"glb-caixa-som": [
+"speaker",
+"loud speaker",
+"loud sound",
+"sound box"
+],
+"glb-estante": [
+"bookshelf",
+"shelf",
+"shelves",
+"home library"
+],
+"glb-poltrona": [
+"armchair",
+"armchairs",
+"recliner",
+"easy chair"
+],
+"glb-abajur": [
+"table lamp",
+"bedside lamp",
+"bedside light",
+"desk lamp"
+],
+"glb-escrivaninha": [
+"wooden desk",
+"study desk",
+"writing desk",
+"home office"
+],
+"glb-mesa-jantar": [
+"dining table",
+"family dinner",
+"tablecloth",
+"dinner table"
+],
+"glb-macaco": [
+"monkey",
+"monkeys",
+"primate",
+"ape"
+],
+"glb-elefante": [
+"elephant",
+"elephants",
+"pachyderm"
+],
+"glb-girafa": [
+"giraffe",
+"giraffes",
+"long neck"
+],
+"glb-tigre": [
+"tiger",
+"tigers",
+"big cat"
+],
+"glb-papagaio": [
+"parrot",
+"parrots",
+"macaw"
+],
+"glb-caranguejo": [
+"crab",
+"crabs",
+"crustacean"
+],
+"glb-coala": [
+"koala",
+"koalas",
+"australia"
+],
+"glb-urso-polar": [
+"polar bear",
+"polar bears",
+"north pole",
+"arctic"
+],
+"glb-pintinho": [
+"chick",
+"chicks",
+"baby chicken"
+],
+"glb-castor": [
+"beaver",
+"beavers",
+"beaver dam"
+],
+"glb-lagarta": [
+"caterpillar",
+"caterpillars",
+"larva"
+],
+"glb-cobra": [
+"snake",
+"snakes",
+"venomous snake",
+"serpent"
+],
+"glb-sapo": [
+"toad",
+"frog",
+"frogs",
+"toads"
+],
+"glb-touro": [
+"bull",
+"bulls",
+"angry bull"
+],
+"glb-lhama": [
+"llama",
+"llamas",
+"alpaca"
+],
+"glb-morcego": [
+"bat",
+"bats",
+"vampire bat"
+],
+"glb-galinha": [
+"hen",
+"chicken",
+"chickens",
+"rooster"
+],
+"glb-cervo": [
+"deer",
+"stag",
+"reindeer"
+],
+"glb-burro": [
+"donkey",
+"donkeys",
+"mule"
+],
+"glb-raposa": [
+"fox",
+"foxes",
+"maned wolf"
+],
+"glb-rato": [
+"mouse",
+"rat",
+"rats",
+"mice"
+],
+"glb-lobo": [
+"wolf",
+"wolves",
+"wolf pack",
+"pack"
+],
+"glb-aranha": [
+"spider",
+"spiders",
+"web",
+"cobweb"
+],
+"glb-tiranossauro": [
+"tyrannosaurus",
+"t-rex",
+"t rex",
+"tyrannosaurus rex"
+],
+"glb-triceratope": [
+"triceratops",
+"triceratop"
+],
+"glb-velociraptor": [
+"velociraptor",
+"raptor",
+"velociraptors"
+],
+"glb-estegossauro": [
+"stegosaurus",
+"stegosaurs"
+],
+"glb-apatossauro": [
+"apatosaurus",
+"brontosaurus",
+"long neck dinosaur",
+"sauropod"
+],
+"glb-esqueleto": [
+"skeleton",
+"skeletons",
+"bones of the body"
+]
+}

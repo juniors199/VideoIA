@@ -1,0 +1,82 @@
+#!/bin/bash
+ 
+ # Acha um Node para o estúdio (Mac e Linux). Usado por instalar.sh, abrir.sh e ferramentas/rodar.
+# Preferência: o Node portátil da pasta (.programas/node), depois o do computador se for versão 20 ou mais.
+# Define NODE (caminho do executável) ou deixa vazio.
+ilu_achar_node() {
+  local studio="$1"
+  NODE=""
+  if [ -x "$studio/.programas/node/bin/node" ] && "$studio/.programas/node/bin/node" -e "" >/dev/null 2>&1; then
+    NODE="$studio/.programas/node/bin/node"; return 0
+  fi
+  # ILU_SO_NODE_PORTATIL=1 ignora o Node do computador (testes do instalador)
+  [ "${ILU_SO_NODE_PORTATIL:-}" = "1" ] && return 1
+  local cand
+  for cand in "$(command -v node 2>/dev/null)" /opt/homebrew/bin/node /usr/local/bin/node; do
+    [ -n "$cand" ] && [ -x "$cand" ] || continue
+    local maior
+    maior="$("$cand" -p 'process.versions.node.split(".")[0]' 2>/dev/null)"
+    if [ -n "$maior" ] && [ "$maior" -ge 20 ] 2>/dev/null; then NODE="$cand"; return 0; fi
+  done
+  return 1
+}
+
+# 0.6.4: aviso de falha sem o Node (etapa, código, versão e sistema) e tela de ajuda. 0.6.12: com um relatório de erro curto
+# (etapa, o que houve e o sistema; a pasta do estúdio, a pasta pessoal e e-mails saem antes; o servidor saneia de novo).
+# Sem o Node não vai o log: aqui não dá para tirar o texto do roteiro dele.
+# Só no pacote vendido (tem MANIFESTO.json), respeita o "desligado" de Configurações e ILU_TELEMETRIA=0, e nunca para nada.
+# Texto em uma string JSON (sem aspas em volta): tira controles, escapa \ e ", junta as linhas com \n.
+ilu_json_texto() {
+  LC_ALL=C tr -d '\000-\011\013-\037' | sed -e 's/\\/\\\\/g' -e 's/"/\\"/g' | awk 'BEGIN{ORS=""} { if (NR > 1) printf "\\n"; printf "%s", $0 }'
+}
+ilu_aviso_anonimo() {
+  local studio="$1" etapa="$2" codigo="$3" texto="${4:-}" f inst so sov ver corpo u diag til rc
+  [ "${ILU_TELEMETRIA:-}" = "0" ] && return 0
+  [ -f "$studio/MANIFESTO.json" ] || [ "${ILU_TELEMETRIA:-}" = "1" ] || return 0
+  command -v curl >/dev/null 2>&1 || return 0
+  f="$studio/.estudio/telemetria.json"
+  grep -q '"ligada": *false' "$f" 2>/dev/null && return 0
+  inst="$(grep -o '"instalacao": *"[a-f0-9]*"' "$f" 2>/dev/null | grep -o '[a-f0-9]\{16,32\}' | head -n1)"
+  if [ -z "$inst" ]; then
+    inst="$(od -An -N8 -tx1 /dev/urandom 2>/dev/null | tr -d ' \n')"
+    [ -n "$inst" ] || return 0
+    mkdir -p "$studio/.estudio" 2>/dev/null && printf '{\n "instalacao": "%s",\n "ligada": true\n}\n' "$inst" > "$f" 2>/dev/null
+  fi
+  if [ "$(uname -s)" = "Darwin" ]; then so=mac; sov="$(sw_vers -productVersion 2>/dev/null | cut -d. -f1)"; else so=linux; sov="$(uname -r | cut -d. -f1)"; fi
+  case "$sov" in ''|*[!0-9]*) sov=0 ;; esac
+  ver="$(tr -d ' \r\n' < "$studio/VERSAO" 2>/dev/null)"
+  case "$ver" in [0-9]*.[0-9]*.[0-9]*) ;; *) ver=0.0.0 ;; esac
+  corpo="{\"etapa\":\"$etapa\",\"codigo\":\"$codigo\",\"versao\":\"$ver\",\"so\":\"$so\",\"soVersao\":\"$sov\",\"instalacao\":\"$inst\"}"
+  diag="$(printf 'Diagnóstico do Ilustrando Studio (instalação sem o Node)\nVersão do estúdio: %s\nSistema: %s %s (%s)\nEtapa que falhou: %s\nO que o estúdio disse: %s\n' "$ver" "$so" "$(uname -r 2>/dev/null)" "$(uname -m 2>/dev/null)" "$etapa" "$texto")"
+  diag="${diag//"$studio"/[pasta do estúdio]}"
+  til='~'
+  [ -n "${HOME:-}" ] && [ "${#HOME}" -gt 3 ] && diag="${diag//"$HOME"/$til}"
+  diag="$(printf '%s' "$diag" | sed -E -e 's/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/[e-mail]/g' -e 's#/(Users|home)/[^/ ]+#~#g' | head -c 4000 | ilu_json_texto)"
+  for u in https://licencas.ilustrandocuriosidades.com https://licencas.ilustrandocuriosidadesbr.com; do
+    # com o relatório; se o servidor responder recusando (22: versão antiga), só o rótulo, como antes
+    curl -fs -m 4 -X POST -H 'content-type: application/json' -d "${corpo%\}},\"diagnostico\":\"$diag\"}" "$u/v1/falha" >/dev/null 2>&1; rc=$?
+    [ "$rc" = 22 ] && { curl -fs -m 4 -X POST -H 'content-type: application/json' -d "$corpo" "$u/v1/falha" >/dev/null 2>&1; rc=$?; }
+    if [ "$rc" = 0 ]; then
+      echo "  Mandamos o relatório desta falha (código $codigo) para a equipe corrigir: sem chaves, e-mail, roteiro nem dados pessoais."
+      return 0
+    fi
+  done
+  return 0
+}
+
+# Abre a tela de ajuda (ferramentas/ajuda/erro.html) no navegador, com a causa e o que fazer. Sem o Perl para montar o endereço,
+# abre a ajuda geral (os mesmos botões: "Copiar diagnóstico" e "Abrir o direct").
+ilu_tela_ajuda() {
+  local studio="$1" causa="$2" acao="$3" etapa="$4" pagina url
+  pagina="$studio/ferramentas/ajuda/erro.html"
+  [ -f "$pagina" ] || return 0
+  url="$(ILU_C="$causa" ILU_A="$acao" ILU_E="$etapa" ILU_P="$pagina" perl -MURI::Escape -e 'print "file://" . join("/", map { uri_escape($_) } split m{/}, $ENV{ILU_P}) . "#c=" . uri_escape($ENV{ILU_C}) . "&a=" . uri_escape($ENV{ILU_A}) . "&e=" . uri_escape($ENV{ILU_E})' 2>/dev/null)"
+  if [ "$(uname -s)" = "Darwin" ]; then
+    # o "open" com endereço file:// guarda a parte depois do #; sem ela, abre o arquivo puro
+    [ -n "$url" ] && open "$url" >/dev/null 2>&1 || open "$pagina" >/dev/null 2>&1
+  else
+    command -v xdg-open >/dev/null 2>&1 && { xdg-open "${url:-$pagina}" >/dev/null 2>&1 & }
+  fi
+  echo "  Abri uma página de ajuda no navegador, com \"Copiar diagnóstico\" e \"Abrir o direct\" (https://ig.me/m/ilustrandocuriosidades)."
+  return 0
+}

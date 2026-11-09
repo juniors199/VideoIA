@@ -1,0 +1,166 @@
+{
+  "id": "colagem3d",
+  "nome": "Colagem 3D (documentário em recortes de papel)",
+  "versao": 1,
+  "paraQuem": "histórias reais, biografias, origem de marcas e invenções, casos do passado e do noticiário: cada frase é um plano de colagem com a foto real recortada, o objeto 3D saindo do papel, o jornal ou o documento, em papéis com textura e câmera que anda em profundidade",
+  "exemplosDePedido": [
+    "Como um protesto quase derrubou a Torre Eiffel",
+    "A história do primeiro cartão de crédito"
+  ],
+  "apelidos": [
+    "colagem-3d",
+    "colagem3d",
+    "documentario",
+    "recortes"
+  ],
+  "formato": {
+    "preferidos": [
+      "revelacao",
+      "causa-efeito",
+      "antes-depois",
+      "comparativo"
+    ],
+    "proibidos": [],
+    "padrao": "revelacao"
+  },
+  "roteiro": {
+    "palavras": [
+      90,
+      170
+    ],
+    "alvoSegundos": [
+      30,
+      60
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "a frase que abre a história com um ano, um nome ou um objeto que dá para mostrar (\"Em 1909, a Torre Eiffel tinha data para cair\")",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "exposicao",
+        "seg": [
+          12,
+          32
+        ],
+        "instrucao": "a história em frases curtas, uma imagem por frase: a pessoa citada (foto real), o lugar, o objeto, o jornal ou o documento da época; a palavra-chave dita é a que ganha o realce",
+        "n": [
+          4,
+          9
+        ]
+      },
+      {
+        "bloco": "realidade",
+        "seg": [
+          3,
+          8
+        ],
+        "instrucao": "a virada honesta (começa com \"Mas\" ou \"Só que\" para o flash de corte): o que mudou de verdade, com fonte"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "convite final curto: seguir e comentar a palavra"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "HE",
+      "PD"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "ele/ela",
+    "tom": "narração de documentário: frases curtas no passado, concretas, com ano, nome e lugar; uma imagem por frase",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[documentary, warm]",
+    "pausaEntreBlocos": 0.12
+  },
+  "visual": {
+    "pecasPorTema": true,
+    "imagens": "recomendada",
+    "contador": "quando-houver-numero",
+    "estilo": "colagem3d",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [
+      "jornal",
+      "lupa",
+      "relogio3d"
+    ],
+    "reserva": [
+      "jornal",
+      "lupa"
+    ],
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      1.5,
+      4
+    ],
+    "trocaVisualMaxSeg": 4
+  },
+  "som": {
+    "musica": true,
+    "sfx": "discreto"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, a história em 2 linhas, pergunta de opinião",
+    "hashtags": [
+      "#historia",
+      "#curiosidades"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

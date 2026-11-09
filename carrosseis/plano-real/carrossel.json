@@ -1,0 +1,88 @@
+{
+  "perfil": "curiosidades",
+  "tema": "DINHEIRO",
+  "legenda": "Em 1993, a inflação pelo IPCA passou de 2.400%. Em 1º de março de 1994 começou a URV, e em 1º de julho de 1994 o real entrou em circulação: R$ 1 valia CR$ 2.750.\n\nVocê lembra do cruzeiro real?\n\nSegue a página pra ver a próxima.\n\nFoto: Banco Central do Brasil (Public domain)",
+  "marcadores": [
+    "planoreal",
+    "inflacao",
+    "historia",
+    "financas"
+  ],
+  "fontes": [
+    "Wikipédia, Plano Real: https://pt.wikipedia.org/wiki/Plano_Real",
+    "Poder360, inflação e Plano Real: https://www.poder360.com.br/economia/inflacao-do-brasil-caiu-de-5-000-para-2-digitos-com-plano-real/",
+    "Congresso em Foco, Plano Real: https://congressoemfoco.com.br/noticia/53938/plano-real-que-acabou-com-hiperinflacao-completa-duas-decadas",
+    "IBGE SIDRA, IPCA 1993 (tabela 1737): https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/69/p/199312"
+  ],
+  "slides": [
+    {
+      "tipo": "capa",
+      "titulo": "Em 1993, os preços subiram quase *2.500%*",
+      "sub": "Um ano depois, nascia o real.",
+      "fotoFundo": "assets/cedulas-1994.jpg"
+    },
+    {
+      "tipo": "linhatempo",
+      "titulo": "Do cruzeiro real ao *real*",
+      "marcos": [
+        {
+          "ano": "1993",
+          "texto": "A inflação do ano passa de 2.400%"
+        },
+        {
+          "ano": "1994",
+          "texto": "Março: começa a URV, a Unidade Real de Valor"
+        },
+        {
+          "ano": "1994",
+          "texto": "Julho: o real entra em circulação"
+        }
+      ],
+      "fotoFundo": "assets/cedulas-1994.jpg"
+    },
+    {
+      "tipo": "numeros",
+      "titulo": "O real em *números*",
+      "itens": [
+        {
+          "numero": "2.750",
+          "legenda": "cruzeiros reais valiam R$ 1"
+        },
+        {
+          "numero": "1º jul",
+          "legenda": "de 1994: o real entra em circulação"
+        },
+        {
+          "numero": "1º mar",
+          "legenda": "de 1994: começa a URV"
+        }
+      ],
+      "fonte": "Banco Central, IBGE e imprensa"
+    },
+    {
+      "tipo": "quiz",
+      "pergunta": "Quantos cruzeiros reais valia *R$ 1*?",
+      "opcoes": [
+        "100",
+        "1.000",
+        "2.750",
+        "10.000"
+      ],
+      "resposta": 2,
+      "revelar": true,
+      "explicacao": "Na troca, em 1º de julho de 1994."
+    },
+    {
+      "tipo": "texto",
+      "titulo": "O que era a *URV*",
+      "texto": "Uma unidade de conta que preparou a troca. Na estreia do real, R$ 1 valia 1 URV, ou CR$ 2.750.",
+      "fotoFundo": "assets/cedulas-1994.jpg"
+    },
+    {
+      "tipo": "fecho",
+      "titulo": "Você lembra do *cruzeiro real*?",
+      "texto": "Conta nos comentários.",
+      "fotoFundo": "assets/cedulas-1994.jpg"
+    }
+  ]
+}

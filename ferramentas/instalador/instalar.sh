@@ -1,0 +1,94 @@
+#!/bin/bash
+ 
+ # Instalador do Ilustrando Studio para Mac (também roda no Linux). Quem chama: "Instalar (Mac).command".
+# 1) garante um Node (o portátil, baixado de nodejs.org com SHA-256 conferido, ou o do computador se for 20+);
+# 2) roda ferramentas/instalador/instalar.mjs, que instala o resto dentro da pasta (.programas/);
+# 3) abre o estúdio no navegador.
+# Opções: --simular (só mostra o que faria)  --nao-abrir  --assistente  e as de instalar.mjs (--sem-alinhador...)
+# --assistente: a rota sem os dois cliques. O Claude Code ou o Codex roda este mesmo script, sem janela e sem abrir o
+# navegador no fim (bash ferramentas/instalador/instalar.sh --assistente); o resto é igual, inclusive o Node portátil.
+set -u
+cd "$(dirname "$0")/../.." || exit 1
+STUDIO="$(pwd)"
+PROG="$STUDIO/.programas"
+SIMULAR=0; ABRIR=1
+for a in "$@"; do
+  [ "$a" = "--simular" ] && SIMULAR=1
+  [ "$a" = "--nao-abrir" ] && ABRIR=0
+  [ "$a" = "--assistente" ] && ABRIR=0
+done
+# título da janela só quando há uma janela de verdade (no assistente, o código de escape sujava a saída)
+[ -t 1 ] && printf '\033]0;Ilustrando Studio: instalação\007'
+# Mac: a pessoa já liberou o Instalar; tira a marca de "baixado da internet" do resto da pasta logo no começo. Antes isso
+# só acontecia no último passo (atalho) e, se um passo anterior parasse, o "Abrir Estúdio" pedia "Abrir Mesmo Assim" de novo
+if [ "$(uname -s)" = "Darwin" ] && [ "$SIMULAR" = "0" ]; then xattr -dr com.apple.quarantine "$STUDIO" 2>/dev/null || true; fi
+
+NODE_VERSAO="v22.23.3"
+case "$(uname -s)-$(uname -m)" in
+  Darwin-arm64)  ALVO="darwin-arm64"; SHA="23b25245dcfb9af7262f8ff142e9e2e0af025368117329e7a7458a51e5922f53" ;;
+  Darwin-x86_64) ALVO="darwin-x64";   SHA="8a677b0219178efd6eb0e475457c4afb452b521a92f6e67845a73bd85727f2a8" ;;
+  Linux-x86_64)  ALVO="linux-x64";    SHA="1084aa36196bba4c3a5e69a1ee388a6e4ff729dad09445fbcd434b28fe3c24af" ;;
+  Linux-aarch64) ALVO="linux-arm64";  SHA="5ced2d48d1d7198739b7f86804de0171aefb6823b684b12341d3321afc3cb0b2" ;;
+  *) echo; echo "  Este computador ($(uname -s) $(uname -m)) não é suportado pelo estúdio."; echo "  Pode fechar esta janela."; exit 1 ;;
+esac
+URL="https://nodejs.org/dist/$NODE_VERSAO/node-$NODE_VERSAO-$ALVO.tar.gz"
+
+sha256() { if command -v shasum >/dev/null 2>&1; then shasum -a 256 "$1" | cut -d' ' -f1; else sha256sum "$1" | cut -d' ' -f1; fi; }
+parar() {
+  echo
+  echo "  A instalação parou."
+  echo "  O que houve: $1"
+  echo "  O que fazer: $2"
+  echo
+  # 0.6.4: aviso de falha (com o relatório de erro desde a 0.6.12) e tela de ajuda com "Copiar diagnóstico" e "Abrir o direct" (no assistente, sem abrir o navegador)
+  ilu_aviso_anonimo "$STUDIO" "instalador-node" "${3:-node-inesperado}" "$1" 2>/dev/null
+  if [ "$ABRIR" = "1" ] && [ "$SIMULAR" = "0" ]; then ilu_tela_ajuda "$STUDIO" "A instalação parou: $1" "$2" "instalação (Node)" 2>/dev/null; else echo "  Ajuda: direct do Instagram @ilustrandocuriosidades (https://ig.me/m/ilustrandocuriosidades)."; fi
+  echo "  Pode fechar esta janela."
+  exit 1
+}
+
+# shellcheck source=node.sh
+. "$STUDIO/ferramentas/instalador/node.sh"
+
+echo
+if ilu_achar_node "$STUDIO"; then
+  :
+elif [ "$SIMULAR" = "1" ]; then
+  echo "  MODO SIMULAÇÃO: baixaria o Node $NODE_VERSAO para .programas/node"
+  echo "    $URL"
+  echo "    SHA-256 $SHA"
+  echo "  (sem Node neste computador, a simulação para aqui)"
+  exit 0
+else
+  echo "  Preparando: baixando o Node $NODE_VERSAO (o motor que roda o estúdio, cerca de 50 MB)…"
+  command -v curl >/dev/null 2>&1 || parar "falta o curl, que vem com o macOS." "Atualize o macOS e tente de novo."
+  mkdir -p "$PROG/baixados" || parar "não consigo gravar na pasta do estúdio." "Mova a pasta para a sua pasta pessoal e dê dois cliques em Instalar de novo." node-sem-permissao
+  TGZ="$PROG/baixados/node.tar.gz"
+  OK=0
+  for TENTATIVA in 1 2 3; do
+    # limite de tempo: conexão que trava (Wi-Fi some sem cair) não deixa a janela parada para sempre
+    if curl -fL --connect-timeout 20 --speed-limit 1024 --speed-time 60 --progress-bar -o "$TGZ" "$URL"; then OK=1; break; fi
+    if [ "$TENTATIVA" -lt 3 ]; then echo "  a internet falhou; tentando de novo ($((TENTATIVA + 1)) de 3)…"; sleep 3; fi
+  done
+  [ "$OK" = "1" ] || parar "não consegui baixar o Node de nodejs.org." "Confira a internet (abra um site qualquer) e dê dois cliques em Instalar de novo." node-sem-internet
+  [ "$(sha256 "$TGZ")" = "$SHA" ] || { rm -f "$TGZ"; parar "o arquivo baixado não é o esperado (impressão digital diferente)." "Por segurança, nada foi instalado. Tente de novo mais tarde; se repetir, fale com a gente no direct do Instagram @ilustrandocuriosidades." node-download-diferente; }
+  rm -rf "$PROG/node" "$PROG/node-$NODE_VERSAO-$ALVO"
+  tar --no-same-owner -xzf "$TGZ" -C "$PROG" || parar "não consegui abrir o arquivo do Node." "Dê dois cliques em Instalar de novo."
+  mv "$PROG/node-$NODE_VERSAO-$ALVO" "$PROG/node"
+  rm -rf "$PROG/baixados"
+  ilu_achar_node "$STUDIO" || parar "o Node baixado não abriu neste computador." "Reinicie o computador e dê dois cliques em Instalar de novo."
+  echo "  Node pronto."
+fi
+
+# proxy da empresa ou da escola: o Node só usa HTTPS_PROXY com esta opção
+if [ -n "${HTTPS_PROXY:-}${https_proxy:-}" ]; then export NODE_USE_ENV_PROXY=1 NODE_NO_WARNINGS=1; fi
+
+"$NODE" "$STUDIO/ferramentas/instalador/instalar.mjs" "$@"
+CODIGO=$?
+if [ "$CODIGO" != "0" ]; then echo "  Pode fechar esta janela."; exit "$CODIGO"; fi
+if [ "$SIMULAR" = "1" ] || [ "$ABRIR" = "0" ]; then exit 0; fi
+
+echo "  Abrindo o estúdio no navegador. Deixe esta janela aberta enquanto usa o estúdio."
+echo "  Da próxima vez, use \"Abrir Estúdio\" (na Mesa ou na pasta do estúdio)."
+echo
+exec "$NODE" "$STUDIO/src/estudio/servidor.mjs" --abrir

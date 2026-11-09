@@ -1,0 +1,278 @@
+[
+ {
+  "id": "brf",
+  "nome": "BRF",
+  "area": "consumo",
+  "motivo": "Wikidata: nenhum item com P154 ou P8972 entre Q899097 (BRF: empresa brasileira do ramo alimentício / company)"
+ },
+ {
+  "id": "caoachery",
+  "nome": "Caoa Chery",
+  "area": "consumo",
+  "motivo": "Wikidata sem resultado para \"Caoa Chery\""
+ },
+ {
+  "id": "guarana",
+  "nome": "Guaraná Antarctica",
+  "area": "consumo",
+  "motivo": "Wikidata: nenhum item com P154 ou P8972 entre Q2471375 (Guaraná Antarctica: refrigerante brasileiro a base de guaraná / soft drink)"
+ },
+ {
+  "id": "ipiranga",
+  "nome": "Ipiranga",
+  "area": "consumo",
+  "motivo": "a busca do Commons achou um arquivo de outro assunto (\"Logo Museu do Ipiranga – USP.svg\"); retirado na conferência da folha de contato"
+ },
+ {
+  "id": "outback",
+  "nome": "Outback",
+  "area": "consumo",
+  "motivo": "Wikidata: nenhum item com P154 ou P8972 entre Q1064893 (Outback Steakhouse: Cadeia de restaurantes norteamericana / American chain steakhouse); Q1401411 (NASCAR Xfinity Series Championship Race: NASCAR Xfinity Series race at Phoenix Raceway); Q117199630 (Outback Steakhouse 3 with Joe Wengert: Doughboys podcast episode)"
+ },
+ {
+  "id": "perdigao",
+  "nome": "Perdigão",
+  "area": "consumo",
+  "motivo": "Wikidata: nenhum item com P154 ou P8972 entre Q733485 (Rhynchotus rufescens: perdiz / species of bird); Q948637 (Perdigão: município brasileiro do estado de Minas Gerais / town and municipality in the state of Minas Gerais, Brazil); Q3851450 (Perdigão: futebolista brasileiro / Brazilian footballer and manager)"
+ },
+ {
+  "id": "vale",
+  "nome": "Vale",
+  "area": "consumo",
+  "motivo": "Wikidata: nenhum item com P154 ou P8972 entre Q583268 (Vale: empresa de mineração multinacional / multinational diversified metals and mining corporation)"
+ },
+ {
+  "id": "bragantino",
+  "nome": "Red Bull Bragantino",
+  "area": "esporte",
+  "motivo": "Wikidata: nenhum item com P154 ou P94 ou P8972 entre Q541744 (Red Bull Bragantino: clube esportivo brasileiro / association football team in Brazil); Q113341640 (Red Bull Bragantino (futebol feminino): women's football club based in Campinas, São Paulo, Brazil); Q636709 (Red Bull Futebol e Entretenimento Ltda.: clube de futebol brasileiro / association football club)"
+ },
+ {
+  "id": "brasileirao",
+  "nome": "Brasileirão",
+  "area": "esporte",
+  "motivo": "Wikidata: nenhum item com P154 ou P94 ou P8972 entre Q206813 (Campeonato Brasileiro de Futebol: campeonato nacional brasileiro de futebol profissional / association football league in Brazil)"
+ },
+ {
+  "id": "chelsea",
+  "nome": "Chelsea",
+  "area": "esporte",
+  "motivo": "Wikidata: nenhum item com P154 ou P94 ou P8972 entre Q9616 (Chelsea Football Club: clube de futebol inglês / association football club in London, England); Q2422811 (Chelsea Football Club Women: women's association football club based in Kingston upon Thames, England); Q2669653 (Chelsea Football Club Sub-23 e Academia: football club); Simple Icons 16.35.0 sem o ícone \"chelsea\""
+ },
+ {
+  "id": "intermiami",
+  "nome": "Inter Miami",
+  "area": "esporte",
+  "motivo": "o logo do Wikidata/Commons era de outro assunto (\"Inter Miami CF wordmark-full pink.png\"); retirado na conferência da folha de contato"
+ },
+ {
+  "id": "manchestercity",
+  "nome": "Manchester City",
+  "area": "esporte",
+  "motivo": "Wikidata: nenhum item com P154 ou P94 ou P8972 entre Q50602 (Manchester City Football Club: clube de futebol inglês / association football club in Manchester, England); Q54087391 (2018–19 Manchester City F.C. season: season of football team); Q63562790 (2019–20 Manchester City F.C. season: season of football team); Simple Icons 16.35.0 sem o ícone \"manchestercity\""
+ },
+ {
+  "id": "manchesterunited",
+  "nome": "Manchester United",
+  "area": "esporte",
+  "motivo": "Wikidata: nenhum item com P154 ou P94 ou P8972 entre Q18656 (Manchester United Football Club: clube esportivo sediado em Manchester, Inglaterra / association football club in Manchester, England); Q2593147 (Manchester United F.C. Reserves and Academy: youth team of Manchester United F.C.); Q11862785 (2013–14 Manchester United F.C. season: season of football team); Simple Icons 16.35.0 sem o ícone \"manchesterunited\""
+ },
+ {
+  "id": "psg",
+  "nome": "PSG",
+  "area": "esporte",
+  "motivo": "Wikidata: nenhum item com P154 ou P94 ou P8972 entre Q483020 (Paris Saint-Germain: clube de futebol francês / association football club in Paris, France having two UCL); Q3365295 (Paris Saint-Germain Féminine: French women's association football team); Q2945336 (Paris Saint-Germain FC Youth Academy: youth association football team)"
+ },
+ {
+  "id": "realmadrid",
+  "nome": "Real Madrid",
+  "area": "esporte",
+  "motivo": "Wikidata: nenhum item com P154 ou P94 ou P8972 entre Q8682 (Real Madrid Club de Fútbol: clube esportivo sediado em Madrid, Espanha / association football club in Madrid, Spain); Q6362982 (Real Madrid: multi-sport club); Q1246437 (Real Madrid Club de Fútbol C: association football team in Spain); Simple Icons 16.35.0 sem o ícone \"realmadrid\""
+ },
+ {
+  "id": "remo",
+  "nome": "Remo",
+  "area": "esporte",
+  "motivo": "Wikidata: nenhum item com P154 ou P94 ou P8972 entre Q2552872 (Clube do Remo: clube esportivo de Belém, Pará / association football club in Brazil); Q131400135 (Clube do Remo: Brazilian women's football club)"
+ },
+ {
+  "id": "seriea",
+  "nome": "Serie A italiana",
+  "area": "esporte",
+  "motivo": "o logo do Wikidata/Commons era de outro assunto (\"FIGC Serie A femminile (2020).svg\"); retirado na conferência da folha de contato"
+ },
+ {
+  "id": "sport",
+  "nome": "Sport",
+  "area": "esporte",
+  "motivo": "Wikidata: nenhum item com P154 ou P94 ou P8972 entre Q219098 (Sport Club do Recife: clube esportivo brasileiro / Brazilian association football club); Q133521876 (Sport Club do Recife: women's association football club based in Brazil); Q120566211 (Sport Club do Recife: women's basketball team)"
+ },
+ {
+  "id": "vasco",
+  "nome": "Vasco",
+  "area": "esporte",
+  "motivo": "Wikidata: nenhum item com P154 ou P94 ou P8972 entre Q5014111 (Club de Regatas Vasco da Gama: clube poliesportivo brasileiro / sports club based in Rio de Janeiro, Brazil); Q16949381 (Club de Regatas Vasco da Gama: basketball team in RJ, Brazil); Q5014000 (Club de Regatas Vasco da Gama: beach soccer division of CR Vasco da Gama)"
+ },
+ {
+  "id": "vitoria",
+  "nome": "Vitória",
+  "area": "esporte",
+  "motivo": "Wikidata: nenhum item com P154 ou P94 ou P8972 entre Q274465 (Esporte Clube Vitória: clube poliesportivo brasileiro / Brazilian association football club); Q25442702 (Vitória Basquete: equipe de basquete masculino do Esporte Clube Vitória / men's basketball team of the Brazilian sports club of the same name); Q139856986 (Esporte Clube Vitória: sem descrição)"
+ },
+ {
+  "id": "caixa",
+  "nome": "Caixa",
+  "area": "financas",
+  "motivo": "a busca do Commons achou um arquivo de outro assunto (\"Caixa Econômica Federal logo 1997.svg\"); retirado na conferência da folha de contato"
+ },
+ {
+  "id": "inter",
+  "nome": "Inter",
+  "area": "financas",
+  "motivo": "a busca do Commons achou um arquivo de outro assunto (\"Logo-World-Bank-IBRD-IDA.svg\"); retirado na conferência da folha de contato"
+ },
+ {
+  "id": "safra",
+  "nome": "Safra",
+  "area": "financas",
+  "motivo": "Wikidata: nenhum item com P154 ou P8972 entre Q4116096 (Banco Safra: banco brasileiro privado / Brazilian private bank)"
+ },
+ {
+  "id": "serasa",
+  "nome": "Serasa",
+  "area": "financas",
+  "motivo": "Wikidata: nenhum item com P154 ou P8972 entre Q10370196 (Serasa Experian: empresa brasileira de análises e informações para decisões de crédito)"
+ },
+ {
+  "id": "xp",
+  "nome": "XP Investimentos",
+  "area": "financas",
+  "motivo": "Wikidata: nenhum item com P154 ou P8972 entre Q96186528 (XP Investimentos: holding of stock exchange companies)"
+ },
+ {
+  "id": "copilot",
+  "nome": "Microsoft Copilot",
+  "area": "ia",
+  "motivo": "o logo do Wikidata/Commons era de outro assunto (\"Copilot.png\"); retirado na conferência da folha de contato"
+ },
+ {
+  "id": "dalle",
+  "nome": "DALL-E",
+  "area": "ia",
+  "motivo": "a busca do Commons achou um arquivo de outro assunto (\"New Craiyon emblem and wordmark.svg\"); retirado na conferência da folha de contato"
+ },
+ {
+  "id": "kimi",
+  "nome": "Kimi",
+  "area": "ia",
+  "motivo": "o logo do Wikidata/Commons era de outro assunto (\"Kimi Räikkönen Logo.svg\"); retirado na conferência da folha de contato"
+ },
+ {
+  "id": "xai",
+  "nome": "xAI",
+  "area": "ia",
+  "motivo": "o logo do Wikidata/Commons era de outro assunto (\"SpaceXAI logo.svg\"); retirado na conferência da folha de contato"
+ },
+ {
+  "id": "g20",
+  "nome": "G20",
+  "area": "internacional",
+  "motivo": "a busca do Commons achou um arquivo de outro assunto (\"G20 2021 logo.svg\"); retirado na conferência da folha de contato"
+ },
+ {
+  "id": "msf",
+  "nome": "Médicos Sem Fronteiras",
+  "area": "internacional",
+  "motivo": "Wikidata: nenhum item com P154 ou P8972 entre Q49330 (Médicos sem Fronteiras: organização não governamental de atuação internacional / international humanitarian medical non-governmental organisation); Q10334687 (Doctors without Borders Brazil: organization); Q97448853 (Médicos Sem Fronteiras: rota de migração para os EUA parece \"zona de guerra\": sem descrição)"
+ },
+ {
+  "id": "cnnbrasil",
+  "nome": "CNN Brasil",
+  "area": "midia",
+  "motivo": "o arquivo do Commons (\"CNN Brasil.svg\") vem cortado (viewBox): retirado na conferência da folha de contato"
+ },
+ {
+  "id": "record",
+  "nome": "Record",
+  "area": "midia",
+  "motivo": "a busca do Commons achou um arquivo de outro assunto (\"Record News logo 2023.svg\"); retirado na conferência da folha de contato"
+ },
+ {
+  "id": "abin",
+  "nome": "Abin",
+  "area": "politica",
+  "motivo": "Wikidata: nenhum item com P154 ou P8972 entre Q399639 (Agência Brasileira de Inteligência: serviço de inteligência civil do Brasil / Brazilian government agency established in 1999)"
+ },
+ {
+  "id": "avante",
+  "nome": "Avante",
+  "area": "politica",
+  "motivo": "a busca do Commons achou um arquivo de outro assunto (\"Siumut logo 2021.svg\"); retirado na conferência da folha de contato"
+ },
+ {
+  "id": "eletrobras",
+  "nome": "Eletrobras",
+  "area": "politica",
+  "motivo": "a busca do Commons achou um arquivo de outro assunto (\"Axia Energia.svg\"); retirado na conferência da folha de contato"
+ },
+ {
+  "id": "exercito",
+  "nome": "Exército Brasileiro",
+  "area": "politica",
+  "motivo": "Wikidata: nenhum item com P154 ou P8972 entre Q2292358 (Exército Brasileiro: componente terrestre das Forças Armadas do Brasil / land warfare branch of Brazil's military forces); Q140054853 (Exercito Brasileiro: escola em São Paulo / school in São Paulo, São Paulo, Brazil); Q117185028 (Exército Brasileiro na Primeira República: (1889–1930) / Brazilian land force from 1889 to 1930)"
+ },
+ {
+  "id": "governofederal",
+  "nome": "Governo Federal",
+  "area": "politica",
+  "motivo": "Wikidata: nenhum item com P154 ou P8972 entre Q5440531 (Governo Federal do Brasil: autoridade do executivo federal do Brasil / executive authority of Brazil)"
+ },
+ {
+  "id": "pgr",
+  "nome": "Procuradoria-Geral da República",
+  "area": "politica",
+  "motivo": "Wikidata: nenhum item com P154 ou P8972 entre Q105338051 (Procuradoria-Geral da República: órgão de comando do Ministério Público da União, no Brasil); Q29348586 (Procuradoria Geral da República: órgão superior do Ministério Público de Timor-Leste); Q10354171 (Procuradoria-Geral da República Portuguesa: órgão dirigente do Ministério Público de Portugal / public prosecutor general of Portugal)"
+ },
+ {
+  "id": "presidencia",
+  "nome": "Presidência da República",
+  "area": "politica",
+  "motivo": "Wikidata: nenhum item com P154 ou P8972 entre Q332711 (Presidente da República Italiana: chefe de Estado da Itália / head of state of Italy); Q66975812 (Presidência da República Federativa do Brasil: órgão do poder executivo federal brasileiro / organization of the Brazilian executive branch); Q6594693 (Presidência da República Sérvia: position)"
+ },
+ {
+  "id": "republicanos",
+  "nome": "Republicanos",
+  "area": "politica",
+  "motivo": "a busca do Commons achou um arquivo de outro assunto (\"Logo Republicanos Unidos.svg\"); retirado na conferência da folha de contato"
+ },
+ {
+  "id": "kwai",
+  "nome": "Kwai",
+  "area": "redes",
+  "motivo": "a busca do Commons achou um arquivo de outro assunto (\"Kung Fu (1972 TV series) logo.svg\"); retirado na conferência da folha de contato"
+ },
+ {
+  "id": "canva",
+  "nome": "Canva",
+  "area": "tecnologia",
+  "motivo": "a busca do Commons achou um arquivo de outro assunto (\"VRT Canvas 2023.svg\"); retirado na conferência da folha de contato"
+ },
+ {
+  "id": "freefire",
+  "nome": "Free Fire",
+  "area": "tecnologia",
+  "motivo": "Wikidata: nenhum item com P154 ou P8972 entre Q51883198 (Garena Free Fire: jogo eletrônico de 2017 / 2017 multiplayer online battle royale game)"
+ },
+ {
+  "id": "pf",
+  "nome": "Polícia Federal",
+  "area": "politica",
+  "motivo": "Wikidata trazia o logo da Polícia Federal da Alemanha (Bundespolizei); removido em 22/10/2026. Usar cenário delegacia ou viatura."
+ },
+ {
+  "id": "congresso",
+  "nome": "Congresso Nacional",
+  "area": "politica",
+  "motivo": "Wikidata trazia o logo do Congresso Nacional do Sudão; removido em 22/10/2026. Usar cenário plenario ou congresso-exterior."
+ }
+]

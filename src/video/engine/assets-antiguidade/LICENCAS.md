@@ -1,0 +1,5 @@
+# Texturas do estilo antiguidade
+
+- `pergaminho.jpg`: "Pergament.1.jpg", Membeth, CC0 1.0, Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Pergament.1.jpg (baixada em 21/10/2026 por scripts/buscar-imagem.mjs). Usada no papel da citação e na terra do mapa.
+- `papel.jpg`: "Pergament.2.jpg", Membeth, CC0 1.0, Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Pergament.2.jpg (baixada em 21/10/2026 por scripts/buscar-imagem.mjs). Usada como textura de papel por cima de todo o quadro, em 6%.
+- `mapa-mediterraneo-india.geojson`: Natural Earth 1:50m (land, coastline, lakes e rivers_lake_centerlines: Tigre, Eufrates, Nilo e Indo), domínio público (https://www.naturalearthdata.com/about/terms-of-use/), baixado em 21/10/2026 do repositório oficial https://github.com/nvkelso/natural-earth-vector (pasta geojson), recortado de longitude 8 a 82 e latitude 3 a 60 (folga para o plano inclinado cobrir a tela inteira) e simplificado (pontos a menos de 0,02° do anterior saem). Usado no mapa vetorial do estilo (`"tratamento": "vetor"`).

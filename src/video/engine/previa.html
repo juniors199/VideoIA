@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prévia Ilustrando</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#0b0b10;color:#eee;font:14px system-ui,sans-serif;display:flex;height:100vh}
+#palco{flex:1;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+#moldura{width:1080px;height:1920px;transform-origin:center;position:absolute;border:0;background:#000}
+#lado{width:340px;border-left:1px solid #222;display:flex;flex-direction:column;padding:16px;gap:12px;overflow:auto}
+#lado h1{font-size:16px;margin:0}button{background:#ff6b1a;color:#111;border:0;border-radius:8px;padding:10px 14px;font-weight:700;cursor:pointer}
+button.sec{background:#222;color:#eee}input[type=range]{width:100%}label{display:flex;gap:8px;align-items:center}
+.beat{padding:8px 10px;border-radius:8px;background:#15151c;cursor:pointer;font-size:13px}.beat.on{outline:2px solid #ff6b1a}.beat small{display:block;color:#888}
+#cx{position:absolute;pointer-events:none}
+</style></head><body>
+<div id="palco"><iframe id="moldura"></iframe><canvas id="cx" width="1080" height="1920"></canvas></div>
+<div id="lado"><h1 id="titulo">Prévia</h1>
+<div style="display:flex;gap:8px"><button id="play">Tocar</button><button class="sec" id="ini">Início</button></div>
+<input id="barra" type="range" min="0" max="1000" value="0"><div id="tempo">0.00 s</div>
+<label><input type="checkbox" id="guias"> guias de zona segura</label>
+<label><input type="checkbox" id="caixas"> caixas medidas pelo QA</label>
+<div id="beats"></div><audio id="audio" src="/audio.mp3" preload="auto"></audio></div>
+<script>
+(async () => {
+  const spec = await (await fetch('/spec.json')).json();
+  const fr = document.getElementById('moldura'), cx = document.getElementById('cx'), audio = document.getElementById('audio');
+  // 0.6.42: formato do vídeo (vertical 1080 x 1920 ou horizontal 1920 x 1080); a página do motor lê o formato da URL
+  const HZ = spec.formato === 'horizontal', PW = HZ ? 1920 : 1080, PH = HZ ? 1080 : 1920;
+  fr.style.width = PW + 'px'; fr.style.height = PH + 'px'; cx.width = PW; cx.height = PH;
+  fr.src = HZ ? `/?f=h&hd=${spec.handle ? 1 : 0}` : '/';
+  const $ = (i) => document.getElementById(i);
+  await new Promise((ok) => (fr.contentDocument?.readyState === 'complete' ? ok() : fr.addEventListener('load', ok)));
+  while (!fr.contentWindow.ilu) await new Promise((r) => setTimeout(r, 50));
+  let atual = spec;
+  const carregar = async (guias) => { atual = { ...spec, guias }; await fr.contentWindow.ilu.carregar(atual, { escala: 1 }); await fr.contentDocument.fonts.ready; };
+  await carregar(false);
+  $('titulo').textContent = spec.tema;
+  const ajusta = () => { const p = $('palco'); const k = Math.min(p.clientWidth / PW, p.clientHeight / PH); for (const e of [fr, cx]) { e.style.transform = `scale(${k})`; e.style.left = `${(p.clientWidth - PW) / 2}px`; e.style.top = `${(p.clientHeight - PH) / 2}px`; } };
+  addEventListener('resize', ajusta); ajusta();
+  const dur = spec.duracao;
+  const lista = $('beats');
+  spec.beats.forEach((b) => { const d = document.createElement('div'); d.className = 'beat'; d.innerHTML = `${b.id}<small>${b.de.toFixed(1)} a ${b.ate.toFixed(1)} s</small>`; d.onclick = () => ir(b.de + 0.8); lista.appendChild(d); b.d = d; });
+  let t = 0, tocando = false;
+  const desenha = async () => {
+    fr.contentWindow.ilu.quadro(t);
+    $('barra').value = Math.round((t / dur) * 1000); $('tempo').textContent = `${t.toFixed(2)} s de ${dur.toFixed(1)} s`;
+    spec.beats.forEach((b) => b.d.classList.toggle('on', t >= b.de && t < b.ate));
+    const g = cx.getContext('2d'); g.clearRect(0, 0, PW, PH);
+    if ($('caixas').checked) {
+      const m = fr.contentWindow.ilu.medir(t);
+      g.lineWidth = 3;
+      const cor = { titulos: '#4af', contadores: '#fa0', pecas: '#4f8', tracos: '#c6f', rotulos: '#f6a' };
+      for (const [k, c] of Object.entries(cor)) for (const r of m[k] || []) { g.strokeStyle = c; g.strokeRect(r.x0, r.y0, r.x1 - r.x0, r.y1 - r.y0); }
+    }
+  };
+  const ir = (x) => { t = Math.max(0, Math.min(dur - 0.02, x)); audio.currentTime = t; desenha(); };
+  $('barra').oninput = (e) => ir((e.target.value / 1000) * dur);
+  $('ini').onclick = () => ir(0);
+  $('play').onclick = () => { tocando = !tocando; $('play').textContent = tocando ? 'Pausar' : 'Tocar'; if (tocando) audio.play().catch(() => {}); else audio.pause(); };
+  $('caixas').onchange = desenha;
+  $('guias').onchange = async () => { await carregar($('guias').checked); desenha(); };
+  const laco = () => { if (tocando) { t = audio.paused ? Math.min(dur - 0.02, t + 1 / 60) : audio.currentTime; if (t >= dur - 0.03) { tocando = false; $('play').textContent = 'Tocar'; } desenha(); } requestAnimationFrame(laco); };
+  laco(); desenha();
+  window.__previa = { ir, pronto: true };
+})();
+</script></body></html>

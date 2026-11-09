@@ -1,0 +1,140 @@
+{
+  "id": "tecnologia",
+  "nome": "Tecnologia",
+  "versao": 1,
+  "paraQuem": "perfis de tecnologia, internet e segurança digital",
+  "exemplosDePedido": [
+    "Por que o Wi-Fi cai quando o micro-ondas liga"
+  ],
+  "apelidos": [
+    "tech",
+    "internet"
+  ],
+  "formato": {
+    "preferidos": [
+      "mito-fato",
+      "revelacao",
+      "causa-efeito",
+      "comparativo"
+    ],
+    "proibidos": [],
+    "padrao": "mito-fato"
+  },
+  "roteiro": {
+    "palavras": [
+      150,
+      230
+    ],
+    "alvoSegundos": [
+      55,
+      80
+    ],
+    "gatilhos": [
+      "CI",
+      "PD",
+      "EN"
+    ],
+    "abertura3Tempos": true,
+    "promessaMarca": null,
+    "loopAberto": true,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "direto, sem jargão",
+    "vocabulario": "simples",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[calm, clear]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "estilo": "minimalista",
+    "cenarios": [
+      "escritorio",
+      "sala"
+    ],
+    "pecasBase": [
+      "chip",
+      "servidor",
+      "celular",
+      "roteador",
+      "senha",
+      "cadeado",
+      "notebook",
+      "robo",
+      "nuvemdados"
+    ],
+    "reserva": [
+      "chip",
+      "celular",
+      "notebook",
+      "nuvemdados"
+    ],
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "transicao": "corte",
+    "contador": "quando-houver-numero",
+    "titulos": "gancho"
+  },
+  "ritmo": {
+    "beatSeg": [
+      3,
+      9
+    ],
+    "trocaVisualMaxSeg": 5
+  },
+  "som": {
+    "musica": true,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "compartilhar",
+    "texto": "Manda para quem ainda faz isso.",
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "mitofato",
+      "texto",
+      "dado",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      8
+    ],
+    "estilo": "minimalista",
+    "virais": [
+      "tabela",
+      "codigo",
+      "linhatempo",
+      "thread",
+      "veredito",
+      "grafico"
+    ]
+  },
+  "publicar": {
+    "legenda": "o mito e a explicação em 2 linhas",
+    "hashtags": [
+      "#tecnologia"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

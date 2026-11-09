@@ -1,0 +1,62 @@
+{
+  "perfil": "curiosidades",
+  "tema": "MITO OU VERDADE",
+  "legenda": "Usar só 10% do cérebro é mito. O cérebro gastar cerca de 20% da energia do corpo é verdade. Estalar os dedos causar artrite é mito. E raio cai, sim, duas vezes no mesmo lugar.\n\nQual mito você acreditava?\n\nSegue a página pra ver a próxima.\n\nFoto: Hermann Luyken (CC BY-SA 3.0)",
+  "marcadores": [
+    "cerebro",
+    "mitos",
+    "ciencia",
+    "corpo"
+  ],
+  "fontes": [
+    "Scientific American, 10% do cérebro: https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/",
+    "Wikipedia, Ten-percent-of-the-brain myth: https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth",
+    "PNAS, Raichle e Gusnard (2002): https://pmc.ncbi.nlm.nih.gov/articles/PMC124895",
+    "Improbable Research, Unger (IgNobel 2009): https://improbable.com/2010/02/15/ig-nobel-acceptance-speech-knuckle-cracking/",
+    "Popular Science, knuckle cracking: https://www.popsci.com/knuckle-cracking-health-myths/",
+    "JABFM, deWeber e outros (2011): https://www.jabfm.org/content/24/2/169",
+    "NASA SVS, raios no Empire State: https://svs.gsfc.nasa.gov/30872/",
+    "MPR News: https://www.mprnews.org/story/2024/09/13/friday-the-13th-weather-superstitions"
+  ],
+  "slides": [
+    {
+      "tipo": "capa",
+      "titulo": "4 coisas que você ouviu sobre o *corpo*",
+      "sub": "Só uma é verdade. Arraste e confira.",
+      "fotoFundo": "assets/raio-empire.jpg"
+    },
+    {
+      "tipo": "veredito",
+      "afirmacao": "Usamos só 10% do cérebro.",
+      "veredito": "mito",
+      "explicacao": "Exames de imagem mostram o cérebro *inteiro* ativo ao longo do dia.",
+      "fotoFundo": "assets/raio-empire.jpg"
+    },
+    {
+      "tipo": "veredito",
+      "afirmacao": "O cérebro gasta 20% da energia do corpo.",
+      "veredito": "verdade",
+      "explicacao": "E ele pesa só 2% a 3% do corpo.",
+      "fotoFundo": "assets/raio-empire.jpg"
+    },
+    {
+      "tipo": "veredito",
+      "afirmacao": "Estalar os dedos causa artrite.",
+      "veredito": "mito",
+      "explicacao": "Donald Unger estalou só a mão esquerda por 50 anos, sem artrite nas duas. Um estudo de 2011 com 215 pessoas confirmou."
+    },
+    {
+      "tipo": "veredito",
+      "afirmacao": "Raio não cai duas vezes no mesmo lugar.",
+      "veredito": "mito",
+      "explicacao": "O Empire State, em Nova York, é atingido de 20 a 25 vezes por ano.",
+      "fotoFundo": "assets/raio-empire.jpg"
+    },
+    {
+      "tipo": "fecho",
+      "titulo": "Qual desses você *acreditava*?",
+      "texto": "Conta nos comentários.",
+      "fotoFundo": "assets/raio-empire.jpg"
+    }
+  ]
+}

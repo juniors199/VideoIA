@@ -1,0 +1,45 @@
+{
+  "voz": "elevenlabs",
+  "trilha": {
+    "clima": "auto",
+    "ordem": [
+      "sintetizada"
+    ],
+    "bibliotecaLivre": false,
+    "provedores": {}
+  },
+  "sfx": "suave",
+  "narracao": {
+    "elevenlabs": {
+      "modelId": "eleven_v4",
+      "velocidade": 1,
+      "stability": 0.4,
+      "similarity": 0.8
+    },
+    "fishaudio": {
+      "modelo": "s2.1-pro",
+      "velocidade": 1
+    }
+  },
+  "cta": {
+    "comentar": false,
+    "palavra": "",
+    "texto": "Segue a página pra ver a próxima."
+  },
+  "linhaEditorial": {
+    "politica": "neutra",
+    "intensidade": "leve",
+    "perguntar": true
+  },
+  "expressoesProibidas": [
+    "investigad[oa]s? nao (e|sao) culpad",
+    "(ser )?alvo nao e (ser )?culpad",
+    "suspeit[oa]s? nao (e|sao) culpad",
+    "nao (e|significa) (ser )?culpad",
+    "acusad[oa]s? nao (e|sao) culpad",
+    "presuncao de inocencia",
+    "inocente ate (que se prove|prova)"
+  ],
+  "encoder": "auto",
+  "perguntarObjetivo": true
+}

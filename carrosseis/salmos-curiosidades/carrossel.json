@@ -1,0 +1,80 @@
+{
+  "perfil": "curiosidades",
+  "tema": "BÍBLIA",
+  "legenda": "O livro de Salmos tem 150 salmos. O Salmo 119 é o maior capítulo da Bíblia, com 176 versículos, e o Salmo 117 é o menor, com 2. A Bíblia protestante tem 66 livros e a católica, 73.\n\nVersículo: Almeida Revista e Corrigida (Sociedade Bíblica do Brasil), citado com referência.\n\nQual é o seu salmo preferido?\n\nSegue a página pra ver a próxima.\n\nFoto: Stephen Daye (Public domain)",
+  "marcadores": [
+    "biblia",
+    "salmos",
+    "fe",
+    "curiosidades"
+  ],
+  "fontes": [
+    "Britannica, Psalms: https://britannica.com/topic/Psalms",
+    "New World Encyclopedia, Psalms: https://www.newworldencyclopedia.org/entry/Psalms",
+    "Christianity.com, Salmo 119: https://www.christianity.com/plus/5-truths-to-know-about-psalm-119.html",
+    "Enduring Word, Salmo 119 e 117: https://enduringword.com/?p=124222",
+    "Revista PUC-SP, Salmo 117: https://revistas.pucsp.br/index.php/reveleteo/article/download/21558/15807/55278",
+    "Text & Canon, Bíblia protestante x católica: https://textandcanon.org/pt/por-que-a-biblia-dos-protestantes-e-a-dos-catolicos-sao-diferentes/",
+    "GotQuestions, Bíblia católica: https://www.gotquestions.org/Portugues/Biblia-Catolica.html",
+    "Bíblia Online, Salmo 23:1 ARC: https://bibliaonline.com.br/arc+kjv/sl/23/1",
+    "Bibliaon, Salmo 23:1: https://www.bibliaon.com/versiculo/salmos_23_1/"
+  ],
+  "slides": [
+    {
+      "tipo": "capa",
+      "titulo": "O capítulo mais *curto* da Bíblia tem só 2 versículos",
+      "sub": "E ele fica perto do mais longo."
+    },
+    {
+      "tipo": "numeros",
+      "titulo": "O livro de *Salmos*",
+      "itens": [
+        {
+          "numero": "150",
+          "legenda": "salmos no livro"
+        },
+        {
+          "numero": "176",
+          "legenda": "versículos no Salmo 119, o maior capítulo"
+        },
+        {
+          "numero": "2",
+          "legenda": "versículos no Salmo 117, o menor"
+        }
+      ],
+      "destaque": 0
+    },
+    {
+      "tipo": "quiz",
+      "pergunta": "Qual é o *maior* capítulo da Bíblia?",
+      "opcoes": [
+        "Gênesis 1",
+        "Salmo 119",
+        "Isaías 53",
+        "Salmo 23"
+      ],
+      "resposta": 1,
+      "revelar": true,
+      "explicacao": "O Salmo 119, com 176 versículos."
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Bíblias com *números diferentes*",
+      "texto": "A Bíblia protestante tem 66 livros. A católica tem 73.",
+      "fotoFundo": "assets/salmos.jpg"
+    },
+    {
+      "tipo": "versiculo",
+      "texto": "O Senhor é o meu pastor; *nada* me faltará.",
+      "referencia": "Salmos 23:1",
+      "versao": "Almeida Revista e Corrigida",
+      "fotoFundo": "assets/salmos.jpg"
+    },
+    {
+      "tipo": "fecho",
+      "titulo": "Qual é o seu *salmo* preferido?",
+      "texto": "Conta nos comentários.",
+      "fotoFundo": "assets/salmos.jpg"
+    }
+  ]
+}

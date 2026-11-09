@@ -1,0 +1,99 @@
+{
+  "perfil": "curiosidades",
+  "tema": "QUIZ",
+  "legenda": "A pele é o maior órgão do corpo, o estribo (no ouvido médio, cerca de 3 mm) é o menor osso e o coração bate cerca de 100 mil vezes por dia.\n\nQuantas você acertou?\n\nSegue a página pra ver a próxima.\n\nFoto: Sklmsta (CC0)",
+  "marcadores": [
+    "quiz",
+    "corpo",
+    "saude",
+    "curiosidades"
+  ],
+  "fontes": [
+    "MedlinePlus (NIH), pele: https://medlineplus.gov/ency/imagepages/19679.htm",
+    "Guinness, maior órgão: https://www.guinnessworldrecords.com/world-records/83791-largest-human-organ",
+    "Healthline, estribo: https://www.healthline.com/human-body-maps/stapes-bone",
+    "Mental Floss, menor osso: https://www.mentalfloss.com/science/body/smallest-bone-human-body",
+    "Cleveland Clinic, coração: https://health.clevelandclinic.org/facts-about-the-heart",
+    "Atlantic Health, coração: https://atlantichealth.org/health-articles/heart-health/10-things-you-might-not-know-about-your-heart",
+    "Wikipedia, ossos: https://en.wikipedia.org/wiki/List_of_bones_of_the_human_skeleton",
+    "Cleveland Clinic, ossos: https://my.clevelandclinic.org/health/body/25176-bones",
+    "Guinness, maior osso: https://www.guinnessworldrecords.com/world-records/67745-longest-bone"
+  ],
+  "slides": [
+    {
+      "tipo": "capa",
+      "titulo": "Quiz: quanto você sabe do seu *corpo*?",
+      "sub": "Responda antes de arrastar.",
+      "fotoFundo": "assets/esqueleto.jpg"
+    },
+    {
+      "tipo": "quiz",
+      "pergunta": "Qual é o *maior* órgão do corpo?",
+      "opcoes": [
+        "Fígado",
+        "Pele",
+        "Intestino",
+        "Pulmão"
+      ],
+      "resposta": 1,
+      "dica": "Responde nos comentários antes de arrastar."
+    },
+    {
+      "tipo": "quiz",
+      "pergunta": "Qual é o *maior* órgão do corpo?",
+      "opcoes": [
+        "Fígado",
+        "Pele",
+        "Intestino",
+        "Pulmão"
+      ],
+      "resposta": 1,
+      "revelar": true,
+      "explicacao": "A pele cobre o corpo inteiro."
+    },
+    {
+      "tipo": "quiz",
+      "pergunta": "Qual é o *menor* osso do corpo?",
+      "opcoes": [
+        "Estribo",
+        "Falange do dedo",
+        "Rótula",
+        "Vértebra"
+      ],
+      "resposta": 0,
+      "dica": "Uma dica: fica na cabeça."
+    },
+    {
+      "tipo": "quiz",
+      "pergunta": "Qual é o *menor* osso do corpo?",
+      "opcoes": [
+        "Estribo",
+        "Falange do dedo",
+        "Rótula",
+        "Vértebra"
+      ],
+      "resposta": 0,
+      "revelar": true,
+      "explicacao": "O estribo fica no ouvido médio e mede cerca de 3 mm."
+    },
+    {
+      "tipo": "quiz",
+      "pergunta": "Quantas vezes o coração bate por *dia*?",
+      "opcoes": [
+        "10 mil",
+        "30 mil",
+        "100 mil",
+        "1 milhão"
+      ],
+      "resposta": 2,
+      "revelar": true,
+      "explicacao": "Cerca de 100 mil vezes, todo santo dia."
+    },
+    {
+      "tipo": "fecho",
+      "titulo": "Quantas você *acertou*?",
+      "texto": "O adulto tem, em geral, 206 ossos. O mais longo é o fêmur.",
+      "fotoFundo": "assets/esqueleto.jpg"
+    }
+  ]
+}

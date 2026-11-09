@@ -1,0 +1,22 @@
+PERFIL DA PÁGINA 
+Gerado por npm run marca. Use o mesmo nome, @ e foto nas 4 redes.
+
+Nome: Sua Página
+@: @suapagina
+
+Bio (Instagram e Facebook, até 150 caracteres):
+Troque esta bio com npm run marca.
+
+Bio curta (TikTok, até 80 caracteres):
+A assinatura da sua página aparece aqui.
+
+Onde vai cada arquivo (pasta marca/saida):
+- avatar.png: foto de perfil no Instagram, TikTok, YouTube e Facebook (as redes cortam em círculo; veja avatar-previa-circulo.png).
+- banner-youtube.png: imagem do banner do canal do YouTube (2560x1440).
+- banner-facebook.png: foto de capa da Página do Facebook.
+- destaque-instagram.png: capa dos destaques do Instagram.
+- logotipo.png: nome da página com fundo transparente (para assinar materiais).
+- icone-app.png: ícone quadrado arredondado.
+- design-system.png: folha com tudo junto, para conferir.
+
+Cores: destaque #FF7A2F, apoio #FFC7A8, texto sobre o destaque #1F0F06.

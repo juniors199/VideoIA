@@ -1,0 +1,173 @@
+{
+  "id": "preto-branco",
+  "nome": "Preto e Branco (cenas desenhadas em traço e hachura)",
+  "versao": 1,
+  "paraQuem": "explicações em que cada ideia vira uma cena desenhada: ciência, história, corpo, tecnologia, dinheiro e perguntas do tipo \"e se...\"",
+  "exemplosDePedido": [
+    "E se o gelo afundasse?",
+    "Por que o céu é azul",
+    "Como o avião fica no ar"
+  ],
+  "apelidos": [
+    "pb",
+    "traco-preto-branco",
+    "orca"
+  ],
+  "formato": {
+    "preferidos": [
+      "revelacao",
+      "causa-efeito",
+      "numero-impossivel",
+      "passo-a-passo"
+    ],
+    "proibidos": [],
+    "padrao": "revelacao"
+  },
+  "roteiro": {
+    "palavras": [
+      70,
+      130
+    ],
+    "alvoSegundos": [
+      24,
+      45
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "uma pergunta \"e se...\" ou um fato que provoca, em uma frase; vira a frase-chave em caixa alta embaixo da arte",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "mecanismo",
+        "seg": [
+          14,
+          30
+        ],
+        "instrucao": "um passo por frase, cada frase uma cena desenhada em movimento (um lugar, um objeto ou um diagrama, com câmera); números pequenos e exatos, que viram número no tamanho da frase",
+        "n": [
+          3,
+          5
+        ]
+      },
+      {
+        "bloco": "virada",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "o detalhe que muda o jeito de ver (o beat claro, tinta preta sobre papel branco)"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "pedido de compartilhar e o convite final padrão (seguir e comentar); vira o fecho com o botão SEGUIR"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "EN",
+      "PD"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "direto, curioso, frases curtas, uma ideia por frase",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[calm, clear]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "contador": "quando-houver-numero",
+    "estilo": "preto-branco",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [
+      "esfera",
+      "cubo",
+      "copo",
+      "bequer"
+    ],
+    "reserva": [
+      "esfera",
+      "cubo",
+      "copo"
+    ],
+    "titulos": "por-etapa"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2,
+      4.5
+    ],
+    "trocaVisualMaxSeg": 4
+  },
+  "som": {
+    "musica": true,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "minimalista",
+    "virais": [
+      "tipografico",
+      "definicao",
+      "tweet"
+    ]
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, o porquê em 2 linhas, pergunta de opinião",
+    "hashtags": [
+      "#curiosidades",
+      "#vocesabia"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

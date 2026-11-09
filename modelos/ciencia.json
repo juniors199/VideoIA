@@ -1,0 +1,144 @@
+{
+  "id": "ciencia",
+  "nome": "Ciência e espaço",
+  "versao": 1,
+  "paraQuem": "divulgação científica, astronomia, natureza",
+  "exemplosDePedido": [
+    "Em Vênus o dia é mais longo que o ano"
+  ],
+  "apelidos": [
+    "espaco",
+    "astronomia",
+    "ciencia-e-espaco"
+  ],
+  "formato": {
+    "preferidos": [
+      "numero-impossivel",
+      "revelacao",
+      "causa-efeito"
+    ],
+    "proibidos": [],
+    "padrao": "numero-impossivel"
+  },
+  "roteiro": {
+    "palavras": [
+      150,
+      230
+    ],
+    "alvoSegundos": [
+      55,
+      80
+    ],
+    "gatilhos": [
+      "EN",
+      "CI",
+      "EE"
+    ],
+    "abertura3Tempos": true,
+    "promessaMarca": null,
+    "loopAberto": true,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      0
+    ],
+    "pessoa": "você",
+    "tom": "maravilhado e preciso; ressalva falada quando o dado depende de definição",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[calm, clear]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "estilo": "padrao",
+    "cenarios": [
+      "espaco",
+      "agua",
+      "deserto"
+    ],
+    "cenas": [
+      "planeta_terra_cena"
+    ],
+    "pecasBase": [
+      "atomo",
+      "dna",
+      "microscopio",
+      "sistemasolar",
+      "galaxia",
+      "terralua",
+      "cientistaoculos",
+      "frasco"
+    ],
+    "reserva": [
+      "atomo",
+      "terralua",
+      "microscopio"
+    ],
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "transicao": "desfoque",
+    "contador": "sempre",
+    "titulos": "gancho"
+  },
+  "ritmo": {
+    "beatSeg": [
+      3,
+      9
+    ],
+    "trocaVisualMaxSeg": 5
+  },
+  "som": {
+    "musica": true,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      8
+    ],
+    "estilo": "padrao",
+    "virais": [
+      "grafico",
+      "vocesabia",
+      "divisao",
+      "anotada",
+      "veredito",
+      "numeros",
+      "manchete"
+    ]
+  },
+  "publicar": {
+    "legenda": "o número, a comparação e a nuance",
+    "hashtags": [
+      "#ciencia",
+      "#espaco"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": true,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "id": "alternativo",
+  "nome": "3D Alternativo (dados, mapas e objetos em nuvem de pontos)",
+  "versao": 1,
+  "paraQuem": "páginas de dados, política, economia, geografia e curiosidades com número: mapas, comparações, rankings e qualquer objeto do assunto em nuvem de pontos 3D com interface de dados",
+  "exemplosDePedido": [
+    "Onde mora a população do Brasil",
+    "Quantas cadeiras cada partido tem no Senado",
+    "O que mudou no mapa da eleição"
+  ],
+  "apelidos": [
+    "3d-alternativo",
+    "nuvem-de-pontos",
+    "mapa-3d",
+    "dados-3d"
+  ],
+  "formato": {
+    "preferidos": [
+      "numero-impossivel",
+      "comparativo",
+      "ranking",
+      "revelacao",
+      "causa-efeito"
+    ],
+    "proibidos": [],
+    "padrao": "comparativo"
+  },
+  "roteiro": {
+    "palavras": [
+      80,
+      150
+    ],
+    "alvoSegundos": [
+      28,
+      55
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "o número ou o contraste que provoca, verdadeiro e atribuível (o mapa ou o objeto já na tela)",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "dados",
+        "seg": [
+          18,
+          40
+        ],
+        "instrucao": "um dado por frase, cada um com uma forma: mapa com realce, colunas, conjunto que acende, cartão de número",
+        "n": [
+          3,
+          6
+        ]
+      },
+      {
+        "bloco": "virada",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "o dado que muda o jeito de ver"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "convite final curto"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "EN",
+      "PD"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "direto, frases curtas, números redondos e atribuídos",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[calm, clear]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "pecasPorTema": true,
+    "imagens": "nunca",
+    "contador": "quando-houver-numero",
+    "estilo": "alternativo",
+    "cenarios": [
+      "palco"
+    ],
+    "pecasBase": [
+      "cubo"
+    ],
+    "reserva": [
+      "cubo"
+    ],
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2.5,
+      6
+    ],
+    "trocaVisualMaxSeg": 3
+  },
+  "som": {
+    "musica": false,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "minimalista"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, o porquê em 2 linhas, pergunta de opinião",
+    "hashtags": [
+      "#curiosidades",
+      "#vocesabia"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

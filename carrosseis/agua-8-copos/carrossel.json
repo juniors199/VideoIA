@@ -1,0 +1,65 @@
+{
+  "perfil": "curiosidades",
+  "tema": "SAÚDE",
+  "visual": "claro",
+  "legenda": "A regra dos 8 copos provavelmente nasceu de uma recomendação de 1945 lida pela metade. As National Academies indicam cerca de 3,7 L de água total por dia para homens e 2,7 L para mulheres, contando a comida.\n\nInformação geral: em caso de doença, fale com seu médico.\n\nSegue a página pra ver a próxima.\n\nFoto: Mia Gaitanidis (CC BY-SA 4.0)",
+  "marcadores": [
+    "agua",
+    "saude",
+    "hidratacao",
+    "mito"
+  ],
+  "fontes": [
+    "Dartmouth Medical School, Valtin (2002): https://geiselmed.dartmouth.edu/news/2002_h2/08aug2002_water.shtml",
+    "MDLinx, 8 glasses of water a day: https://mdlinx.com/article/8-glasses-of-water-a-day-myth-or-medicine/lfc-2814",
+    "The Dartmouth (2002): https://www.thedartmouth.com/article/2002/08/professor-finds-8x8-water-consumption-is-not-so-great",
+    "National Academies (2004): https://www.nationalacademies.org/news/report-sets-dietary-intake-levels-for-water-salt-and-potassium-to-maintain-health-and-reduce-chronic-disease-risk",
+    "ScienceDaily (2004): https://www.sciencedaily.com/releases/2004/02/040212092439.htm"
+  ],
+  "slides": [
+    {
+      "tipo": "capa",
+      "titulo": "Você precisa mesmo de *8 copos* de água por dia?",
+      "sub": "A regra famosa não tem estudo por trás."
+    },
+    {
+      "tipo": "nota",
+      "titulo": "De onde veio a *regra*",
+      "texto": "Em 1945, um conselho dos EUA sugeriu 1 mL de água por caloria. A frase seguinte dizia que a maior parte já vem nos alimentos.",
+      "fotoFundo": "assets/copo.jpg"
+    },
+    {
+      "tipo": "veredito",
+      "afirmacao": "Todo mundo precisa de 8 copos por dia.",
+      "veredito": "mito",
+      "explicacao": "Em 2002, o fisiologista Heinz Valtin não achou nenhum estudo que sustente a regra.",
+      "fotoFundo": "assets/copo.jpg"
+    },
+    {
+      "tipo": "nota",
+      "titulo": "O que a ciência *indica*",
+      "itens": [
+        "Homens: cerca de 3,7 L de água total",
+        "Mulheres: cerca de 2,7 L",
+        "Água total inclui bebida e comida",
+        "Uns 20% vêm dos alimentos",
+        {
+          "texto": "A sede é um bom guia",
+          "feito": true
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Na dúvida, *escute a sede*",
+      "texto": "Para pessoas saudáveis, ela é um bom guia de quanto beber.",
+      "fotoFundo": "assets/copo.jpg"
+    },
+    {
+      "tipo": "fecho",
+      "titulo": "Quantos copos você bebe por *dia*?",
+      "texto": "Conta nos comentários.",
+      "fotoFundo": "assets/copo.jpg"
+    }
+  ]
+}

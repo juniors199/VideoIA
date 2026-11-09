@@ -1,0 +1,167 @@
+{
+  "id": "interface",
+  "nome": "Interface (a tela executa o verbo)",
+  "versao": 1,
+  "paraQuem": "tecnologia, aula de passo a passo digital, finanças (simulação, golpe), negócio local (pedido, agendamento), notícia (alerta), saúde (lembrete)",
+  "exemplosDePedido": [
+    "A aba anônima esconde você?",
+    "Como funciona o golpe do falso boleto"
+  ],
+  "apelidos": [
+    "app",
+    "tela",
+    "ui",
+    "cursor"
+  ],
+  "formato": {
+    "preferidos": [
+      "passo-a-passo",
+      "causa-efeito",
+      "mito-fato",
+      "revelacao"
+    ],
+    "proibidos": [],
+    "padrao": "passo-a-passo"
+  },
+  "roteiro": {
+    "palavras": [
+      90,
+      130
+    ],
+    "alvoSegundos": [
+      32,
+      46
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "a situação na tela que todo mundo conhece",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "mecanismo",
+        "seg": [
+          18,
+          30
+        ],
+        "instrucao": "um estado da interface por frase: estado inicial, ação, resultado",
+        "n": [
+          3,
+          5
+        ]
+      },
+      {
+        "bloco": "virada",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "o que a tela não mostra (alerta, notificação, escolha)"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "convite final curto"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "EN",
+      "PD"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "direto, cada frase com um verbo de ação (digitar, buscar, clicar, escolher, receber)",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[calm, clear]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "contador": "quando-houver-numero",
+    "estilo": "interface",
+    "cenarios": [
+      "palco"
+    ],
+    "pecasBase": [
+      "celular",
+      "notebook",
+      "roteador",
+      "cadeado"
+    ],
+    "reserva": [
+      "celular",
+      "notebook"
+    ],
+    "titulos": "por-etapa"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2,
+      6
+    ],
+    "trocaVisualMaxSeg": 4
+  },
+  "som": {
+    "musica": false,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, o porquê em 2 linhas, pergunta de opinião",
+    "hashtags": [
+      "#curiosidades",
+      "#vocesabia"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

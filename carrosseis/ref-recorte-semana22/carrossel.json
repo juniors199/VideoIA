@@ -1,0 +1,72 @@
+{
+  "perfil": "curiosidades",
+  "tema": "CULTURA",
+  "visual": "recorte",
+  "legenda": "Nas noites de 13, 15 e 17 de fevereiro de 1922, o Theatro Municipal de São Paulo recebeu a Semana de Arte Moderna. Tarsila do Amaral não estava: ela estava em Paris, e o Abaporu é de 1928.\n\nQual artista dessa turma você mais gosta?\n\nSegue a página pra ver a próxima.\n\nFoto: Wilfredor (CC0) | Foto: Desconhecido Unknown author (Public domain)",
+  "marcadores": [
+    "semanade22",
+    "modernismo",
+    "arte"
+  ],
+  "fontes": [
+    "Biblioteca Brasiliana Mindlin (USP), Semana de 1922: https://blog.bbm.usp.br/2019/a-semana-de-arte-moderna-e-o-contexto-do-festival-de-1922/",
+    "Fundação Clóvis Salgado, centenário da Semana: https://fcs.mg.gov.br/centenario-da-semana-de-arte-moderna-de-1922/",
+    "MoMA, Tarsila: https://post.moma.org/part-1-tarsila-melancholic-cannibal",
+    "Britannica, Tarsila do Amaral: https://www.britannica.com/biography/Tarsila-do-Amaral",
+    "Britannica, Abaporu: https://www.britannica.com/topic/Abaporu"
+  ],
+  "slides": [
+    {
+      "tipo": "recorte",
+      "titulo": "Três noites que *mudaram* a arte brasileira",
+      "imagem": "assets/theatro.jpg",
+      "texto": "Em fevereiro de 1922, o Theatro Municipal de São Paulo recebeu artistas que queriam romper com o passado."
+    },
+    {
+      "tipo": "numeros",
+      "titulo": "As noites da *Semana*",
+      "itens": [
+        {
+          "numero": "13/2",
+          "legenda": "primeira noite"
+        },
+        {
+          "numero": "15/2",
+          "legenda": "segunda noite"
+        },
+        {
+          "numero": "17/2",
+          "legenda": "última noite"
+        }
+      ]
+    },
+    {
+      "tipo": "recorte",
+      "titulo": "Vaias no *palco*",
+      "imagem": "assets/modernistas.jpg",
+      "foco": "50% 32%",
+      "texto": "Mário e Oswald de Andrade leram textos e foram vaiados. Villa-Lobos tocou suas obras."
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Nas paredes, Anita Malfatti e *Di Cavalcanti*",
+      "texto": "Os dois expuseram obras no saguão do teatro. Menotti Del Picchia também participou.",
+      "fotoFundo": "assets/theatro.jpg"
+    },
+    {
+      "tipo": "veredito",
+      "cor": "claro",
+      "afirmacao": "Tarsila do Amaral estava na Semana de 22.",
+      "veredito": "mito",
+      "explicacao": "Ela estava em Paris. O Abaporu, sua obra mais famosa, é de 1928."
+    },
+    {
+      "tipo": "fecho",
+      "cor": "escuro",
+      "titulo": "Qual artista dessa turma você mais *gosta*?",
+      "texto": "Conta nos comentários.",
+      "fotoFundo": "assets/modernistas.jpg",
+      "focoFundo": "50% 30%"
+    }
+  ]
+}

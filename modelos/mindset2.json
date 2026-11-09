@@ -1,0 +1,165 @@
+{
+  "id": "mindset2",
+  "nome": "Mindset 2 (traço de luz sobre carvão)",
+  "versao": 1,
+  "paraQuem": "mentalidade, hábitos, emoções, relações e autoconhecimento: listas de comportamentos e explicações do que acontece por dentro, com uma ilustração de traço luminoso por ideia num mundo contínuo",
+  "exemplosDePedido": [
+    "Cinco sinais de que você amadureceu",
+    "A diferença entre emoção e sentimento"
+  ],
+  "apelidos": [
+    "mindset-2",
+    "traco-de-luz",
+    "constelacao"
+  ],
+  "formato": {
+    "preferidos": [
+      "ranking",
+      "revelacao",
+      "causa-efeito",
+      "passo-a-passo"
+    ],
+    "proibidos": [],
+    "padrao": "ranking"
+  },
+  "roteiro": {
+    "palavras": [
+      70,
+      120
+    ],
+    "alvoSegundos": [
+      25,
+      45
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "uma frase curta que promete a lista ou a virada (\"Cinco sinais de que...\", \"Isso não é o que você pensa\")",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "itens",
+        "seg": [
+          15,
+          32
+        ],
+        "instrucao": "uma ideia por frase, cada uma com uma imagem que dá para desenhar em traço (pessoa, coração, mente, relógio, semente, escada, porta, alvo, sol, lua); a palavra-chave dita é a que acende",
+        "n": [
+          3,
+          7
+        ]
+      },
+      {
+        "bloco": "realidade",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "a virada honesta: o que isso muda na prática, sem promessa milagrosa"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "convite final curto: seguir e comentar a palavra"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "EN",
+      "PD"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "frases curtas e calmas, em segunda pessoa; uma ideia e uma palavra-chave por frase",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 0.96,
+    "direcao": "[calm, warm]",
+    "pausaEntreBlocos": 0.15
+  },
+  "visual": {
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "contador": "quando-houver-numero",
+    "estilo": "mindset2",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [
+      "botaoseguir",
+      "sol",
+      "lupa"
+    ],
+    "reserva": [
+      "lupa",
+      "sol"
+    ],
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2,
+      6
+    ],
+    "trocaVisualMaxSeg": 6
+  },
+  "som": {
+    "musica": true,
+    "sfx": "discreto"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, o porquê em 2 linhas, pergunta de opinião",
+    "hashtags": [
+      "#mentalidade",
+      "#autoconhecimento"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

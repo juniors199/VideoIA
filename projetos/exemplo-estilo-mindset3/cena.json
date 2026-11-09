@@ -1,0 +1,462 @@
+{
+ "perfil": "curiosidades",
+ "tema": "O corpo acorda antes do despertador",
+ "estilo": "mindset3",
+ "efeitos": {
+  "continuidade": true
+ },
+ "hashPalavras": "3b148a5719e2",
+ "beats": [
+  {
+   "id": "b01",
+   "palavras": [
+    0,
+    9
+   ],
+   "elementos": [
+    {
+     "tipo": "mindset3",
+     "entra": 0,
+     "forma": "figura",
+     "figura": "despertador",
+     "chave": "despertador",
+     "rotulos": [
+      "60 MIN ANTES"
+     ]
+    }
+   ],
+   "cenario": "breu",
+   "camera": {
+    "mov": "aproxima"
+   }
+  },
+  {
+   "id": "b02",
+   "palavras": [
+    10,
+    13
+   ],
+   "elementos": [
+    {
+     "tipo": "mindset3",
+     "entra": 0,
+     "forma": "numero",
+     "texto": "1999",
+     "rotulo": "LÜBECK · ALEMANHA",
+     "chave": "1999",
+     "transicao": "morfa"
+    }
+   ],
+   "cenario": "breu",
+   "camera": {
+    "mov": "recua"
+   }
+  },
+  {
+   "id": "b03",
+   "palavras": [
+    14,
+    20
+   ],
+   "elementos": [
+    {
+     "tipo": "mindset3",
+     "entra": 0,
+     "forma": "numero",
+     "texto": "15",
+     "aneis": 3,
+     "vezes": "×3",
+     "rotulo": "VOLUNTÁRIOS · NOITES",
+     "conta": true,
+     "chave": "quinze",
+     "transicao": "recua"
+    }
+   ],
+   "cenario": "breu",
+   "camera": {
+    "mov": "recua"
+   }
+  },
+  {
+   "id": "b04",
+   "palavras": [
+    21,
+    30
+   ],
+   "elementos": [
+    {
+     "tipo": "mindset3",
+     "entra": 0,
+     "forma": "cartao",
+     "variante": "ficha",
+     "titulo": "ESTUDO",
+     "figura": "perfil",
+     "campos": [
+      "ANO|1999",
+      "LOCAL|LÜBECK",
+      "MEDIDA|ACTH NO SANGUE",
+      "QUANDO|A NOITE TODA"
+     ],
+     "destaque": 2,
+     "chave": "hormônio",
+     "transicao": "desenha"
+    }
+   ],
+   "cenario": "breu",
+   "camera": {
+    "mov": "deriva"
+   }
+  },
+  {
+   "id": "b05",
+   "palavras": [
+    31,
+    37
+   ],
+   "elementos": [
+    {
+     "tipo": "mindset3",
+     "entra": 0,
+     "forma": "dupla",
+     "figuras": [
+      "lua",
+      "despertador"
+     ],
+     "rotulos": [
+      "NOITE 1",
+      "AVISO: 06:00"
+     ],
+     "chave": "seis",
+     "transicao": "morfa"
+    }
+   ],
+   "cenario": "breu",
+   "camera": {
+    "mov": "aproxima"
+   }
+  },
+  {
+   "id": "b06",
+   "palavras": [
+    38,
+    46
+   ],
+   "elementos": [
+    {
+     "tipo": "mindset3",
+     "entra": 0,
+     "forma": "cartao",
+     "variante": "duplo",
+     "titulo": "O COMBINADO",
+     "itens": [
+      "noite 1: às seis",
+      "noite 2: às nove",
+      "noite 3: às nove"
+     ],
+     "rodape": "PROTOCOLO · 3 NOITES",
+     "chave": "nove",
+     "transicao": "desliza"
+    }
+   ],
+   "cenario": "breu",
+   "camera": {
+    "mov": "panoramica"
+   }
+  },
+  {
+   "id": "b07",
+   "palavras": [
+    47,
+    58
+   ],
+   "elementos": [
+    {
+     "tipo": "mindset3",
+     "entra": 0,
+     "forma": "figura",
+     "figura": "hormonio",
+     "rotulos": [
+      "ACTH"
+     ],
+     "chave": "hormônio",
+     "transicao": "apaga"
+    }
+   ],
+   "cenario": "breu",
+   "camera": {
+    "mov": "aproxima"
+   }
+  },
+  {
+   "id": "b08",
+   "palavras": [
+    59,
+    64
+   ],
+   "elementos": [
+    {
+     "tipo": "mindset3",
+     "entra": 0,
+     "forma": "figura",
+     "figura": "corpo",
+     "rotulos": [
+      "ALERTA"
+     ],
+     "chave": "levantar",
+     "transicao": "desenha"
+    }
+   ],
+   "cenario": "breu",
+   "camera": {
+    "mov": "desce"
+   }
+  },
+  {
+   "id": "b09",
+   "palavras": [
+    65,
+    71
+   ],
+   "elementos": [
+    {
+     "tipo": "mindset3",
+     "entra": 0,
+     "forma": "numero",
+     "texto": "04:30",
+     "rotulo": "DA MANHÃ",
+     "chave": "quatro",
+     "transicao": "morfa"
+    }
+   ],
+   "cenario": "breu",
+   "camera": {
+    "mov": "recua"
+   }
+  },
+  {
+   "id": "b10",
+   "palavras": [
+    72,
+    77
+   ],
+   "elementos": [
+    {
+     "tipo": "mindset3",
+     "entra": 0,
+     "forma": "figura",
+     "figura": "cabeca-relogio",
+     "rotulos": [
+      "RELÓGIO INTERNO"
+     ],
+     "chave": "cérebro",
+     "transicao": "desenha"
+    }
+   ],
+   "cenario": "breu",
+   "camera": {
+    "mov": "orbita"
+   }
+  },
+  {
+   "id": "b11",
+   "palavras": [
+    78,
+    91
+   ],
+   "elementos": [
+    {
+     "tipo": "mindset3",
+     "entra": 0,
+     "forma": "diagrama",
+     "diagrama": "onda",
+     "pico": true,
+     "rotulos": [
+      "SEM AVISO",
+      "ALARME"
+     ],
+     "chave": "aviso",
+     "transicao": "morfa"
+    }
+   ],
+   "cenario": "breu",
+   "camera": {
+    "mov": "aproxima"
+   }
+  },
+  {
+   "id": "b12",
+   "palavras": [
+    92,
+    100
+   ],
+   "elementos": [
+    {
+     "tipo": "mindset3",
+     "entra": 0,
+     "forma": "figura",
+     "figura": "susto",
+     "rotulos": [
+      "ALARME"
+     ],
+     "chave": "susto",
+     "transicao": "desenha"
+    }
+   ],
+   "cenario": "breu",
+   "camera": {
+    "mov": "recua"
+   }
+  },
+  {
+   "id": "b13",
+   "palavras": [
+    101,
+    110
+   ],
+   "elementos": [
+    {
+     "tipo": "mindset3",
+     "entra": 0,
+     "forma": "diagrama",
+     "diagrama": "fechadura",
+     "titulo": "06:00",
+     "pinos": 5,
+     "chave": "horário",
+     "transicao": "desliza"
+    }
+   ],
+   "cenario": "breu",
+   "camera": {
+    "mov": "inclina"
+   }
+  },
+  {
+   "id": "b14",
+   "palavras": [
+    111,
+    115
+   ],
+   "elementos": [
+    {
+     "tipo": "mindset3",
+     "entra": 0,
+     "forma": "diagrama",
+     "diagrama": "helice",
+     "itens": [
+      "0h",
+      "1h",
+      "2h",
+      "3h",
+      "4h",
+      "5h",
+      "6h"
+     ],
+     "destaque": 6,
+     "centro": "06:00",
+     "rotulos": [
+      "A HORA COMBINADA"
+     ],
+     "chave": "sono",
+     "transicao": "desenha"
+    }
+   ],
+   "cenario": "breu",
+   "camera": {
+    "mov": "orbita"
+   }
+  },
+  {
+   "id": "b15",
+   "palavras": [
+    116,
+    126
+   ],
+   "elementos": [
+    {
+     "tipo": "mindset3",
+     "entra": 0,
+     "forma": "figura",
+     "figura": "acordando",
+     "rotulos": [
+      "1 MIN ANTES"
+     ],
+     "chave": "minuto",
+     "transicao": "desenha"
+    }
+   ],
+   "cenario": "breu",
+   "camera": {
+    "mov": "desce"
+   }
+  },
+  {
+   "id": "b16",
+   "palavras": [
+    127,
+    132
+   ],
+   "elementos": [
+    {
+     "tipo": "mindset3",
+     "entra": 0,
+     "forma": "figura",
+     "figura": "cerebro",
+     "rotulos": [
+      "SEU CÉREBRO"
+     ],
+     "chave": "marcou",
+     "transicao": "morfa"
+    }
+   ],
+   "cenario": "breu",
+   "camera": {
+    "mov": "deriva"
+   }
+  },
+  {
+   "id": "b17",
+   "palavras": [
+    133,
+    139
+   ],
+   "elementos": [
+    {
+     "tipo": "mindset3",
+     "entra": 0,
+     "forma": "figura",
+     "figura": "soneca",
+     "rotulos": [
+      "SONECA"
+     ],
+     "chave": "soneca",
+     "transicao": "desenha"
+    }
+   ],
+   "cenario": "breu",
+   "camera": {
+    "mov": "aproxima"
+   }
+  },
+  {
+   "id": "b18",
+   "palavras": [
+    140,
+    152
+   ],
+   "elementos": [
+    {
+     "tipo": "mindset3",
+     "entra": 0,
+     "forma": "cta",
+     "figura": "despertador",
+     "chave": "ILUSTRANDO",
+     "transicao": "recua"
+    }
+   ],
+   "cenario": "breu",
+   "camera": {
+    "mov": "deriva"
+   }
+  }
+ ]
+}

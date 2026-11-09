@@ -1,0 +1,22 @@
+{
+ "esteiracena": ["esteira", "linha de montagem", "pilha de moedas", "moedas", "arrecadacao", "fila de espera", "dinheiro chega"],
+ "painelbotoes": ["painel", "botao", "botoes", "presidente", "faixa presidencial", "apertar", "acionar", "votacao eletronica"],
+ "ruatopo": ["rua", "via", "faixa", "pista", "rodovia", "transito", "motorista", "distancia", "farol"],
+ "plenario3d": ["plenario", "senado", "camara", "senador", "senadores", "deputado", "deputados", "votacao"],
+ "multidaopraca": ["multidao", "praca", "manifestacao", "povo", "protesto", "aglomeracao", "onda", "populacao"],
+ "escritorio3d": ["escritorio", "mesa de trabalho", "computador", "burocracia", "papelada", "expediente", "relogio de parede"],
+ "fabricalinha": ["fabrica", "linha de producao", "producao", "industria", "manufatura", "montagem", "prensa"],
+ "cidadecresce": ["cidade cresce", "urbanizacao", "predios", "construcao", "crescimento urbano", "metropole", "desenvolvimento"],
+ "ilhacena": ["ilha", "ilhas", "palmeira", "naufrago", "tesouro", "paraiso fiscal", "barco"],
+ "bancocofre": ["cofre", "banco", "caixa forte", "reserva de ouro", "ouro", "barras de ouro", "tesouraria"],
+ "tribunalcena": ["tribunal", "juiz", "julgamento", "justica", "martelo", "sentenca", "supremo", "processo"],
+ "urnafila": ["urna", "eleitor", "eleitores", "eleicao", "eleicoes", "fila", "votar", "voto"],
+ "laboratorio3d": ["laboratorio", "experimento", "pesquisa", "cientista", "quimica", "tubo de ensaio"],
+ "cidadenoite": ["cidade a noite", "noite", "luzes da cidade", "janelas acesas", "energia", "apagao", "skyline"],
+ "estradaonibus": ["estrada", "onibus", "viagem", "rodoviaria", "placa de transito", "passageiros", "sinalizacao"],
+ "mercado3d": ["mercado", "feira", "barraca", "comerciante", "preco dos alimentos", "frutas", "inflacao"],
+ "arenacena": ["coliseu", "arena", "gladiador", "roma antiga", "espetaculo", "plateia", "estadio"],
+ "planeta_terra_cena": ["planeta", "terra", "globo", "mundo", "satelite", "cabo submarino", "internet global", "orbita"],
+ "bolsacena": ["bolsa de valores", "bolsa", "acoes", "candle", "investidores", "mercado financeiro", "cotacao"],
+ "igrejacena": ["igreja", "templo", "vitral", "culto", "fieis", "religiao", "biblia", "capela"]
+}

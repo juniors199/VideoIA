@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.*
+!.env.exemplo
+.claude/settings.local.json
+.programas/
+projetos/*/saida/quadros/
+projetos/*/cache/
+.estudio/
+ferramentas/instalador/pecas/
+.licenca/
+.atualizacao/

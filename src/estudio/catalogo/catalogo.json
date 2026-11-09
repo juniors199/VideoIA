@@ -1,0 +1,430 @@
+{
+  "reels": [
+    {
+      "id": "padrao",
+      "nome": "Padrão",
+      "resumo": "Peças 3D com textura e sombra sobre um fundo escuro azulado, legenda de uma linha e o destaque na cor da sua marca.",
+      "quandoUsar": "Quando você quer o visual de sempre da página, para qualquer assunto.",
+      "pedido": "Faça um vídeo sobre por que a panela de pressão cozinha mais rápido. Estilo: padrao. Objetivo: curiosidade.",
+      "previa": "padrao.mp4"
+    },
+    {
+      "id": "editorial",
+      "nome": "Editorial",
+      "resumo": "Um objeto 3D no centro de um cenário de jornal e revista, com legenda em pílula e um ritmo mais sóbrio.",
+      "quandoUsar": "Notícia, esporte e negócio, quando o tom precisa ser sério.",
+      "pedido": "Faça um vídeo sobre por que as listras do gramado do estádio têm duas cores. Estilo: editorial. Objetivo: esporte.",
+      "previa": "editorial.mp4"
+    },
+    {
+      "id": "minimalista",
+      "nome": "Minimalista",
+      "resumo": "Um objeto por frase, muito espaço vazio e números grandes no meio da tela.",
+      "quandoUsar": "Números e tecnologia, quando menos coisa na tela ajuda a entender.",
+      "pedido": "Faça um vídeo sobre o que acontece quando você aperta o botão de salvar. Estilo: minimalista. Objetivo: tecnologia.",
+      "previa": "minimalista.mp4"
+    },
+    {
+      "id": "papel",
+      "nome": "Papel",
+      "resumo": "Fundo de caderno claro com peças 3D escuras e laranja em cima, como uma aula desenhada na mesa.",
+      "quandoUsar": "Aula, receita e passo a passo, quando o fundo claro deixa a leitura leve.",
+      "pedido": "Faça um vídeo sobre por que o bolo cresce no forno e depois murcha. Estilo: papel. Objetivo: receita.",
+      "previa": "papel.mp4"
+    },
+    {
+      "id": "pontilhismo",
+      "nome": "Pontilhismo",
+      "resumo": "O vídeo inteiro em preto e branco, feito de pontos que mudam de forma a cada frase: a panela vira o vapor, que vira o número.",
+      "quandoUsar": "Assuntos que ganham com uma imagem diferente de tudo no feed, como ciência e história.",
+      "pedido": "Faça um vídeo sobre por que a água ferve a 100 graus. Estilo: pontilhismo. Objetivo: ciencia.",
+      "previa": "pontilhismo.mp4"
+    },
+    {
+      "id": "impresso",
+      "nome": "Impresso",
+      "resumo": "Cada quadro parece uma página impressa: retícula de meio-tom, papel envelhecido e tinta quase preta.",
+      "quandoUsar": "Cultura, livros, história e explicações com cara de revista.",
+      "pedido": "Faça um vídeo sobre por que um livro antigo fica amarelo. Estilo: impresso. Objetivo: historia.",
+      "previa": "impresso.mp4"
+    },
+    {
+      "id": "cartoes",
+      "nome": "Cartões",
+      "resumo": "Cartões, janelas e peças 3D sobre um papel creme quadriculado, com o texto montado em degraus no alto.",
+      "quandoUsar": "Tecnologia, aplicativos, produtividade e passo a passo digital.",
+      "pedido": "Faça um vídeo sobre como um QR code funciona. Estilo: cartoes. Objetivo: tecnologia.",
+      "previa": "cartoes.mp4"
+    },
+    {
+      "id": "tubo",
+      "nome": "Tubo",
+      "resumo": "O vídeo parece gravado numa TV de tubo: frases em maiúsculas, uma palavra gigante em contorno e objetos em metal.",
+      "quandoUsar": "Frases de impacto, comportamento e ciência rápida com uma palavra-chave.",
+      "pedido": "Faça um vídeo sobre por que o mel nunca estraga. Estilo: tubo. Objetivo: curiosidade.",
+      "previa": "tubo.mp4"
+    },
+    {
+      "id": "linhas",
+      "nome": "Linhas",
+      "resumo": "Fundo preto, traço branco fino e um ponto que atravessa o vídeo inteiro e vira cada forma.",
+      "quandoUsar": "Ideias abstratas, redes, processos e números.",
+      "pedido": "Faça um vídeo sobre como a internet atravessa o oceano. Estilo: linhas. Objetivo: tecnologia.",
+      "previa": "linhas.mp4"
+    },
+    {
+      "id": "anatomia",
+      "nome": "Anatomia",
+      "resumo": "Desenho técnico em vista explodida: a peça se abre em partes numeradas, com legenda de cada uma.",
+      "quandoUsar": "Quando a pergunta é como uma coisa funciona por dentro: objetos, máquinas e instrumentos.",
+      "pedido": "Faça um vídeo sobre como funciona uma tecla de teclado. Estilo: anatomia. Objetivo: tecnologia.",
+      "previa": "anatomia.mp4"
+    },
+    {
+      "id": "fino",
+      "nome": "Traço fino",
+      "resumo": "Uma figura isométrica de linha fina que se monta e se corta ao meio para mostrar o mecanismo.",
+      "quandoUsar": "Explicar um mecanismo com uma figura elegante: um objeto, um gesto, uma ideia.",
+      "pedido": "Faça um vídeo sobre por que só a sua chave abre a sua porta. Estilo: fino. Objetivo: curiosidade.",
+      "previa": "fino.mp4"
+    },
+    {
+      "id": "letreiro",
+      "nome": "Letreiro",
+      "resumo": "Cada frase vira um letreiro grande na cor da sua marca, com o objeto real do assunto embaixo.",
+      "quandoUsar": "Qualquer página: curiosidade, aula, finanças, notícia, negócio local ou receita.",
+      "pedido": "Faça um vídeo sobre se o morango é mesmo uma fruta. Estilo: letreiro. Objetivo: curiosidade.",
+      "previa": "letreiro.mp4"
+    },
+    {
+      "id": "ribalta",
+      "nome": "Ribalta",
+      "resumo": "Um palco claro com luzes suaves e um objeto grande por frase, desenhando a palavra-chave da fala.",
+      "quandoUsar": "Ciência e dia a dia: o \"por que\", o \"como funciona\" e o passo a passo curto.",
+      "pedido": "Faça um vídeo sobre por que o céu é azul. Estilo: ribalta. Objetivo: ciencia.",
+      "previa": "ribalta.mp4"
+    },
+    {
+      "id": "mundos",
+      "nome": "Mundos",
+      "resumo": "Cada item da lista ganha um mundo de cor próprio, aberto por uma íris, com o objeto no centro.",
+      "quandoUsar": "Listas e rankings de 3 a 5 itens.",
+      "pedido": "Faça um vídeo sobre três invenções brasileiras que você usa sem saber. Estilo: mundos. Objetivo: curiosidade.",
+      "previa": "mundos.mp4"
+    },
+    {
+      "id": "interface",
+      "nome": "Interface",
+      "resumo": "Telas genéricas que fazem o que a fala diz: o texto é digitado, o cursor clica, a opção é marcada.",
+      "quandoUsar": "Tecnologia, passo a passo no computador, golpes e alertas.",
+      "pedido": "Faça um vídeo sobre o que a aba anônima esconde de verdade. Estilo: interface. Objetivo: tecnologia.",
+      "previa": "interface.mp4"
+    },
+    {
+      "id": "colagem",
+      "nome": "Colagem",
+      "resumo": "A foto real vira um recorte em preto e branco preso com fita em cima de um fundo de papel que treme.",
+      "quandoUsar": "Pessoa, lugar ou objeto real: história, notícia e fé com obra de domínio público.",
+      "pedido": "Faça um vídeo sobre o imperador que assumiu o Brasil aos cinco anos. Estilo: colagem. Objetivo: historia.",
+      "previa": "colagem.mp4"
+    },
+    {
+      "id": "moderno",
+      "nome": "Moderno",
+      "resumo": "Janelas de vidro escuro em perspectiva, com cursor, crachá de passo e legenda com caixa de seleção.",
+      "quandoUsar": "Tutorial, como fazer, demonstração de ferramenta e antes e depois.",
+      "pedido": "Faça um vídeo sobre como fazer um vídeo em cinco passos. Estilo: moderno. Objetivo: tutorial.",
+      "previa": "moderno.mp4"
+    },
+    {
+      "id": "alternativo",
+      "nome": "3D Alternativo",
+      "resumo": "Mapas e objetos em nuvem de pontos 3D com uma interface de dados por cima e colunas que crescem do chão.",
+      "quandoUsar": "Dados, política, economia e geografia: mapas, comparações e rankings.",
+      "pedido": "Faça um vídeo sobre onde moram os brasileiros. Estilo: alternativo. Objetivo: noticia.",
+      "previa": "alternativo.mp4"
+    },
+    {
+      "id": "preto-branco",
+      "nome": "Preto e Branco",
+      "resumo": "Cenas desenhadas em traço e hachura, que invertem entre fundo preto e fundo branco a cada ideia.",
+      "quandoUsar": "Ciência, história, corpo, dinheiro e perguntas do tipo \"e se...\".",
+      "pedido": "Faça um vídeo sobre o que aconteceria se o gelo afundasse na água. Estilo: preto-branco. Objetivo: ciencia.",
+      "previa": "preto-branco.mp4"
+    },
+    {
+      "id": "stop-motion",
+      "nome": "Stop Motion",
+      "resumo": "Massinha filmada quadro a quadro: personagens que atuam, cortes internos no corpo e cenários de cozinha e parque.",
+      "quandoUsar": "Cotidiano, corpo humano, comida e processos simples de contar com miniaturas.",
+      "pedido": "Faça um vídeo sobre por que o pão cresce. Estilo: stop-motion. Objetivo: curiosidade.",
+      "previa": "stop-motion.mp4"
+    },
+    {
+      "id": "teologia",
+      "nome": "Teologia",
+      "resumo": "Arte sacra de época em papel rasgado, a frase-chave na cor da sua marca e um diagrama simples por ideia.",
+      "quandoUsar": "Fé, Bíblia, história das religiões e doutrina, sempre em tom respeitoso.",
+      "pedido": "Faça um vídeo sobre quem traduziu a Bíblia para o latim. Estilo: teologia. Objetivo: fe.",
+      "previa": "teologia.mp4"
+    },
+    {
+      "id": "quadro-antigo",
+      "nome": "Quadro Antigo",
+      "resumo": "Gravuras e pinturas em sépia com a fala datilografada letra a letra em tiras de papel rasgado.",
+      "quandoUsar": "História, arte e religião, quando existe uma obra de domínio público para mostrar.",
+      "pedido": "Faça um vídeo sobre por que não existe foto do Grito do Ipiranga. Estilo: quadro-antigo. Objetivo: historia.",
+      "previa": "quadro-antigo.mp4"
+    },
+    {
+      "id": "fatos",
+      "nome": "Fatos",
+      "resumo": "O texto se monta no alto palavra por palavra, enquanto o lugar acende no mapa de satélite e o número conta.",
+      "quandoUsar": "Curiosidades com número, lugar e caso do noticiário.",
+      "pedido": "Faça um vídeo sobre como Brasília foi construída em 41 meses. Estilo: fatos. Objetivo: curiosidade.",
+      "previa": "fatos.mp4"
+    },
+    {
+      "id": "mindset2",
+      "nome": "Mindset 2",
+      "resumo": "Um desenho de traço de luz sobre carvão por ideia, com o número do item e a legenda acendendo palavra por palavra.",
+      "quandoUsar": "Hábitos, emoções, relações e listas de sinais.",
+      "pedido": "Faça um vídeo sobre três sinais de que você precisa de uma pausa. Estilo: mindset2. Objetivo: curiosidade.",
+      "previa": "mindset2.mp4"
+    },
+    {
+      "id": "colagem3d",
+      "nome": "Colagem 3D",
+      "resumo": "Documentário em recortes de papel: foto real recortada, objeto 3D saindo da página e câmera que anda em profundidade.",
+      "quandoUsar": "Histórias reais, biografias, origem de marcas e invenções.",
+      "pedido": "Faça um vídeo sobre por que a Torre Eiffel quase foi desmontada. Estilo: colagem3d. Objetivo: historia.",
+      "previa": "colagem3d.mp4"
+    },
+    {
+      "id": "novela",
+      "nome": "Novela",
+      "resumo": "A história encenada por personagens ilustrados que piscam e gesticulam, em cenários pintados, com a câmera que troca de plano e viaja de um lugar a outro.",
+      "quandoUsar": "Vidas de santos, episódios de guerra, casos do passado e dramas em capítulos.",
+      "pedido": "Faça um vídeo sobre a trégua de Natal de 1914 na Primeira Guerra. Estilo: novela. Objetivo: historia.",
+      "previa": "novela.mp4"
+    },
+    {
+      "id": "paper-rocket",
+      "nome": "Paper Rocket",
+      "resumo": "Desenho animado de feltro com costura, cheio de energia: um bicho que sonha e vai longe, e as palavras pipocam na hora em que são ditas.",
+      "quandoUsar": "Histórias curtas e curiosidades contadas como fábula.",
+      "pedido": "Faça um vídeo sobre por que um foguete precisa empurrar o ar para baixo para subir. Estilo: paper-rocket. Objetivo: curiosidade.",
+      "previa": "paper-rocket.mp4"
+    },
+    {
+      "id": "lighthouse-mouse",
+      "nome": "Lighthouse Mouse",
+      "resumo": "Diorama de feltro quente à noite: um bicho pequeno com uma tarefa grande, luz que brilha em camadas e amigos que chegam com uma luzinha.",
+      "quandoUsar": "Histórias de ninar e fábulas gentis com uma curiosidade dentro.",
+      "pedido": "Faça um vídeo sobre por que cada farol pisca de um jeito. Estilo: lighthouse-mouse. Objetivo: curiosidade.",
+      "previa": "lighthouse-mouse.mp4"
+    },
+    {
+      "id": "moon-path",
+      "nome": "Moon Path",
+      "resumo": "Papel recortado em camadas de noite: mar de ondas costuradas, lua com o caminho de luz e estrelas penduradas por fio.",
+      "quandoUsar": "Curiosidades de natureza, mar e céu contadas como fábula.",
+      "pedido": "Faça um vídeo sobre como as tartaruguinhas acham o mar. Estilo: moon-path. Objetivo: curiosidade.",
+      "previa": "moon-path.mp4"
+    },
+    {
+      "id": "prickles",
+      "nome": "Livro de outono",
+      "resumo": "Desenho animado de livro infantil em lápis e aquarela, com bichos fofos numa floresta de outono e as palavras da fala pipocando na tela.",
+      "quandoUsar": "Curiosidades de bichos e histórias gentis contadas como fábula.",
+      "pedido": "Faça um vídeo sobre por que o ouriço nasce sem machucar a mãe. Estilo: prickles. Objetivo: curiosidade.",
+      "previa": "prickles.mp4"
+    },
+    {
+      "id": "little-light",
+      "nome": "Mar que brilha",
+      "resumo": "Desenho animado no fundo do mar à noite, com uma baleia pequena e águas-vivas que acendem uma a uma.",
+      "quandoUsar": "Oceano, medo do escuro e ciência que surpreende.",
+      "pedido": "Faça um vídeo sobre os animais do fundo do mar que fazem a própria luz. Estilo: little-light. Objetivo: curiosidade.",
+      "previa": "little-light.mp4"
+    },
+    {
+      "id": "mindset3",
+      "nome": "Mindset 3",
+      "resumo": "Ilustração em giz luminoso que se desenha na tela, com retícula, etiqueta mono e a legenda que acende palavra por palavra.",
+      "quandoUsar": "Mente, hábitos, sono, corpo e ciência do dia a dia.",
+      "pedido": "Faça um vídeo sobre por que o corpo acorda antes do despertador. Estilo: mindset3. Objetivo: curiosidade.",
+      "previa": "mindset3.mp4"
+    },
+    {
+      "id": "smooth",
+      "nome": "Smooth",
+      "resumo": "Interface de verdade em vidro, número que conta e a câmera que chega na palavra, com o fundo trocando entre claro e escuro.",
+      "quandoUsar": "Dinheiro, tecnologia e números do dia a dia.",
+      "pedido": "Faça um vídeo sobre quanto um real de 1994 vale hoje. Estilo: smooth. Objetivo: financas.",
+      "previa": "smooth.mp4"
+    },
+    {
+      "id": "smooth-produto",
+      "nome": "Smooth Produto",
+      "resumo": "O preço conta com foco de cinema, o custo desce por um fio e a mão marca o extra no checkout enquanto o total sobe.",
+      "quandoUsar": "Oferta, preço e conta de venda.",
+      "pedido": "Faça um vídeo sobre por que produto barato não paga o anúncio. Estilo: smooth-produto. Objetivo: venda.",
+      "previa": "smooth-produto.mp4"
+    },
+    {
+      "id": "smooth-estrategia",
+      "nome": "Smooth Estratégia",
+      "resumo": "Passos em cards numerados, relógio, calendário e barras de uma conta, com o número e a fonte na tela.",
+      "quandoUsar": "Explicar um método ou uma ideia em passos.",
+      "pedido": "Faça um vídeo sobre três passos para pagar menos juros no cartão. Estilo: smooth-estrategia. Objetivo: tutorial.",
+      "previa": "smooth-estrategia.mp4"
+    },
+    {
+      "id": "smooth-historia",
+      "nome": "Smooth História",
+      "resumo": "Colagem editorial com a foto real que fica nítida no nome, a palavra gigante passando atrás e os números em cards.",
+      "quandoUsar": "Histórias de pessoas, empresas e invenções.",
+      "pedido": "Faça um vídeo sobre quem criou o código de barras. Estilo: smooth-historia. Objetivo: historia.",
+      "previa": "smooth-historia.mp4"
+    },
+    {
+      "id": "smooth-vinheta",
+      "nome": "Smooth Vinheta",
+      "resumo": "Papel claro, serifa grande que entra letra a letra, traço que se desenha e o selo final no escuro.",
+      "quandoUsar": "Curiosidades calmas, palavras e origens.",
+      "pedido": "Faça um vídeo sobre de onde vem a palavra salário. Estilo: smooth-vinheta. Objetivo: historia.",
+      "previa": "smooth-vinheta.mp4"
+    },
+    {
+      "id": "smooth-tipografia",
+      "nome": "Smooth Tipografia",
+      "resumo": "A palavra é o desenho: letras gigantes que entram secas em chapas de cor que trocam a cada frase.",
+      "quandoUsar": "Frase de impacto, opinião e lista rápida.",
+      "pedido": "Faça um vídeo sobre palavras que todo mundo fala errado. Estilo: smooth-tipografia. Objetivo: aula.",
+      "previa": "smooth-tipografia.mp4"
+    },
+    {
+      "id": "bible",
+      "nome": "Bible",
+      "resumo": "Bíblia em dados e luz: o fato vira desenho de traço que brilha, campo de pontos ou régua, com o texto em serifa e a palavra-chave na cor da página.",
+      "quandoUsar": "Curiosidades bíblicas com número, medida ou comparação (tamanho, distância, contagem de versículos).",
+      "pedido": "Faça um vídeo sobre a arca de Noé era mais comprida que um campo de futebol. Estilo: bible. Objetivo: curiosidade.",
+      "previa": "bible.mp4"
+    },
+    {
+      "id": "pleno",
+      "nome": "Pleno",
+      "resumo": "Quadradinhos 3D em escala: a grade cresce em volta do \"você\", a câmera recua até o planeta inteiro e os grupos se pintam de verde, amarelo e vermelho.",
+      "quandoUsar": "Números grandes, porcentagens, população, dinheiro e quem usa o quê.",
+      "pedido": "Faça um vídeo sobre quanta água da Terra dá pra beber. Estilo: pleno. Objetivo: curiosidade.",
+      "previa": "pleno.mp4"
+    },
+    {
+      "id": "mindset",
+      "nome": "Mindset",
+      "resumo": "Bonecos na cor da sua marca e cinza num palco escuro com reflexo, uma cena-metáfora por ideia: a escada, o muro, o alvo.",
+      "quandoUsar": "Disciplina e comportamento, em comparações entre quem age e quem trava.",
+      "pedido": "Faça um vídeo sobre pensar demais ou simplesmente fazer. Estilo: mindset. Objetivo: curiosidade.",
+      "previa": "mindset.mp4"
+    },
+    {
+      "id": "antiguidade",
+      "nome": "História e antiguidades",
+      "resumo": "Pintura, busto e mapa antigo tratados como peças de museu, com o nome em letras na cor da sua marca.",
+      "quandoUsar": "História antiga, impérios, filósofos e religiões.",
+      "pedido": "Faça um vídeo sobre quem foi o professor de Alexandre, o Grande. Estilo: antiguidade. Objetivo: historia.",
+      "previa": "antiguidade.mp4"
+    }
+  ],
+  "carrosseis": [
+    {
+      "id": "escuro",
+      "nome": "Escuro",
+      "resumo": "O visual da marca: fundo preto azulado, texto claro e a cor de destaque nos números e nas palavras-chave.",
+      "quandoUsar": "Capa com foto, plantão e dados, quando você quer o carrossel mais forte no feed.",
+      "pedido": "Faça um carrossel sobre por que o polvo tem três corações. Visual: escuro.",
+      "previa": "carrossel-escuro.mp4"
+    },
+    {
+      "id": "claro",
+      "nome": "Claro",
+      "resumo": "Fundo claro com cara de nota do celular: título preto, lista com marcação e botão na cor da marca.",
+      "quandoUsar": "Post claro, nota do celular, receita e saúde.",
+      "pedido": "Faça um carrossel sobre quanta água você precisa beber por dia. Visual: claro.",
+      "previa": "carrossel-claro.mp4"
+    },
+    {
+      "id": "papel",
+      "nome": "Papel",
+      "resumo": "Papel de jornal e revista, com manchete serifada, linha do tempo e números do assunto.",
+      "quandoUsar": "Jornal, revista, história e cultura.",
+      "pedido": "Faça um carrossel sobre o cometa que veio de fora do Sistema Solar. Visual: papel.",
+      "previa": "carrossel-papel.mp4"
+    },
+    {
+      "id": "editorial",
+      "nome": "Editorial",
+      "resumo": "Blocos de cor que se alternam (escuro, creme e laranja), foto sangrando até a borda e número grande.",
+      "quandoUsar": "Notícia e esporte.",
+      "pedido": "Faça um carrossel sobre por que a Torre de Pisa entortou. Visual: editorial.",
+      "previa": "carrossel-editorial.mp4"
+    },
+    {
+      "id": "condensado",
+      "nome": "Condensado",
+      "resumo": "Manchete condensada em caixa alta com a palavra-chave na cor, e listas com selo de certo e errado.",
+      "quandoUsar": "Mitos, listas e o clássico \"o que é\".",
+      "pedido": "Faça um carrossel sobre tomate e banana: qual é fruta e qual é baga. Visual: condensado.",
+      "previa": "carrossel-condensado.mp4"
+    },
+    {
+      "id": "interface",
+      "nome": "Interface",
+      "resumo": "O celular como cenário: notificação na tela de bloqueio, painel de cartões e diálogo de sistema.",
+      "quandoUsar": "Dados e saúde, quando a informação cabe numa tela de celular.",
+      "pedido": "Faça um carrossel sobre a regra dos oito copos de água. Visual: interface.",
+      "previa": "carrossel-interface.mp4"
+    },
+    {
+      "id": "recorte",
+      "nome": "Recorte",
+      "resumo": "Papel creme com grão, título em tarjas pretas e foto rasgada presa com fita.",
+      "quandoUsar": "História e cultura com foto de acervo.",
+      "pedido": "Faça um carrossel sobre a Semana de Arte Moderna de 1922. Visual: recorte.",
+      "previa": "carrossel-recorte.mp4"
+    },
+    {
+      "id": "serifado",
+      "nome": "Serifado",
+      "resumo": "Cara de revista: letra serifada estreita, itálico na cor da marca e texto corrido sobre foto escura.",
+      "quandoUsar": "História e cultura, com frases e citações.",
+      "pedido": "Faça um carrossel sobre a frase mais famosa da Lua. Visual: serifado.",
+      "previa": "carrossel-serifado.mp4"
+    },
+    {
+      "id": "marcatexto",
+      "nome": "Marca-texto",
+      "resumo": "Reportagem escura: foto no topo que some no fundo, texto corrido com marca-texto na cor da marca.",
+      "quandoUsar": "Reportagem e notícia com uma foto forte.",
+      "pedido": "Faça um carrossel sobre os 95 anos do Cristo Redentor. Visual: marcatexto.",
+      "previa": "carrossel-marcatexto.mp4"
+    },
+    {
+      "id": "limpo",
+      "nome": "Limpo",
+      "resumo": "Branco total, letra preta apertada e selos em relevo de certo e errado.",
+      "quandoUsar": "Aula e negócio: \"faça assim, não assim\".",
+      "pedido": "Faça um carrossel sobre mitos do cérebro. Visual: limpo.",
+      "previa": "carrossel-limpo.mp4"
+    },
+    {
+      "id": "grao",
+      "nome": "Grão",
+      "resumo": "Papel cinza granulado com rótulos nos quatro cantos e um celular genérico mostrando a foto do assunto.",
+      "quandoUsar": "Tecnologia e produto.",
+      "pedido": "Faça um carrossel sobre como o celular virou tela. Visual: grao.",
+      "previa": "carrossel-grao.mp4"
+    }
+  ]
+}

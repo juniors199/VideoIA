@@ -1,0 +1,231 @@
+{
+  "id": "aula",
+  "nome": "Aula e explicador",
+  "versao": 1,
+  "paraQuem": "professores, cursinhos, perfis de estudo, divulgação científica para estudante",
+  "exemplosDePedido": [
+    "Fotossíntese em 1 minuto para o 7º ano",
+    "Faz como aula: o que é inflação"
+  ],
+  "apelidos": [
+    "explicador",
+    "educacao",
+    "estudo",
+    "professor"
+  ],
+  "formato": {
+    "preferidos": [
+      "passo-a-passo",
+      "causa-efeito",
+      "mito-fato",
+      "comparativo"
+    ],
+    "proibidos": [
+      "ranking"
+    ],
+    "padrao": "passo-a-passo"
+  },
+  "roteiro": {
+    "palavras": [
+      130,
+      190
+    ],
+    "alvoSegundos": [
+      50,
+      70
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "a dúvida que o aluno faria",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "promessa",
+        "seg": [
+          2,
+          4
+        ],
+        "texto": "Em um minuto você entende."
+      },
+      {
+        "bloco": "etapas",
+        "seg": [
+          25,
+          40
+        ],
+        "instrucao": "uma etapa por frase, sinalizada (\"Primeiro\", \"Depois\", \"No fim\")",
+        "n": [
+          2,
+          3
+        ],
+        "obrigatorio": true
+      },
+      {
+        "bloco": "exemplo",
+        "seg": [
+          5,
+          10
+        ],
+        "instrucao": "exemplo do cotidiano"
+      },
+      {
+        "bloco": "resumo",
+        "seg": [
+          4,
+          6
+        ],
+        "instrucao": "uma frase para lembrar na prova",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "pergunta",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "qual matéria ou tema vem na próxima"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "salvar para revisar e seguir"
+      }
+    ],
+    "gatilhos": [
+      "PD",
+      "CC",
+      "PT"
+    ],
+    "abertura3Tempos": true,
+    "promessaMarca": "Em um minuto você entende.",
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      0
+    ],
+    "pessoa": "você",
+    "tom": "professor paciente, nunca infantil; conversa, não ditado",
+    "vocabulario": "simples",
+    "proibir": [
+      "primeiro faça isso"
+    ]
+  },
+  "voz": {
+    "velocidade": 0.95,
+    "direcao": "[calm, clear]",
+    "pausaEntreBlocos": 0.25
+  },
+  "visual": {
+    "estilo": "papel",
+    "cenarios": [
+      "papel",
+      "sala",
+      "mesa"
+    ],
+    "cenas": [
+      "laboratorio3d"
+    ],
+    "pecasBase": [
+      "livroaberto",
+      "lapis",
+      "lampadaideia",
+      "professorlousa",
+      "estudantemochila",
+      "atomo",
+      "molecula",
+      "folha",
+      "sol",
+      "gota",
+      "microscopio",
+      "fluxo",
+      "ciclo",
+      "linhatempo",
+      "engrenagens"
+    ],
+    "reserva": [
+      "livroaberto",
+      "lampadaideia",
+      "lapis",
+      "professorlousa"
+    ],
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "camera": {
+      "padrao": "normal",
+      "revelar": "avanca",
+      "numero": "nenhum"
+    },
+    "transicao": "desfoque",
+    "contador": "quando-houver-numero",
+    "titulos": "por-etapa"
+  },
+  "ritmo": {
+    "beatSeg": [
+      4,
+      8
+    ],
+    "trocaVisualMaxSeg": 5,
+    "beatsMax": 14
+  },
+  "som": {
+    "musica": true,
+    "sfx": "discreto"
+  },
+  "cta": {
+    "tipo": "salvar",
+    "texto": "Salva para revisar e segue para a próxima aula.",
+    "palavra": null,
+    "perguntaFinal": "Qual matéria você quer na próxima?"
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "passos",
+      "texto",
+      "dado",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      8
+    ],
+    "estilo": "papel",
+    "virais": [
+      "passo",
+      "definicao",
+      "quiz",
+      "codigo",
+      "chat",
+      "nota",
+      "thread"
+    ]
+  },
+  "publicar": {
+    "legenda": "resumo em 3 linhas + pergunta",
+    "hashtags": [
+      "#estudos",
+      "#enem",
+      "#aprenda"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

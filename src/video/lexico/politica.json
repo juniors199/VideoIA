@@ -1,0 +1,354 @@
+{
+ "congresso": [
+  "congresso",
+  "senado",
+  "camara",
+  "deputado",
+  "deputados",
+  "senador",
+  "parlamento",
+  "brasilia"
+ ],
+ "palacio": [
+  "palacio",
+  "planalto",
+  "presidencia",
+  "governo",
+  "presidente",
+  "alvorada"
+ ],
+ "tribunal": [
+  "tribunal",
+  "stf",
+  "supremo",
+  "justica",
+  "juiz",
+  "julgamento",
+  "corte"
+ ],
+ "urnaeletronica": [
+  "urna eletronica",
+  "urna",
+  "eleicao",
+  "eleicoes",
+  "votacao",
+  "eleitor"
+ ],
+ "cabinevotacao": [
+  "cabine",
+  "secao eleitoral",
+  "voto secreto",
+  "eleitor",
+  "sigilo"
+ ],
+ "votonaurna": [
+  "voto",
+  "votos",
+  "votar",
+  "cedula",
+  "depositar",
+  "apuracao"
+ ],
+ "palanque": [
+  "palanque",
+  "comicio",
+  "campanha",
+  "candidato",
+  "discurso"
+ ],
+ "faixapresidencial": [
+  "faixa presidencial",
+  "posse",
+  "faixa",
+  "passagem de faixa",
+  "mandato"
+ ],
+ "mesaplenario": [
+  "plenario",
+  "mesa diretora",
+  "sessao",
+  "parlamentares",
+  "microfones"
+ ],
+ "painelvotacao": [
+  "painel",
+  "placar",
+  "votos a favor",
+  "contra",
+  "aprovado",
+  "aprovada",
+  "votacao"
+ ],
+ "balancajustica": [
+  "justica",
+  "balanca",
+  "julgar",
+  "sentenca",
+  "inocente",
+  "culpado",
+  "equilibrio"
+ ],
+ "livroleis": [
+  "lei",
+  "leis",
+  "constituicao",
+  "codigo",
+  "artigo",
+  "legislacao",
+  "decreto"
+ ],
+ "cofrepublico": [
+  "cofre publico",
+  "tesouro",
+  "erario",
+  "dinheiro publico",
+  "caixa do governo",
+  "reservas"
+ ],
+ "orcamento": [
+  "orcamento",
+  "fatia",
+  "imposto",
+  "impostos",
+  "arrecadacao",
+  "gasto publico",
+  "tributo"
+ ],
+ "mastrobandeira": [
+  "bandeira",
+  "mastro",
+  "hastear",
+  "nacao",
+  "patria",
+  "pais"
+ ],
+ "cadeirapresidencial": [
+  "cadeira presidencial",
+  "cargo",
+  "poltrona",
+  "poder",
+  "presidente",
+  "cadeira do poder"
+ ],
+ "microfonedebate": [
+  "debate",
+  "microfone",
+  "candidatos",
+  "entrevista",
+  "sabatina",
+  "palavra"
+ ],
+ "tribuna": [
+  "tribuna",
+  "podio",
+  "discurso",
+  "orador",
+  "pronunciamento",
+  "palestra"
+ ],
+ "cameratv": [
+  "televisao",
+  "transmissao",
+  "ao vivo",
+  "cobertura",
+  "reporter",
+  "imprensa",
+  "emissora"
+ ],
+ "jornal": [
+  "jornal",
+  "manchete",
+  "noticia",
+  "noticias",
+  "imprensa",
+  "edicao",
+  "diario oficial"
+ ],
+ "piramideegito": [
+  "piramide",
+  "piramides",
+  "egito",
+  "egipcio",
+  "faraos",
+  "faraoh",
+  "queops"
+ ],
+ "coliseu": [
+  "coliseu",
+  "roma",
+  "romano",
+  "gladiador",
+  "gladiadores",
+  "imperio romano",
+  "arena"
+ ],
+ "templogrego": [
+  "templo grego",
+  "grecia",
+  "grego",
+  "gregos",
+  "partenon",
+  "antiguidade"
+ ],
+ "muralha": [
+  "muralha",
+  "muralhas",
+  "fortificacao",
+  "cerco",
+  "invasao",
+  "fortaleza"
+ ],
+ "castelo": [
+  "castelo",
+  "castelos",
+  "idade media",
+  "medieval",
+  "feudal",
+  "reino",
+  "nobreza"
+ ],
+ "caravela": [
+  "caravela",
+  "caravelas",
+  "descobrimento",
+  "navegacao",
+  "navegadores",
+  "grandes navegacoes",
+  "colonizacao"
+ ],
+ "canhao": [
+  "canhao",
+  "canhoes",
+  "artilharia",
+  "guerra",
+  "batalha",
+  "polvora",
+  "bombardeio"
+ ],
+ "espada": [
+  "espada",
+  "espadas",
+  "cavaleiro",
+  "duelo",
+  "combate",
+  "lamina"
+ ],
+ "escudomedieval": [
+  "escudo",
+  "defesa",
+  "proteger",
+  "cruzada",
+  "guerreiro",
+  "medieval"
+ ],
+ "armadura": [
+  "armadura",
+  "armaduras",
+  "cavaleiro",
+  "cavaleiros",
+  "cavalaria",
+  "soldado",
+  "medieval"
+ ],
+ "trono": [
+  "trono",
+  "rei",
+  "rainha",
+  "monarquia",
+  "coroacao",
+  "imperador",
+  "sucessao"
+ ],
+ "pergaminho": [
+  "pergaminho",
+  "manuscrito",
+  "decreto",
+  "antigo",
+  "carta",
+  "tratado",
+  "documento antigo"
+ ],
+ "tocha": [
+  "tocha",
+  "tochas",
+  "fogo",
+  "olimpiada",
+  "chama",
+  "iluminar",
+  "archote"
+ ],
+ "relogiosol": [
+  "relogio de sol",
+  "sol",
+  "sombra",
+  "antiguidade",
+  "medir o tempo",
+  "gnomon"
+ ],
+ "anfora": [
+  "anfora",
+  "anforas",
+  "vaso grego",
+  "ceramica",
+  "vinho antigo",
+  "arqueologia"
+ ],
+ "colunajonica": [
+  "coluna",
+  "colunas",
+  "classico",
+  "arquitetura grega",
+  "ruinas",
+  "jonica"
+ ],
+ "moedasantigas": [
+  "moedas antigas",
+  "moeda antiga",
+  "numismatica",
+  "tesouro antigo",
+  "denario",
+  "cunhagem"
+ ],
+ "rodacarroca": [
+  "roda",
+  "carroca",
+  "carroca",
+  "invencao da roda",
+  "carruagem",
+  "transporte antigo"
+ ],
+ "maquinavapor": [
+  "maquina a vapor",
+  "vapor",
+  "revolucao industrial",
+  "industrial",
+  "caldeira",
+  "james watt"
+ ],
+ "locomotivaantiga": [
+  "locomotiva",
+  "trem a vapor",
+  "ferrovia",
+  "estrada de ferro",
+  "maria fumaca",
+  "trilhos"
+ ],
+ "linhaeras": [
+  "eras",
+  "era",
+  "linha do tempo",
+  "seculos",
+  "historia",
+  "evolucao",
+  "periodos"
+ ],
+ "mapamundi": [
+  "mapa-mundi",
+  "mapa mundi",
+  "continentes",
+  "mundo",
+  "continente",
+  "planisferio",
+  "mundial"
+ ]
+}

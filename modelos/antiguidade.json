@@ -1,0 +1,178 @@
+{
+  "id": "antiguidade",
+  "nome": "História e antiguidades (documentário de museu)",
+  "versao": 1,
+  "paraQuem": "história antiga, impérios, filósofos, religiões e personagens do passado; pintura, busto, mosaico e mapa antigo tratados como peças de acervo",
+  "exemplosDePedido": [
+    "Como Aristóteles moldou Alexandre, o Grande",
+    "Por que Constantino mudou o Império Romano",
+    "O dia em que Roma ficou sem imperador"
+  ],
+  "apelidos": [
+    "antigo",
+    "museu",
+    "historia-antiga"
+  ],
+  "formato": {
+    "preferidos": [
+      "revelacao",
+      "causa-efeito",
+      "antes-depois"
+    ],
+    "proibidos": [],
+    "padrao": "revelacao"
+  },
+  "roteiro": {
+    "palavras": [
+      110,
+      170
+    ],
+    "alvoSegundos": [
+      45,
+      62
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "o personagem e a pergunta; a pintura ou o busto dele já no primeiro segundo, com o nome ou o rótulo",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "contexto",
+        "seg": [
+          8,
+          16
+        ],
+        "instrucao": "a data (com régua), o lugar (mapa) e quem mais estava lá; uma imagem de acervo por frase"
+      },
+      {
+        "bloco": "desenvolvimento",
+        "seg": [
+          15,
+          28
+        ],
+        "instrucao": "os fatos em ordem, conferidos em 2 fontes; um capítulo quando a história vira; um dado com número"
+      },
+      {
+        "bloco": "fecho",
+        "seg": [
+          6,
+          12
+        ],
+        "instrucao": "a frase histórica (citação atribuída) ou o tamanho do legado (mapa)"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "convite final curto"
+      }
+    ],
+    "gatilhos": [
+      "HE",
+      "CI",
+      "EE"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "narrador de documentário, calmo e solene; datas e números por extenso, conferidos; citação sempre atribuída (autor e obra)",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 0.95,
+    "direcao": "[calm, deep]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "estilo": "antiguidade",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [
+      "pergaminho",
+      "linhaeras",
+      "castelo",
+      "coroa",
+      "mapamundi",
+      "templo"
+    ],
+    "reserva": [
+      "pergaminho",
+      "linhaeras",
+      "mapamundi"
+    ],
+    "pecasPorTema": true,
+    "imagens": "recomendada",
+    "contador": "quando-houver-numero",
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      3,
+      7
+    ],
+    "trocaVisualMaxSeg": 5
+  },
+  "som": {
+    "musica": true,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      8
+    ],
+    "estilo": "editorial",
+    "virais": [
+      "linhatempo",
+      "citacao",
+      "revista",
+      "colagem"
+    ]
+  },
+  "publicar": {
+    "legenda": "o personagem, a data e a virada; créditos das obras (autor, licença) na legenda",
+    "hashtags": [
+      "#historia",
+      "#historiaantiga"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

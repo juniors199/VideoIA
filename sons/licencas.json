@@ -1,0 +1,1673 @@
+{
+ "versao": 1,
+ "amostras": [
+  {
+   "id": "acerto-0001",
+   "origem": "Correct 8.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "acerto-0002",
+   "origem": "Chime Button 1.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "acerto-0003",
+   "origem": "Chime Button 2.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "acerto-0004",
+   "origem": "Technology Click Verified.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "acerto-0005",
+   "origem": "UI Select Chime.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "acerto-0006",
+   "origem": "ideia plin.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "acerto-0007",
+   "origem": "Award Selected.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "acerto-0008",
+   "origem": "Correct Answer 4.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "acerto-0009",
+   "origem": "Fighting_Game_Designed_Collect_Consume_Item_Pick_Up_Misc_UI_UX_Scifi_03.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "acerto-0010",
+   "origem": "Game Success.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "acerto-0011",
+   "origem": "Gaming Menu Success.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "acerto-0012",
+   "origem": "Menu Confirmation.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "acerto-0013",
+   "origem": "Money Prize.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "acerto-0014",
+   "origem": "Thats-a-Good-Idea-Bell_TTX022102.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "acerto-0015",
+   "origem": "Christmas_UI_Menu_Bell_Ding_Wet_1.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "acerto-0016",
+   "origem": "Angelic Reward 2.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "acerto-0017",
+   "origem": "Rewarding Intro.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "acerto-0018",
+   "origem": "ding-agudo.wav",
+   "licenca": "CC0 1.0 (Creator Assets); pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "variação de ding.wav (altura); pack do Fluido"
+  },
+  {
+   "id": "acerto-0019",
+   "origem": "ding-grave.wav",
+   "licenca": "CC0 1.0 (Creator Assets); pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "variação de ding.wav (altura); pack do Fluido"
+  },
+  {
+   "id": "acerto-0020",
+   "origem": "ding.wav",
+   "licenca": "CC0 1.0 (Creator Assets); pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "Creator Assets, Ding; pack do Fluido"
+  },
+  {
+   "id": "acerto-0021",
+   "origem": "sucesso.wav",
+   "licenca": "sintetizado pelo próprio kit do Fluido, sem material de terceiros; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "sintetizado pelo kit; pack do Fluido"
+  },
+  {
+   "id": "ambiente-0001",
+   "origem": "Airport TERMINAL.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "ambiente-0002",
+   "origem": "BEACH AMBIENT PEOPLES.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "ambiente-0003",
+   "origem": "BEACH AMBIENT.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "ambiente-0004",
+   "origem": "OCEAN AMBIENT.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "ambiente-0005",
+   "origem": "cidade, pessoas andando e falando.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "ambiente-0006",
+   "origem": "desert.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "ambiente-0007",
+   "origem": "natureza.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "ambiente-0008",
+   "origem": "trovao-thunder-sound-effect.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "ambiente-0009",
+   "origem": "ventania.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "ambiente-0010",
+   "origem": "AMBTech_Futuristic Loop Heal Full Ambience Granular Texture Clicks_ESM_SGA2.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "ambiente-0011",
+   "origem": "Camera_Attack_Press_or_Paparazzi_Photo_Shoot_OCP-1709-23.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "ambiente-0012",
+   "origem": "Explainer_Video_Typing_Technology_Loop_Digital_Data_Stream_Computing_1.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "ambiente-0013",
+   "origem": "Angelic UI Background Element.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "ambiente-0014",
+   "origem": "String Theory UI Background Element.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "ambiente-0015",
+   "origem": "TV Static.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "ambiente-0016",
+   "origem": "Nature_Forest_Day_Nature_Forest_Day_Atmosphere_Bird_Chirps_Reverby_SDHOLLW_55988.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "ambiente-0017",
+   "origem": "am_surf_gulls_lp_01_hpx.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "ambiente-0018",
+   "origem": "birds.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "ambiente-0019",
+   "origem": "SciFiAmbience_DIGIZ04-54-01.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "clique-0001",
+   "origem": "14660 clack pop click-full.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0002",
+   "origem": "Click.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0003",
+   "origem": "Computer Mouse Button Click 2.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0004",
+   "origem": "Hero Button 1.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0005",
+   "origem": "Hero Button 3.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0006",
+   "origem": "Select Button 1.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0007",
+   "origem": "Select Button 3.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0008",
+   "origem": "Soft Button 1.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0009",
+   "origem": "Soft Button 3.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0010",
+   "origem": "Soft Button 5.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0011",
+   "origem": "Soft Button 7.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0012",
+   "origem": "Interface Click.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0013",
+   "origem": "Modern Click 1.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0014",
+   "origem": "Modern Click 2.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0015",
+   "origem": "Modern Click 3.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0016",
+   "origem": "Mouse Click.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0017",
+   "origem": "Sweet UI Click.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0018",
+   "origem": "iphone keyboard.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026; som de origem do sistema do iPhone, uso decidido pelo dono",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0019",
+   "origem": "CLICK PHONE.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0020",
+   "origem": "Christmas_UI_Menu_Button_Click_Chirp_1.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0021",
+   "origem": "Menu Button Select 1.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0022",
+   "origem": "Menu Button Select 2.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0023",
+   "origem": "UI_CLASSIC_Click_10.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0024",
+   "origem": "UI_CLICK_Console_Enter_01.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "clique-0025",
+   "origem": "botao-grave.wav",
+   "licenca": "CC0 1.0 (Creator Assets); pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "variação de botao.wav (altura); pack do Fluido"
+  },
+  {
+   "id": "clique-0026",
+   "origem": "botao.wav",
+   "licenca": "CC0 1.0 (Creator Assets); pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "Creator Assets, Button (sound-1); pack do Fluido"
+  },
+  {
+   "id": "clique-0027",
+   "origem": "clique-suave.wav",
+   "licenca": "CC0 1.0 (Creator Assets); pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "variação de clique.wav (altura); pack do Fluido"
+  },
+  {
+   "id": "clique-0028",
+   "origem": "clique.wav",
+   "licenca": "CC0 1.0 (Creator Assets); pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "Creator Assets, Mouse Click (click-1); pack do Fluido"
+  },
+  {
+   "id": "clique-0029",
+   "origem": "tecla.wav",
+   "licenca": "domínio público; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "Wikimedia Commons, \"Laptop keyboard.ogg\"; pack do Fluido"
+  },
+  {
+   "id": "entrada-0001",
+   "origem": "Slow Button 1.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "entrada-0002",
+   "origem": "Menu Opened.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "entrada-0003",
+   "origem": "Sci-fi Device .wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "entrada-0004",
+   "origem": "Enter Menu 1.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "entrada-0005",
+   "origem": "Enter Menu 2.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "entrada-0006",
+   "origem": "Futuristic Pop Up 01 Open.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "entrada-0007",
+   "origem": "06737 electronic teleport ding.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "entrada-0008",
+   "origem": "17360 tech on invite stinger-full.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "entrada-0009",
+   "origem": "Sweet UI Open.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "entrada-0010",
+   "origem": "vidro-grave.wav",
+   "licenca": "sintetizado pelo próprio kit do Fluido, sem material de terceiros; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "sintetizado pelo kit; pack do Fluido"
+  },
+  {
+   "id": "entrada-0011",
+   "origem": "vidro.wav",
+   "licenca": "sintetizado pelo próprio kit do Fluido, sem material de terceiros; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "sintetizado pelo kit; pack do Fluido"
+  },
+  {
+   "id": "erro-0001",
+   "origem": "Device Error Notification.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "erro-0002",
+   "origem": "Error Button 1.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "erro-0003",
+   "origem": "Error Button 3.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "erro-0004",
+   "origem": "Error Button 4.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "erro-0005",
+   "origem": "Mistake.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "erro-0006",
+   "origem": "Soft Fail.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "glitch-0001",
+   "origem": "Glitch Asset 01.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "glitch-0002",
+   "origem": "Glitch Asset 03.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "glitch-0003",
+   "origem": "Glitch Asset 05.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "glitch-0004",
+   "origem": "Glitch Bits.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "glitch-0005",
+   "origem": "Glitch Item 01.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "glitch-0006",
+   "origem": "Glitch Item 04.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "glitch-0007",
+   "origem": "Glitch Item 05.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "glitch-0008",
+   "origem": "Glitch Static 2.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "glitch-0009",
+   "origem": "Glitchy Mechanism 01.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "glitch-0010",
+   "origem": "Glitchy Mechanism 03.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "glitch-0011",
+   "origem": "Glitchy Mechanism 05.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "glitch-0012",
+   "origem": "chiado.wav",
+   "licenca": "sintetizado pelo próprio kit do Fluido, sem material de terceiros; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "sintetizado pelo kit (livre); pack do Fluido"
+  },
+  {
+   "id": "glitch-0013",
+   "origem": "glitch.wav",
+   "licenca": "sintetizado pelo próprio kit do Fluido, sem material de terceiros; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "sintetizado pelo kit; pack do Fluido"
+  },
+  {
+   "id": "impacto-0001",
+   "origem": "Action Hit Woosh.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "impacto-0002",
+   "origem": "CINEMATIC_IMPACT_Impact_Hit_03.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "impacto-0003",
+   "origem": "Cinematic Impact (2).mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "impacto-0004",
+   "origem": "Cinematic Swish Impact 1.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "impacto-0005",
+   "origem": "Cinematic Swish Impact 3.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "impacto-0006",
+   "origem": "Epic Cinematic Impact 03.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "impacto-0007",
+   "origem": "Epic Impact.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "impacto-0008",
+   "origem": "Epic Magic Impact.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "impacto-0009",
+   "origem": "Explosion Sound.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "impacto-0010",
+   "origem": "Hybrid Epic Logo.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "impacto-0011",
+   "origem": "Swish IMPACT.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "impacto-0012",
+   "origem": "big-moment.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "impacto-0013",
+   "origem": "Explosion Boom 2.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "tem 8 trechos no limite digital na origem"
+  },
+  {
+   "id": "impacto-0014",
+   "origem": "Explosion Boom 6.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "tem 7 trechos no limite digital na origem"
+  },
+  {
+   "id": "impacto-0015",
+   "origem": "Smart_UI_Notification_Cinematic_Misc_Various_15_Alert_Menu_HUD_System_Big_Blast_Strike_Explosion.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "impacto-0016",
+   "origem": "Cinematic Hit Roll - OhmLab.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "impacto-0017",
+   "origem": "Cinematic Big Whoosh Impact Effect.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "impacto-0018",
+   "origem": "baque-grave.wav",
+   "licenca": "sintetizado pelo próprio kit do Fluido, sem material de terceiros; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "sintetizado pelo kit; pack do Fluido"
+  },
+  {
+   "id": "impacto-0019",
+   "origem": "baque.wav",
+   "licenca": "CC0 1.0 (Creator Assets); pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "Creator Assets; pack do Fluido"
+  },
+  {
+   "id": "impacto-0020",
+   "origem": "boom.wav",
+   "licenca": "sintetizado pelo próprio kit do Fluido, sem material de terceiros; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "sintetizado pelo kit; pack do Fluido"
+  },
+  {
+   "id": "impacto-0021",
+   "origem": "impacto-cinema.wav",
+   "licenca": "sintetizado pelo próprio kit do Fluido, sem material de terceiros; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "sintetizado pelo kit; pack do Fluido"
+  },
+  {
+   "id": "impacto-0022",
+   "origem": "impacto.wav",
+   "licenca": "CC0 1.0 (Creator Assets); pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "Creator Assets; pack do Fluido"
+  },
+  {
+   "id": "objeto-0001",
+   "origem": "CameraRollei35mmRangefinderCamera_eIUW3_02.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0002",
+   "origem": "CÂMERA FLASH.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "objeto-0003",
+   "origem": "DoorOcSqueaksVario SS022804.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0004",
+   "origem": "Mountain Audio - Clicking Screwdriver.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0005",
+   "origem": "Switches1 SS017801.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0006",
+   "origem": "teclado 03.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0007",
+   "origem": "teclado 04.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0008",
+   "origem": "teclado 06.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0009",
+   "origem": "teclado 09.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0010",
+   "origem": "teclado 10.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0011",
+   "origem": "teclado 11.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0012",
+   "origem": "14446 opening metal pot cover-full.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0013",
+   "origem": "24032 cashier giving a change-full.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0014",
+   "origem": "BellFight 6010_25.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "objeto-0015",
+   "origem": "BirdRooster JBA03_50_2.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0016",
+   "origem": "Car Pass.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "objeto-0017",
+   "origem": "Cash Register.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0018",
+   "origem": "Door.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0019",
+   "origem": "Glass_Brick_Break_Up_Pieces_Delicate_Shards_OCP-1148-172.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0020",
+   "origem": "Heartbeat.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0021",
+   "origem": "Highlighter_on_Paper_Marker_Writing_on_Pad_OCP-1626-90.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "objeto-0022",
+   "origem": "MotorcycleHorn_BW.52896.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0023",
+   "origem": "Pool Water Splash.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0024",
+   "origem": "Truck_In_ODY-1041-057.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "objeto-0025",
+   "origem": "Turn Paper Sheet 01.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0026",
+   "origem": "Water Drop 1.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0027",
+   "origem": "Water Drop 2.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0028",
+   "origem": "Writing With A Pencil.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "objeto-0029",
+   "origem": "dj-rewind.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "objeto-0030",
+   "origem": "old-alarm-clock.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "objeto-0031",
+   "origem": "pi sound effects.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0032",
+   "origem": "scroll-papper.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "objeto-0033",
+   "origem": "Futuristic Door.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "objeto-0034",
+   "origem": "teclado-longo.wav",
+   "licenca": "domínio público; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "Wikimedia Commons, \"Laptop keyboard.ogg\"; pack do Fluido"
+  },
+  {
+   "id": "objeto-0035",
+   "origem": "teclado.wav",
+   "licenca": "domínio público; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "Wikimedia Commons, \"Laptop keyboard.ogg\"; pack do Fluido"
+  },
+  {
+   "id": "objeto-0036",
+   "origem": "caixa.wav",
+   "licenca": "domínio público; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "Wikimedia Commons, \"Cash register.ogg\"; pack do Fluido"
+  },
+  {
+   "id": "objeto-0037",
+   "origem": "moeda-grave.wav",
+   "licenca": "CC0 1.0 (Creator Assets); pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "variação de moeda.wav (altura); pack do Fluido"
+  },
+  {
+   "id": "objeto-0038",
+   "origem": "moeda.wav",
+   "licenca": "CC0 1.0 (Creator Assets); pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "Creator Assets, Coins Clink (clink3); pack do Fluido"
+  },
+  {
+   "id": "objeto-0039",
+   "origem": "shutter-seco.wav",
+   "licenca": "domínio público; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "variação de shutter.wav; pack do Fluido"
+  },
+  {
+   "id": "objeto-0040",
+   "origem": "shutter.wav",
+   "licenca": "domínio público; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "Wikimedia Commons, \"Holga shuttersound.ogg\"; pack do Fluido"
+  },
+  {
+   "id": "pop-0001",
+   "origem": "Futurisitc UI Sound Senseor 33.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "pop-0002",
+   "origem": "Modern UI Sound.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0003",
+   "origem": "iphone unlock.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026; som de origem do sistema do iPhone, uso decidido pelo dono",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0004",
+   "origem": "iphone-notification-sound.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026; som de origem do sistema do iPhone, uso decidido pelo dono",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0005",
+   "origem": "notification iphone.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026; som de origem do sistema do iPhone, uso decidido pelo dono",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0006",
+   "origem": "plin iphone.MP4",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026; som de origem do sistema do iPhone, uso decidido pelo dono",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0007",
+   "origem": "Christmas Pop Up.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0008",
+   "origem": "Menu Button.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0009",
+   "origem": "Ocean_Game_UI_Holographic_02.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0010",
+   "origem": "POP UP 01.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0011",
+   "origem": "POP UP 02.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0012",
+   "origem": "POP UP 03.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0013",
+   "origem": "Pop 01.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0014",
+   "origem": "Pop 02.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0015",
+   "origem": "Pop Up Ping 1.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0016",
+   "origem": "Pop Up Ping 2.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0017",
+   "origem": "Pop Up Ping 3.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0018",
+   "origem": "Smart_UI_Notification_Pop_Up_01_Alert_Short_HUD_Sci_Fi.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0019",
+   "origem": "UI_MEDIEVAL_Notification_Popup_01.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0020",
+   "origem": "chat-message.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0021",
+   "origem": "pop-up.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0022",
+   "origem": "Menu Notification.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0023",
+   "origem": "Shining.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0024",
+   "origem": "Sparkle Shine.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0025",
+   "origem": "Smart_UI_Notification_Various_25_Short_Alert_Menu_System.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "pop-0026",
+   "origem": "bip.wav",
+   "licenca": "CC0 1.0 (Creator Assets); pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "Creator Assets; pack do Fluido"
+  },
+  {
+   "id": "pop-0027",
+   "origem": "notificacao-aguda.wav",
+   "licenca": "CC0 1.0 (Creator Assets); pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "variação de notificacao.wav (altura); pack do Fluido"
+  },
+  {
+   "id": "pop-0028",
+   "origem": "notificacao.wav",
+   "licenca": "CC0 1.0 (Creator Assets); pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "Creator Assets, Notification (sound-2); pack do Fluido"
+  },
+  {
+   "id": "pop-0029",
+   "origem": "pop-agudo.wav",
+   "licenca": "sintetizado pelo próprio kit do Fluido, sem material de terceiros; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "sintetizado pelo kit; pack do Fluido"
+  },
+  {
+   "id": "pop-0030",
+   "origem": "pop-grave.wav",
+   "licenca": "sintetizado pelo próprio kit do Fluido, sem material de terceiros; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "sintetizado pelo kit; pack do Fluido"
+  },
+  {
+   "id": "pop-0031",
+   "origem": "pop-medio.wav",
+   "licenca": "sintetizado pelo próprio kit do Fluido, sem material de terceiros; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "sintetizado pelo kit; pack do Fluido"
+  },
+  {
+   "id": "pop-0032",
+   "origem": "pop.wav",
+   "licenca": "CC0 1.0 (Creator Assets); pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "Creator Assets, Pop; pack do Fluido"
+  },
+  {
+   "id": "pop-0033",
+   "origem": "brilho.wav",
+   "licenca": "sintetizado pelo próprio kit do Fluido, sem material de terceiros; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "sintetizado pelo kit; pack do Fluido"
+  },
+  {
+   "id": "riser-0001",
+   "origem": "Horror Tension.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "riser-0002",
+   "origem": "Science Fiction Recharger 03.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "riser-0003",
+   "origem": "Bright Reverse 1.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "riser-0004",
+   "origem": "Bright Reverse 3.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "riser-0005",
+   "origem": "Bright Reverse 4.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "riser-0006",
+   "origem": "Futuristic Swell.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "riser-0007",
+   "origem": "Magic Shimmer Beam 02.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "riser-0008",
+   "origem": "Reversed Heartbeat 1.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "riser-0009",
+   "origem": "Riser.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "riser-0010",
+   "origem": "SFX - Riser Metallic (Transition).mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "riser-0011",
+   "origem": "Grunge Reverse Cinematic Sweep.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "riser-0012",
+   "origem": "Heart of Magic 04.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "riser-0013",
+   "origem": "riser-curto.wav",
+   "licenca": "sintetizado pelo próprio kit do Fluido, sem material de terceiros; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "sintetizado pelo kit; pack do Fluido"
+  },
+  {
+   "id": "riser-0014",
+   "origem": "riser-longo.wav",
+   "licenca": "sintetizado pelo próprio kit do Fluido, sem material de terceiros; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "sintetizado pelo kit; pack do Fluido"
+  },
+  {
+   "id": "riser-0015",
+   "origem": "riser-medio.wav",
+   "licenca": "sintetizado pelo próprio kit do Fluido, sem material de terceiros; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "sintetizado pelo kit; pack do Fluido"
+  },
+  {
+   "id": "riser-0016",
+   "origem": "riser.wav",
+   "licenca": "CC0 1.0 (Creator Assets); pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "flash.wav (Creator Assets) desacelerado e invertido; pack do Fluido"
+  },
+  {
+   "id": "riser-0017",
+   "origem": "subida.wav",
+   "licenca": "CC0 1.0 (Creator Assets); pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "Creator Assets; pack do Fluido"
+  },
+  {
+   "id": "saida-0001",
+   "origem": "Basic Whoosh Down 1.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "saida-0002",
+   "origem": "Basic Whoosh Down 3.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "saida-0003",
+   "origem": "Slow Button 2.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "saida-0004",
+   "origem": "Futuristic Pop Up 02 Close.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "tick-0001",
+   "origem": "ClockTick5CUThin SDT2048905.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "tick-0002",
+   "origem": "Counter Beeps - Sound (1).mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "tick-0003",
+   "origem": "Counter Beeps - Sound (3).mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "tick-0004",
+   "origem": "Counter Beeps - Sound (4).mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "tick-0005",
+   "origem": "Counter Beeps - Sound (6).mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "tick-0006",
+   "origem": "Data Scrolling 03.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "tick-0007",
+   "origem": "Digital Loading.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "tick-0008",
+   "origem": "DigitalDataCounter_01_Loop.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "tick-0009",
+   "origem": "clock_tick_01.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "tick-0010",
+   "origem": "Timer Clock Ticking.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "tick-0011",
+   "origem": "hi hat dunk.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "tick-0012",
+   "origem": "contador-lento.wav",
+   "licenca": "domínio público; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "variação de contador.wav (altura); pack do Fluido"
+  },
+  {
+   "id": "tick-0013",
+   "origem": "contador-rapido.wav",
+   "licenca": "domínio público; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "variação de contador.wav (altura); pack do Fluido"
+  },
+  {
+   "id": "tick-0014",
+   "origem": "contador.wav",
+   "licenca": "domínio público; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "Wikimedia Commons, \"Clock ticking.ogg\" (tique repetido e freando); pack do Fluido"
+  },
+  {
+   "id": "tick-0015",
+   "origem": "tique-agudo.wav",
+   "licenca": "sintetizado pelo próprio kit do Fluido, sem material de terceiros; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "sintetizado pelo kit; pack do Fluido"
+  },
+  {
+   "id": "tick-0016",
+   "origem": "tique-grave.wav",
+   "licenca": "sintetizado pelo próprio kit do Fluido, sem material de terceiros; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "sintetizado pelo kit; pack do Fluido"
+  },
+  {
+   "id": "tick-0017",
+   "origem": "tique.wav",
+   "licenca": "CC0 1.0 (Creator Assets); pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "Creator Assets, Click; pack do Fluido"
+  },
+  {
+   "id": "whoosh-0001",
+   "origem": "Basic Whoosh Up 1.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0002",
+   "origem": "Basic Whoosh Up 3.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0003",
+   "origem": "Crystal Transition 1.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0004",
+   "origem": "Crystal Transition 2.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0005",
+   "origem": "Transition Positive Cinema Sweep.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0006",
+   "origem": "Ocean_Game_UI_Holographic_04.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0007",
+   "origem": "Slide Jump.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0008",
+   "origem": "20996 transitional punch-full.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0009",
+   "origem": "Electricity Whoosh.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0010",
+   "origem": "Energy 04.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0011",
+   "origem": "Sci-fi Particle Transtiion 4.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0012",
+   "origem": "Sci-fi Particle Transtiion 5.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0013",
+   "origem": "Sci-fi Particle Transtiion 7.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0014",
+   "origem": "Sci-fi Particle Transtiion.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0015",
+   "origem": "Sinematic_2_-_Passbys-Velocity-004.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0016",
+   "origem": "Swipe Down Fall.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0017",
+   "origem": "Air Ambient Woosh.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0018",
+   "origem": "Aura Woosh 02.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0019",
+   "origem": "Futuristic Reveal.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0020",
+   "origem": "Game Booster 2.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0021",
+   "origem": "Inverted Woosh 1.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0022",
+   "origem": "Inverted Woosh 3.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0023",
+   "origem": "Low Woosh.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0024",
+   "origem": "Magic Woosh 1.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0025",
+   "origem": "Magic Woosh 3.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0026",
+   "origem": "Mobile_Game_UI_Soft_Transitional_Woosh_1.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0027",
+   "origem": "Ocean_Game_UI_Holographic_06.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0028",
+   "origem": "Sub Swoosh With Delay 4.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0029",
+   "origem": "Woosh 01.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0030",
+   "origem": "Woosh 02.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0031",
+   "origem": "Woosh 03.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0032",
+   "origem": "Woosh 04.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0033",
+   "origem": "Woosh.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0034",
+   "origem": "el_synthefx_whoosh_06_hpx.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0035",
+   "origem": "Aura Woosh 01.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0036",
+   "origem": "Aura Woosh 03.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0037",
+   "origem": "Drum Swish 1.mp3",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0038",
+   "origem": "Magic_Transition_ODY-0273-036.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": "trecho recortado do arquivo original"
+  },
+  {
+   "id": "whoosh-0039",
+   "origem": "strong blow woosh.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0040",
+   "origem": "subsonic panoramic woosh.wav",
+   "licenca": "cedido pelo dono do projeto, distribuição autorizada em 01/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "whoosh-0041",
+   "origem": "deslize.wav",
+   "licenca": "sintetizado pelo próprio kit do Fluido, sem material de terceiros; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "sintetizado pelo kit; pack do Fluido"
+  },
+  {
+   "id": "whoosh-0042",
+   "origem": "flash.wav",
+   "licenca": "CC0 1.0 (Creator Assets); pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "Creator Assets, Swoosh; pack do Fluido"
+  },
+  {
+   "id": "whoosh-0043",
+   "origem": "whoosh-curto.wav",
+   "licenca": "sintetizado pelo próprio kit do Fluido, sem material de terceiros; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "sintetizado pelo kit; pack do Fluido"
+  },
+  {
+   "id": "whoosh-0044",
+   "origem": "whoosh-longo.wav",
+   "licenca": "sintetizado pelo próprio kit do Fluido, sem material de terceiros; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "sintetizado pelo kit; pack do Fluido"
+  },
+  {
+   "id": "whoosh-0045",
+   "origem": "whoosh-medio.wav",
+   "licenca": "sintetizado pelo próprio kit do Fluido, sem material de terceiros; pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "sintetizado pelo kit; pack do Fluido"
+  },
+  {
+   "id": "whoosh-0046",
+   "origem": "whoosh.wav",
+   "licenca": "CC0 1.0 (Creator Assets); pack de sons do Fluido, produto do dono, integração autorizada em 04/11/2026",
+   "observacao": "Creator Assets, Swoosh; pack do Fluido"
+  }
+ ]
+}

@@ -1,0 +1,166 @@
+{
+  "id": "mindset",
+  "nome": "Mindset (bonecos no palco)",
+  "versao": 1,
+  "paraQuem": "mentalidade, hábitos, disciplina e comportamento: comparações entre quem age e quem trava (procrastinar e fazer, pensar demais e agir), contadas por bonecos dourado e cinza num palco escuro com reflexo, uma cena-metáfora por ideia",
+  "exemplosDePedido": [
+    "Quem pensa demais contra quem faz",
+    "Por que a ação bagunçada vence a perfeição",
+    "Quanto do ano já passou e o que fazer agora"
+  ],
+  "apelidos": [
+    "bonecos",
+    "bonecos-no-palco",
+    "palco-dourado"
+  ],
+  "formato": {
+    "preferidos": [
+      "comparativo",
+      "revelacao",
+      "causa-efeito",
+      "ranking"
+    ],
+    "proibidos": [],
+    "padrao": "comparativo"
+  },
+  "roteiro": {
+    "palavras": [
+      70,
+      120
+    ],
+    "alvoSegundos": [
+      25,
+      45
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "uma frase curta que põe dois jeitos de agir lado a lado ou promete a virada (\"Quem pensa demais e quem faz.\", \"Bagunçado vence perfeito.\")",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "itens",
+        "seg": [
+          15,
+          32
+        ],
+        "instrucao": "uma ideia por frase, cada uma com uma cena que dá para encenar com bonecos (subir a escada, mirar o alvo, construir o muro, sair da multidão, o sol que nasce, sair da zona de conforto, a barra do ano); diga as duas etiquetas da comparação (\"pensar ou fazer\") e a palavra em que o boneco dourado age",
+        "n": [
+          3,
+          7
+        ]
+      },
+      {
+        "bloco": "realidade",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "a virada em frase curta (até 5 palavras), que vira a frase de impacto na tela"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "convite final curto: seguir e comentar a palavra"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "EN",
+      "PD"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "frases curtas e diretas, em segunda pessoa; uma comparação ou uma ação por frase",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 0.96,
+    "direcao": "[calm, warm]",
+    "pausaEntreBlocos": 0.15
+  },
+  "visual": {
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "contador": "quando-houver-numero",
+    "estilo": "mindset",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [
+      "botaoseguir",
+      "sol",
+      "lupa"
+    ],
+    "reserva": [
+      "lupa",
+      "sol"
+    ],
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2,
+      6
+    ],
+    "trocaVisualMaxSeg": 6
+  },
+  "som": {
+    "musica": true,
+    "sfx": "discreto"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, o porquê em 2 linhas, pergunta de opinião",
+    "hashtags": [
+      "#mentalidade",
+      "#disciplina"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

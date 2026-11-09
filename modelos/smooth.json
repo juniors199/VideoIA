@@ -1,0 +1,164 @@
+{
+  "id": "smooth",
+  "nome": "Smooth (motion de After Effects, interface de vidro)",
+  "versao": 1,
+  "paraQuem": "curiosidades de dinheiro, tecnologia e números contadas com interface de verdade: número que conta, botão que a mão clica, cards de vidro, gráfico e notificação, com a câmera que chega na palavra",
+  "exemplosDePedido": [
+    "Quanto um real de 1994 vale hoje",
+    "Por que o celular descarrega mais rápido no frio"
+  ],
+  "apelidos": [
+    "fluido",
+    "motion",
+    "after-effects",
+    "vidro"
+  ],
+  "formato": {
+    "preferidos": [
+      "numero-impossivel",
+      "revelacao",
+      "causa-efeito",
+      "passo-a-passo"
+    ],
+    "proibidos": [],
+    "padrao": "numero-impossivel"
+  },
+  "roteiro": {
+    "palavras": [
+      80,
+      125
+    ],
+    "alvoSegundos": [
+      30,
+      50
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "o fato que contraria, um número ou um contraste nos 2 primeiros segundos; começa pelo fato, sem \"você sabia que\"",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "passos",
+        "seg": [
+          15,
+          32
+        ],
+        "instrucao": "frases curtas, cada uma com um desenho claro (número que conta, botão, card, gráfico, notificação, comparação); frase que não dá desenho é fraca",
+        "n": [
+          3,
+          7
+        ]
+      },
+      {
+        "bloco": "virada",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "o detalhe que muda tudo, perto do fim, em uma frase curta"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "convite final curto: seguir e comentar a palavra"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "PD",
+      "EN"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "frases curtas, concretas, uma ideia e um desenho por frase; o número dito vira o número que conta",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[confident, clear]",
+    "pausaEntreBlocos": 0.12
+  },
+  "visual": {
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "contador": "quando-houver-numero",
+    "estilo": "smooth",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [
+      "botaoseguir",
+      "lupa"
+    ],
+    "reserva": [
+      "lupa"
+    ],
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2,
+      5
+    ],
+    "trocaVisualMaxSeg": 5
+  },
+  "som": {
+    "musica": true,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, o porquê em 2 linhas, pergunta de opinião",
+    "hashtags": [
+      "#curiosidades",
+      "#dinheiro"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

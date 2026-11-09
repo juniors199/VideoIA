@@ -1,0 +1,231 @@
+{
+  "id": "noticia",
+  "nome": "Notícia, caso e política",
+  "versao": 1,
+  "paraQuem": "páginas de atualidades, política, economia do dia, \"entenda o caso\"",
+  "exemplosDePedido": [
+    "Acabou a escala 6x1?",
+    "Entenda o caso do banco que quebrou"
+  ],
+  "apelidos": [
+    "politica",
+    "atualidades",
+    "caso",
+    "noticias"
+  ],
+  "formato": {
+    "preferidos": [
+      "revelacao",
+      "causa-efeito",
+      "antes-depois",
+      "comparativo"
+    ],
+    "proibidos": [],
+    "padrao": "revelacao"
+  },
+  "roteiro": {
+    "palavras": [
+      160,
+      230
+    ],
+    "alvoSegundos": [
+      60,
+      85
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          2,
+          3
+        ],
+        "instrucao": "nome quente nos 3 primeiros segundos, com o fato ou o número que provoca; até 12 palavras, fato antes da fonte, nunca adjetivo sobre pessoa; escolhido entre 3 opções registradas na linha GANCHOS (docs/ganchos.md)",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "fato",
+        "seg": [
+          5,
+          10
+        ],
+        "instrucao": "o que aconteceu, atribuído",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "contexto",
+        "seg": [
+          15,
+          25
+        ],
+        "instrucao": "contexto em 2 passos",
+        "n": [
+          2,
+          2
+        ]
+      },
+      {
+        "bloco": "outroLado",
+        "seg": [
+          4,
+          8
+        ],
+        "instrucao": "o outro lado numa frase, atribuído",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "impacto",
+        "seg": [
+          5,
+          10
+        ],
+        "instrucao": "o que muda para quem assiste"
+      },
+      {
+        "bloco": "proximoPasso",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "próximo passo do caso, com data"
+      },
+      {
+        "bloco": "pergunta",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "pergunta de opinião aberta"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          3,
+          6
+        ]
+      }
+    ],
+    "gatilhos": [
+      "UO",
+      "EN",
+      "CI"
+    ],
+    "abertura3Tempos": true,
+    "promessaMarca": null,
+    "loopAberto": true,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      2
+    ],
+    "pessoa": "você",
+    "tom": "sóbrio, acidez leve; caso em andamento nunca vira condenação",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[calm, clear]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "efeitos": {
+      "reels0612": true
+    },
+    "estilo": "editorial",
+    "cenarios": [
+      "secao-eleitoral",
+      "plenario",
+      "congresso-exterior",
+      "planalto",
+      "palanque",
+      "debate",
+      "estudio-tv"
+    ],
+    "cenas": [
+      "plenario3d",
+      "tribunalcena",
+      "urnafila",
+      "multidaopraca"
+    ],
+    "pecasBase": [
+      "jornal",
+      "documento",
+      "hemiciclo",
+      "cameratv",
+      "reportermicrofone",
+      "balancajustica",
+      "urnaeletronica",
+      "calendario",
+      "mapa"
+    ],
+    "reserva": [
+      "jornal",
+      "documento",
+      "calendario"
+    ],
+    "pecasPorTema": true,
+    "imagens": "recomendada",
+    "transicao": "varredura",
+    "contador": "quando-houver-numero",
+    "titulos": "gancho"
+  },
+  "ritmo": {
+    "beatSeg": [
+      3,
+      9
+    ],
+    "trocaVisualMaxSeg": 5
+  },
+  "som": {
+    "musica": true,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": "O que você acha que muda?"
+  },
+  "carrossel": {
+    "sequencia": [
+      "manchete",
+      "texto",
+      "linhatempo",
+      "numeros",
+      "texto",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "editorial",
+    "virais": [
+      "manchete",
+      "plantao",
+      "numeros",
+      "linhatempo",
+      "grafico",
+      "informativo",
+      "capafoto"
+    ]
+  },
+  "publicar": {
+    "legenda": "o fato em uma linha, contexto em 2, data e fontes",
+    "hashtags": [
+      "#noticias",
+      "#entendaocaso"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": "Atualizado em <data>."
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": true,
+    "atribuicao": "sempre",
+    "avisoFalado": null,
+    "avisoLegenda": "Atualizado em <data>.",
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

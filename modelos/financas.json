@@ -1,0 +1,227 @@
+{
+  "id": "financas",
+  "nome": "Finanças e direito do dia a dia",
+  "versao": 1,
+  "paraQuem": "educação financeira, direito do consumidor, economia explicada",
+  "exemplosDePedido": [
+    "Metade da sua herança não é sua",
+    "Por que o cheque especial é tão caro"
+  ],
+  "apelidos": [
+    "dinheiro",
+    "economia",
+    "direito"
+  ],
+  "formato": {
+    "preferidos": [
+      "numero-impossivel",
+      "revelacao",
+      "comparativo",
+      "antes-depois"
+    ],
+    "proibidos": [],
+    "padrao": "numero-impossivel"
+  },
+  "roteiro": {
+    "palavras": [
+      150,
+      220
+    ],
+    "alvoSegundos": [
+      55,
+      80
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "o valor ou a regra que choca",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "promessa",
+        "seg": [
+          2,
+          4
+        ]
+      },
+      {
+        "bloco": "exemplo",
+        "seg": [
+          8,
+          15
+        ],
+        "instrucao": "exemplo em reais com conta redonda",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "mecanismo",
+        "seg": [
+          15,
+          25
+        ],
+        "instrucao": "como a regra ou o juro funciona"
+      },
+      {
+        "bloco": "nuance",
+        "seg": [
+          4,
+          8
+        ],
+        "instrucao": "\"depende de...\""
+      },
+      {
+        "bloco": "licao",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "lição prática em uma frase",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "pergunta",
+        "seg": [
+          3,
+          5
+        ]
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          3,
+          5
+        ]
+      }
+    ],
+    "gatilhos": [
+      "EN",
+      "PD",
+      "CI"
+    ],
+    "abertura3Tempos": true,
+    "promessaMarca": null,
+    "loopAberto": true,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "claro, sem economês; toda sigla explicada na primeira vez",
+    "vocabulario": "simples",
+    "proibir": [
+      "dinheiro fácil",
+      "renda garantida",
+      "fique rico"
+    ]
+  },
+  "voz": {
+    "velocidade": 0.97,
+    "direcao": "[calm, clear]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "estilo": "minimalista",
+    "cenarios": [
+      "escritorio",
+      "mesa",
+      "cidade"
+    ],
+    "cenas": [
+      "bancocofre",
+      "bolsacena",
+      "mercado3d"
+    ],
+    "pecasBase": [
+      "cofrinho",
+      "moedas",
+      "calculadora",
+      "relogiojuros",
+      "taxajuros",
+      "cartaocredito",
+      "boleto",
+      "graficolinha",
+      "pizzagrafico",
+      "inflacao",
+      "arvoremoedas",
+      "contrato",
+      "barras"
+    ],
+    "reserva": [
+      "cofrinho",
+      "moedas",
+      "calculadora",
+      "contrato"
+    ],
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "transicao": "corte",
+    "contador": "sempre",
+    "titulos": "gancho"
+  },
+  "ritmo": {
+    "beatSeg": [
+      3,
+      9
+    ],
+    "trocaVisualMaxSeg": 5
+  },
+  "som": {
+    "musica": true,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "compartilhar",
+    "texto": "Manda para quem vai pedir empréstimo este mês.",
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "dado",
+      "texto",
+      "comparacao",
+      "texto",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "minimalista",
+    "virais": [
+      "chat",
+      "grafico",
+      "numeros",
+      "tabela",
+      "veredito",
+      "tweet",
+      "tipografico"
+    ]
+  },
+  "publicar": {
+    "legenda": "o número, a regra e a lição prática",
+    "hashtags": [
+      "#educacaofinanceira",
+      "#dinheiro"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": "Conteúdo educativo, não é recomendação de investimento."
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": true,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": "Conteúdo educativo, não é recomendação de investimento.",
+    "temasBloqueados": [
+      "promessa de rendimento"
+    ],
+    "revisaoHumana": false
+  }
+}

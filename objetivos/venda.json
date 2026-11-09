@@ -1,0 +1,206 @@
+{
+  "id": "venda",
+  "nome": "Venda (produto, serviço ou oferta)",
+  "versao": 1,
+  "paraQuem": "quem quer vender pelo vídeo: produto digital, serviço, loja, lançamento, anúncio",
+  "exemplosDePedido": [
+    "Por que um vídeo pronto vende mais que um post parado",
+    "O que muda quando você para de editar vídeo na mão"
+  ],
+  "apelidos": [
+    "vendas",
+    "oferta",
+    "anuncio",
+    "propaganda",
+    "lancamento"
+  ],
+  "formato": {
+    "preferidos": [
+      "antes-depois",
+      "mito-fato",
+      "causa-efeito",
+      "passo-a-passo"
+    ],
+    "proibidos": [
+      "ranking"
+    ],
+    "padrao": "antes-depois"
+  },
+  "roteiro": {
+    "palavras": [
+      80,
+      140
+    ],
+    "alvoSegundos": [
+      30,
+      50
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "a dor ou o desejo de quem compra, em até 10 palavras, com número ou contraste nas 6 primeiras; verdadeiro, sem promessa que não se sustenta (docs/ganchos.md: PD, PT, EM)",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "problema",
+        "seg": [
+          4,
+          8
+        ],
+        "instrucao": "o que a pessoa tenta hoje e por que não funciona, em uma ou duas frases do dia a dia dela"
+      },
+      {
+        "bloco": "virada",
+        "seg": [
+          5,
+          10
+        ],
+        "instrucao": "o produto ou serviço como a saída: o que ele faz, em palavras simples (o mecanismo, não o elogio)",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "prova",
+        "seg": [
+          5,
+          10
+        ],
+        "instrucao": "prova concreta e conferível: resultado mostrado, número real, garantia, depoimento autorizado. Nunca invente número ou prazo",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "oferta",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "o que a pessoa leva, o preço ou a condição e a garantia, só o que for verdade hoje"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "um convite só e claro: o link (da bio ou do anúncio) ou a palavra para comentar",
+        "obrigatorio": true
+      }
+    ],
+    "gatilhos": [
+      "PD",
+      "PT",
+      "EN"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.5,
+    "alfinetadas": [
+      0,
+      0
+    ],
+    "pessoa": "você",
+    "tom": "direto e confiante, de quem mostra em vez de prometer; frases curtas, sem gritar",
+    "vocabulario": "simples",
+    "proibir": [
+      "resultado garantido",
+      "dinheiro fácil",
+      "fique rico",
+      "últimas vagas",
+      "imperdível"
+    ]
+  },
+  "voz": {
+    "velocidade": 1.05,
+    "direcao": "[confident, warm]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "estilo": "padrao",
+    "cenarios": [
+      "sala",
+      "mesa",
+      "cidade"
+    ],
+    "pecasBase": [
+      "celular",
+      "notebook",
+      "lojaperfil",
+      "sacola",
+      "etiqueta",
+      "relogio3d",
+      "lampadaideia"
+    ],
+    "reserva": [
+      "celular",
+      "lojaperfil",
+      "etiqueta",
+      "relogio3d"
+    ],
+    "pecasPorTema": true,
+    "imagens": "recomendada",
+    "transicao": "varredura",
+    "contador": "quando-houver-numero",
+    "titulos": "gancho"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2,
+      6
+    ],
+    "trocaVisualMaxSeg": 3,
+    "beatsMax": 12
+  },
+  "som": {
+    "musica": true,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "link",
+    "texto": "O link está na bio.",
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "comparacao",
+      "dado",
+      "fecho"
+    ],
+    "slides": [
+      5,
+      8
+    ],
+    "estilo": "padrao",
+    "virais": [
+      "tweet",
+      "reacao",
+      "veredito",
+      "tipografico"
+    ]
+  },
+  "publicar": {
+    "legenda": "a dor em uma linha, o que o produto faz em duas, a prova e o convite com o link",
+    "hashtags": [],
+    "fontesNaLegenda": false,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 1,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [
+      "promessa de cura ou de resultado em saúde",
+      "promessa de ganho financeiro garantido",
+      "antes e depois de paciente"
+    ],
+    "revisaoHumana": false
+  }
+}

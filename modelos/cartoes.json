@@ -1,0 +1,174 @@
+{
+  "id": "cartoes",
+  "nome": "Cartões (editorial 3D)",
+  "versao": 1,
+  "paraQuem": "páginas de produtividade, tecnologia, apps, negócios e passo a passo digital",
+  "exemplosDePedido": [
+    "Por que o QR code funciona rasgado",
+    "Como organizar a semana em 3 passos"
+  ],
+  "apelidos": [
+    "editorial-3d",
+    "cards",
+    "interface"
+  ],
+  "formato": {
+    "preferidos": [
+      "revelacao",
+      "causa-efeito",
+      "mito-fato",
+      "passo-a-passo"
+    ],
+    "proibidos": [],
+    "padrao": "revelacao"
+  },
+  "roteiro": {
+    "palavras": [
+      90,
+      130
+    ],
+    "alvoSegundos": [
+      32,
+      46
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "uma frase curta com o fato que provoca (número, contraste ou pergunta), verdadeira e atribuível",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "mecanismo",
+        "seg": [
+          18,
+          30
+        ],
+        "instrucao": "um passo por frase, cada frase uma imagem (o estilo ilustra frase a frase)",
+        "n": [
+          3,
+          5
+        ]
+      },
+      {
+        "bloco": "virada",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "o detalhe que muda o jeito de ver"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "convite final curto"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "EN",
+      "PD"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "direto, curioso, frases curtas",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[calm, clear]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "contador": "quando-houver-numero",
+    "estilo": "cartoes",
+    "cenarios": [
+      "palco"
+    ],
+    "pecasBase": [
+      "celular",
+      "notebook",
+      "chip",
+      "calendario",
+      "cadeado"
+    ],
+    "reserva": [
+      "celular",
+      "notebook",
+      "calendario"
+    ],
+    "titulos": "por-etapa"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2,
+      6
+    ],
+    "trocaVisualMaxSeg": 4
+  },
+  "som": {
+    "musica": false,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel",
+    "virais": [
+      "nota",
+      "tipografico",
+      "colagem"
+    ],
+    "visual": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, o porquê em 2 linhas, pergunta de opinião",
+    "hashtags": [
+      "#curiosidades",
+      "#vocesabia"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

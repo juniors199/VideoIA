@@ -1,0 +1,162 @@
+{
+  "id": "smooth-produto",
+  "nome": "Smooth Produto (preço, checkout e a mão que clica)",
+  "versao": 1,
+  "paraQuem": "oferta, preço e conta de venda: o preço que conta com foco de cinema, o prejuízo por venda descendo pelo fio, o checkout com a mão que marca o extra e o total que sobe",
+  "exemplosDePedido": [
+    "Por que produto barato não paga o anúncio",
+    "Quanto custa de verdade um pedido de delivery"
+  ],
+  "apelidos": [
+    "fluido-produto",
+    "produto",
+    "oferta",
+    "checkout"
+  ],
+  "formato": {
+    "preferidos": [
+      "numero-impossivel",
+      "causa-efeito",
+      "comparativo"
+    ],
+    "proibidos": [],
+    "padrao": "numero-impossivel"
+  },
+  "roteiro": {
+    "palavras": [
+      80,
+      125
+    ],
+    "alvoSegundos": [
+      30,
+      50
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "o fato que contraria, um número ou um contraste nos 2 primeiros segundos; começa pelo fato, sem \"você sabia que\"",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "passos",
+        "seg": [
+          15,
+          32
+        ],
+        "instrucao": "frases curtas, cada uma com um desenho claro (número que conta, botão, card, gráfico, notificação, comparação); frase que não dá desenho é fraca",
+        "n": [
+          3,
+          7
+        ]
+      },
+      {
+        "bloco": "virada",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "o detalhe que muda tudo, perto do fim, em uma frase curta"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "convite final curto: seguir e comentar a palavra"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "PD"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "conta simples em voz alta: preço, custo, o que sobra; um número por frase",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[confident, clear]",
+    "pausaEntreBlocos": 0.12
+  },
+  "visual": {
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "contador": "quando-houver-numero",
+    "estilo": "smooth-produto",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [
+      "botaoseguir",
+      "lupa"
+    ],
+    "reserva": [
+      "lupa"
+    ],
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2,
+      5
+    ],
+    "trocaVisualMaxSeg": 5
+  },
+  "som": {
+    "musica": true,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, o porquê em 2 linhas, pergunta de opinião",
+    "hashtags": [
+      "#negocios",
+      "#vendas"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

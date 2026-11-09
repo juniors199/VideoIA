@@ -1,0 +1,165 @@
+{
+  "id": "colagem",
+  "nome": "Colagem (foto real em papel, editorial)",
+  "versao": 1,
+  "paraQuem": "curiosidades com pessoa, lugar ou objeto real, história, notícia, fé (obra de domínio público), ciência, negócio local (foto do produto)",
+  "exemplosDePedido": [
+    "A rinoceronte que teve mais votos que qualquer partido",
+    "O dia em que Dom Pedro II assumiu aos 5 anos"
+  ],
+  "apelidos": [
+    "recorte",
+    "papel",
+    "editorial-foto",
+    "scrapbook"
+  ],
+  "formato": {
+    "preferidos": [
+      "revelacao",
+      "antes-depois",
+      "causa-efeito"
+    ],
+    "proibidos": [],
+    "padrao": "revelacao"
+  },
+  "roteiro": {
+    "palavras": [
+      90,
+      130
+    ],
+    "alvoSegundos": [
+      32,
+      46
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "o fato com a foto real do protagonista no primeiro segundo",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "mecanismo",
+        "seg": [
+          18,
+          30
+        ],
+        "instrucao": "a história em 3 a 5 frases, cada uma com uma foto real ou peça do assunto",
+        "n": [
+          3,
+          5
+        ]
+      },
+      {
+        "bloco": "virada",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "o detalhe que muda o jeito de ver, com carimbo ou nota"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "convite final curto"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "EN",
+      "PD"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "narrativo, de reportagem curta, com datas e nomes",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[calm, clear]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "pecasPorTema": true,
+    "imagens": "recomendada",
+    "contador": "quando-houver-numero",
+    "estilo": "colagem",
+    "cenarios": [
+      "palco"
+    ],
+    "pecasBase": [
+      "jornal",
+      "camerafoto",
+      "livroaberto"
+    ],
+    "reserva": [
+      "jornal",
+      "livroaberto"
+    ],
+    "titulos": "por-etapa"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2,
+      6
+    ],
+    "trocaVisualMaxSeg": 4
+  },
+  "som": {
+    "musica": false,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, o porquê em 2 linhas, pergunta de opinião",
+    "hashtags": [
+      "#curiosidades",
+      "#vocesabia"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

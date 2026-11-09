@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ilustrando Studio: ajuda</title>
+<!--
+  Tela de socorro sem nada instalado (0.6.4). Os instaladores (.sh e .ps1) abrem este arquivo quando param antes de existir
+  o Node, com a causa e o que fazer no endereço: erro.html#c=<causa>&a=<o que fazer>&e=<etapa>&v=<aviso>. Sem nada, mostra a
+  ajuda geral. Não depende de internet, fonte ou script de fora.
+-->
+<style>
+:root{color-scheme:dark;--fundo:#0f1014;--cartao:#181a21;--texto:#f2efe9;--suave:#b9b4ab;--laranja:#ff7a2f;--erro:#ff8f6b;--linha:#2b2e38}
+*{box-sizing:border-box}body{margin:0;background:var(--fundo);color:var(--texto);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding:24px 16px}
+main{max-width:680px;margin:0 auto}h1{font-size:24px;margin:0 0 6px}.sub{color:var(--suave);margin:0 0 18px}
+.caixa{background:var(--cartao);border:1px solid var(--linha);border-left:4px solid var(--erro);border-radius:12px;padding:16px 18px;margin:12px 0}
+.caixa b{display:block;font-size:18px;margin-bottom:6px}.acoes{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+.btn{appearance:none;border:0;border-radius:10px;padding:12px 18px;font:600 16px system-ui,sans-serif;cursor:pointer;text-decoration:none;display:inline-block}
+.s{background:transparent;color:var(--texto);border:1px solid var(--linha)}
+textarea{width:100%;min-height:130px;background:#0a0b0e;color:var(--suave);border:1px solid var(--linha);border-radius:10px;padding:10px;font:12px/1.5 ui-monospace,Menlo,Consolas,monospace}
+.aviso{color:var(--suave);font-size:14px}.ok{color:#7fd69b;font-weight:600}
+</style>
+</head>
+<body>
+<main>
+  <h1>O estúdio precisa de uma ajudinha</h1>
+  <p class="sub">Nada se perdeu: a pasta do estúdio continua como estava.</p>
+  <div class="caixa" role="alert"><b id="causa">A instalação ou a abertura do estúdio parou.</b>O que fazer: <span id="acao">Feche a janela preta e dê dois cliques em "Instalar" de novo. Se repetir, clique em "Copiar diagnóstico" e mande no direct do Instagram @ilustrandocuriosidades.</span><br><small class="aviso" id="etapa"></small></div>
+  <div class="acoes"><button class="btn s" id="copiar">Copiar diagnóstico</button><a class="btn s" href="https://ig.me/m/ilustrandocuriosidades" target="_blank" rel="noopener">Abrir o direct</a><span class="ok" id="copiado" aria-live="polite"></span></div>
+  <p class="aviso">Cole o diagnóstico no direct do Instagram @ilustrandocuriosidades. Ele não leva chave, e-mail nem o nome do seu computador.</p>
+  <p class="aviso" id="aviso"></p>
+  <textarea id="diag" readonly aria-label="Diagnóstico"></textarea>
+</main>
+<script>
+(function () {
+  var p = {};
+  location.hash.replace(/^#/, '').split('&').forEach(function (kv) { var i = kv.indexOf('='); if (i > 0) { try { p[kv.slice(0, i)] = decodeURIComponent(kv.slice(i + 1).replace(/\+/g, ' ')).slice(0, 600); } catch (e) {} } });
+  if (p.c) document.getElementById('causa').textContent = p.c;
+  if (p.a) document.getElementById('acao').textContent = p.a;
+  if (p.e) document.getElementById('etapa').textContent = 'Etapa: ' + p.e;
+  if (p.v) document.getElementById('aviso').textContent = p.v;
+  var sistema = (navigator.userAgent.match(/\(([^)]+)\)/) || [])[1] || navigator.platform || '?';
+  document.getElementById('diag').value = ['Diagnóstico do Ilustrando Studio (sem chaves, sem e-mail e sem dados pessoais)', 'Etapa: ' + (p.e || 'instalação'), 'O que houve: ' + document.getElementById('causa').textContent, 'Sistema (navegador): ' + sistema, 'Versão do estúdio: ' + (p.k || '?')].join('\n');
+  document.getElementById('copiar').onclick = function () {
+    var t = document.getElementById('diag'), ok = false;
+    var fim = function () { document.getElementById('copiado').textContent = ok ? 'Copiado. Agora cole no direct.' : 'Selecionei o texto: copie com Ctrl+C (Cmd+C no Mac).'; };
+    if (navigator.clipboard) navigator.clipboard.writeText(t.value).then(function () { ok = true; fim(); }, function () { t.focus(); t.select(); try { ok = document.execCommand('copy'); } catch (e) {} fim(); });
+    else { t.focus(); t.select(); try { ok = document.execCommand('copy'); } catch (e) {} fim(); }
+  };
+})();
+</script>
+</body>
+</html>

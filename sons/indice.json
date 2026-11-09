@@ -1,0 +1,7567 @@
+{
+ "versao": 1,
+ "formato": "mp3",
+ "taxa_hz": 44100,
+ "amostras": [
+  {
+   "id": "acerto-0001",
+   "arquivo": "amostras/acerto/acerto-0001.mp3",
+   "categoria": "acerto",
+   "subtipo": "resposta certa",
+   "duracao_s": 1.3,
+   "loudness_lufs": -21,
+   "pico_dbfs": -3.6,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "certo",
+    "acerto",
+    "resposta",
+    "quiz"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "mindset",
+    "cartoes",
+    "interface"
+   ],
+   "origem": "Correct 8.wav"
+  },
+  {
+   "id": "acerto-0002",
+   "arquivo": "amostras/acerto/acerto-0002.mp3",
+   "categoria": "acerto",
+   "subtipo": "sino de botão",
+   "duracao_s": 0.47,
+   "loudness_lufs": -20.9,
+   "pico_dbfs": -3,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "sino",
+    "chime",
+    "botão",
+    "confirmação"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "mindset",
+    "cartoes",
+    "interface"
+   ],
+   "origem": "Chime Button 1.mp3"
+  },
+  {
+   "id": "acerto-0003",
+   "arquivo": "amostras/acerto/acerto-0003.mp3",
+   "categoria": "acerto",
+   "subtipo": "sino de botão",
+   "duracao_s": 0.44,
+   "loudness_lufs": -21,
+   "pico_dbfs": -3.3,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "sino",
+    "chime",
+    "botão",
+    "confirmação"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "mindset",
+    "cartoes",
+    "interface"
+   ],
+   "origem": "Chime Button 2.mp3"
+  },
+  {
+   "id": "acerto-0004",
+   "arquivo": "amostras/acerto/acerto-0004.mp3",
+   "categoria": "acerto",
+   "subtipo": "verificado",
+   "duracao_s": 0.27,
+   "loudness_lufs": -21,
+   "pico_dbfs": -8.6,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "verificado",
+    "tecnologia",
+    "confirmação",
+    "digital"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "mindset",
+    "cartoes",
+    "interface"
+   ],
+   "origem": "Technology Click Verified.wav"
+  },
+  {
+   "id": "acerto-0005",
+   "arquivo": "amostras/acerto/acerto-0005.mp3",
+   "categoria": "acerto",
+   "subtipo": "sino de seleção",
+   "duracao_s": 1.67,
+   "loudness_lufs": -21,
+   "pico_dbfs": -10.8,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "sino",
+    "seleção",
+    "chime",
+    "interface"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "mindset",
+    "cartoes",
+    "interface"
+   ],
+   "origem": "UI Select Chime.wav"
+  },
+  {
+   "id": "acerto-0006",
+   "arquivo": "amostras/acerto/acerto-0006.mp3",
+   "categoria": "acerto",
+   "subtipo": "ideia",
+   "duracao_s": 2.91,
+   "loudness_lufs": -21,
+   "pico_dbfs": -8,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "ideia",
+    "lâmpada",
+    "plin",
+    "descoberta"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "mindset",
+    "cartoes",
+    "interface"
+   ],
+   "origem": "ideia plin.wav"
+  },
+  {
+   "id": "acerto-0007",
+   "arquivo": "amostras/acerto/acerto-0007.mp3",
+   "categoria": "acerto",
+   "subtipo": "prêmio",
+   "duracao_s": 1.69,
+   "loudness_lufs": -21,
+   "pico_dbfs": -9.8,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "prêmio",
+    "conquista",
+    "seleção",
+    "vitória"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "mindset",
+    "cartoes",
+    "interface"
+   ],
+   "origem": "Award Selected.wav"
+  },
+  {
+   "id": "acerto-0008",
+   "arquivo": "amostras/acerto/acerto-0008.mp3",
+   "categoria": "acerto",
+   "subtipo": "resposta certa",
+   "duracao_s": 0.46,
+   "loudness_lufs": -20.9,
+   "pico_dbfs": -3.6,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "resposta",
+    "certa",
+    "acerto",
+    "quiz"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "mindset",
+    "cartoes",
+    "interface"
+   ],
+   "origem": "Correct Answer 4.mp3"
+  },
+  {
+   "id": "acerto-0009",
+   "arquivo": "amostras/acerto/acerto-0009.mp3",
+   "categoria": "acerto",
+   "subtipo": "coleta de item",
+   "duracao_s": 0.48,
+   "loudness_lufs": -25.9,
+   "pico_dbfs": -1.9,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "coleta",
+    "item",
+    "pegar",
+    "jogo"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "mindset",
+    "cartoes",
+    "interface"
+   ],
+   "origem": "Fighting_Game_Designed_Collect_Consume_Item_Pick_Up_Misc_UI_UX_Scifi_03.wav"
+  },
+  {
+   "id": "acerto-0010",
+   "arquivo": "amostras/acerto/acerto-0010.mp3",
+   "categoria": "acerto",
+   "subtipo": "sucesso de jogo",
+   "duracao_s": 1.75,
+   "loudness_lufs": -21,
+   "pico_dbfs": -6.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "sucesso",
+    "jogo",
+    "vitória",
+    "conquista"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "mindset",
+    "cartoes",
+    "interface"
+   ],
+   "origem": "Game Success.mp3"
+  },
+  {
+   "id": "acerto-0011",
+   "arquivo": "amostras/acerto/acerto-0011.mp3",
+   "categoria": "acerto",
+   "subtipo": "sucesso de menu",
+   "duracao_s": 1.5,
+   "loudness_lufs": -21,
+   "pico_dbfs": -9.4,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "sucesso",
+    "menu",
+    "jogo",
+    "confirmação"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "mindset",
+    "cartoes",
+    "interface"
+   ],
+   "origem": "Gaming Menu Success.wav"
+  },
+  {
+   "id": "acerto-0012",
+   "arquivo": "amostras/acerto/acerto-0012.mp3",
+   "categoria": "acerto",
+   "subtipo": "confirmação",
+   "duracao_s": 1.39,
+   "loudness_lufs": -21.1,
+   "pico_dbfs": -3,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "confirmação",
+    "menu",
+    "aprovado"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "mindset",
+    "cartoes",
+    "interface"
+   ],
+   "origem": "Menu Confirmation.mp3"
+  },
+  {
+   "id": "acerto-0013",
+   "arquivo": "amostras/acerto/acerto-0013.mp3",
+   "categoria": "acerto",
+   "subtipo": "dinheiro",
+   "duracao_s": 1.42,
+   "loudness_lufs": -21,
+   "pico_dbfs": -5.8,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "dinheiro",
+    "prêmio",
+    "moedas",
+    "ganho"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "mindset",
+    "cartoes",
+    "interface"
+   ],
+   "origem": "Money Prize.mp3"
+  },
+  {
+   "id": "acerto-0014",
+   "arquivo": "amostras/acerto/acerto-0014.mp3",
+   "categoria": "acerto",
+   "subtipo": "boa ideia",
+   "duracao_s": 1.59,
+   "loudness_lufs": -24,
+   "pico_dbfs": -1.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "ideia",
+    "sino",
+    "descoberta",
+    "boa"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "mindset",
+    "cartoes",
+    "interface"
+   ],
+   "origem": "Thats-a-Good-Idea-Bell_TTX022102.wav"
+  },
+  {
+   "id": "acerto-0015",
+   "arquivo": "amostras/acerto/acerto-0015.mp3",
+   "categoria": "acerto",
+   "subtipo": "sino",
+   "duracao_s": 1.26,
+   "loudness_lufs": -21,
+   "pico_dbfs": -2.3,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "sino",
+    "ding",
+    "natal",
+    "brilho"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "mindset",
+    "cartoes",
+    "interface"
+   ],
+   "origem": "Christmas_UI_Menu_Bell_Ding_Wet_1.wav"
+  },
+  {
+   "id": "acerto-0016",
+   "arquivo": "amostras/acerto/acerto-0016.mp3",
+   "categoria": "acerto",
+   "subtipo": "recompensa angelical",
+   "duracao_s": 2.2,
+   "loudness_lufs": -20.9,
+   "pico_dbfs": -10.3,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "recompensa",
+    "angelical",
+    "conquista",
+    "coral"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "mindset",
+    "cartoes",
+    "interface"
+   ],
+   "origem": "Angelic Reward 2.wav"
+  },
+  {
+   "id": "acerto-0017",
+   "arquivo": "amostras/acerto/acerto-0017.mp3",
+   "categoria": "acerto",
+   "subtipo": "introdução de recompensa",
+   "duracao_s": 5.3,
+   "loudness_lufs": -21,
+   "pico_dbfs": -7.1,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "recompensa",
+    "introdução",
+    "vitória",
+    "sino"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "mindset",
+    "cartoes",
+    "interface"
+   ],
+   "origem": "Rewarding Intro.mp3"
+  },
+  {
+   "id": "acerto-0018",
+   "arquivo": "amostras/acerto/acerto-0018.mp3",
+   "categoria": "acerto",
+   "subtipo": "acerto pequeno",
+   "duracao_s": 0.46,
+   "loudness_lufs": -21,
+   "pico_dbfs": -3.7,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-ding-agudo",
+    "ding-agudo",
+    "ding",
+    "agudo",
+    "sino",
+    "chime"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "mindset",
+    "fatos",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "ding-agudo.wav",
+   "pacote": "fluido",
+   "nome_fluido": "ding-agudo"
+  },
+  {
+   "id": "acerto-0019",
+   "arquivo": "amostras/acerto/acerto-0019.mp3",
+   "categoria": "acerto",
+   "subtipo": "conclusão séria",
+   "duracao_s": 0.68,
+   "loudness_lufs": -21,
+   "pico_dbfs": -3.8,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-ding-grave",
+    "ding-grave",
+    "ding",
+    "grave",
+    "sino",
+    "chime"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "mindset",
+    "fatos",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "ding-grave.wav",
+   "pacote": "fluido",
+   "nome_fluido": "ding-grave"
+  },
+  {
+   "id": "acerto-0020",
+   "arquivo": "amostras/acerto/acerto-0020.mp3",
+   "categoria": "acerto",
+   "subtipo": "conclusão",
+   "duracao_s": 0.55,
+   "loudness_lufs": -21,
+   "pico_dbfs": -3,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-ding",
+    "ding",
+    "sino",
+    "chime",
+    "conclusão",
+    "confirmação"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "mindset",
+    "fatos",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "ding.wav",
+   "pacote": "fluido",
+   "nome_fluido": "ding"
+  },
+  {
+   "id": "acerto-0021",
+   "arquivo": "amostras/acerto/acerto-0021.mp3",
+   "categoria": "acerto",
+   "subtipo": "deu certo",
+   "duracao_s": 0.89,
+   "loudness_lufs": -21,
+   "pico_dbfs": -11.5,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "fluido-sucesso",
+    "sucesso",
+    "acerto",
+    "certo",
+    "meta",
+    "batida"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "mindset",
+    "fatos",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "sucesso.wav",
+   "pacote": "fluido",
+   "nome_fluido": "sucesso"
+  },
+  {
+   "id": "ambiente-0001",
+   "arquivo": "amostras/ambiente/ambiente-0001.mp3",
+   "categoria": "ambiente",
+   "subtipo": "terminal de aeroporto",
+   "duracao_s": 22,
+   "loudness_lufs": -24,
+   "pico_dbfs": -7,
+   "canais": 2,
+   "loop": true,
+   "tags": [
+    "aeroporto",
+    "terminal",
+    "viagem",
+    "multidão"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "teologia",
+    "antiguidade",
+    "fatos",
+    "pontilhismo",
+    "quadro-antigo"
+   ],
+   "origem": "Airport TERMINAL.mp3"
+  },
+  {
+   "id": "ambiente-0002",
+   "arquivo": "amostras/ambiente/ambiente-0002.mp3",
+   "categoria": "ambiente",
+   "subtipo": "praia com pessoas",
+   "duracao_s": 22,
+   "loudness_lufs": -24.4,
+   "pico_dbfs": -1.9,
+   "canais": 2,
+   "loop": true,
+   "tags": [
+    "praia",
+    "pessoas",
+    "mar",
+    "verão"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "teologia",
+    "antiguidade",
+    "fatos",
+    "pontilhismo",
+    "quadro-antigo"
+   ],
+   "origem": "BEACH AMBIENT PEOPLES.wav"
+  },
+  {
+   "id": "ambiente-0003",
+   "arquivo": "amostras/ambiente/ambiente-0003.mp3",
+   "categoria": "ambiente",
+   "subtipo": "praia",
+   "duracao_s": 22,
+   "loudness_lufs": -24,
+   "pico_dbfs": -2.7,
+   "canais": 2,
+   "loop": true,
+   "tags": [
+    "praia",
+    "mar",
+    "ondas",
+    "vento"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "teologia",
+    "antiguidade",
+    "fatos",
+    "pontilhismo",
+    "quadro-antigo"
+   ],
+   "origem": "BEACH AMBIENT.mp3"
+  },
+  {
+   "id": "ambiente-0004",
+   "arquivo": "amostras/ambiente/ambiente-0004.mp3",
+   "categoria": "ambiente",
+   "subtipo": "oceano",
+   "duracao_s": 22,
+   "loudness_lufs": -24,
+   "pico_dbfs": -10.5,
+   "canais": 2,
+   "loop": true,
+   "tags": [
+    "oceano",
+    "mar",
+    "ondas",
+    "profundo"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "teologia",
+    "antiguidade",
+    "fatos",
+    "pontilhismo",
+    "quadro-antigo"
+   ],
+   "origem": "OCEAN AMBIENT.wav"
+  },
+  {
+   "id": "ambiente-0005",
+   "arquivo": "amostras/ambiente/ambiente-0005.mp3",
+   "categoria": "ambiente",
+   "subtipo": "cidade com pessoas",
+   "duracao_s": 22,
+   "loudness_lufs": -24,
+   "pico_dbfs": -10.8,
+   "canais": 2,
+   "loop": true,
+   "tags": [
+    "cidade",
+    "pessoas",
+    "rua",
+    "movimento",
+    "urbano"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "teologia",
+    "antiguidade",
+    "fatos",
+    "pontilhismo",
+    "quadro-antigo"
+   ],
+   "origem": "cidade, pessoas andando e falando.mp3"
+  },
+  {
+   "id": "ambiente-0006",
+   "arquivo": "amostras/ambiente/ambiente-0006.mp3",
+   "categoria": "ambiente",
+   "subtipo": "deserto",
+   "duracao_s": 20,
+   "loudness_lufs": -24,
+   "pico_dbfs": -5.8,
+   "canais": 2,
+   "loop": true,
+   "tags": [
+    "deserto",
+    "vento",
+    "areia",
+    "vazio"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "teologia",
+    "antiguidade",
+    "fatos",
+    "pontilhismo",
+    "quadro-antigo"
+   ],
+   "origem": "desert.mp3"
+  },
+  {
+   "id": "ambiente-0007",
+   "arquivo": "amostras/ambiente/ambiente-0007.mp3",
+   "categoria": "ambiente",
+   "subtipo": "natureza",
+   "duracao_s": 22,
+   "loudness_lufs": -24,
+   "pico_dbfs": -11.5,
+   "canais": 2,
+   "loop": true,
+   "tags": [
+    "natureza",
+    "pássaros",
+    "mata",
+    "campo"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "teologia",
+    "antiguidade",
+    "fatos",
+    "pontilhismo",
+    "quadro-antigo"
+   ],
+   "origem": "natureza.mp3"
+  },
+  {
+   "id": "ambiente-0008",
+   "arquivo": "amostras/ambiente/ambiente-0008.mp3",
+   "categoria": "ambiente",
+   "subtipo": "trovão",
+   "duracao_s": 22,
+   "loudness_lufs": -23.9,
+   "pico_dbfs": -4.8,
+   "canais": 2,
+   "loop": true,
+   "tags": [
+    "trovão",
+    "tempestade",
+    "chuva",
+    "céu"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "teologia",
+    "antiguidade",
+    "fatos",
+    "pontilhismo",
+    "quadro-antigo"
+   ],
+   "origem": "trovao-thunder-sound-effect.mp3"
+  },
+  {
+   "id": "ambiente-0009",
+   "arquivo": "amostras/ambiente/ambiente-0009.mp3",
+   "categoria": "ambiente",
+   "subtipo": "ventania",
+   "duracao_s": 20,
+   "loudness_lufs": -24,
+   "pico_dbfs": -11.6,
+   "canais": 2,
+   "loop": true,
+   "tags": [
+    "ventania",
+    "vento",
+    "tempestade",
+    "frio"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "teologia",
+    "antiguidade",
+    "fatos",
+    "pontilhismo",
+    "quadro-antigo"
+   ],
+   "origem": "ventania.wav"
+  },
+  {
+   "id": "ambiente-0010",
+   "arquivo": "amostras/ambiente/ambiente-0010.mp3",
+   "categoria": "ambiente",
+   "subtipo": "textura tecnológica",
+   "duracao_s": 22,
+   "loudness_lufs": -24.1,
+   "pico_dbfs": -1.3,
+   "canais": 2,
+   "loop": true,
+   "tags": [
+    "tecnologia",
+    "futurista",
+    "textura",
+    "cliques",
+    "digital"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "teologia",
+    "antiguidade",
+    "fatos",
+    "pontilhismo",
+    "quadro-antigo"
+   ],
+   "origem": "AMBTech_Futuristic Loop Heal Full Ambience Granular Texture Clicks_ESM_SGA2.wav"
+  },
+  {
+   "id": "ambiente-0011",
+   "arquivo": "amostras/ambiente/ambiente-0011.mp3",
+   "categoria": "ambiente",
+   "subtipo": "paparazzi",
+   "duracao_s": 22,
+   "loudness_lufs": -23.9,
+   "pico_dbfs": -4.1,
+   "canais": 2,
+   "loop": true,
+   "tags": [
+    "paparazzi",
+    "fotógrafos",
+    "câmeras",
+    "flashes",
+    "imprensa"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "teologia",
+    "antiguidade",
+    "fatos",
+    "pontilhismo",
+    "quadro-antigo"
+   ],
+   "origem": "Camera_Attack_Press_or_Paparazzi_Photo_Shoot_OCP-1709-23.wav"
+  },
+  {
+   "id": "ambiente-0012",
+   "arquivo": "amostras/ambiente/ambiente-0012.mp3",
+   "categoria": "ambiente",
+   "subtipo": "digitação e dados",
+   "duracao_s": 22,
+   "loudness_lufs": -24.4,
+   "pico_dbfs": -6.2,
+   "canais": 2,
+   "loop": true,
+   "tags": [
+    "digitação",
+    "dados",
+    "tecnologia",
+    "computador",
+    "fluxo"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "teologia",
+    "antiguidade",
+    "fatos",
+    "pontilhismo",
+    "quadro-antigo"
+   ],
+   "origem": "Explainer_Video_Typing_Technology_Loop_Digital_Data_Stream_Computing_1.wav"
+  },
+  {
+   "id": "ambiente-0013",
+   "arquivo": "amostras/ambiente/ambiente-0013.mp3",
+   "categoria": "ambiente",
+   "subtipo": "etéreo",
+   "duracao_s": 22,
+   "loudness_lufs": -24,
+   "pico_dbfs": -10.8,
+   "canais": 2,
+   "loop": true,
+   "tags": [
+    "etéreo",
+    "angelical",
+    "suave",
+    "futurista",
+    "atmosfera"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "teologia",
+    "antiguidade",
+    "fatos",
+    "pontilhismo",
+    "quadro-antigo"
+   ],
+   "origem": "Angelic UI Background Element.mp3"
+  },
+  {
+   "id": "ambiente-0014",
+   "arquivo": "amostras/ambiente/ambiente-0014.mp3",
+   "categoria": "ambiente",
+   "subtipo": "cordas digitais",
+   "duracao_s": 22,
+   "loudness_lufs": -23.9,
+   "pico_dbfs": -11.8,
+   "canais": 2,
+   "loop": true,
+   "tags": [
+    "cordas",
+    "digitais",
+    "futurista",
+    "atmosfera",
+    "tecnologia"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "teologia",
+    "antiguidade",
+    "fatos",
+    "pontilhismo",
+    "quadro-antigo"
+   ],
+   "origem": "String Theory UI Background Element.mp3"
+  },
+  {
+   "id": "ambiente-0015",
+   "arquivo": "amostras/ambiente/ambiente-0015.mp3",
+   "categoria": "ambiente",
+   "subtipo": "estática de TV",
+   "duracao_s": 22,
+   "loudness_lufs": -24,
+   "pico_dbfs": -13.9,
+   "canais": 2,
+   "loop": true,
+   "tags": [
+    "estática",
+    "tv",
+    "chiado",
+    "interferência",
+    "glitch"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "teologia",
+    "antiguidade",
+    "fatos",
+    "pontilhismo",
+    "quadro-antigo"
+   ],
+   "origem": "TV Static.wav"
+  },
+  {
+   "id": "ambiente-0016",
+   "arquivo": "amostras/ambiente/ambiente-0016.mp3",
+   "categoria": "ambiente",
+   "subtipo": "floresta de dia",
+   "duracao_s": 22,
+   "loudness_lufs": -24,
+   "pico_dbfs": -11.2,
+   "canais": 2,
+   "loop": true,
+   "tags": [
+    "floresta",
+    "dia",
+    "pássaros",
+    "natureza",
+    "mata"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "teologia",
+    "antiguidade",
+    "fatos",
+    "pontilhismo",
+    "quadro-antigo"
+   ],
+   "origem": "Nature_Forest_Day_Nature_Forest_Day_Atmosphere_Bird_Chirps_Reverby_SDHOLLW_55988.wav"
+  },
+  {
+   "id": "ambiente-0017",
+   "arquivo": "amostras/ambiente/ambiente-0017.mp3",
+   "categoria": "ambiente",
+   "subtipo": "ondas e gaivotas",
+   "duracao_s": 20,
+   "loudness_lufs": -24,
+   "pico_dbfs": -8.9,
+   "canais": 2,
+   "loop": true,
+   "tags": [
+    "praia",
+    "ondas",
+    "gaivotas",
+    "mar",
+    "litoral"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "teologia",
+    "antiguidade",
+    "fatos",
+    "pontilhismo",
+    "quadro-antigo"
+   ],
+   "origem": "am_surf_gulls_lp_01_hpx.wav"
+  },
+  {
+   "id": "ambiente-0018",
+   "arquivo": "amostras/ambiente/ambiente-0018.mp3",
+   "categoria": "ambiente",
+   "subtipo": "pássaros",
+   "duracao_s": 20,
+   "loudness_lufs": -24,
+   "pico_dbfs": -9.1,
+   "canais": 2,
+   "loop": true,
+   "tags": [
+    "pássaros",
+    "natureza",
+    "manhã",
+    "floresta"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "teologia",
+    "antiguidade",
+    "fatos",
+    "pontilhismo",
+    "quadro-antigo"
+   ],
+   "origem": "birds.mp3"
+  },
+  {
+   "id": "ambiente-0019",
+   "arquivo": "amostras/ambiente/ambiente-0019.mp3",
+   "categoria": "ambiente",
+   "subtipo": "ficção científica",
+   "duracao_s": 22,
+   "loudness_lufs": -24,
+   "pico_dbfs": -11.7,
+   "canais": 2,
+   "loop": true,
+   "tags": [
+    "ficção",
+    "científica",
+    "atmosfera",
+    "espacial",
+    "drone"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "teologia",
+    "antiguidade",
+    "fatos",
+    "pontilhismo",
+    "quadro-antigo"
+   ],
+   "origem": "SciFiAmbience_DIGIZ04-54-01.wav"
+  },
+  {
+   "id": "clique-0001",
+   "arquivo": "amostras/clique/clique-0001.mp3",
+   "categoria": "clique",
+   "subtipo": "clack seco",
+   "duracao_s": 0.29,
+   "loudness_lufs": -23.6,
+   "pico_dbfs": -1.7,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "clique",
+    "estalo",
+    "seco",
+    "interface",
+    "mouse"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "14660 clack pop click-full.mp3"
+  },
+  {
+   "id": "clique-0002",
+   "arquivo": "amostras/clique/clique-0002.mp3",
+   "categoria": "clique",
+   "subtipo": "clique limpo",
+   "duracao_s": 0.17,
+   "loudness_lufs": -27.2,
+   "pico_dbfs": -2.9,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "clique",
+    "botão",
+    "interface",
+    "digital"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Click.mp3"
+  },
+  {
+   "id": "clique-0003",
+   "arquivo": "amostras/clique/clique-0003.mp3",
+   "categoria": "clique",
+   "subtipo": "mouse",
+   "duracao_s": 0.21,
+   "loudness_lufs": -28.6,
+   "pico_dbfs": -1.4,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "mouse",
+    "clique",
+    "computador",
+    "escritório"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Computer Mouse Button Click 2.wav"
+  },
+  {
+   "id": "clique-0004",
+   "arquivo": "amostras/clique/clique-0004.mp3",
+   "categoria": "clique",
+   "subtipo": "botão principal",
+   "duracao_s": 0.38,
+   "loudness_lufs": -21.6,
+   "pico_dbfs": -1.2,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "botão",
+    "principal",
+    "destaque",
+    "interface",
+    "clique"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Hero Button 1.mp3"
+  },
+  {
+   "id": "clique-0005",
+   "arquivo": "amostras/clique/clique-0005.mp3",
+   "categoria": "clique",
+   "subtipo": "botão principal",
+   "duracao_s": 0.43,
+   "loudness_lufs": -21.7,
+   "pico_dbfs": -1.8,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "botão",
+    "principal",
+    "destaque",
+    "interface",
+    "clique"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Hero Button 3.mp3"
+  },
+  {
+   "id": "clique-0006",
+   "arquivo": "amostras/clique/clique-0006.mp3",
+   "categoria": "clique",
+   "subtipo": "seleção",
+   "duracao_s": 0.37,
+   "loudness_lufs": -22.1,
+   "pico_dbfs": -1.5,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "seleção",
+    "botão",
+    "escolher",
+    "interface"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Select Button 1.mp3"
+  },
+  {
+   "id": "clique-0007",
+   "arquivo": "amostras/clique/clique-0007.mp3",
+   "categoria": "clique",
+   "subtipo": "seleção",
+   "duracao_s": 0.37,
+   "loudness_lufs": -21.2,
+   "pico_dbfs": -1.7,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "seleção",
+    "botão",
+    "escolher",
+    "interface"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Select Button 3.mp3"
+  },
+  {
+   "id": "clique-0008",
+   "arquivo": "amostras/clique/clique-0008.mp3",
+   "categoria": "clique",
+   "subtipo": "botão suave",
+   "duracao_s": 0.63,
+   "loudness_lufs": -21,
+   "pico_dbfs": -5.4,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "botão",
+    "suave",
+    "interface",
+    "clique"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Soft Button 1.mp3"
+  },
+  {
+   "id": "clique-0009",
+   "arquivo": "amostras/clique/clique-0009.mp3",
+   "categoria": "clique",
+   "subtipo": "botão suave",
+   "duracao_s": 0.64,
+   "loudness_lufs": -21,
+   "pico_dbfs": -8.9,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "botão",
+    "suave",
+    "interface",
+    "clique"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Soft Button 3.mp3"
+  },
+  {
+   "id": "clique-0010",
+   "arquivo": "amostras/clique/clique-0010.mp3",
+   "categoria": "clique",
+   "subtipo": "botão suave",
+   "duracao_s": 0.63,
+   "loudness_lufs": -21,
+   "pico_dbfs": -8.2,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "botão",
+    "suave",
+    "interface",
+    "clique"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Soft Button 5.mp3"
+  },
+  {
+   "id": "clique-0011",
+   "arquivo": "amostras/clique/clique-0011.mp3",
+   "categoria": "clique",
+   "subtipo": "botão suave",
+   "duracao_s": 0.6,
+   "loudness_lufs": -21,
+   "pico_dbfs": -1.8,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "botão",
+    "suave",
+    "interface",
+    "clique"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Soft Button 7.mp3"
+  },
+  {
+   "id": "clique-0012",
+   "arquivo": "amostras/clique/clique-0012.mp3",
+   "categoria": "clique",
+   "subtipo": "interface",
+   "duracao_s": 0.58,
+   "loudness_lufs": -21,
+   "pico_dbfs": -3.1,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "clique",
+    "interface",
+    "tela",
+    "toque"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Interface Click.mp3"
+  },
+  {
+   "id": "clique-0013",
+   "arquivo": "amostras/clique/clique-0013.mp3",
+   "categoria": "clique",
+   "subtipo": "moderno",
+   "duracao_s": 0.22,
+   "loudness_lufs": -21,
+   "pico_dbfs": -4.3,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "clique",
+    "moderno",
+    "interface",
+    "tecnologia"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Modern Click 1.wav"
+  },
+  {
+   "id": "clique-0014",
+   "arquivo": "amostras/clique/clique-0014.mp3",
+   "categoria": "clique",
+   "subtipo": "moderno curto",
+   "duracao_s": 0.14,
+   "loudness_lufs": -21.2,
+   "pico_dbfs": -1.4,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "clique",
+    "moderno",
+    "curto",
+    "botão"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Modern Click 2.wav"
+  },
+  {
+   "id": "clique-0015",
+   "arquivo": "amostras/clique/clique-0015.mp3",
+   "categoria": "clique",
+   "subtipo": "moderno curto",
+   "duracao_s": 0.08,
+   "loudness_lufs": -22.3,
+   "pico_dbfs": -2.7,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "clique",
+    "moderno",
+    "curto",
+    "botão"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Modern Click 3.wav"
+  },
+  {
+   "id": "clique-0016",
+   "arquivo": "amostras/clique/clique-0016.mp3",
+   "categoria": "clique",
+   "subtipo": "mouse",
+   "duracao_s": 0.34,
+   "loudness_lufs": -25.9,
+   "pico_dbfs": -1.7,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "mouse",
+    "clique",
+    "computador",
+    "seco"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Mouse Click.mp3"
+  },
+  {
+   "id": "clique-0017",
+   "arquivo": "amostras/clique/clique-0017.mp3",
+   "categoria": "clique",
+   "subtipo": "doce",
+   "duracao_s": 0.06,
+   "loudness_lufs": -24.9,
+   "pico_dbfs": -1.9,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "clique",
+    "suave",
+    "aplicativo",
+    "interface"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Sweet UI Click.wav"
+  },
+  {
+   "id": "clique-0018",
+   "arquivo": "amostras/clique/clique-0018.mp3",
+   "categoria": "clique",
+   "subtipo": "teclado do iPhone",
+   "duracao_s": 3.71,
+   "loudness_lufs": -24.9,
+   "pico_dbfs": -1.5,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "teclado",
+    "iphone",
+    "digitação",
+    "celular",
+    "toque"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "iphone keyboard.mp3"
+  },
+  {
+   "id": "clique-0019",
+   "arquivo": "amostras/clique/clique-0019.mp3",
+   "categoria": "clique",
+   "subtipo": "celular",
+   "duracao_s": 0.1,
+   "loudness_lufs": -21.5,
+   "pico_dbfs": -2,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "clique",
+    "celular",
+    "tela",
+    "toque",
+    "aplicativo"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "CLICK PHONE.mp3"
+  },
+  {
+   "id": "clique-0020",
+   "arquivo": "amostras/clique/clique-0020.mp3",
+   "categoria": "clique",
+   "subtipo": "piado de botão",
+   "duracao_s": 0.12,
+   "loudness_lufs": -24.8,
+   "pico_dbfs": -2,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "clique",
+    "piado",
+    "botão",
+    "alegre",
+    "interface"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Christmas_UI_Menu_Button_Click_Chirp_1.wav"
+  },
+  {
+   "id": "clique-0021",
+   "arquivo": "amostras/clique/clique-0021.mp3",
+   "categoria": "clique",
+   "subtipo": "seleção de menu",
+   "duracao_s": 0.69,
+   "loudness_lufs": -20.9,
+   "pico_dbfs": -3.6,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "menu",
+    "seleção",
+    "botão",
+    "clique"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Menu Button Select 1.mp3"
+  },
+  {
+   "id": "clique-0022",
+   "arquivo": "amostras/clique/clique-0022.mp3",
+   "categoria": "clique",
+   "subtipo": "seleção de menu",
+   "duracao_s": 0.52,
+   "loudness_lufs": -21.1,
+   "pico_dbfs": -3.3,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "menu",
+    "seleção",
+    "botão",
+    "clique"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Menu Button Select 2.mp3"
+  },
+  {
+   "id": "clique-0023",
+   "arquivo": "amostras/clique/clique-0023.mp3",
+   "categoria": "clique",
+   "subtipo": "clássico",
+   "duracao_s": 0.15,
+   "loudness_lufs": -25.1,
+   "pico_dbfs": -1.1,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "clique",
+    "clássico",
+    "interface",
+    "jogo"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "UI_CLASSIC_Click_10.wav"
+  },
+  {
+   "id": "clique-0024",
+   "arquivo": "amostras/clique/clique-0024.mp3",
+   "categoria": "clique",
+   "subtipo": "console",
+   "duracao_s": 0.21,
+   "loudness_lufs": -22.7,
+   "pico_dbfs": -1.9,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "clique",
+    "console",
+    "enter",
+    "confirmar"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "UI_CLICK_Console_Enter_01.wav"
+  },
+  {
+   "id": "clique-0025",
+   "arquivo": "amostras/clique/clique-0025.mp3",
+   "categoria": "clique",
+   "subtipo": "botão grande",
+   "duracao_s": 0.38,
+   "loudness_lufs": -26.4,
+   "pico_dbfs": -1.8,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-botao-grave",
+    "botao-grave",
+    "botão",
+    "grave",
+    "grande",
+    "confirmação"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "padrao",
+    "fatos",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "botao-grave.wav",
+   "pacote": "fluido",
+   "nome_fluido": "botao-grave"
+  },
+  {
+   "id": "clique-0026",
+   "arquivo": "amostras/clique/clique-0026.mp3",
+   "categoria": "clique",
+   "subtipo": "botão apertado",
+   "duracao_s": 0.31,
+   "loudness_lufs": -26.7,
+   "pico_dbfs": -1.9,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-botao",
+    "botao",
+    "botão",
+    "apertar",
+    "interface",
+    "caixa"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "padrao",
+    "fatos",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "botao.wav",
+   "pacote": "fluido",
+   "nome_fluido": "botao"
+  },
+  {
+   "id": "clique-0027",
+   "arquivo": "amostras/clique/clique-0027.mp3",
+   "categoria": "clique",
+   "subtipo": "clique discreto",
+   "duracao_s": 0.1,
+   "loudness_lufs": -28,
+   "pico_dbfs": -2.1,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-clique-suave",
+    "clique-suave",
+    "clique",
+    "discreto",
+    "suave",
+    "repetido"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "padrao",
+    "fatos",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "clique-suave.wav",
+   "pacote": "fluido",
+   "nome_fluido": "clique-suave"
+  },
+  {
+   "id": "clique-0028",
+   "arquivo": "amostras/clique/clique-0028.mp3",
+   "categoria": "clique",
+   "subtipo": "clique de cursor",
+   "duracao_s": 0.09,
+   "loudness_lufs": -27.8,
+   "pico_dbfs": -2.2,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-clique",
+    "clique",
+    "cursor",
+    "mouse",
+    "interface"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "padrao",
+    "fatos",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "clique.wav",
+   "pacote": "fluido",
+   "nome_fluido": "clique"
+  },
+  {
+   "id": "clique-0029",
+   "arquivo": "amostras/clique/clique-0029.mp3",
+   "categoria": "clique",
+   "subtipo": "uma tecla",
+   "duracao_s": 0.14,
+   "loudness_lufs": -25.4,
+   "pico_dbfs": -2.7,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-tecla",
+    "tecla",
+    "teclado",
+    "letra",
+    "digitação"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "padrao",
+    "fatos",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "tecla.wav",
+   "pacote": "fluido",
+   "nome_fluido": "tecla"
+  },
+  {
+   "id": "entrada-0001",
+   "arquivo": "amostras/entrada/entrada-0001.mp3",
+   "categoria": "entrada",
+   "subtipo": "botão lento",
+   "duracao_s": 0.47,
+   "loudness_lufs": -21.3,
+   "pico_dbfs": -1.5,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "botão",
+    "lento",
+    "aparecer",
+    "interface",
+    "suave"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "padrao",
+    "cartoes"
+   ],
+   "origem": "Slow Button 1.mp3"
+  },
+  {
+   "id": "entrada-0002",
+   "arquivo": "amostras/entrada/entrada-0002.mp3",
+   "categoria": "entrada",
+   "subtipo": "menu abrindo",
+   "duracao_s": 1.09,
+   "loudness_lufs": -21,
+   "pico_dbfs": -8.4,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "menu",
+    "abrir",
+    "interface",
+    "jogo"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "padrao",
+    "cartoes"
+   ],
+   "origem": "Menu Opened.wav"
+  },
+  {
+   "id": "entrada-0003",
+   "arquivo": "amostras/entrada/entrada-0003.mp3",
+   "categoria": "entrada",
+   "subtipo": "dispositivo ligando",
+   "duracao_s": 3.23,
+   "loudness_lufs": -21,
+   "pico_dbfs": -7.4,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "dispositivo",
+    "ligando",
+    "ficção",
+    "científica",
+    "máquina"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "padrao",
+    "cartoes"
+   ],
+   "origem": "Sci-fi Device .wav"
+  },
+  {
+   "id": "entrada-0004",
+   "arquivo": "amostras/entrada/entrada-0004.mp3",
+   "categoria": "entrada",
+   "subtipo": "entrada de menu",
+   "duracao_s": 1.2,
+   "loudness_lufs": -21.1,
+   "pico_dbfs": -3.2,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "menu",
+    "entrada",
+    "abrir",
+    "interface"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "padrao",
+    "cartoes"
+   ],
+   "origem": "Enter Menu 1.mp3"
+  },
+  {
+   "id": "entrada-0005",
+   "arquivo": "amostras/entrada/entrada-0005.mp3",
+   "categoria": "entrada",
+   "subtipo": "entrada de menu",
+   "duracao_s": 1.23,
+   "loudness_lufs": -21,
+   "pico_dbfs": -6.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "menu",
+    "entrada",
+    "abrir",
+    "interface"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "padrao",
+    "cartoes"
+   ],
+   "origem": "Enter Menu 2.mp3"
+  },
+  {
+   "id": "entrada-0006",
+   "arquivo": "amostras/entrada/entrada-0006.mp3",
+   "categoria": "entrada",
+   "subtipo": "janela abrindo",
+   "duracao_s": 0.22,
+   "loudness_lufs": -21,
+   "pico_dbfs": -6,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "janela",
+    "abrir",
+    "futurista",
+    "pop-up"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "padrao",
+    "cartoes"
+   ],
+   "origem": "Futuristic Pop Up 01 Open.mp3"
+  },
+  {
+   "id": "entrada-0007",
+   "arquivo": "amostras/entrada/entrada-0007.mp3",
+   "categoria": "entrada",
+   "subtipo": "teletransporte",
+   "duracao_s": 2.34,
+   "loudness_lufs": -21.3,
+   "pico_dbfs": -1.7,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "teletransporte",
+    "eletrônico",
+    "ding",
+    "aparecer"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "padrao",
+    "cartoes"
+   ],
+   "origem": "06737 electronic teleport ding.wav"
+  },
+  {
+   "id": "entrada-0008",
+   "arquivo": "amostras/entrada/entrada-0008.mp3",
+   "categoria": "entrada",
+   "subtipo": "vinheta tech",
+   "duracao_s": 3.37,
+   "loudness_lufs": -21,
+   "pico_dbfs": -9.4,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "tecnologia",
+    "vinheta",
+    "convite",
+    "abertura"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "padrao",
+    "cartoes"
+   ],
+   "origem": "17360 tech on invite stinger-full.mp3"
+  },
+  {
+   "id": "entrada-0009",
+   "arquivo": "amostras/entrada/entrada-0009.mp3",
+   "categoria": "entrada",
+   "subtipo": "abrir doce",
+   "duracao_s": 0.09,
+   "loudness_lufs": -21.8,
+   "pico_dbfs": -1.9,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "abrir",
+    "doce",
+    "interface",
+    "suave"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "padrao",
+    "cartoes"
+   ],
+   "origem": "Sweet UI Open.wav"
+  },
+  {
+   "id": "entrada-0010",
+   "arquivo": "amostras/entrada/entrada-0010.mp3",
+   "categoria": "entrada",
+   "subtipo": "painel grande de vidro",
+   "duracao_s": 0.5,
+   "loudness_lufs": -21,
+   "pico_dbfs": -3.5,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-vidro-grave",
+    "vidro-grave",
+    "vidro",
+    "grave",
+    "cristal",
+    "painel"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "minimalista",
+    "cartoes",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "vidro-grave.wav",
+   "pacote": "fluido",
+   "nome_fluido": "vidro-grave"
+  },
+  {
+   "id": "entrada-0011",
+   "arquivo": "amostras/entrada/entrada-0011.mp3",
+   "categoria": "entrada",
+   "subtipo": "card de vidro pousando",
+   "duracao_s": 0.5,
+   "loudness_lufs": -21,
+   "pico_dbfs": -4.4,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-vidro",
+    "vidro",
+    "cristal",
+    "card",
+    "pousar",
+    "painel"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "minimalista",
+    "cartoes",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "vidro.wav",
+   "pacote": "fluido",
+   "nome_fluido": "vidro"
+  },
+  {
+   "id": "erro-0001",
+   "arquivo": "amostras/erro/erro-0001.mp3",
+   "categoria": "erro",
+   "subtipo": "aviso de erro",
+   "duracao_s": 1.43,
+   "loudness_lufs": -20.9,
+   "pico_dbfs": -4.6,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "erro",
+    "aviso",
+    "dispositivo",
+    "falha"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "interface",
+    "fatos",
+    "preto-branco"
+   ],
+   "origem": "Device Error Notification.wav"
+  },
+  {
+   "id": "erro-0002",
+   "arquivo": "amostras/erro/erro-0002.mp3",
+   "categoria": "erro",
+   "subtipo": "botão de erro",
+   "duracao_s": 0.34,
+   "loudness_lufs": -21.1,
+   "pico_dbfs": -4.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "erro",
+    "botão",
+    "negado",
+    "interface"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "interface",
+    "fatos",
+    "preto-branco"
+   ],
+   "origem": "Error Button 1.mp3"
+  },
+  {
+   "id": "erro-0003",
+   "arquivo": "amostras/erro/erro-0003.mp3",
+   "categoria": "erro",
+   "subtipo": "botão de erro",
+   "duracao_s": 0.35,
+   "loudness_lufs": -21,
+   "pico_dbfs": -5.2,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "erro",
+    "botão",
+    "negado",
+    "interface"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "interface",
+    "fatos",
+    "preto-branco"
+   ],
+   "origem": "Error Button 3.mp3"
+  },
+  {
+   "id": "erro-0004",
+   "arquivo": "amostras/erro/erro-0004.mp3",
+   "categoria": "erro",
+   "subtipo": "botão de erro",
+   "duracao_s": 0.33,
+   "loudness_lufs": -21,
+   "pico_dbfs": -6.2,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "erro",
+    "botão",
+    "negado",
+    "interface"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "interface",
+    "fatos",
+    "preto-branco"
+   ],
+   "origem": "Error Button 4.mp3"
+  },
+  {
+   "id": "erro-0005",
+   "arquivo": "amostras/erro/erro-0005.mp3",
+   "categoria": "erro",
+   "subtipo": "engano",
+   "duracao_s": 0.34,
+   "loudness_lufs": -21,
+   "pico_dbfs": -8.1,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "erro",
+    "engano",
+    "errado",
+    "falha"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "interface",
+    "fatos",
+    "preto-branco"
+   ],
+   "origem": "Mistake.wav"
+  },
+  {
+   "id": "erro-0006",
+   "arquivo": "amostras/erro/erro-0006.mp3",
+   "categoria": "erro",
+   "subtipo": "falha suave",
+   "duracao_s": 1.42,
+   "loudness_lufs": -21,
+   "pico_dbfs": -9.5,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "falha",
+    "suave",
+    "erro",
+    "derrota"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "interface",
+    "fatos",
+    "preto-branco"
+   ],
+   "origem": "Soft Fail.mp3"
+  },
+  {
+   "id": "glitch-0001",
+   "arquivo": "amostras/glitch/glitch-0001.mp3",
+   "categoria": "glitch",
+   "subtipo": "falha digital",
+   "duracao_s": 0.33,
+   "loudness_lufs": -21,
+   "pico_dbfs": -7.3,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "glitch",
+    "falha",
+    "digital",
+    "interferência"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "tubo",
+    "preto-branco",
+    "mindset"
+   ],
+   "origem": "Glitch Asset 01.mp3"
+  },
+  {
+   "id": "glitch-0002",
+   "arquivo": "amostras/glitch/glitch-0002.mp3",
+   "categoria": "glitch",
+   "subtipo": "falha digital",
+   "duracao_s": 0.3,
+   "loudness_lufs": -20.9,
+   "pico_dbfs": -3.6,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "glitch",
+    "falha",
+    "digital",
+    "interferência"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "tubo",
+    "preto-branco",
+    "mindset"
+   ],
+   "origem": "Glitch Asset 03.mp3"
+  },
+  {
+   "id": "glitch-0003",
+   "arquivo": "amostras/glitch/glitch-0003.mp3",
+   "categoria": "glitch",
+   "subtipo": "falha digital",
+   "duracao_s": 0.35,
+   "loudness_lufs": -21,
+   "pico_dbfs": -5.2,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "glitch",
+    "falha",
+    "digital",
+    "interferência"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "tubo",
+    "preto-branco",
+    "mindset"
+   ],
+   "origem": "Glitch Asset 05.mp3"
+  },
+  {
+   "id": "glitch-0004",
+   "arquivo": "amostras/glitch/glitch-0004.mp3",
+   "categoria": "glitch",
+   "subtipo": "bits",
+   "duracao_s": 0.94,
+   "loudness_lufs": -21,
+   "pico_dbfs": -3.8,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "glitch",
+    "bits",
+    "dados",
+    "digitais",
+    "picotado"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "tubo",
+    "preto-branco",
+    "mindset"
+   ],
+   "origem": "Glitch Bits.wav"
+  },
+  {
+   "id": "glitch-0005",
+   "arquivo": "amostras/glitch/glitch-0005.mp3",
+   "categoria": "glitch",
+   "subtipo": "item",
+   "duracao_s": 1.05,
+   "loudness_lufs": -28.4,
+   "pico_dbfs": -1.7,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "glitch",
+    "item",
+    "falha",
+    "curta"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "tubo",
+    "preto-branco",
+    "mindset"
+   ],
+   "origem": "Glitch Item 01.mp3"
+  },
+  {
+   "id": "glitch-0006",
+   "arquivo": "amostras/glitch/glitch-0006.mp3",
+   "categoria": "glitch",
+   "subtipo": "item",
+   "duracao_s": 0.26,
+   "loudness_lufs": -24.5,
+   "pico_dbfs": -1.8,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "glitch",
+    "item",
+    "falha",
+    "curta"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "tubo",
+    "preto-branco",
+    "mindset"
+   ],
+   "origem": "Glitch Item 04.wav"
+  },
+  {
+   "id": "glitch-0007",
+   "arquivo": "amostras/glitch/glitch-0007.mp3",
+   "categoria": "glitch",
+   "subtipo": "item",
+   "duracao_s": 1.27,
+   "loudness_lufs": -20.9,
+   "pico_dbfs": -6.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "glitch",
+    "item",
+    "falha",
+    "longa"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "tubo",
+    "preto-branco",
+    "mindset"
+   ],
+   "origem": "Glitch Item 05.wav"
+  },
+  {
+   "id": "glitch-0008",
+   "arquivo": "amostras/glitch/glitch-0008.mp3",
+   "categoria": "glitch",
+   "subtipo": "estática",
+   "duracao_s": 0.89,
+   "loudness_lufs": -21.2,
+   "pico_dbfs": -2.4,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "glitch",
+    "estática",
+    "chiado",
+    "interferência"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "tubo",
+    "preto-branco",
+    "mindset"
+   ],
+   "origem": "Glitch Static 2.wav"
+  },
+  {
+   "id": "glitch-0009",
+   "arquivo": "amostras/glitch/glitch-0009.mp3",
+   "categoria": "glitch",
+   "subtipo": "mecanismo",
+   "duracao_s": 0.9,
+   "loudness_lufs": -21,
+   "pico_dbfs": -8.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "glitch",
+    "mecanismo",
+    "máquina",
+    "falha"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "tubo",
+    "preto-branco",
+    "mindset"
+   ],
+   "origem": "Glitchy Mechanism 01.mp3"
+  },
+  {
+   "id": "glitch-0010",
+   "arquivo": "amostras/glitch/glitch-0010.mp3",
+   "categoria": "glitch",
+   "subtipo": "mecanismo",
+   "duracao_s": 0.89,
+   "loudness_lufs": -21,
+   "pico_dbfs": -2.1,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "glitch",
+    "mecanismo",
+    "máquina",
+    "falha"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "tubo",
+    "preto-branco",
+    "mindset"
+   ],
+   "origem": "Glitchy Mechanism 03.mp3"
+  },
+  {
+   "id": "glitch-0011",
+   "arquivo": "amostras/glitch/glitch-0011.mp3",
+   "categoria": "glitch",
+   "subtipo": "mecanismo",
+   "duracao_s": 0.52,
+   "loudness_lufs": -21,
+   "pico_dbfs": -7.6,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "glitch",
+    "mecanismo",
+    "máquina",
+    "falha"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "tubo",
+    "preto-branco",
+    "mindset"
+   ],
+   "origem": "Glitchy Mechanism 05.mp3"
+  },
+  {
+   "id": "glitch-0012",
+   "arquivo": "amostras/glitch/glitch-0012.mp3",
+   "categoria": "glitch",
+   "subtipo": "estática",
+   "duracao_s": 1.61,
+   "loudness_lufs": -20.6,
+   "pico_dbfs": -5.6,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-chiado",
+    "chiado",
+    "estática",
+    "ruído",
+    "tv",
+    "sinal"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "moderno",
+    "padrao",
+    "fatos",
+    "mindset",
+    "interface",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "chiado.wav",
+   "pacote": "fluido",
+   "nome_fluido": "chiado"
+  },
+  {
+   "id": "glitch-0013",
+   "arquivo": "amostras/glitch/glitch-0013.mp3",
+   "categoria": "glitch",
+   "subtipo": "falha digital",
+   "duracao_s": 0.46,
+   "loudness_lufs": -21.1,
+   "pico_dbfs": -7.8,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-glitch",
+    "glitch",
+    "erro",
+    "falha",
+    "digital",
+    "antes"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "moderno",
+    "padrao",
+    "fatos",
+    "mindset",
+    "interface",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "glitch.wav",
+   "pacote": "fluido",
+   "nome_fluido": "glitch"
+  },
+  {
+   "id": "impacto-0001",
+   "arquivo": "amostras/impacto/impacto-0001.mp3",
+   "categoria": "impacto",
+   "subtipo": "golpe com whoosh",
+   "duracao_s": 0.56,
+   "loudness_lufs": -17.2,
+   "pico_dbfs": -2.2,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "golpe",
+    "pancada",
+    "ação",
+    "soco"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "quadro-antigo",
+    "teologia"
+   ],
+   "origem": "Action Hit Woosh.wav"
+  },
+  {
+   "id": "impacto-0002",
+   "arquivo": "amostras/impacto/impacto-0002.mp3",
+   "categoria": "impacto",
+   "subtipo": "cinematográfico",
+   "duracao_s": 4.09,
+   "loudness_lufs": -17,
+   "pico_dbfs": -2.7,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "impacto",
+    "cinematográfico",
+    "pancada",
+    "dramático"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "quadro-antigo",
+    "teologia"
+   ],
+   "origem": "CINEMATIC_IMPACT_Impact_Hit_03.wav"
+  },
+  {
+   "id": "impacto-0003",
+   "arquivo": "amostras/impacto/impacto-0003.mp3",
+   "categoria": "impacto",
+   "subtipo": "cinematográfico",
+   "duracao_s": 5.39,
+   "loudness_lufs": -17,
+   "pico_dbfs": -2.8,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "impacto",
+    "cinematográfico",
+    "dramático",
+    "trailer"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "quadro-antigo",
+    "teologia"
+   ],
+   "origem": "Cinematic Impact (2).mp3"
+  },
+  {
+   "id": "impacto-0004",
+   "arquivo": "amostras/impacto/impacto-0004.mp3",
+   "categoria": "impacto",
+   "subtipo": "swish com impacto",
+   "duracao_s": 3.92,
+   "loudness_lufs": -16.8,
+   "pico_dbfs": -4.2,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "impacto",
+    "swish",
+    "cinematográfico",
+    "transição"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "quadro-antigo",
+    "teologia"
+   ],
+   "origem": "Cinematic Swish Impact 1.mp3"
+  },
+  {
+   "id": "impacto-0005",
+   "arquivo": "amostras/impacto/impacto-0005.mp3",
+   "categoria": "impacto",
+   "subtipo": "swish com impacto",
+   "duracao_s": 3.35,
+   "loudness_lufs": -16.9,
+   "pico_dbfs": -4.8,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "impacto",
+    "swish",
+    "cinematográfico",
+    "transição"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "quadro-antigo",
+    "teologia"
+   ],
+   "origem": "Cinematic Swish Impact 3.mp3"
+  },
+  {
+   "id": "impacto-0006",
+   "arquivo": "amostras/impacto/impacto-0006.mp3",
+   "categoria": "impacto",
+   "subtipo": "épico",
+   "duracao_s": 5.05,
+   "loudness_lufs": -17,
+   "pico_dbfs": -8.5,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "impacto",
+    "épico",
+    "trailer",
+    "grandioso"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "quadro-antigo",
+    "teologia"
+   ],
+   "origem": "Epic Cinematic Impact 03.wav"
+  },
+  {
+   "id": "impacto-0007",
+   "arquivo": "amostras/impacto/impacto-0007.mp3",
+   "categoria": "impacto",
+   "subtipo": "épico com subida",
+   "duracao_s": 6.01,
+   "loudness_lufs": -16.9,
+   "pico_dbfs": -6.2,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "impacto",
+    "épico",
+    "subida",
+    "trailer"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "quadro-antigo",
+    "teologia"
+   ],
+   "origem": "Epic Impact.mp3"
+  },
+  {
+   "id": "impacto-0008",
+   "arquivo": "amostras/impacto/impacto-0008.mp3",
+   "categoria": "impacto",
+   "subtipo": "épico mágico",
+   "duracao_s": 6.18,
+   "loudness_lufs": -17,
+   "pico_dbfs": -7.4,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "impacto",
+    "épico",
+    "mágico",
+    "fantasia"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "quadro-antigo",
+    "teologia"
+   ],
+   "origem": "Epic Magic Impact.wav"
+  },
+  {
+   "id": "impacto-0009",
+   "arquivo": "amostras/impacto/impacto-0009.mp3",
+   "categoria": "impacto",
+   "subtipo": "explosão",
+   "duracao_s": 1.34,
+   "loudness_lufs": -17,
+   "pico_dbfs": -1.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "explosão",
+    "estrondo",
+    "bomba"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "quadro-antigo",
+    "teologia"
+   ],
+   "origem": "Explosion Sound.wav"
+  },
+  {
+   "id": "impacto-0010",
+   "arquivo": "amostras/impacto/impacto-0010.mp3",
+   "categoria": "impacto",
+   "subtipo": "logo épico",
+   "duracao_s": 6.09,
+   "loudness_lufs": -17,
+   "pico_dbfs": -7.1,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "logo",
+    "épico",
+    "abertura",
+    "vinheta",
+    "impacto"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "quadro-antigo",
+    "teologia"
+   ],
+   "origem": "Hybrid Epic Logo.mp3"
+  },
+  {
+   "id": "impacto-0011",
+   "arquivo": "amostras/impacto/impacto-0011.mp3",
+   "categoria": "impacto",
+   "subtipo": "swish com impacto",
+   "duracao_s": 4,
+   "loudness_lufs": -17.3,
+   "pico_dbfs": -1.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "swish",
+    "impacto",
+    "passagem",
+    "pancada"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "quadro-antigo",
+    "teologia"
+   ],
+   "origem": "Swish IMPACT.wav"
+  },
+  {
+   "id": "impacto-0012",
+   "arquivo": "amostras/impacto/impacto-0012.mp3",
+   "categoria": "impacto",
+   "subtipo": "grande momento",
+   "duracao_s": 4.09,
+   "loudness_lufs": -17.4,
+   "pico_dbfs": -1.8,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "grande",
+    "momento",
+    "revelação",
+    "impacto",
+    "suave"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "quadro-antigo",
+    "teologia"
+   ],
+   "origem": "big-moment.mp3"
+  },
+  {
+   "id": "impacto-0013",
+   "arquivo": "amostras/impacto/impacto-0013.mp3",
+   "categoria": "impacto",
+   "subtipo": "explosão grave",
+   "duracao_s": 4.15,
+   "loudness_lufs": -17,
+   "pico_dbfs": -4.7,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "explosão",
+    "grave",
+    "estrondo",
+    "bomba"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "quadro-antigo",
+    "teologia"
+   ],
+   "origem": "Explosion Boom 2.mp3"
+  },
+  {
+   "id": "impacto-0014",
+   "arquivo": "amostras/impacto/impacto-0014.mp3",
+   "categoria": "impacto",
+   "subtipo": "explosão grave",
+   "duracao_s": 4.62,
+   "loudness_lufs": -17,
+   "pico_dbfs": -6.1,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "explosão",
+    "grave",
+    "estrondo",
+    "bomba"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "quadro-antigo",
+    "teologia"
+   ],
+   "origem": "Explosion Boom 6.mp3"
+  },
+  {
+   "id": "impacto-0015",
+   "arquivo": "amostras/impacto/impacto-0015.mp3",
+   "categoria": "impacto",
+   "subtipo": "blast sci-fi",
+   "duracao_s": 4.16,
+   "loudness_lufs": -17.6,
+   "pico_dbfs": -1,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "blast",
+    "sci-fi",
+    "explosão",
+    "painel"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "quadro-antigo",
+    "teologia"
+   ],
+   "origem": "Smart_UI_Notification_Cinematic_Misc_Various_15_Alert_Menu_HUD_System_Big_Blast_Strike_Explosion.wav"
+  },
+  {
+   "id": "impacto-0016",
+   "arquivo": "amostras/impacto/impacto-0016.mp3",
+   "categoria": "impacto",
+   "subtipo": "rufar com golpe",
+   "duracao_s": 5.06,
+   "loudness_lufs": -17,
+   "pico_dbfs": -5.1,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "rufar",
+    "golpe",
+    "cinematográfico",
+    "percussão"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "quadro-antigo",
+    "teologia"
+   ],
+   "origem": "Cinematic Hit Roll - OhmLab.mp3"
+  },
+  {
+   "id": "impacto-0017",
+   "arquivo": "amostras/impacto/impacto-0017.mp3",
+   "categoria": "impacto",
+   "subtipo": "whoosh com impacto",
+   "duracao_s": 5.55,
+   "loudness_lufs": -17,
+   "pico_dbfs": -3,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "whoosh",
+    "impacto",
+    "cinematográfico",
+    "grande"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "quadro-antigo",
+    "teologia"
+   ],
+   "origem": "Cinematic Big Whoosh Impact Effect.mp3"
+  },
+  {
+   "id": "impacto-0018",
+   "arquivo": "amostras/impacto/impacto-0018.mp3",
+   "categoria": "impacto",
+   "subtipo": "número grande batendo",
+   "duracao_s": 0.43,
+   "loudness_lufs": -17,
+   "pico_dbfs": -8,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "fluido-baque-grave",
+    "baque-grave",
+    "baque",
+    "grave",
+    "pesado",
+    "número"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "moderno",
+    "preto-branco",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "baque-grave.wav",
+   "pacote": "fluido",
+   "nome_fluido": "baque-grave"
+  },
+  {
+   "id": "impacto-0019",
+   "arquivo": "amostras/impacto/impacto-0019.mp3",
+   "categoria": "impacto",
+   "subtipo": "carimbo",
+   "duracao_s": 0.08,
+   "loudness_lufs": -17.3,
+   "pico_dbfs": -2,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "fluido-baque",
+    "baque",
+    "soco",
+    "carimbo",
+    "número",
+    "batendo"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "moderno",
+    "preto-branco",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "baque.wav",
+   "pacote": "fluido",
+   "nome_fluido": "baque"
+  },
+  {
+   "id": "impacto-0020",
+   "arquivo": "amostras/impacto/impacto-0020.mp3",
+   "categoria": "impacto",
+   "subtipo": "virada do vídeo",
+   "duracao_s": 1.11,
+   "loudness_lufs": -17,
+   "pico_dbfs": -5.1,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "fluido-boom",
+    "boom",
+    "virada",
+    "grave",
+    "pesado",
+    "impacto"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "moderno",
+    "preto-branco",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "boom.wav",
+   "pacote": "fluido",
+   "nome_fluido": "boom"
+  },
+  {
+   "id": "impacto-0021",
+   "arquivo": "amostras/impacto/impacto-0021.mp3",
+   "categoria": "impacto",
+   "subtipo": "revelação principal",
+   "duracao_s": 1.41,
+   "loudness_lufs": -17.1,
+   "pico_dbfs": -1.5,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "fluido-impacto-cinema",
+    "impacto-cinema",
+    "impacto",
+    "cinematográfico",
+    "revelação",
+    "épico"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "moderno",
+    "preto-branco",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "impacto-cinema.wav",
+   "pacote": "fluido",
+   "nome_fluido": "impacto-cinema"
+  },
+  {
+   "id": "impacto-0022",
+   "arquivo": "amostras/impacto/impacto-0022.mp3",
+   "categoria": "impacto",
+   "subtipo": "virada seca",
+   "duracao_s": 1.09,
+   "loudness_lufs": -17,
+   "pico_dbfs": -3.1,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "fluido-impacto",
+    "impacto",
+    "virada",
+    "seca",
+    "batida"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "moderno",
+    "preto-branco",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "impacto.wav",
+   "pacote": "fluido",
+   "nome_fluido": "impacto"
+  },
+  {
+   "id": "objeto-0001",
+   "arquivo": "amostras/objeto/objeto-0001.mp3",
+   "categoria": "objeto",
+   "subtipo": "câmera analógica",
+   "duracao_s": 2.88,
+   "loudness_lufs": -29,
+   "pico_dbfs": -1.6,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "câmera",
+    "analógica",
+    "obturador",
+    "foto",
+    "retrô"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "CameraRollei35mmRangefinderCamera_eIUW3_02.wav"
+  },
+  {
+   "id": "objeto-0002",
+   "arquivo": "amostras/objeto/objeto-0002.mp3",
+   "categoria": "objeto",
+   "subtipo": "câmera e flash",
+   "duracao_s": 3.48,
+   "loudness_lufs": -21.4,
+   "pico_dbfs": -1.6,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "câmera",
+    "foto",
+    "flash",
+    "fotógrafo"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "CÂMERA FLASH.mp3"
+  },
+  {
+   "id": "objeto-0003",
+   "arquivo": "amostras/objeto/objeto-0003.mp3",
+   "categoria": "objeto",
+   "subtipo": "rangido de porta",
+   "duracao_s": 1.57,
+   "loudness_lufs": -21,
+   "pico_dbfs": -7.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "porta",
+    "rangido",
+    "madeira",
+    "velha",
+    "suspense"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "DoorOcSqueaksVario SS022804.wav"
+  },
+  {
+   "id": "objeto-0004",
+   "arquivo": "amostras/objeto/objeto-0004.mp3",
+   "categoria": "objeto",
+   "subtipo": "chave de fenda",
+   "duracao_s": 3,
+   "loudness_lufs": -22.7,
+   "pico_dbfs": -1.4,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "chave",
+    "de",
+    "fenda",
+    "ferramenta",
+    "metal",
+    "oficina"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "Mountain Audio - Clicking Screwdriver.mp3"
+  },
+  {
+   "id": "objeto-0005",
+   "arquivo": "amostras/objeto/objeto-0005.mp3",
+   "categoria": "objeto",
+   "subtipo": "interruptor",
+   "duracao_s": 0.8,
+   "loudness_lufs": -28.4,
+   "pico_dbfs": -1.6,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "interruptor",
+    "botão",
+    "eletrônico",
+    "liga",
+    "desliga"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "Switches1 SS017801.wav"
+  },
+  {
+   "id": "objeto-0006",
+   "arquivo": "amostras/objeto/objeto-0006.mp3",
+   "categoria": "objeto",
+   "subtipo": "digitação",
+   "duracao_s": 3.92,
+   "loudness_lufs": -25.1,
+   "pico_dbfs": -1.2,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "teclado",
+    "digitação",
+    "computador",
+    "escritório"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "teclado 03.mp3"
+  },
+  {
+   "id": "objeto-0007",
+   "arquivo": "amostras/objeto/objeto-0007.mp3",
+   "categoria": "objeto",
+   "subtipo": "digitação",
+   "duracao_s": 4.52,
+   "loudness_lufs": -23.6,
+   "pico_dbfs": -1.4,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "teclado",
+    "digitação",
+    "computador",
+    "escritório"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "teclado 04.mp3"
+  },
+  {
+   "id": "objeto-0008",
+   "arquivo": "amostras/objeto/objeto-0008.mp3",
+   "categoria": "objeto",
+   "subtipo": "digitação",
+   "duracao_s": 3.99,
+   "loudness_lufs": -28.3,
+   "pico_dbfs": -1.7,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "teclado",
+    "digitação",
+    "computador",
+    "escritório"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "teclado 06.mp3"
+  },
+  {
+   "id": "objeto-0009",
+   "arquivo": "amostras/objeto/objeto-0009.mp3",
+   "categoria": "objeto",
+   "subtipo": "digitação",
+   "duracao_s": 3.65,
+   "loudness_lufs": -25,
+   "pico_dbfs": -1.9,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "teclado",
+    "digitação",
+    "computador",
+    "rápido"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "teclado 09.mp3"
+  },
+  {
+   "id": "objeto-0010",
+   "arquivo": "amostras/objeto/objeto-0010.mp3",
+   "categoria": "objeto",
+   "subtipo": "digitação",
+   "duracao_s": 4.65,
+   "loudness_lufs": -25.1,
+   "pico_dbfs": -1.1,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "teclado",
+    "digitação",
+    "computador",
+    "rápido"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "teclado 10.mp3"
+  },
+  {
+   "id": "objeto-0011",
+   "arquivo": "amostras/objeto/objeto-0011.mp3",
+   "categoria": "objeto",
+   "subtipo": "digitação",
+   "duracao_s": 4.25,
+   "loudness_lufs": -25.2,
+   "pico_dbfs": -1.9,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "teclado",
+    "digitação",
+    "computador",
+    "escritório"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "teclado 11.mp3"
+  },
+  {
+   "id": "objeto-0012",
+   "arquivo": "amostras/objeto/objeto-0012.mp3",
+   "categoria": "objeto",
+   "subtipo": "tampa de panela",
+   "duracao_s": 0.69,
+   "loudness_lufs": -21,
+   "pico_dbfs": -5,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "tampa",
+    "panela",
+    "metal",
+    "cozinha"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "14446 opening metal pot cover-full.mp3"
+  },
+  {
+   "id": "objeto-0013",
+   "arquivo": "amostras/objeto/objeto-0013.mp3",
+   "categoria": "objeto",
+   "subtipo": "caixa dando troco",
+   "duracao_s": 3.8,
+   "loudness_lufs": -21.9,
+   "pico_dbfs": -2,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "caixa",
+    "troco",
+    "moedas",
+    "dinheiro",
+    "loja"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "24032 cashier giving a change-full.mp3"
+  },
+  {
+   "id": "objeto-0014",
+   "arquivo": "amostras/objeto/objeto-0014.mp3",
+   "categoria": "objeto",
+   "subtipo": "sino de luta",
+   "duracao_s": 4.98,
+   "loudness_lufs": -21,
+   "pico_dbfs": -3.1,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "sino",
+    "luta",
+    "boxe",
+    "início"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "BellFight 6010_25.wav"
+  },
+  {
+   "id": "objeto-0015",
+   "arquivo": "amostras/objeto/objeto-0015.mp3",
+   "categoria": "objeto",
+   "subtipo": "galo",
+   "duracao_s": 2.06,
+   "loudness_lufs": -20.9,
+   "pico_dbfs": -10.7,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "galo",
+    "canto",
+    "manhã",
+    "fazenda"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "BirdRooster JBA03_50_2.wav"
+  },
+  {
+   "id": "objeto-0016",
+   "arquivo": "amostras/objeto/objeto-0016.mp3",
+   "categoria": "objeto",
+   "subtipo": "carro passando",
+   "duracao_s": 6.01,
+   "loudness_lufs": -20.9,
+   "pico_dbfs": -5.6,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "carro",
+    "passando",
+    "rua",
+    "velocidade"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "Car Pass.wav"
+  },
+  {
+   "id": "objeto-0017",
+   "arquivo": "amostras/objeto/objeto-0017.mp3",
+   "categoria": "objeto",
+   "subtipo": "caixa registradora",
+   "duracao_s": 1.57,
+   "loudness_lufs": -20.7,
+   "pico_dbfs": -4,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "caixa",
+    "registradora",
+    "dinheiro",
+    "venda",
+    "loja"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "Cash Register.wav"
+  },
+  {
+   "id": "objeto-0018",
+   "arquivo": "amostras/objeto/objeto-0018.mp3",
+   "categoria": "objeto",
+   "subtipo": "porta",
+   "duracao_s": 0.59,
+   "loudness_lufs": -21,
+   "pico_dbfs": -3.2,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "porta",
+    "batida",
+    "madeira",
+    "casa"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "Door.mp3"
+  },
+  {
+   "id": "objeto-0019",
+   "arquivo": "amostras/objeto/objeto-0019.mp3",
+   "categoria": "objeto",
+   "subtipo": "vidro quebrando",
+   "duracao_s": 0.96,
+   "loudness_lufs": -21,
+   "pico_dbfs": -2.2,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "vidro",
+    "quebrando",
+    "cacos",
+    "estilhaços"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "Glass_Brick_Break_Up_Pieces_Delicate_Shards_OCP-1148-172.wav"
+  },
+  {
+   "id": "objeto-0020",
+   "arquivo": "amostras/objeto/objeto-0020.mp3",
+   "categoria": "objeto",
+   "subtipo": "batimento cardíaco",
+   "duracao_s": 1.29,
+   "loudness_lufs": -21,
+   "pico_dbfs": -1.9,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "batimento",
+    "coração",
+    "suspense",
+    "tensão"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "Heartbeat.mp3"
+  },
+  {
+   "id": "objeto-0021",
+   "arquivo": "amostras/objeto/objeto-0021.mp3",
+   "categoria": "objeto",
+   "subtipo": "marca-texto",
+   "duracao_s": 5.01,
+   "loudness_lufs": -20.8,
+   "pico_dbfs": -2.2,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "marca-texto",
+    "caneta",
+    "papel",
+    "escrever"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "Highlighter_on_Paper_Marker_Writing_on_Pad_OCP-1626-90.wav"
+  },
+  {
+   "id": "objeto-0022",
+   "arquivo": "amostras/objeto/objeto-0022.mp3",
+   "categoria": "objeto",
+   "subtipo": "buzina de moto",
+   "duracao_s": 0.35,
+   "loudness_lufs": -21.1,
+   "pico_dbfs": -9.4,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "buzina",
+    "moto",
+    "trânsito",
+    "aviso"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "MotorcycleHorn_BW.52896.wav"
+  },
+  {
+   "id": "objeto-0023",
+   "arquivo": "amostras/objeto/objeto-0023.mp3",
+   "categoria": "objeto",
+   "subtipo": "mergulho na piscina",
+   "duracao_s": 2.97,
+   "loudness_lufs": -20.9,
+   "pico_dbfs": -2.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "água",
+    "piscina",
+    "mergulho",
+    "respingo"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "Pool Water Splash.mp3"
+  },
+  {
+   "id": "objeto-0024",
+   "arquivo": "amostras/objeto/objeto-0024.mp3",
+   "categoria": "objeto",
+   "subtipo": "caminhão",
+   "duracao_s": 6.21,
+   "loudness_lufs": -21,
+   "pico_dbfs": -12,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "caminhão",
+    "chegando",
+    "motor",
+    "estrada"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "Truck_In_ODY-1041-057.wav"
+  },
+  {
+   "id": "objeto-0025",
+   "arquivo": "amostras/objeto/objeto-0025.mp3",
+   "categoria": "objeto",
+   "subtipo": "virar página",
+   "duracao_s": 1.91,
+   "loudness_lufs": -21,
+   "pico_dbfs": -3.6,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "papel",
+    "virar",
+    "página",
+    "folha",
+    "livro"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "Turn Paper Sheet 01.wav"
+  },
+  {
+   "id": "objeto-0026",
+   "arquivo": "amostras/objeto/objeto-0026.mp3",
+   "categoria": "objeto",
+   "subtipo": "gota d'água",
+   "duracao_s": 0.12,
+   "loudness_lufs": -21,
+   "pico_dbfs": -2.9,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "gota",
+    "água",
+    "pingo",
+    "caverna"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "Water Drop 1.mp3"
+  },
+  {
+   "id": "objeto-0027",
+   "arquivo": "amostras/objeto/objeto-0027.mp3",
+   "categoria": "objeto",
+   "subtipo": "gota d'água",
+   "duracao_s": 0.63,
+   "loudness_lufs": -21,
+   "pico_dbfs": -2.9,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "gota",
+    "água",
+    "pingo",
+    "caverna"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "Water Drop 2.mp3"
+  },
+  {
+   "id": "objeto-0028",
+   "arquivo": "amostras/objeto/objeto-0028.mp3",
+   "categoria": "objeto",
+   "subtipo": "lápis escrevendo",
+   "duracao_s": 5.01,
+   "loudness_lufs": -21.6,
+   "pico_dbfs": -2,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "lápis",
+    "escrever",
+    "papel",
+    "desenho"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "Writing With A Pencil.mp3"
+  },
+  {
+   "id": "objeto-0029",
+   "arquivo": "amostras/objeto/objeto-0029.mp3",
+   "categoria": "objeto",
+   "subtipo": "rebobinar de DJ",
+   "duracao_s": 1.22,
+   "loudness_lufs": -21,
+   "pico_dbfs": -8.3,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "rebobinar",
+    "dj",
+    "disco",
+    "scratch",
+    "voltar"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "dj-rewind.mp3"
+  },
+  {
+   "id": "objeto-0030",
+   "arquivo": "amostras/objeto/objeto-0030.mp3",
+   "categoria": "objeto",
+   "subtipo": "despertador",
+   "duracao_s": 4.61,
+   "loudness_lufs": -21.1,
+   "pico_dbfs": -12.2,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "despertador",
+    "alarme",
+    "relógio",
+    "manhã"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "old-alarm-clock.mp3"
+  },
+  {
+   "id": "objeto-0031",
+   "arquivo": "amostras/objeto/objeto-0031.mp3",
+   "categoria": "objeto",
+   "subtipo": "bipe de censura",
+   "duracao_s": 1.66,
+   "loudness_lufs": -21,
+   "pico_dbfs": -15.4,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "bipe",
+    "censura",
+    "palavrão",
+    "tom"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "pi sound effects.mp3"
+  },
+  {
+   "id": "objeto-0032",
+   "arquivo": "amostras/objeto/objeto-0032.mp3",
+   "categoria": "objeto",
+   "subtipo": "pergaminho",
+   "duracao_s": 4,
+   "loudness_lufs": -24.1,
+   "pico_dbfs": -1.7,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "pergaminho",
+    "papel",
+    "rolar",
+    "antigo"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "scroll-papper.mp3"
+  },
+  {
+   "id": "objeto-0033",
+   "arquivo": "amostras/objeto/objeto-0033.mp3",
+   "categoria": "objeto",
+   "subtipo": "porta futurista",
+   "duracao_s": 0.88,
+   "loudness_lufs": -21,
+   "pico_dbfs": -10.3,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "porta",
+    "futurista",
+    "abrindo",
+    "ficção",
+    "científica"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "stop-motion",
+    "papel",
+    "impresso",
+    "antiguidade",
+    "colagem"
+   ],
+   "origem": "Futuristic Door.mp3"
+  },
+  {
+   "id": "objeto-0034",
+   "arquivo": "amostras/objeto/objeto-0034.mp3",
+   "categoria": "objeto",
+   "subtipo": "texto longo digitado",
+   "duracao_s": 2.31,
+   "loudness_lufs": -21,
+   "pico_dbfs": -1.1,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-teclado-longo",
+    "teclado-longo",
+    "teclado",
+    "digitação",
+    "computador",
+    "texto"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "padrao",
+    "fatos",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "teclado-longo.wav",
+   "pacote": "fluido",
+   "nome_fluido": "teclado-longo"
+  },
+  {
+   "id": "objeto-0035",
+   "arquivo": "amostras/objeto/objeto-0035.mp3",
+   "categoria": "objeto",
+   "subtipo": "frase digitada",
+   "duracao_s": 1.26,
+   "loudness_lufs": -21.1,
+   "pico_dbfs": -2.1,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-teclado",
+    "teclado",
+    "digitação",
+    "computador",
+    "escrever",
+    "frase"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "padrao",
+    "fatos",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "teclado.wav",
+   "pacote": "fluido",
+   "nome_fluido": "teclado"
+  },
+  {
+   "id": "objeto-0036",
+   "arquivo": "amostras/objeto/objeto-0036.mp3",
+   "categoria": "objeto",
+   "subtipo": "caixa registradora",
+   "duracao_s": 1.75,
+   "loudness_lufs": -21,
+   "pico_dbfs": -9.5,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-caixa",
+    "caixa",
+    "registradora",
+    "venda",
+    "dinheiro",
+    "pix"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "fatos",
+    "interface",
+    "moderno",
+    "mindset",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "caixa.wav",
+   "pacote": "fluido",
+   "nome_fluido": "caixa"
+  },
+  {
+   "id": "objeto-0037",
+   "arquivo": "amostras/objeto/objeto-0037.mp3",
+   "categoria": "objeto",
+   "subtipo": "moeda grave",
+   "duracao_s": 0.19,
+   "loudness_lufs": -20.8,
+   "pico_dbfs": -4.1,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-moeda-grave",
+    "moeda-grave",
+    "moeda",
+    "moedas",
+    "dinheiro",
+    "troco"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "fatos",
+    "interface",
+    "moderno",
+    "mindset",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "moeda-grave.wav",
+   "pacote": "fluido",
+   "nome_fluido": "moeda-grave"
+  },
+  {
+   "id": "objeto-0038",
+   "arquivo": "amostras/objeto/objeto-0038.mp3",
+   "categoria": "objeto",
+   "subtipo": "moeda tilintando",
+   "duracao_s": 0.14,
+   "loudness_lufs": -20.9,
+   "pico_dbfs": -2.9,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-moeda",
+    "moeda",
+    "moedas",
+    "dinheiro",
+    "troco",
+    "valor"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "fatos",
+    "interface",
+    "moderno",
+    "mindset",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "moeda.wav",
+   "pacote": "fluido",
+   "nome_fluido": "moeda"
+  },
+  {
+   "id": "objeto-0039",
+   "arquivo": "amostras/objeto/objeto-0039.mp3",
+   "categoria": "objeto",
+   "subtipo": "obturador seco",
+   "duracao_s": 0.51,
+   "loudness_lufs": -26.1,
+   "pico_dbfs": -1,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-shutter-seco",
+    "shutter-seco",
+    "shutter",
+    "seco",
+    "obturador",
+    "câmera"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "moderno",
+    "padrao",
+    "fatos",
+    "mindset",
+    "interface",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "shutter-seco.wav",
+   "pacote": "fluido",
+   "nome_fluido": "shutter-seco"
+  },
+  {
+   "id": "objeto-0040",
+   "arquivo": "amostras/objeto/objeto-0040.mp3",
+   "categoria": "objeto",
+   "subtipo": "obturador",
+   "duracao_s": 0.6,
+   "loudness_lufs": -25.4,
+   "pico_dbfs": -2.4,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-shutter",
+    "shutter",
+    "obturador",
+    "câmera",
+    "foto",
+    "troca"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "moderno",
+    "padrao",
+    "fatos",
+    "mindset",
+    "interface",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "shutter.wav",
+   "pacote": "fluido",
+   "nome_fluido": "shutter"
+  },
+  {
+   "id": "pop-0001",
+   "arquivo": "amostras/pop/pop-0001.mp3",
+   "categoria": "pop",
+   "subtipo": "sensor futurista",
+   "duracao_s": 3.46,
+   "loudness_lufs": -21.5,
+   "pico_dbfs": -2.1,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "sensor",
+    "futurista",
+    "ping",
+    "tecnologia"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Futurisitc UI Sound Senseor 33.wav"
+  },
+  {
+   "id": "pop-0002",
+   "arquivo": "amostras/pop/pop-0002.mp3",
+   "categoria": "pop",
+   "subtipo": "interface moderna",
+   "duracao_s": 0.04,
+   "loudness_lufs": -22.3,
+   "pico_dbfs": -2.6,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "pop",
+    "interface",
+    "moderna",
+    "aplicativo"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Modern UI Sound.wav"
+  },
+  {
+   "id": "pop-0003",
+   "arquivo": "amostras/pop/pop-0003.mp3",
+   "categoria": "pop",
+   "subtipo": "desbloqueio do iPhone",
+   "duracao_s": 0.47,
+   "loudness_lufs": -22.8,
+   "pico_dbfs": -1.5,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "desbloqueio",
+    "iphone",
+    "celular",
+    "abrir",
+    "tela"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "iphone unlock.mp3"
+  },
+  {
+   "id": "pop-0004",
+   "arquivo": "amostras/pop/pop-0004.mp3",
+   "categoria": "pop",
+   "subtipo": "notificação do iPhone",
+   "duracao_s": 3.2,
+   "loudness_lufs": -21,
+   "pico_dbfs": -8,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "notificação",
+    "iphone",
+    "celular",
+    "aviso",
+    "mensagem"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "iphone-notification-sound.mp3"
+  },
+  {
+   "id": "pop-0005",
+   "arquivo": "amostras/pop/pop-0005.mp3",
+   "categoria": "pop",
+   "subtipo": "notificação do iPhone",
+   "duracao_s": 0.75,
+   "loudness_lufs": -21.1,
+   "pico_dbfs": -8.1,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "notificação",
+    "iphone",
+    "celular",
+    "aviso",
+    "mensagem"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "notification iphone.mp3"
+  },
+  {
+   "id": "pop-0006",
+   "arquivo": "amostras/pop/pop-0006.mp3",
+   "categoria": "pop",
+   "subtipo": "plin do iPhone",
+   "duracao_s": 0.9,
+   "loudness_lufs": -21,
+   "pico_dbfs": -3.7,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "plin",
+    "iphone",
+    "celular",
+    "aviso",
+    "ideia"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "plin iphone.MP4"
+  },
+  {
+   "id": "pop-0007",
+   "arquivo": "amostras/pop/pop-0007.mp3",
+   "categoria": "pop",
+   "subtipo": "sininho",
+   "duracao_s": 1.53,
+   "loudness_lufs": -21,
+   "pico_dbfs": -6,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "sininho",
+    "natal",
+    "festivo",
+    "pop",
+    "alegre"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Christmas Pop Up.mp3"
+  },
+  {
+   "id": "pop-0008",
+   "arquivo": "amostras/pop/pop-0008.mp3",
+   "categoria": "pop",
+   "subtipo": "menu",
+   "duracao_s": 0.71,
+   "loudness_lufs": -21.5,
+   "pico_dbfs": -2.1,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "menu",
+    "botão",
+    "pop",
+    "interface"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Menu Button.mp3"
+  },
+  {
+   "id": "pop-0009",
+   "arquivo": "amostras/pop/pop-0009.mp3",
+   "categoria": "pop",
+   "subtipo": "holográfico",
+   "duracao_s": 0.47,
+   "loudness_lufs": -21.4,
+   "pico_dbfs": -1.9,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "holográfico",
+    "pop",
+    "futurista",
+    "interface"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Ocean_Game_UI_Holographic_02.wav"
+  },
+  {
+   "id": "pop-0010",
+   "arquivo": "amostras/pop/pop-0010.mp3",
+   "categoria": "pop",
+   "subtipo": "pop curto",
+   "duracao_s": 0.19,
+   "loudness_lufs": -21,
+   "pico_dbfs": -4.2,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "pop",
+    "curto",
+    "bolha",
+    "aparecer"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "POP UP 01.wav"
+  },
+  {
+   "id": "pop-0011",
+   "arquivo": "amostras/pop/pop-0011.mp3",
+   "categoria": "pop",
+   "subtipo": "pop curto",
+   "duracao_s": 0.2,
+   "loudness_lufs": -21,
+   "pico_dbfs": -4.2,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "pop",
+    "curto",
+    "bolha",
+    "aparecer"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "POP UP 02.wav"
+  },
+  {
+   "id": "pop-0012",
+   "arquivo": "amostras/pop/pop-0012.mp3",
+   "categoria": "pop",
+   "subtipo": "pop curto",
+   "duracao_s": 0.2,
+   "loudness_lufs": -21,
+   "pico_dbfs": -3.1,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "pop",
+    "curto",
+    "bolha",
+    "aparecer"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "POP UP 03.wav"
+  },
+  {
+   "id": "pop-0013",
+   "arquivo": "amostras/pop/pop-0013.mp3",
+   "categoria": "pop",
+   "subtipo": "bolha",
+   "duracao_s": 0.34,
+   "loudness_lufs": -21,
+   "pico_dbfs": -2,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "pop",
+    "bolha",
+    "estalo",
+    "leve"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Pop 01.mp3"
+  },
+  {
+   "id": "pop-0014",
+   "arquivo": "amostras/pop/pop-0014.mp3",
+   "categoria": "pop",
+   "subtipo": "bolha",
+   "duracao_s": 0.15,
+   "loudness_lufs": -21,
+   "pico_dbfs": -5,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "pop",
+    "bolha",
+    "estalo",
+    "leve"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Pop 02.mp3"
+  },
+  {
+   "id": "pop-0015",
+   "arquivo": "amostras/pop/pop-0015.mp3",
+   "categoria": "pop",
+   "subtipo": "ping",
+   "duracao_s": 0.38,
+   "loudness_lufs": -21.2,
+   "pico_dbfs": -1.8,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "ping",
+    "aviso",
+    "aparecer",
+    "agudo"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Pop Up Ping 1.mp3"
+  },
+  {
+   "id": "pop-0016",
+   "arquivo": "amostras/pop/pop-0016.mp3",
+   "categoria": "pop",
+   "subtipo": "ping",
+   "duracao_s": 0.57,
+   "loudness_lufs": -21.1,
+   "pico_dbfs": -2.4,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "ping",
+    "aviso",
+    "aparecer",
+    "agudo"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Pop Up Ping 2.mp3"
+  },
+  {
+   "id": "pop-0017",
+   "arquivo": "amostras/pop/pop-0017.mp3",
+   "categoria": "pop",
+   "subtipo": "ping",
+   "duracao_s": 0.29,
+   "loudness_lufs": -21.7,
+   "pico_dbfs": -2,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "ping",
+    "aviso",
+    "aparecer",
+    "agudo"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Pop Up Ping 3.mp3"
+  },
+  {
+   "id": "pop-0018",
+   "arquivo": "amostras/pop/pop-0018.mp3",
+   "categoria": "pop",
+   "subtipo": "alerta sci-fi",
+   "duracao_s": 1.48,
+   "loudness_lufs": -27.5,
+   "pico_dbfs": -1.9,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "alerta",
+    "ficção",
+    "científica",
+    "notificação",
+    "painel"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Smart_UI_Notification_Pop_Up_01_Alert_Short_HUD_Sci_Fi.wav"
+  },
+  {
+   "id": "pop-0019",
+   "arquivo": "amostras/pop/pop-0019.mp3",
+   "categoria": "pop",
+   "subtipo": "medieval",
+   "duracao_s": 0.18,
+   "loudness_lufs": -21,
+   "pico_dbfs": -5.8,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "medieval",
+    "notificação",
+    "antigo",
+    "jogo"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "UI_MEDIEVAL_Notification_Popup_01.wav"
+  },
+  {
+   "id": "pop-0020",
+   "arquivo": "amostras/pop/pop-0020.mp3",
+   "categoria": "pop",
+   "subtipo": "mensagem",
+   "duracao_s": 0.39,
+   "loudness_lufs": -21.2,
+   "pico_dbfs": -2.1,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "mensagem",
+    "chat",
+    "aviso",
+    "conversa"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "chat-message.mp3"
+  },
+  {
+   "id": "pop-0021",
+   "arquivo": "amostras/pop/pop-0021.mp3",
+   "categoria": "pop",
+   "subtipo": "pop-up",
+   "duracao_s": 0.4,
+   "loudness_lufs": -21,
+   "pico_dbfs": -3.8,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "pop-up",
+    "aparecer",
+    "aviso",
+    "tela"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "pop-up.mp3"
+  },
+  {
+   "id": "pop-0022",
+   "arquivo": "amostras/pop/pop-0022.mp3",
+   "categoria": "pop",
+   "subtipo": "notificação de menu",
+   "duracao_s": 0.72,
+   "loudness_lufs": -21.5,
+   "pico_dbfs": -2.1,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "notificação",
+    "menu",
+    "aviso",
+    "interface"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Menu Notification.wav"
+  },
+  {
+   "id": "pop-0023",
+   "arquivo": "amostras/pop/pop-0023.mp3",
+   "categoria": "pop",
+   "subtipo": "cintilar",
+   "duracao_s": 3.87,
+   "loudness_lufs": -21.1,
+   "pico_dbfs": -12.2,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "cintilar",
+    "brilho",
+    "mágico",
+    "leve"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Shining.mp3"
+  },
+  {
+   "id": "pop-0024",
+   "arquivo": "amostras/pop/pop-0024.mp3",
+   "categoria": "pop",
+   "subtipo": "brilho",
+   "duracao_s": 2.71,
+   "loudness_lufs": -21,
+   "pico_dbfs": -9.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "brilho",
+    "cintilante",
+    "estrelinha",
+    "magia"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Sparkle Shine.wav"
+  },
+  {
+   "id": "pop-0025",
+   "arquivo": "amostras/pop/pop-0025.mp3",
+   "categoria": "pop",
+   "subtipo": "alerta curto",
+   "duracao_s": 0.25,
+   "loudness_lufs": -27,
+   "pico_dbfs": -2.5,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "alerta",
+    "curto",
+    "notificação",
+    "sistema"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "mindset",
+    "padrao"
+   ],
+   "origem": "Smart_UI_Notification_Various_25_Short_Alert_Menu_System.wav"
+  },
+  {
+   "id": "pop-0026",
+   "arquivo": "amostras/pop/pop-0026.mp3",
+   "categoria": "pop",
+   "subtipo": "bipe de aviso",
+   "duracao_s": 0.16,
+   "loudness_lufs": -24.6,
+   "pico_dbfs": -1.6,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-bip",
+    "bip",
+    "bipe",
+    "aviso",
+    "alerta",
+    "curto"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "padrao",
+    "fatos",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "bip.wav",
+   "pacote": "fluido",
+   "nome_fluido": "bip"
+  },
+  {
+   "id": "pop-0027",
+   "arquivo": "amostras/pop/pop-0027.mp3",
+   "categoria": "pop",
+   "subtipo": "segunda mensagem",
+   "duracao_s": 0.61,
+   "loudness_lufs": -21.2,
+   "pico_dbfs": -1.8,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-notificacao-aguda",
+    "notificacao-aguda",
+    "notificação",
+    "mensagem",
+    "aviso",
+    "aguda"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "padrao",
+    "fatos",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "notificacao-aguda.wav",
+   "pacote": "fluido",
+   "nome_fluido": "notificacao-aguda"
+  },
+  {
+   "id": "pop-0028",
+   "arquivo": "amostras/pop/pop-0028.mp3",
+   "categoria": "pop",
+   "subtipo": "mensagem chegando",
+   "duracao_s": 0.7,
+   "loudness_lufs": -21.2,
+   "pico_dbfs": -2,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-notificacao",
+    "notificacao",
+    "notificação",
+    "mensagem",
+    "aviso",
+    "chat"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "padrao",
+    "fatos",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "notificacao.wav",
+   "pacote": "fluido",
+   "nome_fluido": "notificacao"
+  },
+  {
+   "id": "pop-0029",
+   "arquivo": "amostras/pop/pop-0029.mp3",
+   "categoria": "pop",
+   "subtipo": "peça pequena",
+   "duracao_s": 0.12,
+   "loudness_lufs": -21,
+   "pico_dbfs": -3.2,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-pop-agudo",
+    "pop-agudo",
+    "pop",
+    "agudo",
+    "surgir",
+    "peça"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "minimalista",
+    "cartoes",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "pop-agudo.wav",
+   "pacote": "fluido",
+   "nome_fluido": "pop-agudo"
+  },
+  {
+   "id": "pop-0030",
+   "arquivo": "amostras/pop/pop-0030.mp3",
+   "categoria": "pop",
+   "subtipo": "peça grande",
+   "duracao_s": 0.15,
+   "loudness_lufs": -21,
+   "pico_dbfs": -2.7,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-pop-grave",
+    "pop-grave",
+    "pop",
+    "grave",
+    "surgir",
+    "peça"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "minimalista",
+    "cartoes",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "pop-grave.wav",
+   "pacote": "fluido",
+   "nome_fluido": "pop-grave"
+  },
+  {
+   "id": "pop-0031",
+   "arquivo": "amostras/pop/pop-0031.mp3",
+   "categoria": "pop",
+   "subtipo": "peça média",
+   "duracao_s": 0.12,
+   "loudness_lufs": -21,
+   "pico_dbfs": -2.8,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-pop-medio",
+    "pop-medio",
+    "pop",
+    "médio",
+    "surgir",
+    "peça"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "minimalista",
+    "cartoes",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "pop-medio.wav",
+   "pacote": "fluido",
+   "nome_fluido": "pop-medio"
+  },
+  {
+   "id": "pop-0032",
+   "arquivo": "amostras/pop/pop-0032.mp3",
+   "categoria": "pop",
+   "subtipo": "peça surgindo",
+   "duracao_s": 0.1,
+   "loudness_lufs": -22.6,
+   "pico_dbfs": -2,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-pop",
+    "pop",
+    "surgir",
+    "card",
+    "chip",
+    "ícone"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "minimalista",
+    "cartoes",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "pop.wav",
+   "pacote": "fluido",
+   "nome_fluido": "pop"
+  },
+  {
+   "id": "pop-0033",
+   "arquivo": "amostras/pop/pop-0033.mp3",
+   "categoria": "pop",
+   "subtipo": "brilho especial",
+   "duracao_s": 0.91,
+   "loudness_lufs": -20.9,
+   "pico_dbfs": -14.4,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-brilho",
+    "brilho",
+    "cintilar",
+    "cintilante",
+    "revelar",
+    "produto"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "mindset",
+    "fatos",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "brilho.wav",
+   "pacote": "fluido",
+   "nome_fluido": "brilho"
+  },
+  {
+   "id": "riser-0001",
+   "arquivo": "amostras/riser/riser-0001.mp3",
+   "categoria": "riser",
+   "subtipo": "tensão",
+   "duracao_s": 6.11,
+   "loudness_lufs": -17,
+   "pico_dbfs": -3.2,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "tensão",
+    "suspense",
+    "terror",
+    "subida"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "ribalta",
+    "teologia"
+   ],
+   "origem": "Horror Tension.mp3"
+  },
+  {
+   "id": "riser-0002",
+   "arquivo": "amostras/riser/riser-0002.mp3",
+   "categoria": "riser",
+   "subtipo": "recarga sci-fi",
+   "duracao_s": 3.16,
+   "loudness_lufs": -17,
+   "pico_dbfs": -6.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "recarga",
+    "energia",
+    "ficção",
+    "científica",
+    "subida"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "ribalta",
+    "teologia"
+   ],
+   "origem": "Science Fiction Recharger 03.wav"
+  },
+  {
+   "id": "riser-0003",
+   "arquivo": "amostras/riser/riser-0003.mp3",
+   "categoria": "riser",
+   "subtipo": "reverso brilhante",
+   "duracao_s": 3.63,
+   "loudness_lufs": -17.1,
+   "pico_dbfs": -5.2,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "reverso",
+    "brilhante",
+    "subida",
+    "transição"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "ribalta",
+    "teologia"
+   ],
+   "origem": "Bright Reverse 1.mp3"
+  },
+  {
+   "id": "riser-0004",
+   "arquivo": "amostras/riser/riser-0004.mp3",
+   "categoria": "riser",
+   "subtipo": "reverso brilhante",
+   "duracao_s": 4.51,
+   "loudness_lufs": -17.1,
+   "pico_dbfs": -4.7,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "reverso",
+    "brilhante",
+    "subida",
+    "transição"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "ribalta",
+    "teologia"
+   ],
+   "origem": "Bright Reverse 3.mp3"
+  },
+  {
+   "id": "riser-0005",
+   "arquivo": "amostras/riser/riser-0005.mp3",
+   "categoria": "riser",
+   "subtipo": "reverso brilhante",
+   "duracao_s": 2.73,
+   "loudness_lufs": -17.2,
+   "pico_dbfs": -5.8,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "reverso",
+    "brilhante",
+    "subida",
+    "transição"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "ribalta",
+    "teologia"
+   ],
+   "origem": "Bright Reverse 4.mp3"
+  },
+  {
+   "id": "riser-0006",
+   "arquivo": "amostras/riser/riser-0006.mp3",
+   "categoria": "riser",
+   "subtipo": "crescendo futurista",
+   "duracao_s": 6.21,
+   "loudness_lufs": -17,
+   "pico_dbfs": -1.7,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "crescendo",
+    "futurista",
+    "subida",
+    "tecnologia"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "ribalta",
+    "teologia"
+   ],
+   "origem": "Futuristic Swell.wav"
+  },
+  {
+   "id": "riser-0007",
+   "arquivo": "amostras/riser/riser-0007.mp3",
+   "categoria": "riser",
+   "subtipo": "brilho mágico",
+   "duracao_s": 5.39,
+   "loudness_lufs": -17,
+   "pico_dbfs": -3.4,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "brilho",
+    "mágico",
+    "feixe",
+    "fantasia"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "ribalta",
+    "teologia"
+   ],
+   "origem": "Magic Shimmer Beam 02.wav"
+  },
+  {
+   "id": "riser-0008",
+   "arquivo": "amostras/riser/riser-0008.mp3",
+   "categoria": "riser",
+   "subtipo": "batimento reverso",
+   "duracao_s": 2.92,
+   "loudness_lufs": -17.4,
+   "pico_dbfs": -1.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "batimento",
+    "coração",
+    "reverso",
+    "suspense"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "ribalta",
+    "teologia"
+   ],
+   "origem": "Reversed Heartbeat 1.mp3"
+  },
+  {
+   "id": "riser-0009",
+   "arquivo": "amostras/riser/riser-0009.mp3",
+   "categoria": "riser",
+   "subtipo": "clássico",
+   "duracao_s": 4.75,
+   "loudness_lufs": -17,
+   "pico_dbfs": -4.6,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "riser",
+    "subida",
+    "tensão",
+    "clássico"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "ribalta",
+    "teologia"
+   ],
+   "origem": "Riser.wav"
+  },
+  {
+   "id": "riser-0010",
+   "arquivo": "amostras/riser/riser-0010.mp3",
+   "categoria": "riser",
+   "subtipo": "metálico",
+   "duracao_s": 1.72,
+   "loudness_lufs": -16.9,
+   "pico_dbfs": -2.5,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "metálico",
+    "riser",
+    "subida",
+    "tensão"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "ribalta",
+    "teologia"
+   ],
+   "origem": "SFX - Riser Metallic (Transition).mp3"
+  },
+  {
+   "id": "riser-0011",
+   "arquivo": "amostras/riser/riser-0011.mp3",
+   "categoria": "riser",
+   "subtipo": "varredura reversa",
+   "duracao_s": 2.34,
+   "loudness_lufs": -17,
+   "pico_dbfs": -8.5,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "varredura",
+    "reversa",
+    "cinematográfica",
+    "grunge"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "ribalta",
+    "teologia"
+   ],
+   "origem": "Grunge Reverse Cinematic Sweep.mp3"
+  },
+  {
+   "id": "riser-0012",
+   "arquivo": "amostras/riser/riser-0012.mp3",
+   "categoria": "riser",
+   "subtipo": "magia crescente",
+   "duracao_s": 6.01,
+   "loudness_lufs": -17,
+   "pico_dbfs": -5.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "magia",
+    "crescente",
+    "fantasia",
+    "subida"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "preto-branco",
+    "ribalta",
+    "teologia"
+   ],
+   "origem": "Heart of Magic 04.wav"
+  },
+  {
+   "id": "riser-0013",
+   "arquivo": "amostras/riser/riser-0013.mp3",
+   "categoria": "riser",
+   "subtipo": "subida curta",
+   "duracao_s": 0.45,
+   "loudness_lufs": -16.7,
+   "pico_dbfs": -1.8,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "fluido-riser-curto",
+    "riser-curto",
+    "riser",
+    "curto",
+    "subida",
+    "troca"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "moderno",
+    "preto-branco",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "riser-curto.wav",
+   "pacote": "fluido",
+   "nome_fluido": "riser-curto"
+  },
+  {
+   "id": "riser-0014",
+   "arquivo": "amostras/riser/riser-0014.mp3",
+   "categoria": "riser",
+   "subtipo": "construção longa",
+   "duracao_s": 1.67,
+   "loudness_lufs": -16.9,
+   "pico_dbfs": -3.4,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "fluido-riser-longo",
+    "riser-longo",
+    "riser",
+    "longo",
+    "subida",
+    "construção"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "moderno",
+    "preto-branco",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "riser-longo.wav",
+   "pacote": "fluido",
+   "nome_fluido": "riser-longo"
+  },
+  {
+   "id": "riser-0015",
+   "arquivo": "amostras/riser/riser-0015.mp3",
+   "categoria": "riser",
+   "subtipo": "subida antes da revelação",
+   "duracao_s": 0.9,
+   "loudness_lufs": -16.9,
+   "pico_dbfs": -3.4,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "fluido-riser-medio",
+    "riser-medio",
+    "riser",
+    "médio",
+    "subida",
+    "revelação"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "moderno",
+    "preto-branco",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "riser-medio.wav",
+   "pacote": "fluido",
+   "nome_fluido": "riser-medio"
+  },
+  {
+   "id": "riser-0016",
+   "arquivo": "amostras/riser/riser-0016.mp3",
+   "categoria": "riser",
+   "subtipo": "sopro antes da troca",
+   "duracao_s": 0.22,
+   "loudness_lufs": -17.6,
+   "pico_dbfs": -1.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "fluido-riser",
+    "riser",
+    "sopro",
+    "subida",
+    "troca",
+    "fundo"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "moderno",
+    "preto-branco",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "riser.wav",
+   "pacote": "fluido",
+   "nome_fluido": "riser"
+  },
+  {
+   "id": "riser-0017",
+   "arquivo": "amostras/riser/riser-0017.mp3",
+   "categoria": "riser",
+   "subtipo": "algo crescendo",
+   "duracao_s": 0.79,
+   "loudness_lufs": -17,
+   "pico_dbfs": -5.4,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "fluido-subida",
+    "subida",
+    "crescendo",
+    "crescer",
+    "tensão"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "fatos",
+    "mindset",
+    "moderno",
+    "preto-branco",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "subida.wav",
+   "pacote": "fluido",
+   "nome_fluido": "subida"
+  },
+  {
+   "id": "saida-0001",
+   "arquivo": "amostras/saida/saida-0001.mp3",
+   "categoria": "saida",
+   "subtipo": "descendo",
+   "duracao_s": 0.26,
+   "loudness_lufs": -21.1,
+   "pico_dbfs": -2.4,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "saída",
+    "descendo",
+    "fechar",
+    "interface",
+    "curto"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "padrao",
+    "cartoes"
+   ],
+   "origem": "Basic Whoosh Down 1.mp3"
+  },
+  {
+   "id": "saida-0002",
+   "arquivo": "amostras/saida/saida-0002.mp3",
+   "categoria": "saida",
+   "subtipo": "descendo",
+   "duracao_s": 0.12,
+   "loudness_lufs": -21,
+   "pico_dbfs": -2.5,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "saída",
+    "descendo",
+    "fechar",
+    "interface",
+    "curto"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "padrao",
+    "cartoes"
+   ],
+   "origem": "Basic Whoosh Down 3.mp3"
+  },
+  {
+   "id": "saida-0003",
+   "arquivo": "amostras/saida/saida-0003.mp3",
+   "categoria": "saida",
+   "subtipo": "botão lento",
+   "duracao_s": 0.37,
+   "loudness_lufs": -21.3,
+   "pico_dbfs": -6.2,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "botão",
+    "lento",
+    "fechar",
+    "interface",
+    "suave"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "padrao",
+    "cartoes"
+   ],
+   "origem": "Slow Button 2.mp3"
+  },
+  {
+   "id": "saida-0004",
+   "arquivo": "amostras/saida/saida-0004.mp3",
+   "categoria": "saida",
+   "subtipo": "janela fechando",
+   "duracao_s": 0.38,
+   "loudness_lufs": -20.9,
+   "pico_dbfs": -5.1,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "janela",
+    "fechar",
+    "futurista",
+    "pop-up"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "interface",
+    "moderno",
+    "minimalista",
+    "padrao",
+    "cartoes"
+   ],
+   "origem": "Futuristic Pop Up 02 Close.mp3"
+  },
+  {
+   "id": "tick-0001",
+   "arquivo": "amostras/tick/tick-0001.mp3",
+   "categoria": "tick",
+   "subtipo": "relógio fino",
+   "duracao_s": 3.52,
+   "loudness_lufs": -28.3,
+   "pico_dbfs": -1.6,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "relógio",
+    "tique",
+    "tempo",
+    "suspense"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "fatos",
+    "interface",
+    "mindset",
+    "moderno",
+    "tubo"
+   ],
+   "origem": "ClockTick5CUThin SDT2048905.wav"
+  },
+  {
+   "id": "tick-0002",
+   "arquivo": "amostras/tick/tick-0002.mp3",
+   "categoria": "tick",
+   "subtipo": "bipe contador",
+   "duracao_s": 0.08,
+   "loudness_lufs": -21,
+   "pico_dbfs": -4.6,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "bipe",
+    "contador",
+    "número",
+    "digital"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "fatos",
+    "interface",
+    "mindset",
+    "moderno",
+    "tubo"
+   ],
+   "origem": "Counter Beeps - Sound (1).mp3"
+  },
+  {
+   "id": "tick-0003",
+   "arquivo": "amostras/tick/tick-0003.mp3",
+   "categoria": "tick",
+   "subtipo": "bipe contador",
+   "duracao_s": 0.05,
+   "loudness_lufs": -21.2,
+   "pico_dbfs": -1.7,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "bipe",
+    "contador",
+    "número",
+    "digital"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "fatos",
+    "interface",
+    "mindset",
+    "moderno",
+    "tubo"
+   ],
+   "origem": "Counter Beeps - Sound (3).mp3"
+  },
+  {
+   "id": "tick-0004",
+   "arquivo": "amostras/tick/tick-0004.mp3",
+   "categoria": "tick",
+   "subtipo": "sequência de bipes",
+   "duracao_s": 2.43,
+   "loudness_lufs": -21.1,
+   "pico_dbfs": -11.3,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "bipes",
+    "sequência",
+    "contador",
+    "contagem"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "fatos",
+    "interface",
+    "mindset",
+    "moderno",
+    "tubo"
+   ],
+   "origem": "Counter Beeps - Sound (4).mp3"
+  },
+  {
+   "id": "tick-0005",
+   "arquivo": "amostras/tick/tick-0005.mp3",
+   "categoria": "tick",
+   "subtipo": "sequência de bipes",
+   "duracao_s": 2.49,
+   "loudness_lufs": -21,
+   "pico_dbfs": -10,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "bipes",
+    "sequência",
+    "contador",
+    "contagem"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "fatos",
+    "interface",
+    "mindset",
+    "moderno",
+    "tubo"
+   ],
+   "origem": "Counter Beeps - Sound (6).mp3"
+  },
+  {
+   "id": "tick-0006",
+   "arquivo": "amostras/tick/tick-0006.mp3",
+   "categoria": "tick",
+   "subtipo": "dados rolando",
+   "duracao_s": 5.01,
+   "loudness_lufs": -20.9,
+   "pico_dbfs": -5.4,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "dados",
+    "digital",
+    "rolagem",
+    "tecnologia"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "fatos",
+    "interface",
+    "mindset",
+    "moderno",
+    "tubo"
+   ],
+   "origem": "Data Scrolling 03.wav"
+  },
+  {
+   "id": "tick-0007",
+   "arquivo": "amostras/tick/tick-0007.mp3",
+   "categoria": "tick",
+   "subtipo": "carregando",
+   "duracao_s": 0.72,
+   "loudness_lufs": -21,
+   "pico_dbfs": -13,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "carregando",
+    "digital",
+    "barra",
+    "progresso"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "fatos",
+    "interface",
+    "mindset",
+    "moderno",
+    "tubo"
+   ],
+   "origem": "Digital Loading.mp3"
+  },
+  {
+   "id": "tick-0008",
+   "arquivo": "amostras/tick/tick-0008.mp3",
+   "categoria": "tick",
+   "subtipo": "contador digital",
+   "duracao_s": 1.02,
+   "loudness_lufs": -21,
+   "pico_dbfs": -11.5,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "contador",
+    "digital",
+    "números",
+    "dados"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "fatos",
+    "interface",
+    "mindset",
+    "moderno",
+    "tubo"
+   ],
+   "origem": "DigitalDataCounter_01_Loop.wav"
+  },
+  {
+   "id": "tick-0009",
+   "arquivo": "amostras/tick/tick-0009.mp3",
+   "categoria": "tick",
+   "subtipo": "relógio contínuo",
+   "duracao_s": 4.97,
+   "loudness_lufs": -27.7,
+   "pico_dbfs": -1.1,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "relógio",
+    "tique",
+    "contagem",
+    "tempo"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "fatos",
+    "interface",
+    "mindset",
+    "moderno",
+    "tubo"
+   ],
+   "origem": "clock_tick_01.wav"
+  },
+  {
+   "id": "tick-0010",
+   "arquivo": "amostras/tick/tick-0010.mp3",
+   "categoria": "tick",
+   "subtipo": "cronômetro",
+   "duracao_s": 4.9,
+   "loudness_lufs": -24.9,
+   "pico_dbfs": -1.7,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "cronômetro",
+    "relógio",
+    "contagem",
+    "tempo"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "fatos",
+    "interface",
+    "mindset",
+    "moderno",
+    "tubo"
+   ],
+   "origem": "Timer Clock Ticking.mp3"
+  },
+  {
+   "id": "tick-0011",
+   "arquivo": "amostras/tick/tick-0011.mp3",
+   "categoria": "tick",
+   "subtipo": "chimbal",
+   "duracao_s": 0.07,
+   "loudness_lufs": -20.8,
+   "pico_dbfs": -1.5,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "chimbal",
+    "batida",
+    "percussão",
+    "curto"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "fatos",
+    "interface",
+    "mindset",
+    "moderno",
+    "tubo"
+   ],
+   "origem": "hi hat dunk.wav"
+  },
+  {
+   "id": "tick-0012",
+   "arquivo": "amostras/tick/tick-0012.mp3",
+   "categoria": "tick",
+   "subtipo": "contagem freando",
+   "duracao_s": 1.14,
+   "loudness_lufs": -21,
+   "pico_dbfs": -2.2,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-contador-lento",
+    "contador-lento",
+    "contador",
+    "lento",
+    "número",
+    "contagem"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "fatos",
+    "interface",
+    "moderno",
+    "mindset",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "contador-lento.wav",
+   "pacote": "fluido",
+   "nome_fluido": "contador-lento"
+  },
+  {
+   "id": "tick-0013",
+   "arquivo": "amostras/tick/tick-0013.mp3",
+   "categoria": "tick",
+   "subtipo": "contagem rápida",
+   "duracao_s": 0.7,
+   "loudness_lufs": -21,
+   "pico_dbfs": -2.1,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-contador-rapido",
+    "contador-rapido",
+    "contador",
+    "rápido",
+    "número",
+    "contagem"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "fatos",
+    "interface",
+    "moderno",
+    "mindset",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "contador-rapido.wav",
+   "pacote": "fluido",
+   "nome_fluido": "contador-rapido"
+  },
+  {
+   "id": "tick-0014",
+   "arquivo": "amostras/tick/tick-0014.mp3",
+   "categoria": "tick",
+   "subtipo": "número contando",
+   "duracao_s": 0.91,
+   "loudness_lufs": -21,
+   "pico_dbfs": -2.3,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-contador",
+    "contador",
+    "número",
+    "contagem",
+    "rolando",
+    "dados"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "fatos",
+    "interface",
+    "moderno",
+    "mindset",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "contador.wav",
+   "pacote": "fluido",
+   "nome_fluido": "contador"
+  },
+  {
+   "id": "tick-0015",
+   "arquivo": "amostras/tick/tick-0015.mp3",
+   "categoria": "tick",
+   "subtipo": "detalhe fino",
+   "duracao_s": 0.05,
+   "loudness_lufs": -22.5,
+   "pico_dbfs": -2.5,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-tique-agudo",
+    "tique-agudo",
+    "tique",
+    "agudo",
+    "detalhe",
+    "fino"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "minimalista",
+    "cartoes",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "tique-agudo.wav",
+   "pacote": "fluido",
+   "nome_fluido": "tique-agudo"
+  },
+  {
+   "id": "tick-0016",
+   "arquivo": "amostras/tick/tick-0016.mp3",
+   "categoria": "tick",
+   "subtipo": "marca maior",
+   "duracao_s": 0.05,
+   "loudness_lufs": -22.8,
+   "pico_dbfs": -2.3,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-tique-grave",
+    "tique-grave",
+    "tique",
+    "grave",
+    "marca",
+    "maior"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "minimalista",
+    "cartoes",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "tique-grave.wav",
+   "pacote": "fluido",
+   "nome_fluido": "tique-grave"
+  },
+  {
+   "id": "tick-0017",
+   "arquivo": "amostras/tick/tick-0017.mp3",
+   "categoria": "tick",
+   "subtipo": "item de lista",
+   "duracao_s": 0.06,
+   "loudness_lufs": -26.8,
+   "pico_dbfs": -1.6,
+   "canais": 1,
+   "loop": false,
+   "tags": [
+    "fluido-tique",
+    "tique",
+    "item",
+    "lista",
+    "régua",
+    "marca"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "moderno",
+    "interface",
+    "minimalista",
+    "cartoes",
+    "padrao",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "tique.wav",
+   "pacote": "fluido",
+   "nome_fluido": "tique"
+  },
+  {
+   "id": "whoosh-0001",
+   "arquivo": "amostras/whoosh/whoosh-0001.mp3",
+   "categoria": "whoosh",
+   "subtipo": "curto subindo",
+   "duracao_s": 0.21,
+   "loudness_lufs": -17.1,
+   "pico_dbfs": -1.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "whoosh",
+    "curto",
+    "subindo",
+    "interface"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Basic Whoosh Up 1.mp3"
+  },
+  {
+   "id": "whoosh-0002",
+   "arquivo": "amostras/whoosh/whoosh-0002.mp3",
+   "categoria": "whoosh",
+   "subtipo": "curto subindo",
+   "duracao_s": 0.11,
+   "loudness_lufs": -17.4,
+   "pico_dbfs": -1.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "whoosh",
+    "curto",
+    "subindo",
+    "interface"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Basic Whoosh Up 3.mp3"
+  },
+  {
+   "id": "whoosh-0003",
+   "arquivo": "amostras/whoosh/whoosh-0003.mp3",
+   "categoria": "whoosh",
+   "subtipo": "cristal",
+   "duracao_s": 0.89,
+   "loudness_lufs": -17,
+   "pico_dbfs": -7.8,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "cristal",
+    "brilho",
+    "transição",
+    "curta"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Crystal Transition 1.mp3"
+  },
+  {
+   "id": "whoosh-0004",
+   "arquivo": "amostras/whoosh/whoosh-0004.mp3",
+   "categoria": "whoosh",
+   "subtipo": "cristal",
+   "duracao_s": 0.77,
+   "loudness_lufs": -17.2,
+   "pico_dbfs": -5.4,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "cristal",
+    "brilho",
+    "transição",
+    "curta"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Crystal Transition 2.mp3"
+  },
+  {
+   "id": "whoosh-0005",
+   "arquivo": "amostras/whoosh/whoosh-0005.mp3",
+   "categoria": "whoosh",
+   "subtipo": "cinema positivo",
+   "duracao_s": 3.85,
+   "loudness_lufs": -17,
+   "pico_dbfs": -2.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "transição",
+    "cinema",
+    "positivo",
+    "varredura"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Transition Positive Cinema Sweep.wav"
+  },
+  {
+   "id": "whoosh-0006",
+   "arquivo": "amostras/whoosh/whoosh-0006.mp3",
+   "categoria": "whoosh",
+   "subtipo": "holográfico",
+   "duracao_s": 0.64,
+   "loudness_lufs": -17.1,
+   "pico_dbfs": -1.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "holográfico",
+    "futurista",
+    "transição",
+    "curta"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Ocean_Game_UI_Holographic_04.wav"
+  },
+  {
+   "id": "whoosh-0007",
+   "arquivo": "amostras/whoosh/whoosh-0007.mp3",
+   "categoria": "whoosh",
+   "subtipo": "deslize",
+   "duracao_s": 0.19,
+   "loudness_lufs": -17.6,
+   "pico_dbfs": -1.8,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "deslize",
+    "pulo",
+    "movimento",
+    "rápido"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Slide Jump.wav"
+  },
+  {
+   "id": "whoosh-0008",
+   "arquivo": "amostras/whoosh/whoosh-0008.mp3",
+   "categoria": "whoosh",
+   "subtipo": "soco de transição",
+   "duracao_s": 1.38,
+   "loudness_lufs": -17.4,
+   "pico_dbfs": -1.6,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "soco",
+    "transição",
+    "golpe",
+    "corte"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "20996 transitional punch-full.mp3"
+  },
+  {
+   "id": "whoosh-0009",
+   "arquivo": "amostras/whoosh/whoosh-0009.mp3",
+   "categoria": "whoosh",
+   "subtipo": "elétrico",
+   "duracao_s": 0.94,
+   "loudness_lufs": -17,
+   "pico_dbfs": -2.7,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "elétrico",
+    "eletricidade",
+    "whoosh",
+    "energia"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Electricity Whoosh.wav"
+  },
+  {
+   "id": "whoosh-0010",
+   "arquivo": "amostras/whoosh/whoosh-0010.mp3",
+   "categoria": "whoosh",
+   "subtipo": "energia",
+   "duracao_s": 4.41,
+   "loudness_lufs": -17,
+   "pico_dbfs": -6.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "energia",
+    "carga",
+    "poder"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Energy 04.mp3"
+  },
+  {
+   "id": "whoosh-0011",
+   "arquivo": "amostras/whoosh/whoosh-0011.mp3",
+   "categoria": "whoosh",
+   "subtipo": "partículas",
+   "duracao_s": 1.03,
+   "loudness_lufs": -17.2,
+   "pico_dbfs": -7,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "partículas",
+    "ficção",
+    "científica",
+    "transição"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Sci-fi Particle Transtiion 4.wav"
+  },
+  {
+   "id": "whoosh-0012",
+   "arquivo": "amostras/whoosh/whoosh-0012.mp3",
+   "categoria": "whoosh",
+   "subtipo": "partículas",
+   "duracao_s": 0.99,
+   "loudness_lufs": -17.2,
+   "pico_dbfs": -6.1,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "partículas",
+    "ficção",
+    "científica",
+    "transição"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Sci-fi Particle Transtiion 5.wav"
+  },
+  {
+   "id": "whoosh-0013",
+   "arquivo": "amostras/whoosh/whoosh-0013.mp3",
+   "categoria": "whoosh",
+   "subtipo": "partículas",
+   "duracao_s": 0.95,
+   "loudness_lufs": -18,
+   "pico_dbfs": -1.3,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "partículas",
+    "ficção",
+    "científica",
+    "transição"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Sci-fi Particle Transtiion 7.wav"
+  },
+  {
+   "id": "whoosh-0014",
+   "arquivo": "amostras/whoosh/whoosh-0014.mp3",
+   "categoria": "whoosh",
+   "subtipo": "partículas",
+   "duracao_s": 0.89,
+   "loudness_lufs": -17.3,
+   "pico_dbfs": -4.3,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "partículas",
+    "ficção",
+    "científica",
+    "transição"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Sci-fi Particle Transtiion.wav"
+  },
+  {
+   "id": "whoosh-0015",
+   "arquivo": "amostras/whoosh/whoosh-0015.mp3",
+   "categoria": "whoosh",
+   "subtipo": "passagem cinematográfica",
+   "duracao_s": 5.9,
+   "loudness_lufs": -17,
+   "pico_dbfs": -5.8,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "passagem",
+    "cinematográfica",
+    "rápida",
+    "velocidade"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Sinematic_2_-_Passbys-Velocity-004.wav"
+  },
+  {
+   "id": "whoosh-0016",
+   "arquivo": "amostras/whoosh/whoosh-0016.mp3",
+   "categoria": "whoosh",
+   "subtipo": "queda",
+   "duracao_s": 0.63,
+   "loudness_lufs": -17,
+   "pico_dbfs": -3,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "queda",
+    "descendo",
+    "deslizar"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Swipe Down Fall.wav"
+  },
+  {
+   "id": "whoosh-0017",
+   "arquivo": "amostras/whoosh/whoosh-0017.mp3",
+   "categoria": "whoosh",
+   "subtipo": "ar",
+   "duracao_s": 2.55,
+   "loudness_lufs": -17.2,
+   "pico_dbfs": -4.7,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "ar",
+    "vento",
+    "passagem",
+    "suave"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Air Ambient Woosh.wav"
+  },
+  {
+   "id": "whoosh-0018",
+   "arquivo": "amostras/whoosh/whoosh-0018.mp3",
+   "categoria": "whoosh",
+   "subtipo": "aura",
+   "duracao_s": 1.89,
+   "loudness_lufs": -17.4,
+   "pico_dbfs": -1.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "aura",
+    "brilho",
+    "transição",
+    "suave"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Aura Woosh 02.wav"
+  },
+  {
+   "id": "whoosh-0019",
+   "arquivo": "amostras/whoosh/whoosh-0019.mp3",
+   "categoria": "whoosh",
+   "subtipo": "revelação futurista",
+   "duracao_s": 1.71,
+   "loudness_lufs": -17,
+   "pico_dbfs": -5.8,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "revelação",
+    "futurista",
+    "aparecer",
+    "tecnologia"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Futuristic Reveal.wav"
+  },
+  {
+   "id": "whoosh-0020",
+   "arquivo": "amostras/whoosh/whoosh-0020.mp3",
+   "categoria": "whoosh",
+   "subtipo": "turbo",
+   "duracao_s": 0.64,
+   "loudness_lufs": -17,
+   "pico_dbfs": -8.7,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "turbo",
+    "impulso",
+    "jogo",
+    "aceleração"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Game Booster 2.wav"
+  },
+  {
+   "id": "whoosh-0021",
+   "arquivo": "amostras/whoosh/whoosh-0021.mp3",
+   "categoria": "whoosh",
+   "subtipo": "invertido",
+   "duracao_s": 0.97,
+   "loudness_lufs": -17,
+   "pico_dbfs": -6.2,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "invertido",
+    "reverso",
+    "whoosh",
+    "transição"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Inverted Woosh 1.mp3"
+  },
+  {
+   "id": "whoosh-0022",
+   "arquivo": "amostras/whoosh/whoosh-0022.mp3",
+   "categoria": "whoosh",
+   "subtipo": "invertido",
+   "duracao_s": 1.32,
+   "loudness_lufs": -17,
+   "pico_dbfs": -5.4,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "invertido",
+    "reverso",
+    "whoosh",
+    "transição"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Inverted Woosh 3.mp3"
+  },
+  {
+   "id": "whoosh-0023",
+   "arquivo": "amostras/whoosh/whoosh-0023.mp3",
+   "categoria": "whoosh",
+   "subtipo": "grave",
+   "duracao_s": 4.61,
+   "loudness_lufs": -17,
+   "pico_dbfs": -7,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "grave",
+    "whoosh",
+    "pesado",
+    "transição"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Low Woosh.mp3"
+  },
+  {
+   "id": "whoosh-0024",
+   "arquivo": "amostras/whoosh/whoosh-0024.mp3",
+   "categoria": "whoosh",
+   "subtipo": "mágico",
+   "duracao_s": 3.8,
+   "loudness_lufs": -17,
+   "pico_dbfs": -5.7,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "mágico",
+    "brilho",
+    "whoosh",
+    "fantasia"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Magic Woosh 1.mp3"
+  },
+  {
+   "id": "whoosh-0025",
+   "arquivo": "amostras/whoosh/whoosh-0025.mp3",
+   "categoria": "whoosh",
+   "subtipo": "mágico",
+   "duracao_s": 2.47,
+   "loudness_lufs": -17.1,
+   "pico_dbfs": -6.1,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "mágico",
+    "brilho",
+    "whoosh",
+    "fantasia"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Magic Woosh 3.mp3"
+  },
+  {
+   "id": "whoosh-0026",
+   "arquivo": "amostras/whoosh/whoosh-0026.mp3",
+   "categoria": "whoosh",
+   "subtipo": "suave de jogo",
+   "duracao_s": 1.23,
+   "loudness_lufs": -17.8,
+   "pico_dbfs": -1.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "suave",
+    "jogo",
+    "transição",
+    "interface"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Mobile_Game_UI_Soft_Transitional_Woosh_1.wav"
+  },
+  {
+   "id": "whoosh-0027",
+   "arquivo": "amostras/whoosh/whoosh-0027.mp3",
+   "categoria": "whoosh",
+   "subtipo": "holográfico",
+   "duracao_s": 0.46,
+   "loudness_lufs": -18.5,
+   "pico_dbfs": -3.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "holográfico",
+    "futurista",
+    "transição",
+    "curta"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Ocean_Game_UI_Holographic_06.wav"
+  },
+  {
+   "id": "whoosh-0028",
+   "arquivo": "amostras/whoosh/whoosh-0028.mp3",
+   "categoria": "whoosh",
+   "subtipo": "grave com eco",
+   "duracao_s": 2.94,
+   "loudness_lufs": -17,
+   "pico_dbfs": -2.3,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "grave",
+    "sub",
+    "eco",
+    "whoosh",
+    "pesado"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Sub Swoosh With Delay 4.mp3"
+  },
+  {
+   "id": "whoosh-0029",
+   "arquivo": "amostras/whoosh/whoosh-0029.mp3",
+   "categoria": "whoosh",
+   "subtipo": "clássico",
+   "duracao_s": 1.76,
+   "loudness_lufs": -16.9,
+   "pico_dbfs": -1.9,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "whoosh",
+    "clássico",
+    "passagem",
+    "rápida"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Woosh 01.mp3"
+  },
+  {
+   "id": "whoosh-0030",
+   "arquivo": "amostras/whoosh/whoosh-0030.mp3",
+   "categoria": "whoosh",
+   "subtipo": "clássico",
+   "duracao_s": 1.51,
+   "loudness_lufs": -17.3,
+   "pico_dbfs": -1.6,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "whoosh",
+    "clássico",
+    "passagem",
+    "rápida"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Woosh 02.mp3"
+  },
+  {
+   "id": "whoosh-0031",
+   "arquivo": "amostras/whoosh/whoosh-0031.mp3",
+   "categoria": "whoosh",
+   "subtipo": "curto",
+   "duracao_s": 0.83,
+   "loudness_lufs": -17.1,
+   "pico_dbfs": -1.8,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "whoosh",
+    "curto",
+    "passagem",
+    "rápida"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Woosh 03.mp3"
+  },
+  {
+   "id": "whoosh-0032",
+   "arquivo": "amostras/whoosh/whoosh-0032.mp3",
+   "categoria": "whoosh",
+   "subtipo": "clássico",
+   "duracao_s": 3.71,
+   "loudness_lufs": -19.2,
+   "pico_dbfs": -1.8,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "whoosh",
+    "clássico",
+    "passagem",
+    "rápida"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Woosh 04.mp3"
+  },
+  {
+   "id": "whoosh-0033",
+   "arquivo": "amostras/whoosh/whoosh-0033.mp3",
+   "categoria": "whoosh",
+   "subtipo": "clássico",
+   "duracao_s": 1.56,
+   "loudness_lufs": -16.9,
+   "pico_dbfs": -1.7,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "whoosh",
+    "clássico",
+    "passagem"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Woosh.mp3"
+  },
+  {
+   "id": "whoosh-0034",
+   "arquivo": "amostras/whoosh/whoosh-0034.mp3",
+   "categoria": "whoosh",
+   "subtipo": "sintético",
+   "duracao_s": 0.69,
+   "loudness_lufs": -17,
+   "pico_dbfs": -5,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "sintético",
+    "eletrônico",
+    "whoosh",
+    "transição"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "el_synthefx_whoosh_06_hpx.wav"
+  },
+  {
+   "id": "whoosh-0035",
+   "arquivo": "amostras/whoosh/whoosh-0035.mp3",
+   "categoria": "whoosh",
+   "subtipo": "aura",
+   "duracao_s": 2.44,
+   "loudness_lufs": -17,
+   "pico_dbfs": -4,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "aura",
+    "brilho",
+    "transição",
+    "suave"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Aura Woosh 01.wav"
+  },
+  {
+   "id": "whoosh-0036",
+   "arquivo": "amostras/whoosh/whoosh-0036.mp3",
+   "categoria": "whoosh",
+   "subtipo": "aura",
+   "duracao_s": 3.12,
+   "loudness_lufs": -17,
+   "pico_dbfs": -6.2,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "aura",
+    "brilho",
+    "transição",
+    "suave"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Aura Woosh 03.wav"
+  },
+  {
+   "id": "whoosh-0037",
+   "arquivo": "amostras/whoosh/whoosh-0037.mp3",
+   "categoria": "whoosh",
+   "subtipo": "tambor",
+   "duracao_s": 2.8,
+   "loudness_lufs": -17.1,
+   "pico_dbfs": -3.4,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "tambor",
+    "swish",
+    "percussão",
+    "transição"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Drum Swish 1.mp3"
+  },
+  {
+   "id": "whoosh-0038",
+   "arquivo": "amostras/whoosh/whoosh-0038.mp3",
+   "categoria": "whoosh",
+   "subtipo": "mágico longo",
+   "duracao_s": 3.62,
+   "loudness_lufs": -21.2,
+   "pico_dbfs": -1.3,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "mágico",
+    "transição",
+    "fantasia",
+    "brilho"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "Magic_Transition_ODY-0273-036.wav"
+  },
+  {
+   "id": "whoosh-0039",
+   "arquivo": "amostras/whoosh/whoosh-0039.mp3",
+   "categoria": "whoosh",
+   "subtipo": "sopro forte",
+   "duracao_s": 1.56,
+   "loudness_lufs": -17,
+   "pico_dbfs": -2.2,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "sopro",
+    "forte",
+    "vento",
+    "golpe"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "strong blow woosh.wav"
+  },
+  {
+   "id": "whoosh-0040",
+   "arquivo": "amostras/whoosh/whoosh-0040.mp3",
+   "categoria": "whoosh",
+   "subtipo": "subsônico",
+   "duracao_s": 4.75,
+   "loudness_lufs": -17,
+   "pico_dbfs": -4.6,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "subsônico",
+    "grave",
+    "panorâmico",
+    "transição"
+   ],
+   "energia": "forte",
+   "estilos_sugeridos": [
+    "padrao",
+    "moderno",
+    "fatos",
+    "colagem",
+    "mindset"
+   ],
+   "origem": "subsonic panoramic woosh.wav"
+  },
+  {
+   "id": "whoosh-0041",
+   "arquivo": "amostras/whoosh/whoosh-0041.mp3",
+   "categoria": "whoosh",
+   "subtipo": "peça deslizando",
+   "duracao_s": 0.31,
+   "loudness_lufs": -16.9,
+   "pico_dbfs": -5.3,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "fluido-deslize",
+    "deslize",
+    "deslizar",
+    "peça",
+    "suave",
+    "passagem"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "moderno",
+    "padrao",
+    "fatos",
+    "mindset",
+    "interface",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "deslize.wav",
+   "pacote": "fluido",
+   "nome_fluido": "deslize"
+  },
+  {
+   "id": "whoosh-0042",
+   "arquivo": "amostras/whoosh/whoosh-0042.mp3",
+   "categoria": "whoosh",
+   "subtipo": "clarão",
+   "duracao_s": 0.21,
+   "loudness_lufs": -18.6,
+   "pico_dbfs": -2,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "fluido-flash",
+    "flash",
+    "clarão",
+    "luz",
+    "estouro",
+    "câmera"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "moderno",
+    "padrao",
+    "fatos",
+    "mindset",
+    "interface",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "flash.wav",
+   "pacote": "fluido",
+   "nome_fluido": "flash"
+  },
+  {
+   "id": "whoosh-0043",
+   "arquivo": "amostras/whoosh/whoosh-0043.mp3",
+   "categoria": "whoosh",
+   "subtipo": "passada de câmera curta",
+   "duracao_s": 0.25,
+   "loudness_lufs": -17,
+   "pico_dbfs": -3.3,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "fluido-whoosh-curto",
+    "whoosh-curto",
+    "whoosh",
+    "curto",
+    "câmera",
+    "passagem"
+   ],
+   "energia": "suave",
+   "estilos_sugeridos": [
+    "moderno",
+    "padrao",
+    "fatos",
+    "mindset",
+    "interface",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "whoosh-curto.wav",
+   "pacote": "fluido",
+   "nome_fluido": "whoosh-curto"
+  },
+  {
+   "id": "whoosh-0044",
+   "arquivo": "amostras/whoosh/whoosh-0044.mp3",
+   "categoria": "whoosh",
+   "subtipo": "câmera atravessando",
+   "duracao_s": 0.87,
+   "loudness_lufs": -16.9,
+   "pico_dbfs": -6.6,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "fluido-whoosh-longo",
+    "whoosh-longo",
+    "whoosh",
+    "longo",
+    "câmera",
+    "atravessando"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "moderno",
+    "padrao",
+    "fatos",
+    "mindset",
+    "interface",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "whoosh-longo.wav",
+   "pacote": "fluido",
+   "nome_fluido": "whoosh-longo"
+  },
+  {
+   "id": "whoosh-0045",
+   "arquivo": "amostras/whoosh/whoosh-0045.mp3",
+   "categoria": "whoosh",
+   "subtipo": "passada de câmera",
+   "duracao_s": 0.48,
+   "loudness_lufs": -16.9,
+   "pico_dbfs": -4.5,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "fluido-whoosh-medio",
+    "whoosh-medio",
+    "whoosh",
+    "médio",
+    "câmera",
+    "passagem"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "moderno",
+    "padrao",
+    "fatos",
+    "mindset",
+    "interface",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "whoosh-medio.wav",
+   "pacote": "fluido",
+   "nome_fluido": "whoosh-medio"
+  },
+  {
+   "id": "whoosh-0046",
+   "arquivo": "amostras/whoosh/whoosh-0046.mp3",
+   "categoria": "whoosh",
+   "subtipo": "passada rápida",
+   "duracao_s": 0.19,
+   "loudness_lufs": -19,
+   "pico_dbfs": -1.8,
+   "canais": 2,
+   "loop": false,
+   "tags": [
+    "fluido-whoosh",
+    "whoosh",
+    "passando",
+    "rápido",
+    "passagem"
+   ],
+   "energia": "média",
+   "estilos_sugeridos": [
+    "moderno",
+    "padrao",
+    "fatos",
+    "mindset",
+    "interface",
+    "fluido",
+    "smooth"
+   ],
+   "origem": "whoosh.wav",
+   "pacote": "fluido",
+   "nome_fluido": "whoosh"
+  }
+ ]
+}

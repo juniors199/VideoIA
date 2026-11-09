@@ -1,0 +1,168 @@
+{
+  "id": "moderno",
+  "nome": "Moderno (janelas de vidro em perspectiva)",
+  "versao": 1,
+  "paraQuem": "tutorial, como fazer, demonstração de ferramenta ou processo, comparação de antes e depois, tecnologia e qualquer assunto que caiba em telas",
+  "exemplosDePedido": [
+    "Como fazer um Reels em cinco passos",
+    "Antes e depois: editar na mão ou automatizar"
+  ],
+  "apelidos": [
+    "vidro",
+    "janelas",
+    "tutorial",
+    "demo",
+    "processo"
+  ],
+  "formato": {
+    "preferidos": [
+      "passo-a-passo",
+      "antes-depois",
+      "comparativo",
+      "causa-efeito"
+    ],
+    "proibidos": [],
+    "padrao": "passo-a-passo"
+  },
+  "roteiro": {
+    "palavras": [
+      90,
+      130
+    ],
+    "alvoSegundos": [
+      32,
+      46
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "a promessa do processo numa frase (o resultado e quantos passos)",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "mecanismo",
+        "seg": [
+          18,
+          30
+        ],
+        "instrucao": "um passo por frase, cada um com a janela que mostra o passo (terminal, pasta, painel, pipeline, linha do tempo)",
+        "n": [
+          3,
+          5
+        ]
+      },
+      {
+        "bloco": "virada",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "o resultado: número real no painel ou o antes e depois"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "convite final curto"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "EN",
+      "PD"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "direto, de quem mostra a tela: um passo e um verbo por frase (abrir, digitar, gerar, montar, publicar)",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[calm, clear]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "contador": "quando-houver-numero",
+    "estilo": "moderno",
+    "cenarios": [
+      "palco"
+    ],
+    "pecasBase": [
+      "celular",
+      "notebook",
+      "roteador",
+      "cadeado"
+    ],
+    "reserva": [
+      "celular",
+      "notebook"
+    ],
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2,
+      6
+    ],
+    "trocaVisualMaxSeg": 4
+  },
+  "som": {
+    "musica": false,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, o porquê em 2 linhas, pergunta de opinião",
+    "hashtags": [
+      "#curiosidades",
+      "#vocesabia"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

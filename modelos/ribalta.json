@@ -1,0 +1,169 @@
+{
+  "id": "ribalta",
+  "nome": "Ribalta (palco claro com luzes)",
+  "versao": 1,
+  "paraQuem": "explicações de ciência e do dia a dia, \"por que\" e \"como funciona\", passo a passo, aula curta e tutorial: um objeto real desenhado por frase num palco claro",
+  "exemplosDePedido": [
+    "Por que o céu é azul",
+    "Como a vacina ensina o corpo"
+  ],
+  "apelidos": [
+    "palco-claro",
+    "tutorial",
+    "luzes"
+  ],
+  "formato": {
+    "preferidos": [
+      "passo-a-passo",
+      "causa-efeito",
+      "revelacao",
+      "mito-fato"
+    ],
+    "proibidos": [],
+    "padrao": "passo-a-passo"
+  },
+  "roteiro": {
+    "palavras": [
+      80,
+      130
+    ],
+    "alvoSegundos": [
+      28,
+      46
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          2,
+          3
+        ],
+        "instrucao": "a pergunta em 1 ou 2 frases curtas (até 3 s): o gancho escuro escreve 1 a 3 telas com a palavra-chave marcada",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "mecanismo",
+        "seg": [
+          15,
+          28
+        ],
+        "instrucao": "uma ideia por frase, cada uma com um objeto que dá para desenhar (prisma, molécula, onda, olho, caminho); a palavra-chave dita é a que acende",
+        "n": [
+          4,
+          8
+        ]
+      },
+      {
+        "bloco": "passos",
+        "seg": [
+          4,
+          10
+        ],
+        "instrucao": "2 a 4 viradas de bloco que viram heróis de passo (\"Isso se chama...\", \"E por que não...\", \"No fim da tarde...\")",
+        "n": [
+          2,
+          4
+        ]
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "convite final curto"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "EN",
+      "PD"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "frases curtas (até 6 palavras por grupo de legenda); uma ideia e uma palavra-chave por frase",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[calm, clear]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "contador": "quando-houver-numero",
+    "estilo": "ribalta",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [
+      "botaoseguir",
+      "sol",
+      "lupa"
+    ],
+    "reserva": [
+      "lupa",
+      "sol"
+    ],
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      1.5,
+      5
+    ],
+    "trocaVisualMaxSeg": 4
+  },
+  "som": {
+    "musica": false,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, o porquê em 2 linhas, pergunta de opinião",
+    "hashtags": [
+      "#curiosidades",
+      "#vocesabia"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

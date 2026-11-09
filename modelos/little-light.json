@@ -1,0 +1,160 @@
+{
+  "id": "little-light",
+  "nome": "Mar que brilha (fundo do mar à noite)",
+  "versao": 1,
+  "paraQuem": "oceano, noite, medo do escuro, ciência que surpreende, bichos que brilham e histórias de coragem: o fundo do mar à noite, com uma baleia pequena, águas-vivas que acendem e nuvens de luz, as palavras da narração pipocando quando ditas",
+  "exemplosDePedido": [
+    "Três em cada quatro animais do mar aberto fazem a própria luz",
+    "Por que o fundo do mar não é escuro como parece"
+  ],
+  "apelidos": [
+    "fundo-do-mar",
+    "bioluminescencia",
+    "oceano",
+    "luzinhas",
+    "noite-no-mar"
+  ],
+  "formato": {
+    "preferidos": [
+      "revelacao",
+      "causa-efeito",
+      "antes-depois",
+      "passo-a-passo"
+    ],
+    "proibidos": [],
+    "padrao": "revelacao"
+  },
+  "roteiro": {
+    "palavras": [
+      80,
+      140
+    ],
+    "alvoSegundos": [
+      35,
+      55
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          2,
+          5
+        ],
+        "instrucao": "uma frase com o escuro, o fundo ou o medo, que promete a virada das luzes (\"Abaixo de mil metros, a luz do sol nunca chega no mar.\")",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "exposicao",
+        "seg": [
+          14,
+          30
+        ],
+        "instrucao": "a fábula em frases curtas, uma cena por frase: a baleia pequena, o escuro, a luz que pisca, as luzes que acendem uma a uma; o número (conferido) vira pontinhos de luz",
+        "n": [
+          4,
+          8
+        ]
+      },
+      {
+        "bloco": "realidade",
+        "seg": [
+          4,
+          8
+        ],
+        "instrucao": "a virada verdadeira, contada como o fim da fábula: o fato que a história mostrou, numa frase curta e calorosa"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "um pedido de compartilhar (revezando \"manda pra um amigo\" e \"compartilha no story\") e o convite final: seguir e comentar a palavra"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "HE",
+      "PD"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "ele/ela",
+    "tom": "narração de história de dormir: calma, baixa, com pausas; a virada das luzes um pouco mais animada",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 0.94,
+    "direcao": "[softly, warm, unhurried bedtime storyteller]",
+    "pausaEntreBlocos": 0.2
+  },
+  "visual": {
+    "pecasPorTema": false,
+    "imagens": "nunca",
+    "contador": "quando-houver-numero",
+    "estilo": "little-light",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [],
+    "reserva": [],
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2.5,
+      6
+    ],
+    "trocaVisualMaxSeg": 6
+  },
+  "som": {
+    "musica": true,
+    "sfx": "discreto"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, a curiosidade em 2 linhas, pergunta carinhosa",
+    "hashtags": [
+      "#oceano",
+      "#curiosidades"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

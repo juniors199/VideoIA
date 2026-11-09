@@ -1,0 +1,303 @@
+{
+ "rede": [
+  "rede",
+  "redes",
+  "conexao",
+  "conexoes",
+  "conectados",
+  "interligados",
+  "ligacoes",
+  "teia"
+ ],
+ "decisao": [
+  "decisao",
+  "decisoes",
+  "decidir",
+  "escolha",
+  "escolhas",
+  "bifurcacao",
+  "caminhos"
+ ],
+ "linhatempo": [
+  "linha do tempo",
+  "cronologia",
+  "historico",
+  "marcos",
+  "etapas",
+  "ao longo dos anos"
+ ],
+ "piramide": [
+  "piramide",
+  "hierarquia",
+  "niveis",
+  "escalao",
+  "base e topo",
+  "topo da piramide"
+ ],
+ "engrenagens": [
+  "engrenagens",
+  "mecanismo",
+  "mecanismos",
+  "funcionam juntos",
+  "sincronia",
+  "peca por peca"
+ ],
+ "ciclo": [
+  "ciclo",
+  "ciclos",
+  "repete",
+  "repeticao",
+  "circulo vicioso",
+  "recomeca",
+  "rotina"
+ ],
+ "fluxo": [
+  "transferencia",
+  "transferencias",
+  "repasse",
+  "repasses",
+  "pix",
+  "fluxo de caixa",
+  "dinheiro sai",
+  "dinheiro passa"
+ ],
+ "empilhado": [
+  "empilhado",
+  "composicao",
+  "soma das partes",
+  "parcelas",
+  "acumulado",
+  "em camadas de custo"
+ ],
+ "fatias": [
+  "pizza",
+  "fatia",
+  "fatias",
+  "proporcao",
+  "participacao",
+  "percentual",
+  "divisao",
+  "fatia do bolo"
+ ],
+ "labirinto": [
+  "labirinto",
+  "burocracia",
+  "caminho dificil",
+  "saida",
+  "percurso",
+  "perdido"
+ ],
+ "bussola": [
+  "bussola",
+  "orientacao",
+  "norte",
+  "direcao",
+  "rumo",
+  "nortear"
+ ],
+ "dardo": [
+  "dardo",
+  "acertar",
+  "na mosca",
+  "mira",
+  "pontaria",
+  "acerto",
+  "em cheio"
+ ],
+ "corrente": [
+  "corrente",
+  "elo",
+  "elos",
+  "cadeia",
+  "elo mais fraco",
+  "encadeado"
+ ],
+ "dado": [
+  "dado",
+  "sorte",
+  "sorteio",
+  "acaso",
+  "aleatorio",
+  "aleatoria",
+  "rolar"
+ ],
+ "quebracabeca": [
+  "quebra-cabeca",
+  "quebra cabeca",
+  "encaixa",
+  "encaixar",
+  "encaixe",
+  "peca que faltava",
+  "juntar as pecas"
+ ],
+ "cofreabre": [
+  "abrir o cofre",
+  "abre o cofre",
+  "arrombaram",
+  "arrombado",
+  "tesouro",
+  "caixa-forte",
+  "caixa forte"
+ ],
+ "portaabre": [
+  "abre a porta",
+  "abrir a porta",
+  "portas se abrem",
+  "oportunidade",
+  "oportunidades",
+  "acesso liberado",
+  "entrada"
+ ],
+ "areia": [
+  "areia",
+  "ampulheta",
+  "tempo esgotando",
+  "tempo acaba",
+  "contagem regressiva",
+  "prazo",
+  "acabando"
+ ],
+ "temperatura": [
+  "temperatura",
+  "febre",
+  "esquentou",
+  "aquecimento",
+  "graus",
+  "calor",
+  "esquenta"
+ ],
+ "velocimetro": [
+  "velocidade",
+  "velocimetro",
+  "acelerar",
+  "acelerou",
+  "rapido demais",
+  "ritmo",
+  "acelera"
+ ],
+ "linhacresce": [
+  "crescimento",
+  "cresceu",
+  "crescer",
+  "subiu",
+  "valorizacao",
+  "tendencia",
+  "evolucao",
+  "disparou"
+ ],
+ "pendulo": [
+  "pendulo",
+  "oscila",
+  "oscilacao",
+  "vai e volta",
+  "balancar",
+  "hipnose",
+  "hipnotizar"
+ ],
+ "orbita": [
+  "orbita",
+  "orbitas",
+  "orbitar",
+  "gira em torno",
+  "gravidade",
+  "translacao"
+ ],
+ "vasos": [
+  "vasos comunicantes",
+  "nivelar",
+  "equilibrio",
+  "igualar",
+  "se iguala",
+  "nivela",
+  "equalizar"
+ ],
+ "pesagem": [
+  "pesa mais",
+  "pesar",
+  "balanca pende",
+  "desequilibrio",
+  "mais pesado",
+  "contrapeso",
+  "pende"
+ ],
+ "funilbolas": [
+  "funil de vendas",
+  "afunilar",
+  "afunila",
+  "triagem",
+  "filtro",
+  "gargalo",
+  "pouco passa"
+ ],
+ "esteira": [
+  "esteira",
+  "linha de montagem",
+  "producao em serie",
+  "logistica",
+  "pacotes",
+  "encomendas",
+  "armazem"
+ ],
+ "catapulta": [
+  "catapulta",
+  "catapultar",
+  "arremessar",
+  "arremesso",
+  "disparar",
+  "impulsionar",
+  "impulso"
+ ],
+ "elevador": [
+  "elevador",
+  "sobe e desce",
+  "andar",
+  "andares",
+  "subir de nivel",
+  "ascensao"
+ ],
+ "blocos": [
+  "blocos",
+  "bloco a bloco",
+  "tijolo",
+  "tijolos",
+  "empilhar",
+  "empilhando",
+  "torre de blocos"
+ ],
+ "escadarolante": [
+  "escada rolante",
+  "escadas rolantes",
+  "esteira de degraus",
+  "shopping",
+  "sobe sozinho",
+  "subida automatica"
+ ],
+ "sanduiche": [
+  "sanduiche",
+  "hamburguer",
+  "lanche",
+  "recheio",
+  "camada",
+  "camadas",
+  "fast food"
+ ],
+ "bolha": [
+  "bolha",
+  "bolhas",
+  "estourar",
+  "estourou",
+  "estoura",
+  "inflar",
+  "inflado",
+  "bolha especulativa"
+ ],
+ "sinalwifi": [
+  "wifi",
+  "wi-fi",
+  "sinal",
+  "internet",
+  "rede sem fio",
+  "online",
+  "conectividade"
+ ]
+}

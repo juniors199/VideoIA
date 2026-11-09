@@ -1,0 +1,307 @@
+{
+ "notebook": [
+  "notebook",
+  "notebooks",
+  "laptop",
+  "computador portatil"
+ ],
+ "servidor": [
+  "servidor",
+  "servidores",
+  "datacenter",
+  "data center",
+  "nuvem de dados"
+ ],
+ "chip": [
+  "chip",
+  "chips",
+  "semicondutor",
+  "semicondutores",
+  "processador",
+  "processadores",
+  "microchip"
+ ],
+ "roteador": [
+  "roteador",
+  "roteadores",
+  "wifi",
+  "wi-fi",
+  "modem"
+ ],
+ "antena": [
+  "antena",
+  "antenas",
+  "torre de celular",
+  "telecomunicacao",
+  "transmissao"
+ ],
+ "satelite": [
+  "satelite",
+  "satelites",
+  "orbita",
+  "orbitas",
+  "gps",
+  "starlink"
+ ],
+ "robo": [
+  "robo",
+  "robos",
+  "robotica",
+  "androide",
+  "automato"
+ ],
+ "drone": [
+  "drone",
+  "drones",
+  "veiculo aereo",
+  "quadricoptero"
+ ],
+ "blockchain": [
+  "blockchain",
+  "bitcoin",
+  "criptomoeda",
+  "criptomoedas",
+  "cadeia de blocos"
+ ],
+ "teclado": [
+  "teclado",
+  "teclados",
+  "digitar",
+  "digitacao",
+  "tecla",
+  "teclas"
+ ],
+ "mouse": [
+  "mouse",
+  "mouses",
+  "cursor"
+ ],
+ "monitor": [
+  "monitor",
+  "monitores",
+  "tela do computador",
+  "computador",
+  "computadores"
+ ],
+ "fones": [
+  "fone",
+  "fones",
+  "fone de ouvido",
+  "fones de ouvido",
+  "headphone",
+  "headphones"
+ ],
+ "solar": [
+  "painel solar",
+  "paineis solares",
+  "energia solar",
+  "fotovoltaica"
+ ],
+ "eolica": [
+  "eolica",
+  "eolicas",
+  "turbina",
+  "turbinas",
+  "energia eolica",
+  "cata-vento",
+  "moinho de vento"
+ ],
+ "atomo": [
+  "atomo",
+  "atomos",
+  "atomica",
+  "atomico",
+  "eletron",
+  "eletrons",
+  "nucleo"
+ ],
+ "dna": [
+  "dna",
+  "genetica",
+  "genetico",
+  "genoma",
+  "dupla helice",
+  "gene",
+  "genes"
+ ],
+ "molecula": [
+  "molecula",
+  "moleculas",
+  "molecular",
+  "quimica",
+  "composto quimico"
+ ],
+ "saturno": [
+  "saturno",
+  "aneis de saturno",
+  "planeta",
+  "planetas",
+  "astronomia"
+ ],
+ "sistemasolar": [
+  "sistema solar",
+  "planetas do sistema",
+  "orbitam o sol",
+  "orbita do sol",
+  "galaxia"
+ ],
+ "lua": [
+  "lua",
+  "lunar",
+  "luas",
+  "luar"
+ ],
+ "estrela": [
+  "estrela",
+  "estrelas",
+  "estrelato"
+ ],
+ "telescopio": [
+  "telescopio",
+  "telescopios",
+  "observatorio",
+  "observar o ceu",
+  "james webb"
+ ],
+ "microscopio": [
+  "microscopio",
+  "microscopios",
+  "microscopica",
+  "microscopico",
+  "celula",
+  "celulas"
+ ],
+ "tubos": [
+  "tubo de ensaio",
+  "tubos de ensaio",
+  "laboratorio",
+  "laboratorios",
+  "experimento",
+  "experimentos"
+ ],
+ "frasco": [
+  "frasco",
+  "frascos",
+  "erlenmeyer",
+  "reagente",
+  "reagentes",
+  "reacao quimica"
+ ],
+ "ima": [
+  "imas",
+  "magnetismo",
+  "magnetico",
+  "magnetica"
+ ],
+ "prismaluz": [
+  "prisma de luz",
+  "refracao",
+  "arco-iris",
+  "espectro",
+  "luz branca",
+  "decomposicao da luz"
+ ],
+ "circuito": [
+  "circuito",
+  "circuitos",
+  "placa de circuito",
+  "eletronica",
+  "eletronico",
+  "eletronicos"
+ ],
+ "tomada": [
+  "tomada",
+  "tomadas",
+  "plugue",
+  "plugar",
+  "ligar na tomada",
+  "eletricidade"
+ ],
+ "lanterna": [
+  "lanterna",
+  "lanternas",
+  "feixe de luz",
+  "iluminar"
+ ],
+ "pilha2": [
+  "pilha",
+  "pilhas",
+  "bateria aa",
+  "pilhas aa"
+ ],
+ "cameraseg": [
+  "camera de seguranca",
+  "cameras de seguranca",
+  "vigilancia",
+  "monitoramento",
+  "cftv",
+  "videomonitoramento"
+ ],
+ "hdd": [
+  "disco rigido",
+  "armazenamento",
+  "memoria do computador",
+  "hdd"
+ ],
+ "pendrive": [
+  "pendrive",
+  "pendrives",
+  "pen drive",
+  "usb",
+  "memoria portatil"
+ ],
+ "controletv": [
+  "controle remoto",
+  "controles remotos",
+  "controle da tv"
+ ],
+ "gamepad": [
+  "joystick",
+  "joysticks",
+  "gamepad",
+  "videogame",
+  "videogames",
+  "console",
+  "consoles",
+  "gamer"
+ ],
+ "oculosvr": [
+  "realidade virtual",
+  "oculos vr",
+  "oculos de realidade virtual",
+  "metaverso",
+  "headset"
+ ],
+ "impressora3d": [
+  "impressora 3d",
+  "impressoras 3d",
+  "impressao 3d",
+  "manufatura aditiva"
+ ],
+ "radar": [
+  "radar",
+  "radares",
+  "sonar",
+  "varredura"
+ ],
+ "newton": [
+  "pendulo",
+  "pendulos",
+  "newton",
+  "conservacao de energia"
+ ],
+ "ondasom": [
+  "onda sonora",
+  "ondas sonoras",
+  "audio",
+  "frequencia sonora",
+  "podcast"
+ ],
+ "altofalante": [
+  "alto-falante",
+  "alto falante",
+  "caixa de som",
+  "caixas de som",
+  "speaker"
+ ]
+}

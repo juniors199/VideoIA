@@ -1,0 +1,160 @@
+{
+  "id": "moon-path",
+  "nome": "Moon Path (papel recortado em camadas, de ninar)",
+  "versao": 1,
+  "paraQuem": "histórias de ninar e curiosidades de natureza contadas como fábula, de noite: praia, mar e lua em papel recortado, ondas costuradas, estrelas penduradas por fio, o caminho de luz da lua no mar, cais e lampiões ao longe",
+  "exemplosDePedido": [
+    "Como as tartaruguinhas acham o mar",
+    "Por que a lua faz um caminho de luz na água"
+  ],
+  "apelidos": [
+    "moon-path",
+    "caminho-da-lua",
+    "papel-recortado",
+    "ninar",
+    "lua"
+  ],
+  "formato": {
+    "preferidos": [
+      "revelacao",
+      "causa-efeito",
+      "passo-a-passo"
+    ],
+    "proibidos": [],
+    "padrao": "revelacao"
+  },
+  "roteiro": {
+    "palavras": [
+      80,
+      150
+    ],
+    "alvoSegundos": [
+      35,
+      60
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "o lugar e o herói pequeno, numa linha (\"Numa praia quieta, debaixo da lua, nasceu uma tartaruguinha\")",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "exposicao",
+        "seg": [
+          12,
+          30
+        ],
+        "instrucao": "a história em frases curtas, uma cena por frase: o herói quer algo, tenta (uma ação que dá para ver), um problema pequeno e gentil; diga o bicho, o lugar e o objeto (o plano automático escolhe o cenário, o bicho e a ação pela fala)",
+        "n": [
+          4,
+          9
+        ]
+      },
+      {
+        "bloco": "realidade",
+        "seg": [
+          4,
+          10
+        ],
+        "instrucao": "os amigos ajudam (cada um traz uma coisa: uma luz, um caminho) e a frase final curta e quente; se citar fato real, 2 fontes em fontes.md"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "pedido de compartilhar e o convite final curto: seguir e comentar a palavra (as letras de feltro caem nela)"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "HE",
+      "PD"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "ele/ela",
+    "tom": "contadora de histórias de ninar: calma, concreta, uma imagem por frase; a virada gentil e um final curto que volta para casa",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 0.95,
+    "direcao": "[softly, warm, unhurried]",
+    "pausaEntreBlocos": 0.22
+  },
+  "visual": {
+    "pecasPorTema": false,
+    "imagens": "opcional",
+    "contador": "quando-houver-numero",
+    "estilo": "moon-path",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [],
+    "reserva": [],
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2.5,
+      5
+    ],
+    "trocaVisualMaxSeg": 6
+  },
+  "som": {
+    "musica": true,
+    "sfx": "discreto"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, a história em 2 linhas, pergunta gentil",
+    "hashtags": [
+      "#historiadeninar",
+      "#curiosidades",
+      "#natureza"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

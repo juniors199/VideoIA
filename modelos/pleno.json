@@ -1,0 +1,158 @@
+{
+  "id": "pleno",
+  "nome": "Pleno (escala em quadradinhos 3D)",
+  "versao": 1,
+  "paraQuem": "números grandes e porcentagens que ninguém consegue imaginar (população, dinheiro, uso de uma tecnologia, quem faz o quê): cada quadradinho é um pedaço do todo, a grade cresce em volta do \"você\", a câmera recua até o planeta inteiro e os grupos se pintam de verde, amarelo e vermelho, com o texto do topo como a fala na tela",
+  "exemplosDePedido": [
+    "Se o mundo fosse 2.500 quadradinhos, quantos usam I.A. pra construir",
+    "Quanta água da Terra dá pra beber"
+  ],
+  "apelidos": [
+    "pleno",
+    "quadradinhos",
+    "escala",
+    "grade-3d",
+    "dados-3d"
+  ],
+  "formato": {
+    "preferidos": [
+      "revelacao",
+      "numero-impossivel",
+      "comparativo"
+    ],
+    "proibidos": [],
+    "padrao": "revelacao"
+  },
+  "roteiro": {
+    "palavras": [
+      70,
+      150
+    ],
+    "alvoSegundos": [
+      25,
+      50
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "a pessoa vira um quadradinho (\"Esse quadradinho é você\") ou o todo vira uma grade que dá para contar",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "exposicao",
+        "seg": [
+          12,
+          30
+        ],
+        "instrucao": "a escala em degraus: quanto vale um quadradinho, a grade inteira, o planeta; depois os grupos, um por frase, com a porcentagem dita e o que o grupo faz",
+        "n": [
+          4,
+          9
+        ]
+      },
+      {
+        "bloco": "realidade",
+        "seg": [
+          4,
+          10
+        ],
+        "instrucao": "a virada na segunda pessoa: em que grupo a pessoa está e o que isso quer dizer, sem promessa"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "uma pergunta de uma palavra que a pessoa responde nos comentários (\"de que cor é o seu?\")"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "PD",
+      "EN"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.5,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "direto, falado, frases muito curtas; cada número dito com clareza e conferido em 2 fontes",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[calm, confident]",
+    "pausaEntreBlocos": 0.2
+  },
+  "visual": {
+    "pecasPorTema": false,
+    "imagens": "opcional",
+    "contador": "quando-houver-numero",
+    "estilo": "pleno",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [],
+    "reserva": [],
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      1.5,
+      4.5
+    ],
+    "trocaVisualMaxSeg": 4.5
+  },
+  "som": {
+    "musica": true,
+    "sfx": "discreto"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "dado",
+      "dado",
+      "texto",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      9
+    ],
+    "estilo": "padrao"
+  },
+  "publicar": {
+    "legenda": "a escala em uma linha (\"Se o mundo fosse 2.500 quadradinhos...\"), os grupos com a fonte, pergunta curta",
+    "hashtags": [
+      "#curiosidades",
+      "#dados"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

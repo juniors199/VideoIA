@@ -1,0 +1,173 @@
+{
+  "_sobre": "Identidades prontas do Método Ilustrando. Use com: npm run marca -- --preset <id> --nome \"Seu Nome\" --handle \"@seu.handle\". Os nomes são ideias: confira se o @ está livre nas 4 plataformas e se não há marca registrada (guia 03).",
+  "presets": {
+    "curiosidades": {
+      "nicho": "Curiosidades",
+      "cor": "#FFC83D",
+      "corNome": "âmbar",
+      "assinatura": "o que você vê todo dia, explicado",
+      "exemplo": 0,
+      "nomes": [
+        ["Pílula Curiosa", "@pilulacuriosa"],
+        ["Fato Escondido", "@fatoescondido"],
+        ["Porquê das Coisas", "@porquedascoisas"],
+        ["Ninguém Te Contou", "@ninguemtecontou"],
+        ["Detalhe Oculto", "@detalheoculto"],
+        ["Lupa do Dia", "@lupadodia"],
+        ["Curioso de Plantão", "@curiosodeplantao"],
+        ["Mente Inquieta", "@menteinquietabr"],
+        ["Olho Atento", "@olhoatentobr"],
+        ["Explica em 1 Minuto", "@explicaem1minuto"]
+      ],
+      "bioCurta": "O que você vê todo dia, explicado em 1 minuto.",
+      "bio": "O que você vê todo dia, explicado em 1 minuto 🔎\nFato conferido, fonte na legenda.\nNovo vídeo todo dia 👇"
+    },
+    "dinheiro": {
+      "nicho": "Dinheiro",
+      "cor": "#3EE08F",
+      "corNome": "verde",
+      "assinatura": "dinheiro explicado sem economês",
+      "exemplo": 0,
+      "nomes": [
+        ["Bolso Esperto", "@bolsoesperto"],
+        ["Dinheiro Explicado", "@dinheiroexplicado"],
+        ["Centavo a Centavo", "@centavoacentavo"],
+        ["Troco Certo", "@trococerto"],
+        ["Preço Explicado", "@precoexplicado"],
+        ["Economia de Bolso", "@economiadebolso"],
+        ["Planilha Viva", "@planilhaviva"],
+        ["Moeda Curiosa", "@moedacuriosa"],
+        ["Juro na Conta", "@juronaconta"],
+        ["Real Valor", "@realvalorbr"]
+      ],
+      "bioCurta": "Dinheiro explicado sem economês. Conteúdo educativo.",
+      "bio": "Dinheiro explicado sem economês 💸\nPreço, juro e imposto do seu dia a dia.\nConteúdo educativo, não é recomendação de investimento."
+    },
+    "historia": {
+      "nicho": "História",
+      "cor": "#FF6B5B",
+      "corNome": "coral",
+      "assinatura": "o passado que explica o presente",
+      "exemplo": 0,
+      "nomes": [
+        ["Passado Explica", "@passadoexplica"],
+        ["Linha do Tempo BR", "@linhadotempobr"],
+        ["Arquivo Curioso", "@arquivocurioso"],
+        ["Século em Minutos", "@seculoemminutos"],
+        ["Baú da História", "@baudahistoria"],
+        ["História Sem Filtro", "@historiasemfiltro"],
+        ["Mapa do Passado", "@mapadopassado"],
+        ["Crônica Antiga", "@cronicaantiga"],
+        ["Era Uma Vez de Verdade", "@eraumavezdeverdade"],
+        ["Relíquia", "@reliquiabr"]
+      ],
+      "bioCurta": "O passado que explica o presente, em 1 minuto.",
+      "bio": "O passado que explica o presente 🏛️\nHistória do Brasil e do mundo em 1 minuto.\nFonte de cada fato na legenda."
+    },
+    "biblia-e-fe": {
+      "nicho": "Bíblia e fé",
+      "cor": "#B794FF",
+      "corNome": "violeta",
+      "assinatura": "a Bíblia explicada com contexto e respeito",
+      "exemplo": 0,
+      "nomes": [
+        ["Bíblia em Contexto", "@bibliaemcontexto"],
+        ["Versículo Explicado", "@versiculoexplicado"],
+        ["Pergaminho Vivo", "@pergaminhovivo"],
+        ["Raízes da Fé", "@raizesdafe"],
+        ["Caminho da Palavra", "@caminhodapalavra"],
+        ["Luz da Escritura", "@luzdaescritura"],
+        ["Terra Santa Explicada", "@terrasantaexplicada"],
+        ["Fé e História", "@feehistoria"],
+        ["Arqueologia da Bíblia", "@arqueologiadabiblia"],
+        ["Palavra em 1 Minuto", "@palavraem1minuto"]
+      ],
+      "bioCurta": "A Bíblia explicada com contexto e respeito.",
+      "bio": "A Bíblia explicada com contexto e respeito 📜\nHistória, lugares e costumes por trás dos textos.\nPara todas as tradições cristãs."
+    },
+    "politica-e-atualidades": {
+      "nicho": "Política e atualidades",
+      "cor": "#6FA8FF",
+      "corNome": "azul",
+      "assinatura": "o noticiário explicado, sem torcida",
+      "exemplo": 0,
+      "nomes": [
+        ["Entenda o Caso", "@entendaocaso"],
+        ["Pauta Explicada", "@pautaexplicada"],
+        ["Fato em Pauta", "@fatoempauta"],
+        ["Contexto BR", "@contextobr"],
+        ["Notícia Desenhada", "@noticiadesenhada"],
+        ["Lei Explicada", "@leiexplicada"],
+        ["Resumo do Poder", "@resumodopoder"],
+        ["Bastidor Público", "@bastidorpublico"],
+        ["Plenário Explica", "@plenarioexplica"],
+        ["Brasília em 1 Minuto", "@brasiliaem1minuto"]
+      ],
+      "bioCurta": "O noticiário explicado, sem torcida. Fonte na legenda.",
+      "bio": "O noticiário explicado, sem torcida 🗞️\nO que aconteceu, por que importa e o que vem depois.\nFonte e data de cada informação na legenda."
+    },
+    "ciencia-e-espaco": {
+      "nicho": "Ciência e espaço",
+      "cor": "#2FD8F0",
+      "corNome": "ciano",
+      "assinatura": "a ciência por trás do que você vê",
+      "exemplo": 0,
+      "nomes": [
+        ["Órbita Curiosa", "@orbitacuriosa"],
+        ["Ciência de Bolso", "@cienciadebolso"],
+        ["Universo Explicado", "@universoexplicado"],
+        ["Poeira Estelar", "@poeiraestelarbr"],
+        ["Átomo a Átomo", "@atomoaatomo"],
+        ["Física do Dia", "@fisicadodia"],
+        ["Laboratório Aberto", "@laboratorioaberto"],
+        ["Cosmos de Bolso", "@cosmosdebolso"],
+        ["Ano-Luz", "@anoluzbr"],
+        ["Hipótese", "@hipotesebr"]
+      ],
+      "bioCurta": "A ciência por trás do que você vê, em 1 minuto.",
+      "bio": "A ciência por trás do que você vê 🔭\nEspaço, corpo humano e tecnologia em 1 minuto.\nEstudo e fonte na legenda."
+    },
+    "cotidiano-e-casa": {
+      "nicho": "Cotidiano e casa",
+      "cor": "#FF8FB1",
+      "corNome": "rosa",
+      "assinatura": "o porquê das coisas da sua casa",
+      "exemplo": 0,
+      "nomes": [
+        ["Casa Explicada", "@casaexplicada"],
+        ["Cotidiano Curioso", "@cotidianocurioso"],
+        ["Manual da Casa", "@manualdacasa"],
+        ["Gaveta Curiosa", "@gavetacuriosa"],
+        ["Do Mercado à Mesa", "@domercadoamesa"],
+        ["Rotina Explicada", "@rotinaexplicada"],
+        ["Por Que Lá em Casa", "@porquelaemcasa"],
+        ["Lar Curioso", "@larcurioso"],
+        ["Coisa de Casa", "@coisadecasabr"],
+        ["Feito em Casa Explica", "@feitoemcasaexplica"]
+      ],
+      "bioCurta": "O porquê das coisas da sua casa, em 1 minuto.",
+      "bio": "O porquê das coisas da sua casa 🏠\nCozinha, mercado, limpeza e contas, explicados.\nNovo vídeo todo dia."
+    },
+    "esportes": {
+      "nicho": "Esportes",
+      "cor": "#B6F23A",
+      "corNome": "lima",
+      "assinatura": "o esporte além do placar",
+      "exemplo": 0,
+      "nomes": [
+        ["Lance Explicado", "@lanceexplicado"],
+        ["Placar Curioso", "@placarcurioso"],
+        ["Tática de Bolso", "@taticadebolso"],
+        ["Regra Explicada", "@regraexplicada"],
+        ["Recorde Explicado", "@recordeexplicado"],
+        ["Vestiário Aberto", "@vestiarioaberto"],
+        ["Bastidor do Esporte", "@bastidordoesporte"],
+        ["Na Trave", "@natravebr"],
+        ["Arquibancada Curiosa", "@arquibancadacuriosa"],
+        ["Segundo Tempo Curioso", "@segundotempocurioso"]
+      ],
+      "bioCurta": "O esporte além do placar: regras, recordes e bastidores.",
+      "bio": "O esporte além do placar ⚽\nRegras, recordes e bastidores explicados em 1 minuto.\nPágina independente, sem ligação com clubes."
+    }
+  }
+}

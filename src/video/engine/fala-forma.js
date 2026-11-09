@@ -1,0 +1,6 @@
+/* Ilustrando Studio 0.6.45. Pacote C-000000000000.  */
+/*
+ * 
+ * 
+ */
+const p=e=>String(e||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,""),g=e=>` ${p(e).replace(/[^a-z0-9 ]/g," ").replace(/\s+/g," ")} `;function h(e,t,{evitar:n=[]}={}){const r=g(e);let c=null,i=0;for(const[o,l]of Object.entries(t||{})){let s=0,f=0;for(const d of l.temas||[]){const a=p(d);if(r.includes(` ${a} `)||a.length>=5&&r.includes(` ${a.slice(0,-1)}`)){const m=(a.length>=6?2:1)+(a===p(o)?.5:0);s+=m,f=Math.max(f,m)}}s>0&&l.peso&&(s=f+l.peso),s>0&&r.includes(` ${p(o)} `)&&(s+=3),n.includes(o)&&(s-=1.5),s>i&&(i=s,c=o)}return i>0?c:null}function $(e,t,n){const r=p(e),c=(t||[]).filter(Boolean),i=(n||[]).filter(([o])=>o.test(r));return!i.length||!c.length?[]:i.some(([,o])=>c.some(l=>o.includes(l)))?[]:[`a fala pede ${i.map(([,o])=>o[0]).join(" ou ")} e o desenho \xE9 ${c.join(" + ")}`]}const u=new Map;function R(e,{itens:t={},pistas:n=[]}={}){u.set(e,{itens:t,pistas:n})}const x=e=>u.get(e)||{itens:{},pistas:[]},E=()=>[...u.keys()],j=(e,t,{evitar:n=[],extras:r={}}={})=>h(t,{...x(e).itens,...r},{evitar:n}),F=(e,t,n)=>$(t,n,x(e).pistas);export{$ as conferirFala,F as conferirNoEstilo,j as escolherNoEstilo,h as escolherPorFala,E as estilosComRepertorio,R as registrarRepertorio,x as repertorioDe,p as semAcento};

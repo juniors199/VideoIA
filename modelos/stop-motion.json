@@ -1,0 +1,169 @@
+{
+  "id": "stop-motion",
+  "nome": "Stop Motion (massinha filmada quadro a quadro)",
+  "versao": 2,
+  "paraQuem": "curiosidades de cotidiano, corpo humano, comida, ciência simples e processos que dá para contar com miniaturas de massinha: personagem de massa que atua (anda, corre, fala, aponta), corte interno no corpo (coração, pulmão, engrenagens), cenários variados (parque, campo, pista, ringue, quarto, cozinha, estúdio, corpo) e câmera de cinema (empurra, mergulha, orbita, trilho, dissolve)",
+  "exemplosDePedido": [
+    "Por que o pão cresce no forno?",
+    "Como o café acorda a gente?",
+    "Por que o gelo boia?",
+    "Por que o coração dispara quando a gente corre?"
+  ],
+  "apelidos": [
+    "massinha",
+    "claymation",
+    "stopmotion",
+    "miniatura"
+  ],
+  "formato": {
+    "preferidos": [
+      "causa-efeito",
+      "revelacao",
+      "passo-a-passo"
+    ],
+    "proibidos": [],
+    "padrao": "causa-efeito"
+  },
+  "roteiro": {
+    "palavras": [
+      60,
+      95
+    ],
+    "alvoSegundos": [
+      22,
+      36
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "a pergunta do cotidiano com a palavra-chave na placa de massa (uma palavra só)",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "mecanismo",
+        "seg": [
+          14,
+          24
+        ],
+        "instrucao": "um passo por cena, cada cena com UMA palavra-chave na placa; mude o plano (personagem inteiro, corte interno no peito ou na cabeça, órgão ou mecanismo solto) e o movimento de câmera a cada cena, e deixe o personagem fazer o que a frase diz",
+        "n": [
+          3,
+          5
+        ]
+      },
+      {
+        "bloco": "virada",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "o detalhe que surpreende, com um rótulo curto"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "convite final curto"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "EN",
+      "PD"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "leve, curioso, frases curtas e concretas, como quem mostra uma maquete",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[calm, clear]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "pecasPorTema": true,
+    "imagens": "recomendada",
+    "contador": "quando-houver-numero",
+    "estilo": "stop-motion",
+    "cenarios": [
+      "mesa"
+    ],
+    "pecasBase": [
+      "pao",
+      "xicara",
+      "relogioparede",
+      "lampada3d"
+    ],
+    "reserva": [
+      "lampada3d",
+      "balao"
+    ],
+    "titulos": "por-etapa"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2,
+      5
+    ],
+    "trocaVisualMaxSeg": 4
+  },
+  "som": {
+    "musica": true,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, o porquê em 2 linhas, pergunta de opinião",
+    "hashtags": [
+      "#curiosidades",
+      "#vocesabia",
+      "#stopmotion"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

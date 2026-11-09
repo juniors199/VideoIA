@@ -1,0 +1,248 @@
+{
+ "tema": "MEL",
+ "estilo": "tubo",
+ "capa": {
+  "texto": "O mel *não estraga*"
+ },
+ "beats": [
+  {
+   "id": "gancho",
+   "palavras": [
+    0,
+    10
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "pote-mel",
+     "entra": "pote"
+    }
+   ],
+   "titulo": {
+    "texto": "Um pote de mel pode durar *milhares de anos*"
+   },
+   "fator": 0.85
+  },
+  {
+   "id": "arqueologos",
+   "palavras": [
+    11,
+    19
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "piramideegito",
+     "entra": "Arqueólogos"
+    },
+    {
+     "tipo": "contador",
+     "valor": 3000,
+     "legenda": "anos",
+     "entra": "três",
+     "dur": 0.5,
+     "de": 3000
+    }
+   ]
+  },
+  {
+   "id": "egito",
+   "palavras": [
+    20,
+    29
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "piramideegito",
+     "entra": 0.1
+    },
+    {
+     "tipo": "tubo",
+     "forma": "chave",
+     "texto": "ainda *conservado*",
+     "entra": "ainda",
+     "pos": [
+      0.5,
+      1.14
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agua",
+   "palavras": [
+    30,
+    36
+   ],
+   "elementos": [
+    {
+     "tipo": "tubo",
+     "forma": "gigante",
+     "texto": "ÁGUA",
+     "acima": "falta de",
+     "entra": 0.1
+    }
+   ]
+  },
+  {
+   "id": "menos",
+   "palavras": [
+    37,
+    44
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "pote-mel",
+     "entra": "mel"
+    },
+    {
+     "tipo": "tubo",
+     "forma": "chave",
+     "texto": "menos de *vinte por cento*",
+     "entra": "menos",
+     "pos": [
+      0.5,
+      1.14
+     ]
+    }
+   ]
+  },
+  {
+   "id": "secam",
+   "palavras": [
+    45,
+    53
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "bacteria",
+     "entra": 0.1,
+     "rot": [
+      0.9,
+      0,
+      0.6
+     ],
+     "gira": 0.6
+    },
+    {
+     "tipo": "tubo",
+     "forma": "chave",
+     "texto": "as bactérias *secam*",
+     "entra": "bactérias",
+     "pos": [
+      0.5,
+      1.14
+     ]
+    }
+   ]
+  },
+  {
+   "id": "acido",
+   "palavras": [
+    54,
+    65
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "frasco",
+     "entra": 0.1
+    },
+    {
+     "tipo": "peca",
+     "forma": "escala-ph",
+     "entra": "pH",
+     "dados": {
+      "material": "original"
+     }
+    },
+    {
+     "tipo": "tubo",
+     "forma": "chave",
+     "texto": "pH entre *três e quatro*",
+     "entra": "pH",
+     "pos": [
+      0.5,
+      1.14
+     ]
+    }
+   ],
+   "fator": 0.82
+  },
+  {
+   "id": "abelhas",
+   "palavras": [
+    66,
+    78
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "abelha",
+     "entra": 0.1
+    }
+   ],
+   "titulo": {
+    "texto": "as abelhas deixam *água oxigenada*"
+   },
+   "fator": 0.8
+  },
+  {
+   "id": "chance",
+   "palavras": [
+    79,
+    85
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "gota",
+     "entra": 0.1
+    },
+    {
+     "tipo": "peca",
+     "forma": "bacteria",
+     "entra": "chance",
+     "rot": [
+      0.9,
+      0,
+      0.6
+     ]
+    },
+    {
+     "tipo": "tubo",
+     "forma": "chave",
+     "texto": "sem água, *sem chance*",
+     "entra": "Sem",
+     "pos": [
+      0.5,
+      1.14
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fecho",
+   "palavras": [
+    86,
+    100
+   ],
+   "elementos": [
+    {
+     "tipo": "peca",
+     "forma": "pote-mel",
+     "entra": 0.1
+    },
+    {
+     "tipo": "tubo",
+     "forma": "fogo",
+     "entra": "apodrece"
+    }
+   ]
+  }
+ ],
+ "hashPalavras": "4d5e1d708f57"
+}

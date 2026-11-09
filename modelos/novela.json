@@ -1,0 +1,160 @@
+{
+  "id": "novela",
+  "nome": "Novela (história encenada por personagens ilustrados)",
+  "versao": 1,
+  "paraQuem": "histórias reais contadas como novela: vidas de santos e personagens históricos, episódios de guerra, casos do passado e dramas do cotidiano, encenados por personagens ilustrados em cenários pintados, com a câmera que troca de plano e viaja de um lugar a outro",
+  "exemplosDePedido": [
+    "A trégua de Natal de 1914, na Primeira Guerra",
+    "Como um monge sobreviveu a um envenenamento, segundo a biografia antiga"
+  ],
+  "apelidos": [
+    "novela",
+    "historia-ilustrada",
+    "encenada",
+    "santos",
+    "hagiografia",
+    "drama"
+  ],
+  "formato": {
+    "preferidos": [
+      "revelacao",
+      "causa-efeito",
+      "antes-depois"
+    ],
+    "proibidos": [],
+    "padrao": "revelacao"
+  },
+  "roteiro": {
+    "palavras": [
+      100,
+      170
+    ],
+    "alvoSegundos": [
+      40,
+      60
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "a primeira cena da história: quem, onde e o que estava em jogo, em uma frase que dá para encenar (\"Na noite de Natal de 1914, no meio da guerra, os tiros pararam\")",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "exposicao",
+        "seg": [
+          20,
+          38
+        ],
+        "instrucao": "a história em frases curtas e concretas, uma ação por frase (rezou, apontou, atravessou, cantou), com o lugar e o papel de cada um (os soldados, a freira, o monge); pessoa citada pelo nome aparece com foto real",
+        "n": [
+          6,
+          10
+        ]
+      },
+      {
+        "bloco": "realidade",
+        "seg": [
+          4,
+          8
+        ],
+        "instrucao": "a virada honesta e o que ficou dela (começa com \"Mas\" ou \"No ano seguinte\" para o clarão de transição), com fonte"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "pedido de compartilhar (revezando story e amigo) e o convite padrão: seguir e comentar a palavra"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "HE",
+      "PD"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "ele/ela",
+    "tom": "narração de novela: frases curtas no passado, concretas, uma ação por frase, com o papel de quem age e o lugar; ritmo calmo e cuidadoso",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[storytelling, warm, calm]",
+    "pausaEntreBlocos": 0.12
+  },
+  "visual": {
+    "pecasPorTema": true,
+    "imagens": "recomendada",
+    "contador": "quando-houver-numero",
+    "estilo": "novela",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [],
+    "reserva": [],
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      1.8,
+      4.5
+    ],
+    "trocaVisualMaxSeg": 4.5
+  },
+  "som": {
+    "musica": true,
+    "sfx": "discreto"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, a história em 2 linhas, pergunta de opinião",
+    "hashtags": [
+      "#historia",
+      "#curiosidades"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

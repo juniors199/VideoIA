@@ -1,0 +1,173 @@
+{
+  "id": "quadro-antigo",
+  "nome": "Quadro Antigo (gravuras e pinturas com a fala datilografada)",
+  "versao": 1,
+  "paraQuem": "história, arte, religião, política e qualquer curiosidade que tenha uma obra de domínio público para mostrar: gravuras, pinturas e mapas em sépia com a fala batida à máquina em tiras de papel rasgado",
+  "exemplosDePedido": [
+    "O quadro do Grito do Ipiranga nunca foi uma foto",
+    "A história por trás de uma pintura famosa"
+  ],
+  "apelidos": [
+    "gravura",
+    "pintura",
+    "papel-rasgado",
+    "datilografado",
+    "museu"
+  ],
+  "formato": {
+    "preferidos": [
+      "mito-fato",
+      "antes-depois",
+      "causa-efeito",
+      "revelacao"
+    ],
+    "proibidos": [],
+    "padrao": "mito-fato"
+  },
+  "roteiro": {
+    "palavras": [
+      85,
+      140
+    ],
+    "alvoSegundos": [
+      30,
+      48
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          3,
+          5
+        ],
+        "instrucao": "a frase que desmonta o que todos acham (um fato curto sobre a obra ou o personagem)",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "mecanismo",
+        "seg": [
+          20,
+          34
+        ],
+        "instrucao": "um dado por frase, cada um com a imagem que o mostra: a obra inteira, um detalhe, o mapa, a linha do tempo, o número",
+        "n": [
+          4,
+          7
+        ]
+      },
+      {
+        "bloco": "virada",
+        "seg": [
+          4,
+          7
+        ],
+        "instrucao": "o que isso muda: a obra é uma versão, não o registro"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "convite final curto"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "HE",
+      "EN"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "narrador de museu, direto e curioso: frase curta, datas e números por extenso conferidos, nunca afirmar sem fonte",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[calm, clear]",
+    "pausaEntreBlocos": 0
+  },
+  "visual": {
+    "pecasPorTema": true,
+    "imagens": "recomendada",
+    "contador": "quando-houver-numero",
+    "estilo": "quadro-antigo",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [
+      "pergaminho",
+      "linhaeras",
+      "castelo",
+      "coroa",
+      "caravela",
+      "mapamundi",
+      "presidentefaixa",
+      "linhatempo"
+    ],
+    "reserva": [
+      "pergaminho",
+      "linhatempo",
+      "mapamundi"
+    ],
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2.5,
+      5
+    ],
+    "trocaVisualMaxSeg": 4
+  },
+  "som": {
+    "musica": true,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, o porquê em 2 linhas, pergunta de opinião",
+    "hashtags": [
+      "#curiosidades",
+      "#vocesabia"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

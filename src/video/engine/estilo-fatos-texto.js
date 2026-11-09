@@ -1,0 +1,6 @@
+/* Ilustrando Studio 0.6.45. Pacote C-000000000000.  */
+/*
+ * 
+ * 
+ */
+function A(u,o,{px:a,maxW:e,minimo:i=.8,linhas:l=2}){const f=String(u??"").replace(/\s+/g," ").trim();if(!f)return{linhas:[""],px:a,larg:0,miudo:!1};const c=Math.max(10,Math.floor(a*i));for(let t=a;t>=c;t-=2){const r=o(f,t);if(r<=e)return{linhas:[f],px:t,larg:r,miudo:!1}}const p=t=>{const r=f.split(" "),n=[];let s="";for(const g of r){const m=s?`${s} ${g}`:g;o(m,t)<=e||!s?s=m:(n.push(s),s=g)}return s&&n.push(s),n};for(let t=a;t>=c;t-=2){const r=p(t);if(r.length<=l&&r.every(n=>o(n,t)<=e))return{linhas:r,px:t,larg:Math.max(...r.map(n=>o(n,t))),miudo:!1}}for(let t=c-2;t>=12;t-=2){const r=p(t);if(r.length<=l&&r.every(n=>o(n,t)<=e))return{linhas:r,px:t,larg:Math.max(...r.map(n=>o(n,t))),miudo:!0}}const h=p(12);return{linhas:h.slice(0,l),px:12,larg:Math.max(...h.map(t=>o(t,12))),miudo:!0,cortado:h.length>l}}const x=.45,M=.73;function q(u){return Math.round(x*M*u)}function L(u,o){const a=l=>String(l??"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[^a-z0-9]/g,""),e=a(String(u??"").trim().split(/\s+/)[0]),i=a(o);return!e||!i||e==="%"?!1:!!(e===i||e.length>=2&&i.startsWith(e)||i.length>=2&&e.startsWith(i))}export{M as ALTURA_CAIXA_ALTA,x as RESPIRO_NUMERO,A as ajustarLinhas,L as mesmaUnidade,q as respiroNumero};

@@ -1,0 +1,6 @@
+/* Ilustrando Studio 0.6.45. Pacote C-000000000000.  */
+/*
+ * 
+ * 
+ */
+const n=a=>a&&a.estilo||"padrao";function l(a,e=null){return!a||typeof a!="object"?null:typeof a.estiloPlano=="string"&&a.estiloPlano?a.estiloPlano:typeof a.estilo=="string"&&a.estilo?a.estilo:a.automatica===!0&&typeof e?.estiloPlano=="string"?e.estiloPlano:null}function f(a,e,{relatorioAnterior:o=null,pedidoBruto:i}={}){if(!a)return{acao:"manter"};const t=n(e),r=l(a,o);if(r)return r===t?{acao:"manter"}:a.automatica===!0?{acao:"replanejar",de:r,para:t}:typeof a.estilo=="string"&&a.estilo?{acao:"avisar",de:r,para:t}:{acao:"manter"};if(a.automatica===!0&&o&&"estilo"in o&&i!==void 0){const s=o.estilo??null;if(s!==(i??null))return{acao:"replanejar",de:s||"sugerido",para:t}}return{acao:"manter"}}function p(a){return a.acao==="replanejar"?`o estilo mudou (as cenas eram do estilo ${a.de} e o pedido agora \xE9 ${a.para}): refiz as cenas pelo plano autom\xE1tico no estilo ${a.para}.`:a.acao==="avisar"?`a cena escrita \xE0 m\xE3o (cena.json) est\xE1 no estilo ${a.de}, mas o pedido agora \xE9 ${a.para}. O v\xEDdeo saiu no estilo da cena (${a.de}), para n\xE3o perder o que foi escrito. Para o estilo ${a.para}, pe\xE7a ao assistente: "reescreva a cena deste v\xEDdeo no estilo ${a.para}".`:""}export{f as decidirCenaPorEstilo,l as estiloDaCena,n as estiloDoPlano,p as fraseCenaEstilo};

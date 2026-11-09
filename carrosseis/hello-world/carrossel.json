@@ -1,0 +1,62 @@
+{
+  "perfil": "curiosidades",
+  "tema": "PROGRAMAÇÃO",
+  "legenda": "O exemplo mais antigo conhecido do \"hello, world\" está num tutorial de Brian Kernighan sobre a linguagem B, de 1972, na Bell Labs. O livro The C Programming Language (1978) espalhou a tradição.\n\nQual linguagem você quer aprender?\n\nSegue a página pra ver a próxima.\n\nFoto: Ben Lowe (CC BY 2.0)",
+  "marcadores": [
+    "programacao",
+    "helloworld",
+    "python",
+    "tecnologia"
+  ],
+  "fontes": [
+    "Wikipedia, \"Hello, World!\" program: https://en.wikipedia.org/wiki/%22Hello,_World!%22_program",
+    "New America, Hello, hello world (entrevista com Kernighan): https://www.newamerica.org/insights/hello-hello-world/",
+    "DEV Community: https://dev.to/fluidwire/hello-world-started-in-1972-3g7o",
+    "IONOS Digital Guide: https://www.ionos.com/digitalguide/websites/web-development/hello-world/",
+    "Wikipedia, The C Programming Language: https://en.wikipedia.org/wiki/The_C_Programming_Language",
+    "Python, função print: https://docs.python.org/3/library/functions.html#print",
+    "Real Python, print: https://realpython.com/python-print/"
+  ],
+  "slides": [
+    {
+      "tipo": "capa",
+      "titulo": "Por que todo mundo começa a programar com *Olá, mundo*",
+      "sub": "A tradição tem mais de 50 anos."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Em Python, é *uma linha*",
+      "linguagem": "Python",
+      "arquivo": "ola.py",
+      "codigo": "# o primeiro programa\nprint(\"Olá, mundo\")",
+      "legenda": "Rode e o computador responde: Olá, mundo.",
+      "fotoFundo": "assets/kernighan.jpg"
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Nasceu num *memorando*",
+      "texto": "O exemplo mais antigo conhecido está num tutorial de Brian Kernighan sobre a linguagem B, de 1972, na Bell Labs.",
+      "fotoFundo": "assets/kernighan.jpg"
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Em C, ficou *famoso*",
+      "linguagem": "C",
+      "arquivo": "hello.c",
+      "codigo": "main()\n{\n    printf(\"hello, world\\n\");\n}",
+      "legenda": "O livro de Kernighan e Ritchie, de 1978, espalhou o exemplo."
+    },
+    {
+      "tipo": "texto",
+      "titulo": "A inspiração foi um *pintinho*",
+      "texto": "Kernighan contou que lembrou de um desenho de um pintinho saindo do ovo e dizendo \"Hello, World\".",
+      "fotoFundo": "assets/kernighan.jpg"
+    },
+    {
+      "tipo": "fecho",
+      "titulo": "Qual linguagem você quer *aprender*?",
+      "texto": "Conta nos comentários.",
+      "fotoFundo": "assets/kernighan.jpg"
+    }
+  ]
+}

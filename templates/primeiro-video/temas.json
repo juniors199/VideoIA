@@ -1,0 +1,476 @@
+{
+ "_sobre": "Banco de temas prontos do botão \"Fazer meu primeiro vídeo\": cada tema traz gancho, virada, o que mostrar e os fatos já conferidos em pelo menos 2 fontes, para o assistente escrever o roteiro sem inventar dado.",
+ "temas": [
+  {
+   "id": "gelo-boia",
+   "titulo": "Por que o gelo boia na água",
+   "tema": "Por que a água sólida (gelo) é mais leve que a água líquida e flutua.",
+   "gancho": "Quase toda substância fica mais densa ao congelar. A água faz o contrário.",
+   "virada": "Ao congelar, as moléculas de água se prendem numa grade aberta, em forma de colmeia, e ocupam cerca de 9% mais espaço. Mais volume com o mesmo peso: o gelo fica menos denso e boia, com só cerca de um décimo para fora da água.",
+   "mostrar": [
+    "cubo de gelo 3D boiando num copo de água, visto em corte",
+    "moléculas de água soltas no líquido virando uma grade hexagonal ao congelar",
+    "número grande \"9%\" ao lado de um cubo que incha",
+    "iceberg em corte com a linha d'água marcando 1 décimo acima e 9 décimos abaixo"
+   ],
+   "fatos": [
+    {
+     "texto": "Na maioria das substâncias o sólido é mais denso que o líquido; a água é a exceção.",
+     "fontes": [
+      "https://www.usgs.gov/special-topics/water-science-school/science/water-density",
+      "https://en.wikipedia.org/wiki/Ice"
+     ]
+    },
+    {
+     "texto": "Ao congelar, a água aumenta cerca de 9% de volume (o gelo é cerca de 9% menos denso que a água líquida).",
+     "fontes": [
+      "https://www.usgs.gov/special-topics/water-science-school/science/water-density",
+      "https://en.wikipedia.org/wiki/Ice"
+     ]
+    },
+    {
+     "texto": "No gelo, as moléculas se alinham numa grade regular (hexagonal) que as deixa mais afastadas do que no líquido.",
+     "fontes": [
+      "https://www.usgs.gov/special-topics/water-science-school/science/water-density",
+      "https://en.wikipedia.org/wiki/Ice"
+     ]
+    },
+    {
+     "texto": "Cerca de um décimo de um iceberg (ou de um cubo de gelo) fica acima da linha d'água.",
+     "fontes": [
+      "https://www.usgs.gov/special-topics/water-science-school/science/water-density",
+      "https://en.wikipedia.org/wiki/Iceberg"
+     ]
+    }
+   ],
+   "categoria": "ciência"
+  },
+  {
+   "id": "cebola-faz-chorar",
+   "titulo": "Por que a cebola faz a gente chorar",
+   "tema": "O que acontece dentro da cebola na hora do corte para fazer o olho lacrimejar.",
+   "gancho": "A cebola inteira não faz ninguém chorar. É a faca que dispara a química.",
+   "virada": "O corte rompe as células e mistura uma enzima com compostos de enxofre que estavam separados. Uma segunda enzima transforma o resultado num gás volátil, o fator lacrimogêneo, que sobe até o olho e o irrita: a lágrima é a defesa.",
+   "mostrar": [
+    "cebola 3D sendo cortada por uma faca, com as células se abrindo em close",
+    "duas peças (enzima e composto de enxofre) separadas que se encontram no corte",
+    "nuvem de gás subindo da tábua até um olho estilizado",
+    "gota de lágrima grande saindo do olho"
+   ],
+   "fatos": [
+    {
+     "texto": "Ao cortar a cebola, as células se rompem e a enzima alinase age sobre compostos de enxofre, formando um ácido sulfênico.",
+     "fontes": [
+      "https://en.wikipedia.org/wiki/Syn-Propanethial-S-oxide",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC5693239/"
+     ]
+    },
+    {
+     "texto": "Outra enzima, a sintase do fator lacrimogêneo (LFS), transforma esse ácido em sin-propanotial-S-óxido, um composto volátil que irrita os olhos e provoca lágrimas.",
+     "fontes": [
+      "https://en.wikipedia.org/wiki/Syn-Propanethial-S-oxide",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC5693239/"
+     ]
+    },
+    {
+     "texto": "Quando a produção da enzima LFS é silenciada, obtém-se uma cebola que não faz chorar.",
+     "fontes": [
+      "https://en.wikipedia.org/wiki/Syn-Propanethial-S-oxide",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC5693239/"
+     ]
+    }
+   ],
+   "categoria": "cotidiano"
+  },
+  {
+   "id": "rastro-branco-do-aviao",
+   "titulo": "O que é o rastro branco do avião",
+   "tema": "Como se formam as trilhas brancas (rastros de condensação) que os aviões deixam no céu.",
+   "gancho": "O risco branco atrás do avião não é fumaça. É parente do bafo que sai da sua boca no frio.",
+   "virada": "Queimar combustível solta vapor d'água quente. Lá em cima o ar é gelado: o vapor se condensa em partículas e congela em cristais de gelo, formando uma nuvem fina. Se o ar está seco, ela some em minutos; se está úmido, dura horas.",
+   "mostrar": [
+    "avião 3D cruzando o céu com o rastro saindo das turbinas",
+    "close na saída da turbina: vapor quente virando cristais de gelo",
+    "comparação lado a lado com uma pessoa soltando bafo no frio",
+    "dois céus: um seco com rastro curto e um úmido com rastro longo e espalhado"
+   ],
+   "fatos": [
+    {
+     "texto": "O rastro se forma quando o ar quente e úmido do escapamento do motor se mistura com o ar muito frio da altitude; o vapor d'água se condensa e congela em cristais de gelo.",
+     "fontes": [
+      "https://www.faa.gov/contrails/fact-sheet",
+      "https://en.wikipedia.org/wiki/Contrail"
+     ]
+    },
+    {
+     "texto": "Água e partículas são subprodutos da queima do combustível, e as partículas do escapamento servem de núcleo para a condensação.",
+     "fontes": [
+      "https://www.faa.gov/contrails/fact-sheet",
+      "https://en.wikipedia.org/wiki/Contrail"
+     ]
+    },
+    {
+     "texto": "Dependendo da temperatura e da umidade, o rastro some em minutos (ar seco) ou dura horas (ar úmido) e pode se espalhar como nuvem cirrus.",
+     "fontes": [
+      "https://www.faa.gov/contrails/fact-sheet",
+      "https://en.wikipedia.org/wiki/Contrail"
+     ]
+    }
+   ],
+   "categoria": "tecnologia"
+  },
+  {
+   "id": "micro-ondas-prato-frio",
+   "titulo": "Por que o micro-ondas não esquenta o prato",
+   "tema": "Por que a comida sai quente do micro-ondas e o prato quase frio.",
+   "gancho": "A comida sai pelando do micro-ondas e o prato quase frio. Como o forno escolhe?",
+   "virada": "As ondas de 2,45 GHz fazem as moléculas de água da comida girarem para lá e para cá bilhões de vezes por segundo, e esse vai e vem vira calor. Vidro, papel e o plástico próprio para micro-ondas quase não absorvem as ondas: o prato só esquenta com o calor que recebe da comida.",
+   "mostrar": [
+    "micro-ondas 3D aberto com um prato e comida dentro",
+    "molécula de água girando de um lado para o outro no ritmo da onda",
+    "número grande \"2,45 GHz\"",
+    "ondas atravessando o prato sem efeito e esquentando só a comida (comida laranja, prato frio)"
+   ],
+   "fatos": [
+    {
+     "texto": "Os micro-ondas domésticos funcionam em 2,45 GHz.",
+     "fontes": [
+      "https://en.wikipedia.org/wiki/Microwave_oven",
+      "https://pressbooks.online.ucf.edu/uphysicstjb/chapter/the-electromagnetic-spectrum/"
+     ]
+    },
+    {
+     "texto": "O campo elétrico que oscila faz as moléculas de água (que têm um lado positivo e outro negativo) girarem, invertendo bilhões de vezes por segundo; essa energia vira calor.",
+     "fontes": [
+      "https://en.wikipedia.org/wiki/Microwave_oven",
+      "https://pressbooks.online.ucf.edu/uphysicstjb/chapter/the-electromagnetic-spectrum/",
+      "https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-ovens"
+     ]
+    },
+    {
+     "texto": "As micro-ondas atravessam vidro, papel, plástico e materiais parecidos; o recipiente fica mais frio que a comida e só se aquece com o calor dela (alguns plásticos e materiais absorvem e esquentam).",
+     "fontes": [
+      "https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-ovens",
+      "https://en.wikipedia.org/wiki/Microwave_oven"
+     ]
+    }
+   ],
+   "categoria": "tecnologia"
+  },
+  {
+   "id": "trovao-depois-do-raio",
+   "titulo": "Por que o trovão chega depois do raio",
+   "tema": "Por que vemos o raio antes de ouvir o trovão e como isso mede a distância.",
+   "gancho": "Conte os segundos entre o clarão e o trovão. Esse número diz a que distância caiu o raio.",
+   "virada": "O raio aquece o ar do seu caminho a mais de 20 mil graus em um instante; o ar se expande de repente e esse estouro é o trovão. A luz chega quase na hora, mas o som anda só uns 343 metros por segundo: cada 3 segundos de espera são cerca de 1 quilômetro.",
+   "mostrar": [
+    "nuvem 3D de tempestade soltando um raio sobre uma cidade pequena",
+    "canal do raio em close com o ar se expandindo em anéis",
+    "cronômetro contando 3 segundos e régua marcando 1 km",
+    "número grande \"3 s = 1 km\""
+   ],
+   "fatos": [
+    {
+     "texto": "O raio aquece o ar muito rápido e o faz expandir; essa expansão brusca cria a onda sonora que ouvimos como trovão.",
+     "fontes": [
+      "https://www.weather.gov/safety/lightning-science-thunder",
+      "https://en.wikipedia.org/wiki/Thunder"
+     ]
+    },
+    {
+     "texto": "A temperatura no canal do raio passa de 20 mil °C (o Serviço Meteorológico dos EUA fala em até 50 mil °F, cerca de 27,7 mil °C; a Wikipédia cita média de cerca de 20 mil °C e pico de quase 30 mil °C).",
+     "fontes": [
+      "https://www.weather.gov/safety/lightning-science-thunder",
+      "https://en.wikipedia.org/wiki/Thunder"
+     ]
+    },
+    {
+     "texto": "A luz chega praticamente na hora; o som leva cerca de 3 segundos por quilômetro (5 segundos por milha), então dividir os segundos por 3 dá a distância em km.",
+     "fontes": [
+      "https://www.weather.gov/safety/lightning-science-thunder",
+      "https://en.wikipedia.org/wiki/Thunder"
+     ]
+    }
+   ],
+   "categoria": "natureza"
+  },
+  {
+   "id": "dedos-enrugados-na-agua",
+   "titulo": "Por que os dedos enrugam na água",
+   "tema": "Por que a ponta dos dedos fica enrugada depois de muito tempo na água.",
+   "gancho": "Seus dedos enrugam no banho, mas não é porque a pele bebeu água.",
+   "virada": "O enrugamento é um comando do sistema nervoso: os vasos da ponta do dedo se contraem, a polpa encolhe e a pele dobra. Dedos com o nervo lesionado não enrugam. A hipótese mais estudada é que as rugas ajudam a segurar coisas molhadas, mas isso ainda é discutido.",
+   "mostrar": [
+    "mão 3D mergulhada numa bacia, com a ponta dos dedos enrugando",
+    "corte da ponta do dedo: vasos se contraindo e a polpa encolhendo",
+    "comparação: dedo liso e dedo enrugado pegando bolinhas molhadas",
+    "sinal de nervo (linha luminosa) indo do braço até a ponta do dedo"
+   ],
+   "fatos": [
+    {
+     "texto": "O enrugamento não se explica só pela absorção de água: é causado pela contração dos vasos (vasoconstrição), controlada pelo sistema nervoso autônomo.",
+     "fontes": [
+      "https://en.wikipedia.org/wiki/Wrinkle",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC3639753/"
+     ]
+    },
+    {
+     "texto": "Em áreas com nervo lesionado a pele não enruga, e por isso o enrugamento na água é usado por médicos como indicador da função nervosa.",
+     "fontes": [
+      "https://en.wikipedia.org/wiki/Wrinkle",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC3639753/"
+     ]
+    },
+    {
+     "texto": "Um experimento de 2013 (Universidade de Newcastle) mostrou que dedos enrugados movem objetos molhados mais rápido; a função das rugas ainda é debatida.",
+     "fontes": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC3639753/",
+      "https://en.wikipedia.org/wiki/Wrinkle"
+     ]
+    }
+   ],
+   "categoria": "corpo"
+  },
+  {
+   "id": "pao-endurece",
+   "titulo": "Por que o pão endurece (mesmo sem secar)",
+   "tema": "O que deixa o pão duro de um dia para o outro e por que a geladeira piora.",
+   "gancho": "Na geladeira o pão endurece mais rápido. E o motivo não é falta de água.",
+   "virada": "Pão duro não é só pão seco. Com o tempo, o amido que amoleceu no forno volta a se organizar em cristais e prende a água dentro deles: o miolo fica firme mesmo sem perder umidade. O frio de geladeira acelera essa recristalização.",
+   "mostrar": [
+    "pão francês 3D fresco ao lado do mesmo pão duro no dia seguinte",
+    "grãos de amido soltos e macios se alinhando em cristais",
+    "geladeira 3D com um termômetro e o pão endurecendo mais rápido lá dentro",
+    "comparação: pão no saco fechado também endurece"
+   ],
+   "fatos": [
+    {
+     "texto": "Endurecer não é só ressecar: o pão fica duro mesmo em ambiente úmido.",
+     "fontes": [
+      "https://en.wikipedia.org/wiki/Staling",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC7824337/"
+     ]
+    },
+    {
+     "texto": "O principal mecanismo é a retrogradação do amido: as moléculas de amido (amilose e amilopectina) se realinham e recristalizam, redistribuindo a água.",
+     "fontes": [
+      "https://en.wikipedia.org/wiki/Staling",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC7824337/"
+     ]
+    },
+    {
+     "texto": "Baixar a temperatura de armazenamento acelera o endurecimento: o pão na geladeira endurece mais rápido (a geladeira só ajuda a frear o mofo).",
+     "fontes": [
+      "https://en.wikipedia.org/wiki/Staling",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC7824337/"
+     ]
+    }
+   ],
+   "categoria": "cotidiano"
+  },
+  {
+   "id": "lua-mesmo-lado",
+   "titulo": "Por que a Lua mostra sempre o mesmo lado",
+   "tema": "Por que, da Terra, vemos sempre a mesma face da Lua.",
+   "gancho": "A Lua gira em torno de si mesma. Então por que a gente nunca viu o outro lado dela daqui?",
+   "virada": "A Lua leva o mesmo tempo, cerca de 27 dias, para dar uma volta em si mesma e uma volta na Terra. As duas voltas andam juntas e a mesma face fica sempre virada para nós. O lado oculto não é escuro: só ninguém tinha visto até uma sonda passar por lá em 1959.",
+   "mostrar": [
+    "Terra e Lua 3D com uma marca numa face da Lua, girando em sincronia",
+    "comparação: Lua que não gira (mostraria todos os lados) e Lua real",
+    "número grande \"27 dias\"",
+    "sonda passando atrás da Lua iluminada pelo Sol"
+   ],
+   "fatos": [
+    {
+     "texto": "A Lua gira em torno do próprio eixo no mesmo tempo que leva para dar uma volta na Terra (rotação síncrona ou acoplamento de maré), por isso a mesma face fica sempre voltada para nós.",
+     "fontes": [
+      "https://science.nasa.gov/moon/facts/",
+      "https://science.nasa.gov/moon/tidal-locking/",
+      "https://en.wikipedia.org/wiki/Tidal_locking"
+     ]
+    },
+    {
+     "texto": "Uma volta da Lua em torno da Terra (em relação às estrelas) leva cerca de 27 dias (27,3).",
+     "fontes": [
+      "https://science.nasa.gov/moon/facts/",
+      "https://en.wikipedia.org/wiki/Tidal_locking"
+     ]
+    },
+    {
+     "texto": "O lado oculto só foi visto em 1959, quando uma sonda soviética (Luna 3) passou por ele.",
+     "fontes": [
+      "https://science.nasa.gov/moon/facts/",
+      "https://en.wikipedia.org/wiki/Tidal_locking"
+     ]
+    },
+    {
+     "texto": "Chamar o lado oculto de \"lado escuro\" é enganoso: ele recebe luz do Sol; \"escuro\" quer dizer apenas \"não visto\".",
+     "fontes": [
+      "https://science.nasa.gov/moon/facts/",
+      "https://en.wikipedia.org/wiki/Far_side_of_the_Moon"
+     ]
+    }
+   ],
+   "categoria": "ciência"
+  },
+  {
+   "id": "flamingo-rosa",
+   "titulo": "Por que o flamingo é rosa",
+   "tema": "De onde vem a cor rosa do flamingo.",
+   "gancho": "Nenhum flamingo nasce rosa. A cor vem de um lugar que você não espera.",
+   "virada": "O filhote nasce coberto de penugem clara. O rosa vem da comida: algas e pequenos crustáceos ricos em pigmentos carotenoides, que se acumulam nas penas ao longo dos anos. Sem esses pigmentos na dieta, o flamingo fica pálido.",
+   "mostrar": [
+    "filhote 3D de penugem clara ao lado de um flamingo adulto rosa",
+    "bico filtrando água com algas e pequenos camarões",
+    "pigmento laranja-rosado passando da comida para as penas",
+    "comparação: flamingo bem alimentado e flamingo pálido"
+   ],
+   "fatos": [
+    {
+     "texto": "Os filhotes nascem sem a cor rosa (penugem branca ou acinzentada) e levam anos para ficar rosa.",
+     "fontes": [
+      "https://nationalzoo.si.edu/animals/american-flamingo",
+      "https://en.wikipedia.org/wiki/Flamingo"
+     ]
+    },
+    {
+     "texto": "A cor rosa ou avermelhada vem de pigmentos (carotenoides) da alimentação, como algas e pequenos crustáceos.",
+     "fontes": [
+      "https://nationalzoo.si.edu/animals/american-flamingo",
+      "https://en.wikipedia.org/wiki/Flamingo"
+     ]
+    }
+   ],
+   "categoria": "natureza"
+  },
+  {
+   "id": "serrilha-das-moedas",
+   "titulo": "Por que as moedas têm serrilha na borda",
+   "tema": "A origem das listrinhas (serrilha) na borda das moedas.",
+   "gancho": "Essa serrilha na borda da moeda foi criada há mais de 300 anos contra uma trapaça.",
+   "virada": "Moedas antigas eram de ouro e prata e valiam o metal que tinham. Muita gente raspava um pouquinho da borda e juntava as raspas para derreter. A serrilha denuncia a raspagem na hora. Hoje as moedas não têm metal precioso, mas a serrilha ficou.",
+   "mostrar": [
+    "moeda 3D de prata antiga, irregular, tendo a borda raspada",
+    "montinho de raspas de metal sendo derretido",
+    "moeda nova com serrilha: a borda raspada fica evidente",
+    "moeda atual com serrilha girando em close"
+   ],
+   "fatos": [
+    {
+     "texto": "No passado, as moedas continham ouro ou prata em quantidade igual ao seu valor.",
+     "fontes": [
+      "https://www.royalmint.com/globalassets/the-royal-mint/pdf/clippers-and-counterfeiters-notes-for-teachers.pdf",
+      "https://en.wikipedia.org/wiki/Debasement"
+     ]
+    },
+    {
+     "texto": "O cerceio (raspar metal da borda das moedas e juntar as raspas para derreter) era comum; a serrilha nas bordas surgiu para impedir e denunciar essa prática.",
+     "fontes": [
+      "https://www.royalmint.com/globalassets/the-royal-mint/pdf/clippers-and-counterfeiters-notes-for-teachers.pdf",
+      "https://en.wikipedia.org/wiki/Debasement",
+      "https://en.wikipedia.org/wiki/Reeding"
+     ]
+    },
+    {
+     "texto": "A serrilha na borda das moedas de ouro e prata foi adotada na Inglaterra no século 17 (máquinas para isso chegaram à Casa da Moeda em meados daquele século), ou seja, há mais de 300 anos.",
+     "fontes": [
+      "https://www.royalmint.com/globalassets/the-royal-mint/pdf/clippers-and-counterfeiters-notes-for-teachers.pdf",
+      "https://en.wikipedia.org/wiki/Reeding"
+     ]
+    },
+    {
+     "texto": "Muitas moedas mantêm a serrilha por tradição, embora não tenham mais metal valioso.",
+     "fontes": [
+      "https://en.wikipedia.org/wiki/Debasement",
+      "https://www.royalmint.com/globalassets/the-royal-mint/pdf/clippers-and-counterfeiters-notes-for-teachers.pdf"
+     ]
+    }
+   ],
+   "categoria": "dinheiro"
+  },
+  {
+   "id": "estalar-os-dedos",
+   "titulo": "O que faz o barulho de estalar os dedos",
+   "tema": "De onde vem o som de estalar as juntas dos dedos.",
+   "gancho": "Depois de estalar um dedo, ele leva uns 20 minutos para estalar de novo. Por quê?",
+   "virada": "A junta é envolta num líquido com gás dissolvido. Quando você puxa o dedo, a pressão cai e uma bolha de gás se forma de repente: é aí que sai o estalo. Em 2015, uma ressonância magnética filmou o momento. O gás leva uns 20 minutos para voltar ao líquido.",
+   "mostrar": [
+    "mão 3D com o dedo sendo puxado, em corte mostrando a articulação",
+    "líquido da junta com gás dissolvido e a bolha surgindo de repente",
+    "tela de ressonância estilizada com o quadro do estalo",
+    "relógio com número grande \"20 min\""
+   ],
+   "fatos": [
+    {
+     "texto": "O estalo está ligado à formação de uma cavidade de gás no líquido sinovial quando a articulação é afastada (há pesquisadores que atribuem o som ao colapso da bolha; o estudo de 2015 indica a formação).",
+     "fontes": [
+      "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0119470",
+      "https://en.wikipedia.org/wiki/Cracking_joints"
+     ]
+    },
+    {
+     "texto": "Em 2015, pesquisadores filmaram o estalo por ressonância magnética em tempo real.",
+     "fontes": [
+      "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0119470",
+      "https://en.wikipedia.org/wiki/Cracking_joints"
+     ]
+    },
+    {
+     "texto": "Depois de estalar, a junta leva cerca de 20 minutos para conseguir estalar de novo.",
+     "fontes": [
+      "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0119470",
+      "https://en.wikipedia.org/wiki/Cracking_joints"
+     ]
+    }
+   ],
+   "categoria": "corpo"
+  },
+  {
+   "id": "ano-bissexto-1900",
+   "titulo": "Por que 1900 não foi ano bissexto",
+   "tema": "Por que existe o 29 de fevereiro e por que alguns anos de virada de século pulam o bissexto.",
+   "gancho": "O ano 2000 teve 29 de fevereiro. O ano 1900, não. E não foi erro.",
+   "virada": "A Terra leva cerca de 365,2422 dias para dar a volta no Sol, quase 6 horas além dos 365. Um dia extra a cada 4 anos compensa, mas passa um pouco do ponto: sobram cerca de 3 dias a cada 400 anos. Por isso, desde 1582, ano de virada de século só é bissexto se der para dividir por 400.",
+   "mostrar": [
+    "Terra 3D dando a volta no Sol com um contador de dias passando de 365",
+    "calendário de fevereiro com o dia 29 aparecendo e sumindo",
+    "número grande \"365,2422 dias\"",
+    "três calendários lado a lado: 1900 (sem 29), 2000 (com 29), 2100 (sem 29)"
+   ],
+   "fatos": [
+    {
+     "texto": "A Terra leva cerca de 365,2422 dias para dar uma volta no Sol, cerca de 6 horas a mais que 365 dias.",
+     "fontes": [
+      "https://www.jpl.nasa.gov/edu/news/doing-the-math-on-why-we-have-leap-day/",
+      "https://www.rmg.co.uk/stories/time/which-years-are-leap-years-can-you-have-leap-seconds",
+      "https://en.wikipedia.org/wiki/Leap_year"
+     ]
+    },
+    {
+     "texto": "Somar um dia a cada 4 anos corrige demais: acumula cerca de 3 dias a mais a cada 400 anos.",
+     "fontes": [
+      "https://www.jpl.nasa.gov/edu/news/doing-the-math-on-why-we-have-leap-day/",
+      "https://en.wikipedia.org/wiki/Leap_year"
+     ]
+    },
+    {
+     "texto": "Regra atual: ano divisível por 4 é bissexto, exceto os divisíveis por 100, que só são bissextos se forem divisíveis por 400. Por isso 2000 foi bissexto e 1900 não (2100 também não será).",
+     "fontes": [
+      "https://nrc.canada.ca/en/certifications-evaluations-standards/canadas-official-time/what-years-are-leap-years",
+      "https://www.rmg.co.uk/stories/time/which-years-are-leap-years-can-you-have-leap-seconds",
+      "https://en.wikipedia.org/wiki/Leap_year"
+     ]
+    },
+    {
+     "texto": "O dia extra a cada 4 anos vem do calendário juliano (Júlio César, 46 a.C.); a exceção dos séculos veio com a reforma gregoriana de 1582.",
+     "fontes": [
+      "https://www.rmg.co.uk/stories/time/which-years-are-leap-years-can-you-have-leap-seconds",
+      "https://nrc.canada.ca/en/certifications-evaluations-standards/canadas-official-time/what-years-are-leap-years",
+      "https://en.wikipedia.org/wiki/Leap_year"
+     ]
+    }
+   ],
+   "categoria": "história"
+  }
+ ]
+}

@@ -1,0 +1,161 @@
+{
+  "id": "smooth-tipografia",
+  "nome": "Smooth Tipografia (texto cinético brutalista)",
+  "versao": 1,
+  "paraQuem": "frase de impacto, opinião e lista rápida: a palavra é o desenho, gigante, em chapas de cor que trocam no corte seco",
+  "exemplosDePedido": [
+    "Cinco palavras que todo mundo fala errado",
+    "Pare de fazer isso com o seu dinheiro"
+  ],
+  "apelidos": [
+    "fluido-tipografia",
+    "tipografia",
+    "texto-cinetico",
+    "brutalista"
+  ],
+  "formato": {
+    "preferidos": [
+      "ranking",
+      "revelacao"
+    ],
+    "proibidos": [],
+    "padrao": "ranking"
+  },
+  "roteiro": {
+    "palavras": [
+      80,
+      125
+    ],
+    "alvoSegundos": [
+      30,
+      50
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "o fato que contraria, um número ou um contraste nos 2 primeiros segundos; começa pelo fato, sem \"você sabia que\"",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "passos",
+        "seg": [
+          15,
+          32
+        ],
+        "instrucao": "frases curtas, cada uma com um desenho claro (número que conta, botão, card, gráfico, notificação, comparação); frase que não dá desenho é fraca",
+        "n": [
+          3,
+          7
+        ]
+      },
+      {
+        "bloco": "virada",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "o detalhe que muda tudo, perto do fim, em uma frase curta"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "convite final curto: seguir e comentar a palavra"
+      }
+    ],
+    "gatilhos": [
+      "PD",
+      "CI"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "frases curtíssimas, palavras fortes, ritmo de batida",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[confident, clear]",
+    "pausaEntreBlocos": 0.12
+  },
+  "visual": {
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "contador": "quando-houver-numero",
+    "estilo": "smooth-tipografia",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [
+      "botaoseguir",
+      "lupa"
+    ],
+    "reserva": [
+      "lupa"
+    ],
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2,
+      5
+    ],
+    "trocaVisualMaxSeg": 5
+  },
+  "som": {
+    "musica": true,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, o porquê em 2 linhas, pergunta de opinião",
+    "hashtags": [
+      "#curiosidades",
+      "#portugues"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

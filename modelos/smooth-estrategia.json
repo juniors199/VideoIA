@@ -1,0 +1,163 @@
+{
+  "id": "smooth-estrategia",
+  "nome": "Smooth Estratégia (passos, número com fonte, afasta e mostra o todo)",
+  "versao": 1,
+  "paraQuem": "explicar uma ideia em passos: cards numerados, relógio e calendário, conversa, barras de uma conta e o número com a fonte na tela",
+  "exemplosDePedido": [
+    "Três passos para economizar na conta de luz",
+    "Como funciona o crédito rotativo"
+  ],
+  "apelidos": [
+    "fluido-estrategia",
+    "estrategia",
+    "passos",
+    "explicacao"
+  ],
+  "formato": {
+    "preferidos": [
+      "passo-a-passo",
+      "ranking",
+      "causa-efeito"
+    ],
+    "proibidos": [],
+    "padrao": "passo-a-passo"
+  },
+  "roteiro": {
+    "palavras": [
+      80,
+      125
+    ],
+    "alvoSegundos": [
+      30,
+      50
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "o fato que contraria, um número ou um contraste nos 2 primeiros segundos; começa pelo fato, sem \"você sabia que\"",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "passos",
+        "seg": [
+          15,
+          32
+        ],
+        "instrucao": "frases curtas, cada uma com um desenho claro (número que conta, botão, card, gráfico, notificação, comparação); frase que não dá desenho é fraca",
+        "n": [
+          3,
+          7
+        ]
+      },
+      {
+        "bloco": "virada",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "o detalhe que muda tudo, perto do fim, em uma frase curta"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "convite final curto: seguir e comentar a palavra"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "PD",
+      "EN"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "didático e direto: o passo, o porquê e o número com fonte",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[confident, clear]",
+    "pausaEntreBlocos": 0.12
+  },
+  "visual": {
+    "pecasPorTema": true,
+    "imagens": "opcional",
+    "contador": "quando-houver-numero",
+    "estilo": "smooth-estrategia",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [
+      "botaoseguir",
+      "lupa"
+    ],
+    "reserva": [
+      "lupa"
+    ],
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2,
+      5
+    ],
+    "trocaVisualMaxSeg": 5
+  },
+  "som": {
+    "musica": true,
+    "sfx": "normal"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, o porquê em 2 linhas, pergunta de opinião",
+    "hashtags": [
+      "#dicas",
+      "#educacaofinanceira"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "perfil": "curiosidades",
+  "tema": "CLIMA",
+  "legenda": "A média anual de CO₂ medida em Mauna Loa, no Havaí, foi de 317 ppm em 1960 e de 427 ppm em 2025, segundo a NOAA e a Scripps. Uma alta de cerca de 35%.\n\nQue dado você quer ver em gráfico?\n\nSegue a página pra ver a próxima.\n\nFoto: Brian Vasel/NOAA (Public domain)",
+  "marcadores": [
+    "co2",
+    "clima",
+    "ciencia",
+    "dados"
+  ],
+  "fontes": [
+    "NOAA GML, médias anuais de Mauna Loa: https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_annmean_mlo.txt",
+    "Scripps CO2 Program: https://scrippsco2.ucsd.edu/data/primary-mauna-loa-co2-record/",
+    "NASA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+    "NOAA JetStream, atmosfera: https://www.noaa.gov/jetstream/atmosphere"
+  ],
+  "slides": [
+    {
+      "tipo": "capa",
+      "titulo": "O CO₂ do ar subiu *35%* desde 1960",
+      "sub": "Medido no mesmo lugar, no alto de um vulcão no Havaí.",
+      "fotoFundo": "assets/mauna-loa.jpg"
+    },
+    {
+      "tipo": "grafico",
+      "forma": "linha",
+      "titulo": "Uma curva que só *sobe*",
+      "dados": [
+        {
+          "rotulo": "1960",
+          "valor": 317
+        },
+        {
+          "rotulo": "1980",
+          "valor": 339
+        },
+        {
+          "rotulo": "2000",
+          "valor": 370
+        },
+        {
+          "rotulo": "2020",
+          "valor": 414
+        },
+        {
+          "rotulo": "2025",
+          "valor": 427
+        }
+      ],
+      "unidade": " ppm",
+      "zero": false,
+      "fonte": "NOAA e Scripps, média anual em Mauna Loa"
+    },
+    {
+      "tipo": "numeros",
+      "titulo": "Em *65 anos*",
+      "itens": [
+        {
+          "numero": "317",
+          "legenda": "ppm em 1960"
+        },
+        {
+          "numero": "427",
+          "legenda": "ppm em 2025"
+        },
+        {
+          "numero": "+35%",
+          "legenda": "de alta no período"
+        }
+      ],
+      "destaque": 2,
+      "fonte": "NOAA e Scripps"
+    },
+    {
+      "tipo": "texto",
+      "titulo": "O que é *ppm*",
+      "texto": "Partes por milhão. 427 ppm são 427 moléculas de CO₂ em cada milhão de moléculas de ar seco.",
+      "fotoFundo": "assets/mauna-loa.jpg"
+    },
+    {
+      "tipo": "grafico",
+      "forma": "pizza",
+      "titulo": "Do que o ar seco é *feito*",
+      "texto": "O CO₂ é só cerca de 0,04% do total.",
+      "dados": [
+        {
+          "rotulo": "Nitrogênio",
+          "valor": 78,
+          "texto": "78%"
+        },
+        {
+          "rotulo": "Oxigênio",
+          "valor": 21,
+          "texto": "21%"
+        },
+        {
+          "rotulo": "Argônio e outros",
+          "valor": 1,
+          "texto": "1%"
+        }
+      ],
+      "fonte": "NASA e NOAA"
+    },
+    {
+      "tipo": "fecho",
+      "titulo": "Que dado você quer ver em *gráfico*?",
+      "texto": "Conta nos comentários.",
+      "fotoFundo": "assets/mauna-loa.jpg"
+    }
+  ]
+}

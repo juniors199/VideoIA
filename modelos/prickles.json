@@ -1,0 +1,160 @@
+{
+  "id": "prickles",
+  "nome": "Livro de outono (lápis e aquarela)",
+  "versao": 1,
+  "paraQuem": "curiosidades de bichos e da natureza, histórias gentis e fábulas com uma verdade dentro: uma prancha de livro infantil em lápis e aquarela, com bichos fofos de olhos fechados, luz dourada e folhas de outono, as palavras da narração pipocando quando ditas",
+  "exemplosDePedido": [
+    "Por que o ouriço nasce sem espetar a mãe",
+    "O esquilo que esquece onde guardou as nozes planta florestas"
+  ],
+  "apelidos": [
+    "livro-infantil",
+    "aquarela",
+    "outono",
+    "fabula",
+    "prancha"
+  ],
+  "formato": {
+    "preferidos": [
+      "revelacao",
+      "causa-efeito",
+      "antes-depois",
+      "passo-a-passo"
+    ],
+    "proibidos": [],
+    "padrao": "revelacao"
+  },
+  "roteiro": {
+    "palavras": [
+      80,
+      140
+    ],
+    "alvoSegundos": [
+      35,
+      55
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          2,
+          5
+        ],
+        "instrucao": "uma frase com a contradição ou o fato curioso do bicho, dita com calma (\"Todo ouriço nasce com espinhos. E nenhum machuca a mãe.\")",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "exposicao",
+        "seg": [
+          14,
+          30
+        ],
+        "instrucao": "a fábula em frases curtas, uma cena por frase: quem (um bicho com nome), onde (a floresta, a toca, o ninho), o que acontece; cada frase com uma ação que dá para desenhar e a palavra-chave em que ela acontece; o número só se for conferido",
+        "n": [
+          4,
+          8
+        ]
+      },
+      {
+        "bloco": "realidade",
+        "seg": [
+          4,
+          8
+        ],
+        "instrucao": "a virada verdadeira, contada como o fim da fábula: o fato que a história mostrou, numa frase curta e calorosa"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          3,
+          6
+        ],
+        "instrucao": "um pedido de compartilhar (revezando \"manda pra um amigo\" e \"compartilha no story\") e o convite final: seguir e comentar a palavra"
+      }
+    ],
+    "gatilhos": [
+      "CI",
+      "HE",
+      "PD"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": false,
+    "reHookPct": 0.55,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "ele/ela",
+    "tom": "narração de história de dormir: calma, calorosa, frases curtas no passado, concretas, com nome do bicho repetido",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 0.94,
+    "direcao": "[softly, warm, unhurried storyteller]",
+    "pausaEntreBlocos": 0.2
+  },
+  "visual": {
+    "pecasPorTema": false,
+    "imagens": "nunca",
+    "contador": "quando-houver-numero",
+    "estilo": "prickles",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [],
+    "reserva": [],
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2.5,
+      6
+    ],
+    "trocaVisualMaxSeg": 6
+  },
+  "som": {
+    "musica": true,
+    "sfx": "discreto"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "papel"
+  },
+  "publicar": {
+    "legenda": "gancho em uma linha, a curiosidade em 2 linhas, pergunta carinhosa",
+    "hashtags": [
+      "#curiosidades",
+      "#natureza"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

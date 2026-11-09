@@ -1,0 +1,164 @@
+{
+  "id": "fatos",
+  "nome": "Fatos (dado de satélite sobre carvão)",
+  "versao": 1,
+  "paraQuem": "curiosidades factuais, números, lugares e casos do noticiário: o dado que conta, o lugar aceso no mapa de satélite, o gráfico e a pesquisa, com o texto se montando no alto palavra a palavra",
+  "exemplosDePedido": [
+    "Quantos brasileiros moram no Paraguai",
+    "Por que a busca por esse assunto explodiu"
+  ],
+  "apelidos": [
+    "fatos",
+    "dados",
+    "mapa-satelite",
+    "infografico"
+  ],
+  "formato": {
+    "preferidos": [
+      "revelacao",
+      "causa-efeito",
+      "comparativo",
+      "passo-a-passo"
+    ],
+    "proibidos": [],
+    "padrao": "revelacao"
+  },
+  "roteiro": {
+    "palavras": [
+      90,
+      170
+    ],
+    "alvoSegundos": [
+      30,
+      60
+    ],
+    "estrutura": [
+      {
+        "bloco": "gancho",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "o número ou o fato que provoca, já com o lugar (\"Mais de 100 mil brasileiros já moram no Paraguai\"); o número vira o contador que conta no alto",
+        "obrigatorio": true
+      },
+      {
+        "bloco": "contexto",
+        "seg": [
+          8,
+          20
+        ],
+        "instrucao": "o porquê em frases curtas, cada uma com um lugar, um número, uma lista ou uma pesquisa que dá para mostrar; a virada de cada frase depois da vírgula (2 a 6 palavras) vai para a itálica",
+        "n": [
+          2,
+          5
+        ]
+      },
+      {
+        "bloco": "realidade",
+        "seg": [
+          4,
+          10
+        ],
+        "instrucao": "a parte que pouca gente sabe: o dado que vira a história, atribuído quando for caso em andamento"
+      },
+      {
+        "bloco": "cta",
+        "seg": [
+          2,
+          4
+        ],
+        "instrucao": "pergunta curta com as opções ditas (viram as pílulas) e o convite para seguir e comentar a palavra"
+      }
+    ],
+    "gatilhos": [
+      "EN",
+      "UO",
+      "CI"
+    ],
+    "abertura3Tempos": false,
+    "promessaMarca": null,
+    "loopAberto": true,
+    "reHookPct": 0.5,
+    "alfinetadas": [
+      0,
+      1
+    ],
+    "pessoa": "você",
+    "tom": "frases curtas e faladas, com número, lugar e virada; atribuído quando for caso em andamento",
+    "vocabulario": "normal",
+    "proibir": []
+  },
+  "voz": {
+    "velocidade": 1,
+    "direcao": "[curious, confident]",
+    "pausaEntreBlocos": 0.12
+  },
+  "visual": {
+    "pecasPorTema": false,
+    "imagens": "opcional",
+    "contador": "quando-houver-numero",
+    "estilo": "fatos",
+    "cenarios": [
+      "vazio"
+    ],
+    "pecasBase": [
+      "lupa",
+      "botaoseguir"
+    ],
+    "reserva": [
+      "lupa"
+    ],
+    "titulos": "nenhum"
+  },
+  "ritmo": {
+    "beatSeg": [
+      2,
+      6
+    ],
+    "trocaVisualMaxSeg": 6
+  },
+  "som": {
+    "musica": true,
+    "sfx": "discreto"
+  },
+  "cta": {
+    "tipo": "comentar",
+    "texto": null,
+    "palavra": null,
+    "perguntaFinal": null
+  },
+  "carrossel": {
+    "sequencia": [
+      "capa",
+      "texto",
+      "dado",
+      "texto",
+      "comparacao",
+      "fecho"
+    ],
+    "slides": [
+      6,
+      10
+    ],
+    "estilo": "editorial"
+  },
+  "publicar": {
+    "legenda": "o número em uma linha, o porquê em 2 linhas, pergunta com as opções",
+    "hashtags": [
+      "#curiosidades",
+      "#fatos"
+    ],
+    "fontesNaLegenda": true,
+    "aviso": null
+  },
+  "cuidados": {
+    "fontesMinimas": 2,
+    "fonteOficial": false,
+    "atribuicao": "normal",
+    "avisoFalado": null,
+    "avisoLegenda": null,
+    "temasBloqueados": [],
+    "revisaoHumana": false
+  }
+}

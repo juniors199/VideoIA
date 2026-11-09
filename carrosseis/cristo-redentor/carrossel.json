@@ -1,0 +1,88 @@
+{
+  "perfil": "curiosidades",
+  "tema": "RIO DE JANEIRO",
+  "visual": "papel",
+  "legenda": "Inaugurado em 12 de outubro de 1931, o Cristo Redentor tem 30 m de estátua sobre 8 m de pedestal e braços de 28 m. Projeto e obra do engenheiro Heitor da Silva Costa, com o escultor francês Paul Landowski. Em 2007, virou uma das Novas 7 Maravilhas.\n\nVocê já foi lá em cima?\n\nSegue a página pra ver a próxima.\n\nFoto: Wilfredor (CC0) | Foto: Núcleo de digitalização / IMS (Public domain) | Foto: Arne Müseler (CC BY-SA 3.0 de)",
+  "marcadores": [
+    "cristoredentor",
+    "rio",
+    "historia",
+    "brasil"
+  ],
+  "fontes": [
+    "Agência Brasil, 90 anos do Cristo: https://agenciabrasil.ebc.com.br/geral/noticia/2021-10/rio-de-janeiro-celebra-os-90-anos-do-cristo-redentor",
+    "Britannica, Christ the Redeemer: https://www.britannica.com/topic/Christ-the-Redeemer",
+    "Santuário Cristo Redentor, curiosidades: https://santuariocristoredentor.com.br/curiosidades",
+    "New7Wonders, Cristo Redentor: https://world.new7wonders.com/wonders/cristo-redentor-1931-rio-de-janeiro-brazil/",
+    "New7Wonders, Lisboa 07/07/2007: https://world.new7wonders.com/lisbon-on-07-07-2007/",
+    "National Geographic, The icon: https://www.nationalgeographic.com/travel/article/the-icon-rios-cristo"
+  ],
+  "slides": [
+    {
+      "tipo": "capafoto",
+      "imagem": "assets/cristo.jpg",
+      "foco": "50% 30%",
+      "rotulo": "95 anos",
+      "titulo": "Os *bastidores* do Cristo Redentor",
+      "sub": "Inaugurado em 12 de outubro de 1931."
+    },
+    {
+      "tipo": "colagem",
+      "fotos": [
+        {
+          "imagem": "assets/construcao.jpg",
+          "legenda": "a obra"
+        },
+        {
+          "imagem": "assets/rio.jpg",
+          "foco": "62% 50%",
+          "legenda": "hoje"
+        }
+      ],
+      "nota": "concreto armado e *pedra-sabão*",
+      "adesivo": "1931"
+    },
+    {
+      "tipo": "numeros",
+      "titulo": "O Cristo em *metros*",
+      "itens": [
+        {
+          "numero": "30 m",
+          "legenda": "de estátua"
+        },
+        {
+          "numero": "8 m",
+          "legenda": "de pedestal"
+        },
+        {
+          "numero": "28 m",
+          "legenda": "de braços abertos"
+        },
+        {
+          "numero": "38 m",
+          "legenda": "de altura total"
+        }
+      ],
+      "destaque": 3
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Quem *fez*",
+      "texto": "O engenheiro Heitor da Silva Costa projetou e tocou a obra. O escultor foi o francês Paul Landowski.",
+      "fotoFundo": "assets/construcao.jpg"
+    },
+    {
+      "tipo": "dado",
+      "numero": "2007",
+      "legenda": "eleito uma das *Novas 7 Maravilhas*",
+      "texto": "O resultado saiu em 7 de julho de 2007, em Lisboa.",
+      "fotoFundo": "assets/cristo.jpg"
+    },
+    {
+      "tipo": "fecho",
+      "titulo": "Você já foi lá em *cima*?",
+      "texto": "Conta nos comentários.",
+      "fotoFundo": "assets/rio.jpg"
+    }
+  ]
+}

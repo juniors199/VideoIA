@@ -1,0 +1,73 @@
+{
+  "perfil": "curiosidades",
+  "tema": "BOTÂNICA",
+  "visual": "condensado",
+  "legenda": "Para a botânica, fruto é o ovário maduro da flor. O tomate é fruto (e baga), a banana também é baga, e o morango não é. Em 1893, a Suprema Corte dos EUA tratou o tomate como legume para cobrar imposto.\n\nQual dessas te pegou?\n\nSegue a página pra ver a próxima.\n\nFoto: Michal Klajban (CC BY-SA 4.0)",
+  "marcadores": [
+    "tomate",
+    "botanica",
+    "curiosidades"
+  ],
+  "fontes": [
+    "Britannica, What is a fruit: https://www.britannica.com/question/What-is-a-fruit",
+    "Britannica, Berry: https://www.britannica.com/science/berry-plant-reproductive-body",
+    "Britannica, Strawberry: https://www.britannica.com/plant/strawberry",
+    "UC Riverside, Legner, frutos: https://faculty.ucr.edu/~legneref/botany/temfruit.htm",
+    "Kew Gardens POWO, banana: https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:584951-1/general-information",
+    "Cornell LII, Nix v. Hedden (1893): https://www.law.cornell.edu/supremecourt/text/149/304",
+    "Kent Law ISCOTUS, tomato debate: https://blogs.kentlaw.iit.edu/iscotus/supreme-court-great-tomato-debate"
+  ],
+  "slides": [
+    {
+      "tipo": "capafoto",
+      "imagem": "assets/tomates.jpg",
+      "titulo": "Tomate é *fruta*. E a banana é baga",
+      "sub": "→ E o morango, para a botânica, não é."
+    },
+    {
+      "tipo": "fotobloco",
+      "ordem": "foto-texto",
+      "imagem": "assets/tomates.jpg",
+      "foco": "50% 60%",
+      "titulo": "O que é *fruto*",
+      "texto": "Na botânica, fruto é o ovário maduro da flor, que guarda as sementes. Baga é um fruto carnoso feito de um único ovário."
+    },
+    {
+      "tipo": "marcados",
+      "titulo": "Baga ou *não*?",
+      "itens": [
+        {
+          "texto": "Tomate: baga",
+          "marca": "sim"
+        },
+        {
+          "texto": "Banana: baga",
+          "marca": "sim"
+        },
+        {
+          "texto": "Morango: não é baga",
+          "marca": "nao"
+        }
+      ],
+      "nota": "Segundo a botânica (Britannica e UC Riverside)."
+    },
+    {
+      "tipo": "texto",
+      "titulo": "E os pontinhos do *morango*?",
+      "texto": "São os frutos de verdade, chamados aquênios. A polpa vem do receptáculo da flor.",
+      "fotoFundo": "assets/tomates.jpg"
+    },
+    {
+      "tipo": "veredito",
+      "afirmacao": "Tomate é legume.",
+      "veredito": "meia",
+      "explicacao": "Na lei, pode ser: em 1893, a Suprema Corte dos EUA o tratou como legume para cobrar imposto."
+    },
+    {
+      "tipo": "fecho",
+      "titulo": "Qual dessas te *pegou*?",
+      "texto": "Conta nos comentários.",
+      "fotoFundo": "assets/tomates.jpg"
+    }
+  ]
+}
