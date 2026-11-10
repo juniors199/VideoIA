@@ -10,18 +10,26 @@ description: Produz o vídeo do Ilustrando de ponta a ponta, sem paradas de apro
 ## O fluxo
 ```
 roteiro.md -> narração -> tempos por palavra -> cena.json (você escreve) -> QA automático
--> crítico visual (você olha a folha de contato) -> render -> QA do arquivo -> capa
+-> aprovação das fotos (pessoa) -> crítico visual (você olha a folha de contato) -> render -> QA do arquivo -> capa
 ```
-Nenhuma etapa espera aprovação humana. O QA decide.
+O QA decide qualidade e layout. **Fotos e logos reais** são a exceção: a pessoa escolhe o que entra antes do render.
 
 ## Passo a passo
 1. **Voz.** Veja `ilustrando.config.json` e `.env`. Sem chave, rode com `--voz=mock` para validar tudo e avise que a narração real ainda falta (isso é bloqueio de ativo, não de qualidade). Provedores: `elevenlabs` (tempos exatos por palavra), `fishaudio` (o motor alinha por Whisper se `faster-whisper` estiver instalado, senão pelas pausas), `arquivo` (sua própria gravação em `projetos/<nome>/narracao.mp3`). O relatório avisa se a voz leu diferente do roteiro ou falou rápido/lento demais.
 2. **Narração e tempos.** `node src/video/cli.mjs <projeto> --voz=<x> --sem-render` gera `narracao.mp3` e `palavras.json` e, se não houver `cena.json`, um plano automático.
 3. **Cena.** (Estilos letreiro, interface, colagem, cartões, tubo, impresso, ribalta e mundos: antes de tudo escreva o `pecas.js` do projeto; veja `docs/cena/kit-aberto.md`.) Leia `palavras.json` (índices das palavras), o índice `docs/cena-schema.md` e só o arquivo do estilo da vez em `docs/cena/`. Use a skill `cena` para escrever `cena.json` de verdade, no lugar do plano automático.
 4. **QA da cena.** Rode de novo com `--sem-render`. O QA mede cada elemento em pixels e corrige sozinho títulos longos. Falhas que sobram: corrija no `cena.json`. Confira também `saida/relevancia.json` (fala x imagem, nota de 0 a 3 por beat; nota 0 = objeto sem relação, troque) e os avisos `foto-nao-encontrada` do relatório (a fala cita alguém ou algo e a foto não veio: o aviso diz o porquê e o que fazer).
-5. **Crítico.** Siga a skill `critico` sobre `saida/qa/folha.jpg`. Até 3 rodadas.
-6. **Render.** Rode sem `--sem-render`. Use `--rapido` para uma prévia de baixa resolução se quiser conferir o movimento antes do render final.
-7. **Entrega.** `saida/<nome>.mp4`, `saida/capa.jpg` (gancho em letras grandes) e `saida/capa-grid.jpg` (recorte 3:4 do grid; no horizontal, `saida/miniatura.jpg` de 1280 x 720), `saida/relatorio.json` e `saida/entrega.json` (manifesto: `publicavel` só é `true` com voz real, QA aprovado e sem `PENDENTE` em fontes.md). Se `relatorio.falhas` não estiver vazio, corrija e refaça. Depois a skill `publicar`.
+5. **Relação com o tema (você confere; não é aleatório).** Toda foto/logo precisa provar relação com o tema do vídeo e com o trecho da fala. Antes de aceitar qualquer candidato do Commons:
+   1. Monte o termo com **nome + contexto do tema** (esporte, clube, seleção, cargo, ano). Nome sozinho é proibido.
+   2. Rode `--listar` e leia título, descrição e página de cada candidato.
+   3. Descarte o que só bate o nome e muda de mundo (cantor no lugar de jogador, prédio no lugar de agência citada, mapa de outro continente).
+   4. Abra o arquivo baixado (Read na imagem) e confira visualmente: a pessoa/lugar certos? Uniforme, estádio, época coerentes?
+   5. Se nenhum candidato passa, não force foto: peça/logo/gráfico, ou peça arquivo à pessoa.
+   Foto automática do plano (`busca` sem você filtrar) também passa por essa checagem. Relação duvidosa = remove de `assets/`, da cena e de `fontes.md`.
+6. **Aprovação das imagens (obrigatória nesta página).** Depois da sua checagem, mostre só as que passaram (quem deveria ser × o que a foto mostra). **Pare e espere** a pessoa marcar entra / sai / trocar. Sem essa resposta, não renderize. Agência de notícia, placar ou conceito: prefira logo, peça ou gráfico, nunca prédio genérico.
+7. **Crítico.** Siga a skill `critico` sobre `saida/qa/folha.jpg`. Até 3 rodadas. Se a folha mostrar pessoa ou lugar errado, trate como defeito grave: troque a foto e refaça, não ignore.
+8. **Render.** Rode sem `--sem-render`. Use `--rapido` para uma prévia de baixa resolução se quiser conferir o movimento antes do render final.
+9. **Entrega.** `saida/<nome>.mp4`, `saida/capa.jpg` (gancho em letras grandes) e `saida/capa-grid.jpg` (recorte 3:4 do grid; no horizontal, `saida/miniatura.jpg` de 1280 x 720), `saida/relatorio.json` e `saida/entrega.json` (manifesto: `publicavel` só é `true` com voz real, QA aprovado e sem `PENDENTE` em fontes.md). Se `relatorio.falhas` não estiver vazio, corrija e refaça. Depois a skill `publicar`.
 
 ## Estilo e cor da marca (0.6.44)
 - **O estilo pedido vale.** Ordem: o que a pessoa pediu neste vídeo (`--estilo`, `Estilo:` no STATUS) > o padrão escolhido no estúdio (`estiloPadrao`) > o que o objetivo sugere. A cena automática guardada é refeita sozinha quando o estilo muda (aviso `cena-refeita-estilo`). Se você escreveu o `cena.json` à mão, ponha nele `"estilo"` igual ao pedido; o aviso `cena-de-outro-estilo` no relatório quer dizer que a cena é de outro estilo: reescreva no estilo pedido antes de entregar. Nunca troque o estilo pedido por outro.
@@ -37,7 +45,7 @@ Todo vídeo é **vertical** (1080 x 1920, Reels, TikTok, Shorts) por padrão. Se
 **Converter** um vídeo já feito: "converte esse vídeo para vertical/horizontal" = `node src/video/cli.mjs <projeto> --converter=horizontal` (ou `vertical`; `--para=<nome>`, `--produzir`). Cria o projeto irmão sem tocar no original, reaproveita narração e trilha (nenhum crédito de voz ou música) e refaz o layout para o formato novo; leia a lista de mudanças e de avisos que ele imprime e conte à pessoa (o @ desliga ao ir para o horizontal e liga ao voltar). Se só existe o MP4 e não o projeto, explique que a conversão é pelo roteiro e ofereça refazer a partir dele.
 
 ## Quando parar e perguntar
-Só quando falta chave de voz, falta um ativo real, ou uma falha resiste a 3 rodadas.
+Só quando falta chave de voz, falta um ativo real, **há foto/logo para a pessoa aprovar**, ou uma falha resiste a 3 rodadas.
 Erro do estúdio com código (`ffmpeg-falhou`, `voz-eleven-cota`...): só a lista segura da skill `comece`, seção "Quando o estúdio devolver um erro" (2 tentativas, sem mexer em `src/` nem gastar crédito pago sem perguntar).
 
 

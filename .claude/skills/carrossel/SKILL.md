@@ -52,8 +52,8 @@ Capa que prende (contradição, número, foto forte), miolo com uma ideia por sl
 
 ## 3. Fotos e marca
 - Logo ou bandeira conhecidos: `"imagem": "logo:<id>"` (ou `bandeira:<id>`) em qualquer campo de foto, ou `"logo"`/`"bandeira"` no slide para uma fileira de selos (`docs/marcas.md`); o crédito vai sozinho para o fontes.md.
-- Foto: `node scripts/buscar-imagem.mjs <nome> "<termo>" --carrossel --listar`, depois `--escolha=N --nome=arquivo`. No slide, `"imagem": "assets/arquivo.jpg"` e `"foco"` se precisar. Crédito na legenda (a linha "Crédito para a legenda do post" do `fontes.md`), nunca na tela.
-- Pessoa citada pelo nome usa foto real de licença livre. Em política, mesmo tipo de slide, tamanho e filtro para todos os lados.
+- Foto: `node scripts/buscar-imagem.mjs <nome> "<nome + contexto do tema>" --carrossel --listar`. Você confere título/descrição (e a imagem) contra o tema do carrossel; descarta homônimo e candidato aleatório; só então `--escolha=N --nome=arquivo` e, nesta página, confirma com a pessoa. No slide, `"imagem": "assets/arquivo.jpg"` e `"foco"` se precisar. Crédito na legenda (a linha "Crédito para a legenda do post" do `fontes.md`), nunca na tela.
+- Pessoa citada pelo nome usa foto real de licença livre, da pessoa certa no contexto do tema. Em política, mesmo tipo de slide, tamanho e filtro para todos os lados.
 - `tweet`, `thread` e `chat` são sempre da própria página (nome, @ e avatar vêm de `marca/tokens.json`). Nunca simule post ou conversa de alguém real.
 - `citacao` só com frase conferida; `versiculo` com a versão; `placar` com sigla, sem escudo; `reacao` só com os rostos próprios ou foto livre.
 

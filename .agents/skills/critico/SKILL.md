@@ -20,6 +20,7 @@ O QA automático mede margens e sobreposição. Você olha o que ele não vê: c
 
 ## O que reprova
 - Objeto, cenário ou foto sem relação com a fala do beat.
+- Foto cujo nome bate, mas o assunto não (homônimo: sertanejo no lugar de jogador, prédio no lugar da agência citada). Confira o arquivo em `assets/` e a linha em `fontes.md` (título da foto no Commons).
 - Pessoa, lugar, obra ou produto citado pelo nome sem a foto (ou sem o logo da marca).
 - Peça cortada ou encostada em outra de forma feia.
 - Dois destaques na mesma cena.

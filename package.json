@@ -6,7 +6,7 @@
   "engines": {
     "node": ">=20"
   },
-  "description": "Ilustrando Studio: carrosséis e vídeos de curiosidades no Claude Code ou no Codex.",
+  "description": "Estudio de Videos: carrosséis e vídeos de curiosidades no Claude Code ou no Codex.",
   "scripts": {
     "video": "node src/video/cli.mjs",
     "carrossel": "node src/carrossel.mjs",

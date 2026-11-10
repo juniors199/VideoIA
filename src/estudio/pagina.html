@@ -1,10 +1,11 @@
 <!doctype html>
 
-<html lang="pt-BR">
+<html lang="pt-BR" data-tema="escuro">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ilustrando Studio</title>
+<title>Estudio de Videos</title>
+<script>(function(){try{var t=localStorage.getItem('ilu-tema');if(t!=='claro'&&t!=='escuro')t='escuro';document.documentElement.setAttribute('data-tema',t);}catch(e){document.documentElement.setAttribute('data-tema','escuro')}})();</script>
 <link rel="preload" href="/fonts/regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/bold.woff2" as="font" type="font/woff2" crossorigin>
 <style>
@@ -12,31 +13,66 @@
 @font-face{font-family:'Ilu';font-weight:600;font-display:swap;src:url(/fonts/semibold.woff2) format('woff2')}
 @font-face{font-family:'Ilu';font-weight:700;font-display:swap;src:url(/fonts/bold.woff2) format('woff2')}
 :root{
-  --fundo:#0e0e13;--sup:#16161e;--sup2:#1c1c26;--linha:#ffffff1c;--texto:#f3f2f6;--suave:#f3f2f6cc;--fraco:#a3a3b0;
-  --d:#ff7a2f;--tinta:#1a0d05;--d-fundo:#ff7a2f1f;--d-borda:#ff7a2f55;--ok:#46e08a;--aviso:#ffc25c;--erro:#ff6b6b;
-  --e:cubic-bezier(.22,1,.36,1);--topo:64px;
+  --e:cubic-bezier(.22,1,.36,1);--topo:52px;
+  --esp-1:4px;--esp-2:8px;--esp-3:12px;--esp-4:16px;--esp-5:24px;--esp-6:32px;--esp-7:48px;
+  --medida:min(720px,100%);
+}
+:root,:root[data-tema=escuro]{
+  --corpo:#0a0a0f;--fundo:#0e0e13;--sup:#16161e;--sup2:#1c1c26;--sup-blur:#1c1c26f2;--linha:#ffffff1c;--texto:#f3f2f6;--suave:#f3f2f6cc;--fraco:#a3a3b0;
+  --d:#ff7a2f;--tinta:#1a0d05;--d-fundo:#ff7a2f1f;--d-borda:#ff7a2f55;--ok:#46e08a;--aviso:#ffc25c;--erro:#ff6b6b;--ok-ink:#06210f;
+  --hover:#ffffff0a;--sel:#ffffff12;--chip:#ffffff14;--borda-forte:#ffffff40;--inset:#ffffff22;--trilha:#ffffff1f;--risca:#ffffff06;
+  --sombra:#0008;--sombra-forte:#000b;--sombra-card:#000a;--log:#0a0a0e;--midia:#000;
+}
+:root[data-tema=claro]{
+  --corpo:#ebe9f0;--fundo:#ffffff;--sup:#f6f5f9;--sup2:#eeedf3;--sup-blur:#f6f5f9f2;--linha:#1a182222;--texto:#16161e;--suave:#16161ecc;--fraco:#6a6a78;
+  --d:#ff7a2f;--tinta:#1a0d05;--d-fundo:#ff7a2f1f;--d-borda:#ff7a2f55;--ok:#1f9d5a;--aviso:#c47a12;--erro:#d64545;--ok-ink:#06210f;
+  --hover:#16161e0a;--sel:#16161e12;--chip:#16161e10;--borda-forte:#16161e33;--inset:#16161e18;--trilha:#16161e18;--risca:#16161e08;
+  --sombra:#16161e1a;--sombra-forte:#16161e28;--sombra-card:#16161e22;--log:#f0eef5;--midia:#111118;
+  color-scheme:light;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 [hidden]{display:none!important}
-html{color-scheme:dark}
-body{background:var(--fundo);color:var(--texto);font-family:'Ilu',system-ui,sans-serif;font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased;min-height:100vh}
+html{color-scheme:dark;height:100%}
+html[data-tema=claro]{color-scheme:light}
+body{background:var(--corpo);color:var(--texto);font-family:'Ilu',system-ui,sans-serif;font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased;margin:0;min-height:100vh;min-height:100dvh;height:100vh;height:100dvh;display:flex;flex-direction:column;overflow:hidden}
 ::selection{background:var(--d);color:var(--tinta)}
 :focus-visible{outline:2px solid var(--d);outline-offset:2px;border-radius:6px}
 button,select,input,textarea{font:inherit;color:inherit}
 a{color:var(--d)}
-/* barra de cima */
-.barra{position:sticky;top:0;z-index:20;height:var(--topo);display:flex;align-items:center;gap:28px;padding:0 24px;background:#0e0e13f2;border-bottom:1px solid var(--linha);backdrop-filter:blur(8px)}
-.logo{font-weight:700;font-size:18px;letter-spacing:-.02em;display:flex;align-items:center;gap:10px;white-space:nowrap}
-.logo i{width:10px;height:10px;border-radius:50%;background:var(--d)}
-nav.abas-topo{display:flex;gap:4px;overflow-x:auto}
-nav.abas-topo button{background:none;border:0;color:var(--suave);padding:8px 14px;border-radius:999px;cursor:pointer;font-weight:600;white-space:nowrap}
-nav.abas-topo button[aria-selected=true]{background:#ffffff14;color:var(--texto)}
+/* header fixo em largura total; conteúdo no card abaixo */
+.barra{position:sticky;top:0;z-index:20;flex:none;width:100%;height:var(--topo);min-height:var(--topo);display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:12px;padding:0 20px;background:var(--sup);border-bottom:1px solid var(--linha)}
+.logo{display:flex;align-items:center;gap:10px;white-space:nowrap;justify-self:start;min-width:0}
+.logo i{width:9px;height:9px;border-radius:50%;background:var(--d);flex:none}
+.logo-txt{display:flex;flex-direction:column;gap:1px;line-height:1.15}
+.logo-txt > span{font-weight:700;font-size:16px;letter-spacing:-.02em}
+.logo-txt > small{font-size:11px;font-weight:500;color:var(--fraco);letter-spacing:.01em}
+nav.abas-topo{display:flex;gap:2px;align-items:center;justify-content:center;justify-self:center;max-width:100%;min-width:0}
+nav.abas-topo button{background:none;border:0;color:var(--fraco);padding:8px 12px;border-radius:10px;cursor:pointer;font-weight:600;font-size:13.5px;white-space:nowrap;flex:none}
+nav.abas-topo button[aria-selected=true]{background:var(--sel);color:var(--texto)}
 nav.abas-topo button .pin{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--aviso);margin-left:6px;vertical-align:middle}
-.vista{min-height:calc(100vh - var(--topo))}
-:root{--larg:clamp(1080px,82vw,1520px)}
-.pagina{max-width:var(--larg);margin:0 auto;padding:36px clamp(16px,2.4vw,40px) 120px}
-h1.tit{font-size:34px;line-height:1.1;letter-spacing:-.03em;font-weight:700;text-wrap:balance}
-p.sub{color:var(--suave);margin-top:8px;max-width:62ch}
+nav.abas-topo button.btn-novo{background:var(--d);color:var(--tinta);padding:9px 16px;margin-right:4px;border-radius:999px;font-size:14px}
+nav.abas-topo button.btn-novo[aria-selected=true]{background:var(--d);color:var(--tinta);box-shadow:0 0 0 1px var(--inset) inset}
+nav.abas-topo button[data-vista=configuracoes]{color:var(--suave)}
+nav.abas-topo button[data-vista=configuracoes][aria-selected=true]{color:var(--texto)}
+nav.abas-topo .sep-nav{width:1px;height:20px;background:var(--linha);margin:0 6px 0 2px;flex:none}
+nav.abas-topo .abas-scroll{display:flex;gap:2px;align-items:center;min-width:0;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
+nav.abas-topo .abas-scroll::-webkit-scrollbar{display:none;height:0}
+.tema-ctl{justify-self:end;display:inline-flex;align-items:center;gap:2px;padding:3px;border:1px solid var(--linha);border-radius:999px;background:var(--fundo)}
+.tema-ctl button{display:grid;place-items:center;width:34px;height:34px;border:0;border-radius:999px;background:transparent;color:var(--fraco);cursor:pointer;padding:0}
+.tema-ctl button:hover{color:var(--texto);background:var(--hover)}
+.tema-ctl button[aria-pressed=true]{background:var(--d);color:var(--tinta)}
+.tema-ctl .ic{width:17px;height:17px;margin:0}
+.estudio-wrap{flex:1;min-height:0;display:grid;place-items:center;padding:16px 0;box-sizing:border-box}
+.estudio{width:95%;height:90%;max-width:95%;max-height:90%;display:flex;flex-direction:column;background:var(--fundo);border:1px solid var(--linha);border-radius:18px;overflow:hidden;box-shadow:0 20px 60px var(--sombra)}
+.estudio-corpo{flex:1;min-height:0;position:relative;overflow:hidden}
+.vista{position:absolute;inset:0;overflow:hidden;display:flex;flex-direction:column}
+.vista[hidden]{display:none!important}
+.pagina{width:100%;max-width:none;margin:0;padding:14px 20px 16px;flex:1;min-height:0;overflow:auto;display:flex;flex-direction:column}
+.pagina.foco{max-width:none}
+.cabeca{display:flex;align-items:baseline;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;flex:none}
+.cabeca .sub{margin-top:0}
+h1.tit{font-size:clamp(22px,2.2vw,28px);line-height:1.15;letter-spacing:-.03em;font-weight:700;text-wrap:balance;margin-bottom:0}
+p.sub{color:var(--suave);margin-top:var(--esp-1);max-width:62ch;font-size:14.5px}
 h2{font-size:22px;letter-spacing:-.02em;font-weight:700;margin-bottom:6px}
 h3{font-size:13px;letter-spacing:.02em;color:var(--fraco);font-weight:600;margin:0 0 10px}
 .ic{width:1.15em;height:1.15em;flex:none;vertical-align:-.2em;pointer-events:none}
@@ -45,9 +81,9 @@ nav.abas-topo button .ic{margin-right:7px;vertical-align:-.22em}
 .btn:hover{filter:brightness(1.08)}.btn:active{transform:scale(.98)}
 .btn:disabled{opacity:.45;cursor:not-allowed}
 .btn.sec{background:transparent;color:var(--texto);border:1px solid var(--linha)}
-.btn.sec:hover{background:#ffffff0d}
+.btn.sec:hover{background:var(--hover)}
 .btn.pequeno{padding:8px 14px;font-size:14px}
-.barra-salvar{position:sticky;bottom:14px;z-index:6;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin:26px 0 0;padding:12px 12px 12px 16px;background:#1c1c26f2;border:1px solid var(--linha);border-radius:20px;box-shadow:0 14px 44px #000b;backdrop-filter:blur(10px)}
+.barra-salvar{position:sticky;bottom:14px;z-index:6;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin:26px 0 0;padding:12px 12px 12px 16px;background:var(--sup-blur);border:1px solid var(--linha);border-radius:20px;box-shadow:0 14px 44px var(--sombra-forte);backdrop-filter:blur(10px)}
 .barra-salvar.sujo{border-color:var(--d-borda)}
 .barra-salvar .chips-sel{display:flex;gap:8px;flex-wrap:wrap;min-width:0;flex:1 1 280px}
 .chip-sel{display:inline-flex;align-items:center;gap:9px;min-width:0;background:var(--fundo);border:1px solid var(--linha);border-radius:14px;padding:6px 12px 6px 7px}
@@ -72,7 +108,7 @@ nav.abas-topo button .ic{margin-right:7px;vertical-align:-.22em}
 .como .passos-num{margin-top:14px}
 .como .grade-abas{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:14px}
 .como .aba-card{text-align:left;cursor:pointer;display:grid;gap:6px;color:inherit;font:inherit;padding:16px}
-.como .aba-card:hover{border-color:#ffffff40}
+.como .aba-card:hover{border-color:var(--borda-forte)}
 .como .aba-card b{font-size:16px;display:flex;align-items:center;gap:8px}.como .aba-card b .ic{color:var(--d)}
 .como h3,.como .destaque-como h2{display:flex;align-items:center;gap:8px}.como h3 .ic,.como .destaque-como h2 .ic{color:var(--d)}.como .aba-card span{color:var(--suave);font-size:13.5px}
 .como .faq{display:grid;gap:8px;margin-top:14px}
@@ -97,21 +133,20 @@ input::placeholder{color:var(--fraco)}
 .caixa-nota b{display:block;margin-bottom:4px}
 .caixa-ok{border:1px solid #46e08a55;background:#46e08a12;border-radius:12px;padding:14px 16px;margin-top:14px}
 /* assistente de primeira vez */
-.assist{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:26px}
-.passos{list-style:none;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(176px,1fr);gap:8px;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}
+.passos{list-style:none;display:grid;gap:8px;padding-bottom:0;scrollbar-width:thin}
 .passos button{width:100%;height:100%;display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;align-items:center;text-align:left;background:var(--sup);border:1px solid var(--linha);border-radius:14px;padding:12px;cursor:pointer;color:var(--suave);min-height:64px}
-.passos button:hover{background:#ffffff0a}
+.passos button:hover{background:var(--hover)}
 .passos button[aria-current=step]{background:var(--d-fundo);border-color:var(--d-borda);color:var(--texto)}
 .passos .n .ic{width:15px;height:15px}
 .passos .n{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--linha);font-size:13px;font-weight:700}
-.passos .feito .n{background:var(--ok);border-color:var(--ok);color:#06210f}
+.passos .feito .n{background:var(--ok);border-color:var(--ok);color:var(--ok-ink)}
 .passos small{display:block;color:var(--fraco);font-size:12px}
 .diag{list-style:none;display:grid;gap:8px;margin-top:14px}
 .diag li{display:grid;grid-template-columns:12px minmax(0,1fr);gap:10px;align-items:baseline}
 .diag li small{display:block;color:var(--fraco)}
 .opcoes{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:16px}
 .opcao{position:relative;text-align:left;background:var(--sup2);border:1px solid var(--linha);border-radius:14px;padding:16px;cursor:pointer;transition:border-color .16s}
-.opcao:hover{border-color:#ffffff40}
+.opcao:hover{border-color:var(--borda-forte)}
 .opcao[aria-checked=true]{border-color:var(--d);box-shadow:0 0 0 1px var(--d) inset}
 .opcao b{display:block;font-size:16px}
 .opcao.com-ic{display:grid;grid-template-columns:42px minmax(0,1fr);gap:14px;align-items:start}
@@ -123,29 +158,29 @@ input::placeholder{color:var(--fraco)}
 #carPasta,.pasta-caminho{overflow-wrap:anywhere;word-break:break-all}
 li,p,b,span,.caixa-ok,.caixa-erro,.caixa-nota{overflow-wrap:anywhere}
 .opcao span{display:block;color:var(--suave);font-size:13.5px;margin-top:4px}
-.opcao .selo{display:inline-block;margin:0 0 6px;font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;background:#ffffff14;color:var(--suave)}
-.opcao .selo.gratis{background:#46e08a22;color:var(--ok)}
+.opcao .selo{display:inline-block;margin:0 0 6px;font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;background:var(--chip);color:var(--suave)}
+.opcao .selo.gratis{background:color-mix(in srgb,var(--ok) 18%,transparent);color:var(--ok)}
 .opcao .selo.recomendada{background:var(--d);color:var(--tinta)}
 .tutorial{list-style:none;display:grid;gap:10px;margin-top:14px;counter-reset:t}
 .tutorial li{display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;background:var(--sup2);border:1px solid var(--linha);border-radius:12px;padding:12px 14px}
 .tutorial li::before{counter-increment:t;content:counter(t);width:30px;height:30px;border-radius:50%;background:var(--d);color:var(--tinta);display:grid;place-items:center;font-weight:700}
 .tutorial b{display:block}.tutorial span{color:var(--suave);font-size:14px}
 .tutorial a{font-weight:600}
-.tutorial code{background:#ffffff14;border-radius:6px;padding:1px 6px;font-size:13px}
+.tutorial code{background:var(--chip);border-radius:6px;padding:1px 6px;font-size:13px}
 .links{display:grid;gap:8px;margin-top:14px;counter-reset:l}
 .links a{display:flex;gap:10px;align-items:center;text-decoration:none;color:var(--texto);background:var(--fundo);border:1px solid var(--linha);border-radius:10px;padding:10px 14px}
-.links a::before{counter-increment:l;content:counter(l);width:22px;height:22px;border-radius:50%;background:#ffffff14;display:grid;place-items:center;font-size:12px;font-weight:700;flex:none}
-.links a:hover{border-color:#ffffff40}
+.links a::before{counter-increment:l;content:counter(l);width:22px;height:22px;border-radius:50%;background:var(--chip);display:grid;place-items:center;font-size:12px;font-weight:700;flex:none}
+.links a:hover{border-color:var(--borda-forte)}
 .salva{display:flex;gap:8px;align-items:center;color:var(--ok);font-size:14px;margin-top:8px}
 .grade-marca{display:grid;grid-template-columns:1fr 240px;gap:28px;align-items:start}
 .cores{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
 .cores button{width:34px;height:34px;border-radius:50%;border:2px solid transparent;cursor:pointer}
-.cores button[aria-pressed=true]{border-color:#fff}
+.cores button[aria-pressed=true]{border-color:var(--texto)}
 .cores input[type=color]{width:34px;height:34px;border:0;border-radius:50%;background:none;padding:0;cursor:pointer}
 .nichos{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
 .nichos button{background:var(--fundo);border:1px solid var(--linha);border-radius:999px;padding:6px 12px;cursor:pointer;font-size:13px;color:var(--suave)}
 .nichos button:hover{color:var(--texto)}
-.celular{width:200px;aspect-ratio:9/16;border-radius:22px;background:#0a0a0e;border:6px solid #23232d;position:relative;overflow:hidden;margin:0 auto}
+.celular{width:200px;aspect-ratio:9/16;border-radius:22px;background:var(--log);border:6px solid var(--sup2);position:relative;overflow:hidden;margin:0 auto;box-shadow:0 0 0 1px var(--linha)}
 .celular .topo{position:absolute;top:18px;left:0;right:0;text-align:center;font-weight:700;font-size:12px;color:#fff}
 .celular .topo i{display:inline-block;width:16px;height:16px;border-radius:50%;vertical-align:-4px;margin-right:6px}
 .celular .meio{position:absolute;inset:30% 14px auto;text-align:center;font-weight:700;font-size:18px;line-height:1.1;color:#fff}
@@ -154,13 +189,13 @@ li,p,b,span,.caixa-ok,.caixa-erro,.caixa-nota{overflow-wrap:anywhere}
 .celular .leg b{color:var(--cel)}
 .avatar{width:96px;height:96px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:40px;margin:16px auto 0}
 .imgs-marca{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
-.imgs-marca img{height:110px;border-radius:12px;background:#000}
+.imgs-marca img{height:110px;border-radius:12px;background:var(--midia)}
 .modelos{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:12px}
 .modelos.com-previa{grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px}
 .opcao.tem-previa{padding:0;overflow:hidden;display:flex;flex-direction:column}
-.opcao.tem-previa .pv{position:relative;aspect-ratio:9/16;width:100%;background:#000;overflow:hidden}
+.opcao.tem-previa .pv{position:relative;aspect-ratio:9/16;width:100%;background:var(--midia);overflow:hidden}
 .opcao.tem-previa .pv video{width:100%;height:100%;object-fit:contain;display:block}
-.opcao.tem-previa .pv .sem{height:100%;display:grid;place-items:center;text-align:center;padding:12px;color:var(--fraco);font-size:12.5px;background:repeating-linear-gradient(135deg,#ffffff06 0 10px,transparent 10px 20px)}
+.opcao.tem-previa .pv .sem{height:100%;display:grid;place-items:center;text-align:center;padding:12px;color:var(--fraco);font-size:12.5px;background:repeating-linear-gradient(135deg,var(--risca) 0 10px,transparent 10px 20px)}
 .opcao.tem-previa .sem.auto{display:grid;place-items:center;align-content:center;gap:8px;color:var(--d)}.opcao.tem-previa .sem.auto .ic{width:34px;height:34px}.opcao.tem-previa .sem.auto span{color:var(--suave)}
 .opcao.tem-previa .tx{padding:12px 14px 14px}
 .opcao.tem-previa .ok{position:absolute;top:8px;right:8px;width:24px;height:24px;border-radius:50%;background:var(--d);color:var(--tinta);display:none;place-items:center;font-size:14px;font-weight:700}
@@ -169,27 +204,28 @@ li,p,b,span,.caixa-ok,.caixa-erro,.caixa-nota{overflow-wrap:anywhere}
 .segmento{display:inline-flex;border:1px solid var(--linha);border-radius:999px;padding:3px;gap:2px;flex-wrap:wrap}
 .segmento button{background:none;border:0;border-radius:999px;padding:7px 14px;cursor:pointer;color:var(--suave);font-weight:600}
 .segmento button[aria-pressed=true]{background:var(--d);color:var(--tinta)}
-.video-teste{width:240px;aspect-ratio:9/16;border-radius:16px;background:#000;display:block}
+.video-teste{width:240px;aspect-ratio:9/16;border-radius:16px;background:var(--midia);display:block}
 .proximo{margin-top:22px}
 .proximo ol{margin:10px 0 0 20px;display:grid;gap:6px;color:var(--suave)}
 .diga{display:inline-block;background:var(--d-fundo);border:1px solid var(--d-borda);color:var(--texto);border-radius:10px;padding:8px 12px;margin-top:8px;font-weight:600}
 /* meus vídeos */
-.videos{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));gap:18px;margin-top:26px}
-.vid{background:var(--sup);border:1px solid var(--linha);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
-.vid .capa{aspect-ratio:9/16;background:#000 center/cover no-repeat;position:relative;cursor:pointer;border:0;width:100%}
-.vid .capa::after{content:"";position:absolute;inset:auto auto 14px 14px;width:44px;height:44px;border-radius:50%;background:#000000a0 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M8 5v14l11-7z' fill='white'/%3E%3C/svg%3E") center/22px no-repeat}
-.vid .corpo-v{padding:14px;display:grid;gap:6px}
-.vid b{font-size:15px;line-height:1.3}
-.vid small{color:var(--fraco);font-size:12.5px}
-.vid .marcas{display:flex;gap:6px;flex-wrap:wrap}
+.videos{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:12px}
+.vid{background:var(--sup);border:1px solid var(--linha);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.vid .capa{aspect-ratio:9/16;background:var(--midia) center/cover no-repeat;position:relative;cursor:pointer;border:0;width:100%}
+.vid .capa::after{content:"";position:absolute;inset:auto auto 10px 10px;width:36px;height:36px;border-radius:50%;background:#000000a0 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M8 5v14l11-7z' fill='white'/%3E%3C/svg%3E") center/18px no-repeat}
+.vid .corpo-v{padding:10px;display:grid;gap:4px;min-width:0}
+.vid b{font-size:13.5px;line-height:1.25;overflow-wrap:anywhere}
+.vid small{color:var(--fraco);font-size:11.5px}
+.vid .marcas{display:flex;gap:5px;flex-wrap:wrap}
 .etq .ic{width:12px;height:12px;vertical-align:-.15em}
-.etq{font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;background:#ffffff14;color:var(--suave)}
-.etq.ok{background:#46e08a22;color:var(--ok)}.etq.aviso{background:#ffc25c22;color:var(--aviso)}
-.vid .bts{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:6px;padding:0 14px 14px}
-.vid .bts .btn{justify-content:center;padding:8px 6px;font-size:13px;white-space:nowrap;min-height:40px}
+.etq{font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;background:var(--chip);color:var(--suave)}
+.etq.ok{background:color-mix(in srgb,var(--ok) 18%,transparent);color:var(--ok)}.etq.aviso{background:color-mix(in srgb,var(--aviso) 18%,transparent);color:var(--aviso)}
+.vid .bts{display:grid;grid-template-columns:1fr;gap:6px;padding:0 10px 10px;margin-top:auto;min-width:0}
+.vid .bts .btn{justify-content:center;padding:8px 10px;font-size:12.5px;white-space:normal;text-align:center;line-height:1.25;min-height:34px;width:100%;min-width:0;max-width:100%;box-sizing:border-box}
+.vid .bts .btn.sec{background:var(--fundo)}
 .vazio{color:var(--fraco);margin-top:30px;max-width:56ch}
 /* projetos (o painel antigo) */
-.projetos{display:grid;grid-template-columns:340px 1fr;height:calc(100vh - var(--topo))}
+.projetos{display:grid;grid-template-columns:340px 1fr;height:100%}
 .projetos aside{border-right:1px solid var(--linha);display:flex;flex-direction:column;min-height:0}
 .projetos aside header{padding:22px 24px 14px}
 .projetos aside .resumo{color:var(--fraco);font-size:13px}
@@ -197,8 +233,8 @@ li,p,b,span,.caixa-ok,.caixa-erro,.caixa-nota{overflow-wrap:anywhere}
 #lista{overflow:auto;flex:1;padding:0 12px 24px}
 .grupo{font-size:12px;letter-spacing:.04em;color:var(--fraco);padding:18px 12px 8px;font-weight:600}
 .item{display:grid;grid-template-columns:10px 1fr auto;gap:12px;align-items:center;width:100%;text-align:left;background:none;border:0;border-radius:10px;padding:11px 12px;cursor:pointer;transition:background .16s var(--e)}
-.item:hover{background:#ffffff0a}
-.item[aria-current=true]{background:#ffffff12}
+.item:hover{background:var(--hover)}
+.item[aria-current=true]{background:var(--sel)}
 .item b{font-weight:600;font-size:15px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .item small{color:var(--fraco);font-size:12px}
 .nota{font-variant-numeric:tabular-nums;color:var(--suave);font-size:13px;font-weight:600}
@@ -214,11 +250,11 @@ li,p,b,span,.caixa-ok,.caixa-erro,.caixa-nota{overflow-wrap:anywhere}
 .etapa .v{font-size:15px;font-weight:600;margin-top:4px}
 .etapa .s{font-size:12.5px;color:var(--fraco);margin-top:2px}
 .corpo{display:grid;grid-template-columns:minmax(260px,340px) 1fr;gap:48px;margin-top:30px}
-.midia video,.midia img{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:18px;background:#000;display:block}
+.midia video,.midia img{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:18px;background:var(--midia);display:block}
 .midia .nada{aspect-ratio:9/16;border-radius:18px;border:1px dashed var(--linha);display:grid;place-items:center;color:var(--fraco);text-align:center;padding:24px;font-size:14px}
 .abas{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}
 .aba{background:none;border:0;color:var(--fraco);padding:6px 12px;border-radius:999px;cursor:pointer;font-weight:600}
-.aba[aria-selected=true]{background:#ffffff14;color:var(--texto)}
+.aba[aria-selected=true]{background:var(--chip);color:var(--texto)}
 .bloco{margin-bottom:30px}
 .bloco pre{white-space:pre-wrap;font:inherit;color:var(--suave);max-width:66ch;line-height:1.6}
 .pend{list-style:none;display:grid;gap:8px;max-width:70ch}
@@ -238,38 +274,100 @@ li,p,b,span,.caixa-ok,.caixa-erro,.caixa-nota{overflow-wrap:anywhere}
 .zips li{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;background:var(--sup2);border:1px solid var(--linha);border-radius:12px;padding:12px 16px}
 .zips small{color:var(--fraco)}
 /* tarefa em andamento */
-#tarefa{position:fixed;right:20px;bottom:20px;width:min(440px,calc(100vw - 40px));background:var(--sup2);border:1px solid var(--linha);border-radius:16px;padding:16px 18px;box-shadow:0 20px 60px #000a;z-index:30}
+#tarefa{position:fixed;right:20px;bottom:20px;width:min(440px,calc(100vw - 40px));background:var(--sup2);border:1px solid var(--linha);border-radius:16px;padding:16px 18px;box-shadow:0 20px 60px var(--sombra-card);z-index:30}
 #tarefa .tt{display:flex;justify-content:space-between;gap:12px;font-weight:700}
 #tarefa .et{color:var(--suave);font-size:14px;margin-top:4px;min-height:1.5em}
-.trilho{height:6px;border-radius:999px;background:#ffffff14;overflow:hidden;margin-top:10px}
+.trilho{height:6px;border-radius:999px;background:var(--chip);overflow:hidden;margin-top:10px}
 .trilho i{display:block;height:100%;width:30%;background:var(--d);border-radius:999px;transition:width .4s var(--e)}
 .trilho.indef i{animation:vai 1.4s var(--e) infinite}
 @keyframes vai{0%{transform:translateX(-100%)}100%{transform:translateX(340%)}}
-#log{background:#0a0a0e;border:1px solid var(--linha);border-radius:10px;padding:10px 12px;font:12px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--suave);max-height:200px;overflow:auto;white-space:pre-wrap;margin-top:10px}
+#log{background:var(--log);border:1px solid var(--linha);border-radius:10px;padding:10px 12px;font:12px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--suave);max-height:200px;overflow:auto;white-space:pre-wrap;margin-top:10px}
 .mini{background:none;border:0;color:var(--fraco);cursor:pointer;font-size:13px;text-decoration:underline;padding:0}
 dialog{margin:auto;background:var(--sup);color:var(--texto);border:1px solid var(--linha);border-radius:18px;padding:20px;max-width:min(720px,calc(100vw - 32px));width:100%}
 dialog::backdrop{background:#000c}
 dialog video{width:100%;max-height:72vh;border-radius:12px;background:#000;display:block}
 dialog textarea{min-height:300px;margin-top:12px;font-size:14px;line-height:1.5}
-/* primeiro vídeo */
-.primeiro{margin-top:26px;background:linear-gradient(135deg,var(--d-fundo),#16161e 55%);border:1px solid var(--d-borda);border-radius:18px;padding:24px}
-.primeiro h2{font-size:26px}
-.primeiro .linha-tema{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
-.primeiro .linha-tema input{flex:1 1 280px}
-.exemplos{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+/* primeiro vídeo / + Novo */
+.primeiro{margin-top:var(--esp-3);background:var(--sup);border:1px solid var(--linha);border-radius:14px;padding:var(--esp-4)}
+.primeiro h2{font-size:18px;margin-bottom:4px}
+.primeiro > .sub{margin-top:0;margin-bottom:var(--esp-3);max-width:56ch}
+.primeiro .campo-tema{margin-top:0}
+.primeiro .campo-tema > .campo{margin-top:0}
+.primeiro .campo-tema > .campo span{margin-bottom:4px;font-size:12.5px}
+.primeiro .linha-tema{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:8px;align-items:stretch;margin-top:4px}
+.primeiro .linha-tema input{min-width:0;font-size:15px;padding:10px 12px}
+.primeiro .linha-tema select{width:auto;min-width:7.5rem;padding:10px 12px}
+.primeiro .linha-tema .btn{white-space:nowrap;padding:10px 16px}
+.primeiro .extras-wrap{margin-top:var(--esp-3);border:1px solid var(--linha);border-radius:10px;background:var(--fundo);padding:0}
+.primeiro .extras-wrap > summary{cursor:pointer;list-style:none;padding:10px 12px;font-weight:600;color:var(--texto);display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:40px;font-size:14px}
+.primeiro .extras-wrap > summary::-webkit-details-marker{display:none}
+.primeiro .extras-wrap > summary::after{content:"+";color:var(--d);font-size:16px;line-height:1;font-weight:700}
+.primeiro .extras-wrap[open] > summary::after{content:"–"}
+.primeiro .extras-wrap > summary small{display:block;font-weight:500;color:var(--fraco);font-size:12px;margin-top:1px}
+.primeiro .extras-tema{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0 12px 12px}
+.primeiro .extras-tema label.campo{margin-top:0}
+.primeiro .extras-tema input{width:100%;padding:9px 11px}
+.primeiro .bloco-ideias{margin-top:var(--esp-3);padding-top:var(--esp-3);border-top:1px solid var(--linha)}
+.primeiro .bloco-ideias h3{font-size:13px;letter-spacing:0;text-transform:none;color:var(--texto);margin:0 0 6px}
+.primeiro .ajuda-curta{margin-top:var(--esp-2);font-size:12.5px;color:var(--fraco);max-width:56ch}
+.cta-novo{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:0 0 10px;padding:10px 12px;background:var(--sup);border:1px solid var(--linha);border-radius:12px;grid-column:1/-1}
+.cta-novo h2{font-size:15px;margin:0}
+.cta-novo p{margin:2px 0 0;color:var(--suave);font-size:12.5px}
+.cta-novo .acoes{margin:0}
+.exemplos{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+@media (max-width:720px){
+  .primeiro .linha-tema{grid-template-columns:1fr 1fr}
+  .primeiro .linha-tema input{grid-column:1/-1}
+  .primeiro .linha-tema .btn{grid-column:1/-1}
+  .primeiro .extras-tema{grid-template-columns:1fr}
+}
+/* Dentro do container: densidade e áreas que crescem */
+.cabeca{align-items:center;margin-bottom:2px}
+.cabeca .sub{font-size:13.5px;color:var(--fraco)}
+.pagina > .tit,.pagina > .cabeca,.pagina > .sub,.pagina > .cta-novo{flex:none}
+#v-novo .primeiro{flex:1;min-height:0;margin-top:8px;padding:12px 14px;overflow:auto}
+#v-novo .primeiro .ajuda-curta,#v-novo .primeiro > .discreto{display:none}
+.temas{grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:5px}
+.temas button{padding:7px 8px;font-size:12.5px;line-height:1.25}
+#v-novo .bloco-ideias{margin-top:10px;padding-top:8px}
+#v-novo .extras-wrap.bloco-ideias{margin-top:8px;border-top:0;padding-top:0}
+#v-configuracoes .pagina.col > .uso-wrap,
+#v-configuracoes .pagina.col > .agora,
+#v-configuracoes .pagina.col > .demo,
+#v-configuracoes .pagina.col > .discreto,
+#v-configuracoes .pagina.col > .config{flex:none}
+#v-configuracoes .assist{flex:1;min-height:0;margin-top:10px;align-items:stretch}
+#v-configuracoes #painelPasso{height:100%;overflow:auto;padding:16px}
+#v-configuracoes .passos{overflow:auto;max-height:100%;align-content:start}
+#v-videos .videos{flex:1;min-height:0;overflow:auto;align-content:start;margin-top:10px}
+.cartao{padding:16px;border-radius:14px}
+.grade-estilos{gap:12px;margin-top:12px;grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
+.lista-car{gap:12px;margin-top:12px}
+.demo{margin-top:10px;padding:14px;gap:16px;border-radius:14px}
+.acoes{margin-top:12px;gap:8px}
+@media (max-width:900px){
+  body{height:auto;min-height:100dvh;overflow:auto}
+  .estudio-wrap{padding:0;display:block;flex:1}
+  .estudio{width:100%;height:auto;min-height:calc(100dvh - var(--topo));max-width:none;max-height:none;border:0;border-radius:0;box-shadow:none}
+  .estudio-corpo{min-height:calc(100dvh - var(--topo))}
+  .vista{position:relative;inset:auto;min-height:calc(100dvh - var(--topo))}
+  #v-novo .primeiro .ajuda-curta,#v-novo .primeiro > .discreto{display:block}
+  .temas button small{display:block}
+}
 /* 0.6.4: demonstração primeiro, temas prontos, aviso de falha (com o relatório de erro desde a 0.6.12), configurações */
-.demo{margin-top:22px;display:grid;grid-template-columns:minmax(180px,260px) 1fr;gap:24px;align-items:center;background:linear-gradient(135deg,var(--d-fundo),#16161e 60%);border:1px solid var(--d-borda);border-radius:18px;padding:22px}
-.demo video{width:100%;aspect-ratio:9/16;border-radius:14px;background:#000;display:block}
+.demo{margin-top:22px;display:grid;grid-template-columns:minmax(180px,260px) 1fr;gap:24px;align-items:center;background:linear-gradient(135deg,var(--d-fundo),var(--sup) 60%);border:1px solid var(--d-borda);border-radius:18px;padding:22px}
+.demo video{width:100%;aspect-ratio:9/16;border-radius:14px;background:var(--midia);display:block}
 .demo ol{margin:12px 0 0 20px;display:grid;gap:4px;color:var(--suave)}
 @media (max-width:640px){.demo{grid-template-columns:1fr}.demo video{max-width:260px;margin:0 auto}}
 .aviso-anonimo{display:block;margin-top:8px;font-size:13px;color:var(--fraco)}
-.temas{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
-.temas button{background:var(--fundo);border:1px solid var(--linha);border-radius:12px;padding:8px 12px;cursor:pointer;font-size:13.5px;color:var(--suave);text-align:left;max-width:260px}
+.temas{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:6px;margin-top:6px}
+.temas button{background:var(--fundo);border:1px solid var(--linha);border-radius:10px;padding:8px 10px;cursor:pointer;font-size:13px;color:var(--suave);text-align:left;max-width:none;min-width:0}
 .temas button:hover,.temas button[aria-pressed=true]{color:var(--texto);border-color:var(--d)}
-.temas button small{display:block;color:var(--fraco);font-size:12px}
-.discreto{margin-top:16px;font-size:13.5px;color:var(--fraco)}
-.discreto button{background:none;border:0;color:var(--suave);text-decoration:underline;cursor:pointer;font-size:13.5px;padding:8px 2px}
-.config{margin-top:22px;border:1px solid var(--linha);border-radius:14px;padding:12px 16px;background:var(--sup)}
+.temas button small{display:block;color:var(--fraco);font-size:11.5px;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media (min-width:901px){.temas button small{display:none}}
+.discreto{margin-top:8px;font-size:12.5px;color:var(--fraco)}
+.discreto button{background:none;border:0;color:var(--suave);text-decoration:underline;cursor:pointer;font-size:12.5px;padding:4px 2px}
+.config{margin-top:10px;border:1px solid var(--linha);border-radius:12px;padding:8px 12px;background:var(--sup)}
 .config summary{cursor:pointer;font-weight:600}
 .config label{display:flex;gap:10px;align-items:flex-start;margin-top:12px;color:var(--suave)}
 .config input{margin-top:4px}
@@ -286,10 +384,12 @@ dialog textarea{min-height:300px;margin-top:12px;font-size:14px;line-height:1.5}
 .etapas-p li .dot.ativo{background:var(--d);animation:pulsa 1.2s ease-in-out infinite}
 @keyframes pulsa{50%{opacity:.35}}
 .pedido{background:var(--fundo);border:1px solid var(--linha);border-radius:12px;padding:12px 14px;margin-top:10px;color:var(--texto);white-space:pre-wrap}
-.primeiro video{width:260px;max-width:100%;aspect-ratio:9/16;border-radius:16px;background:#000;display:block;margin-top:16px}
+.primeiro video{width:260px;max-width:100%;aspect-ratio:9/16;border-radius:16px;background:var(--midia);display:block;margin-top:16px}
+@media (max-width:1100px){.logo-txt{display:none}}
 @media (max-width:900px){
-  .barra{gap:12px;padding:0 12px}.logo span{display:none}
-  .assist{grid-template-columns:1fr}.passos{position:static;grid-auto-flow:column;grid-auto-columns:minmax(150px,1fr);overflow-x:auto}
+  .barra{gap:12px;padding:0 12px}
+  .assist{grid-template-columns:1fr}
+  .assist .passos{grid-auto-flow:column;grid-auto-columns:minmax(150px,1fr);overflow-x:auto;padding-bottom:6px}
   .grade-marca{grid-template-columns:1fr}
   .projetos{grid-template-columns:minmax(0,1fr);height:auto}#busca{margin:0 16px 12px;width:calc(100% - 32px)}.projetos aside{border-right:0;border-bottom:1px solid var(--linha);max-height:46vh}
   .cena{padding:24px 16px 48px}.corpo{grid-template-columns:1fr}.etapas{grid-template-columns:repeat(2,1fr)}
@@ -297,25 +397,36 @@ dialog textarea{min-height:300px;margin-top:12px;font-size:14px;line-height:1.5}
 }
 
 /* 0.6.28: próximo passo, abas novas, catálogo de estilos, carrosséis, toque e celular */
-body{overflow-x:hidden}
 img,video{max-width:100%}
-.btn{min-height:44px;justify-content:center}
-.btn.pequeno{min-height:40px}
-.mini{min-height:32px}
-.agora{margin-top:22px;display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:linear-gradient(135deg,var(--d-fundo),var(--sup) 70%);border:1px solid var(--d-borda);border-radius:18px;padding:20px 22px}
-.agora .kicker{font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--d)}
-.agora h2{font-size:22px;margin:4px 0 2px}
-.agora p{color:var(--suave);max-width:58ch}
-.agora .prog{display:flex;gap:5px;margin-top:12px}
-.agora .prog i{width:26px;height:6px;border-radius:99px;background:#ffffff1f}
+.btn{min-height:40px;justify-content:center}
+.btn.pequeno{min-height:36px}
+.mini{min-height:28px}
+.agora{margin-top:var(--esp-3);display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--sup);border:1px solid var(--d-borda);border-radius:12px;padding:12px 16px}
+.agora h2{font-size:17px;margin:0 0 2px}
+.agora p{color:var(--suave);max-width:70ch;margin:0;font-size:13.5px}
+.agora .prog{display:flex;gap:4px;margin-top:8px}
+.agora .prog i{width:22px;height:5px;border-radius:99px;background:var(--trilha)}
 .agora .prog i.f{background:var(--ok)}.agora .prog i.a{background:var(--d)}
-.configurando .demo{order:1}.configurando #agora{order:2}.configurando .assist{order:3}.configurando #primeiro{order:4}.configurando .discreto{order:5}.configurando .config{order:6}
-.col{display:flex;flex-direction:column}
-.col>.tit,.col>.sub{order:0}
+.configurando .demo{order:1}.configurando #agora{order:2}.configurando .assist{order:3}.configurando .discreto{order:4}.configurando .config{order:5}
+.col{display:flex;flex-direction:column;gap:0}
+.col>.tit,.col>.sub,.col>.cabeca{order:0}
 .col #demoMostrar{order:1}
-.vazio-bonito{margin-top:26px;border:1px dashed var(--linha);border-radius:16px;padding:26px;max-width:640px}
-.vazio-bonito h2{font-size:20px}
-.vazio-bonito p{color:var(--suave);margin-top:6px}
+.assist{display:grid;grid-template-columns:minmax(200px,240px) minmax(0,1fr);gap:var(--esp-3);margin-top:var(--esp-3);align-items:start}
+.assist .passos{grid-auto-flow:row;grid-auto-columns:unset;overflow:visible;padding-bottom:0}
+.assist #painelPasso{min-height:0}
+.passos{gap:6px}
+.passos button{min-height:48px;padding:8px 10px;border-radius:12px;gap:8px}
+.passos .n{width:24px;height:24px;font-size:12px}
+.passos small{font-size:11px}
+.uso-unico{margin-top:var(--esp-2)}
+.uso-wrap{margin-top:var(--esp-2);border:1px solid var(--linha);border-radius:12px;background:var(--sup);padding:0 12px}
+.uso-wrap > summary{cursor:pointer;padding:10px 0;font-weight:600;min-height:40px;display:flex;align-items:center;font-size:14px}
+.uso-wrap[open]{border-color:var(--d-borda)}
+.uso-wrap .uso-unico{margin:0 0 10px;border:0;background:transparent;padding:0}
+@media (max-width:900px){.assist{grid-template-columns:1fr}.primeiro .extras-tema{grid-template-columns:1fr}}
+.vazio-bonito{margin-top:16px;border:1px dashed var(--linha);border-radius:12px;padding:18px;max-width:640px}
+.vazio-bonito h2{font-size:18px}
+.vazio-bonito p{color:var(--suave);margin-top:4px;font-size:14px}
 .novo-video{margin:0 0 18px;grid-column:1/-1}
 .novo-video input[type=text]{margin-top:10px}
 .pq{display:inline-flex;gap:8px;align-items:center;color:var(--suave)}
@@ -336,10 +447,10 @@ img,video{max-width:100%}
 .chips button:hover,.chips button[aria-pressed=true]{color:var(--texto);border-color:var(--d)}
 .grade-estilos{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px;margin-top:20px}
 .est{background:var(--sup);border:1px solid var(--linha);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
-.est .prev{position:relative;aspect-ratio:9/16;background:#000;width:100%}
+.est .prev{position:relative;aspect-ratio:9/16;background:var(--midia);width:100%}
 .est.car .prev{aspect-ratio:4/5}
 .est .prev video,.est .prev img{width:100%;height:100%;object-fit:contain;display:block}
-.est .prev .sem{height:100%;display:grid;place-items:center;text-align:center;padding:18px;color:var(--fraco);font-size:13.5px;background:repeating-linear-gradient(135deg,#ffffff06 0 10px,transparent 10px 20px)}
+.est .prev .sem{height:100%;display:grid;place-items:center;text-align:center;padding:18px;color:var(--fraco);font-size:13.5px;background:repeating-linear-gradient(135deg,var(--risca) 0 10px,transparent 10px 20px)}
 .est .prev .pp{position:absolute;right:10px;bottom:10px;width:44px;height:44px;border-radius:50%;border:0;background:#000000b0;color:#fff;cursor:pointer;font-size:16px}
 .est .txt{padding:14px;display:grid;gap:8px;flex:1;align-content:start}
 .est .txt>b{font-size:16px}
@@ -354,10 +465,12 @@ img,video{max-width:100%}
 .est .copiado{color:var(--ok);font-size:13px;min-height:1.3em;margin-top:6px;text-align:center}
 .lista-car{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px;margin-top:16px}
 .car-it{background:var(--sup);border:1px solid var(--linha);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
-.car-it img.cap{width:100%;aspect-ratio:4/5;object-fit:cover;background:#000;display:block;cursor:pointer}
+.car-it img.cap{width:100%;aspect-ratio:4/5;object-fit:cover;background:var(--midia);display:block;cursor:pointer}
 .car-it .c{padding:12px;display:grid;gap:4px}
 .car-it small{color:var(--fraco)}
-.car-it .bts{display:grid;gap:6px;padding:0 12px 12px}
+.car-it .bts{display:grid;gap:6px;padding:0 12px 12px;min-width:0}
+.car-it .bts .btn{width:100%;min-width:0;justify-content:center;white-space:normal;text-align:center;line-height:1.25}
+.car-it .bts .btn.sec{background:var(--fundo)}
 .grade-slides{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-top:12px}
 .grade-slides figure{display:grid;gap:6px}
 .grade-slides img{width:100%;border-radius:10px;display:block}
@@ -375,11 +488,13 @@ img,video{max-width:100%}
   input[type=checkbox]{width:22px;height:22px}
 }
 @media (max-width:900px){
-  .barra{height:auto;flex-wrap:wrap;gap:0 12px;padding:8px 12px 0}
-  .barra nav.abas-topo{order:3;flex:1 0 100%;margin:0 -12px;padding:0 12px 6px;scrollbar-width:none}
-  .barra nav.abas-topo::-webkit-scrollbar{display:none}
-  .barra nav.abas-topo{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent);padding-right:36px}
-  .logo span{display:inline}
+  .barra{height:auto;grid-template-columns:1fr auto;justify-items:stretch;gap:8px;padding:8px 12px 0}
+  .barra .logo{justify-self:start}
+  .barra .tema-ctl{grid-column:2;justify-self:end;align-self:center}
+  .barra nav.abas-topo{grid-column:1/-1;justify-self:stretch;max-width:none;margin:0 -12px;padding:0 12px 6px;gap:6px;justify-content:flex-start;overflow-x:auto}
+  .barra nav.abas-topo .abas-scroll{scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent);padding-right:28px}
+  .barra nav.abas-topo .abas-scroll::-webkit-scrollbar{display:none}
+  .logo-txt{display:flex}
   :root{--topo:96px}
   h1.tit{font-size:28px}
   .vista{min-height:0}
@@ -393,7 +508,6 @@ img,video{max-width:100%}
   .topo-p h2{font-size:26px}
   .etapas{grid-template-columns:repeat(2,1fr)}
   .videos{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
-  .vid .bts{grid-template-columns:1fr}
   .grade-estilos{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
   .est .prev{max-height:300px}
 }
@@ -408,54 +522,78 @@ img,video{max-width:100%}
 </style>
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><symbol id="i-comecar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol><symbol id="i-ajuda" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></symbol><symbol id="i-filme" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 3v18"/><path d="M3 7.5h4"/><path d="M3 12h18"/><path d="M3 16.5h4"/><path d="M17 3v18"/><path d="M17 7.5h4"/><path d="M17 16.5h4"/></symbol><symbol id="i-camadas" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol><symbol id="i-paleta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></symbol><symbol id="i-pasta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></symbol><symbol id="i-atualizar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></symbol><symbol id="i-baixar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></symbol><symbol id="i-copiar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol><symbol id="i-ok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol><symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 3 20 12 6 21 6 3"/></symbol><symbol id="i-voz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></symbol><symbol id="i-chave" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></symbol><symbol id="i-tela" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></symbol><symbol id="i-pessoa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol><symbol id="i-ajustes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="2" x2="6" y1="14" y2="14"/><line x1="10" x2="14" y1="8" y2="8"/><line x1="18" x2="22" y1="16" y2="16"/></symbol><symbol id="i-conversa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol><symbol id="i-aviso" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></symbol><symbol id="i-cerebro" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></symbol><symbol id="i-estrela" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></symbol><symbol id="i-seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol><symbol id="i-aula" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol><symbol id="i-ciencia" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"/></symbol><symbol id="i-curiosidade" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol><symbol id="i-esporte" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol><symbol id="i-fe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol><symbol id="i-financas" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6"/><path d="M18.09 10.37A6 6 0 1 1 10.34 18"/><path d="M7 6h1v4"/><path d="m16.71 13.88.7.71-2.82 2.82"/></symbol><symbol id="i-historia" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></symbol><symbol id="i-negocio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/><path d="M22 7v3a2 2 0 0 1-2 2 2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7"/></symbol><symbol id="i-noticia" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></symbol><symbol id="i-receita" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"/><path d="M6 17h12"/></symbol><symbol id="i-saude" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></symbol><symbol id="i-tutorial" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></symbol><symbol id="i-venda" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol><symbol id="i-salvar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"/><path d="M7 3v4a1 1 0 0 0 1 1h7"/></symbol><symbol id="i-magia" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72"/><path d="m14 7 3 3"/><path d="M5 6v4"/><path d="M19 14v4"/><path d="M10 2v2"/><path d="M7 8H3"/><path d="M21 16h-4"/><path d="M11 3H9"/></symbol><symbol id="i-bandeira" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/></symbol></defs></svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><symbol id="i-mais" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></symbol><symbol id="i-comecar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol><symbol id="i-ajuda" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></symbol><symbol id="i-filme" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 3v18"/><path d="M3 7.5h4"/><path d="M3 12h18"/><path d="M3 16.5h4"/><path d="M17 3v18"/><path d="M17 7.5h4"/><path d="M17 16.5h4"/></symbol><symbol id="i-camadas" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol><symbol id="i-paleta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></symbol><symbol id="i-pasta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></symbol><symbol id="i-atualizar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></symbol><symbol id="i-baixar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></symbol><symbol id="i-copiar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol><symbol id="i-ok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol><symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 3 20 12 6 21 6 3"/></symbol><symbol id="i-voz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></symbol><symbol id="i-chave" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></symbol><symbol id="i-tela" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></symbol><symbol id="i-pessoa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol><symbol id="i-ajustes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="2" x2="6" y1="14" y2="14"/><line x1="10" x2="14" y1="8" y2="8"/><line x1="18" x2="22" y1="16" y2="16"/></symbol><symbol id="i-conversa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol><symbol id="i-aviso" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></symbol><symbol id="i-cerebro" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></symbol><symbol id="i-estrela" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></symbol><symbol id="i-seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol><symbol id="i-aula" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol><symbol id="i-ciencia" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"/></symbol><symbol id="i-curiosidade" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol><symbol id="i-esporte" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol><symbol id="i-fe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol><symbol id="i-financas" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6"/><path d="M18.09 10.37A6 6 0 1 1 10.34 18"/><path d="M7 6h1v4"/><path d="m16.71 13.88.7.71-2.82 2.82"/></symbol><symbol id="i-historia" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></symbol><symbol id="i-negocio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/><path d="M22 7v3a2 2 0 0 1-2 2 2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7"/></symbol><symbol id="i-noticia" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></symbol><symbol id="i-receita" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"/><path d="M6 17h12"/></symbol><symbol id="i-saude" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></symbol><symbol id="i-tutorial" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></symbol><symbol id="i-venda" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol><symbol id="i-salvar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"/><path d="M7 3v4a1 1 0 0 0 1 1h7"/></symbol><symbol id="i-magia" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72"/><path d="m14 7 3 3"/><path d="M5 6v4"/><path d="M19 14v4"/><path d="M10 2v2"/><path d="M7 8H3"/><path d="M21 16h-4"/><path d="M11 3H9"/></symbol><symbol id="i-bandeira" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/></symbol><symbol id="i-sol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol><symbol id="i-lua" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol></defs></svg>
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
 <header class="barra">
-  <div class="logo"><i></i><span>Ilustrando Studio</span></div>
+  <div class="logo"><i></i><div class="logo-txt"><span>Estudio de Videos</span><small>Por Ajure</small></div></div>
   <nav class="abas-topo" role="tablist" aria-label="Seções">
-    <button role="tab" data-vista="comecar" aria-selected="true"><svg class="ic" aria-hidden="true"><use href="#i-comecar"/></svg>Começar<span class="pin" id="pinComecar" hidden></span></button>
-    <button role="tab" data-vista="como" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-ajuda"/></svg>Como funciona</button>
-    <button role="tab" data-vista="videos" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-filme"/></svg>Meus vídeos</button>
-    <button role="tab" data-vista="carrosseis" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-camadas"/></svg>Carrosséis</button>
-    <button role="tab" data-vista="estilos" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-paleta"/></svg>Estilos</button>
-    <button role="tab" data-vista="projetos" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-pasta"/></svg>Projetos</button>
-    <button role="tab" data-vista="atualizar" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-atualizar"/></svg>Atualizar</button>
+    <button role="tab" class="btn-novo" data-vista="novo" aria-selected="true">+ Novo</button>
+    <button role="tab" data-vista="configuracoes" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-ajustes"/></svg>Configurações<span class="pin" id="pinConfig" hidden></span></button>
+    <span class="sep-nav" aria-hidden="true"></span>
+    <div class="abas-scroll">
+      <button role="tab" data-vista="como" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-ajuda"/></svg>Como funciona</button>
+      <button role="tab" data-vista="videos" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-filme"/></svg>Meus vídeos</button>
+      <button role="tab" data-vista="carrosseis" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-camadas"/></svg>Carrosséis</button>
+      <button role="tab" data-vista="estilos" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-paleta"/></svg>Estilos</button>
+      <button role="tab" data-vista="projetos" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-pasta"/></svg>Projetos</button>
+      <button role="tab" data-vista="atualizar" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-atualizar"/></svg>Atualizar</button>
+    </div>
   </nav>
+  <div class="tema-ctl" role="group" aria-label="Tema da tela">
+    <button type="button" data-tema-btn="claro" aria-pressed="false" title="Tema claro" aria-label="Tema claro"><svg class="ic" aria-hidden="true"><use href="#i-sol"/></svg></button>
+    <button type="button" data-tema-btn="escuro" aria-pressed="true" title="Tema escuro" aria-label="Tema escuro"><svg class="ic" aria-hidden="true"><use href="#i-lua"/></svg></button>
+  </div>
 </header>
 <div id="pastaRuim" class="pasta-ruim" hidden role="alert"></div>
 <div id="novidade" class="novidade" hidden role="status"><span>Nova versão <b id="novVersao"></b> disponível</span><button class="btn sec pequeno" id="novComo">Como atualizar</button><button class="mini" id="novFechar" aria-label="Esconder o aviso">Agora não</button></div>
+<div class="estudio-wrap">
+<div class="estudio" id="estudio">
+<div class="estudio-corpo">
 
-<!-- COMEÇAR: assistente de primeira vez (e ajustes depois) -->
-<section class="vista" id="v-comecar" role="tabpanel">
-  <div class="pagina col" id="conteudo">
-    <h1 class="tit" id="boasVindas">Vamos deixar o seu estúdio pronto</h1>
-    <p class="sub" id="boasSub">Cinco passos curtos para deixar tudo pronto. Dá para pular e voltar quando quiser: tudo fica salvo neste computador.</p>
-    <section class="cartao uso-unico" id="usoUnico" aria-label="Como usar o Método">
-      <h2>O Método é uma pasta que o seu assistente usa</h2>
-      <ol>
-        <li><b>Abra esta pasta</b> no Claude Code (aba <b>Code</b>, modo <b>Local</b>) ou no Codex.</li>
-        <li><b>Escreva:</b> <code>Comece pelos primeiros passos.</code> Ele instala o que faltar e liga a voz.</li>
-        <li><b>Peça o seu vídeo:</b> <code>Quero um vídeo sobre…</code></li>
-      </ol>
-      <p class="dica">Este estúdio visual é opcional: serve para ver seus vídeos, estilos, voz e marca em telas. Para abri-lo de novo, escreva <b>abrir estúdio</b> ao assistente. Dá para usar só a conversa, ou os dois juntos.</p>
-    </section>
+<!-- + NOVO: criar vídeo -->
+<section class="vista" id="v-novo" role="tabpanel">
+  <div class="pagina foco" id="conteudo">
+    <div class="cabeca">
+      <h1 class="tit">Novo vídeo</h1>
+      <p class="sub">Tema e gerar. Gancho, título e fecho são opcionais.</p>
+    </div>
+    <section class="primeiro" id="primeiro" aria-live="polite"></section>
+  </div>
+</section>
+
+<!-- CONFIGURAÇÕES: instalação, voz, marca, estilo/objetivo e vídeo de teste -->
+<section class="vista" id="v-configuracoes" role="tabpanel" hidden>
+  <div class="pagina col">
+    <div class="cabeca">
+      <h1 class="tit" id="boasVindas">Configurações</h1>
+      <p class="sub" id="boasSub">Voz, marca, estilo e vídeo de teste. Tudo neste computador.</p>
+    </div>
+    <details class="uso-wrap" id="usoWrap">
+      <summary>Como o Método funciona (30 segundos)</summary>
+      <section class="uso-unico" id="usoUnico" aria-label="Como usar o Método">
+        <ol>
+          <li><b>Abra esta pasta</b> no Claude Code (aba <b>Code</b>, modo <b>Local</b>) ou no Codex.</li>
+          <li><b>Escreva:</b> <code>Comece pelos primeiros passos.</code></li>
+          <li><b>Peça o vídeo</b> na conversa, ou use <b>+ Novo</b> aqui.</li>
+        </ol>
+        <p class="dica">O estúdio é a vitrine. Quem produz é o assistente.</p>
+      </section>
+    </details>
     <section class="agora" id="agora" aria-live="polite" hidden></section>
     <section class="demo" id="demo" hidden aria-label="Vídeo de demonstração">
       <video id="demoVideo" controls playsinline preload="metadata" poster="/demo/demonstracao.jpg"></video>
-      <div><h2>Veja o que o estúdio faz</h2>
-        <p class="sub">Este vídeo foi feito inteiro pelo estúdio: roteiro com os fatos conferidos, narração, objetos 3D, cenário e legenda. Dê o play com som. Ele já veio pronto, então não gasta nada.</p>
-        <ol><li>Quem narra é a ElevenLabs, a voz padrão do estúdio. A conta é grátis e o passo a passo está em Começar &gt; Voz (uns 5 minutos, uma vez só).</li><li>Faça o vídeo de teste: este mesmo tema, feito no seu computador (cerca de 1 a 3 minutos).</li><li>Depois, o seu tema.</li></ol>
-        <div class="acoes"><button class="btn" id="demoComecar">Agora fazer o meu</button><button class="mini" id="demoFechar">Esconder a demonstração</button></div></div>
+      <div><h2>Veja um exemplo pronto</h2>
+        <p class="sub">Roteiro, narração, 3D e legenda feitos pelo estúdio. Não gasta crédito.</p>
+        <div class="acoes"><button class="btn" id="demoComecar">Fazer o meu</button><button class="mini" id="demoFechar">Esconder</button></div></div>
     </section>
-    <p class="discreto"><button type="button" data-ir="como">Entender como o estúdio funciona</button></p>
-    <p class="discreto" id="demoMostrar" hidden><button id="demoVer">Ver o vídeo de demonstração</button></p>
-    <section class="primeiro" id="primeiro" aria-live="polite"></section>
+    <p class="discreto"><button type="button" data-ir="como">Guia completo</button></p>
+    <p class="discreto" id="demoMostrar" hidden><button id="demoVer">Ver demonstração</button></p>
     <div class="assist">
       <ol class="passos" id="passos"></ol>
       <div id="painelPasso" class="cartao" aria-live="polite"></div>
     </div>
-    <details class="config" id="config"><summary>Configurações</summary>
-      <label><input type="checkbox" id="cfgTele"> <span>Mandar o <b>relatório de erro</b> quando algo falhar, para a equipe corrigir mais rápido. Vai o código da falha e o mesmo texto do "Copiar diagnóstico" (versão, sistema, o que o estúdio disse e o fim do registro), sem chaves, e-mail, roteiro, nomes de projeto nem dados pessoais. Fica guardado em área privada por 180 dias. Desmarque para não mandar nada.</span></label>
+    <details class="config" id="config"><summary>Relatório de erro</summary>
+      <label><input type="checkbox" id="cfgTele"> <span>Mandar o <b>relatório de erro</b> quando algo falhar (código e diagnóstico, sem chaves nem dados pessoais).</span></label>
       <p class="dica" id="cfgRes" aria-live="polite"></p>
     </details>
   </div>
@@ -464,7 +602,7 @@ img,video{max-width:100%}
 <!-- MEUS VÍDEOS -->
 <section class="vista" id="v-como" role="tabpanel" hidden>
   <div class="pagina como">
-    <h1 class="tit">Como o Método Ilustrando funciona</h1>
+    <h1 class="tit">Como o Estudio de Videos funciona</h1>
     <p class="sub">Leitura de 3 minutos. Depois disso, o resto fica simples.</p>
 
     <div class="cartao destaque-como">
@@ -494,7 +632,8 @@ img,video{max-width:100%}
 
     <h2 class="sec-t">Para que serve cada aba</h2>
     <div class="grade-abas">
-      <button class="cartao aba-card" data-ir="comecar"><b><svg class="ic" aria-hidden="true"><use href="#i-comecar"/></svg> Começar</b><span>Os primeiros passos: instalação, voz, marca e um vídeo de teste. Também onde você deixa o estilo e o objetivo padrão.</span></button>
+      <button class="cartao aba-card" data-ir="novo"><b><svg class="ic" aria-hidden="true"><use href="#i-mais"/></svg> + Novo</b><span>Criar um vídeo: tema, gancho, título e o pedido para o assistente.</span></button>
+      <button class="cartao aba-card" data-ir="configuracoes"><b><svg class="ic" aria-hidden="true"><use href="#i-ajustes"/></svg> Configurações</b><span>Instalação, voz e trilha, marca, estilo e objetivo, e o vídeo de teste.</span></button>
       <button class="cartao aba-card" data-ir="videos"><b><svg class="ic" aria-hidden="true"><use href="#i-filme"/></svg> Meus vídeos</b><span>Seus vídeos prontos para assistir, baixar, copiar a legenda e postar.</span></button>
       <button class="cartao aba-card" data-ir="carrosseis"><b><svg class="ic" aria-hidden="true"><use href="#i-camadas"/></svg> Carrosséis</b><span>As sequências de imagens prontas para o Instagram, o TikTok e o Facebook.</span></button>
       <button class="cartao aba-card" data-ir="estilos"><b><svg class="ic" aria-hidden="true"><use href="#i-paleta"/></svg> Estilos</b><span>A vitrine dos estilos, com prévia em movimento e o pedido pronto para copiar.</span></button>
@@ -506,7 +645,7 @@ img,video{max-width:100%}
     <div class="faq">
       <details><summary>Preciso deixar o estúdio aberto para o vídeo sair?</summary><p>Não. Quem faz o vídeo é o assistente (Claude Code ou Codex), na conversa. O estúdio é só para ver o que ficou pronto, escolher estilos e ajustar a marca.</p></details>
       <details><summary>Onde ficam os meus vídeos?</summary><p>Na pasta que você escolheu no assistente (Claude Code ou Codex), dentro de <b>projetos</b>. Em <b>Meus vídeos</b> você os vê sem abrir pastas, e o botão <b>Mostrar na pasta</b> leva até o arquivo.</p></details>
-      <details><summary>Como escolho o estilo (a aparência)?</summary><p>Em <b>Estilos</b>, veja as prévias, clique em <b>Copiar pedido</b> e cole na conversa com o assistente (Claude Code ou Codex). Para usar o mesmo estilo em todos os vídeos, deixe-o como padrão em <b>Começar &gt; Estilo e objetivo</b>.</p></details>
+      <details><summary>Como escolho o estilo (a aparência)?</summary><p>Em <b>Estilos</b>, veja as prévias, clique em <b>Copiar pedido</b> e cole na conversa com o assistente (Claude Code ou Codex). Para usar o mesmo estilo em todos os vídeos, deixe-o como padrão em <b>Configurações &gt; Estilo e objetivo</b>.</p></details>
       <details><summary>O que é o objetivo?</summary><p>É para que serve o vídeo: curiosidade, ensinar algo, vender um produto, divulgar um negócio e outros. O objetivo decide o tamanho do roteiro, o jeito de abrir e o convite final. Cada vídeo pode trocar depois, é só pedir.</p></details>
       <details><summary>Posso fazer vídeo de qualquer assunto, ou só curiosidades?</summary><p>De qualquer assunto. O mesmo método serve para páginas de conteúdo, negócios e perfis pessoais.</p></details>
       <details><summary>Onde ficam a minha marca e as minhas chaves?</summary><p>Só neste computador. A chave da voz entra pelo painel do estúdio e nunca deve ser colada na conversa com o assistente (Claude Code ou Codex).</p></details>
@@ -514,14 +653,16 @@ img,video{max-width:100%}
       <details><summary>Saiu versão nova do método. Como atualizo?</summary><p>Baixe o arquivo na página de releases e use a aba <b>Atualizar</b>. Dá para desfazer se precisar.</p></details>
     </div>
 
-    <div class="acoes" style="margin-top:28px"><button class="btn" data-ir="comecar">Ir para os primeiros passos</button><button class="btn sec" data-ir="estilos">Ver os estilos</button></div>
+    <div class="acoes" style="margin-top:28px"><button class="btn" data-ir="configuracoes">Ir para Configurações</button><button class="btn sec" data-ir="novo">Criar um vídeo</button></div>
   </div>
 </section>
 
 <section class="vista" id="v-videos" role="tabpanel" hidden>
   <div class="pagina">
-    <h1 class="tit">Meus vídeos</h1>
-    <p class="sub">Aqui ficam os seus vídeos prontos, do mais novo ao mais antigo. Para postar: assista com som, clique em <b>Baixar</b>, copie a legenda e publique no app da rede.</p>
+    <div class="cabeca">
+      <h1 class="tit">Meus vídeos</h1>
+      <p class="sub">Prontos, do mais novo ao mais antigo. Assista, baixe e publique.</p>
+    </div>
     <div id="videos" class="videos"></div>
   </div>
 </section>
@@ -567,7 +708,7 @@ img,video{max-width:100%}
     <p class="sub">Cada vídeo e cada carrossel tem um estilo: a aparência dele. Veja um pouco de cada um, escolha o que combina com o seu assunto e copie o pedido pronto.</p>
     <div class="cartao" style="margin-top:20px"><h2>Como usar</h2>
       <ol class="passos-num"><li><span>Escolha um estilo. As prévias andam sozinhas enquanto você olha.</span></li><li><span>Clique em <b>Copiar pedido</b>.</span></li><li><span>Cole no <b>Claude</b> ou no <b>Codex</b>, com esta pasta aberta, e troque <b>[assunto]</b> pelo seu. Exemplo: <b>Faça um vídeo sobre [assunto] no estilo [nome do estilo].</b></span></li></ol>
-      <p class="dica">Quer o mesmo estilo em todos os vídeos? Deixe um padrão em <button class="mini" id="estPadrao">Começar &gt; Estilo e objetivo</button>.</p></div>
+      <p class="dica">Quer o mesmo estilo em todos os vídeos? Deixe um padrão em <button class="mini" id="estPadrao">Configurações &gt; Estilo e objetivo</button>.</p></div>
     <div class="barra-estilos"><div class="segmento" id="estTipo" role="group" aria-label="Tipo"><button data-t="reels" aria-pressed="true">Vídeos (Reels)</button><button data-t="carrosseis" aria-pressed="false">Carrosséis</button></div>
       <input type="search" id="estBusca" placeholder="Buscar por assunto ou objetivo" aria-label="Buscar estilo"></div>
     <div class="chips" id="estChips" role="group" aria-label="Sugestões de busca"></div>
@@ -598,6 +739,10 @@ img,video{max-width:100%}
   </div>
 </section>
 
+</div><!-- /.estudio-corpo -->
+</div><!-- /.estudio -->
+</div><!-- /.estudio-wrap -->
+
 <div id="tarefa" hidden role="status" aria-live="polite">
   <div class="tt"><span id="tTitulo"></span><span id="tTempo" style="color:var(--fraco);font-weight:600"></span></div>
   <div class="et" id="tEtapa"></div>
@@ -618,6 +763,16 @@ window.__iluRodou = true;
 const TOKEN = '__TOKEN__';
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const TEMA_KEY = 'ilu-tema';
+const temaAtual = () => (document.documentElement.getAttribute('data-tema') === 'claro' ? 'claro' : 'escuro');
+const aplicarTema = (t) => {
+  const tema = t === 'claro' ? 'claro' : 'escuro';
+  document.documentElement.setAttribute('data-tema', tema);
+  try { localStorage.setItem(TEMA_KEY, tema); } catch { /* privado / bloqueado */ }
+  $$('[data-tema-btn]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.temaBtn === tema)));
+};
+aplicarTema(temaAtual());
+$$('[data-tema-btn]').forEach((b) => (b.onclick = () => aplicarTema(b.dataset.temaBtn)));
 // 0.6.24: $q é o $ para o que roda DEPOIS de uma espera (resposta do estúdio, fim de tarefa). Se o painel foi trocado nesse meio tempo, o elemento
 // não existe mais: em vez de "Cannot set properties of null" (era o erro-js / promessa-rejeitada da telemetria), devolve um objeto solto que aceita e ignora
 const $q = (s, r = document) => r.querySelector(s) || { disabled: false, hidden: false, innerHTML: '', textContent: '', value: '', checked: false, style: {}, dataset: {}, classList: { add() {}, remove() {}, toggle() {} }, setAttribute() {}, focus() {}, scrollTop: 0, onclick: null };
@@ -642,22 +797,54 @@ const caixaTesteChave = (r) => {
   if (r.ok === true) return `<div class="caixa-ok" role="status"><b>${esc(r.titulo)}</b> ${esc(r.acao)}</div>`;
   return `<div class="${r.ok === false ? 'caixa-erro' : 'caixa-nota'}" role="alert"><b>${esc(r.titulo)}</b>O que fazer: ${esc(r.acao)}</div>`;
 };
-let conf = null, vista = 'comecar';
+let conf = null, vista = 'novo';
+const VISTAS = ['novo', 'configuracoes', 'como', 'videos', 'carrosseis', 'estilos', 'projetos', 'atualizar'];
+const VISTA_KEY = 'ilu-vista';
+const vistaValida = (v) => VISTAS.includes(v);
+const lembrarVista = (v) => { try { if (vistaValida(v)) localStorage.setItem(VISTA_KEY, v); } catch { /* privado / bloqueado */ } };
+const vistaLembrada = () => { try { const v = localStorage.getItem(VISTA_KEY); return vistaValida(v) ? v : null; } catch { return null; } };
+const lerHashVista = () => {
+  const h = decodeURIComponent((location.hash || '').slice(1));
+  if (h.startsWith('p/')) return { vista: 'projetos', projeto: h.slice(2) };
+  if (h === 'comecar') return { vista: 'configuracoes' };
+  if (vistaValida(h)) return { vista: h };
+  return null;
+};
+/** Sem hash na URL (recarregou na raiz, link sem #): recupera a última aba do navegador. */
+(() => {
+  if ((location.hash || '').slice(1)) return;
+  const v = vistaLembrada();
+  if (v) try { history.replaceState(null, '', '#' + v); } catch { /* sem history */ }
+})();
 
 /* ---------------- navegação ---------------- */
 function mostrar(v) {
+  if (v === 'comecar') v = 'configuracoes';
+  if (!vistaValida(v)) v = 'novo';
   vista = v;
+  lembrarVista(v);
   $$('nav.abas-topo button').forEach((b) => { const sel = b.dataset.vista === v; b.setAttribute('aria-selected', sel); if (sel && b.scrollIntoView) { try { b.scrollIntoView({ inline: 'center', block: 'nearest' }); } catch { /* sem rolagem */ } } });
   $$('.vista').forEach((s) => (s.hidden = s.id !== 'v-' + v));
+  if (v === 'novo') desenhaPrimeiro();
+  if (v === 'configuracoes') { desenhaPassos(); if (RENDER[passoAtual]) RENDER[passoAtual](); }
   if (v === 'como') { const c = $('#comoPasta'); if (c) c.textContent = (conf && conf.pasta) || 'a pasta que você escolheu'; }
   if (v === 'videos') carregarVideos();
   if (v === 'carrosseis') carregarCarrosseis();
   if (v === 'estilos') carregarEstilos();
   if (v === 'projetos') carregaProjetos();
   if (v === 'atualizar') carregarAtualizar();
-  if (location.hash.slice(1) !== v && !location.hash.startsWith('#p/')) history.replaceState(null, '', '#' + v);
+  // Só mantém #p/<projeto> enquanto a aba Projetos está aberta; ao sair, grava a aba nova no hash
+  const hashAgora = location.hash.slice(1);
+  const manterProjeto = v === 'projetos' && hashAgora.startsWith('p/');
+  if (!manterProjeto && hashAgora !== v) history.replaceState(null, '', '#' + v);
 }
 $$('nav.abas-topo button').forEach((b) => (b.onclick = () => mostrar(b.dataset.vista)));
+window.addEventListener('hashchange', () => {
+  const dest = lerHashVista();
+  if (!dest) return;
+  if (dest.projeto) { if (vista !== 'projetos') mostrar('projetos'); if (typeof abre === 'function') abre(dest.projeto); return; }
+  if (dest.vista !== vista) mostrar(dest.vista);
+});
 // teclado nas abas: setas, Home e End
 $('nav.abas-topo').addEventListener('keydown', (e) => {
   const bs = $$('nav.abas-topo button'), i = bs.indexOf(document.activeElement);
@@ -736,7 +923,7 @@ async function acompanhar(cb) {
   $('#tTitulo').textContent = j.titulo;
   $('#tTempo').textContent = j.duracao >= 60 ? `${Math.floor(j.duracao / 60)} min ${j.duracao % 60} s` : `${j.duracao} s`;
   const pr = lerProgresso(j);
-  document.title = j.fim ? 'Ilustrando Studio' : `Trabalhando… Ilustrando Studio`;
+  document.title = j.fim ? 'Estudio de Videos' : `Trabalhando… Estudio de Videos`;
   $('#tEtapa').textContent = j.fim ? '' : pr.etapa + falta(j, pr);
   const tr = $('#tTrilho');
   tr.hidden = j.fim;
@@ -800,23 +987,28 @@ function desenhaAgora() {
   const A = $('#agora'); if (!A || !conf) return;
   const ok = (id) => (id === 'instalacao' ? !!(conf.instalado || (diag && diag.ok)) : feito(id));
   const restam = PASSOS.filter((p) => !ok(p.id));
-  $('#v-comecar .pagina').classList.toggle('configurando', !conf.tudoPronto && restam.length > 0);
+  $('#v-configuracoes .pagina').classList.toggle('configurando', !conf.tudoPronto && restam.length > 0);
   A.hidden = false;
   if (!restam.length) {
-    A.innerHTML = `<div><div class="kicker">Tudo pronto</div><h2>Agora é só fazer o seu vídeo</h2><p>Digite o tema logo abaixo, ou escolha um estilo e copie o pedido para o Claude ou o Codex.</p></div><div class="acoes" style="margin:0"><button class="btn" id="agFazer">Fazer meu vídeo</button><button class="btn sec" id="agEstilos">Ver os estilos</button></div>`;
-    $('#agFazer').onclick = () => { $('#primeiro').scrollIntoView({ behavior: 'smooth', block: 'start' }); $('#pvTema')?.focus({ preventScroll: true }); };
+    A.innerHTML = `<div><h2>Agora é só fazer o seu vídeo</h2><p>Abra <b>+ Novo</b> para digitar o tema, ou escolha um estilo e copie o pedido para o Claude ou o Codex.</p></div><div class="acoes" style="margin:0"><button class="btn" id="agFazer">Fazer meu vídeo</button><button class="btn sec" id="agEstilos">Ver os estilos</button></div>`;
+    $('#agFazer').onclick = () => { mostrar('novo'); requestAnimationFrame(() => { $('#pvTema')?.focus({ preventScroll: true }); }); };
     $('#agEstilos').onclick = () => mostrar('estilos');
     return;
   }
   const prox = restam[0], n = PASSOS.findIndex((p) => p.id === prox.id) + 1, [t, d] = PASSO_AGORA[prox.id];
-  A.innerHTML = `<div><div class="kicker">Próximo passo (${n} de ${PASSOS.length})</div><h2>${esc(t)}</h2><p>${esc(d)}</p><div class="prog" aria-hidden="true">${PASSOS.map((p) => `<i class="${ok(p.id) ? 'f' : p.id === prox.id ? 'a' : ''}"></i>`).join('')}</div></div><div class="acoes" style="margin:0"><button class="btn" id="agIr">Continuar</button></div>`;
+  A.innerHTML = `<div><h2>${esc(t)}</h2><p>Passo ${n} de ${PASSOS.length}. ${esc(d)}</p><div class="prog" aria-hidden="true">${PASSOS.map((p) => `<i class="${ok(p.id) ? 'f' : p.id === prox.id ? 'a' : ''}"></i>`).join('')}</div></div><div class="acoes" style="margin:0"><button class="btn" id="agIr">Continuar</button></div>`;
   $('#agIr').onclick = () => { irPara(prox.id); $('#painelPasso').scrollIntoView({ behavior: 'smooth', block: 'start' }); };
 }
-function irPara(id) { passoAtual = id; desenhaPassos(); RENDER[id](); $('#painelPasso').scrollIntoView({ block: 'nearest' }); }
+function irPara(id) {
+  passoAtual = id;
+  if (vista !== 'configuracoes') mostrar('configuracoes');
+  else { desenhaPassos(); RENDER[id](); }
+  $('#painelPasso')?.scrollIntoView({ block: 'nearest' });
+}
 function proximo() { const i = PASSOS.findIndex((p) => p.id === passoAtual); irPara(PASSOS[Math.min(PASSOS.length - 1, i + 1)].id); }
 const rodape = (extra = '') => `<div class="acoes">${extra}<button class="btn sec" data-acao="proximo">Próximo passo</button></div>`;
 const ligarRodape = () => $$('[data-acao=proximo]').forEach((b) => (b.onclick = proximo));
-function atualizarPin() { $('#pinComecar').hidden = !conf || conf.tudoPronto; }
+function atualizarPin() { $('#pinConfig').hidden = !conf || conf.tudoPronto; }
 
 const RENDER = {
   async instalacao() {
@@ -1060,7 +1252,7 @@ async function copiarTexto(txt) { try { await navigator.clipboard.writeText(txt)
 function diagnosticoSemEstudio() {
   const itens = (typeof diag !== 'undefined' && diag && diag.itens) ? diag.itens.map((i) => `${i.ok ? 'ok   ' : i.grave ? 'ERRO ' : 'aviso'} ${i.msg}`) : [];
   const ver = ($('#versaoAtual') && $('#versaoAtual').textContent || '').replace(/^Versão instalada:\s*/, '') || '?';
-  return ['Diagnóstico do Ilustrando Studio (a janela do estúdio não respondeu)',
+  return ['Diagnóstico do Estudio de Videos (a janela do estúdio não respondeu)',
     `Versão do estúdio: ${ver}`, `Navegador: ${(navigator.userAgent.match(/\(([^)]+)\)/) || [])[1] || navigator.platform || '?'}`,
     'O estúdio (a janela preta) não respondeu ao montar o diagnóstico completo. Feche esta página e dê dois cliques em "Diagnóstico (Windows)" ou "Diagnóstico (Mac)", na pasta do estúdio: ele monta o texto completo sem precisar do estúdio aberto e já copia para você.',
     '', 'Último resultado da conferência do computador (feita quando a página abriu):', ...(itens.length ? itens : ['(não deu para conferir)'])].join('\n');
@@ -1094,7 +1286,7 @@ async function copiarDiagnostico(botao) {
 }
 document.addEventListener('click', (e) => { const b = e.target.closest('[data-diag]'); if (b) { e.preventDefault(); copiarDiagnostico(b); } });
 // 0.6.13: o erro de voz (plano, cota, chave) oferece o guia da voz em um clique: abre o passo Voz com a ElevenLabs marcada
-document.addEventListener('click', (e) => { if (!e.target.closest('[data-guia-voz]')) return; e.preventDefault(); mostrar('comecar'); passoAtual = 'voz'; desenhaPassos(); RENDER.voz('elevenlabs'); $('#painelPasso').scrollIntoView({ block: 'nearest' }); });
+document.addEventListener('click', (e) => { if (!e.target.closest('[data-guia-voz]')) return; e.preventDefault(); irPara('voz'); RENDER.voz('elevenlabs'); });
 const ETAPAS_PRIMEIRO = [
   { id: 'computador', t: 'Conferir o computador', re: /conferindo o computador|conferindo de novo/ },
   { id: 'instalar', t: 'Instalar o que faltar (só se precisar)', re: /instalando o que falta/ },
@@ -1148,20 +1340,33 @@ async function desenhaPrimeiro() {
     if (pv.fase === 'form') {
       if (!exemplosP) { const r = await apiSeguro('/api/primeiro/exemplos'); exemplosP = Array.isArray(r) ? r : []; }
       if (!temasP) { const r = await apiSeguro('/api/primeiro/temas'); temasP = Array.isArray(r) ? r : []; }
-      A.innerHTML = `<h2>Fazer meu primeiro vídeo</h2><p class="sub">Digite o tema do seu vídeo ou escolha um exemplo pronto. O estúdio confere a instalação e a voz, instala o que faltar sozinho e mostra o vídeo aqui, tocando.</p>
-        <div class="linha-tema"><input type="text" id="pvTema" maxlength="160" placeholder="Ex.: por que o avião não cai quando passa por turbulência" value="${esc(pv.tema || '')}" aria-label="Tema do vídeo">
-        <select id="pvIdioma" aria-label="Idioma do vídeo" style="width:auto"><option value="">Português</option><option value="en">English</option><option value="es">Español</option></select>
-        <button class="btn" id="pvFazer">Fazer meu primeiro vídeo</button></div>
-        ${temasP.length ? `<p class="dica" style="margin-top:14px">Sem ideia? Escolha um tema pronto (gancho e fatos já conferidos; o assistente (Claude Code ou Codex) escreve o roteiro):</p><div class="temas">${temasP.map((x) => `<button data-tp="${esc(x.id)}" aria-pressed="${x.id === pv.temaPronto}">${esc(x.titulo)}<small>${esc(x.gancho || '')}</small></button>`).join('')}</div>` : ''}
-        ${exemplosP.length ? `<p class="dica" style="margin-top:14px">Sem o assistente (Claude Code ou Codex) aberto? Escolha um exemplo pronto (o estúdio faz tudo sozinho):</p><div class="exemplos">${exemplosP.map((x) => `<button data-ex="${esc(x.id)}" aria-pressed="${x.id === pv.exemplo}">${esc(x.titulo)}</button>`).join('')}</div>` : ''}
-        <p class="dica" style="margin-top:12px">Com o seu tema, o assistente (Claude ou Codex, com esta pasta aberta) escreve o roteiro e confere os fatos; o estúdio cuida do resto. Com um exemplo, o estúdio faz tudo sozinho.</p>
+      const extrasAbertos = !!(pv.gancho || pv.titulo || pv.virada || pv.pergunta);
+      A.innerHTML = `<div class="campo-tema"><label class="campo" for="pvTema"><span>Tema</span></label>
+        <div class="linha-tema"><input type="text" id="pvTema" maxlength="160" placeholder="Ex.: o dia em que Neymar fez Messi assistir ao show do Brasil" value="${esc(pv.tema || '')}" aria-label="Tema do vídeo">
+        <select id="pvIdioma" aria-label="Idioma do vídeo"><option value="">Português</option><option value="en">English</option><option value="es">Español</option></select>
+        <button class="btn" id="pvFazer">Gerar vídeo</button></div></div>
+        <details class="extras-wrap" id="pvExtras"${extrasAbertos ? ' open' : ''}>
+          <summary><span>Gancho, título e fecho<small>Opcional · o assistente usa o texto como você escrever</small></span></summary>
+          <div class="extras-tema">
+          <label class="campo"><span>Gancho (primeira frase)</span><input type="text" id="pvGancho" maxlength="200" placeholder='Ex.: Em 2016, Messi entrou em campo para enfrentar Neymar. Mas naquela noite…' value="${esc(pv.gancho || '')}" aria-label="Gancho do vídeo"></label>
+          <label class="campo"><span>Título do vídeo (capa)</span><input type="text" id="pvTitulo" maxlength="100" placeholder="Ex.: O dia em que Neymar fez Messi virar plateia" value="${esc(pv.titulo || '')}" aria-label="Título do vídeo"></label>
+          <label class="campo"><span>Virada (o fato que muda o olhar)</span><input type="text" id="pvVirada" maxlength="280" placeholder="Ex.: Neymar nem jogou o 7 a 1: fraturou uma vértebra quatro dias antes" value="${esc(pv.virada || '')}" aria-label="Virada do vídeo"></label>
+          <label class="campo"><span>Pergunta final</span><input type="text" id="pvPergunta" maxlength="160" placeholder="Ex.: O que pesou mais: o gol 50 de Neymar ou a volta ao estádio do 7 a 1?" value="${esc(pv.pergunta || '')}" aria-label="Pergunta final"></label>
+          </div>
+        </details>
+        ${temasP.length ? `<div class="bloco-ideias"><h3>Temas com fatos conferidos</h3><div class="temas">${temasP.map((x) => `<button data-tp="${esc(x.id)}" aria-pressed="${x.id === pv.temaPronto}" title="${esc(x.gancho || '')}">${esc(x.titulo)}<small>${esc(x.gancho || '')}</small></button>`).join('')}</div></div>` : ''}
+        ${exemplosP.length ? `<details class="extras-wrap bloco-ideias"><summary><span>Exemplos sem o assistente<small>O estúdio faz tudo sozinho</small></span></summary><div class="exemplos">${exemplosP.map((x) => `<button data-ex="${esc(x.id)}" aria-pressed="${x.id === pv.exemplo}">${esc(x.titulo)}</button>`).join('')}</div></details>` : ''}
+        <p class="ajuda-curta">Com o seu tema, o assistente escreve o roteiro; o estúdio produz. Com um exemplo, o estúdio faz tudo sozinho.</p>
         ${pv.aviso ? caixaErro({ causa: pv.aviso, acao: '' }, { leve: true }) : ''}
-        <p class="discreto">Prefere começar por um carrossel? Fica pronto em segundos, sem voz. <button id="pvCarrossel">Fazer meu primeiro carrossel</button></p>`;
-      $('#pvCarrossel').onclick = () => primeiroCarrossel();
-      $$('[data-tp]').forEach((b) => (b.onclick = () => { const t = temasP.find((x) => x.id === b.dataset.tp); pv.temaPronto = pv.temaPronto === t.id ? null : t.id; pv.exemplo = null; $$('[data-ex]').forEach((x) => x.setAttribute('aria-pressed', 'false')); $$('[data-tp]').forEach((x) => x.setAttribute('aria-pressed', x.dataset.tp === pv.temaPronto)); $('#pvTema').value = pv.temaPronto ? t.tema : ''; $('#pvIdioma').disabled = false; }));
+        <p class="discreto">Prefere carrossel? <button id="pvCarrossel">Fazer um carrossel</button></p>`;
+      const car = $('#pvCarrossel'); if (car) car.onclick = () => primeiroCarrossel();
+      const limparPronto = () => { if (pv.temaPronto) { pv.temaPronto = null; $$('[data-tp]').forEach((b) => b.setAttribute('aria-pressed', 'false')); } if (pv.exemplo) { pv.exemplo = null; $$('[data-ex]').forEach((b) => b.setAttribute('aria-pressed', 'false')); } $('#pvIdioma').disabled = false; $('#pvExtras').hidden = false; };
+      $$('[data-tp]').forEach((b) => (b.onclick = () => { const t = temasP.find((x) => x.id === b.dataset.tp); const liga = pv.temaPronto !== t.id; pv.temaPronto = liga ? t.id : null; pv.exemplo = null; $$('[data-ex]').forEach((x) => x.setAttribute('aria-pressed', 'false')); $$('[data-tp]').forEach((x) => x.setAttribute('aria-pressed', x.dataset.tp === pv.temaPronto)); $('#pvTema').value = liga ? (t.tema || '') : ''; $('#pvGancho').value = liga ? (t.gancho || '') : ''; $('#pvTitulo').value = liga ? (t.titulo || '') : ''; $('#pvVirada').value = liga ? (t.virada || '') : ''; $('#pvPergunta').value = liga ? '' : $('#pvPergunta').value; $('#pvExtras').hidden = false; if (liga && (t.gancho || t.titulo || t.virada)) $('#pvExtras').open = true; $('#pvIdioma').disabled = false; }));
       if (pv.idioma) $('#pvIdioma').value = pv.idioma;
-      $('#pvTema').oninput = () => { if (pv.temaPronto) { pv.temaPronto = null; $$('[data-tp]').forEach((b) => b.setAttribute('aria-pressed', 'false')); } if (pv.exemplo) { pv.exemplo = null; $$('[data-ex]').forEach((b) => b.setAttribute('aria-pressed', 'false')); } $('#pvIdioma').disabled = false; };
-      $$('[data-ex]').forEach((b) => (b.onclick = () => { pv.exemplo = pv.exemplo === b.dataset.ex ? null : b.dataset.ex; $$('[data-ex]').forEach((x) => x.setAttribute('aria-pressed', x.dataset.ex === pv.exemplo)); if (pv.exemplo) { $('#pvTema').value = ''; $('#pvIdioma').value = ''; } $('#pvIdioma').disabled = !!pv.exemplo; }));
+      $('#pvTema').oninput = limparPronto;
+      ['pvGancho', 'pvTitulo', 'pvVirada', 'pvPergunta'].forEach((id) => { const el = $('#' + id); if (el) el.oninput = () => { if (pv.temaPronto) { pv.temaPronto = null; $$('[data-tp]').forEach((b) => b.setAttribute('aria-pressed', 'false')); } }; });
+      $$('[data-ex]').forEach((b) => (b.onclick = () => { pv.exemplo = pv.exemplo === b.dataset.ex ? null : b.dataset.ex; $$('[data-ex]').forEach((x) => x.setAttribute('aria-pressed', x.dataset.ex === pv.exemplo)); if (pv.exemplo) { $('#pvTema').value = ''; $('#pvGancho').value = ''; $('#pvTitulo').value = ''; $('#pvVirada').value = ''; $('#pvPergunta').value = ''; $('#pvIdioma').value = ''; $('#pvExtras').hidden = true; } else $('#pvExtras').hidden = false; $('#pvIdioma').disabled = !!pv.exemplo; }));
+      if (pv.exemplo) $('#pvExtras').hidden = true;
       $('#pvTema').onkeydown = (e) => { if (e.key === 'Enter') comecarPrimeiro(); };
       $('#pvFazer').onclick = () => comecarPrimeiro();
       return;
@@ -1178,7 +1383,7 @@ async function desenhaPrimeiro() {
         ${mostraBarra && pr ? `<p class="dica" style="margin-top:12px">${esc(pr.etapa)}</p><div class="trilho ${pr.pct == null ? 'indef' : ''}"><i style="width:${pr.pct == null ? 30 : Math.max(3, Math.round(pr.pct * 100))}%"></i></div>` : ''}
         ${pv.fase === 'esperando' && !pv.preparando ? `<p class="dica" style="margin-top:12px">${esc(pv.nota || 'Esperando o roteiro do assistente (Claude Code ou Codex)…')}</p>${blocoOndeVigia()}` : ''}
         <div class="acoes"><button class="mini" id="pvDet">${pv.det ? 'Esconder detalhes' : 'Ver detalhes'}</button>${pv.fase === 'esperando' ? '<button class="mini" id="pvDiagPrimeiro">Não está andando? Copiar diagnóstico do primeiro vídeo</button><button class="mini" id="pvCancelar">Desistir deste tema</button>' : ''}</div>
-        ${pv.det ? `<pre id="pvLog" style="background:#0a0a0e;border:1px solid var(--linha);border-radius:10px;padding:10px 12px;font:12px/1.5 ui-monospace,Menlo,monospace;color:var(--suave);max-height:200px;overflow:auto;white-space:pre-wrap;margin-top:10px">${esc((pv.job?.linhas || []).join('\n'))}</pre>` : ''}`;
+        ${pv.det ? `<pre id="pvLog" style="background:var(--log);border:1px solid var(--linha);border-radius:10px;padding:10px 12px;font:12px/1.5 ui-monospace,Menlo,monospace;color:var(--suave);max-height:200px;overflow:auto;white-space:pre-wrap;margin-top:10px">${esc((pv.job?.linhas || []).join('\n'))}</pre>` : ''}`;
       const l = $('#pvLog'); if (l) l.scrollTop = 1e9;
       $('#pvDet').onclick = () => { pv.det = !pv.det; desenhaPrimeiro(); };
       const cp = $('#pvCopiarPedido'); if (cp) cp.onclick = async () => { pv.copiado = await copiarTexto(pv.pedido); if (!pv.copiado) { const r = document.createRange(); r.selectNodeContents($('#pvPedido')); getSelection().removeAllRanges(); getSelection().addRange(r); try { pv.copiado = document.execCommand('copy'); } catch { /* fica selecionado para copiar à mão */ } } $('#pvCopiado').textContent = pv.copiado ? 'Pedido copiado. Cole na conversa com o assistente (Claude Code ou Codex).' : 'Selecionei o pedido: copie com Ctrl+C (ou Cmd+C no Mac).'; };
@@ -1212,7 +1417,7 @@ async function desenhaPrimeiro() {
     A.innerHTML = `<h2>Fazer meu primeiro vídeo</h2>${caixaErro({ causa: 'Esta parte da página não carregou direito.', acao: 'Recarregue a página. Se repetir, feche a janela do estúdio e abra de novo pelo "Abrir Estúdio".' })}`;
   }
 }
-function resetPrimeiro() { clearTimeout(pv.timer); const { tema, idioma, temaPronto } = pv; pv = { fase: 'form', exemplo: null, tema, idioma, temaPronto }; desenhaPrimeiro(); }
+function resetPrimeiro() { clearTimeout(pv.timer); const { tema, idioma, temaPronto, gancho, titulo, virada, pergunta } = pv; pv = { fase: 'form', exemplo: null, tema, idioma, temaPronto, gancho, titulo, virada, pergunta }; desenhaPrimeiro(); }
 /* 0.6.4: primeiro carrossel (opção discreta): um exemplo pronto com a marca da pessoa, em segundos, sem voz e sem render de vídeo */
 async function primeiroCarrossel() {
   const ex = await apiSeguro('/api/carrossel/exemplos');
@@ -1234,7 +1439,12 @@ async function primeiroCarrossel() {
 function perguntar(html, ligar) { pv.fase = 'pergunta'; pv.pergunta = html; pv.ligar = ligar; desenhaPrimeiro(); }
 async function comecarPrimeiro(opc = {}) {
   if (!opc.repetir) {
-    pv.tema = ($('#pvTema')?.value || '').trim(); pv.idioma = $('#pvIdioma')?.value || '';
+    pv.tema = ($('#pvTema')?.value || '').trim();
+    pv.idioma = $('#pvIdioma')?.value || '';
+    pv.gancho = ($('#pvGancho')?.value || '').trim();
+    pv.titulo = ($('#pvTitulo')?.value || '').trim();
+    pv.virada = ($('#pvVirada')?.value || '').trim();
+    pv.pergunta = ($('#pvPergunta')?.value || '').trim();
     pv.aviso = null;
     if (!pv.exemplo && pv.tema.length < 3) { pv.aviso = 'Escreva o tema do vídeo (ex.: por que o céu é azul) ou escolha um dos exemplos prontos.'; return desenhaPrimeiro(); }
   }
@@ -1243,14 +1453,14 @@ async function comecarPrimeiro(opc = {}) {
   conf = c;
   const v = conf.voz;
   // 0.6.13: a ElevenLabs é a voz padrão. Sem a chave salva, o primeiro vídeo não instala nada: explica e leva ao guia (Começar > Voz)
-  if (!v.pronta && !(opc.semVoz && v.atual === 'mock')) return perguntar(`<div class="caixa-erro"><b>Falta ligar a voz da ElevenLabs, a voz do estúdio.</b>É grátis e leva uns 5 minutos, uma vez só: criar a conta, gerar a chave, colar aqui e ouvir uma das 10 vozes. O passo a passo está no passo Voz. Depois, o seu primeiro vídeo sai narrado.</div><div class="acoes"><button class="btn" id="qVoz">Abrir o guia da voz</button></div>`, () => { $('#qVoz').onclick = () => { resetPrimeiro(); irPara('voz'); }; });
+  if (!v.pronta && !(opc.semVoz && v.atual === 'mock')) return perguntar(`<div class="caixa-erro"><b>Falta ligar a voz da ElevenLabs, a voz do estúdio.</b>É grátis e leva uns 5 minutos, uma vez só: criar a conta, gerar a chave, colar aqui e ouvir uma das 10 vozes. O passo a passo está em Configurações &gt; Voz e trilha. Depois, o seu primeiro vídeo sai narrado.</div><div class="acoes"><button class="btn" id="qVoz">Abrir o guia da voz</button></div>`, () => { $('#qVoz').onclick = () => { resetPrimeiro(); irPara('voz'); }; });
   if (!opc.semVoz && v.escolhida && v.atual === 'mock') return perguntar(`<p class="sub">A voz salva é a <b>voz de teste</b>: o vídeo sai sem narração.</p><div class="acoes"><button class="btn" id="qVoz">Escolher uma voz de verdade</button><button class="btn sec" id="qSeguir">Fazer sem narração</button></div>`, () => { $('#qVoz').onclick = () => { resetPrimeiro(); irPara('voz'); }; $('#qSeguir').onclick = () => comecarPrimeiro({ ...opc, repetir: true, semVoz: true }); });
-  const r = await postSeguro('/api/primeiro', { tema: pv.exemplo ? '' : pv.tema, exemplo: pv.exemplo, temaPronto: pv.exemplo ? undefined : pv.temaPronto || undefined, idioma: pv.idioma, nome: pv.nome || undefined });
+  const r = await postSeguro('/api/primeiro', { tema: pv.exemplo ? '' : pv.tema, exemplo: pv.exemplo, temaPronto: pv.exemplo ? undefined : pv.temaPronto || undefined, idioma: pv.idioma, nome: pv.nome || undefined, gancho: pv.exemplo ? undefined : pv.gancho || undefined, titulo: pv.exemplo ? undefined : pv.titulo || undefined, virada: pv.exemplo ? undefined : pv.virada || undefined, pergunta: pv.exemplo ? undefined : pv.pergunta || undefined });
   if (r.erro) { pv.fase = 'erro'; pv.erro = r.erro; pv.irPara = r.irPara || null; pv.etapaFalhou = null; return desenhaPrimeiro(); }
   Object.assign(pv, { nome: r.nome, modo: r.modo, voz: r.voz, pedido: r.pedido || null, ate: -1, job: null, erro: null, irPara: null, preparando: r.modo === 'tema', copiado: false });
   if (r.modo === 'tema') {
     pv.fase = 'esperando';
-    lembrar.gravar({ nome: r.nome, modo: 'tema', pedido: r.pedido, voz: r.voz, tema: pv.tema });
+    lembrar.gravar({ nome: r.nome, modo: 'tema', pedido: r.pedido, voz: r.voz, tema: pv.tema, gancho: pv.gancho, titulo: pv.titulo, virada: pv.virada, pergunta: pv.pergunta });
     pv.copiado = await copiarTexto(r.pedido);
   } else pv.fase = 'rodando';
   desenhaPrimeiro();
@@ -1293,7 +1503,7 @@ async function seguirPrimeiro() {
   desenhaPrimeiro();
   pv.timer = setTimeout(seguirPrimeiro, pv.fase === 'esperando' ? 3000 : 1500);
 }
-/** Ao abrir a página: retoma um primeiro vídeo em andamento (tarefa rodando ou roteiro sendo escrito). */
+/** Ao abrir a página: retoma um primeiro vídeo em andamento (tarefa rodando ou roteiro sendo escrito), sem trocar a aba em que a pessoa estava. */
 async function retomarPrimeiro() {
   const j = await apiSeguro('/api/job');
   const salvo = lembrar.ler();
@@ -1303,24 +1513,23 @@ async function retomarPrimeiro() {
     return seguirPrimeiro();
   }
   if (salvo?.modo === 'tema' && salvo.nome) { Object.assign(pv, { ...salvo, fase: 'esperando', preparando: false, ate: -1 }); return seguirPrimeiro(); }
-  desenhaPrimeiro();
+  if (vista === 'novo') desenhaPrimeiro();
 }
 
 /* ---------------- MEUS VÍDEOS ---------------- */
 async function carregarVideos() {
   const vs = await api('/api/videos');
   const alvo = $('#videos');
-  // 0.5.3: compradores achavam que só dava para fazer os vídeos de exemplo. O tema é livre: o assistente escreve o roteiro e o estúdio produz.
-  const novo = `<section class="proximo novo-video"><h2>Fazer um vídeo novo, de qualquer tema</h2><p class="sub">Digite o assunto, copie o pedido e cole na conversa com o assistente (Claude ou Codex, com esta pasta aberta). Ele escreve o roteiro, confere os fatos e o estúdio faz o vídeo.</p>
-    <label class="campo"><span>Assunto do vídeo</span><input id="novoTema" type="text" placeholder="Ex.: por que o céu é azul"></label><div class="acoes"><label class="pq">Idioma <select id="novoIdioma"><option value="">Português</option><option value="em inglês">English</option><option value="em espanhol">Español</option></select></label><button class="btn" id="novoCopiar">Copiar o pedido</button><button class="btn sec" id="novoAqui">Fazer com o estúdio acompanhando</button></div><p id="novoOk" class="ok-txt" role="status"></p><p class="dica">Quer escolher a aparência? Veja os <button class="mini" id="novoEstilos">estilos disponíveis</button> e copie o pedido de um deles.</p></section>`;
-  const ligaNovo = () => { const b = $('#novoCopiar'); if (!b) return; $('#novoEstilos').onclick = () => mostrar('estilos'); $('#novoAqui').onclick = () => { const tema = ($('#novoTema').value || '').trim(); const id = { 'em inglês': 'en', 'em espanhol': 'es' }[$('#novoIdioma').value] || ''; mostrar('comecar'); if (pv.fase === 'form') { pv.tema = tema; pv.idioma = id; pv.exemplo = null; desenhaPrimeiro().then(() => { $('#primeiro').scrollIntoView({ block: 'start' }); $('#pvTema')?.focus(); }); } else $('#primeiro').scrollIntoView({ block: 'start' }); }; b.onclick = async () => { const t = ($('#novoTema').value || '').trim().replace(/[.?!]+$/, ''); const id = $('#novoIdioma').value, txt = t ? `Quero um vídeo ${id ? id + ' ' : ''}sobre ${t}.` : `Quero um vídeo ${id ? id + ' ' : ''}sobre um tema que eu vou te dizer.`; try { await navigator.clipboard.writeText(txt); } catch { const i = $('#novoTema'); i.value = txt; i.select(); document.execCommand('copy'); } $('#novoOk').textContent = 'Pedido copiado. Cole na conversa com o assistente (Claude Code ou Codex).'; }; };
-  if (!vs.length) { alvo.innerHTML = novo + '<div class="vazio-bonito" style="grid-column:1/-1"><h2>Você ainda não tem vídeos prontos</h2><p>Os vídeos que o estúdio fizer aparecem aqui, com os botões de assistir, baixar e copiar a legenda. O jeito mais rápido de ver o primeiro é fazer o vídeo de teste.</p><div class="acoes"><button class="btn" id="vazioTeste">Fazer o vídeo de teste</button></div></div>'; ligaNovo(); $('#vazioTeste').onclick = () => { mostrar('comecar'); irPara('teste'); }; return; }
+  // 0.5.3: tema livre em + Novo (um só lugar para criar; aqui só a lista)
+  const novo = `<section class="cta-novo"><div><h2>Novo vídeo</h2><p class="sub">Tema, gancho e fecho ficam em <b>+ Novo</b>. O assistente escreve o roteiro; o estúdio produz.</p></div><button class="btn" id="ctaIrNovo">+ Novo</button></section>`;
+  const ligaNovo = () => { const b = $('#ctaIrNovo'); if (!b) return; b.onclick = () => { mostrar('novo'); requestAnimationFrame(() => $('#pvTema')?.focus({ preventScroll: true })); }; };
+  if (!vs.length) { alvo.innerHTML = novo + '<div class="vazio-bonito" style="grid-column:1/-1"><h2>Você ainda não tem vídeos prontos</h2><p>Os vídeos que o estúdio fizer aparecem aqui, com os botões de assistir, baixar e copiar a legenda. O jeito mais rápido de ver o primeiro é fazer o vídeo de teste.</p><div class="acoes"><button class="btn" id="vazioTeste">Fazer o vídeo de teste</button></div></div>'; ligaNovo(); $('#vazioTeste').onclick = () => irPara('teste'); return; }
   alvo.innerHTML = novo + vs.map((v) => `<article class="vid">
     <button class="capa" data-ver="${v.nome}" aria-label="Assistir ${esc(v.titulo)}" style="${v.capa ? `background-image:url(/midia/${v.nome}/capa.jpg)` : ''}"></button>
     <div class="corpo-v"><b>${esc(v.titulo)}</b><small>${new Date(v.data).toLocaleString('pt-BR', { dateStyle: 'short', timeStyle: 'short' })} · ${v.mb} MB</small>
       <div class="marcas">${v.teste ? `<span class="etq aviso">${I('aviso')} sem voz (teste)</span>` : v.aprovado ? `<span class="etq ok">${I('ok')} conferido</span>` : `<span class="etq aviso">${I('aviso')} rever qualidade</span>`}${v.rapido ? '<span class="etq">prévia rápida</span>' : ''}</div></div>
     <div class="bts"><a class="btn sec" href="/baixar/${v.nome}" download>Baixar</a><button class="btn sec" data-pasta="${v.nome}">Mostrar na pasta</button>
-      <button class="btn sec" data-leg="${v.nome}" ${v.legenda ? '' : 'title="Peça ao assistente (Claude Code ou Codex): escreva a legenda deste vídeo"'} style="grid-column:1/-1">${v.legenda ? 'Copiar legenda' : 'Pedir a legenda'}</button></div>
+      <button class="btn sec" data-leg="${v.nome}" ${v.legenda ? '' : 'title="Peça ao assistente (Claude Code ou Codex): escreva a legenda deste vídeo"'}>${v.legenda ? 'Copiar legenda' : 'Pedir a legenda'}</button></div>
   </article>`).join('');
   ligaNovo();
   $$('[data-ver]').forEach((b) => (b.onclick = () => abrirDlg(`<h2>${esc(vs.find((x) => x.nome === b.dataset.ver).titulo)}</h2><video controls autoplay playsinline src="/midia/${b.dataset.ver}/video?t=${Date.now()}" style="margin-top:12px"></video>`)));
@@ -1385,7 +1594,7 @@ function desenhaEstilos() {
     b.disabled = true;
     const r = await post('/api/estilo-objetivo', { objetivo: conf?.escolha?.objetivo || conf?.modelo?.padrao || 'curiosidade', estilo: b.dataset.padrao });
     if (r && !r.erro) { conf = await api('/api/configuracao'); desenhaPassos(); atualizarPin(); desenhaEstilos(); }
-    else { b.disabled = false; const av = b.closest('.est').querySelector('.copiado'); if (av) av.textContent = 'Não consegui salvar agora. Tente em Começar > Estilo e objetivo.'; }
+    else { b.disabled = false; const av = b.closest('.est').querySelector('.copiado'); if (av) av.textContent = 'Não consegui salvar agora. Tente em Configurações > Estilo e objetivo.'; }
   }));
   // prévia só toca quando está à vista e pausa ao sair da tela; o arquivo só começa a baixar perto de aparecer
   const vs = $$('#estCorpo video[data-src]');
@@ -1402,7 +1611,7 @@ function desenhaEstilos() {
 }
 $$('#estTipo button').forEach((b) => (b.onclick = () => { est.tipo = b.dataset.t; desenhaEstilos(); }));
 $('#estBusca').oninput = (e) => { est.busca = e.target.value; desenhaEstilos(); };
-$('#estPadrao').onclick = () => { mostrar('comecar'); irPara('pagina'); };
+$('#estPadrao').onclick = () => irPara('pagina');
 
 const PEDIDOS_CARROSSEL = [
   ['Faça um carrossel sobre [assunto].', 'O básico: o assistente (Claude Code ou Codex) escolhe o estilo que combina com o assunto.'],
@@ -1429,7 +1638,7 @@ async function abrirCarrossel(nome) {
 }
 $('#carExemplo').onclick = () => primeiroCarrossel();
 $('#carVerEstilos').onclick = () => { est.tipo = 'carrosseis'; mostrar('estilos'); };
-$('#carMarca').onclick = () => { mostrar('comecar'); irPara('marca'); };
+$('#carMarca').onclick = () => irPara('marca');
 
 /* ---------------- ATUALIZAR ---------------- */
 async function carregarAtualizar() {
@@ -1528,7 +1737,7 @@ function desenhaLista() {
       b.onclick = () => abre(p.nome); alvo.appendChild(b);
     }
   }
-  if (!total) alvo.innerHTML = q ? '<div class="grupo">Nenhum projeto com esse nome.</div>' : '<div class="grupo">Nenhum projeto ainda. Peça um vídeo ao assistente (Claude Code ou Codex) ou faça o vídeo de teste em Começar.</div>';
+  if (!total) alvo.innerHTML = q ? '<div class="grupo">Nenhum projeto com esse nome.</div>' : '<div class="grupo">Nenhum projeto ainda. Peça um vídeo ao assistente (Claude Code ou Codex), use + Novo, ou faça o vídeo de teste em Configurações.</div>';
   $('#resumo').textContent = `${projetos.length} projetos · ${projetos.filter((p) => p.publicavel).length} prontos · o número ao lado é a nota do roteiro (0 a 100)`;
 }
 async function carregaProjetos() { if (!carregados) $('#resumo').textContent = 'Carregando…'; projetos = await api('/api/projetos'); carregados = true; desenhaLista(); }
@@ -1673,16 +1882,18 @@ window.addEventListener('error', (ev) => { if (ev && ev.target && ev.target !== 
   atualizarPin();
   ligarDemo();
   ligarConfig();
-  if (conf.tudoPronto) { $('#boasVindas').textContent = 'Seu estúdio está pronto'; $('#boasSub').textContent = 'Tudo configurado. Para mudar a voz, a marca, o estilo ou o objetivo, escolha o passo ao lado.'; }
+  if (conf.tudoPronto) { $('#boasVindas').textContent = 'Seu estúdio está pronto'; $('#boasSub').textContent = 'Tudo configurado. Para mudar a voz, a marca, o estilo ou o objetivo, escolha o passo abaixo.'; }
   else if (!conf.marca.neutra) $('#boasVindas').textContent = `Olá, ${conf.marca.nome}`;
   passoAtual = PASSOS.find((p) => p.id !== 'instalacao' && !conf.pronto[p.id])?.id || 'instalacao';
   if (!conf.instalado && !conf.tudoPronto) passoAtual = 'instalacao';
   desenhaPassos(); RENDER[passoAtual]();
   if (passoAtual !== 'instalacao') carregaDiag();
-  const h = decodeURIComponent(location.hash.slice(1));
-  if (h.startsWith('p/')) { mostrar('projetos'); abre(h.slice(2)); }
-  else if (['como', 'videos', 'carrosseis', 'estilos', 'projetos', 'atualizar'].includes(h)) mostrar(h);
+  const dest = lerHashVista();
+  if (dest?.projeto) { mostrar('projetos'); abre(dest.projeto); }
+  else if (dest?.vista) mostrar(dest.vista);
+  else if (vistaLembrada()) mostrar(vistaLembrada());
   else if (conf.tudoPronto) mostrar('videos');
+  else mostrar('configuracoes');
   acompanhar();
   verNovidade();
   verPasta();
