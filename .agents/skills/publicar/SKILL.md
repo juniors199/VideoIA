@@ -44,6 +44,8 @@ Vídeo feito com `--formato=horizontal` (veja `saida/relatorio.json`, campo `for
 ## Entregue
 Salve em `projetos/<nome>/post.md` (ou `carrosseis/<nome>/legenda.txt`): palavra-chave principal e secundárias, legenda, marcadores, texto alternativo, título do Shorts e o caminho do arquivo. Antes de salvar, passe o checklist da seção 7 de `docs/seo-legendas.md`. Confira que a legenda não afirma nada que `fontes.md` não sustente.
 
+O pacote YouTube (3 títulos, 3 descrições, tags do Studio e hashtags) é da skill `youtube` (`projetos/<nome>/youtube.json`), não deste arquivo. Depois de gravar o `post.md`, rode a skill `youtube`.
+
 ## Crédito de fotos
 Se o vídeo ou carrossel usa elemento `imagem` com foto de terceiro, a legenda termina com uma linha "Fotos: <autor/agência> (<licença>)", tirada de `fontes.md`. Se usa elemento `video` (b-roll), acrescente "Vídeos: <crédito>" com o texto de "Crédito para a legenda do post" da seção Vídeos de `fontes.md` (Pexels e Pixabay pedem o nome do autor e da plataforma; NASA, "NASA"). O crédito não aparece na tela.
 

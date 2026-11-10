@@ -21,7 +21,7 @@ Diga uma vez, no começo:
 
 ## Passo 1: conferir o computador
 Rode `npm run comece -- --situacao --json` (se `node` não existir, siga o Passo 0 da skill primeiro). Leia o campo `proximo` e vá para o passo dele. Diga em português simples o que já está ok e o que falta, em até 5 linhas. Exemplo:
-> Já está pronto: Node, FFmpeg, peças e navegador interno. Falta: voz e o vídeo de teste. Vamos na ordem.
+> Já está pronto: Node, FFmpeg, peças e navegador interno. Falta: voz e a marca. Vamos na ordem.
 
 ## Passo 2: instalar o que faltar (você mesmo)
 Se `proximo.id` for `instalar`, o instalador da pasta resolve (Passo 0 da skill, o mesmo dos dois cliques, sem janela). Diga: "Falta o motor do estúdio neste computador. Vou instalar aqui na pasta, sem mexer em mais nada seu. Baixa uns 500 MB; vai aparecer um pedido de aprovação." Rode em segundo plano, com o maior tempo limite que o terminal permitir. Se parar, rode de novo (até 3 vezes; ele continua do que falta). Depois rode `npm run comece -- --situacao` outra vez.
@@ -54,7 +54,7 @@ Primeiro `npm run voz -- --situacao --json`. Se `chave` for `presente`, vá dire
 
 | codigo | O que dizer |
 |---|---|
-| `ok` | "Tudo certo, a voz está ligada. Vamos escolher a voz e fazer o vídeo de teste." |
+| `ok` | "Tudo certo, a voz está ligada. Vamos escolher a voz e seguir." |
 | `vazia` | "O arquivo está sem a chave. Abro de novo: cole depois do `=` da linha `ELEVENLABS_API_KEY=` e salve." (rode `--preparar` outra vez) |
 | `formato` | "A chave veio com um pedaço de outra coisa e não deu para limpar. Copie de novo, inteira, e cole no mesmo lugar." |
 | `recusada` | "A ElevenLabs não reconheceu essa chave. Quase sempre é cópia pela metade ou chave apagada. Crie uma nova em elevenlabs.io/app/settings/api-keys e copie inteira. Eu abro o arquivo de novo." |
@@ -77,11 +77,11 @@ Trate como vazada: não a use nem grave no `.env`; rode `npm run voz -- --prepar
 ## Passo 6: marca, tipo de página e linha
 Siga o Passo 3 da skill principal e a skill `marca`: nome da página, @ e cor; objetivo dos vídeos (`npm run objetivos -- --padrao <id>`); linha editorial. Pergunte uma coisa por vez e rode você os comandos. Se a pessoa não souber, use os padrões e diga que dá para mudar depois.
 
-## Passo 7: vídeo de teste
-Rode `npm run prova` (sem voz, não gasta nada, 1 a 3 minutos; mais em computador lento). Diga como achar o vídeo: arquivo `projetos/exemplo/saida/` (Mac: `open projetos/exemplo/saida`; Windows: `start "" projetos\exemplo\saida`). Explique: "É um vídeo sem voz de propósito. Com a voz ligada, os próximos saem narrados." Se ela quiser ouvir a voz agora, ofereça `npm run video -- exemplo --voz=elevenlabs --sem-musica` e avise que gasta uns créditos da conta dela.
+## Passo 7: prova opcional do motor
+Se a pessoa quiser ver um vídeo de exemplo sem gastar voz, rode `npm run prova` (1 a 3 minutos; mais em computador lento). Diga como achar: `projetos/exemplo/saida/`. Explique: "É um vídeo sem voz de propósito. Com a voz ligada, os próximos saem narrados." Se ela já usa o estúdio web, também pode conectar a IA em **Configurações > Configurar IA** e pedir no **Chat**. Se quiser ouvir a voz no exemplo, ofereça `npm run video -- exemplo --voz=elevenlabs --sem-musica` e avise que gasta créditos.
 
 ## Passo 8: o pedido do tema
-Termine com o resumo da skill (Passo 6 de 6) e o convite: "Agora escreva, do seu jeito: Quero um vídeo sobre <tema>." Daí em diante é o fluxo normal (skills `pauta`, `roteiro` e `video`).
+Termine com o resumo da skill (Passo 6 de 6) e o convite: "Agora escreva, do seu jeito: Quero um vídeo sobre <tema>." (No estúdio web com IA conectada, o mesmo pedido pode ir no Chat.) Daí em diante é o fluxo normal (skills `pauta`, `roteiro` e `video`).
 
 ## Quando o limite do plano do assistente acabar
 Se o aplicativo avisar que o limite do plano acabou (ou a conversa parar no meio):

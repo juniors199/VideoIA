@@ -56,6 +56,7 @@ export const lerSkills = (raiz) => {
   const problemas = [];
   if (!fs.existsSync(dir)) return { skills, problemas: ['não existe .claude/skills'] };
   for (const nome of fs.readdirSync(dir).sort()) {
+    if (nome.startsWith('_')) continue; // refs de terceiros (ex.: _terceiros/content-skills), não é skill do estúdio
     const pasta = path.join(dir, nome);
     if (!fs.statSync(pasta).isDirectory()) continue;
     const arq = path.join(pasta, 'SKILL.md');

@@ -132,6 +132,19 @@ input::placeholder{color:var(--fraco)}
 .caixa-nota{border:1px solid #f5a62366;background:#f5a62310;border-radius:12px;padding:14px 16px;margin-top:14px}
 .caixa-nota b{display:block;margin-bottom:4px}
 .caixa-ok{border:1px solid #46e08a55;background:#46e08a12;border-radius:12px;padding:14px 16px;margin-top:14px}
+.grade-ia{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:16px}
+.cartao-ia{background:var(--sup2);border:1px solid var(--linha);border-radius:14px;padding:16px;display:grid;gap:10px}
+.cartao-ia.conectado{border-color:var(--ok);box-shadow:0 0 0 1px color-mix(in srgb,var(--ok) 40%,transparent) inset}
+.cartao-ia .estado-ia{font-size:12px;font-weight:700;color:var(--suave)}
+.cartao-ia .estado-ia.ok{color:var(--ok)}
+.cartao-ia .estado-ia.falta{color:var(--fraco)}
+.chat-box{display:grid;grid-template-rows:1fr auto;gap:12px;min-height:min(70vh,640px)}
+.chat-log{background:var(--sup2);border:1px solid var(--linha);border-radius:14px;padding:14px;overflow:auto;display:grid;gap:10px;align-content:start}
+.chat-bolha{max-width:92%;padding:10px 12px;border-radius:12px;white-space:pre-wrap;line-height:1.45;font-size:14px}
+.chat-bolha.eu{justify-self:end;background:var(--d-fundo);border:1px solid var(--d-borda)}
+.chat-bolha.ia{justify-self:start;background:var(--sup);border:1px solid var(--linha);font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12.5px}
+.chat-form{display:grid;grid-template-columns:1fr auto auto;gap:8px;align-items:end}
+.chat-form textarea{min-height:72px;resize:vertical}
 /* assistente de primeira vez */
 .passos{list-style:none;display:grid;gap:8px;padding-bottom:0;scrollbar-width:thin}
 .passos button{width:100%;height:100%;display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;align-items:center;text-align:left;background:var(--sup);border:1px solid var(--linha);border-radius:14px;padding:12px;cursor:pointer;color:var(--suave);min-height:64px}
@@ -349,7 +362,11 @@ dialog{margin:auto;background:var(--sup);color:var(--texto);border:1px solid var
 dialog::backdrop{background:#000c}
 dialog video{width:100%;max-height:72vh;border-radius:12px;background:#000;display:block}
 dialog textarea{min-height:300px;margin-top:12px;font-size:14px;line-height:1.5}
-/* primeiro vídeo / + Novo */
+.yt-pacote{display:grid;gap:12px;margin-top:12px;max-height:min(70vh,640px);overflow:auto}
+.yt-bloco{display:grid;gap:6px}
+.yt-cab{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.yt-bloco textarea{min-height:0;margin-top:0;resize:vertical}
+/* vídeo / + Vídeo */
 .primeiro{margin-top:var(--esp-3);background:var(--sup);border:1px solid var(--linha);border-radius:14px;padding:var(--esp-4)}
 .primeiro h2{font-size:18px;margin-bottom:4px}
 .primeiro > .sub{margin-top:0;margin-bottom:var(--esp-3);max-width:56ch}
@@ -403,7 +420,7 @@ dialog textarea{min-height:300px;margin-top:12px;font-size:14px;line-height:1.5}
 .temas button{padding:7px 8px;font-size:12.5px;line-height:1.25}
 #v-novo .bloco-ideias{margin-top:10px;padding-top:8px}
 #v-novo .extras-wrap.bloco-ideias{margin-top:8px;border-top:0;padding-top:0}
-#v-configuracoes .pagina.col > .demo,
+#v-configuracoes .pagina.col > .assist,
 #v-configuracoes .pagina.col > .discreto,
 #v-configuracoes .pagina.col > #pBarra{flex:none}
 #v-configuracoes .assist{display:flex;flex-direction:column;flex:1;min-height:0;margin-top:8px;gap:10px;align-items:stretch}
@@ -420,7 +437,6 @@ dialog textarea{min-height:300px;margin-top:12px;font-size:14px;line-height:1.5}
 .cartao{padding:16px;border-radius:14px}
 .grade-estilos{gap:12px;margin-top:12px;grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
 .lista-car{gap:12px;margin-top:12px}
-.demo{margin-top:10px;padding:14px;gap:16px;border-radius:14px}
 .acoes{margin-top:12px;gap:8px}
 @media (max-width:900px){
   body{height:auto;min-height:100dvh;overflow:auto}
@@ -431,11 +447,7 @@ dialog textarea{min-height:300px;margin-top:12px;font-size:14px;line-height:1.5}
   #v-novo .primeiro .ajuda-curta,#v-novo .primeiro > .discreto{display:block}
   .temas button small{display:block}
 }
-/* 0.6.4: demonstração primeiro, temas prontos, aviso de falha (com o relatório de erro desde a 0.6.12), configurações */
-.demo{margin-top:22px;display:grid;grid-template-columns:minmax(180px,260px) 1fr;gap:24px;align-items:center;background:linear-gradient(135deg,var(--d-fundo),var(--sup) 60%);border:1px solid var(--d-borda);border-radius:18px;padding:22px}
-.demo video{width:100%;aspect-ratio:9/16;border-radius:14px;background:var(--midia);display:block}
-.demo ol{margin:12px 0 0 20px;display:grid;gap:4px;color:var(--suave)}
-@media (max-width:640px){.demo{grid-template-columns:1fr}.demo video{max-width:260px;margin:0 auto}}
+/* 0.6.4: temas prontos, aviso de falha (com o relatório de erro desde a 0.6.12), configurações */
 .aviso-anonimo{display:block;margin-top:8px;font-size:13px;color:var(--fraco)}
 .temas{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:6px;margin-top:6px}
 .temas button{background:var(--fundo);border:1px solid var(--linha);border-radius:10px;padding:8px 10px;cursor:pointer;font-size:13px;color:var(--suave);text-align:left;max-width:none;min-width:0}
@@ -482,7 +494,7 @@ img,video{max-width:100%}
 .agora .prog{display:flex;gap:4px;margin-top:8px}
 .agora .prog i{width:22px;height:5px;border-radius:99px;background:var(--trilha)}
 .agora .prog i.f{background:var(--ok)}.agora .prog i.a{background:var(--d)}
-.configurando .demo{order:1}.configurando .assist{order:2}.configurando .discreto{order:3}.configurando #pBarra{order:4}
+.configurando .assist{order:1}.configurando .discreto{order:2}.configurando #pBarra{order:3}
 .col{display:flex;flex-direction:column;gap:0}
 .col>.tit,.col>.sub,.col>.cabeca{order:0}
 .assist{display:flex;flex-direction:column;gap:10px;margin-top:var(--esp-3);align-items:stretch;min-height:0}
@@ -601,8 +613,9 @@ img,video{max-width:100%}
 <header class="barra">
   <div class="logo"><i></i><div class="logo-txt"><span>Estudio de Videos</span><small>Por Ajure</small></div></div>
   <nav class="abas-topo" role="tablist" aria-label="Seções">
-    <button role="tab" class="btn-novo" data-vista="novo" aria-selected="true">+ Novo</button>
+    <button role="tab" class="btn-novo" data-vista="novo" aria-selected="true">Novo</button>
     <button role="tab" data-vista="configuracoes" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-ajustes"/></svg>Configurações<span class="pin" id="pinConfig" hidden></span></button>
+    <button role="tab" data-vista="chat" aria-selected="false" id="abaChat" hidden><svg class="ic" aria-hidden="true"><use href="#i-conversa"/></svg>Chat</button>
     <span class="sep-nav" aria-hidden="true"></span>
     <div class="abas-scroll">
       <button role="tab" data-vista="como" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-ajuda"/></svg>Como funciona</button>
@@ -624,35 +637,29 @@ img,video{max-width:100%}
 <div class="estudio" id="estudio">
 <div class="estudio-corpo">
 
-<!-- + NOVO: criar vídeo -->
+<!-- + Vídeo: criar vídeo -->
 <section class="vista" id="v-novo" role="tabpanel">
   <div class="pagina foco" id="conteudo">
     <div class="cabeca">
-      <h1 class="tit">Novo vídeo</h1>
+      <h1 class="tit">Vídeo</h1>
       <p class="sub">Tema e gerar. Gancho, título e fecho são opcionais.</p>
     </div>
     <section class="primeiro" id="primeiro" aria-live="polite"></section>
   </div>
 </section>
 
-<!-- CONFIGURAÇÕES: instalação, voz, marca, objetivo, estilo e vídeo de teste -->
+<!-- CONFIGURAÇÕES: instalação, voz, marca, objetivo, estilo e Configurar IA -->
 <section class="vista" id="v-configuracoes" role="tabpanel" hidden>
   <div class="pagina col">
     <div class="cabeca">
       <h1 class="tit" id="boasVindas">Configurações</h1>
-      <p class="sub" id="boasSub">Voz, marca, objetivo, estilo e vídeo de teste. Tudo neste computador.</p>
+      <p class="sub" id="boasSub">Voz, marca, objetivo, estilo e a IA que escreve. Tudo neste computador.</p>
     </div>
-    <section class="demo" id="demo" hidden aria-label="Vídeo de demonstração">
-      <video id="demoVideo" controls playsinline preload="metadata" poster="/demo/demonstracao.jpg"></video>
-      <div><h2>Veja um exemplo pronto</h2>
-        <p class="sub">Roteiro, narração, 3D e legenda feitos pelo estúdio. Não gasta crédito.</p>
-        <div class="acoes"><button class="btn" id="demoComecar">Fazer o meu</button><button class="mini" id="demoFechar">Esconder</button></div></div>
-    </section>
     <div class="assist">
       <ol class="passos" id="passos" role="tablist" aria-label="Passos da configuração"></ol>
       <div id="painelPasso" class="cartao" aria-live="polite"></div>
     </div>
-    <p class="discreto cfg-links"><button type="button" data-ir="como">Guia completo</button><button type="button" id="demoVer" hidden>Ver demonstração</button></p>
+    <p class="discreto cfg-links"><button type="button" data-ir="como">Guia completo</button></p>
     <div class="barra-salvar" id="pBarra" hidden>
       <div id="pResumo" class="chips-sel" aria-live="polite"></div>
       <div class="lado"><span class="estado" id="pEstado" role="status">Tudo salvo</span><button class="btn" id="pSalvar" disabled><svg class="ic" aria-hidden="true"><use href="#i-salvar"/></svg> Salvar</button></div>
@@ -668,33 +675,34 @@ img,video{max-width:100%}
 
     <div class="cartao destaque-como">
       <h2><svg class="ic" aria-hidden="true"><use href="#i-conversa"/></svg> A ideia central</h2>
-      <p><b>Quem trabalha é o seu assistente: o Claude Code ou o Codex.</b> Ele roda no seu computador, dentro de uma pasta que você escolhe, e é ele que escreve o roteiro, narra, monta as cenas e gera o vídeo ou o carrossel.</p>
-      <p><b>O estúdio que você está vendo não cria nada.</b> Ele serve para você enxergar o que o assistente (Claude Code ou Codex) fez, achar tudo no lugar certo, escolher o estilo olhando as prévias e tirar dúvidas. É a vitrine e o painel de controle. O motor está no assistente.</p>
+      <p><b>Quem trabalha é a IA que você conecta:</b> Claude Code, Codex ou Cursor. Ela roda no seu computador, na pasta do estúdio, e escreve o roteiro, narra, monta as cenas e gera o vídeo ou o carrossel.</p>
+      <p><b>O estúdio é a vitrine e o painel.</b> Em <b>Configurações &gt; Configurar IA</b> você conecta o assistente; depois usa o <b>Chat</b> desta página (ou o app do Claude/Codex, se preferir). Os vídeos prontos aparecem em Meus vídeos.</p>
     </div>
 
     <h2 class="sec-t">Quem faz o quê</h2>
     <div class="duas">
-      <div class="cartao"><h3><svg class="ic" aria-hidden="true"><use href="#i-cerebro"/></svg> O assistente (Claude Code ou Codex)</h3>
+      <div class="cartao"><h3><svg class="ic" aria-hidden="true"><use href="#i-cerebro"/></svg> A IA (Claude, Codex ou Cursor)</h3>
         <ul class="lista-como"><li>Escreve o roteiro e confere os fatos</li><li>Gera a narração com a voz que você escolheu</li><li>Monta as cenas, as peças 3D e a legenda</li><li>Renderiza o vídeo (MP4) e os carrosséis (imagens)</li><li>Escreve a legenda do post e responde às suas dúvidas em português</li></ul>
-        <p class="dica">Tudo acontece na conversa com ele.</p></div>
+        <p class="dica">Com a IA conectada, o pedido vai pelo Chat do estúdio.</p></div>
       <div class="cartao"><h3><svg class="ic" aria-hidden="true"><use href="#i-tela"/></svg> O estúdio (esta tela)</h3>
-        <ul class="lista-como"><li>Mostra os vídeos e carrosséis prontos, para você assistir, baixar e postar</li><li>Guarda a sua marca, o estilo e o objetivo padrão</li><li>Mostra as prévias de cada estilo, para você escolher olhando</li><li>Guia os primeiros passos e confere se está tudo certo no computador</li><li>Atualiza o método quando sai versão nova</li></ul>
-        <p class="dica">Ele não precisa estar aberto para o assistente (Claude Code ou Codex) trabalhar. Abra quando quiser ver ou ajustar.</p></div>
+        <ul class="lista-como"><li>Conecta a IA e hospeda o chat</li><li>Mostra os vídeos e carrosséis prontos</li><li>Guarda a sua marca, o estilo e o objetivo padrão</li><li>Mostra as prévias de cada estilo</li><li>Guia os primeiros passos e confere o computador</li></ul>
+        <p class="dica">Deixe a janela preta aberta enquanto o chat trabalha.</p></div>
     </div>
 
     <h2 class="sec-t">O caminho de um vídeo, em 4 passos</h2>
     <ol class="passos-num">
-      <li><span><b>Abra o assistente (Claude Code ou Codex) na pasta do método.</b> No app do Claude (aba <b>Code</b>) ou no Codex, escolha a pasta: <b id="comoPasta" class="pasta-caminho"></b></span></li>
-      <li><span><b>Peça em português.</b> Exemplo: <span class="diga">Faça um vídeo sobre por que o teclado tem um risquinho no F e no J.</span> Para escolher o visual, acrescente o estilo: <i>no estilo [nome]</i>.</span></li>
-      <li><span><b>Espere e acompanhe.</b> O assistente (Claude Code ou Codex) vai contando o que faz. Um vídeo leva alguns minutos, e você pode continuar usando o computador.</span></li>
+      <li><span><b>Conecte a IA em Configurações.</b> Claude Code, Codex ou Cursor. Pasta do estúdio: <b id="comoPasta" class="pasta-caminho"></b></span></li>
+      <li><span><b>Peça em português no Chat.</b> Exemplo: <span class="diga">Faça um vídeo sobre por que o teclado tem um risquinho no F e no J.</span> Para escolher o visual, acrescente o estilo: <i>no estilo [nome]</i>.</span></li>
+      <li><span><b>Espere e acompanhe.</b> A IA vai contando o que faz no chat. Um vídeo leva alguns minutos, e você pode continuar usando o computador.</span></li>
       <li><span><b>Veja o resultado aqui.</b> O vídeo pronto aparece em <b>Meus vídeos</b>, e os carrosséis em <b>Carrosséis</b>. Baixe e poste.</span></li>
     </ol>
-    <div class="acoes"><button class="btn" data-copiar="Comece pelos primeiros passos.">Copiar o primeiro pedido</button><div class="copiado" role="status"></div></div>
+    <div class="acoes"><button class="btn" data-ir="chat">Abrir o Chat</button><button class="btn sec" data-copiar="Comece pelos primeiros passos.">Copiar o primeiro pedido</button><div class="copiado" role="status"></div></div>
 
     <h2 class="sec-t">Para que serve cada aba</h2>
     <div class="grade-abas">
-      <button class="cartao aba-card" data-ir="novo"><b><svg class="ic" aria-hidden="true"><use href="#i-mais"/></svg> + Novo</b><span>Criar um vídeo: tema, gancho, título e o pedido para o assistente.</span></button>
-      <button class="cartao aba-card" data-ir="configuracoes"><b><svg class="ic" aria-hidden="true"><use href="#i-ajustes"/></svg> Configurações</b><span>Instalação, voz e trilha, marca, objetivo, estilo e o vídeo de teste.</span></button>
+      <button class="cartao aba-card" data-ir="novo"><b><svg class="ic" aria-hidden="true"><use href="#i-mais"/></svg> + Vídeo</b><span>Criar um vídeo: tema, gancho, título e o pedido para a IA.</span></button>
+      <button class="cartao aba-card" data-ir="configuracoes"><b><svg class="ic" aria-hidden="true"><use href="#i-ajustes"/></svg> Configurações</b><span>Instalação, voz e trilha, marca, objetivo, estilo e Configurar IA.</span></button>
+      <button class="cartao aba-card" data-ir="chat"><b><svg class="ic" aria-hidden="true"><use href="#i-conversa"/></svg> Chat</b><span>Conversa com a IA conectada: peça vídeos e carrosséis sem abrir outro app.</span></button>
       <button class="cartao aba-card" data-ir="videos"><b><svg class="ic" aria-hidden="true"><use href="#i-filme"/></svg> Meus vídeos</b><span>Seus vídeos prontos para assistir, baixar, copiar a legenda e postar.</span></button>
       <button class="cartao aba-card" data-ir="carrosseis"><b><svg class="ic" aria-hidden="true"><use href="#i-camadas"/></svg> Carrosséis</b><span>As sequências de imagens prontas para o Instagram, o TikTok e o Facebook.</span></button>
       <button class="cartao aba-card" data-ir="estilos"><b><svg class="ic" aria-hidden="true"><use href="#i-paleta"/></svg> Estilos</b><span>A vitrine dos estilos, com prévia em movimento e o pedido pronto para copiar.</span></button>
@@ -704,17 +712,35 @@ img,video{max-width:100%}
 
     <h2 class="sec-t">Dúvidas rápidas</h2>
     <div class="faq">
-      <details><summary>Preciso deixar o estúdio aberto para o vídeo sair?</summary><p>Não. Quem faz o vídeo é o assistente (Claude Code ou Codex), na conversa. O estúdio é só para ver o que ficou pronto, escolher estilos e ajustar a marca.</p></details>
-      <details><summary>Onde ficam os meus vídeos?</summary><p>Na pasta que você escolheu no assistente (Claude Code ou Codex), dentro de <b>projetos</b>. Em <b>Meus vídeos</b> você os vê sem abrir pastas, e o botão <b>Mostrar na pasta</b> leva até o arquivo.</p></details>
-      <details><summary>Como escolho o estilo (a aparência)?</summary><p>Em <b>Estilos</b>, veja as prévias, clique em <b>Copiar pedido</b> e cole na conversa com o assistente (Claude Code ou Codex). Para usar o mesmo estilo em todos os vídeos, deixe-o como padrão em <b>Configurações &gt; Estilo</b>.</p></details>
+      <details><summary>Preciso deixar o estúdio aberto para o vídeo sair?</summary><p>Se você usa o <b>Chat</b> desta página, a janela preta do estúdio precisa ficar aberta. Se preferir o app do Claude ou do Codex, o estúdio web é só para ver o resultado.</p></details>
+      <details><summary>Onde ficam os meus vídeos?</summary><p>Na pasta do estúdio, dentro de <b>projetos</b>. Em <b>Meus vídeos</b> você os vê sem abrir pastas, e o botão <b>Mostrar na pasta</b> leva até o arquivo.</p></details>
+      <details><summary>Como escolho o estilo (a aparência)?</summary><p>Em <b>Estilos</b>, veja as prévias e peça no Chat (ou copie o pedido). Para usar o mesmo estilo em todos os vídeos, deixe-o como padrão em <b>Configurações &gt; Estilo</b>.</p></details>
       <details><summary>O que é o objetivo?</summary><p>É para que serve o vídeo: curiosidade, ensinar algo, vender um produto, divulgar um negócio e outros. O objetivo decide o tamanho do roteiro, o jeito de abrir e o convite final. Cada vídeo pode trocar depois, é só pedir.</p></details>
       <details><summary>Posso fazer vídeo de qualquer assunto, ou só curiosidades?</summary><p>De qualquer assunto. O mesmo método serve para páginas de conteúdo, negócios e perfis pessoais.</p></details>
-      <details><summary>Onde ficam a minha marca e as minhas chaves?</summary><p>Só neste computador. A chave da voz entra pelo painel do estúdio e nunca deve ser colada na conversa com o assistente (Claude Code ou Codex).</p></details>
-      <details><summary>O vídeo saiu diferente do que eu queria. E agora?</summary><p>Diga ao assistente (Claude Code ou Codex), em português, o que mudar: "deixe a legenda maior", "troque o estilo", "encurte o roteiro". Ele refaz só o que você pediu.</p></details>
+      <details><summary>Onde ficam a minha marca e as minhas chaves?</summary><p>Só neste computador. A chave da voz e a do Cursor entram pelo painel do estúdio e nunca devem ser coladas no chat.</p></details>
+      <details><summary>O vídeo saiu diferente do que eu queria. E agora?</summary><p>No Chat, diga em português o que mudar: "deixe a legenda maior", "troque o estilo", "encurte o roteiro". A IA refaz só o que você pediu.</p></details>
       <details><summary>Saiu versão nova do método. Como atualizo?</summary><p>Baixe o arquivo na página de releases e use a aba <b>Atualizar</b>. Dá para desfazer se precisar.</p></details>
     </div>
 
     <div class="acoes" style="margin-top:28px"><button class="btn" data-ir="configuracoes">Ir para Configurações</button><button class="btn sec" data-ir="novo">Criar um vídeo</button></div>
+  </div>
+</section>
+
+<!-- CHAT embutido (quando a IA está conectada) -->
+<section class="vista" id="v-chat" role="tabpanel" hidden>
+  <div class="pagina">
+    <div class="cabeca">
+      <h1 class="tit">Chat</h1>
+      <p class="sub" id="chatSub">Peça um vídeo ou um carrossel em português. A IA grava na pasta do estúdio.</p>
+    </div>
+    <div class="cartao chat-box">
+      <div class="chat-log" id="chatLog" aria-live="polite"></div>
+      <form class="chat-form" id="chatForm">
+        <textarea id="chatMsg" placeholder="Ex.: Quero um vídeo sobre por que o teclado tem um risquinho no F e no J." maxlength="20000" required></textarea>
+        <button class="btn" type="submit" id="chatEnviar">Enviar</button>
+        <button class="btn sec" type="button" id="chatCancelar" hidden>Cancelar</button>
+      </form>
+    </div>
   </div>
 </section>
 
@@ -749,7 +775,7 @@ img,video{max-width:100%}
     <div class="dois">
       <div class="cartao"><h2>Veja um agora</h2><p class="dica">Fica pronto em alguns segundos, com a sua marca. Serve para ver o resultado antes de pedir o seu.</p><div class="acoes"><button class="btn" id="carExemplo">Fazer um carrossel de exemplo</button></div></div>
       <div class="cartao"><h2>Peça o seu, em 3 passos</h2>
-        <ol class="passos-num"><li><span>Abra o app do <b>Claude</b> (aba <b>Code</b>) ou o <b>Codex</b> e escolha esta pasta: <b id="carPasta"></b></span></li><li><span>Copie um dos pedidos abaixo e cole na conversa. Troque o que estiver entre colchetes pelo seu assunto.</span></li><li><span>Espere uns minutos. O assistente (Claude Code ou Codex) escreve, confere os fatos e gera as imagens, que aparecem aqui embaixo, em <b>Meus carrosséis</b>.</span></li></ol></div>
+        <ol class="passos-num"><li><span>Com a IA conectada, abra o <b>Chat</b> (ou o app do Claude/Codex nesta pasta: <b id="carPasta"></b>).</span></li><li><span>Envie um dos pedidos abaixo. Troque o que estiver entre colchetes pelo seu assunto.</span></li><li><span>Espere uns minutos. A IA escreve, confere os fatos e gera as imagens, que aparecem aqui embaixo, em <b>Meus carrosséis</b>.</span></li></ol></div>
     </div>
     <div class="cartao" style="margin-top:16px"><h2>Pedidos prontos para copiar</h2><div class="pedidos" id="carPedidos"></div></div>
     <div class="dois">
@@ -860,7 +886,7 @@ const caixaTesteChave = (r) => {
   return `<div class="${r.ok === false ? 'caixa-erro' : 'caixa-nota'}" role="alert"><b>${esc(r.titulo)}</b>O que fazer: ${esc(r.acao)}</div>`;
 };
 let conf = null, vista = 'novo';
-const VISTAS = ['novo', 'configuracoes', 'como', 'videos', 'carrosseis', 'estilos', 'projetos', 'atualizar'];
+const VISTAS = ['novo', 'configuracoes', 'chat', 'como', 'videos', 'carrosseis', 'estilos', 'projetos', 'atualizar'];
 const VISTA_KEY = 'ilu-vista';
 const vistaValida = (v) => VISTAS.includes(v);
 const lembrarVista = (v) => { try { if (vistaValida(v)) localStorage.setItem(VISTA_KEY, v); } catch { /* privado / bloqueado */ } };
@@ -890,11 +916,13 @@ function mostrar(v) {
   if (v === 'novo') desenhaPrimeiro();
   if (v === 'configuracoes') { desenhaPassos(); if (RENDER[passoAtual]) RENDER[passoAtual](); }
   if (v === 'como') { const c = $('#comoPasta'); if (c) c.textContent = (conf && conf.pasta) || 'a pasta que você escolheu'; }
+  if (v === 'chat') prepararChat();
   if (v === 'videos') carregarVideos();
   if (v === 'carrosseis') carregarCarrosseis();
   if (v === 'estilos') carregarEstilos();
   if (v === 'projetos') carregaProjetos();
   if (v === 'atualizar') carregarAtualizar();
+  atualizarAbaChat();
   // Só mantém #p/<projeto> enquanto a aba Projetos está aberta; ao sair, grava a aba nova no hash
   const hashAgora = location.hash.slice(1);
   const manterProjeto = v === 'projetos' && hashAgora.startsWith('p/');
@@ -981,6 +1009,16 @@ async function acompanhar(cb) {
   if (!j) { box.hidden = true; return; }
   if (j.fim && j.id !== ultimaId && !cb && !aoTerminar) { return; }
   ultimaId = j.id;
+  if (j.tipo === 'ia-chat') {
+    espelharChatJob(j);
+    if (!j.fim) { tempo = setTimeout(acompanhar, 900); return; }
+    const f = aoTerminar; aoTerminar = null;
+    conf = await api('/api/configuracao').catch(() => conf) || conf;
+    atualizarPin(); atualizarAbaChat();
+    if (f) f(j);
+    box.hidden = true;
+    return;
+  }
   box.hidden = false;
   $('#tTitulo').textContent = j.titulo;
   $('#tTempo').textContent = j.duracao >= 60 ? `${Math.floor(j.duracao / 60)} min ${j.duracao % 60} s` : `${j.duracao} s`;
@@ -1027,10 +1065,10 @@ const PASSOS = [
   { id: 'marca', t: 'Sua marca', s: 'nome, @ e cor' },
   { id: 'objetivo', t: 'Objetivo', s: 'roteiro, tom e linha editorial' },
   { id: 'estilo', t: 'Estilo', s: 'a aparência dos vídeos' },
-  { id: 'teste', t: 'Vídeo de teste', s: 'a prova de que funciona' },
+  { id: 'ia', t: 'Configurar IA', s: 'quem escreve roteiro e vídeo' },
 ];
 const ICONE_OBJ = { aula: 'aula', ciencia: 'ciencia', curiosidade: 'curiosidade', esporte: 'esporte', fe: 'fe', financas: 'financas', historia: 'historia', negocio: 'negocio', noticia: 'noticia', receita: 'receita', saude: 'saude', tecnologia: 'cerebro', tutorial: 'tutorial', venda: 'venda' };
-const ICONE_PASSO = { instalacao: 'tela', voz: 'voz', marca: 'pessoa', objetivo: 'curiosidade', estilo: 'paleta', teste: 'play' };
+const ICONE_PASSO = { instalacao: 'tela', voz: 'voz', marca: 'pessoa', objetivo: 'curiosidade', estilo: 'paleta', ia: 'cerebro' };
 let passoAtual = 'instalacao', diag = null;
 const prontoDe = (id) => (id === 'objetivo' || id === 'estilo' ? 'pagina' : id);
 const feito = (id) => (id === 'instalacao' ? !!(diag && diag.ok) : !!conf?.pronto?.[prontoDe(id)]);
@@ -1097,7 +1135,7 @@ const RENDER = {
           <li><div><b>Escolha e ouça a sua voz</b><span>Estas 10 vozes padrão funcionam na conta grátis. Clique em Ouvir e, na que gostar, em "Usar esta".</span>
             <div class="vozes-pt">${VOZES_PT.map((x) => `<div><b>${esc(x.nome)}</b><span class="dica" style="margin:0">${esc(x.tom)}</span><button class="btn sec pequeno" type="button" data-ouvir="${esc(x.arquivo)}" aria-label="Ouvir a voz ${esc(x.nome)}">&#9654; Ouvir</button><button class="btn sec pequeno" type="button" data-vozid="${esc(x.id)}">Usar esta</button></div>`).join('')}</div>
             <label class="campo"><span>Voz escolhida (o código dela, o Voice ID, aparece sozinho ao clicar em "Usar esta")</span><input type="text" id="vId" autocomplete="off" spellcheck="false" placeholder="ex.: x3mAOLD9WzlmrFCwA1S3"></label>${salvo('ELEVENLABS_VOICE_ID', 'A voz')}</div></li>
-          <li><div><b>Clique em Salvar a voz</b><span>Pronto. Agora o vídeo de teste e o seu primeiro vídeo já saem narrados.</span></div></li></ol>
+          <li><div><b>Clique em Salvar a voz</b><span>Pronto. Agora os seus vídeos já saem narrados.</span></div></li></ol>
           <p class="dica"><b>Quanto dá de graça:</b> a conta grátis dá cerca de 10.000 créditos por mês, o que rende uns 10 minutos de fala. Quando acabar, você tem duas saídas: assinar um plano na ElevenLabs, ou criar outra conta grátis com outro e-mail e trocar a chave aqui (repita os passos 1 a 3).</p>
           <p class="dica"><b>Se a ElevenLabs bloquear a sua conta</b> (aviso de atividade incomum, em inglês "unusual activity"): é uma trava da própria ElevenLabs, comum em conta nova feita com VPN ou em internet compartilhada. Não é a sua chave nem o estúdio. Desligue a VPN e teste de novo mais tarde ou em outra internet. Enquanto isso, escolha "Voz de teste" acima e siga: o vídeo sai inteiro, só sem a narração.</p>
           <div class="acoes"><button class="btn" id="vSalvar">Salvar a voz</button><button class="btn sec" id="vTestar" type="button">Testar minha chave</button></div></div>`;
@@ -1369,30 +1407,132 @@ const RENDER = {
       $('#resPag').innerHTML = e ? caixaErro(e) : `<div class="caixa-ok">Salvo: estilo ${esc(a.estilo?.nome || (estilo ? estilo : 'Automático'))}.</div>`;
     };
   },
-  teste() {
+  async ia() {
     const P = $('#painelPasso');
-    const assist = `<div class="proximo"><h2>Pronto. Agora é só pedir</h2><p class="sub">Os vídeos de verdade você pede em português, numa conversa com o assistente (Claude Code ou Codex):</p>
-      <ol><li>Abra o app do <b>Claude</b> (aba <b>Code</b>) ou o <b>Codex</b> (no app do ChatGPT).</li><li>Escolha esta pasta: <b>${esc(conf.pasta)}</b></li><li>Escreva:</li></ol>
-      <div class="diga">Comece pelos primeiros passos.</div><p class="dica" style="margin-top:12px">Depois, é só pedir o tema, do seu jeito:</p><div class="diga">Quero um vídeo sobre por que o teclado tem um risquinho no F e no J.</div>
-      <p class="dica" style="margin-top:12px">Os vídeos prontos aparecem em <a href="#videos" id="irVideos">Meus vídeos</a>.</p></div>`;
-    const vozT = conf.teste.voz || 'mock', nomeT = { elevenlabs: 'ElevenLabs', fishaudio: 'Fish Audio', mock: 'voz de teste' }[vozT] || vozT;
-    const sobreVoz = !conf.voz.pronta && vozT !== 'mock' ? '<b>Antes dele, falta ligar a voz da ElevenLabs</b> (grátis, uns 5 minutos): o passo Voz tem o passo a passo.' : vozT === 'mock' ? '<b>Atenção: ele sai sem narração</b>, porque a voz escolhida é a voz de teste (muda). Para ouvir a narração, ligue a ElevenLabs no passo Voz.' : `Ele sai narrado com a voz que você salvou: <b>${esc(nomeT)}</b>.`;
-    P.innerHTML = `<h2>O vídeo de teste</h2><p class="sub">O mesmo tema da demonstração ("Sua hora vai valer 10% a mais", cerca de 25 s), feito agora no seu computador, para provar que tudo funciona. ${sobreVoz} Antes, o estúdio confere os programas e instala sozinho o que faltar.</p>
-      <p class="dica" style="margin-top:10px"><b>Tempo estimado:</b> cerca de 1 a 3 minutos num computador comum; até uns 10 minutos em computador lento ou sem placa de vídeo, e um pouco mais na primeira vez (o estúdio confere e instala o que faltar). Durante o desenho dos quadros, a caixa da tarefa mostra quanto falta. Pode deixar rodando e usar o computador.</p>
-      <div id="testeVid"></div><div class="acoes"><button class="btn" id="tFazer">${conf.teste.feito ? 'Fazer de novo' : 'Fazer o vídeo de teste'}</button></div><div id="resTeste"></div>${conf.teste.feito ? assist : ''}`;
-    const mostraVid = () => { $('#testeVid').innerHTML = `<video class="video-teste" controls playsinline src="/midia/exemplo/video?t=${Date.now()}" style="margin-top:16px"></video><div class="acoes"><button class="btn sec pequeno" id="tPasta">Mostrar na pasta</button></div>`; $('#tPasta').onclick = () => post('/api/mostrar', { nome: 'exemplo' }); };
-    if (conf.teste.feito) mostraVid();
-    const iv = $('#irVideos'); if (iv) iv.onclick = (e) => { e.preventDefault(); mostrar('videos'); };
-    $('#tFazer').onclick = () => {
-      $('#tFazer').disabled = true;
-      iniciarTarefa('/api/testar', {}, (j) => {
-        const mudo = (j.linhas || []).some((l) => /sem narração/.test(l));
-        if (!mudo && (j.codigo === 0 || j.codigo === 2)) { RENDER.teste(); $q('#resTeste').innerHTML = `<div class="caixa-ok">O estúdio funciona neste computador. ${vozT === 'mock' ? 'O vídeo saiu sem som porque a voz escolhida é a voz de teste.' : `O vídeo saiu narrado com ${esc(nomeT)}. Dê o play para ouvir.`}</div>`; desenhaPassos(); }
-        else { $q('#tFazer').disabled = false; $q('#resTeste').innerHTML = caixaErro(mudo ? { causa: 'A narração saiu muda, então o vídeo não foi aceito.', acao: 'Volte ao passo Voz, salve a voz de novo e faça o teste outra vez. Se repetir, peça ao assistente (Claude Code ou Codex): "leia o erro do estúdio e me explique o que fazer".' } : j.erro); }
-      }).then((r) => { if (!r) $q('#tFazer').disabled = false; });
+    P.innerHTML = `<h2>Configurar IA</h2><p class="sub">Quem escreve o roteiro e monta o vídeo é a IA no seu computador. O estúdio detecta o que já está instalado; um clique em <b>Conectar</b> e o Chat desta página passa a usá-la.</p><div id="iaGrade" class="grade-ia">Carregando…</div><div id="resIa"></div>`;
+    const st = await api('/api/ia').catch(() => conf.ia || { opcoes: [], escolhido: null });
+    const opcoes = st.opcoes || conf.ia?.opcoes || [];
+    const escolhido = st.escolhido || conf.ia?.escolhido;
+    const estadoTxt = (o) => {
+      if (escolhido === o.id && o.instalado) return '<span class="estado-ia ok">Conectado</span>';
+      if (o.instalado) return '<span class="estado-ia ok">Instalado</span>';
+      return '<span class="estado-ia falta">Não achei</span>';
     };
+    const campoCursor = (o) => o.id !== 'cursor' ? '' : `<label style="display:grid;gap:6px;margin-top:4px"><span class="dica">Chave CURSOR_API_KEY (só neste computador)</span>
+      <input type="password" id="iaCursorChave" placeholder="${o.temChave ? '•••• chave já salva (cole outra para trocar)' : 'Cole a chave do Cursor'}" autocomplete="off">
+      <button class="btn sec pequeno" type="button" data-salvar-cursor>Salvar chave</button></label>`;
+    $('#iaGrade').innerHTML = opcoes.map((o) => `<div class="cartao-ia ${escolhido === o.id ? 'conectado' : ''}" data-id="${esc(o.id)}">
+      <div><b>${esc(o.nome)}</b>${estadoTxt(o)}${o.versao ? `<small style="display:block;color:var(--fraco);margin-top:4px">${esc(o.versao)}</small>` : ''}</div>
+      <p class="dica" style="margin:0">${esc(o.dica || '')}</p>
+      ${campoCursor(o)}
+      <div class="acoes" style="margin:0">${o.instalado && !(o.id === 'cursor' && !o.temChave)
+        ? `<button class="btn" type="button" data-conectar="${esc(o.id)}">${escolhido === o.id ? 'Conectado' : 'Conectar'}</button>`
+        : `<span class="dica">Instale e volte aqui.</span>`}</div>
+    </div>`).join('');
+    $$('#iaGrade [data-conectar]').forEach((b) => (b.onclick = async () => {
+      b.disabled = true;
+      const r = await post('/api/ia', { id: b.dataset.conectar });
+      if (r.erro) { $('#resIa').innerHTML = caixaErro(r.erro); b.disabled = false; return; }
+      conf = await api('/api/configuracao');
+      $('#resIa').innerHTML = `<div class="caixa-ok">${esc(r.nome || 'IA')} conectada. Abra a aba <b>Chat</b> para pedir um vídeo.</div>`;
+      desenhaPassos(); atualizarPin(); atualizarAbaChat(); RENDER.ia();
+    }));
+    const salva = $('#iaGrade [data-salvar-cursor]');
+    if (salva) salva.onclick = async () => {
+      const chave = $('#iaCursorChave')?.value || '';
+      const r = await post('/api/ia/chave', { chave });
+      if (r.erro) { $('#resIa').innerHTML = caixaErro(r.erro); return; }
+      $('#resIa').innerHTML = '<div class="caixa-ok">Chave do Cursor salva no .env.</div>';
+      conf = await api('/api/configuracao');
+      RENDER.ia();
+    };
+    if (escolhido && (st.conectado || conf.pronto?.ia)) {
+      $('#resIa').innerHTML = `<div class="proximo"><h2>Pronto. Peça no Chat</h2><p class="sub">A IA conectada é <b>${esc(st.nome || conf.ia?.nome || escolhido)}</b>. Os vídeos prontos aparecem em Meus vídeos.</p>
+        <div class="acoes"><button class="btn" type="button" id="irChat">Abrir o Chat</button><button class="btn sec" type="button" id="irVideos">Meus vídeos</button></div></div>`;
+      $('#irChat').onclick = () => mostrar('chat');
+      $('#irVideos').onclick = () => mostrar('videos');
+    }
   },
 };
+
+/* ---------------- Chat embutido ---------------- */
+const chatEstado = { linhasVistas: 0, jobId: null, bolhaIa: null };
+function atualizarAbaChat() {
+  const aba = $('#abaChat');
+  if (!aba) return;
+  const ok = !!(conf && conf.pronto && conf.pronto.ia);
+  aba.hidden = !ok;
+  if (!ok && vista === 'chat') mostrar('configuracoes');
+}
+function prepararChat() {
+  const nome = conf?.ia?.nome || 'IA';
+  $('#chatSub').textContent = `Conectada: ${nome}. Peça um vídeo ou um carrossel em português. A IA grava na pasta do estúdio.`;
+  if (!$('#chatLog').children.length) {
+    $('#chatLog').innerHTML = `<div class="chat-bolha ia">Olá. Diga o tema do vídeo ou do carrossel. Ex.: "Comece pelos primeiros passos" ou "Quero um vídeo sobre …".</div>`;
+  }
+}
+function appendChat(papel, texto) {
+  const log = $('#chatLog');
+  const div = document.createElement('div');
+  div.className = `chat-bolha ${papel}`;
+  div.textContent = texto;
+  log.appendChild(div);
+  log.scrollTop = 1e9;
+  return div;
+}
+function espelharChatJob(j) {
+  if (!j) return;
+  if (chatEstado.jobId !== j.id) {
+    chatEstado.jobId = j.id;
+    chatEstado.linhasVistas = 0;
+    chatEstado.bolhaIa = appendChat('ia', '');
+  }
+  const linhas = j.linhas || [];
+  if (linhas.length > chatEstado.linhasVistas) {
+    const novas = linhas.slice(chatEstado.linhasVistas);
+    chatEstado.linhasVistas = linhas.length;
+    if (!chatEstado.bolhaIa) chatEstado.bolhaIa = appendChat('ia', '');
+    const atual = chatEstado.bolhaIa.textContent ? `${chatEstado.bolhaIa.textContent}\n` : '';
+    chatEstado.bolhaIa.textContent = atual + novas.join('\n');
+    $('#chatLog').scrollTop = 1e9;
+  }
+  $('#chatCancelar').hidden = !!j.fim;
+  $('#chatEnviar').disabled = !j.fim;
+  if (j.fim) {
+    chatEstado.bolhaIa = null;
+    if (j.codigo && j.codigo !== 0 && j.erro) appendChat('ia', `Não concluí: ${j.erro.causa || ''} ${j.erro.acao || ''}`.trim());
+  }
+}
+async function enviarChat(mensagem, { ir = true } = {}) {
+  const msg = String(mensagem || '').trim();
+  if (!msg) return;
+  if (ir) mostrar('chat');
+  appendChat('eu', msg);
+  $('#chatMsg').value = '';
+  $('#chatEnviar').disabled = true;
+  $('#chatCancelar').hidden = false;
+  const r = await post('/api/ia/chat', { mensagem: msg });
+  if (r.erro) {
+    appendChat('ia', `${r.erro.causa || ''} ${r.erro.acao || ''}`.trim());
+    $('#chatEnviar').disabled = false;
+    $('#chatCancelar').hidden = true;
+    return;
+  }
+  chatEstado.jobId = r.id;
+  chatEstado.linhasVistas = 0;
+  chatEstado.bolhaIa = appendChat('ia', '…');
+  acompanhar();
+}
+{
+  const form = $('#chatForm');
+  if (form) form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    enviarChat($('#chatMsg').value);
+  });
+  const cancel = $('#chatCancelar');
+  if (cancel) cancel.onclick = () => post('/api/ia/chat/cancel', {});
+}
+
 async function carregaDiag() {
   diag = await api('/api/diagnostico').catch(() => null);
   const alvo = $('#diagRes'); if (!alvo) return;
@@ -1531,16 +1671,16 @@ async function desenhaPrimeiro() {
       if (!temasP) { const r = await apiSeguro('/api/primeiro/temas'); temasP = Array.isArray(r) ? r : []; }
       const extrasAbertos = !!(pv.gancho || pv.titulo || pv.virada || pv.pergunta);
       A.innerHTML = `<div class="campo-tema"><label class="campo" for="pvTema"><span>Tema</span></label>
-        <div class="linha-tema"><input type="text" id="pvTema" maxlength="160" placeholder="Ex.: o dia em que Neymar fez Messi assistir ao show do Brasil" value="${esc(pv.tema || '')}" aria-label="Tema do vídeo">
+        <div class="linha-tema"><input type="text" id="pvTema" placeholder="Ex.: o dia em que Neymar fez Messi assistir ao show do Brasil" value="${esc(pv.tema || '')}" aria-label="Tema do vídeo">
         <select id="pvIdioma" aria-label="Idioma do vídeo"><option value="">Português</option><option value="en">English</option><option value="es">Español</option></select>
         <button class="btn" id="pvFazer">Gerar vídeo</button></div></div>
         <details class="extras-wrap" id="pvExtras"${extrasAbertos ? ' open' : ''}>
           <summary><span>Gancho, título e fecho<small>Opcional · o assistente usa o texto como você escrever</small></span></summary>
           <div class="extras-tema">
-          <label class="campo"><span>Gancho (primeira frase)</span><input type="text" id="pvGancho" maxlength="200" placeholder='Ex.: Em 2016, Messi entrou em campo para enfrentar Neymar. Mas naquela noite…' value="${esc(pv.gancho || '')}" aria-label="Gancho do vídeo"></label>
-          <label class="campo"><span>Título do vídeo (capa)</span><input type="text" id="pvTitulo" maxlength="100" placeholder="Ex.: O dia em que Neymar fez Messi virar plateia" value="${esc(pv.titulo || '')}" aria-label="Título do vídeo"></label>
-          <label class="campo"><span>Virada (o fato que muda o olhar)</span><input type="text" id="pvVirada" maxlength="280" placeholder="Ex.: Neymar nem jogou o 7 a 1: fraturou uma vértebra quatro dias antes" value="${esc(pv.virada || '')}" aria-label="Virada do vídeo"></label>
-          <label class="campo"><span>Pergunta final</span><input type="text" id="pvPergunta" maxlength="160" placeholder="Ex.: O que pesou mais: o gol 50 de Neymar ou a volta ao estádio do 7 a 1?" value="${esc(pv.pergunta || '')}" aria-label="Pergunta final"></label>
+          <label class="campo"><span>Gancho (primeira frase)</span><input type="text" id="pvGancho" placeholder='Ex.: Em 2016, Messi entrou em campo para enfrentar Neymar. Mas naquela noite…' value="${esc(pv.gancho || '')}" aria-label="Gancho do vídeo"></label>
+          <label class="campo"><span>Título do vídeo (capa)</span><input type="text" id="pvTitulo" placeholder="Ex.: O dia em que Neymar fez Messi virar plateia" value="${esc(pv.titulo || '')}" aria-label="Título do vídeo"></label>
+          <label class="campo"><span>Virada (o fato que muda o olhar)</span><input type="text" id="pvVirada" placeholder="Ex.: Neymar nem jogou o 7 a 1: fraturou uma vértebra quatro dias antes" value="${esc(pv.virada || '')}" aria-label="Virada do vídeo"></label>
+          <label class="campo"><span>Pergunta final</span><input type="text" id="pvPergunta" placeholder="Ex.: O que pesou mais: o gol 50 de Neymar ou a volta ao estádio do 7 a 1?" value="${esc(pv.pergunta || '')}" aria-label="Pergunta final"></label>
           </div>
         </details>
         <div class="refs-campo">
@@ -1573,7 +1713,7 @@ async function desenhaPrimeiro() {
     if (pr) pr.etapa += falta(pv.job, pr);
       A.innerHTML = `<h2>${pv.fase === 'esperando' ? 'Seu primeiro vídeo: falta o roteiro' : 'Fazendo o seu primeiro vídeo'}</h2>
         <p class="sub">${pv.fase === 'esperando' ? 'Cole o pedido abaixo na conversa com o assistente (Claude Code ou Codex) (app do Claude, aba Code, ou Codex, com esta pasta aberta). Quando ele terminar o roteiro, o estúdio começa o vídeo sozinho. Esta tela se atualiza sozinha: ninguém precisa abrir, controlar nem tirar foto do navegador. Enquanto isso, o estúdio já confere o computador.' : 'Pode deixar rodando e usar o computador. Na primeira vez leva um pouco mais, porque o estúdio confere e instala o que faltar.'}</p>
-        ${pv.fase === 'esperando' ? `<div class="pedido" id="pvPedido">${esc(pv.pedido || '')}</div><div class="acoes"><button class="btn" id="pvCopiarPedido">Copiar o pedido</button><span class="ok-txt" id="pvCopiado">${pv.copiado ? 'Pedido copiado. Cole na conversa com o assistente (Claude Code ou Codex).' : ''}</span></div>` : ''}
+        ${pv.fase === 'esperando' ? `<div class="pedido" id="pvPedido">${esc(pv.pedido || '')}</div><div class="acoes">${conf.pronto?.ia ? `<button class="btn" id="pvEnviarChat">Enviar no Chat</button>` : ''}<button class="btn${conf.pronto?.ia ? ' sec' : ''}" id="pvCopiarPedido">Copiar o pedido</button><span class="ok-txt" id="pvCopiado">${pv.copiado ? (conf.pronto?.ia ? 'Pedido copiado.' : 'Pedido copiado. Cole na conversa com o assistente (Claude Code ou Codex).') : ''}</span></div>` : ''}
         ${listaEtapas()}
         ${mostraBarra && pr ? `<p class="dica" style="margin-top:12px">${esc(pr.etapa)}</p><div class="trilho ${pr.pct == null ? 'indef' : ''}"><i style="width:${pr.pct == null ? 30 : Math.max(3, Math.round(pr.pct * 100))}%"></i></div>` : ''}
         ${pv.fase === 'esperando' && !pv.preparando ? `<p class="dica" style="margin-top:12px">${esc(pv.nota || 'Esperando o roteiro do assistente (Claude Code ou Codex)…')}</p>${blocoOndeVigia()}` : ''}
@@ -1581,7 +1721,8 @@ async function desenhaPrimeiro() {
         ${pv.det ? `<pre id="pvLog" style="background:var(--log);border:1px solid var(--linha);border-radius:10px;padding:10px 12px;font:12px/1.5 ui-monospace,Menlo,monospace;color:var(--suave);max-height:200px;overflow:auto;white-space:pre-wrap;margin-top:10px">${esc((pv.job?.linhas || []).join('\n'))}</pre>` : ''}`;
       const l = $('#pvLog'); if (l) l.scrollTop = 1e9;
       $('#pvDet').onclick = () => { pv.det = !pv.det; desenhaPrimeiro(); };
-      const cp = $('#pvCopiarPedido'); if (cp) cp.onclick = async () => { pv.copiado = await copiarTexto(pv.pedido); if (!pv.copiado) { const r = document.createRange(); r.selectNodeContents($('#pvPedido')); getSelection().removeAllRanges(); getSelection().addRange(r); try { pv.copiado = document.execCommand('copy'); } catch { /* fica selecionado para copiar à mão */ } } $('#pvCopiado').textContent = pv.copiado ? 'Pedido copiado. Cole na conversa com o assistente (Claude Code ou Codex).' : 'Selecionei o pedido: copie com Ctrl+C (ou Cmd+C no Mac).'; };
+      const cp = $('#pvCopiarPedido'); if (cp) cp.onclick = async () => { pv.copiado = await copiarTexto(pv.pedido); if (!pv.copiado) { const r = document.createRange(); r.selectNodeContents($('#pvPedido')); getSelection().removeAllRanges(); getSelection().addRange(r); try { pv.copiado = document.execCommand('copy'); } catch { /* fica selecionado para copiar à mão */ } } $('#pvCopiado').textContent = pv.copiado ? (conf.pronto?.ia ? 'Pedido copiado.' : 'Pedido copiado. Cole na conversa com o assistente (Claude Code ou Codex).') : 'Selecionei o pedido: copie com Ctrl+C (ou Cmd+C no Mac).'; };
+      const ec = $('#pvEnviarChat'); if (ec) ec.onclick = () => enviarChat(pv.pedido || '');
       const dp = $('#pvDiagPrimeiro'); if (dp) dp.onclick = () => copiarDiagnosticoPrimeiro(dp);
       const cc = $('#pvCancelar'); if (cc) cc.onclick = () => { lembrar.gravar(null); resetPrimeiro(); };
       return;
@@ -1782,8 +1923,8 @@ async function retomarPrimeiro() {
 async function carregarVideos() {
   const vs = await api('/api/videos');
   const alvo = $('#videos');
-  // 0.5.3: tema livre em + Novo (um só lugar para criar; aqui só a lista)
-  const novo = `<section class="cta-novo"><div><h2>Novo vídeo</h2><p class="sub">Tema, gancho e fecho ficam em <b>+ Novo</b>. O assistente escreve o roteiro; o estúdio produz.</p></div><button class="btn" id="ctaIrNovo">+ Novo</button></section>`;
+  // 0.5.3: tema livre em + Vídeo (um só lugar para criar; aqui só a lista)
+  const novo = `<section class="cta-novo"><div><h2>Vídeo</h2><p class="sub">Tema, gancho e fecho ficam em <b>+ Vídeo</b>. O assistente escreve o roteiro; o estúdio produz.</p></div><button class="btn" id="ctaIrNovo">+ Vídeo</button></section>`;
   const ligaNovo = () => { const b = $('#ctaIrNovo'); if (!b) return; b.onclick = () => { mostrar('novo'); requestAnimationFrame(() => $('#pvTema')?.focus({ preventScroll: true })); }; };
   if (!vs.length) { alvo.innerHTML = novo + '<div class="vazio-bonito" style="grid-column:1/-1"><h2>Você ainda não tem vídeos prontos</h2><p>Os vídeos que o estúdio fizer aparecem aqui, com os botões de assistir, baixar e copiar a legenda. O jeito mais rápido de ver o primeiro é fazer o vídeo de teste.</p><div class="acoes"><button class="btn" id="vazioTeste">Fazer o vídeo de teste</button></div></div>'; ligaNovo(); $('#vazioTeste').onclick = () => irPara('teste'); return; }
   alvo.innerHTML = novo + vs.map((v) => `<article class="vid">
@@ -1791,7 +1932,8 @@ async function carregarVideos() {
     <div class="corpo-v"><b>${esc(v.titulo)}</b><small>${new Date(v.data).toLocaleString('pt-BR', { dateStyle: 'short', timeStyle: 'short' })} · ${v.mb} MB</small>
       <div class="marcas">${v.teste ? `<span class="etq aviso">${I('aviso')} sem voz (teste)</span>` : v.aprovado ? `<span class="etq ok">${I('ok')} conferido</span>` : `<span class="etq aviso">${I('aviso')} rever qualidade</span>`}${v.rapido ? '<span class="etq">prévia rápida</span>' : ''}</div></div>
     <div class="bts"><a class="btn sec" href="/baixar/${v.nome}" download>Baixar</a><button class="btn sec" data-pasta="${v.nome}">Mostrar na pasta</button>
-      <button class="btn sec" data-leg="${v.nome}" ${v.legenda ? '' : 'title="Peça ao assistente (Claude Code ou Codex): escreva a legenda deste vídeo"'}>${v.legenda ? 'Copiar legenda' : 'Pedir a legenda'}</button></div>
+      <button class="btn sec" data-leg="${v.nome}" ${v.legenda ? '' : 'title="Peça ao assistente (Claude Code ou Codex): escreva a legenda deste vídeo"'}>${v.legenda ? 'Copiar legenda' : 'Pedir a legenda'}</button>
+      <button class="btn sec" data-yt="${v.nome}" ${v.youtube ? '' : 'title="Peça ao assistente (Claude Code ou Codex): escreva o pacote YouTube deste vídeo"'}>${v.youtube ? 'YouTube' : 'Pedir YouTube'}</button></div>
   </article>`).join('');
   ligaNovo();
   $$('[data-ver]').forEach((b) => (b.onclick = () => abrirDlg(`<h2>${esc(vs.find((x) => x.nome === b.dataset.ver).titulo)}</h2><video controls autoplay playsinline src="/midia/${b.dataset.ver}/video?t=${Date.now()}" style="margin-top:12px"></video>`)));
@@ -1801,6 +1943,22 @@ async function carregarVideos() {
     if (r.erro) { abrirDlg(`<h2>Sem legenda ainda</h2><p class="sub">Peça ao assistente (Claude Code ou Codex), na conversa:</p><div class="diga">Escreva a legenda do vídeo ${esc(b.dataset.leg)} para Instagram e TikTok.</div>`); return; }
     abrirDlg(`<h2>Legenda</h2><p class="dica">Confira antes de postar. Dá para editar aqui antes de copiar.</p><textarea id="legTxt">${esc(r.texto)}</textarea><div class="acoes"><button class="btn" id="legCopiar">Copiar</button><span id="legOk" class="ok-txt"></span></div>`);
     $('#legCopiar').onclick = async () => { const t = $('#legTxt'); try { await navigator.clipboard.writeText(t.value); } catch { t.select(); document.execCommand('copy'); } $('#legOk').textContent = 'Copiada.'; };
+  }));
+  $$('[data-yt]').forEach((b) => (b.onclick = async () => {
+    const nome = b.dataset.yt;
+    const r = await api('/api/youtube/' + nome);
+    if (r.erro) { abrirDlg(`<h2>Sem pacote YouTube ainda</h2><p class="sub">Peça ao assistente (Claude Code ou Codex), na conversa:</p><div class="diga">Escreva o pacote YouTube do vídeo ${esc(nome)}</div>`); return; }
+    const bloco = (rotulo, texto, id) => `<div class="yt-bloco"><div class="yt-cab"><b>${esc(rotulo)}</b><button class="mini" data-copiar="${esc(id)}">Copiar</button></div><textarea id="${esc(id)}" readonly rows="${Math.min(8, Math.max(2, String(texto).split('\n').length + 1))}">${esc(texto)}</textarea></div>`;
+    const titulos = (r.titulos || []).map((t, i) => bloco(`Título ${i + 1}`, t, `ytTit${i}`)).join('');
+    const descs = (r.descricoes || []).map((t, i) => bloco(`Descrição ${i + 1}`, t, `ytDesc${i}`)).join('');
+    const tags = bloco('Tags (campo Tags do Studio)', (r.tags || []).join(', '), 'ytTags');
+    const hashes = bloco('Hashtags (colar na descrição)', (r.hashtags || []).join(' '), 'ytHash');
+    abrirDlg(`<h2>Pacote YouTube</h2><p class="dica">3 títulos, 3 descrições, tags e hashtags. Confira antes de colar no Studio.${r.formato ? ` Formato: ${esc(r.formato)}.` : ''}</p><div class="yt-pacote">${titulos}${descs}${tags}${hashes}</div><span id="ytOk" class="ok-txt"></span>`);
+    $$('[data-copiar]').forEach((btn) => (btn.onclick = async () => {
+      const t = $('#' + btn.dataset.copiar); if (!t) return;
+      try { await navigator.clipboard.writeText(t.value); } catch { t.select(); document.execCommand('copy'); }
+      $('#ytOk').textContent = 'Copiado.';
+    }));
   }));
 }
 function abrirDlg(html) { $('#dlgCorpo').innerHTML = html; $('#dlg').showModal(); }
@@ -1999,7 +2157,7 @@ function desenhaLista() {
       b.onclick = () => abre(p.nome); alvo.appendChild(b);
     }
   }
-  if (!total) alvo.innerHTML = q ? '<div class="grupo">Nenhum projeto com esse nome.</div>' : '<div class="grupo">Nenhum projeto ainda. Peça um vídeo ao assistente (Claude Code ou Codex), use + Novo, ou faça o vídeo de teste em Configurações.</div>';
+  if (!total) alvo.innerHTML = q ? '<div class="grupo">Nenhum projeto com esse nome.</div>' : '<div class="grupo">Nenhum projeto ainda. Peça um vídeo ao assistente (Claude Code ou Codex), use + Vídeo, ou faça o vídeo de teste em Configurações.</div>';
   $('#resumo').textContent = `${projetos.length} projetos · ${projetos.filter((p) => p.publicavel).length} prontos · o número ao lado é a nota do roteiro (0 a 100)`;
 }
 async function carregaProjetos() { if (!carregados) $('#resumo').textContent = 'Carregando…'; projetos = await api('/api/projetos'); carregados = true; desenhaLista(); }
@@ -2079,21 +2237,7 @@ function painel(d) {
 $('#busca').oninput = desenhaLista;
 $('#pvIrVideos').onclick = () => mostrar('videos');
 
-/* ---------------- demonstração e configurações (0.6.4) ---------------- */
-function ligarDemo() {
-  const d = $('#demo'), v = $('#demoVideo');
-  if (!conf.demonstracao) return;
-  let fechada = false;
-  try { fechada = localStorage.getItem('demoFechada') === '1'; } catch { /* sem armazenamento */ }
-  const mostrar = (sim) => { d.hidden = !sim; const link = $('#demoVer'); if (link) link.hidden = sim; if (sim && !v.src) v.src = '/demo/demonstracao.mp4'; };
-  // primeiro uso: a página abre com a demonstração; depois do vídeo de teste, ela fica num link
-  mostrar(!fechada && !conf.teste.feito);
-  // navegador sem o formato de vídeo (raro): mostra o quadro do gancho e abre o vídeo no player do computador
-  v.onerror = () => { const div = Object.assign(document.createElement('div'), { innerHTML: '<img src="/demo/demonstracao.jpg" alt="Quadro da demonstração" style="width:100%;border-radius:14px;display:block"><button class="btn sec pequeno" id="demoPlayer" style="margin-top:10px">Assistir no player do computador</button>' }); v.replaceWith(div); $('#demoPlayer').onclick = () => postSeguro('/api/mostrar', { pasta: 'demo' }); };
-  $('#demoVer').onclick = () => { mostrar(true); v.play?.().catch(() => {}); d.scrollIntoView({ block: 'nearest' }); };
-  $('#demoFechar').onclick = () => { v.pause?.(); mostrar(false); try { localStorage.setItem('demoFechada', '1'); } catch { /* sem armazenamento */ } };
-  $('#demoComecar').onclick = () => { v.pause?.(); irPara(conf.voz.escolhida && conf.voz.pronta ? 'teste' : 'voz'); };
-}
+/* ---------------- configurações ---------------- */
 function ligarConfig() {
   /* relatório de erro saiu da tela; a telemetria continua pelo que já estava no config */
 }
@@ -2169,12 +2313,12 @@ window.addEventListener('error', (ev) => { if (ev && ev.target && ev.target !== 
   if (conf.marca && !conf.marca.neutra) aplicarCor(conf.marca.destaque); // marca neutra (ainda sem a da pessoa) fica na laranja do estúdio
   $('#carPasta').textContent = conf.pasta || '';
   atualizarPin();
-  ligarDemo();
   ligarConfig();
-  if (conf.tudoPronto) { $('#boasVindas').textContent = 'Configurações'; $('#boasSub').textContent = 'Voz, marca, objetivo, estilo e vídeo de teste.'; }
+  if (conf.tudoPronto) { $('#boasVindas').textContent = 'Configurações'; $('#boasSub').textContent = 'Voz, marca, objetivo, estilo e Configurar IA.'; }
   else if (!conf.marca.neutra) $('#boasVindas').textContent = `Olá, ${conf.marca.nome}`;
   passoAtual = PASSOS.find((p) => p.id !== 'instalacao' && !feito(p.id))?.id || 'instalacao';
   if (!conf.instalado && !conf.tudoPronto) passoAtual = 'instalacao';
+  atualizarAbaChat();
   desenhaPassos(); RENDER[passoAtual]();
   if (passoAtual !== 'instalacao') carregaDiag();
   const dest = lerHashVista();

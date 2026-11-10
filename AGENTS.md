@@ -22,28 +22,8 @@ Fora isso, decida, faça e relate em uma linha o que decidiu.
 Uma por estúdio, a de quem usa. Nome, @, cores e assinatura: `marca/tokens.json`, só pela skill `marca` (`npm run marca`), nunca à mão. `perfil`: sempre `curiosidades` (interno). O @ vai no topo dos vídeos e no rodapé dos carrosséis. O estúdio sai de fábrica com a marca neutra **Sua Página** (@suapagina): enquanto for ela, rode a skill `comece` ou `marca` antes de publicar. Voz: `docs/identidade-e-voz.md` (leia antes de escrever). Caso em andamento: atribua (segundo a PF, a defesa nega), com data e fonte. Linha editorial (política): `linhaEditorial` em `ilustrando.config.json` (de fábrica `neutra`; `comece` ou `pauta` pergunta e grava com `npm run linha`); como aplicar e o que nunca muda: o mesmo doc.
 
 ## Comandos
-Quem usa o estúdio não digita comando: abre esta pasta aqui e diz "comece pelos primeiros passos" (skill `comece`, modo assistente: chave da voz nunca, só no `.env`). O estúdio web é opcional: se disser "abrir estúdio", rode `npm run estudio -- --abrir` em segundo plano. Sem o assistente, instala com dois cliques em **Instalar (Mac)** ou **Instalar (Windows)**. Sem `node` no terminal, use o Node portátil de `.programas/`: `ferramentas/rodar` na frente (Mac, Linux, Git Bash; PowerShell: `ferramentas\rodar.cmd`). Nunca peça para abrir o Terminal. **Nunca abra, controle nem tire print do navegador**; estado: `npm run status` ou `npm run comece -- --situacao --json`.
-```bash
-node src/video/cli.mjs <projeto> --voz=mock|elevenlabs|fishaudio|arquivo [--estilo=<id>] [--objetivo=<id>] [--rapido] [--guias] [--sem-render] [--foto=12.5] [--sem-musica] [--horizontal]
-node src/video/cli.mjs --status          # estado de todos os projetos e próximo passo de cada um
-node src/video/cli.mjs --doctor          # confere Node, FFmpeg, Chromium, WebGL, fontes e chaves
-node src/video/cli.mjs <projeto> --sem-lint   # ignora o linter de roteiro (não recomendado)
-npm test                                 # testes do motor
-node src/carrossel.mjs <nome>            # carrossel em PNG
-node src/identidade.mjs                  # logo, avatar da foto de perfil e banners (marca/saida)
-npm run verificar                        # arquivos iguais aos de fábrica? (só lê, não muda nada)
-npm run estudio -- --abrir               # estúdio web: voz (chave direto no .env), marca, vídeos
-npm run atualizar -- <zip>               # versão nova sem tocar em projetos/, carrosseis/, marca/ e .env (a pessoa usa o estúdio web, Atualizar)
-bash ferramentas/instalador/instalar.sh --assistente   # instala o que falta, com o Node; Windows: ver skill `comece`, Passo 0
-node scripts/buscar-imagem.mjs <projeto> "<termo>" [--logo] [--listar] [--escolha=N]   # foto ou logo de licença livre, registrada em fontes.md
-node scripts/buscar-broll.mjs <projeto> "<termo>" [--fonte=…] [--listar] [--escolha=N]   # b-roll em vídeo livre (elemento video), em fontes.md
-node src/video/cli.mjs --galeria --projeto=<projeto>   # peças do projeto (projetos/<nome>/pecas.js)
-node scripts/imagem-para-pontos.mjs <foto> <saida.json> [--corte x,y,l,a] [--limiar 0.14]   # foto em pontos para o pontilhismo, com prévia .jpg
-node scripts/folha-pontos.mjs <projeto> [--mp4]   # folha de contato das formas em pontos
-node scripts/respiros.mjs <projeto> [--simular] [--refazer]   # pausas na voz depois da pontuação, só no silêncio real
-npm run linha -- --ver | npm run linha -- <neutra|esquerda|centro|direita> [leve|moderada]   # linha editorial em política
-npm run estilos|objetivos [-- --ver <id> | --padrao [<id>] | --novo <id> --base <id> | --validar]   # estilo e objetivo
-```
+Quem usa o estúdio não digita comando: abre esta pasta aqui e diz "comece pelos primeiros passos" (skill `comece`, modo assistente: chave da voz nunca, só no `.env`). O estúdio web é opcional: se disser "abrir estúdio", rode `npm run estudio -- --abrir` em segundo plano. Com `assistente` gravado em `ilustrando.config.json` (Configurações > Configurar IA), o estúdio web hospeda o chat embutido (Claude, Codex ou Cursor) na pasta do método. Sem o assistente, instala com dois cliques em **Instalar (Mac)** ou **Instalar (Windows)**. Sem `node` no terminal, use o Node portátil de `.programas/`: `ferramentas/rodar` na frente (Mac, Linux, Git Bash; PowerShell: `ferramentas\rodar.cmd`). Nunca peça para abrir o Terminal. **Nunca abra, controle nem tire print do navegador**; estado: `npm run status` ou `npm run comece -- --situacao --json`.
+Consulte a seção [Comandos do estúdio](MAPA.md#comandos-do-estúdio) para opções de produção e manutenção.
 Um projeto de vídeo é `projetos/<nome>/roteiro.md`. O resto o pipeline cria. Cada pasta, e o que é da pessoa ou do kit: `MAPA.md`. Não edite `src/` (o motor) nem crie arquivos soltos na raiz.
 
 ## Estilo e objetivo
@@ -51,18 +31,19 @@ Todo vídeo tem um **estilo** (a aparência; `npm run estilos`) e um **objetivo*
 
 ## Skills (nesta ordem)
 Primeira vez: `comece`. Trocar nome, @ ou cor: `marca`.
-`pauta` -> `roteiro` -> `video` (que usa `cena` e `critico`) -> `publicar`. Para carrossel: `pauta` -> `carrossel` -> `publicar`. Para imitar o jeito de um conteúdo que deu certo: `referencia`.
+`pauta` -> `roteiro` -> `video` (que usa `cena` e `critico`) -> `publicar` -> `youtube`. Para carrossel: `pauta` -> `carrossel` -> `publicar`. Para imitar o jeito de um conteúdo que deu certo: `referencia`.
 
-## Documentos que você lê antes de escrever
-- `docs/formatos.md`: os 8 formatos e a árvore de escolha.
-- `docs/ganchos.md`: os 9 gatilhos de gancho com padrões, e os CTAs.
-- `docs/padroes-virais.md`: o DNA medido em 36 vídeos virais.
-- `docs/cena-schema.md`: índice; cada estilo em `docs/cena/`.
-- `docs/identidade-e-voz.md`: voz da marca.
-- `docs/design-system.md`: identidade, símbolo, cor, tipografia, espaço e movimento (fonte: `marca/tokens.json`).
-- `docs/principios-de-design.md`: regras de tipografia, cor, layout e movimento para carrossel, vídeo e interface.
-- `docs/carrossel-templates.md`: os tipos de slide do carrossel e as 8 famílias de estilo (`visual`), com quando usar cada um.
-- `docs/pontilhismo.md`: como ilustrar em pontos (estilo `pontilhismo` e elemento `pontos`).
+## Leituras por etapa
+Abra a skill da etapa atual e consulte as referências que ela indicar para o trabalho em curso.
+- Na pauta e no roteiro, use o objetivo do vídeo e as seções pertinentes de `docs/identidade-e-voz.md`, `docs/formatos.md`, `docs/ganchos.md` e `docs/padroes-virais.md`.
+- Para montar a cena, comece pelo índice `docs/cena-schema.md` e pelo guia do estilo escolhido em `docs/cena/`. Consulte `docs/pontilhismo.md` quando usar pontos.
+- No carrossel, consulte o modelo escolhido em `docs/carrossel-templates.md`. Consulte `docs/design-system.md` e `docs/principios-de-design.md` quando criar ou revisar a direção visual.
+- Para publicar, siga `publicar` ou `youtube` conforme a entrega. Para o pacote YouTube, parta do roteiro definitivo e de `fontes.md`. Abra as referências específicas da Vyral quando precisar delas.
+
+## Uso de contexto
+- Em arquivos grandes, localize primeiro com `rg` ou pelo índice. Leia as seções relevantes e amplie a leitura se faltar contexto. Reaproveite o que já foi conferido na sessão enquanto os arquivos e as fontes continuarem atuais.
+- Em diagnósticos, renders e testes, comece pelo estado, pelo resumo e pelas falhas. Consulte o trecho do log ou do relatório que explica o resultado e agrupe consultas independentes.
+- A economia vale para leituras repetidas e saídas de ferramentas. Preserve as checagens da etapa, a conferência de fontes, o linter, a revisão visual quando aplicável e a profundidade pedida para cada entrega.
 
 ## Regras que não se quebram
 - **Fato conferido, sempre.** Número em mais de uma fonte; fonte registrada em `projetos/<nome>/fontes.md`. Número que não confirma não entra. Nunca invente dado, citação ou imagem.
@@ -118,6 +99,7 @@ As skills são as mesmas do Claude Code, copiadas para `.agents/skills/` (a font
 | `referencia` | `$referencia` | Dissecar um vídeo ou carrossel de referência para extrair o padrão transferível (mecanismo, estrutura, ritmo), nunca o conteúdo nem a identidade. |
 | `roteiro` | `$roteiro` | Escolhe o formato e o gatilho de gancho e escreve o roteiro narrado de um vídeo curto do Estudio de videos, na faixa de palavras do objetivo do vídeo (padrão 150 a 230). |
 | `video` | `$video` | Produz o vídeo do Estudio de videos de ponta a ponta, sem paradas de aprovação, a partir de um roteiro.md. |
+| `youtube` | `$youtube` | Monta o pacote YouTube de um vídeo do Estudio de videos (3 títulos, 3 descrições, tags e hashtags) a partir do roteiro.md, e grava youtube.json para a aba Meus vídeos. |
 <!-- skills:fim -->
 
 ### Primeira vez

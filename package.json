@@ -41,5 +41,8 @@
   "ilustrando": {
     "pacote": "C-000000000000"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "optionalDependencies": {
+    "@cursor/sdk": "1.3.1"
+  }
 }
