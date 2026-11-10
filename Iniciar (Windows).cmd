@@ -2,6 +2,8 @@
 rem Ilustrando Studio: um clique. Instala o que faltar e abre o estudio.
 setlocal
 cd /d "%~dp0"
+rem Usa esta pasta do repositorio; nao copia para C:\ilustrando.
+set "ILU_SEM_MUDANCA=1"
 if not exist "%~dp0ferramentas\instalador\iniciar.ps1" goto zip
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0ferramentas\instalador\iniciar.ps1" %*
 set "CODIGO=%ERRORLEVEL%"

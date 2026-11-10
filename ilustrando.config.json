@@ -27,7 +27,7 @@
     "texto": "Segue a página pra ver a próxima."
   },
   "linhaEditorial": {
-    "politica": "esquerda",
+    "politica": "neutra",
     "intensidade": "leve"
   },
   "expressoesProibidas": [
@@ -40,5 +40,6 @@
     "inocente ate (que se prove|prova)"
   ],
   "encoder": "auto",
-  "objetivoPadrao": "esporte"
+  "objetivoPadrao": "esporte",
+  "estiloPadrao": "mindset"
 }
