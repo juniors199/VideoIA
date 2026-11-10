@@ -30,6 +30,7 @@ Levante o assunto em pelo menos **duas fontes independentes** (órgão oficial, 
 - Fonte que não abriu: escreva isso. Nunca finja ter conferido.
 - Política: registre também o que o outro lado diz (nota oficial, defesa, dado contrário), com fonte. Ele entra no roteiro, nem que seja numa frase.
 - Imagem real que o tema pede (rosto de quem está no centro do caso, prédio, logo de empresa ou órgão): busque com `node scripts/buscar-imagem.mjs <projeto> "<nome + contexto do tema>" --listar` (e `--logo`). Você filtra os candidatos pela relação com o tema (título/descrição e, se baixar, a própria imagem); só então mostre à pessoa e baixe com `--escolha=N`. Homônimo de outro domínio não entra. Registra em `fontes.md`. Se a tela vai pedir um objeto ou um lugar que o repertório não tem, anote: a skill `cena` cria em `projetos/<nome>/pecas.js`. Nunca troque o assunto por uma peça genérica só porque é o que existe.
+- Se o projeto já tem `assets/referencias/` ou `referencias.md` (fotos que a pessoa anexou no estúdio), anote na pauta em qual trecho cada uma deve aparecer; a skill `cena` confirma olhando a imagem. Não peça foto de novo do que já foi anexado.
 
 ## 3. Ache a contradição
 O bom conteúdo cabe em "todo mundo acha X, mas é Y". Se não completa a frase, o ângulo está fraco: proponha outro recorte em vez de escrever algo morno.

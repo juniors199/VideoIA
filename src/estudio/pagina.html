@@ -201,6 +201,65 @@ li,p,b,span,.caixa-ok,.caixa-erro,.caixa-nota{overflow-wrap:anywhere}
 .opcao.tem-previa .ok{position:absolute;top:8px;right:8px;width:24px;height:24px;border-radius:50%;background:var(--d);color:var(--tinta);display:none;place-items:center;font-size:14px;font-weight:700}
 .opcao.tem-previa[aria-checked=true] .ok{display:grid}
 
+/* Configurações > Objetivo / Estilo: grade legível com o espaço do painel */
+.escolha-pagina{display:grid;gap:18px;padding-bottom:4px}
+.escolha-pagina > h2{margin:0;font-size:20px}
+.escolha-pagina > .sub{margin:0;max-width:64ch}
+.bloco-escolha{display:grid;gap:12px;padding-top:16px;border-top:1px solid var(--linha)}
+.bloco-cab{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.bloco-cab h3{margin:0;font-size:16px;letter-spacing:-.01em;color:var(--texto);font-weight:700}
+.bloco-cab .sub{margin:4px 0 0;font-size:13.5px;max-width:60ch;color:var(--suave)}
+.bloco-cab .meta{font-size:12.5px;color:var(--fraco);white-space:nowrap}
+.barra-filtro{display:flex;gap:10px;align-items:center;flex-wrap:wrap;width:100%}
+.barra-filtro input[type=search]{flex:1 1 240px;width:auto;margin:0;background:var(--fundo);border:1px solid var(--linha);border-radius:10px;padding:11px 14px;color:var(--texto)}
+
+/* Objetivos: cartões com ícone + nome + descrição */
+.escolha-pagina .modelos-obj{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin:0}
+.escolha-pagina .modelos-obj .opcao{padding:16px;min-height:88px;text-align:left;align-items:start;border-radius:14px}
+.escolha-pagina .modelos-obj .opcao.com-ic{display:grid;grid-template-columns:44px minmax(0,1fr);gap:14px}
+.escolha-pagina .modelos-obj .opcao b{font-size:15.5px;line-height:1.25}
+.escolha-pagina .modelos-obj .tx2{min-width:0;display:grid;gap:5px}
+.escolha-pagina .modelos-obj .tx2 span{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;margin:0;font-size:13px;line-height:1.45;color:var(--suave)}
+.escolha-pagina .modelos-obj .ic-box{width:44px;height:44px;border-radius:12px}
+.escolha-pagina .modelos-obj .ic-box .ic{width:22px;height:22px}
+.escolha-pagina .modelos-obj .opcao[aria-checked=true]{background:var(--d-fundo)}
+
+/* Estilos: galeria com prévia + nome; detalhe do selecionado ao lado em telas largas */
+.estilo-picker{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,300px);gap:18px;align-items:start}
+.estilo-grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(156px,1fr));gap:14px;margin:0;max-height:min(62vh,720px);overflow:auto;padding:2px 6px 10px 2px;scrollbar-width:thin;align-content:start}
+.estilo-grade .opcao.tem-previa{padding:0;overflow:hidden;display:flex;flex-direction:column;background:var(--sup2);border:1px solid var(--linha);border-radius:14px;cursor:pointer;text-align:left;min-height:0;color:inherit;font:inherit}
+.estilo-grade .opcao.tem-previa:hover{border-color:var(--borda-forte)}
+.estilo-grade .opcao.tem-previa[aria-checked=true]{border-color:var(--d);box-shadow:0 0 0 1px var(--d) inset;background:var(--d-fundo)}
+.estilo-grade .opcao.tem-previa .pv{position:relative;aspect-ratio:3/4;width:100%;background:var(--midia);overflow:hidden}
+.estilo-grade .opcao.tem-previa .pv video{width:100%;height:100%;object-fit:cover;display:block}
+.estilo-grade .opcao.tem-previa .pv .sem{height:100%;display:grid;place-items:center;align-content:center;gap:6px;text-align:center;padding:12px;color:var(--fraco);font-size:12px;background:repeating-linear-gradient(135deg,var(--risca) 0 10px,transparent 10px 20px)}
+.estilo-grade .opcao.tem-previa .sem.auto{color:var(--d)}.estilo-grade .opcao.tem-previa .sem.auto .ic{width:28px;height:28px}.estilo-grade .opcao.tem-previa .sem.auto span{color:var(--suave);font-size:12px}
+.estilo-grade .opcao.tem-previa .tx{padding:11px 12px 13px;display:grid;gap:4px}
+.estilo-grade .opcao.tem-previa b{font-size:14px;line-height:1.25;font-weight:700}
+.estilo-grade .opcao.tem-previa .tx span{margin:0;font-size:12px;line-height:1.4;color:var(--suave);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.estilo-grade .opcao.tem-previa .ok{position:absolute;top:8px;right:8px;width:24px;height:24px;border-radius:50%;background:var(--d);color:var(--tinta);display:none;place-items:center;font-size:14px;font-weight:700}
+.estilo-grade .opcao.tem-previa[aria-checked=true] .ok{display:grid}
+.estilo-detalhe{display:grid;gap:14px;min-width:0;border:1px solid var(--linha);border-radius:16px;background:var(--sup2);padding:18px;position:sticky;top:0}
+.estilo-detalhe .det-topo b{display:block;font-size:19px;letter-spacing:-.02em}
+.estilo-detalhe .det-topo p{margin:8px 0 0;color:var(--suave);font-size:14px;line-height:1.5}
+.estilo-detalhe .det-previa{position:relative;width:100%;aspect-ratio:9/16;max-height:min(48vh,480px);border-radius:12px;overflow:hidden;background:var(--midia);justify-self:center}
+.estilo-detalhe .det-previa video{width:100%;height:100%;object-fit:contain;display:block}
+.estilo-detalhe .det-previa .sem{height:100%;display:grid;place-items:center;align-content:center;gap:8px;text-align:center;padding:16px;color:var(--fraco);font-size:13px;background:repeating-linear-gradient(135deg,var(--risca) 0 10px,transparent 10px 20px)}
+.estilo-detalhe .det-previa .sem.auto{color:var(--d)}.estilo-detalhe .det-previa .sem.auto .ic{width:36px;height:36px}.estilo-detalhe .det-previa .sem.auto span{color:var(--suave)}
+.escolha-pagina .linha-ed{display:flex;flex-wrap:wrap;gap:16px 24px;align-items:end}
+.escolha-pagina .linha-ed .rotulo{font-size:12.5px;color:var(--fraco);font-weight:600;margin-bottom:6px}
+.escolha-pagina .vazio-filtro{padding:22px 14px;text-align:center;color:var(--fraco);font-size:13.5px;border:1px dashed var(--linha);border-radius:12px;grid-column:1/-1}
+@media (max-width:1100px){
+  .estilo-picker{grid-template-columns:1fr}
+  .estilo-detalhe{position:static;display:grid;grid-template-columns:minmax(140px,180px) minmax(0,1fr);align-items:center}
+  .estilo-detalhe .det-previa{max-height:240px;aspect-ratio:9/16}
+}
+@media (max-width:720px){
+  .escolha-pagina .modelos-obj{grid-template-columns:1fr}
+  .estilo-grade{grid-template-columns:repeat(auto-fill,minmax(136px,1fr));max-height:min(52vh,520px);gap:12px}
+  .estilo-detalhe{grid-template-columns:1fr}
+}
+
 .segmento{display:inline-flex;border:1px solid var(--linha);border-radius:999px;padding:3px;gap:2px;flex-wrap:wrap}
 .segmento button{background:none;border:0;border-radius:999px;padding:7px 14px;cursor:pointer;color:var(--suave);font-weight:600}
 .segmento button[aria-pressed=true]{background:var(--d);color:var(--tinta)}
@@ -309,6 +368,16 @@ dialog textarea{min-height:300px;margin-top:12px;font-size:14px;line-height:1.5}
 .primeiro .extras-wrap > summary small{display:block;font-weight:500;color:var(--fraco);font-size:12px;margin-top:1px}
 .primeiro .extras-tema{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0 12px 12px}
 .primeiro .extras-tema label.campo{margin-top:0}
+.refs-campo{margin-top:14px}
+.refs-campo > span{display:block;font-size:12.5px;color:var(--suave);font-weight:600;margin-bottom:6px}
+.refs-campo > span small{font-weight:500;opacity:.85;margin-left:4px}
+.refs-lista{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.refs-lista .ref-chip{display:flex;align-items:center;gap:8px;padding:6px 8px;border:1px solid var(--linha);border-radius:10px;background:var(--cartao,transparent);font-size:12px;color:var(--suave);max-width:100%}
+.refs-lista .ref-chip img{width:36px;height:36px;object-fit:cover;border-radius:6px;flex:none}
+.refs-lista .ref-chip button{border:0;background:transparent;color:var(--suave);cursor:pointer;font-size:14px;line-height:1;padding:2px 4px}
+.refs-bloco{margin-top:16px}
+.refs-bloco .refs-lista img{width:64px;height:64px;object-fit:cover;border-radius:8px;border:1px solid var(--linha)}
+
 .primeiro .extras-tema input{width:100%;padding:9px 11px}
 .primeiro .bloco-ideias{margin-top:var(--esp-3);padding-top:var(--esp-3);border-top:1px solid var(--linha)}
 .primeiro .bloco-ideias h3{font-size:13px;letter-spacing:0;text-transform:none;color:var(--texto);margin:0 0 6px}
@@ -334,14 +403,19 @@ dialog textarea{min-height:300px;margin-top:12px;font-size:14px;line-height:1.5}
 .temas button{padding:7px 8px;font-size:12.5px;line-height:1.25}
 #v-novo .bloco-ideias{margin-top:10px;padding-top:8px}
 #v-novo .extras-wrap.bloco-ideias{margin-top:8px;border-top:0;padding-top:0}
-#v-configuracoes .pagina.col > .uso-wrap,
-#v-configuracoes .pagina.col > .agora,
 #v-configuracoes .pagina.col > .demo,
 #v-configuracoes .pagina.col > .discreto,
-#v-configuracoes .pagina.col > .config{flex:none}
-#v-configuracoes .assist{flex:1;min-height:0;margin-top:10px;align-items:stretch}
-#v-configuracoes #painelPasso{height:100%;overflow:auto;padding:16px}
-#v-configuracoes .passos{overflow:auto;max-height:100%;align-content:start}
+#v-configuracoes .pagina.col > #pBarra{flex:none}
+#v-configuracoes .assist{display:flex;flex-direction:column;flex:1;min-height:0;margin-top:8px;gap:10px;align-items:stretch}
+#v-configuracoes #pBarra{margin:8px 0 0;position:static;bottom:auto;box-shadow:0 8px 28px var(--sombra-forte)}
+#v-configuracoes #pBarra[hidden]{display:none !important}
+#v-configuracoes .passos{display:flex;flex-direction:row;flex-wrap:nowrap;gap:6px;overflow-x:auto;overflow-y:hidden;max-height:none;flex:none;padding:0 0 2px;scrollbar-width:thin;align-content:stretch}
+#v-configuracoes .passos li{flex:1 1 0;min-width:96px;list-style:none}
+#v-configuracoes .passos button{width:100%;height:100%;min-height:52px;padding:8px 10px;grid-template-columns:22px minmax(0,1fr);gap:8px;border-radius:12px}
+#v-configuracoes .passos .n{width:22px;height:22px;font-size:11px}
+#v-configuracoes .passos small{font-size:10.5px;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+#v-configuracoes #painelPasso{flex:1;min-height:0;height:auto;overflow:auto;padding:16px}
+#v-configuracoes .cfg-links{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
 #v-videos .videos{flex:1;min-height:0;overflow:auto;align-content:start;margin-top:10px}
 .cartao{padding:16px;border-radius:14px}
 .grade-estilos{gap:12px;margin-top:12px;grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
@@ -391,8 +465,6 @@ dialog textarea{min-height:300px;margin-top:12px;font-size:14px;line-height:1.5}
 @media (max-width:1100px){.logo-txt{display:none}}
 @media (max-width:900px){
   .barra{gap:12px;padding:0 12px}
-  .assist{grid-template-columns:1fr}
-  .assist .passos{grid-auto-flow:column;grid-auto-columns:minmax(150px,1fr);overflow-x:auto;padding-bottom:6px}
   .grade-marca{grid-template-columns:1fr}
   .projetos{grid-template-columns:minmax(0,1fr);height:auto}#busca{margin:0 16px 12px;width:calc(100% - 32px)}.projetos aside{border-right:0;border-bottom:1px solid var(--linha);max-height:46vh}
   .cena{padding:24px 16px 48px}.corpo{grid-template-columns:1fr}.etapas{grid-template-columns:repeat(2,1fr)}
@@ -410,23 +482,21 @@ img,video{max-width:100%}
 .agora .prog{display:flex;gap:4px;margin-top:8px}
 .agora .prog i{width:22px;height:5px;border-radius:99px;background:var(--trilha)}
 .agora .prog i.f{background:var(--ok)}.agora .prog i.a{background:var(--d)}
-.configurando .demo{order:1}.configurando #agora{order:2}.configurando .assist{order:3}.configurando .discreto{order:4}.configurando .config{order:5}
+.configurando .demo{order:1}.configurando .assist{order:2}.configurando .discreto{order:3}.configurando #pBarra{order:4}
 .col{display:flex;flex-direction:column;gap:0}
 .col>.tit,.col>.sub,.col>.cabeca{order:0}
-.col #demoMostrar{order:1}
-.assist{display:grid;grid-template-columns:minmax(200px,240px) minmax(0,1fr);gap:var(--esp-3);margin-top:var(--esp-3);align-items:start}
-.assist .passos{grid-auto-flow:row;grid-auto-columns:unset;overflow:visible;padding-bottom:0}
-.assist #painelPasso{min-height:0}
+.assist{display:flex;flex-direction:column;gap:10px;margin-top:var(--esp-3);align-items:stretch;min-height:0}
+.assist .passos{flex:none}
+.assist #painelPasso{min-height:0;flex:1}
 .passos{gap:6px}
 .passos button{min-height:48px;padding:8px 10px;border-radius:12px;gap:8px}
 .passos .n{width:24px;height:24px;font-size:12px}
 .passos small{font-size:11px}
-.uso-unico{margin-top:var(--esp-2)}
-.uso-wrap{margin-top:var(--esp-2);border:1px solid var(--linha);border-radius:12px;background:var(--sup);padding:0 12px}
-.uso-wrap > summary{cursor:pointer;padding:10px 0;font-weight:600;min-height:40px;display:flex;align-items:center;font-size:14px}
-.uso-wrap[open]{border-color:var(--d-borda)}
-.uso-wrap .uso-unico{margin:0 0 10px;border:0;background:transparent;padding:0}
-@media (max-width:900px){.assist{grid-template-columns:1fr}.primeiro .extras-tema{grid-template-columns:1fr}}
+@media (max-width:900px){
+  .primeiro .extras-tema{grid-template-columns:1fr}
+  #v-configuracoes .passos small{display:none}
+  #v-configuracoes .passos button{min-height:44px;grid-template-columns:22px auto;justify-content:start}
+}
 .vazio-bonito{margin-top:16px;border:1px dashed var(--linha);border-radius:12px;padding:18px;max-width:640px}
 .vazio-bonito h2{font-size:18px}
 .vazio-bonito p{color:var(--suave);margin-top:4px;font-size:14px}
@@ -565,41 +635,28 @@ img,video{max-width:100%}
   </div>
 </section>
 
-<!-- CONFIGURAÇÕES: instalação, voz, marca, estilo/objetivo e vídeo de teste -->
+<!-- CONFIGURAÇÕES: instalação, voz, marca, objetivo, estilo e vídeo de teste -->
 <section class="vista" id="v-configuracoes" role="tabpanel" hidden>
   <div class="pagina col">
     <div class="cabeca">
       <h1 class="tit" id="boasVindas">Configurações</h1>
-      <p class="sub" id="boasSub">Voz, marca, estilo e vídeo de teste. Tudo neste computador.</p>
+      <p class="sub" id="boasSub">Voz, marca, objetivo, estilo e vídeo de teste. Tudo neste computador.</p>
     </div>
-    <details class="uso-wrap" id="usoWrap">
-      <summary>Como o Método funciona (30 segundos)</summary>
-      <section class="uso-unico" id="usoUnico" aria-label="Como usar o Método">
-        <ol>
-          <li><b>Abra esta pasta</b> no Claude Code (aba <b>Code</b>, modo <b>Local</b>) ou no Codex.</li>
-          <li><b>Escreva:</b> <code>Comece pelos primeiros passos.</code></li>
-          <li><b>Peça o vídeo</b> na conversa, ou use <b>+ Novo</b> aqui.</li>
-        </ol>
-        <p class="dica">O estúdio é a vitrine. Quem produz é o assistente.</p>
-      </section>
-    </details>
-    <section class="agora" id="agora" aria-live="polite" hidden></section>
     <section class="demo" id="demo" hidden aria-label="Vídeo de demonstração">
       <video id="demoVideo" controls playsinline preload="metadata" poster="/demo/demonstracao.jpg"></video>
       <div><h2>Veja um exemplo pronto</h2>
         <p class="sub">Roteiro, narração, 3D e legenda feitos pelo estúdio. Não gasta crédito.</p>
         <div class="acoes"><button class="btn" id="demoComecar">Fazer o meu</button><button class="mini" id="demoFechar">Esconder</button></div></div>
     </section>
-    <p class="discreto"><button type="button" data-ir="como">Guia completo</button></p>
-    <p class="discreto" id="demoMostrar" hidden><button id="demoVer">Ver demonstração</button></p>
     <div class="assist">
-      <ol class="passos" id="passos"></ol>
+      <ol class="passos" id="passos" role="tablist" aria-label="Passos da configuração"></ol>
       <div id="painelPasso" class="cartao" aria-live="polite"></div>
     </div>
-    <details class="config" id="config"><summary>Relatório de erro</summary>
-      <label><input type="checkbox" id="cfgTele"> <span>Mandar o <b>relatório de erro</b> quando algo falhar (código e diagnóstico, sem chaves nem dados pessoais).</span></label>
-      <p class="dica" id="cfgRes" aria-live="polite"></p>
-    </details>
+    <p class="discreto cfg-links"><button type="button" data-ir="como">Guia completo</button><button type="button" id="demoVer" hidden>Ver demonstração</button></p>
+    <div class="barra-salvar" id="pBarra" hidden>
+      <div id="pResumo" class="chips-sel" aria-live="polite"></div>
+      <div class="lado"><span class="estado" id="pEstado" role="status">Tudo salvo</span><button class="btn" id="pSalvar" disabled><svg class="ic" aria-hidden="true"><use href="#i-salvar"/></svg> Salvar</button></div>
+    </div>
   </div>
 </section>
 
@@ -637,7 +694,7 @@ img,video{max-width:100%}
     <h2 class="sec-t">Para que serve cada aba</h2>
     <div class="grade-abas">
       <button class="cartao aba-card" data-ir="novo"><b><svg class="ic" aria-hidden="true"><use href="#i-mais"/></svg> + Novo</b><span>Criar um vídeo: tema, gancho, título e o pedido para o assistente.</span></button>
-      <button class="cartao aba-card" data-ir="configuracoes"><b><svg class="ic" aria-hidden="true"><use href="#i-ajustes"/></svg> Configurações</b><span>Instalação, voz e trilha, marca, estilo e objetivo, e o vídeo de teste.</span></button>
+      <button class="cartao aba-card" data-ir="configuracoes"><b><svg class="ic" aria-hidden="true"><use href="#i-ajustes"/></svg> Configurações</b><span>Instalação, voz e trilha, marca, objetivo, estilo e o vídeo de teste.</span></button>
       <button class="cartao aba-card" data-ir="videos"><b><svg class="ic" aria-hidden="true"><use href="#i-filme"/></svg> Meus vídeos</b><span>Seus vídeos prontos para assistir, baixar, copiar a legenda e postar.</span></button>
       <button class="cartao aba-card" data-ir="carrosseis"><b><svg class="ic" aria-hidden="true"><use href="#i-camadas"/></svg> Carrosséis</b><span>As sequências de imagens prontas para o Instagram, o TikTok e o Facebook.</span></button>
       <button class="cartao aba-card" data-ir="estilos"><b><svg class="ic" aria-hidden="true"><use href="#i-paleta"/></svg> Estilos</b><span>A vitrine dos estilos, com prévia em movimento e o pedido pronto para copiar.</span></button>
@@ -649,7 +706,7 @@ img,video{max-width:100%}
     <div class="faq">
       <details><summary>Preciso deixar o estúdio aberto para o vídeo sair?</summary><p>Não. Quem faz o vídeo é o assistente (Claude Code ou Codex), na conversa. O estúdio é só para ver o que ficou pronto, escolher estilos e ajustar a marca.</p></details>
       <details><summary>Onde ficam os meus vídeos?</summary><p>Na pasta que você escolheu no assistente (Claude Code ou Codex), dentro de <b>projetos</b>. Em <b>Meus vídeos</b> você os vê sem abrir pastas, e o botão <b>Mostrar na pasta</b> leva até o arquivo.</p></details>
-      <details><summary>Como escolho o estilo (a aparência)?</summary><p>Em <b>Estilos</b>, veja as prévias, clique em <b>Copiar pedido</b> e cole na conversa com o assistente (Claude Code ou Codex). Para usar o mesmo estilo em todos os vídeos, deixe-o como padrão em <b>Configurações &gt; Estilo e objetivo</b>.</p></details>
+      <details><summary>Como escolho o estilo (a aparência)?</summary><p>Em <b>Estilos</b>, veja as prévias, clique em <b>Copiar pedido</b> e cole na conversa com o assistente (Claude Code ou Codex). Para usar o mesmo estilo em todos os vídeos, deixe-o como padrão em <b>Configurações &gt; Estilo</b>.</p></details>
       <details><summary>O que é o objetivo?</summary><p>É para que serve o vídeo: curiosidade, ensinar algo, vender um produto, divulgar um negócio e outros. O objetivo decide o tamanho do roteiro, o jeito de abrir e o convite final. Cada vídeo pode trocar depois, é só pedir.</p></details>
       <details><summary>Posso fazer vídeo de qualquer assunto, ou só curiosidades?</summary><p>De qualquer assunto. O mesmo método serve para páginas de conteúdo, negócios e perfis pessoais.</p></details>
       <details><summary>Onde ficam a minha marca e as minhas chaves?</summary><p>Só neste computador. A chave da voz entra pelo painel do estúdio e nunca deve ser colada na conversa com o assistente (Claude Code ou Codex).</p></details>
@@ -712,7 +769,7 @@ img,video{max-width:100%}
     <p class="sub">Cada vídeo e cada carrossel tem um estilo: a aparência dele. Veja um pouco de cada um, escolha o que combina com o seu assunto e copie o pedido pronto.</p>
     <div class="cartao" style="margin-top:20px"><h2>Como usar</h2>
       <ol class="passos-num"><li><span>Escolha um estilo. As prévias andam sozinhas enquanto você olha.</span></li><li><span>Clique em <b>Copiar pedido</b>.</span></li><li><span>Cole no <b>Claude</b> ou no <b>Codex</b>, com esta pasta aberta, e troque <b>[assunto]</b> pelo seu. Exemplo: <b>Faça um vídeo sobre [assunto] no estilo [nome do estilo].</b></span></li></ol>
-      <p class="dica">Quer o mesmo estilo em todos os vídeos? Deixe um padrão em <button class="mini" id="estPadrao">Configurações &gt; Estilo e objetivo</button>.</p></div>
+      <p class="dica">Quer o mesmo estilo em todos os vídeos? Deixe um padrão em <button class="mini" id="estPadrao">Configurações &gt; Estilo</button>.</p></div>
     <div class="barra-estilos"><div class="segmento" id="estTipo" role="group" aria-label="Tipo"><button data-t="reels" aria-pressed="true">Vídeos (Reels)</button><button data-t="carrosseis" aria-pressed="false">Carrosséis</button></div>
       <input type="search" id="estBusca" placeholder="Buscar por assunto ou objetivo" aria-label="Buscar estilo"></div>
     <div class="chips" id="estChips" role="group" aria-label="Sugestões de busca"></div>
@@ -968,44 +1025,36 @@ const PASSOS = [
   { id: 'instalacao', t: 'Instalação', s: 'o computador está pronto?' },
   { id: 'voz', t: 'Voz e trilha', s: 'quem narra e a música de fundo' },
   { id: 'marca', t: 'Sua marca', s: 'nome, @ e cor' },
-  { id: 'pagina', t: 'Estilo e objetivo', s: 'objetivo, estilo e linha editorial' },
+  { id: 'objetivo', t: 'Objetivo', s: 'roteiro, tom e linha editorial' },
+  { id: 'estilo', t: 'Estilo', s: 'a aparência dos vídeos' },
   { id: 'teste', t: 'Vídeo de teste', s: 'a prova de que funciona' },
 ];
 const ICONE_OBJ = { aula: 'aula', ciencia: 'ciencia', curiosidade: 'curiosidade', esporte: 'esporte', fe: 'fe', financas: 'financas', historia: 'historia', negocio: 'negocio', noticia: 'noticia', receita: 'receita', saude: 'saude', tecnologia: 'cerebro', tutorial: 'tutorial', venda: 'venda' };
-const ICONE_PASSO = { instalacao: 'tela', voz: 'voz', marca: 'pessoa', pagina: 'ajustes', teste: 'play' };
+const ICONE_PASSO = { instalacao: 'tela', voz: 'voz', marca: 'pessoa', objetivo: 'curiosidade', estilo: 'paleta', teste: 'play' };
 let passoAtual = 'instalacao', diag = null;
-const feito = (id) => (id === 'instalacao' ? !!(diag && diag.ok) : !!conf?.pronto?.[id]);
+const prontoDe = (id) => (id === 'objetivo' || id === 'estilo' ? 'pagina' : id);
+const feito = (id) => (id === 'instalacao' ? !!(diag && diag.ok) : !!conf?.pronto?.[prontoDe(id)]);
 function desenhaPassos() {
   $('#passos').innerHTML = PASSOS.map((p, i) => `<li><button class="${feito(p.id) ? 'feito' : ''}" data-p="${p.id}" ${p.id === passoAtual ? 'aria-current="step"' : ''}><span class="n" title="Passo ${i + 1}">${I(feito(p.id) ? 'ok' : ICONE_PASSO[p.id])}</span><span>${esc(p.t)}<small>${esc(p.s)}</small></span></button></li>`).join('');
   $$('#passos button').forEach((b) => (b.onclick = () => irPara(b.dataset.p)));
   desenhaAgora();
 }
-const PASSO_AGORA = {
-  instalacao: ['Conferir o computador', 'O estúdio confere se o computador tem tudo. Leva alguns segundos.'],
-  voz: ['Ligar a voz', 'É a voz que narra os vídeos. Grátis, uns 5 minutos, uma vez só.'],
-  marca: ['Criar a sua marca', 'Escolha o nome, o @ e a cor da sua página.'],
-  pagina: ['Escolher objetivo e estilo', 'Diga o que os vídeos querem ser e qual aparência usar. Dá para mudar depois.'],
-  teste: ['Fazer o vídeo de teste', 'Prova que tudo funciona. Leva de 1 a 3 minutos e você pode usar o computador.'],
-};
-/** Cartão "o que fazer agora": sempre um único próximo passo, com um botão. */
+/** Mantém a classe de progresso; os cartões "agora" / "como funciona" saíram do layout. */
 function desenhaAgora() {
-  const A = $('#agora'); if (!A || !conf) return;
+  if (!conf) return;
   const ok = (id) => (id === 'instalacao' ? !!(conf.instalado || (diag && diag.ok)) : feito(id));
   const restam = PASSOS.filter((p) => !ok(p.id));
   $('#v-configuracoes .pagina').classList.toggle('configurando', !conf.tudoPronto && restam.length > 0);
-  A.hidden = false;
-  if (!restam.length) {
-    A.innerHTML = `<div><h2>Agora é só fazer o seu vídeo</h2><p>Abra <b>+ Novo</b> para digitar o tema, ou escolha um estilo e copie o pedido para o Claude ou o Codex.</p></div><div class="acoes" style="margin:0"><button class="btn" id="agFazer">Fazer meu vídeo</button><button class="btn sec" id="agEstilos">Ver os estilos</button></div>`;
-    $('#agFazer').onclick = () => { mostrar('novo'); requestAnimationFrame(() => { $('#pvTema')?.focus({ preventScroll: true }); }); };
-    $('#agEstilos').onclick = () => mostrar('estilos');
-    return;
-  }
-  const prox = restam[0], n = PASSOS.findIndex((p) => p.id === prox.id) + 1, [t, d] = PASSO_AGORA[prox.id];
-  A.innerHTML = `<div><h2>${esc(t)}</h2><p>Passo ${n} de ${PASSOS.length}. ${esc(d)}</p><div class="prog" aria-hidden="true">${PASSOS.map((p) => `<i class="${ok(p.id) ? 'f' : p.id === prox.id ? 'a' : ''}"></i>`).join('')}</div></div><div class="acoes" style="margin:0"><button class="btn" id="agIr">Continuar</button></div>`;
-  $('#agIr').onclick = () => { irPara(prox.id); $('#painelPasso').scrollIntoView({ behavior: 'smooth', block: 'start' }); };
+}
+function mostrarBarraPagina(sim) {
+  const b = $('#pBarra');
+  if (!b) return;
+  b.hidden = !sim;
 }
 function irPara(id) {
+  if (id === 'pagina') id = 'objetivo';
   passoAtual = id;
+  if (id !== 'objetivo' && id !== 'estilo') mostrarBarraPagina(false);
   if (vista !== 'configuracoes') mostrar('configuracoes');
   else { desenhaPassos(); RENDER[id](); }
   $('#painelPasso')?.scrollIntoView({ block: 'nearest' });
@@ -1159,47 +1208,165 @@ const RENDER = {
     $('#mAplicar').onclick = () => enviar(false); $('#mTestar').onclick = () => enviar(true);
     prev(); if (m.avatar && !m.neutra) imgs('saida');
   },
-  async pagina() {
+  async objetivo() {
     const P = $('#painelPasso');
-    const [obs, ets, cat] = await Promise.all([api('/api/objetivos'), api('/api/estilos'), apiSeguro('/api/catalogo')]);
-    const previas = {}; ((cat && cat.reels) || []).forEach((x) => { if (x.previa && /\.mp4$/i.test(x.previa)) previas[x.id] = '/catalogo/previas/' + encodeURIComponent(x.previa); });
-    const reduz = reduzMovimento();
-    const cartaoEstilo = (x) => { const u = previas[x.id]; return `<button class="opcao tem-previa" role="radio" data-e="${esc(x.id)}" aria-checked="${x.id === estilo}"><div class="pv">${u ? `<video muted loop playsinline preload="none" data-src="${esc(u)}${reduz ? '#t=0.2' : ''}" aria-hidden="true"></video>` : '<div class="sem">Sem prévia</div>'}<span class="ok" aria-hidden="true">&#10003;</span></div><div class="tx"><b>${esc(x.nome)}</b><span>${esc(x.paraQuem)}</span></div></button>`; };
+    const obs = await api('/api/objetivos');
     const esc0 = conf.escolha || { objetivo: conf.modelo?.padrao, estilo: null };
-    let objetivo = esc0.objetivo || 'curiosidade', estilo = esc0.estilo || '', pol = conf.linha.politica, int = conf.linha.intensidade;
-    P.innerHTML = `<h2>Qual é o objetivo dos seus vídeos?</h2><p class="sub">O objetivo decide o tamanho do roteiro, o jeito de abrir, a voz e o convite final. Cada vídeo pode trocar depois, é só pedir.</p>
-      <div class="modelos" role="radiogroup" aria-label="Objetivo">${obs.map((x) => `<button class="opcao com-ic" role="radio" data-o="${esc(x.id)}" aria-checked="${x.id === objetivo}"><i class="ic-box">${I(ICONE_OBJ[x.id] || 'curiosidade')}</i><span class="tx2"><b>${esc(x.nome)}</b><span>${esc(x.paraQuem)}</span></span></button>`).join('')}</div>
-      <h2 style="margin-top:30px">E o estilo (a aparência)?</h2><p class="sub">Combina com qualquer objetivo. Sem escolher, cada objetivo usa o estilo que combina com ele. O antigo "modelo" agora é Estilo + Objetivo.</p>
-      <div class="modelos com-previa" role="radiogroup" aria-label="Estilo"><button class="opcao tem-previa" role="radio" data-e="" aria-checked="${!estilo}"><div class="pv"><div class="sem auto">${I('magia')}<span>Automático</span></div><span class="ok" aria-hidden="true">&#10003;</span></div><div class="tx"><b>O que combina com o objetivo</b><span>o estúdio escolhe</span></div></button>${ets.map(cartaoEstilo).join('')}</div>
-      <h2 style="margin-top:30px">E se a página falar de política?</h2><p class="sub">A linha só muda o ângulo e o tom, de leve. Nunca muda os fatos: tudo continua atribuído e conferido.</p>
-      <div class="acoes"><div class="segmento" id="sPol">${['neutra', 'esquerda', 'centro', 'direita'].map((x) => `<button data-x="${x}" aria-pressed="${x === pol}">${x[0].toUpperCase() + x.slice(1)}</button>`).join('')}</div>
-      <div class="segmento" id="sInt">${['leve', 'moderada'].map((x) => `<button data-x="${x}" aria-pressed="${x === int}">${x[0].toUpperCase() + x.slice(1)}</button>`).join('')}</div></div>
-      <div class="barra-salvar" id="pBarra"><div id="pResumo" class="chips-sel" aria-live="polite"></div><div class="lado"><span class="estado" id="pEstado" role="status"></span><button class="btn" id="pSalvar">${I('salvar')} Salvar</button></div></div><div id="resPag"></div>${rodape()}`;
+    let objetivo = esc0.objetivo || 'curiosidade', pol = conf.linha.politica, int = conf.linha.intensidade;
     const nomeDe = (lista, id) => (lista.find((x) => x.id === id) || {}).nome;
     const chip = (ic, rot, val) => `<span class="chip-sel"><i class="ic-box">${I(ic)}</i><span><small>${rot}</small><b>${esc(val)}</b></span></span>`;
-    const base = () => JSON.stringify([objetivo, estilo, pol, int]);
+
+    mostrarBarraPagina(true);
+    P.innerHTML = `<div class="escolha-pagina">
+      <h2>Objetivo</h2>
+      <p class="sub">Define o tamanho do roteiro, a abertura, a voz e o convite final. Cada vídeo ainda pode trocar depois, no pedido.</p>
+
+      <section class="bloco-escolha" aria-labelledby="tObj">
+        <div class="bloco-cab"><div><h3 id="tObj">Qual é o padrão da página?</h3><p class="sub">Escolha o que mais combina com o que você publica.</p></div><span class="meta">${obs.length} opções</span></div>
+        <div class="modelos-obj" role="radiogroup" aria-label="Objetivo">${obs.map((x) => `<button class="opcao com-ic" role="radio" data-o="${esc(x.id)}" aria-checked="${x.id === objetivo}" title="${esc(x.paraQuem || x.nome)}"><i class="ic-box">${I(ICONE_OBJ[x.id] || 'curiosidade')}</i><span class="tx2"><b>${esc(x.nome)}</b><span>${esc(x.paraQuem || '')}</span></span></button>`).join('')}</div>
+      </section>
+
+      <section class="bloco-escolha" aria-labelledby="tLinha">
+        <div class="bloco-cab"><div><h3 id="tLinha">Linha editorial (política)</h3><p class="sub">Só muda ângulo e tom. Fatos continuam atribuídos e conferidos.</p></div></div>
+        <div class="linha-ed">
+          <div><div class="rotulo">Lado</div><div class="segmento" id="sPol">${['neutra', 'esquerda', 'centro', 'direita'].map((x) => `<button type="button" data-x="${x}" aria-pressed="${x === pol}">${x[0].toUpperCase() + x.slice(1)}</button>`).join('')}</div></div>
+          <div id="pIntWrap"><div class="rotulo">Intensidade</div><div class="segmento" id="sInt">${['leve', 'moderada'].map((x) => `<button type="button" data-x="${x}" aria-pressed="${x === int}">${x[0].toUpperCase() + x.slice(1)}</button>`).join('')}</div></div>
+        </div>
+      </section>
+
+      <div id="resPag"></div>${rodape()}
+    </div>`;
+
+    const base = () => JSON.stringify([objetivo, pol, int]);
     let salvo = base();
-    const resumo = () => {
-      $('#pResumo').innerHTML = chip(ICONE_OBJ[objetivo] || 'curiosidade', 'Objetivo', nomeDe(obs, objetivo) || objetivo) + chip(estilo ? 'paleta' : 'magia', 'Estilo', estilo ? nomeDe(ets, estilo) || estilo : 'Automático') + chip('bandeira', 'Linha editorial', pol[0].toUpperCase() + pol.slice(1) + (pol === 'neutra' ? '' : ' · ' + int));
-      const sujo = base() !== salvo; $('#pBarra').classList.toggle('sujo', sujo); $('#pEstado').textContent = sujo ? 'Alterações não salvas' : 'Tudo salvo'; $('#pSalvar').disabled = !sujo;
+    const atualizarInt = () => {
+      const wrap = $('#pIntWrap');
+      if (!wrap) return;
+      const mostra = pol !== 'neutra';
+      wrap.hidden = !mostra;
+      wrap.setAttribute('aria-hidden', mostra ? 'false' : 'true');
     };
+    const resumo = () => {
+      $('#pResumo').innerHTML = chip(ICONE_OBJ[objetivo] || 'curiosidade', 'Objetivo', nomeDe(obs, objetivo) || objetivo) + chip('bandeira', 'Linha editorial', pol[0].toUpperCase() + pol.slice(1) + (pol === 'neutra' ? '' : ' · ' + int));
+      const sujo = base() !== salvo; $('#pBarra').classList.toggle('sujo', sujo); $('#pEstado').textContent = sujo ? 'Alterações não salvas' : 'Tudo salvo'; $('#pSalvar').disabled = !sujo;
+      atualizarInt();
+    };
+
     ligarRodape();
-    // prévias em loop: só tocam quando o cartão está à vista (e baixam só perto de aparecer); sem movimento reduzido ligado
-    const vsE = $$('.opcao.tem-previa video[data-src]');
-    if (vsE.length && 'IntersectionObserver' in window) {
-      const ob = new IntersectionObserver((es) => es.forEach((e) => { const v = e.target; if (e.isIntersecting) { if (!v.getAttribute('src')) v.src = v.dataset.src; if (!reduz) v.play().catch(() => {}); } else v.pause(); }), { rootMargin: '120px', threshold: 0.25 });
-      vsE.forEach((v) => { ob.observe(v); v.onerror = () => { v.parentElement.innerHTML = '<div class="sem">Sem prévia</div>'; }; });
-    } else vsE.forEach((v) => { v.src = v.dataset.src; });
     $$('[data-o]').forEach((b) => (b.onclick = () => { objetivo = b.dataset.o; $$('[data-o]').forEach((x) => x.setAttribute('aria-checked', x === b)); resumo(); }));
-    $$('[data-e]').forEach((b) => (b.onclick = () => { estilo = b.dataset.e; $$('[data-e]').forEach((x) => x.setAttribute('aria-checked', x === b)); resumo(); }));
     $$('#sPol button').forEach((b) => (b.onclick = () => { pol = b.dataset.x; $$('#sPol button').forEach((x) => x.setAttribute('aria-pressed', x === b)); resumo(); }));
-    $$('#sInt button').forEach((b) => (b.onclick = () => { int = b.dataset.x; $$('#sInt button').forEach((x) => x.setAttribute('aria-pressed', x === b)); }));
+    $$('#sInt button').forEach((b) => (b.onclick = () => { int = b.dataset.x; $$('#sInt button').forEach((x) => x.setAttribute('aria-pressed', x === b)); resumo(); }));
     resumo();
     $('#pSalvar').onclick = async () => {
-      const a = await post('/api/estilo-objetivo', { objetivo, estilo }), b = await post('/api/linha', { politica: pol, intensidade: int });
+      const a = await post('/api/estilo-objetivo', { objetivo }), b = await post('/api/linha', { politica: pol, intensidade: int });
       const e = a.erro || b.erro;
       conf = await api('/api/configuracao'); desenhaPassos(); atualizarPin(); if (!e) { salvo = base(); resumo(); }
-      $('#resPag').innerHTML = e ? caixaErro(e) : `<div class="caixa-ok">Salvo: objetivo ${esc(a.objetivo?.nome || objetivo)}${a.estilo ? `, estilo ${esc(a.estilo.nome)}` : ''}; linha editorial ${esc(b.politica)}${b.politica === 'neutra' ? '' : ', ' + esc(b.intensidade)}.</div>`;
+      $('#resPag').innerHTML = e ? caixaErro(e) : `<div class="caixa-ok">Salvo: objetivo ${esc(a.objetivo?.nome || objetivo)}; linha editorial ${esc(b.politica)}${b.politica === 'neutra' ? '' : ', ' + esc(b.intensidade)}.</div>`;
+    };
+  },
+  async estilo() {
+    const P = $('#painelPasso');
+    const [ets, cat] = await Promise.all([api('/api/estilos'), apiSeguro('/api/catalogo')]);
+    const previas = {}; ((cat && cat.reels) || []).forEach((x) => { if (x.previa && /\.mp4$/i.test(x.previa)) previas[x.id] = '/catalogo/previas/' + encodeURIComponent(x.previa); });
+    const reduz = reduzMovimento();
+    const esc0 = conf.escolha || { objetivo: conf.modelo?.padrao, estilo: null };
+    let estilo = esc0.estilo || '', buscaEst = '';
+    const nomeDe = (lista, id) => (lista.find((x) => x.id === id) || {}).nome;
+    const chip = (ic, rot, val) => `<span class="chip-sel"><i class="ic-box">${I(ic)}</i><span><small>${rot}</small><b>${esc(val)}</b></span></span>`;
+    const cartaoEstilo = (x) => {
+      const id = x ? x.id : '';
+      const nome = x ? x.nome : 'Automático';
+      const desc = x ? (x.paraQuem || '') : 'O estúdio escolhe o que combina com o objetivo';
+      const u = x ? previas[x.id] : null;
+      const midia = x
+        ? (u ? `<video muted loop playsinline preload="none" data-src="${esc(u)}${reduz ? '#t=0.2' : ''}" aria-hidden="true"></video>` : '<div class="sem">Sem prévia</div>')
+        : `<div class="sem auto">${I('magia')}<span>Automático</span></div>`;
+      return `<button type="button" class="opcao tem-previa" role="radio" data-e="${esc(id)}" aria-checked="${id === estilo}" title="${esc(desc || nome)}"><div class="pv">${midia}<span class="ok" aria-hidden="true">&#10003;</span></div><div class="tx"><b>${esc(nome)}</b><span>${esc(desc)}</span></div></button>`;
+    };
+
+    mostrarBarraPagina(true);
+    P.innerHTML = `<div class="escolha-pagina">
+      <h2>Estilo</h2>
+      <p class="sub">A aparência padrão dos vídeos. Clique num cartão para selecionar; a prévia maior fica à direita. Cada vídeo ainda pode trocar depois, no pedido.</p>
+
+      <section class="bloco-escolha" aria-labelledby="tEst">
+        <div class="bloco-cab"><div><h3 id="tEst">Qual visual combina com a página?</h3><p class="sub">Automático deixa o estúdio escolher conforme o objetivo.</p></div><span class="meta" id="pEstConta"></span></div>
+        <div class="barra-filtro"><input type="search" id="pEstBusca" placeholder="Filtrar: editorial, smooth, tipografia…" aria-label="Filtrar estilos" autocomplete="off"><button type="button" class="btn sec pequeno" id="pEstLimpar" hidden>Limpar</button></div>
+        <div class="estilo-picker">
+          <div class="estilo-grade" id="pEstGrade" role="radiogroup" aria-label="Estilo"></div>
+          <div class="estilo-detalhe" id="pEstDetalhe" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <div id="resPag"></div>${rodape()}
+    </div>`;
+
+    const base = () => JSON.stringify([estilo]);
+    let salvo = base();
+    let obsVideo = null;
+    const pintarDetalhe = () => {
+      const det = $('#pEstDetalhe');
+      if (!estilo) {
+        det.innerHTML = `<div class="det-topo"><b>Automático</b><p>O estúdio escolhe o estilo que combina com o objetivo de cada vídeo.</p></div><div class="det-previa"><div class="sem auto">${I('magia')}<span>Automático</span></div></div>`;
+        return;
+      }
+      const x = ets.find((e) => e.id === estilo);
+      const u = previas[estilo];
+      det.innerHTML = `<div class="det-topo"><b>${esc(x?.nome || estilo)}</b><p>${esc(x?.paraQuem || 'Estilo da página.')}</p></div><div class="det-previa">${u ? `<video muted loop playsinline preload="metadata" ${reduz ? '' : 'autoplay'} src="${esc(u)}${reduz ? '#t=0.2' : ''}" aria-label="Prévia de ${esc(x?.nome || estilo)}"></video>` : '<div class="sem">Sem prévia nesta cópia</div>'}</div>`;
+      const v = det.querySelector('video');
+      if (v) v.onerror = () => { v.replaceWith(Object.assign(document.createElement('div'), { className: 'sem', textContent: 'Sem prévia' })); };
+    };
+    const resumo = () => {
+      $('#pResumo').innerHTML = chip(estilo ? 'paleta' : 'magia', 'Estilo', estilo ? nomeDe(ets, estilo) || estilo : 'Automático');
+      const sujo = base() !== salvo; $('#pBarra').classList.toggle('sujo', sujo); $('#pEstado').textContent = sujo ? 'Alterações não salvas' : 'Tudo salvo'; $('#pSalvar').disabled = !sujo;
+      pintarDetalhe();
+    };
+    const ligarVideosGrade = () => {
+      if (obsVideo) { obsVideo.disconnect(); obsVideo = null; }
+      const vs = $$('#pEstGrade video[data-src]');
+      if (vs.length && 'IntersectionObserver' in window) {
+        obsVideo = new IntersectionObserver((es) => es.forEach((e) => {
+          const v = e.target;
+          if (e.isIntersecting) { if (!v.getAttribute('src')) v.src = v.dataset.src; if (!reduz) v.play().catch(() => {}); }
+          else v.pause();
+        }), { root: $('#pEstGrade'), rootMargin: '100px', threshold: 0.15 });
+        vs.forEach((v) => { obsVideo.observe(v); v.onerror = () => { v.parentElement.insertAdjacentHTML('afterbegin', '<div class="sem">Sem prévia</div>'); v.remove(); }; });
+      } else vs.forEach((v) => { v.src = v.dataset.src; });
+    };
+    const desenhaEstilosPagina = () => {
+      const q = semAcento(buscaEst).trim();
+      const filtrados = ets.filter((x) => !q || semAcento([x.id, x.nome, x.paraQuem].join(' ')).includes(q));
+      const autoOk = !q || semAcento('automatico').includes(q);
+      const grade = $('#pEstGrade');
+      $('#pEstConta').textContent = q ? `${filtrados.length} de ${ets.length}` : `${ets.length} estilos`;
+      $('#pEstLimpar').hidden = !buscaEst;
+      if (!filtrados.length && !autoOk) {
+        grade.innerHTML = `<div class="vazio-filtro">Nada com “${esc(buscaEst)}”. Tente <b>editorial</b> ou <b>smooth</b>.</div>`;
+        return;
+      }
+      const itens = [...(autoOk ? [null] : []), ...filtrados];
+      grade.innerHTML = itens.map((x) => cartaoEstilo(x)).join('');
+      $$('#pEstGrade [data-e]').forEach((b) => (b.onclick = () => {
+        estilo = b.dataset.e;
+        $$('#pEstGrade [data-e]').forEach((x) => x.setAttribute('aria-checked', x === b));
+        resumo();
+      }));
+      ligarVideosGrade();
+      const sel = $(`#pEstGrade [data-e="${CSS.escape(estilo)}"]`) || $('#pEstGrade [data-e=""]');
+      if (sel) sel.scrollIntoView({ block: 'nearest' });
+    };
+
+    ligarRodape();
+    $('#pEstBusca').oninput = (e) => { buscaEst = e.target.value; desenhaEstilosPagina(); };
+    $('#pEstLimpar').onclick = () => { buscaEst = ''; $('#pEstBusca').value = ''; desenhaEstilosPagina(); $('#pEstBusca').focus(); };
+    desenhaEstilosPagina();
+    resumo();
+    $('#pSalvar').onclick = async () => {
+      const objetivoAtual = conf.escolha?.objetivo || conf.modelo?.padrao || 'curiosidade';
+      const a = await post('/api/estilo-objetivo', { objetivo: objetivoAtual, estilo });
+      const e = a.erro;
+      conf = await api('/api/configuracao'); desenhaPassos(); atualizarPin(); if (!e) { salvo = base(); resumo(); }
+      $('#resPag').innerHTML = e ? caixaErro(e) : `<div class="caixa-ok">Salvo: estilo ${esc(a.estilo?.nome || (estilo ? estilo : 'Automático'))}.</div>`;
     };
   },
   teste() {
@@ -1248,11 +1415,15 @@ async function apiSeguro(u, opc, tentativa = 0) {
   try {
     const r = await fetch(u, opc);
     const txt = await r.text();
-    let j = null;
-    try { j = txt ? JSON.parse(txt) : null; } catch { j = null; }
-    // respondeu (mesmo com erro HTTP ou corpo estranho): a janela preta NÃO fechou
-    if (j == null) return { erro: r.status === 403 ? { causa: 'Este endereço não é o do estúdio local.', acao: 'Abra pelo "Abrir Estúdio" (http://127.0.0.1) e recarregue esta página.' } : RESPOSTA_ESTRANHA };
-    if (!r.ok && typeof j.erro === 'string') j.erro = { causa: 'O estúdio não conseguiu fazer isso agora.', acao: 'Tente de novo. Se repetir, clique em "Copiar diagnóstico" e mande no direct do Instagram @kaueajure.' };
+    // JSON "null" é resposta válida (ex.: /api/job sem tarefa). Antes caía em "respondeu de um jeito inesperado".
+    let j, jsonOk = false;
+    try { j = txt.trim() === '' ? null : JSON.parse(txt); jsonOk = true; } catch { j = null; }
+    if (!jsonOk) {
+      return { erro: r.status === 403 ? { causa: 'Este endereço não é o do estúdio local.', acao: 'Abra pelo "Abrir Estúdio" (http://127.0.0.1) e recarregue esta página.' } : RESPOSTA_ESTRANHA };
+    }
+    if (j && typeof j === 'object' && !r.ok && typeof j.erro === 'string') {
+      j.erro = { causa: 'O estúdio não conseguiu fazer isso agora.', acao: 'Tente de novo. Se repetir, clique em "Copiar diagnóstico" e mande no direct do Instagram @kaueajure.' };
+    }
     return j;
   } catch (err) {
     if (foiAbortado(err)) return { erro: DEMOROU, temporario: true };
@@ -1372,6 +1543,11 @@ async function desenhaPrimeiro() {
           <label class="campo"><span>Pergunta final</span><input type="text" id="pvPergunta" maxlength="160" placeholder="Ex.: O que pesou mais: o gol 50 de Neymar ou a volta ao estádio do 7 a 1?" value="${esc(pv.pergunta || '')}" aria-label="Pergunta final"></label>
           </div>
         </details>
+        <div class="refs-campo">
+          <span>Imagens de referência<small>Opcional · a IA lê e encaixa no trecho certo, sem repetir</small></span>
+          <input type="file" id="pvRefs" accept="image/jpeg,image/png,image/webp,image/gif,.jpg,.jpeg,.png,.webp,.gif" multiple aria-label="Imagens de referência">
+          <div class="refs-lista" id="pvRefsLista"></div>
+        </div>
         ${temasP.length ? `<div class="bloco-ideias"><h3>Temas com fatos conferidos</h3><div class="temas">${temasP.map((x) => `<button data-tp="${esc(x.id)}" aria-pressed="${x.id === pv.temaPronto}" title="${esc(x.gancho || '')}">${esc(x.titulo)}<small>${esc(x.gancho || '')}</small></button>`).join('')}</div></div>` : ''}
         ${exemplosP.length ? `<details class="extras-wrap bloco-ideias"><summary><span>Exemplos sem o assistente<small>O estúdio faz tudo sozinho</small></span></summary><div class="exemplos">${exemplosP.map((x) => `<button data-ex="${esc(x.id)}" aria-pressed="${x.id === pv.exemplo}">${esc(x.titulo)}</button>`).join('')}</div></details>` : ''}
         <p class="ajuda-curta">Com o seu tema, o assistente escreve o roteiro; o estúdio produz. Com um exemplo, o estúdio faz tudo sozinho.</p>
@@ -1387,6 +1563,7 @@ async function desenhaPrimeiro() {
       if (pv.exemplo) $('#pvExtras').hidden = true;
       $('#pvTema').onkeydown = (e) => { if (e.key === 'Enter') comecarPrimeiro(); };
       $('#pvFazer').onclick = () => comecarPrimeiro();
+      ligarRefsForm();
       return;
     }
     if (pv.fase === 'pergunta') { A.innerHTML = `<h2>Antes de começar</h2>${pv.pergunta}<div class="acoes"><button class="mini" id="pvVoltar">Voltar</button></div>`; $('#pvVoltar').onclick = () => resetPrimeiro(); pv.ligar?.(); return; }
@@ -1435,7 +1612,7 @@ async function desenhaPrimeiro() {
     A.innerHTML = `<h2>Fazer meu primeiro vídeo</h2>${caixaErro({ causa: 'Esta parte da página não carregou direito.', acao: 'Recarregue a página. Se repetir, feche a janela do estúdio e abra de novo pelo "Abrir Estúdio".' })}`;
   }
 }
-function resetPrimeiro() { clearTimeout(pv.timer); const { tema, idioma, temaPronto, gancho, titulo, virada, pergunta } = pv; pv = { fase: 'form', exemplo: null, tema, idioma, temaPronto, gancho, titulo, virada, pergunta }; desenhaPrimeiro(); }
+function resetPrimeiro() { clearTimeout(pv.timer); const { tema, idioma, temaPronto, gancho, titulo, virada, pergunta, refs } = pv; pv = { fase: 'form', exemplo: null, tema, idioma, temaPronto, gancho, titulo, virada, pergunta, refs: refs || [] }; desenhaPrimeiro(); }
 /* 0.6.4: primeiro carrossel (opção discreta): um exemplo pronto com a marca da pessoa, em segundos, sem voz e sem render de vídeo */
 async function primeiroCarrossel() {
   const ex = await apiSeguro('/api/carrossel/exemplos');
@@ -1455,6 +1632,63 @@ async function primeiroCarrossel() {
   }));
 }
 function perguntar(html, ligar) { pv.fase = 'pergunta'; pv.pergunta = html; pv.ligar = ligar; desenhaPrimeiro(); }
+
+function renderRefsLista(el, files, { comRemover = true } = {}) {
+  if (!el) return;
+  const lista = files || [];
+  el.innerHTML = lista.map((f, i) => {
+    const nome = f.name || f.arquivo || 'imagem';
+    const src = f._url || (f.arquivo ? `/api/projeto/${encodeURIComponent(atual)}/referencia/${encodeURIComponent(f.arquivo)}?t=${Date.now()}` : '');
+    return `<div class="ref-chip" data-i="${i}"><img alt="" src="${esc(src)}"><span>${esc(nome)}</span>${comRemover ? `<button type="button" data-rm="${i}" aria-label="Remover">×</button>` : ''}</div>`;
+  }).join('');
+  if (comRemover) el.querySelectorAll('[data-rm]').forEach((b) => {
+    b.onclick = () => {
+      const i = +b.dataset.rm;
+      const next = (pv.refs || []).slice();
+      const morta = next.splice(i, 1)[0];
+      if (morta?._url) URL.revokeObjectURL(morta._url);
+      pv.refs = next;
+      renderRefsLista(el, pv.refs);
+    };
+  });
+}
+function ligarRefsForm() {
+  const inp = $('#pvRefs');
+  const lista = $('#pvRefsLista');
+  if (!inp) return;
+  if (!Array.isArray(pv.refs)) pv.refs = [];
+  renderRefsLista(lista, pv.refs);
+  inp.onchange = () => {
+    (pv.refs || []).forEach((f) => { if (f._url) URL.revokeObjectURL(f._url); });
+    pv.refs = Array.from(inp.files || []).slice(0, 8).map((f) => {
+      f._url = URL.createObjectURL(f);
+      return f;
+    });
+    renderRefsLista(lista, pv.refs);
+    inp.value = '';
+  };
+}
+async function enviarReferencias(nome, files) {
+  const enviados = [];
+  for (const f of files || []) {
+    if (!(f instanceof File) && !(f instanceof Blob)) continue;
+    try {
+      const r = await fetch('/api/projeto/referencia', {
+        method: 'POST',
+        headers: {
+          'x-token': TOKEN,
+          'x-projeto': nome,
+          'x-nome': f.name || 'referencia.jpg',
+          'content-type': f.type || 'application/octet-stream'
+        },
+        body: f
+      }).then((x) => x.json());
+      if (!r.erro) enviados.push(r.arquivo || f.name);
+    } catch { /* segue as outras */ }
+  }
+  return enviados;
+}
+
 async function comecarPrimeiro(opc = {}) {
   if (!opc.repetir) {
     pv.tema = ($('#pvTema')?.value || '').trim();
@@ -1476,6 +1710,12 @@ async function comecarPrimeiro(opc = {}) {
   const r = await postSeguro('/api/primeiro', { tema: pv.exemplo ? '' : pv.tema, exemplo: pv.exemplo, temaPronto: pv.exemplo ? undefined : pv.temaPronto || undefined, idioma: pv.idioma, nome: pv.nome || undefined, gancho: pv.exemplo ? undefined : pv.gancho || undefined, titulo: pv.exemplo ? undefined : pv.titulo || undefined, virada: pv.exemplo ? undefined : pv.virada || undefined, pergunta: pv.exemplo ? undefined : pv.pergunta || undefined });
   if (r.erro) { pv.fase = 'erro'; pv.erro = r.erro; pv.irPara = r.irPara || null; pv.etapaFalhou = null; return desenhaPrimeiro(); }
   Object.assign(pv, { nome: r.nome, modo: r.modo, voz: r.voz, pedido: r.pedido || null, ate: -1, job: null, erro: null, irPara: null, preparando: r.modo === 'tema', copiado: false });
+  if (!pv.exemplo && pv.refs?.length) {
+    await enviarReferencias(r.nome, pv.refs);
+    const proj = await apiSeguro('/api/projeto/' + encodeURIComponent(r.nome));
+    if (proj && !proj.erro && proj.pedido) r.pedido = proj.pedido;
+    pv.pedido = r.pedido;
+  }
   if (r.modo === 'tema') {
     pv.fase = 'esperando';
     lembrar.gravar({ nome: r.nome, modo: 'tema', pedido: r.pedido, voz: r.voz, tema: pv.tema, gancho: pv.gancho, titulo: pv.titulo, virada: pv.virada, pergunta: pv.pergunta });
@@ -1616,7 +1856,7 @@ function desenhaEstilos() {
     b.disabled = true;
     const r = await post('/api/estilo-objetivo', { objetivo: conf?.escolha?.objetivo || conf?.modelo?.padrao || 'curiosidade', estilo: b.dataset.padrao });
     if (r && !r.erro) { conf = await api('/api/configuracao'); desenhaPassos(); atualizarPin(); desenhaEstilos(); }
-    else { b.disabled = false; const av = b.closest('.est').querySelector('.copiado'); if (av) av.textContent = 'Não consegui salvar agora. Tente em Configurações > Estilo e objetivo.'; }
+    else { b.disabled = false; const av = b.closest('.est').querySelector('.copiado'); if (av) av.textContent = 'Não consegui salvar agora. Tente em Configurações > Estilo.'; }
   }));
   // prévia só toca quando está à vista e pausa ao sair da tela; o arquivo só começa a baixar perto de aparecer
   const vs = $$('#estCorpo video[data-src]');
@@ -1633,7 +1873,7 @@ function desenhaEstilos() {
 }
 $$('#estTipo button').forEach((b) => (b.onclick = () => { est.tipo = b.dataset.t; desenhaEstilos(); }));
 $('#estBusca').oninput = (e) => { est.busca = e.target.value; desenhaEstilos(); };
-$('#estPadrao').onclick = () => irPara('pagina');
+$('#estPadrao').onclick = () => irPara('estilo');
 
 const PEDIDOS_CARROSSEL = [
   ['Faça um carrossel sobre [assunto].', 'O básico: o assistente (Claude Code ou Codex) escolhe o estilo que combina com o assunto.'],
@@ -1808,7 +2048,25 @@ async function abre(nome) {
 function painel(d) {
   const p = $('#painel');
   if (aba === 'roteiro') p.innerHTML = `<div class="bloco"><h3>Texto narrado</h3><pre>${esc((d.roteiro || '').split('\n').filter((l) => !/^(STATUS|GANCHOS):/i.test(l)).join('\n').trim())}</pre></div>`;
-  if (aba === 'fontes') p.innerHTML = `<div class="bloco"><h3>Pendências antes de publicar</h3>${d.pendencias.length ? `<ul class="pend">${d.pendencias.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : '<p class="ok-txt">Nenhuma pendência.</p>'}</div><div class="bloco"><h3>Fontes registradas</h3><pre>${esc(d.fontes || 'Sem fontes.md')}</pre></div>`;
+  if (aba === 'fontes') {
+    p.innerHTML = `<div class="bloco"><h3>Pendências antes de publicar</h3>${d.pendencias.length ? `<ul class="pend">${d.pendencias.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : '<p class="ok-txt">Nenhuma pendência.</p>'}</div><div class="bloco refs-bloco"><h3>Imagens de referência</h3>
+    <p class="dica">A IA lê essas fotos e encaixa cada uma no trecho certo do roteiro (sem repetir, a não ser que precise).</p>
+    <div class="refs-lista" id="projRefsLista">${(d.referencias || []).map((x) => `<div class="ref-chip"><img alt="" src="/api/projeto/${esc(d.nome)}/referencia/${esc(x.arquivo)}?t=${Date.now()}"><span>${esc(x.arquivo)}</span></div>`).join('') || '<span class="dica">Nenhuma ainda.</span>'}</div>
+    <div class="acoes" style="margin-top:10px"><label class="btn sec pequeno" for="projRefs" style="cursor:pointer">Adicionar imagens</label><input type="file" id="projRefs" accept="image/jpeg,image/png,image/webp,image/gif,.jpg,.jpeg,.png,.webp,.gif" multiple hidden></div>
+    <div id="projRefsMsg" class="dica" style="margin-top:8px"></div>
+  </div><div class="bloco"><h3>Fontes registradas</h3><pre>${esc(d.fontes || 'Sem fontes.md')}</pre></div>`;
+    const projRefs = $('#projRefs');
+    if (projRefs) projRefs.onchange = async () => {
+      const files = Array.from(projRefs.files || []).slice(0, 8);
+      projRefs.value = '';
+      if (!files.length) return;
+      const msg = $('#projRefsMsg');
+      if (msg) msg.textContent = 'Enviando imagens…';
+      const ok = await enviarReferencias(d.nome, files);
+      if (msg) msg.textContent = ok.length ? `${ok.length} imagem(ns) anexada(s). Peça ao assistente para encaixar no roteiro.` : 'Não consegui enviar. Tente JPG ou PNG menor.';
+      if (ok.length) abre(d.nome);
+    };
+  }
   // 0.6.12: fala x imagem, beat a beat (nota 0 = o que aparece não tem relação com a fala), e foto que não veio, em destaque
   const NOTA = ['sem relação', 'apoio do assunto', 'casa com a fala', 'mostra o que a fala diz'];
   const fotosFalhas = (d.relatorio?.avisos || []).filter((a) => a.tipo === 'foto-nao-encontrada');
@@ -1827,7 +2085,7 @@ function ligarDemo() {
   if (!conf.demonstracao) return;
   let fechada = false;
   try { fechada = localStorage.getItem('demoFechada') === '1'; } catch { /* sem armazenamento */ }
-  const mostrar = (sim) => { d.hidden = !sim; $('#demoMostrar').hidden = sim; if (sim && !v.src) v.src = '/demo/demonstracao.mp4'; };
+  const mostrar = (sim) => { d.hidden = !sim; const link = $('#demoVer'); if (link) link.hidden = sim; if (sim && !v.src) v.src = '/demo/demonstracao.mp4'; };
   // primeiro uso: a página abre com a demonstração; depois do vídeo de teste, ela fica num link
   mostrar(!fechada && !conf.teste.feito);
   // navegador sem o formato de vídeo (raro): mostra o quadro do gancho e abre o vídeo no player do computador
@@ -1837,12 +2095,7 @@ function ligarDemo() {
   $('#demoComecar').onclick = () => { v.pause?.(); irPara(conf.voz.escolhida && conf.voz.pronta ? 'teste' : 'voz'); };
 }
 function ligarConfig() {
-  const c = $('#cfgTele');
-  c.checked = !!conf.telemetria?.ligada;
-  c.onchange = async () => {
-    const r = await postSeguro('/api/telemetria', { ligada: c.checked });
-    $('#cfgRes').textContent = r.erro ? r.erro.causa : r.ligada ? 'Relatório de erro ligado.' : 'Relatório de erro desligado: nada é mandado. Quando algo falhar, use "Copiar diagnóstico" e mande no direct.';
-  };
+  /* relatório de erro saiu da tela; a telemetria continua pelo que já estava no config */
 }
 
 /* ---------------- início ---------------- */
@@ -1918,9 +2171,9 @@ window.addEventListener('error', (ev) => { if (ev && ev.target && ev.target !== 
   atualizarPin();
   ligarDemo();
   ligarConfig();
-  if (conf.tudoPronto) { $('#boasVindas').textContent = 'Seu estúdio está pronto'; $('#boasSub').textContent = 'Tudo configurado. Para mudar a voz, a marca, o estilo ou o objetivo, escolha o passo abaixo.'; }
+  if (conf.tudoPronto) { $('#boasVindas').textContent = 'Configurações'; $('#boasSub').textContent = 'Voz, marca, objetivo, estilo e vídeo de teste.'; }
   else if (!conf.marca.neutra) $('#boasVindas').textContent = `Olá, ${conf.marca.nome}`;
-  passoAtual = PASSOS.find((p) => p.id !== 'instalacao' && !conf.pronto[p.id])?.id || 'instalacao';
+  passoAtual = PASSOS.find((p) => p.id !== 'instalacao' && !feito(p.id))?.id || 'instalacao';
   if (!conf.instalado && !conf.tudoPronto) passoAtual = 'instalacao';
   desenhaPassos(); RENDER[passoAtual]();
   if (passoAtual !== 'instalacao') carregaDiag();

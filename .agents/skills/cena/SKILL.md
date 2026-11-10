@@ -18,6 +18,15 @@ Estilo de kit aberto (letreiro, interface, colagem, cartões, tubo, impresso, ri
 
 **Modelo de vídeo** (não confundir com o modelo de cena acima): o do STATUS do roteiro ou o padrão da página (`npm run modelos -- --ver <id>`). Dele vêm o `estilo` (e os `efeitos`) quando a cena não define, os cenários preferidos (o primeiro é o padrão), as cenas compostas e as peças sugeridas (`pecasBase`), os títulos (`por-etapa`: "Passo 1", "Passo 2"), a câmera, a transição e o ritmo (`beatSeg`, `beatsMax`). O que você escrever no `cena.json` sempre vence o modelo. Peça que o tema pede e não está no modelo nasce no `pecas.js` do projeto, como sempre.
 
+## Imagens de referência da pessoa (antes do plano)
+Se existir `projetos/<nome>/assets/referencias/` (ou `referencias.md` / seção no `PEDIDO-DO-ESTUDIO.md`):
+1. Liste os arquivos e **abra cada imagem com Read** (não chute o conteúdo pelo nome).
+2. Cruze com o roteiro e o `palavras.json`: para cada foto, escolha **o beat** em que a fala combina com o que a imagem mostra.
+3. Coloque no beat: `{"tipo": "imagem", "arquivo": "assets/referencias/<arquivo>", ...}` (forma `card` ou `circulo` conforme o assunto). Registre em `fontes.md` como fornecida pela página.
+4. **Cada arquivo entra no máximo uma vez** no `cena.json`, salvo se a fala pedir de novo o mesmo assunto de forma clara (aí pode repetir). Não espalhe a mesma foto em vários beats “para preencher”.
+5. Foto que não casa com nenhum trecho: deixe de fora e diga em uma linha no relatório; não force.
+6. Essas fotos **já foram escolhidas pela pessoa**: não peça aprovação de novo (diferente das fotos buscadas no Commons).
+
 ## Método
 1. **Ache a analogia visual.** Um objeto ou par de objetos que carregue a ideia do começo ao fim (um cubo que é o buraco e uma lâmina que é a tampa; uma pilha de moedas que encolhe). Se a ideia é abstrata, use ícone em traço.
 2. **Divida em beats por ideia**, não por frase: cada beat é uma ideia. Marque `palavras: [i, j]` com os índices do `palavras.json`. Beats de 1,5 a 3,5 s (veja Ritmo abaixo).
