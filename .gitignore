@@ -4,8 +4,9 @@ node_modules/
 !.env.exemplo
 .claude/settings.local.json
 .programas/
-projetos/*/saida/quadros/
-projetos/*/cache/
+projetos/
+marca/
+carrosseis/
 .estudio/
 ferramentas/instalador/pecas/
 .licenca/

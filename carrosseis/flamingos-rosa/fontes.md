@@ -1,5 +1,0 @@
-# Fontes: flamingos-rosa
-
-## Imagens
-- assets/flamingos.jpg: foto "009 Greater flamingos male and female in the Camargue during mating season Photo by Giles Laurent.jpg", autor Giles Laurent, licença CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons https://commons.wikimedia.org/wiki/File:009_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg. Crédito para a legenda do post: "Foto: Giles Laurent (CC BY-SA 4.0)". Baixada em 2026-10-20 por scripts/buscar-imagem.mjs.
-- assets/flamingo-bando.jpg: foto "Flamenco común (Phoenicopterus roseus), Walvis Bay, Namibia, 2018-08-05, DD 30.jpg", autor Diego Delso, licença CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons https://commons.wikimedia.org/wiki/File:Flamenco_com%C3%BAn_(Phoenicopterus_roseus),_Walvis_Bay,_Namibia,_2018-08-05,_DD_30.jpg. Crédito para a legenda do post: "Foto: Diego Delso (CC BY-SA 4.0)". Baixada em 2026-10-20 por scripts/buscar-imagem.mjs.

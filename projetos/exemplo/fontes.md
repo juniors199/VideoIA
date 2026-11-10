@@ -1,9 +1,0 @@
-# Fontes: Sua hora vai valer 10% a mais (exemplo do kit)
-
-Frases e números iguais aos do Reel aprovado jornada-40h-hora-vale-mais-v4 (checagem de 19/10/2026, reconferida em 26 e 27/10/2026). Sem pessoa citada pelo nome.
-
-- EC 141/2026 promulgada em 16/10/2026: fim da 6x1, jornada máxima de 44h para 40h semanais, sem redução de salário. Agência Brasil, 16/10/2026 (https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/congresso-promulga-emenda-do-fim-da-6x1-escala-5x2-comeca-em-60-dias); Correio da Manhã, 16/10/2026 (https://www.correiodamanha.com.br/politica/2026/10/327551-congresso-promulga-fim-da-escala-6x1-e-preve-jornada-de-40-horas.html); Arpen-SP (https://www.arpensp.org.br/noticia/congresso-promulga-emenda-que-acaba-com-escala-6x1-e-estabelece-jornada-maxima-de-40-horas-semanais).
-- Transição (vai na legenda do post): 42h em cerca de 60 dias e 40h doze meses depois. Agência Brasil; SBT News (https://sbtnews.sbt.com.br/noticia/brasil/fim-da-escala-6x1-promulgada-quando-comeca-a-valer).
-- Salário mínimo de 2026: R$ 1.621 (Decreto 12.797/2025). CNB-SP (https://cnbsp.org.br/2025/12/30/dou-decreto-presidencia-da-republica-n-12-797-2025-dispoe-sobre-o-valor-do-salario-minimo-a-vigorar-a-partir-de-1o-de-janeiro-de-2026/); Super Rádio Tupi (https://www.tupi.fm/economia/governo-publica-decreto-que-reajusta-salario-minimo-para-r-1-621/).
-- Divisor do salário-hora: 220 para 44h semanais e 200 para 40h (Súmula 431 do TST; CLT art. 64). TRT-3 (https://portal.trt3.jus.br/internet/conheca-o-trt/comunicacao/noticias-juridicas/importadas-2011-2012/divisor-200-deve-ser-aplicado-em-jornada-de-40-horas-semanais-28-05-2012-05-58-acs); COAD; Migalhas.
-- Conta: R$ 1.621 / 220 = R$ 7,37; R$ 1.621 / 200 = R$ 8,11; 220 / 200 = 1,10, ou seja, 10% a mais por hora quando a jornada chegar a 40h.
