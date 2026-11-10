@@ -80,6 +80,13 @@ test('estúdio web: só o endereço local, token em todo POST, chave entra e nã
     assert.equal(pg.status, 200);
     const token = /const TOKEN = '([0-9a-f]{32})'/.exec(pg.texto)[1];
     assert.equal((await pedir(e.porta, '/api/configuracao', { host: 'site-malicioso.com' })).status, 403, 'Host diferente é recusado');
+    // proxy/navegador às vezes manda Host sem a porta: continua local, e a resposta é JSON (senão a página achava que o estúdio fechou)
+    const localSemPorta = await pedir(e.porta, '/api/ping', { host: 'localhost' });
+    assert.equal(localSemPorta.status, 200, 'Host localhost sem porta é o endereço local');
+    assert.equal(localSemPorta.json?.ilustrando, true);
+    const foraJson = await pedir(e.porta, '/api/ping', { host: 'evil.example' });
+    assert.equal(foraJson.status, 403);
+    assert.ok(foraJson.json && foraJson.json.erro, '403 de Host vem em JSON para a página não confundir com queda');
     assert.equal((await pedir(e.porta, '/api/voz', { metodo: 'POST', corpo: { voz: 'mock' } })).status, 403, 'POST sem token é recusado');
     assert.equal((await pedir(e.porta, '/api/voz', { metodo: 'POST', corpo: { voz: 'mock' }, token: 'f'.repeat(32) })).status, 403);
 

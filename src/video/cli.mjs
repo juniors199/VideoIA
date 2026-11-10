@@ -1,4 +1,4 @@
-/* Ilustrando Studio 0.6.45. Pacote C-000000000000.  */
+/* Estudio de videos 0.6.45. Pacote C-000000000000.  */
 /*
  * 
  * 
@@ -18,8 +18,8 @@ N\xE3o consegui entender o formato pedido: ${o.message}`),process.exit(1)}try{(a
 `+(t?`${t}
   (detalhe t\xE9cnico:${n?`
     `:" "}${i})`:`O v\xEDdeo parou por um erro que o est\xFAdio n\xE3o reconheceu.
-  O que fazer: clique em "Tentar de novo". Se repetir, clique em "Copiar diagn\xF3stico" e mande pelo direct do Instagram @ilustrandocuriosidades (a resposta vem em at\xE9 24 horas).
+  O que fazer: clique em "Tentar de novo". Se repetir, clique em "Copiar diagn\xF3stico" e mande pelo direct do Instagram @kaueajure (a resposta vem em at\xE9 24 horas).
   (detalhe t\xE9cnico: ${s.slice(0,400)})`)),process.env.ILU_TELEMETRIA_PAI!=="1")try{const{registrarFalha:r,fraseAviso:c}=await import("../telemetria.mjs"),{traduzirErro:p}=await import("./erros.mjs"),{codigoComDetalhe:u}=await import("./falha-detalhe.mjs");let g="";try{const{textoDiagnostico:v}=await import("../estudio/diagnostico.mjs");g=v({linhas:[...s.split(`
 `),...String(o?.stack||"").split(`
 `).slice(1,8)].map(w=>w.trim()).filter(Boolean).slice(-25),etapa:"v\xEDdeo pelo assistente (cli)",erro:{causa:t||s.slice(0,300)}})}catch{}const h=await r({etapa:"cli-video",codigo:u(o,p(o)?.codigo||"sem-traducao"),diagnostico:g});console.error(`  ${c(h)}
-  Ajuda: direct do Instagram @ilustrandocuriosidades (https://ig.me/m/ilustrandocuriosidades). Para o diagn\xF3stico, abra o est\xFAdio web e clique em "Copiar diagn\xF3stico".`)}catch{}process.exit(1)}
+  Ajuda: direct do Instagram @kaueajure (https://ig.me/m/kaueajure). Para o diagn\xF3stico, abra o est\xFAdio web e clique em "Copiar diagn\xF3stico".`)}catch{}process.exit(1)}

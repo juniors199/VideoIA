@@ -1,6 +1,6 @@
 ---
 name: carrossel
-description: Cria um carrossel do Ilustrando (6 a 10 slides) e gera os PNGs, sem paradas de aprovação. Escolhe entre os slides clássicos e os virais (post estilo rede de texto curto, fio, jornal, plantão, conversa, nota do celular, gráfico, quiz, meme com rostos próprios, citação com foto, revista, colagem, tipográfico e outros) pelo tema e pelo tipo de página. Use quando a pessoa pedir um carrossel.
+description: Cria um carrossel do Estudio de videos (6 a 10 slides) e gera os PNGs, sem paradas de aprovação. Escolhe entre os slides clássicos e os virais (post estilo rede de texto curto, fio, jornal, plantão, conversa, nota do celular, gráfico, quiz, meme com rostos próprios, citação com foto, revista, colagem, tipográfico e outros) pelo tema e pelo tipo de página. Use quando a pessoa pedir um carrossel.
 ---
 
 

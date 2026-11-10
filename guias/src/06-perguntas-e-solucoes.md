@@ -227,7 +227,7 @@ Render parado (energia, computador dormiu, janela fechada): rode de novo, ele co
 
 # Como pedir ajuda {o direct, o diagnóstico e o relatório de erro}
 
-Toda tela de erro tem **Copiar diagnóstico** e **Abrir o direct**. Clique no primeiro, depois no segundo, cole no direct do Instagram **@ilustrandocuriosidades** (ig.me/m/ilustrandocuriosidades) e escreva em uma frase o que estava fazendo: "Pedi um vídeo sobre o CEP e parou no render." O diagnóstico leva a versão, o sistema, o que faltou e as últimas linhas do erro. **Não leva chave, e-mail nem o nome do seu computador.**
+Toda tela de erro tem **Copiar diagnóstico** e **Abrir o direct**. Clique no primeiro, depois no segundo, cole no direct do Instagram **@kaueajure** (ig.me/m/kaueajure) e escreva em uma frase o que estava fazendo: "Pedi um vídeo sobre o CEP e parou no render." O diagnóstico leva a versão, o sistema, o que faltou e as últimas linhas do erro. **Não leva chave, e-mail nem o nome do seu computador.**
 
 Sem o botão? Mande a mensagem exata (print sem chave), o sistema e o assistente.
 

@@ -56,7 +56,7 @@ test('famílias: tipos novos validam, usam a marca dos tokens e mantêm a moldur
     }
   }
   const css = estiloFamilias(baseDaFamilia('interface', 'escuro', OUTRA), OUTRA, {});
-  for (const f of ['familias.mjs', 'elementos.mjs']) assert.ok(!/@ilustrandocuriosidadesbr|#FF7A2F/i.test(fs.readFileSync(path.join(RAIZ, 'src/carrossel', f), 'utf8')), `${f} sem marca cravada`);
+  for (const f of ['familias.mjs', 'elementos.mjs']) assert.ok(!/@exemplo|#FF7A2F/i.test(fs.readFileSync(path.join(RAIZ, 'src/carrossel', f), 'utf8')), `${f} sem marca cravada`);
   assert.ok(css.length > 1000);
 });
 

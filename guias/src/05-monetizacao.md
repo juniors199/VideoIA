@@ -3,7 +3,7 @@ titulo: *Monetização* honesta
 tituloCurto: Guia 05 · Monetização
 numero: 05
 rotulo: Guia 05 de 06
-sub: Os caminhos para a página gerar renda: programas das redes, afiliados, o afiliado do Método Ilustrando, produto próprio, publis e serviço para clientes. Com requisitos, fontes e datas.
+sub: Os caminhos para a página gerar renda: programas das redes, afiliados, o afiliado do Estudio de videos, produto próprio, publis e serviço para clientes. Com requisitos, fontes e datas.
 versao: 0.6.4
 data: 27/10/2026
 sumarioIntro: Comece pela seção 01 e pelo plano por fase (seção 11). Os requisitos foram conferidos em 18/10/2026 e mudam sem aviso: o painel de cada app é a palavra final.
@@ -20,7 +20,7 @@ Página de conteúdo pode virar fonte de renda. Os números deste guia são **re
 | Caminho | Desde quando | Seção |
 |---|---|---|
 | Afiliado de cursos (Hotmart, Kiwify) | primeiro post | 05 |
-| **Afiliado do Método Ilustrando (70%)** | primeiro post | 07 |
+| **Afiliado do Estudio de videos (70%)** | primeiro post | 07 |
 | Afiliado de lojas (Shopee, Mercado Livre, Amazon) | primeiro post (Amazon: 3 vendas em 180 dias) | 04 |
 | Programas das redes | de 500 a 10 mil seguidores, conforme a rede | 02 |
 | Serviço para clientes | assim que dominar o estúdio | 10 |
@@ -122,7 +122,7 @@ Pelo Guia de Publicidade por Influenciadores do CONAR (edição de 12/05/2026, s
 
 Nunca: esconder que é afiliado, colar link em comentário de outras páginas, post só de venda (no máximo 2 por semana, dentro de um post que ensina), publi política paga.
 
-# Afiliado do Método Ilustrando {70% de comissão}
+# Afiliado do Estudio de videos {70% de comissão}
 
 | Ponto | Como é |
 |---|---|
@@ -139,7 +139,7 @@ As regras:
 
 - Identifique como link de afiliado (seção 06).
 - Pode falar de seguidores, visualizações e vendas, **com números seus e reais**. Não invente número nem prazo.
-- Não use a marca do Ilustrando como sua nem crie perfil que pareça oficial. Não revenda nem distribua os arquivos: indicar pelo link é o caminho permitido.
+- Não use a marca do Estudio de videos como sua nem crie perfil que pareça oficial. Não revenda nem distribua os arquivos: indicar pelo link é o caminho permitido.
 - Diga o que é preciso para usar: assinatura do Claude ou do ChatGPT com Codex, paga pela pessoa, e uma voz (a grátis vem junto; a ElevenLabs é paga à parte). Quem compra sem saber trava no começo e a comissão some.
 
 # Produto próprio {quando o público já pede}

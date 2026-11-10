@@ -34,7 +34,7 @@ Escreva a legenda deste vídeo usando o modelo 13 de templates/rotina/legendas-c
 
 ## Marcadores a trocar
 
-- `AFILIADO_URL`: o link do programa de afiliados do Método Ilustrando (Guia 05, seção 08). Aparece no Guia 05 e nos textos de mensagem.
+- `AFILIADO_URL`: o link do programa de afiliados do Estudio de videos (Guia 05, seção 08). Aparece no Guia 05 e nos textos de mensagem.
 - `[PALAVRA]`, `[tema]`, `[fonte]` e tudo entre colchetes: troque antes de publicar.
 
 Sem promessa de resultado: estes modelos organizam a produção. Seguidores, visualizações e renda dependem do conteúdo, do nicho, da constância e das regras de cada plataforma.

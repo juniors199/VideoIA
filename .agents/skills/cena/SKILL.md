@@ -1,6 +1,6 @@
 ---
 name: cena
-description: Escreve o cena.json de um vídeo do Ilustrando, o que aparece na tela em cada trecho da narração. Use depois da narração, antes do QA.
+description: Escreve o cena.json de um vídeo do Estudio de videos, o que aparece na tela em cada trecho da narração. Use depois da narração, antes do QA.
 ---
 
 

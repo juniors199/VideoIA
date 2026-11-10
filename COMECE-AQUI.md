@@ -1,9 +1,9 @@
 ---
 titulo: Comece *aqui*
 layout: folha
-rotulo: Método Ilustrando · os primeiros passos
+rotulo: Estudio de videos · os primeiros passos
 sub: O Método é uma pasta que o seu assistente (Claude Code ou Codex) usa. Você escreve o que quer e ele faz o vídeo. Num computador Mac ou Windows (não roda em celular nem tablet).
-rodape: Travou? Copiar diagnóstico e Abrir o direct (ig.me/m/ilustrandocuriosidades). Garantia: 7 dias.
+rodape: Travou? Copiar diagnóstico e Abrir o direct (ig.me/m/kaueajure). Garantia: 7 dias.
 ---
 
 

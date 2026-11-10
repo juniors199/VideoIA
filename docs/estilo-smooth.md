@@ -2,7 +2,7 @@
 
 # Estilos Smooth (motion design com fluidez de After Effects)
 
-Porte completo do Fluido, projeto do mesmo autor do estúdio, integrado ao Ilustrando com a autorização dele (04/11/2026). Análise detalhe por detalhe feita fora do kit. A técnica (curvas do After, câmera com motivo, palavra que sai do desfoque, vidro, gelo e breu) foi reescrita para o motor do estúdio: o quadro é DOM com perspectiva CSS e cada propriedade é função pura do tempo (trilha e diretor), sem GSAP, sem HyperFrames, sem rede.
+Porte completo do Fluido, projeto do mesmo autor do estúdio, integrado ao Estudio de videos com a autorização dele (04/11/2026). Análise detalhe por detalhe feita fora do kit. A técnica (curvas do After, câmera com motivo, palavra que sai do desfoque, vidro, gelo e breu) foi reescrita para o motor do estúdio: o quadro é DOM com perspectiva CSS e cada propriedade é função pura do tempo (trilha e diretor), sem GSAP, sem HyperFrames, sem rede.
 
 ## Os seis estilos (escolha por `Estilo: <id>.` no STATUS ou `--estilo=<id>`)
 

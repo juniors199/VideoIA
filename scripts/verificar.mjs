@@ -24,7 +24,7 @@ const info = (m) => console.log(`      ${m}`);
 const nomes = (xs, n = 6) => xs.slice(0, n).map((x) => x.rel).join(', ') + (xs.length > n ? ` e mais ${xs.length - n}` : '');
 
 const p = infoPacote(RAIZ);
-console.log(`Estúdio Ilustrando ${p.versao || '(sem VERSAO)'} (open-source)\n`);
+console.log(`Estudio de videos ${p.versao || '(sem VERSAO)'} (open-source)\n`);
 let grave = false;
 
 const r = conferir(RAIZ, { so: 'tudo' });

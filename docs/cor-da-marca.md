@@ -2,7 +2,7 @@
 
 # Cor da marca nos estilos (auditoria e regra)
 
-Regra do estúdio (02/11/2026, reforçada em 03/11/2026): nos estilos de vídeo a cor de destaque (marca-texto, halo, etiqueta, fita, sublinhado, número, ícone ativo, barra, botão) é a da identidade da página, nunca cor fixa. No caso do Ilustrando é o laranja; quem compra personaliza em `marca/tokens.json` (`npm run marca`). Tons mais claros, mais escuros ou translúcidos são derivados dessa cor.
+Regra do estúdio (02/11/2026, reforçada em 03/11/2026): nos estilos de vídeo a cor de destaque (marca-texto, halo, etiqueta, fita, sublinhado, número, ícone ativo, barra, botão) é a da identidade da página, nunca cor fixa. No caso do Estudio de videos é o laranja; quem compra personaliza em `marca/tokens.json` (`npm run marca`). Tons mais claros, mais escuros ou translúcidos são derivados dessa cor.
 
 ## Como o motor lê a cor
 - A fonte única é `spec.marca.destaque`, que o planejador monta de `marca/tokens.json` (`marcaDe` em `src/video/plano.mjs`). `ILU_TOKENS=<arquivo>` aponta outro arquivo de tokens só para teste e prévia (vídeo e carrossel).
@@ -80,7 +80,7 @@ Também revisados a olho, 3 a 6 quadros de cada estilo alterado, em laranja e em
 
 ## Não confirmado
 - O estúdio pode passar a usar cor de marca também nos estilos monocromáticos (pontilhismo, linhas, anatomia, fino, preto-branco, impresso). Hoje ficam neutros por desenho.
-- Os projetos de exemplo e as prévias do catálogo de cada estilo foram renderizados com a marca laranja do Ilustrando.
+- Os projetos de exemplo e as prévias do catálogo de cada estilo foram renderizados com a marca laranja do Estudio de videos.
 
 ## Bible (08/11/2026)
 `estilo-bible-cenas2.js` (#16263F, azul-noite do mar, misturado com a marca antes de usar; #8FAE5B, verde da folha de oliveira) e `estilo-bible-bichos.js` (#8FAE5B e #3C4F22, folha e nervura) têm cor fixa só de cenário e de material do objeto; destaque de texto, número, halo, fogo, luz e corpos leem a marca (`tonsBible`). Registrado em `test/fixtures/cor-da-marca-excecoes.json`.

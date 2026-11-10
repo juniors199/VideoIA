@@ -1,4 +1,4 @@
-# Estúdio Ilustrando: comandos que o Codex pode rodar fora do sandbox sem perguntar.
+# Estudio de videos: comandos que o Codex pode rodar fora do sandbox sem perguntar.
 # Só valem quando a pasta do estúdio está marcada como confiável no Codex.
 # Por que: a narração (ElevenLabs, Fish Audio) e o download do Chromium precisam de internet,
 # e o sandbox padrão do Codex não tem internet. Nada além dos comandos do estúdio fica liberado.

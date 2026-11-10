@@ -77,7 +77,7 @@ test('carrossel virais: a marca vem dos tokens (nome, @ e cor da página), nunca
   assert.ok(!/twitter|x\.com|verified/i.test(tw), 'post sem a marca da rede');
   const css = estiloVirais(baseDoVisual(tokens, 'claro'), OUTRA, {}, 'claro', tokens);
   assert.ok(css.includes('#2F9BFF'), 'CSS usa o destaque da página');
-  for (const f of fs.readdirSync(path.join(RAIZ, 'src/carrossel'))) assert.ok(!/@ilustrandocuriosidadesbr|#FF7A2F/i.test(fs.readFileSync(path.join(RAIZ, 'src/carrossel', f), 'utf8')), `${f} sem marca cravada`);
+  for (const f of fs.readdirSync(path.join(RAIZ, 'src/carrossel'))) assert.ok(!/@exemplo|#FF7A2F/i.test(fs.readFileSync(path.join(RAIZ, 'src/carrossel', f), 'utf8')), `${f} sem marca cravada`);
 });
 
 test('carrossel virais: destaque legível como texto nos visuais claro e papel', () => {

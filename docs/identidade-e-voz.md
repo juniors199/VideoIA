@@ -40,7 +40,7 @@ Em assunto que está em alta, **o protagonista que todo mundo está procurando a
 3. **O número que não bate:** "A diagonal do quadrado é 41% maior que o lado."
 
 ## Handle no topo e assinatura no rodapé
-- Topo de todo vídeo e cabeçalho do carrossel: o @ de `marca/tokens.json` (na página de demonstração, **@ilustrandocuriosidadesbr**).
+- Topo de todo vídeo e cabeçalho do carrossel: o @ de `marca/tokens.json` (na página de demonstração, **@exemplo**).
 - Rodapé do último slide: "uma página exclusiva para pessoas inteligentes e curiosas".
 - Bio: "Uma página exclusiva para pessoas inteligentes e curiosas 😌".
 
@@ -55,7 +55,7 @@ Cada página diz para onde tende quando o tema é política, em `ilustrando.conf
 ```json
 "linhaEditorial": { "politica": "direita", "intensidade": "leve" }
 ```
-`politica`: `neutra` (padrão, sem lado), `esquerda`, `centro` ou `direita`. `intensidade`: `leve` (padrão) ou `moderada`. Ver e gravar: `npm run linha -- --ver` e `npm run linha -- direita leve`. **Na página Ilustrando a linha é direita, leve** (escolha do estúdio). No kit do comprador sai `neutra`, com `"perguntar": true`: a skill `comece` pergunta na primeira vez, e a `pauta` pergunta no primeiro tema político se ainda não foi escolhida.
+`politica`: `neutra` (padrão, sem lado), `esquerda`, `centro` ou `direita`. `intensidade`: `leve` (padrão) ou `moderada`. Ver e gravar: `npm run linha -- --ver` e `npm run linha -- direita leve`. **Na página do Estudio de videos a linha é direita, leve** (escolha do estúdio). No kit do comprador sai `neutra`, com `"perguntar": true`: a skill `comece` pergunta na primeira vez, e a `pauta` pergunta no primeiro tema político se ainda não foi escolhida.
 
 ### O que a linha muda (sempre de leve)
 - **O ângulo:** entre dois recortes verdadeiros do mesmo fato, a pauta escolhe o que conversa com o público da página (ex.: o custo para quem paga imposto, a promessa x o resultado, quem decidiu e quem paga a conta).

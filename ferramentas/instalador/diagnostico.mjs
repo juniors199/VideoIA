@@ -42,7 +42,7 @@ function rodarDoctor(raiz) {
 function mensagemMinima(raiz, motivo) {
   const ler = (a, n) => { try { return fs.readFileSync(path.join(raiz, '.estudio', a), 'utf8').split(/\r?\n/).filter(Boolean).slice(-n); } catch { return []; } };
   let ver = '?'; try { ver = fs.readFileSync(path.join(raiz, 'VERSAO'), 'utf8').trim(); } catch { /* sem versão */ }
-  return ['Diagnóstico do Ilustrando Studio (versão mínima)', `Versão do estúdio: ${ver}`, `Sistema: ${os.type()} ${os.release()} (${process.arch})`, `Node: ${process.version}`, `Caminho da pasta: ${raiz.length} caracteres`, `Motivo da versão mínima: ${motivo}`,
+  return ['Diagnóstico do Estudio de videos (versão mínima)', `Versão do estúdio: ${ver}`, `Sistema: ${os.type()} ${os.release()} (${process.arch})`, `Node: ${process.version}`, `Caminho da pasta: ${raiz.length} caracteres`, `Motivo da versão mínima: ${motivo}`,
     '', 'Registro da instalação:', ...(ler('instalacao.log', 25).length ? ler('instalacao.log', 25) : ['(sem registro)']), '', 'Registro do estúdio:', ...(ler('estudio.log', 20).length ? ler('estudio.log', 20) : ['(sem registro)'])].join('\n');
 }
 
@@ -75,7 +75,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   try { fs.mkdirSync(path.join(STUDIO, '.estudio'), { recursive: true }); arq = path.join(STUDIO, '.estudio', 'diagnostico.txt'); fs.writeFileSync(arq, texto + '\n'); } catch { arq = null; }
   console.log(texto + '\n');
   console.log('  ---------------------------------------------------------------');
-  console.log(copiar(texto) ? '  Pronto: o diagnóstico já está copiado. Cole no direct do Instagram @ilustrandocuriosidades (Ctrl+V no Windows, Cmd+V no Mac).' : '  Copie o texto acima (ou abra o arquivo salvo) e cole no direct do Instagram @ilustrandocuriosidades.');
+  console.log(copiar(texto) ? '  Pronto: o diagnóstico já está copiado. Cole no direct do Instagram @kaueajure (Ctrl+V no Windows, Cmd+V no Mac).' : '  Copie o texto acima (ou abra o arquivo salvo) e cole no direct do Instagram @kaueajure.');
   if (arq) console.log(`  Também salvei em: ${arq.replace(os.homedir(), '~')}`);
   console.log('  Ele não leva chave, e-mail nem o nome do seu computador.\n');
 }

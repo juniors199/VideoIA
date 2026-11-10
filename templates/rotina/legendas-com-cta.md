@@ -411,7 +411,7 @@ O que você usa hoje para [tarefa]?
 TikTok: `#publi · Comenta [PALAVRA] que eu mando o link do [produto] (link de afiliado). #publi #[tema] #[nicho]`
 Shorts: `Como eu [tarefa]`
 
-### 31. Como eu faço os meus vídeos (afiliado do Método Ilustrando)
+### 31. Como eu faço os meus vídeos (afiliado do Estudio de videos)
 ```
 #publi · Link de afiliado. Muita gente pergunta como eu faço estes vídeos.
 Eu peço o tema a um assistente de IA, ele confere os fatos, escreve, narra e anima. Eu confiro e publico.

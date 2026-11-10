@@ -1,5 +1,5 @@
 @echo off
-rem Ilustrando Studio: instalador de um clique para Windows. Nao precisa digitar nada.
+rem Estudio de videos: instalador de um clique para Windows. Nao precisa digitar nada.
 rem Instala tudo dentro desta pasta (.programas). Detalhes em ferramentas\instalador\instalar.ps1.
 setlocal
 cd /d "%~dp0"

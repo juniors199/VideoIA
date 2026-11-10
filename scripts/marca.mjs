@@ -17,7 +17,7 @@ import { RAIZ, TOKENS, lerTokens, paletaDe, medirMonograma, gerarIdentidade, fmt
  *   npm run marca -- --listar                 # as 8 identidades prontas
  *   npm run marca -- --ver                    # mostra a marca atual
  *   npm run marca -- --testar --nome ... --handle ... --cor ...   # gera a prévia em marca/teste sem trocar nada
- *   npm run marca -- --ilustrando             # volta para a marca de demonstração do Ilustrando
+ *   npm run marca -- --ilustrando             # volta para a marca de demonstração
  *   npm run marca -- --presets                # (mantenedor) regenera templates/identidades/<preset>/
  *
  * Opcionais: --curto "Nome curto" (cabeçalho do carrossel), --letra X (letra do símbolo),
@@ -30,7 +30,7 @@ import { RAIZ, TOKENS, lerTokens, paletaDe, medirMonograma, gerarIdentidade, fmt
 
 const PRESETS = JSON.parse(fs.readFileSync(path.join(RAIZ, 'templates/identidades/presets.json'), 'utf8')).presets;
 const ILUSTRANDO = {
-  handle: '@ilustrandocuriosidades',
+  handle: '@exemplo',
   nome: 'Ilustrando Curiosidades',
   destaque: '#FF7A2F',
   apoio: '#FFC9A3',
@@ -184,7 +184,7 @@ try {
     tokens.paginas.curiosidades = { ...ILUSTRANDO };
     gravarTokens(tokens);
     await gerarIdentidade({ tokens, pagina: tokens.paginas.curiosidades, saida: path.join(RAIZ, 'marca/saida'), logo: path.join(RAIZ, 'marca/logo'), nav });
-    console.log(`\nMarca do Ilustrando restaurada (${ILUSTRANDO.handle}). A anterior ficou em ${antes}.\n`);
+    console.log(`\nMarca de demonstração restaurada (${ILUSTRANDO.handle}). A anterior ficou em ${antes}.\n`);
   } else if (args.presets) {
     const tokens = lerTokens();
     const linhas = [];
@@ -222,7 +222,7 @@ try {
     console.log(`\n${teste ? 'PRÉVIA (nada foi trocado)' : 'Marca trocada'}: ${pagina.nome} ${pagina.handle}`);
     console.log(`Destaque ${pagina.destaque} (${fmtContraste(pal.contrastes.destaqueFundo)} sobre o fundo), apoio ${pagina.apoio}, texto sobre o destaque ${pagina.tinta} (${fmtContraste(pal.contrastes.tintaDestaque)}). Símbolo: letra ${pagina.simbolo.letra}.`);
     console.log(`Arquivos em ${path.relative(RAIZ, saida)}: ${arq.join(', ')}, perfil.txt`);
-    if (antes) console.log(`A marca anterior ficou guardada em ${antes}. Para voltar ao Ilustrando: npm run marca -- --ilustrando`);
+    if (antes) console.log(`A marca anterior ficou guardada em ${antes}. Para voltar à marca de demonstração: npm run marca -- --ilustrando`);
     if (avisos.length) console.log('\nAtenção:\n' + avisos.map((a) => '  - ' + a).join('\n'));
     console.log(teste ? '\nGostou? Rode o mesmo comando sem --testar para aplicar.\n' : '\nOs próximos vídeos e carrosséis já saem com esta marca. Os que já foram gerados não mudam: gere de novo se quiser.\n');
   }

@@ -3,7 +3,7 @@
  * 
  */
 /**
- * Instalador de um clique do Ilustrando Studio (a parte que roda com Node). Quem chama é o
+ * Instalador de um clique do Estudio de videos (a parte que roda com Node). Quem chama é o
  * "Instalar (Mac).command" ou o "Instalar (Windows).bat", depois de garantir um Node (o do computador, se for 20
  * ou mais, ou um Node portátil baixado para .programas/node). Tudo fica dentro da pasta do estúdio, em
  * .programas/: nada é instalado no sistema, nada pede senha de administrador.
@@ -89,7 +89,7 @@ export async function baixar(url, destino, { sha256, rotulo = 'baixando', tentat
       }
       if (sha256) {
         const h = await sha256Arquivo(parcial);
-        if (h !== sha256) { fs.rmSync(parcial, { force: true }); throw new Falha(`O arquivo baixado de ${new URL(url).host} não é o esperado (impressão digital diferente).`, 'Por segurança, nada foi instalado. Tente de novo mais tarde; se repetir, fale com a gente no direct do Instagram @ilustrandocuriosidades.'); }
+        if (h !== sha256) { fs.rmSync(parcial, { force: true }); throw new Falha(`O arquivo baixado de ${new URL(url).host} não é o esperado (impressão digital diferente).`, 'Por segurança, nada foi instalado. Tente de novo mais tarde; se repetir, fale com a gente no direct do Instagram @kaueajure.'); }
       }
       fs.renameSync(parcial, destino);
       return destino;
@@ -199,7 +199,7 @@ export function escreverNpmrc(dir = PROG, env = process.env) {
   if (env.NODE_EXTRA_CA_CERTS && existe(env.NODE_EXTRA_CA_CERTS)) linhas.push(`cafile=${env.NODE_EXTRA_CA_CERTS}`);
   fs.mkdirSync(dir, { recursive: true });
   const arq = path.join(dir, 'npmrc');
-  const conteudo = '# Configuração do npm só do Ilustrando Studio (o instalador regrava a cada vez).\n' + linhas.join('\n') + '\n';
+  const conteudo = '# Configuração do npm só do Estudio de videos (o instalador regrava a cada vez).\n' + linhas.join('\n') + '\n';
   fs.writeFileSync(arq, conteudo);
   // o npm recusa o mesmo arquivo como configuração da pessoa e global: a global é uma cópia ao lado
   fs.writeFileSync(path.join(dir, 'npmrc-global'), conteudo);
@@ -264,10 +264,10 @@ export function causaPecas(linhas = [], { travou = false, prefixo = 'pecas', oqu
   if (/SELF_SIGNED|UNABLE_TO_VERIFY|UNABLE_TO_GET_ISSUER|CERT_|certificate|unable to get local issuer/i.test(t)) return r('certificado', `A rede (de empresa, escola ou um antivírus que confere a internet) trocou o certificado de segurança e bloqueou ${oque}.`, outraRede);
   if (/proxy|\b407\b|ECONNREFUSED.*:(3128|8080|8888)\b/i.test(t)) return r('proxy', `O proxy da rede (de empresa ou escola) bloqueou ${oque}.`, outraRede);
   if (/ENOTFOUND|EAI_AGAIN|getaddrinfo/i.test(t)) return r('dns', `O computador não achou o endereço de onde vêm ${oque} (a internet caiu ou a rede bloqueia o site).`, 'Confira se a internet abre um site qualquer. ' + outraRede);
-  if (/\bE40[134]\b|40[134] (Not Found|Unauthorized|Forbidden)|ETARGET|EINTEGRITY|No matching version/i.test(t)) return r('registro', `O site que guarda ${oque} recusou o download.`, 'Espere uns minutos e dê dois cliques em Instalar de novo. Se repetir, mande as últimas linhas desta janela no direct do Instagram @ilustrandocuriosidades.');
+  if (/\bE40[134]\b|40[134] (Not Found|Unauthorized|Forbidden)|ETARGET|EINTEGRITY|No matching version/i.test(t)) return r('registro', `O site que guarda ${oque} recusou o download.`, 'Espere uns minutos e dê dois cliques em Instalar de novo. Se repetir, mande as últimas linhas desta janela no direct do Instagram @kaueajure.');
   if (/ECONNREFUSED|ETIMEDOUT|ECONNRESET|ENETUNREACH|EHOSTUNREACH|ENETDOWN|socket hang up|network|fetch failed|ERR_SOCKET/i.test(t)) return r('sem-rede', `A internet não deixou baixar ${oque} (caiu, está lenta ou a rede bloqueia).`, 'Confira se a internet abre um site qualquer. ' + outraRede);
   if (travou) return r('travou', `O download de ${oque} parou sem resposta (a rede segurou a conexão).`, outraRede);
-  return r('outro', `Não consegui baixar ${oque}.`, 'Dê dois cliques em Instalar de novo. Se repetir, mande as últimas linhas desta janela no direct do Instagram @ilustrandocuriosidades.');
+  return r('outro', `Não consegui baixar ${oque}.`, 'Dê dois cliques em Instalar de novo. Se repetir, mande as últimas linhas desta janela no direct do Instagram @kaueajure.');
 }
 
 /** cache do npm estragado: arquivo que sumiu ou não confere dentro do _cacache (ou da pasta npm-cache do estúdio; o _logs, que o npm cita em toda falha, não conta) */
@@ -339,7 +339,7 @@ async function npm(argv, opc = {}) {
   const cli = npmCli();
   if (cli) return rodar(process.execPath, [cli, ...argv], opc);
   // Windows: Node 20.12.2+ recusa rodar .cmd sem shell (spawn EINVAL); sem o npm do Node portátil, a pasta está incompleta
-  if (WIN) throw new Falha('O Node usado pelo estúdio está incompleto (falta o npm).', 'Apague a pasta .programas dentro do estúdio e dê dois cliques em Instalar de novo. Se repetir, fale com a gente no direct do Instagram @ilustrandocuriosidades.');
+  if (WIN) throw new Falha('O Node usado pelo estúdio está incompleto (falta o npm).', 'Apague a pasta .programas dentro do estúdio e dê dois cliques em Instalar de novo. Se repetir, fale com a gente no direct do Instagram @kaueajure.');
   return rodar('npm', argv, opc);
 }
 
@@ -386,7 +386,7 @@ passo('ffmpeg', 'FFmpeg, o programa que junta imagem e som', async () => {
   if (!tem('forcar') && existe(exe('ffmpeg')) && ffmpegServe(exe('ffmpeg'), exe('ffprobe'))) { estado.ffmpeg = 'portatil'; return ok('FFmpeg já instalado na pasta do estúdio'); }
   if (!tem('forcar') && !existe(exe('ffmpeg')) && ffmpegServe()) { estado.ffmpeg = 'sistema'; return ok('o FFmpeg deste computador serve; vou usar ele'); }
   const fonte = FFMPEG[PLAT];
-  if (!fonte) throw new Falha(`Não há FFmpeg pronto para ${PLAT}.`, 'Fale com a gente no direct do Instagram @ilustrandocuriosidades.');
+  if (!fonte) throw new Falha(`Não há FFmpeg pronto para ${PLAT}.`, 'Fale com a gente no direct do Instagram @kaueajure.');
   if (SIMULAR) { for (const [n, a] of Object.entries(fonte)) escrever(`   baixaria ${n} ${FFMPEG_VERSAO}: ${a.url}\n     SHA-256 ${a.sha256} -> ${exe(n)}`); return; }
   for (const [n, a] of Object.entries(fonte)) {
     const gz = path.join(PROG, 'baixados', path.basename(new URL(a.url).pathname));
@@ -404,7 +404,7 @@ passo('ffmpeg', 'FFmpeg, o programa que junta imagem e som', async () => {
     const cod = typeof t.status === 'number' && t.status > 0 ? `0x${(t.status < 0 ? t.status + 4294967296 : t.status).toString(16).toUpperCase()}` : t.error?.code || '';
     const msg = `O FFmpeg baixado não abriu neste computador${cod ? ` (erro ${cod})` : ''}.`;
     if (WIN) throw new Falha(msg, 'Passo 1: instale o "Visual C++ Redistributable x64" (aka.ms/vs/17/release/vc_redist.x64.exe) e reinicie o computador. Passo 2: libere a pasta do estúdio no antivírus (Segurança do Windows > Proteção contra vírus > Exclusões > adicionar a pasta "ilustrando"). Passo 3: dê dois cliques em Instalar de novo.', 'ffmpeg');
-    throw new Falha(msg, MAC ? 'Feche esta janela, abra Ajustes do Sistema > Privacidade e Segurança, clique em "Abrir Mesmo Assim" se aparecer o ffmpeg, e dê dois cliques em Instalar de novo.' : 'Dê dois cliques em Instalar de novo. Se repetir, fale com a gente no direct do Instagram @ilustrandocuriosidades e diga que o FFmpeg não abriu.');
+    throw new Falha(msg, MAC ? 'Feche esta janela, abra Ajustes do Sistema > Privacidade e Segurança, clique em "Abrir Mesmo Assim" se aparecer o ffmpeg, e dê dois cliques em Instalar de novo.' : 'Dê dois cliques em Instalar de novo. Se repetir, fale com a gente no direct do Instagram @kaueajure e diga que o FFmpeg não abriu.');
   }
   fs.rmSync(path.join(PROG, 'baixados'), { recursive: true, force: true });
   estado.ffmpeg = 'portatil';
@@ -470,7 +470,7 @@ async function avisoAnonimo(etapa, codigo, linhas = []) {
   if (process.env.ILU_TELEMETRIA_PAI === '1' || SIMULAR || process.env.NODE_TEST_CONTEXT) return;
   try {
     const { registrarFalha } = await import('../../src/telemetria.mjs');
-    const diagnostico = `Diagnóstico do Ilustrando Studio\nEtapa: ${etapa}\nCódigo: ${codigo}\n` + sanearLinhas(linhas.slice(-15)).join('\n');
+    const diagnostico = `Diagnóstico do Estudio de videos\nEtapa: ${etapa}\nCódigo: ${codigo}\n` + sanearLinhas(linhas.slice(-15)).join('\n');
     await Promise.race([registrarFalha({ raiz: STUDIO, etapa, codigo, diagnostico }), esperar(8000)]);
   } catch { /* o aviso nunca atrapalha */ }
 }
@@ -579,7 +579,7 @@ passo('navegador', 'Navegador interno (Chromium), que desenha os quadros do víd
     estado.avisos.push(`O navegador interno não ${baixou ? 'abriu' : 'baixou'}; o estúdio vai usar o ${depois.escolhido.nome} do computador, e os vídeos saem iguais. Nada a fazer.`);
     return aviso(`o navegador interno não ${baixou ? 'abriu' : 'baixou'}; vou usar o ${depois.escolhido.nome} do computador (os vídeos saem iguais)`);
   }
-  if (depois.ok && !depois.webgl) throw new Falha('O navegador abriu, mas sem 3D (WebGL).', 'Feche programas pesados e reinicie o computador; depois tente de novo. Se repetir, mande o diagnóstico no direct do Instagram @ilustrandocuriosidades.');
+  if (depois.ok && !depois.webgl) throw new Falha('O navegador abriu, mas sem 3D (WebGL).', 'Feche programas pesados e reinicie o computador; depois tente de novo. Se repetir, mande o diagnóstico no direct do Instagram @kaueajure.');
   let gb = null;
   try { const st = fs.statfsSync(STUDIO); gb = (Number(st.bavail) * Number(st.bsize)) / 1e9; } catch { /* sem medida */ }
   throw causaNavegador([...linhas, depois.erro || ''], { baixou, gbLivres: gb });
@@ -629,25 +629,25 @@ export function criarAtalho({ studio = STUDIO, casa = os.homedir(), plataforma: 
       const mesa = path.join(casa, 'Desktop');
       if (!existe(mesa)) return null;
       const alvo = path.join(studio, 'Abrir Estúdio (Mac).command');
-      const atalho = path.join(mesa, 'Abrir Estúdio Ilustrando.command');
-      fs.writeFileSync(atalho, `#!/bin/bash\n# Atalho criado pelo instalador do Ilustrando Studio. Abre o estúdio que está em:\n# ${studio}\nexec "${alvo.replace(/(["$`\\])/g, '\\$1')}"\n`, { mode: 0o755 });
+      const atalho = path.join(mesa, 'Abrir Estudio de videos.command');
+      fs.writeFileSync(atalho, `#!/bin/bash\n# Atalho criado pelo instalador do Estudio de videos. Abre o estúdio que está em:\n# ${studio}\nexec "${alvo.replace(/(["$`\\])/g, '\\$1')}"\n`, { mode: 0o755 });
       fs.chmodSync(atalho, 0o755);
-      return 'atalho "Abrir Estúdio Ilustrando" criado na Mesa';
+      return 'atalho "Abrir Estudio de videos" criado na Mesa';
     }
     if (p === 'win32') {
       const alvo = path.join(studio, 'Abrir Estúdio (Windows).bat');
       const ps = [
         '$ErrorActionPreference = "Stop"',
         '$mesa = [Environment]::GetFolderPath("Desktop")',
-        '$s = (New-Object -ComObject WScript.Shell).CreateShortcut((Join-Path $mesa "Abrir Estúdio Ilustrando.lnk"))',
+        '$s = (New-Object -ComObject WScript.Shell).CreateShortcut((Join-Path $mesa "Abrir Estudio de videos.lnk"))',
         `$s.TargetPath = '${alvo.replace(/'/g, "''")}'`,
         `$s.WorkingDirectory = '${studio.replace(/'/g, "''")}'`,
         '$s.IconLocation = "$env:SystemRoot\\System32\\imageres.dll,186"',
-        '$s.Description = "Abre o Ilustrando Studio no navegador"',
+        '$s.Description = "Abre o Estudio de videos no navegador"',
         '$s.Save()',
       ].join('; ');
       const r = spawnSync('powershell.exe', ['-NoProfile', '-ExecutionPolicy', 'Bypass', '-Command', ps], { encoding: 'utf8', windowsHide: true });
-      return r.status === 0 ? 'atalho "Abrir Estúdio Ilustrando" criado na área de trabalho' : null;
+      return r.status === 0 ? 'atalho "Abrir Estudio de videos" criado na área de trabalho' : null;
     }
     return null; // Linux: use o "Abrir Estúdio" de dentro da pasta
   } catch { return null; }
@@ -668,7 +668,7 @@ export function explicar(e) {
   const c = e?.code || '';
   if (['EPERM', 'EBUSY', 'EACCES'].includes(c)) return new Falha(`O computador (ou o antivírus) não deixou mexer em um arquivo da pasta do estúdio (${c}).`, 'Espere 1 minuto e dê dois cliques em Instalar de novo. Se repetir, mova a pasta do estúdio para a sua pasta pessoal, fora do OneDrive.');
   if (c === 'ENOSPC') return new Falha('O disco encheu durante a instalação.', 'Libere uns 5 GB e dê dois cliques em Instalar de novo.');
-  return new Falha(`Erro inesperado (${c || e?.message || e}).`, 'Dê dois cliques em Instalar de novo. Se repetir, mande uma foto desta janela no direct do Instagram @ilustrandocuriosidades.');
+  return new Falha(`Erro inesperado (${c || e?.message || e}).`, 'Dê dois cliques em Instalar de novo. Se repetir, mande uma foto desta janela no direct do Instagram @kaueajure.');
 }
 
 /* ---------------- falha: aviso com o relatório de erro e tela de ajuda (0.6.4; relatório desde a 0.6.12) ---------------- */
@@ -697,7 +697,7 @@ async function avisarFalha(passo, e) {
     const linhas = [...LINHAS.slice(-20), ...(e?.linhas || []), ...String(e?.stack || '').split('\n').slice(1, 6).map((l) => l.trim())].filter(Boolean);
     const r = await abrirSocorro({ raiz: STUDIO, abrir: !process.argv.includes('--assistente'), etapa, codigo, linhas, causa: `A instalação parou: ${e?.message || 'erro inesperado'}`, acao: e?.oQueFazer || 'Dê dois cliques em Instalar de novo.' });
     if (r?.aviso) escrever(`  ${r.aviso}`);
-    escrever('  Abri uma página de ajuda no navegador, com "Copiar diagnóstico" e "Abrir o direct" (https://ig.me/m/ilustrandocuriosidades).');
+    escrever('  Abri uma página de ajuda no navegador, com "Copiar diagnóstico" e "Abrir o direct" (https://ig.me/m/kaueajure).');
     escrever('');
   } catch { /* o aviso nunca atrapalha a mensagem de erro */ }
 }
@@ -708,7 +708,7 @@ export async function instalar() {
   if (!SIMULAR) { anotar(STUDIO, ARQUIVOS.instalacao, `instalador iniciado; Node ${process.version}; ${process.platform} ${process.arch}`); }
   const lista = SO ? PASSOS.filter((p) => p.id === SO || (SO === 'alinhador' && p.id === 'computador')) : PASSOS;
   escrever('');
-  escrever('  Ilustrando Studio: instalação');
+  escrever('  Estudio de videos: instalação');
   escrever('  Não precisa digitar nada. É rapidinho.');
   if (SIMULAR) escrever('  MODO SIMULAÇÃO: só mostra o que faria. Nada é baixado nem gravado.');
   escrever('');
@@ -721,7 +721,7 @@ export async function instalar() {
       escrever('');
       escrever('  A instalação parou.');
       escrever(`  O que houve: ${e.message}`);
-      escrever(`  O que fazer: ${e.oQueFazer || 'Dê dois cliques em Instalar de novo. Se repetir, mande uma foto desta janela no direct do Instagram @ilustrandocuriosidades.'}`);
+      escrever(`  O que fazer: ${e.oQueFazer || 'Dê dois cliques em Instalar de novo. Se repetir, mande uma foto desta janela no direct do Instagram @kaueajure.'}`);
       // 0.6.40: o estúdio web lê este código (explicarInstalador) e manda o mesmo rótulo no aviso de falha
       if (e.codigo) escrever(`  Código: ${e.codigo}`);
       escrever('');

@@ -1,6 +1,6 @@
 ---
 name: publicar
-description: Escreve a legenda, os marcadores e a descrição por plataforma para um vídeo ou carrossel do Ilustrando já gerado.
+description: Escreve a legenda, os marcadores e a descrição por plataforma para um vídeo ou carrossel do Estudio de videos já gerado.
 ---
 
 

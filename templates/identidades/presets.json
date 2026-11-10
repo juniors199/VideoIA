@@ -1,5 +1,5 @@
 {
-  "_sobre": "Identidades prontas do Método Ilustrando. Use com: npm run marca -- --preset <id> --nome \"Seu Nome\" --handle \"@seu.handle\". Os nomes são ideias: confira se o @ está livre nas 4 plataformas e se não há marca registrada (guia 03).",
+  "_sobre": "Identidades prontas do Estudio de videos. Use com: npm run marca -- --preset <id> --nome \"Seu Nome\" --handle \"@seu.handle\". Os nomes são ideias: confira se o @ está livre nas 4 plataformas e se não há marca registrada (guia 03).",
   "presets": {
     "curiosidades": {
       "nicho": "Curiosidades",

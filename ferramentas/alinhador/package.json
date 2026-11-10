@@ -2,7 +2,7 @@
   "name": "ilustrando-alinhador",
   "version": "1.0.0",
   "private": true,
-  "description": "Alinhador de voz do Ilustrando Studio (Whisper em Node, sem Python). Instalado pelo instalador em .programas/alinhador.",
+  "description": "Alinhador de voz do Estudio de videos (Whisper em Node, sem Python). Instalado pelo instalador em .programas/alinhador.",
   "license": "UNLICENSED",
   "dependencies": {
     "@huggingface/transformers": "4.2.0"

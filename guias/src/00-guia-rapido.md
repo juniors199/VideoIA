@@ -70,11 +70,11 @@ No Mac, renomeie a pasta para `ilustrando` e deixe na sua pasta pessoal. No Wind
 :::passo Dois cliques em Instalar
 Dê dois cliques em **Instalar (Mac)** ou **Instalar (Windows)**, dentro da pasta.
 
-**O que você vai ver:** na primeira vez, um aviso de segurança do sistema (é normal, veja a seção 03). Depois, uma janela preta com `Passo 1 de 8`, `Passo 2 de 8`... e barras de progresso. No fim, **Pronto!** e o estúdio abre sozinho no navegador. Um atalho **Abrir Estúdio Ilustrando** aparece na Mesa (Mac) ou na área de trabalho (Windows).
+**O que você vai ver:** na primeira vez, um aviso de segurança do sistema (é normal, veja a seção 03). Depois, uma janela preta com `Passo 1 de 8`, `Passo 2 de 8`... e barras de progresso. No fim, **Pronto!** e o estúdio abre sozinho no navegador. Um atalho **Abrir Estudio de videos** aparece na Mesa (Mac) ou na área de trabalho (Windows).
 
 **Tempo:** de 5 a 15 minutos. Na primeira vez ele baixa cerca de 500 MB. Você não digita nada.
 
-**Se der erro:** a janela mostra **O que houve** e **O que fazer**. Quase sempre é a internet: confira e dê dois cliques em **Instalar** de novo. Ele aproveita o que já baixou e não apaga nada seu. Se repetir, mande uma foto da janela no direct: https://ig.me/m/ilustrandocuriosidades
+**Se der erro:** a janela mostra **O que houve** e **O que fazer**. Quase sempre é a internet: confira e dê dois cliques em **Instalar** de novo. Ele aproveita o que já baixou e não apaga nada seu. Se repetir, mande uma foto da janela no direct: https://ig.me/m/kaueajure
 :::
 
 :::passo Assista à demonstração
@@ -184,7 +184,7 @@ Toda tela de erro do estúdio mostra quatro coisas:
 1. **A causa**, em português.
 2. **O que fazer**, em uma ou duas frases.
 3. O botão **Copiar diagnóstico**: copia um texto curto com a versão, o sistema e o que faltou. Não leva chave, e-mail nem o nome do seu computador.
-4. O botão **Abrir o direct**: abre o direct do Instagram @ilustrandocuriosidades (https://ig.me/m/ilustrandocuriosidades). Cole o diagnóstico e diga em uma frase o que estava fazendo.
+4. O botão **Abrir o direct**: abre o direct do Instagram @kaueajure (https://ig.me/m/kaueajure). Cole o diagnóstico e diga em uma frase o que estava fazendo.
 
 :::dica O estúdio avisa a gente sozinho, sem dado seu
 Quando algo falha, o estúdio manda um **relatório de erro**: o código da falha e o mesmo texto do **Copiar diagnóstico** (versão, sistema, o que o estúdio disse e o fim do registro), sem chaves, e-mail, roteiro nem dados pessoais. Fica guardado em área privada por 180 dias. Assim a gente corrige mais rápido, às vezes antes de você pedir ajuda. Para desligar: **Configurações**, na aba **Começar**.
@@ -225,7 +225,7 @@ A chave de uma voz paga entra só no estúdio, em **Começar > Voz**. Nunca cole
 | 06 · Perguntas e soluções | Cada mensagem de erro e como pedir mudanças |
 
 :::resumo Travou?
-Clique em **Copiar diagnóstico** e depois em **Abrir o direct** (https://ig.me/m/ilustrandocuriosidades). Antes de desistir por um erro na instalação, mande a mensagem: quase sempre é um passo simples.
+Clique em **Copiar diagnóstico** e depois em **Abrir o direct** (https://ig.me/m/kaueajure). Antes de desistir por um erro na instalação, mande a mensagem: quase sempre é um passo simples.
 :::
 
 

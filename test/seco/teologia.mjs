@@ -66,7 +66,7 @@ export async function medir({ estilo, formato, handle, legenda, geo, mod }) {
     const cena = { tema: 'X', estilo, tom, beats: bts, ...extra };
     const spec = compilar(cena, f); spec.W = geo.W; spec.H = geo.H;
     for (const b of spec.beats) for (const e of b.elementos || []) if (e.tipo === 'teologia') for (const o of E.objetosComArquivo(e)) o._img = IMG();
-    const S = { spec, dur: f.duracao, esc: 1, m: { destaque: '#FF7A1A', serie: handle ? '@ilustrandocuriosidades' : '' } };
+    const S = { spec, dur: f.duracao, esc: 1, m: { destaque: '#FF7A1A', serie: handle ? '@kaueajure' : '' } };
     const B = criarB({ gr, spec, S }), est = E.criarTeologia(B), amostras = [];
     for (const b of spec.beats) for (const u of [0.2, 0.55, 0.95]) {
       const t = b.de + (b.ate - b.de) * u; gr.zerar(); const out = { titulos: [], pecas: [], imagens: [] };

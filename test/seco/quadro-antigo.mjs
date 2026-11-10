@@ -46,7 +46,7 @@ export async function medir({ estilo, formato, handle, legenda, geo, mod }) {
     const cena = { tema: 'X', estilo, tom: 'sepia', textura: 'leve', beats: bts, ...extra };
     for (const b of cena.beats) for (const e of b.elementos || []) if (e.tipo === 'quadro-antigo' && (e.forma === 'pintura' || e.forma === 'medalhao') && !e._img) e._img = IMG(gr);
     const spec = compilar(cena, fala); spec.W = geo.W; spec.H = geo.H; spec.dur = fala.duracao;
-    const S = { spec, dur: fala.duracao, esc: 1, m: { destaque: '#FF7A1A', serie: handle ? '@ilustrandocuriosidades' : '' } };
+    const S = { spec, dur: fala.duracao, esc: 1, m: { destaque: '#FF7A1A', serie: handle ? '@kaueajure' : '' } };
     const B = criarB({ gr, spec, S }), est = E.criarQuadroAntigo(B), amostras = [];
     for (const b of spec.beats) for (const u of [0.15, 0.5, 0.97]) {
       const t = b.de + (b.ate - b.de) * u; gr.zerar(); const out = { titulos: [], pecas: [], imagens: [] };

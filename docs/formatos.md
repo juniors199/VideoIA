@@ -1,8 +1,8 @@
 
 
-# Formatos do Ilustrando
+# Formatos do Estudio de videos
 
-Um formato tem três camadas: **mecanismo** (a lógica que faz funcionar), **estrutura** (a sequência de blocos) e **forma** (o que aparece na tela). O Ilustrando já tem a forma fixa (vídeo vertical animado, sem rosto). O que muda de um vídeo para outro é o mecanismo e a estrutura. Escolha o formato **antes** de escrever.
+Um formato tem três camadas: **mecanismo** (a lógica que faz funcionar), **estrutura** (a sequência de blocos) e **forma** (o que aparece na tela). O Estudio de videos já tem a forma fixa (vídeo vertical animado, sem rosto). O que muda de um vídeo para outro é o mecanismo e a estrutura. Escolha o formato **antes** de escrever.
 
 Dê um nome ao formato que repetir e registre em `projetos/<nome>/formato.md`. O décimo vídeo de um formato deve sair melhor que o primeiro.
 

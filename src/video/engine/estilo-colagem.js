@@ -1,4 +1,4 @@
-/* Ilustrando Studio 0.6.45. Pacote C-000000000000.  */
+/* Estudio de videos 0.6.45. Pacote C-000000000000.  */
 /*
  * 
  * 

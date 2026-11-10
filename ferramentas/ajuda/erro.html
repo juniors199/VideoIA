@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ilustrando Studio: ajuda</title>
+<title>Estudio de videos: ajuda</title>
 <!--
   Tela de socorro sem nada instalado (0.6.4). Os instaladores (.sh e .ps1) abrem este arquivo quando param antes de existir
   o Node, com a causa e o que fazer no endereço: erro.html#c=<causa>&a=<o que fazer>&e=<etapa>&v=<aviso>. Sem nada, mostra a
@@ -26,9 +26,9 @@ textarea{width:100%;min-height:130px;background:#0a0b0e;color:var(--suave);borde
 <main>
   <h1>O estúdio precisa de uma ajudinha</h1>
   <p class="sub">Nada se perdeu: a pasta do estúdio continua como estava.</p>
-  <div class="caixa" role="alert"><b id="causa">A instalação ou a abertura do estúdio parou.</b>O que fazer: <span id="acao">Feche a janela preta e dê dois cliques em "Instalar" de novo. Se repetir, clique em "Copiar diagnóstico" e mande no direct do Instagram @ilustrandocuriosidades.</span><br><small class="aviso" id="etapa"></small></div>
-  <div class="acoes"><button class="btn s" id="copiar">Copiar diagnóstico</button><a class="btn s" href="https://ig.me/m/ilustrandocuriosidades" target="_blank" rel="noopener">Abrir o direct</a><span class="ok" id="copiado" aria-live="polite"></span></div>
-  <p class="aviso">Cole o diagnóstico no direct do Instagram @ilustrandocuriosidades. Ele não leva chave, e-mail nem o nome do seu computador.</p>
+  <div class="caixa" role="alert"><b id="causa">A instalação ou a abertura do estúdio parou.</b>O que fazer: <span id="acao">Feche a janela preta e dê dois cliques em "Instalar" de novo. Se repetir, clique em "Copiar diagnóstico" e mande no direct do Instagram @kaueajure.</span><br><small class="aviso" id="etapa"></small></div>
+  <div class="acoes"><button class="btn s" id="copiar">Copiar diagnóstico</button><a class="btn s" href="https://ig.me/m/kaueajure" target="_blank" rel="noopener">Abrir o direct</a><span class="ok" id="copiado" aria-live="polite"></span></div>
+  <p class="aviso">Cole o diagnóstico no direct do Instagram @kaueajure. Ele não leva chave, e-mail nem o nome do seu computador.</p>
   <p class="aviso" id="aviso"></p>
   <textarea id="diag" readonly aria-label="Diagnóstico"></textarea>
 </main>
@@ -41,7 +41,7 @@ textarea{width:100%;min-height:130px;background:#0a0b0e;color:var(--suave);borde
   if (p.e) document.getElementById('etapa').textContent = 'Etapa: ' + p.e;
   if (p.v) document.getElementById('aviso').textContent = p.v;
   var sistema = (navigator.userAgent.match(/\(([^)]+)\)/) || [])[1] || navigator.platform || '?';
-  document.getElementById('diag').value = ['Diagnóstico do Ilustrando Studio (sem chaves, sem e-mail e sem dados pessoais)', 'Etapa: ' + (p.e || 'instalação'), 'O que houve: ' + document.getElementById('causa').textContent, 'Sistema (navegador): ' + sistema, 'Versão do estúdio: ' + (p.k || '?')].join('\n');
+  document.getElementById('diag').value = ['Diagnóstico do Estudio de videos (sem chaves, sem e-mail e sem dados pessoais)', 'Etapa: ' + (p.e || 'instalação'), 'O que houve: ' + document.getElementById('causa').textContent, 'Sistema (navegador): ' + sistema, 'Versão do estúdio: ' + (p.k || '?')].join('\n');
   document.getElementById('copiar').onclick = function () {
     var t = document.getElementById('diag'), ok = false;
     var fim = function () { document.getElementById('copiado').textContent = ok ? 'Copiado. Agora cole no direct.' : 'Selecionei o texto: copie com Ctrl+C (Cmd+C no Mac).'; };

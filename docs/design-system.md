@@ -1,11 +1,11 @@
 
 
-# Design system do Ilustrando
+# Design system do Estudio de videos
 
 Fonte única: `marca/tokens.json`. Tudo (carrossel, vídeo, estúdio web, avatar) lê daqui. Para gerar os arquivos de marca: `npm run identidade` (saem em `marca/saida`).
 
 ## Identidade
-- **Página única:** o @ de `marca/tokens.json` (na página de demonstração, @ilustrandocuriosidadesbr). Bio de exemplo: "Uma página exclusiva para pessoas inteligentes e curiosas 😌".
+- **Página única:** o @ de `marca/tokens.json` (na página de demonstração, @exemplo). Bio de exemplo: "Uma página exclusiva para pessoas inteligentes e curiosas 😌".
 - **Símbolo:** um "i" branco com o pingo laranja. Chapado, minimalista, sem volume, sem anéis e sem sombra. Arquivos em `marca/logo`: `simbolo.svg` e `simbolo-para-fundo-claro.svg`.
 - **Logotipo:** "ilustrando" em Bricolage Grotesque 800, com o pingo do "i" em laranja chapado (`marca/saida/logotipo.png`, fundo transparente).
 - **Avatar da foto de perfil:** `marca/saida/avatar.png` (1080x1080, vale para Instagram, TikTok, YouTube e Facebook). O símbolo fica longe da borda para sobreviver ao corte em círculo (`avatar-previa-circulo.png` mostra o resultado). Também: `icone-app.png`, `destaque-instagram.png` (capa de destaque 1080x1920), `banner-youtube.png` (área segura 1546x423 no centro), `banner-facebook.png`.

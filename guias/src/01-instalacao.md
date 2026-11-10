@@ -14,7 +14,7 @@ sumarioIntro: Primeira vez? Comece pelo Guia rápido (guias/00-guia-rapido.pdf),
 # Antes de começar {o que é o estúdio e como ler este guia}
 
 :::lead
-O Método Ilustrando é um estúdio que mora numa pasta do seu computador. Você conversa em português com um assistente de IA, e ele produz vídeos verticais com animação 3D, narração e legenda, e carrosséis prontos para postar.
+O Estudio de videos é um estúdio que mora numa pasta do seu computador. Você conversa em português com um assistente de IA, e ele produz vídeos verticais com animação 3D, narração e legenda, e carrosséis prontos para postar.
 :::
 
 :::atencao Primeira vez? Use o Guia rápido
@@ -91,7 +91,7 @@ Não roda em celular nem tablet. Linux funciona, mas este guia não cobre.
 
 | O quê | Para quê | Quanto custa |
 |---|---|---|
-| Método Ilustrando | o estúdio, os guias e as aulas | pagamento único |
+| Estudio de videos | o estúdio, os guias e as aulas | pagamento único |
 | **Um** assistente: Claude Code **ou** Codex | escreve roteiros e conduz o estúdio | assinatura mensal (tabela abaixo) |
 | Voz | a narração | ElevenLabs (conta grátis ou plano) |
 | Node, FFmpeg, navegador interno, alinhador de voz | o motor por baixo; o **Instalar** baixa tudo | grátis |
@@ -203,7 +203,7 @@ Sem problema. Extraia de novo no disco C (passos 5 a 8) e abra a pasta nova. A p
 :::passo Espere a janela terminar
 A janela preta é o estúdio funcionando. Vai de `Passo 1 de 8` até `Passo 8 de 8`, com barras de progresso. **Tempo:** 5 a 15 min (cerca de 500 MB na primeira vez). **Não feche a janela.**
 
-**Deu certo se:** a janela termina com **Pronto!**, o estúdio abre no navegador e aparece o atalho **Abrir Estúdio Ilustrando** na Mesa ou na área de trabalho. Da próxima vez: **Abrir Estúdio Ilustrando**, ou **Abrir Estúdio (Mac)** / **Abrir Estúdio (Windows)** na pasta. Para fechar o estúdio, feche a janela.
+**Deu certo se:** a janela termina com **Pronto!**, o estúdio abre no navegador e aparece o atalho **Abrir Estudio de videos** na Mesa ou na área de trabalho. Da próxima vez: **Abrir Estudio de videos**, ou **Abrir Estúdio (Mac)** / **Abrir Estúdio (Windows)** na pasta. Para fechar o estúdio, feche a janela.
 :::
 
 ### Vai aparecer isto e é normal
@@ -514,7 +514,7 @@ Atualizações são livres no open-source: sem prazo nem ativação. Os apps do 
 **Copie o erro, cole no assistente e escreva:** "Deu esse erro. Me ajude a resolver." Se o vídeo saiu mas você não gostou, diga o que sentiu assistindo ("está parado", "não entendi", "ficou longo"): o assistente transforma isso em ajuste. Para pedir ajuda a gente, diga a seção e o passo ("travei na seção 04, passo 7"). Nunca cole a chave da voz.
 :::
 
-Toda tela de erro mostra **a causa**, **o que fazer**, o botão **Copiar diagnóstico** (versão, sistema e o que faltou, sem chave, e-mail nem nome do computador) e o botão **Abrir o direct** (ig.me/m/ilustrandocuriosidades). Se a página do estúdio não abrir, aparece uma tela simples de ajuda com os mesmos botões.
+Toda tela de erro mostra **a causa**, **o que fazer**, o botão **Copiar diagnóstico** (versão, sistema e o que faltou, sem chave, e-mail nem nome do computador) e o botão **Abrir o direct** (ig.me/m/kaueajure). Se a página do estúdio não abrir, aparece uma tela simples de ajuda com os mesmos botões.
 
 
 | O que aparece | O que fazer |

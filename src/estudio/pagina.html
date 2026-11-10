@@ -277,6 +277,9 @@ li,p,b,span,.caixa-ok,.caixa-erro,.caixa-nota{overflow-wrap:anywhere}
 #tarefa{position:fixed;right:20px;bottom:20px;width:min(440px,calc(100vw - 40px));background:var(--sup2);border:1px solid var(--linha);border-radius:16px;padding:16px 18px;box-shadow:0 20px 60px var(--sombra-card);z-index:30}
 #tarefa .tt{display:flex;justify-content:space-between;gap:12px;font-weight:700}
 #tarefa .et{color:var(--suave);font-size:14px;margin-top:4px;min-height:1.5em}
+#redeAviso{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);width:min(520px,calc(100vw - 40px));background:var(--sup2);border:1px solid var(--aviso);border-radius:14px;padding:12px 14px;box-shadow:0 16px 40px var(--sombra-card);z-index:28;color:var(--texto);font-size:13.5px;line-height:1.45}
+#redeAviso b{display:block;margin-bottom:4px;color:var(--aviso)}
+#redeAviso .acoes{margin-top:10px}
 .trilho{height:6px;border-radius:999px;background:var(--chip);overflow:hidden;margin-top:10px}
 .trilho i{display:block;height:100%;width:30%;background:var(--d);border-radius:999px;transition:width .4s var(--e)}
 .trilho.indef i{animation:vai 1.4s var(--e) infinite}
@@ -504,6 +507,7 @@ img,video{max-width:100%}
   .projetos aside header{padding:16px}
   #busca{margin:0 16px 12px;width:calc(100% - 32px)}
   #tarefa{left:10px;right:10px;bottom:10px;width:auto}
+  #redeAviso{left:10px;right:10px;bottom:10px;width:auto;transform:none}
   .cena{padding:20px 14px 48px}
   .topo-p h2{font-size:26px}
   .etapas{grid-template-columns:repeat(2,1fr)}
@@ -743,6 +747,7 @@ img,video{max-width:100%}
 </div><!-- /.estudio -->
 </div><!-- /.estudio-wrap -->
 
+<div id="redeAviso" hidden role="alert" aria-live="polite"></div>
 <div id="tarefa" hidden role="status" aria-live="polite">
   <div class="tt"><span id="tTitulo"></span><span id="tTempo" style="color:var(--fraco);font-weight:600"></span></div>
   <div class="et" id="tEtapa"></div>
@@ -781,7 +786,7 @@ const api = (u, opc) => fetch(u, opc).then((r) => r.json());
 const post = (u, corpo) => api(u, { method: 'POST', headers: { 'x-token': TOKEN, 'content-type': 'application/json' }, body: JSON.stringify(corpo || {}) });
 const msgErro = (e) => (typeof e === 'string' ? { causa: e, acao: '' } : e || { causa: 'Algo deu errado.', acao: 'Tente de novo.' });
 // canal de suporte: o direct do Instagram (pedido do dono, 27/10). O link abre no navegador (ou no app do Instagram no celular)
-const DIRECT = 'https://ig.me/m/ilustrandocuriosidades';
+const DIRECT = 'https://ig.me/m/kaueajure';
 const botaoDirect = `<a class="btn sec pequeno" href="${DIRECT}" target="_blank" rel="noopener" style="text-decoration:none">Abrir o direct</a>`;
 const botaoDiag = '<button class="btn sec pequeno" data-diag>Copiar diagnóstico</button> ' + botaoDirect;
 // 0.6.4: TODO erro mostra a causa, o que fazer, "Copiar diagnóstico", "Abrir o direct" e (quando houve) a linha do aviso anônimo.
@@ -935,7 +940,7 @@ async function acompanhar(cb) {
   if (!j.fim) { $('#tResultado').innerHTML = ''; tempo = setTimeout(acompanhar, 1200); return; }
   $('#tResultado').innerHTML = j.codigo === 0 ? `<div class="caixa-ok">${esc(j.titulo)}: pronto.</div>` : j.codigo === 2 ? '<div class="caixa-erro"><b>Ficou pronto, mas o controle de qualidade apontou problemas.</b>Veja em Projetos, na aba Controle de qualidade, ou peça ao assistente (Claude Code ou Codex) para corrigir.</div>' : caixaErro(j.erro);
   const f = aoTerminar; aoTerminar = null;
-  conf = await api('/api/configuracao');
+  conf = await api('/api/configuracao').catch(() => conf) || conf;
   atualizarPin();
   if (f) f(j);
 }
@@ -1234,16 +1239,29 @@ async function carregaDiag() {
 /* ---------------- PRIMEIRO VÍDEO: tema (ou exemplo) -> confere, instala o que falta e produz, com o vídeo tocando aqui ---------------- */
 // 0.6.2, à prova de falhas: toda chamada passa por apiSeguro (nunca lança: devolve { erro: { causa, acao } }), toda etapa
 // falha com causa e o que fazer, e todo erro tem o botão "Copiar diagnóstico" (texto sem chave, e-mail nem nome de usuário)
-const NAO_RESPONDE = { causa: 'O estúdio parou de responder. Ele pode ter fechado sozinho, o que não é culpa sua.', acao: 'Abra de novo pelo "Abrir Estúdio" e recarregue esta página; seus vídeos continuam salvos. Se repetir, clique em "Copiar diagnóstico" e mande no direct do Instagram @ilustrandocuriosidades.' };
-async function apiSeguro(u, opc) {
+const NAO_RESPONDE = { causa: 'O estúdio parou de responder. Ele pode ter fechado sozinho, o que não é culpa sua.', acao: 'Abra de novo pelo "Abrir Estúdio" e recarregue esta página; seus vídeos continuam salvos. Se repetir, clique em "Copiar diagnóstico" e mande no direct do Instagram @kaueajure.' };
+const RESPOSTA_ESTRANHA = { causa: 'O estúdio respondeu de um jeito inesperado.', acao: 'Recarregue a página. Se repetir, feche a janela preta e abra de novo pelo "Abrir Estúdio".' };
+const DEMOROU = { causa: 'O estúdio demorou para responder.', acao: 'Tente de novo em alguns segundos. Se repetir, confira se a janela preta continua aberta.' };
+const redeMortinha = (err) => /failed to fetch|networkerror|load failed|network request failed|err_connection|econnrefused|econnreset/i.test(String(err && (err.message || err) || ''));
+const foiAbortado = (err) => { const n = err && err.name, m = String(err && (err.message || err) || ''); return n === 'AbortError' || n === 'TimeoutError' || /aborted|abort|the operation was aborted|timed out|timeout/i.test(m); };
+async function apiSeguro(u, opc, tentativa = 0) {
   try {
     const r = await fetch(u, opc);
-    const j = await r.json().catch(() => null);
-    if (!j) return { erro: NAO_RESPONDE };
-    // erro técnico cru do servidor (texto solto): troca por uma frase que dá para seguir
-    if (!r.ok && typeof j.erro === 'string') j.erro = { causa: 'O estúdio não conseguiu fazer isso agora.', acao: 'Tente de novo. Se repetir, clique em "Copiar diagnóstico" e mande no direct do Instagram @ilustrandocuriosidades.' };
+    const txt = await r.text();
+    let j = null;
+    try { j = txt ? JSON.parse(txt) : null; } catch { j = null; }
+    // respondeu (mesmo com erro HTTP ou corpo estranho): a janela preta NÃO fechou
+    if (j == null) return { erro: r.status === 403 ? { causa: 'Este endereço não é o do estúdio local.', acao: 'Abra pelo "Abrir Estúdio" (http://127.0.0.1) e recarregue esta página.' } : RESPOSTA_ESTRANHA };
+    if (!r.ok && typeof j.erro === 'string') j.erro = { causa: 'O estúdio não conseguiu fazer isso agora.', acao: 'Tente de novo. Se repetir, clique em "Copiar diagnóstico" e mande no direct do Instagram @kaueajure.' };
     return j;
-  } catch { return { erro: NAO_RESPONDE }; }
+  } catch (err) {
+    if (foiAbortado(err)) return { erro: DEMOROU, temporario: true };
+    if (tentativa < 1 && redeMortinha(err)) {
+      await new Promise((ok) => setTimeout(ok, 400));
+      return apiSeguro(u, opc, tentativa + 1);
+    }
+    return { erro: NAO_RESPONDE };
+  }
 }
 const postSeguro = (u, corpo) => apiSeguro(u, { method: 'POST', headers: { 'x-token': TOKEN, 'content-type': 'application/json' }, body: JSON.stringify(corpo || {}) });
 const lembrar = { ler: () => { try { return JSON.parse(localStorage.getItem('primeiroVideo') || 'null'); } catch { return null; } }, gravar: (v) => { try { v ? localStorage.setItem('primeiroVideo', JSON.stringify(v)) : localStorage.removeItem('primeiroVideo'); } catch { /* sem armazenamento: só não sobrevive ao recarregar */ } } };
@@ -1272,16 +1290,16 @@ function blocoOndeVigia() {
 async function copiarDiagnosticoPrimeiro(botao) {
   const r = await postSeguro('/api/primeiro/diagnostico', { nome: pv.nome });
   const txt = r.texto || diagnosticoSemEstudio();
-  if (await copiarTexto(txt)) { const t0 = botao.textContent; botao.textContent = 'Copiado. Cole no direct do Instagram @ilustrandocuriosidades.'; setTimeout(() => (botao.textContent = t0), 4000); return; }
-  abrirDlg(`<h2>Diagnóstico do primeiro vídeo</h2><p class="dica">Selecione tudo, copie e cole no direct do Instagram @ilustrandocuriosidades. Aqui não vai chave, e-mail nem o nome do seu computador.</p><textarea id="diagTxt" readonly>${esc(txt)}</textarea><p style="margin-top:10px">${botaoDirect}</p>`);
+  if (await copiarTexto(txt)) { const t0 = botao.textContent; botao.textContent = 'Copiado. Cole no direct do Instagram @kaueajure.'; setTimeout(() => (botao.textContent = t0), 4000); return; }
+  abrirDlg(`<h2>Diagnóstico do primeiro vídeo</h2><p class="dica">Selecione tudo, copie e cole no direct do Instagram @kaueajure. Aqui não vai chave, e-mail nem o nome do seu computador.</p><textarea id="diagTxt" readonly>${esc(txt)}</textarea><p style="margin-top:10px">${botaoDirect}</p>`);
   const a = $('#diagTxt'); a.focus(); a.select(); try { document.execCommand('copy'); } catch { /* a pessoa copia à mão */ }
 }
 async function copiarDiagnostico(botao) {
   let r = await postSeguro('/api/diagnostico/texto');
   if (!r.texto) { await new Promise((ok) => setTimeout(ok, 1500)); r = await postSeguro('/api/diagnostico/texto'); } // 2ª tentativa: o estúdio pode estar ocupado
   const txt = r.texto || diagnosticoSemEstudio();
-  if (await copiarTexto(txt)) { if (botao) { const t0 = botao.textContent; botao.textContent = 'Diagnóstico copiado. Cole no direct do Instagram @ilustrandocuriosidades.'; setTimeout(() => (botao.textContent = t0), 4000); } return; }
-  abrirDlg(`<h2>Diagnóstico</h2><p class="dica">Selecione tudo, copie e cole no direct do Instagram @ilustrandocuriosidades. Aqui não vai chave, e-mail nem o nome do seu computador.</p><textarea id="diagTxt" readonly>${esc(txt)}</textarea><p style="margin-top:10px">${botaoDirect}</p>`);
+  if (await copiarTexto(txt)) { if (botao) { const t0 = botao.textContent; botao.textContent = 'Diagnóstico copiado. Cole no direct do Instagram @kaueajure.'; setTimeout(() => (botao.textContent = t0), 4000); } return; }
+  abrirDlg(`<h2>Diagnóstico</h2><p class="dica">Selecione tudo, copie e cole no direct do Instagram @kaueajure. Aqui não vai chave, e-mail nem o nome do seu computador.</p><textarea id="diagTxt" readonly>${esc(txt)}</textarea><p style="margin-top:10px">${botaoDirect}</p>`);
   const a = $('#diagTxt'); a.focus(); a.select(); try { document.execCommand('copy'); } catch { /* a pessoa copia à mão */ }
 }
 document.addEventListener('click', (e) => { const b = e.target.closest('[data-diag]'); if (b) { e.preventDefault(); copiarDiagnostico(b); } });
@@ -1409,7 +1427,7 @@ async function desenhaPrimeiro() {
     const ir = pv.irPara === 'voz' ? `<button class="btn sec pequeno" id="pvIr">Ir para o passo Voz</button>` : '';
     A.innerHTML = `<h2>O primeiro vídeo parou</h2>${pv.etapaFalhou ? `<p class="dica">Parou na etapa: ${esc(pv.etapaFalhou)}.</p>` : ''}${caixaErro(e, { botoes: false })}
       <div class="acoes"><button class="btn" id="pvDeNovo">Tentar de novo</button>${ir}${botaoDiag}<button class="mini" id="pvVoltar">Mudar o tema</button></div>
-      <p class="dica" style="margin-top:10px">"Copiar diagnóstico" copia um texto curto para colar no direct do Instagram @ilustrandocuriosidades (versão, sistema, o que faltou e as últimas linhas do erro). Não vai chave, e-mail nem o nome do seu computador.</p>`;
+      <p class="dica" style="margin-top:10px">"Copiar diagnóstico" copia um texto curto para colar no direct do Instagram @kaueajure (versão, sistema, o que faltou e as últimas linhas do erro). Não vai chave, e-mail nem o nome do seu computador.</p>`;
     $('#pvDeNovo').onclick = () => comecarPrimeiro({ repetir: true });
     $('#pvVoltar').onclick = () => resetPrimeiro();
     const b = $('#pvIr'); if (b) b.onclick = () => { const p = pv.irPara; resetPrimeiro(); irPara(p); };
@@ -1471,7 +1489,11 @@ async function seguirPrimeiro() {
   clearTimeout(pv.timer);
   if (!['rodando', 'esperando'].includes(pv.fase)) return;
   const j = await apiSeguro('/api/job');
-  if (j && j.erro) { pv.falhasRede = (pv.falhasRede || 0) + 1; if (pv.falhasRede >= 5) { pv.fase = 'erro'; pv.erro = j.erro; return desenhaPrimeiro(); } pv.timer = setTimeout(seguirPrimeiro, 3000); return; }
+  if (j && j.erro) {
+    // timeout/abort momentâneo: não conta como "estúdio fechou"
+    if (j.temporario) { pv.timer = setTimeout(seguirPrimeiro, 2500); return; }
+    pv.falhasRede = (pv.falhasRede || 0) + 1; if (pv.falhasRede >= 5) { pv.fase = 'erro'; pv.erro = j.erro; return desenhaPrimeiro(); } pv.timer = setTimeout(seguirPrimeiro, 3000); return;
+  }
   pv.falhasRede = 0;
   const meu = j && ['primeiro', 'preparar'].includes(j.tipo) && j.nome === pv.nome ? j : null;
   if (meu) pv.job = meu;
@@ -1483,7 +1505,7 @@ async function seguirPrimeiro() {
     if (meu.tipo === 'preparar') { pv.preparando = false; const c = await apiSeguro('/api/configuracao'); if (!c.erro) conf = c; }
     else {
       const mudo = meu.voz !== 'mock' && (meu.linhas || []).some((l) => /sem narração/.test(l));
-      if (mudo) { pv.fase = 'erro'; pv.erro = { causa: 'A narração saiu muda, então o vídeo não foi aceito.', acao: 'Volte ao passo Voz, salve a voz de novo e clique em Tentar de novo. Se repetir, clique em "Copiar diagnóstico" e mande no direct do Instagram @ilustrandocuriosidades.' }; pv.irPara = 'voz'; return desenhaPrimeiro(); }
+      if (mudo) { pv.fase = 'erro'; pv.erro = { causa: 'A narração saiu muda, então o vídeo não foi aceito.', acao: 'Volte ao passo Voz, salve a voz de novo e clique em Tentar de novo. Se repetir, clique em "Copiar diagnóstico" e mande no direct do Instagram @kaueajure.' }; pv.irPara = 'voz'; return desenhaPrimeiro(); }
       pv.fase = 'pronto'; pv.qa = meu.codigo === 2; lembrar.gravar(null); desenhaPrimeiro(); atualizarPin(); return;
     }
   }
@@ -1839,32 +1861,46 @@ async function falhaPagina(codigo, erro) {
   }
   alertaTopo({ causa: 'Uma parte da página não respondeu.', acao: 'Recarregue a página. Se repetir, confira se a janela do estúdio (a janela preta) continua aberta.', aviso });
 }
-// 0.6.10: promessa rejeitada por rede (a janela preta do estúdio foi fechada ou o computador dormiu) não é erro de programa: explica
-// o que fazer e não manda aviso; só o resto continua indo como "promessa-rejeitada"
+// Rede/abort/timeout: o batimento abaixo confirma se a janela preta realmente fechou. Antes, qualquer
+// fetch abortado (aba em segundo plano, timeout curto, consulta cancelada) disparava "parou de responder".
 window.addEventListener('unhandledrejection', (ev) => {
   const m = String((ev && ev.reason && (ev.reason.message || ev.reason)) || '');
-  if (/failed to fetch|networkerror|load failed|network request failed|aborted|abort|timed out|timeout/i.test(m)) {
-    alertaTopo({ causa: 'O estúdio parou de responder.', acao: 'A janela preta do estúdio provavelmente foi fechada ou o computador dormiu. Abra o estúdio de novo (Abrir Estúdio) e recarregue esta página.', aviso: '' });
+  if (/failed to fetch|networkerror|load failed|network request failed|aborted|abort|timed out|timeout|resposta-nao-json/i.test(m)) {
+    try { ev.preventDefault(); } catch { /* Safari antigo */ }
     return;
   }
   falhaPagina('promessa-rejeitada', ev && ev.reason);
 });
-// 0.6.21: batimento: se o estúdio (a janela preta) fechar, a página avisa sozinha em vez de esperar o primeiro clique que falhar
+function avisoRede(ligar, msg) {
+  const el = $('#redeAviso');
+  if (!el) return;
+  if (!ligar) { el.hidden = true; el.innerHTML = ''; return; }
+  const m = msgErro(msg);
+  el.hidden = false;
+  el.innerHTML = `<b>${esc(m.causa)}</b>${esc(m.acao || '')}<div class="acoes"><button class="btn sec pequeno" type="button" onclick="location.reload()">Recarregar</button>${botaoDiag}</div>`;
+}
+// Batimento: só avisa depois de várias falhas seguidas com a aba visível; some sozinho quando o ping volta.
+// Não usa alertaTopo (que rouba o painel da tarefa em andamento com "Não deu para começar").
 {
-  let seguidas = 0, avisada = false;
-  setInterval(async () => {
+  let seguidas = 0, avisada = false, emCurso = false;
+  const MSG_REDE = { causa: 'A janela preta do estúdio parou de responder.', acao: 'Ela precisa ficar aberta. Dê dois cliques em "Abrir Estúdio" e recarregue esta página. Para o diagnóstico sem o estúdio aberto, use "Diagnóstico (Windows)" ou "Diagnóstico (Mac)".' };
+  async function batimento() {
+    if (emCurso || document.hidden) return;
+    emCurso = true;
     try {
-      const r = await fetch('/api/ping', { cache: 'no-store', signal: AbortSignal.timeout(4000) });
-      if (!r.ok) throw new Error('ping');
-      seguidas = 0; avisada = false;
+      const r = await fetch('/api/ping', { cache: 'no-store', signal: AbortSignal.timeout(8000) });
+      const j = await r.json().catch(() => null);
+      if (!r.ok || !j || !j.ilustrando) throw new Error('ping');
+      seguidas = 0;
+      if (avisada) { avisada = false; avisoRede(false); }
     } catch {
+      if (document.hidden) return;
       seguidas += 1;
-      if (seguidas >= 2 && !avisada) {
-        avisada = true;
-        alertaTopo({ causa: 'A janela preta do estúdio foi fechada (ou o computador dormiu).', acao: 'Ela precisa ficar aberta enquanto você usa o estúdio. Dê dois cliques em "Abrir Estúdio" na pasta do estúdio e recarregue esta página. Para mandar o diagnóstico sem o estúdio aberto, dois cliques em "Diagnóstico (Windows)" ou "Diagnóstico (Mac)".', aviso: '' });
-      }
-    }
-  }, 5000).unref?.();
+      if (seguidas >= 4 && !avisada) { avisada = true; avisoRede(true, MSG_REDE); }
+    } finally { emCurso = false; }
+  }
+  setInterval(batimento, 5000).unref?.();
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) { seguidas = 0; batimento(); } });
 }
 // 0.6.24: ruído que não é do estúdio não derruba a tela nem manda aviso: ResizeObserver (aviso do navegador), "Script error." sem origem
 // (extensão ou antivírus injetando script) e arquivos de extensão do navegador

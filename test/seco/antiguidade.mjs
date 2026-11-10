@@ -46,7 +46,7 @@ export async function medir({ estilo, formato, handle, legenda, geo, mod }) {
     spec.__geoAnt = geojson; spec.__texAnt = { perg: IMG(gr, 1200, 1600), papel: IMG(gr, 1200, 1600) };
     for (const b of spec.beats) for (const e of b.elementos || []) { if (e.tipo !== 'antiguidade') continue; e._img = IMG(gr, e.arquivo === 'assets/b.png' ? 900 : 1600, e.arquivo === 'assets/b.png' ? 1300 : 1000); e._imgs = [IMG(gr), IMG(gr)]; for (const x of e.trocas || []) x._img = IMG(gr); }
     const paginas = legenda === false ? [] : (() => { const r = []; for (let i = 0; i < fala.palavras.length; i += 4) { const ws = fala.palavras.slice(i, i + 4); r.push({ ini: ws[0].t, fim: ws.at(-1).f + 0.2, ws }); } return r; })();
-    const S = { spec, dur: fala.duracao, esc: 1, legenda: paginas, m: { destaque: '#FF7A1A', serie: handle ? '@ilustrandocuriosidades' : '' } };
+    const S = { spec, dur: fala.duracao, esc: 1, legenda: paginas, m: { destaque: '#FF7A1A', serie: handle ? '@kaueajure' : '' } };
     const B = criarB({ gr, spec, S }), est = E.criarAntiguidade(B), amostras = [];
     for (const b of spec.beats) for (const u of [0.2, 0.55, 0.95]) {
       const t = b.de + (b.ate - b.de) * u; gr.zerar(); const out = { titulos: [], pecas: [], imagens: [] };

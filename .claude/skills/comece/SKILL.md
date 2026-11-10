@@ -7,7 +7,7 @@ description: Primeira vez no estúdio, para quem nunca usou nada parecido. Confe
 
 # Comece: a primeira execução
 
-Quem está do outro lado descompactou a pasta do Ilustrando Studio (open-source) e abriu a pasta no assistente (app do Claude, aba Code, ou Codex). Pode ter dado dois cliques em **Instalar (Mac)** ou **Instalar (Windows)** antes, ou não: abrir a pasta direto aqui também é um jeito certo de começar, e aí quem instala tudo, inclusive o Node, é você (Passo 0). Pode nunca ter usado um Terminal e **não vai digitar comando nenhum**: quem roda os comandos é você. O seu trabalho é levar essa pessoa até um vídeo de teste pronto e a marca dela aplicada, em uns 15 minutos.
+Quem está do outro lado descompactou a pasta do Estudio de videos (open-source) e abriu a pasta no assistente (app do Claude, aba Code, ou Codex). Pode ter dado dois cliques em **Instalar (Mac)** ou **Instalar (Windows)** antes, ou não: abrir a pasta direto aqui também é um jeito certo de começar, e aí quem instala tudo, inclusive o Node, é você (Passo 0). Pode nunca ter usado um Terminal e **não vai digitar comando nenhum**: quem roda os comandos é você. O seu trabalho é levar essa pessoa até um vídeo de teste pronto e a marca dela aplicada, em uns 15 minutos.
 
 ## Como falar durante toda a skill
 - **Um passo por vez.** Diga em uma frase o que vai fazer, faça, e diga em uma frase o que aconteceu. Nada de parede de texto.
@@ -86,7 +86,7 @@ Sem estúdio web (o navegador não abriu, ou a pessoa prefere a conversa): siga 
 4. Se falhar, siga a seção "Quando o estúdio devolver um erro" (mais abaixo): só a lista segura, no máximo 2 tentativas.
 5. Se a voz já estiver configurada e a pessoa quiser ouvir, ofereça (não rode sem perguntar, porque gasta crédito): `npm run video -- exemplo --voz=<voz>`.
 6. Para o primeiro vídeo de verdade, o caminho mais curto é o botão **Fazer meu primeiro vídeo**, no topo da aba Começar do estúdio web: ela digita o tema ou escolhe um do banco de temas prontos, e o estúdio confere tudo, instala o que faltar e mostra o vídeo tocando. Com o tema dela, o estúdio copia um pedido para colar aqui (veja abaixo). Se ela quiser uma vitória ainda mais rápida, a opção **Prefere começar por um carrossel?** faz um carrossel em segundos, sem voz.
-7. Se algo falhar no estúdio web, a tela mostra a causa, o que fazer e os botões **Copiar diagnóstico** e **Abrir o direct** (direct do Instagram @ilustrandocuriosidades, https://ig.me/m/ilustrandocuriosidades). O estúdio também manda sozinho um aviso anônimo (só o código da falha, a versão e o sistema; desliga em Configurações, na aba Começar).
+7. Se algo falhar no estúdio web, a tela mostra a causa, o que fazer e os botões **Copiar diagnóstico** e **Abrir o direct** (direct do Instagram @kaueajure, https://ig.me/m/kaueajure). O estúdio também manda sozinho um aviso anônimo (só o código da falha, a versão e o sistema; desliga em Configurações, na aba Começar).
 
 ### Quando a pessoa colar o pedido do botão "Fazer meu primeiro vídeo"
 O pedido começa com "Quero o meu primeiro vídeo sobre..." e diz a pasta (`projetos/<nome>/`, com o arquivo `PEDIDO-DO-ESTUDIO.md`). Faça só a parte do texto: skill `pauta` (ângulo e fatos conferidos) e skill `roteiro`, gravando `projetos/<nome>/roteiro.md` e `projetos/<nome>/fontes.md`. **Não rode o vídeo** (nem `npm run video`, nem a skill `video`): o estúdio web está esperando o roteiro, começa sozinho uns 15 segundos depois de você gravar e mostra o progresso e o vídeo na tela dela. Termine dizendo: "O roteiro está pronto. Volte ao estúdio no navegador: o vídeo já começou." Se o estúdio depois mostrar "O roteiro não passou no corretor automático", reescreva o roteiro na mesma pasta e peça para ela clicar em **Tentar de novo**.
@@ -113,7 +113,7 @@ Vale em qualquer momento, não só na primeira vez. O estúdio mostra a causa, "
 - gastar crédito pago (ElevenLabs, Fish Audio) sem perguntar antes: nada de `--refazer-voz` nem de apagar `narracao.mp3` ou `palavras.json` para "tentar de novo";
 - pedir chave no chat.
 
-**4. Duas tentativas, no máximo.** Se não resolver, pare e diga, em uma frase, o que tentou. Peça à pessoa para clicar em **Copiar diagnóstico** e depois em **Abrir o direct** (direct do Instagram @ilustrandocuriosidades, https://ig.me/m/ilustrandocuriosidades) e colar lá. Não invente texto de suporte com hipótese técnica: repita o que o estúdio disse.
+**4. Duas tentativas, no máximo.** Se não resolver, pare e diga, em uma frase, o que tentou. Peça à pessoa para clicar em **Copiar diagnóstico** e depois em **Abrir o direct** (direct do Instagram @kaueajure, https://ig.me/m/kaueajure) e colar lá. Não invente texto de suporte com hipótese técnica: repita o que o estúdio disse.
 
 O aviso do doctor "nenhum assistente encontrado no Terminal" não é erro: só quer dizer que o comando `claude` ou `codex` não está no Terminal. Quem usa o app do Claude ou do Codex não precisa fazer nada.
 

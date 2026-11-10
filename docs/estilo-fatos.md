@@ -56,9 +56,9 @@ A viagem de um mapa ao outro (travelling) é automática entre beats seguidos co
 
 ## Personagem do palco (o Curioso): só por opção (0.6.31)
 
-**Nenhum Reel Fatos traz o personagem por padrão** (a revisão do Reel `kit-emergencia-pix`, em 03/11, pediu para tirar o Curioso). O cenário `palco` é só luz, cone e névoa; o plano automático nunca escolhe `palco-curioso`, e a abertura é número, globo ou o objeto da fala. O código do personagem continua no estúdio para quem quiser: escreva `"cenario": "palco-curioso"` no beat. O palco com o personagem em 3D de verdade (three.js) é **dado**, como o cenário: `src/video/engine/estilo-fatos-personagem.js`. O padrão é o **Curioso**, desenhado para o Ilustrando depois que o estúdio decidiu (31/10) que o primeiro porte estava parecido demais com o mascote do perfil de referência. Ele é diferente em tudo que faz um personagem ser reconhecido:
+**Nenhum Reel Fatos traz o personagem por padrão** (a revisão do Reel `kit-emergencia-pix`, em 03/11, pediu para tirar o Curioso). O cenário `palco` é só luz, cone e névoa; o plano automático nunca escolhe `palco-curioso`, e a abertura é número, globo ou o objeto da fala. O código do personagem continua no estúdio para quem quiser: escreva `"cenario": "palco-curioso"` no beat. O palco com o personagem em 3D de verdade (three.js) é **dado**, como o cenário: `src/video/engine/estilo-fatos-personagem.js`. O padrão é o **Curioso**, desenhado para o Estudio de videos depois que o estúdio decidiu (31/10) que o primeiro porte estava parecido demais com o mascote do perfil de referência. Ele é diferente em tudo que faz um personagem ser reconhecido:
 
-| | Mascote da referência | Curioso (Ilustrando) |
+| | Mascote da referência | Curioso (Estudio de videos) |
 |---|---|---|
 | Silhueta | duas esferas empilhadas, sem braços | um corpo só em sino (casaco), com braços e mãos |
 | Cor | preto brilhante inteiro | casaco azul-noite `#1B2338` (o preto azulado da página) e cabeça marfim `#EEE6D8` |
@@ -114,7 +114,7 @@ A unidade dita logo depois do número (dias, anos, meses, países, milhões...) 
 
 ## O que não copiar
 
-O mascote do perfil de referência NÃO é copiado. O personagem Curioso, próprio do Ilustrando, existe só como opção (`palco-curioso`); por padrão o palco é só luz (ver "Personagem do palco").
+O mascote do perfil de referência NÃO é copiado. O personagem Curioso, próprio do Estudio de videos, existe só como opção (`palco-curioso`); por padrão o palco é só luz (ver "Personagem do palco").
 
 
 Nome e @ do perfil, frases e roteiros, avião e passaporte, imagens, mapas e vídeo da referência, música e fonte de terceiros. As fontes são as livres que o estúdio já tem: Inter Tight, Playfair Display itálica e JetBrains Mono (OFL, em `AVISOS-TERCEIROS.md`); a serifa do numeral no papel é a Instrument Serif (OFL).

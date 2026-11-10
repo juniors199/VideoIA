@@ -47,7 +47,7 @@ ilu_aviso_anonimo() {
   ver="$(tr -d ' \r\n' < "$studio/VERSAO" 2>/dev/null)"
   case "$ver" in [0-9]*.[0-9]*.[0-9]*) ;; *) ver=0.0.0 ;; esac
   corpo="{\"etapa\":\"$etapa\",\"codigo\":\"$codigo\",\"versao\":\"$ver\",\"so\":\"$so\",\"soVersao\":\"$sov\",\"instalacao\":\"$inst\"}"
-  diag="$(printf 'Diagnóstico do Ilustrando Studio (instalação sem o Node)\nVersão do estúdio: %s\nSistema: %s %s (%s)\nEtapa que falhou: %s\nO que o estúdio disse: %s\n' "$ver" "$so" "$(uname -r 2>/dev/null)" "$(uname -m 2>/dev/null)" "$etapa" "$texto")"
+  diag="$(printf 'Diagnóstico do Estudio de videos (instalação sem o Node)\nVersão do estúdio: %s\nSistema: %s %s (%s)\nEtapa que falhou: %s\nO que o estúdio disse: %s\n' "$ver" "$so" "$(uname -r 2>/dev/null)" "$(uname -m 2>/dev/null)" "$etapa" "$texto")"
   diag="${diag//"$studio"/[pasta do estúdio]}"
   til='~'
   [ -n "${HOME:-}" ] && [ "${#HOME}" -gt 3 ] && diag="${diag//"$HOME"/$til}"
@@ -77,6 +77,6 @@ ilu_tela_ajuda() {
   else
     command -v xdg-open >/dev/null 2>&1 && { xdg-open "${url:-$pagina}" >/dev/null 2>&1 & }
   fi
-  echo "  Abri uma página de ajuda no navegador, com \"Copiar diagnóstico\" e \"Abrir o direct\" (https://ig.me/m/ilustrandocuriosidades)."
+  echo "  Abri uma página de ajuda no navegador, com \"Copiar diagnóstico\" e \"Abrir o direct\" (https://ig.me/m/kaueajure)."
   return 0
 }

@@ -4,7 +4,7 @@
  */
 /**
  * Cenário "marca-pagina" (rodada 4, pedido do dono): o fecho e qualquer plano na IDENTIDADE DA PÁGINA. Com `ambiente.marca`,
- * o palco troca o fundo pela cor de fundo da marca (marca/tokens.json; no Ilustrando, preto azulado) e os acentos pela cor
+ * o palco troca o fundo pela cor de fundo da marca (marca/tokens.json; no Estudio de videos, preto azulado) e os acentos pela cor
  * de destaque (laranja), então o aluno que troca a marca troca o fecho junto. As cores abaixo são só a reserva sem marca.
  */
 import { tonsDaMarca } from '../marca-tons.js';

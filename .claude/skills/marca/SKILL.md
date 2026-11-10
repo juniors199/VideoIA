@@ -1,13 +1,13 @@
 ---
 name: marca
-description: Coloca a marca da pessoa no estúdio (nome, @, cor, símbolo, avatar, banners) com uma conversa curta e um comando. Use quando a pessoa disser que quer a própria página, trocar nome, @, cor ou logo, "minha marca", "minha identidade", ou na primeira vez que ela usar o estúdio ainda com a marca de demonstração do Ilustrando.
+description: Coloca a marca da pessoa no estúdio (nome, @, cor, símbolo, avatar, banners) com uma conversa curta e um comando. Use quando a pessoa disser que quer a própria página, trocar nome, @, cor ou logo, "minha marca", "minha identidade", ou na primeira vez que ela usar o estúdio ainda com a marca de demonstração.
 ---
 
 
 
 # Marca da pessoa
 
-O estúdio vem com a marca neutra de fábrica, Sua Página (@suapagina), ou, na cópia do mantenedor, com a marca de demonstração do Ilustrando (@ilustrandocuriosidadesbr). Esta skill troca pela página de quem comprou. Tudo que for gerado depois (vídeo, carrossel, avatar, banners) sai com a marca nova, porque o motor lê `marca/tokens.json` a cada geração.
+O estúdio vem com a marca neutra de fábrica, Sua Página (@suapagina), ou, na cópia do mantenedor, com a marca de demonstração (@exemplo). Esta skill troca pela página de quem comprou. Tudo que for gerado depois (vídeo, carrossel, avatar, banners) sai com a marca nova, porque o motor lê `marca/tokens.json` a cada geração.
 
 Trocar a marca é uma decisão de marca: é um dos três casos em que você pergunta antes de agir. Faça no máximo 3 perguntas, uma de cada vez, sempre com sugestões prontas para a pessoa só escolher.
 

@@ -75,9 +75,9 @@ Oi! Aqui está o link do [produto] que eu comentei: [link]
 Qualquer dúvida sobre [tema], me pergunta.
 ```
 
-**Afiliado do Método Ilustrando (com identificação):**
+**Afiliado do Estudio de videos (com identificação):**
 ```
-Oi! Eu faço os vídeos com o Método Ilustrando: um estúdio que roda no Claude Code ou no Codex. Eu peço o tema, ele confere os fatos, escreve, narra e anima, e eu confiro antes de postar.
+Oi! Eu faço os vídeos com o Estudio de videos: um estúdio que roda no Claude Code ou no Codex. Eu peço o tema, ele confere os fatos, escreve, narra e anima, e eu confiro antes de postar.
 Para usar, é preciso ter uma assinatura paga do Claude ou do ChatGPT com Codex, e uma conta de voz.
 O link é este: [AFILIADO_URL do seu painel]
 É meu link de afiliado: se você comprar por ele, eu ganho uma comissão, sem custo a mais para você.

@@ -1,6 +1,6 @@
 ---
 name: video
-description: Produz o vídeo do Ilustrando de ponta a ponta, sem paradas de aprovação, a partir de um roteiro.md. Use quando houver um roteiro e a pessoa quiser o MP4.
+description: Produz o vídeo do Estudio de videos de ponta a ponta, sem paradas de aprovação, a partir de um roteiro.md. Use quando houver um roteiro e a pessoa quiser o MP4.
 ---
 
 

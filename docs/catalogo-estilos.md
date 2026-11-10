@@ -37,12 +37,12 @@ O Reel é recortado com 3,6 s, 400 px de largura, H.264 sem áudio e `+faststart
 1. Tire uma folha de contato do vídeo de origem (12 quadros) e ache 3,6 s dentro de um mesmo assunto, com a peça central do estilo e a legenda.
 2. Evite: foto de pessoa real fora de obra de domínio público, logo de outra marca, trecho com texto cortado, faixa preta, quadro vazio no começo, CTA com o endereço antigo.
 3. Depois de gerar, confira 3 quadros do loop (começo, meio, fim). Se algo falhar, troque `inicio` em `fontes.json`. No máximo 3 tentativas por estilo; passou disso, escolha outro vídeo de origem.
-4. A cor de destaque tem que ser a da marca (laranja do Ilustrando), em todos os estilos coloridos (ver "Cores" abaixo).
+4. A cor de destaque tem que ser a da marca (laranja do Estudio de videos), em todos os estilos coloridos (ver "Cores" abaixo).
 
 Os vídeos de origem são `projetos/_dv2-*` (um por estilo), `projetos/exemplo-*`, `projetos/_t18-panela-*`, as prévias internas de cada estilo e `projetos/_catalogo-colagem3d`, `projetos/_catalogo-fatos`, `projetos/novela-previa`, `projetos/pleno-teste` (estilo pleno), `projetos/mindset3-previa` e as prévias dos cartoons (`projetos/<id>-previa` de paper-rocket, lighthouse-mouse, moon-path, prickles e little-light) (Colagem 3D e Fatos renderizados de novo na 0.6.28 para sair com o laranja da marca; o de Fatos sem a foto de pessoa; o loop da Novela sai da prévia de 04/11/2026, sem foto de pessoa no trecho; Mindset 3 e cartoons desde 04 e 05/11/2026). Eles e os slides dos carrosseis ficam fora do git (`.gitignore`); só os loops entram (`!studio/src/estudio/catalogo/previas/*.mp4`).
 
 ### Renderizar de novo um exemplo (marca laranja, sem gastar crédito)
-Num estúdio com a marca do Ilustrando ou outra de destaque laranja (`npm run marca -- --nome "Padaria da Ana" --handle "@padariadaana" --cor "#FF7A2F"`), com voz de teste e sem música:
+Num estúdio com a marca do Estudio de videos ou outra de destaque laranja (`npm run marca -- --nome "Padaria da Ana" --handle "@padariadaana" --cor "#FF7A2F"`), com voz de teste e sem música:
 ```bash
 node src/video/cli.mjs <projeto> --voz=mock --sem-musica --rapido
 ```
@@ -50,7 +50,7 @@ Um projeto com `narracao.mp3` e `palavras.json` guardados reaproveita a voz. Nun
 
 ## Cores
 Todos os estilos coloridos seguem a cor da marca (desde a 0.6.29): letreiro, interface, colagem, ribalta, mundos, colagem3d, fatos, novela, paper-rocket, lighthouse-mouse, moon-path, prickles, little-light, smooth, cartões, tubo, mindset, mindset 2, mindset 3, 3D alternativo, moderno, stop motion, teologia, quadro antigo e antiguidade. Os neutros (impresso, anatomia, fino, linhas, preto e branco, pontilhismo) são monocromáticos por desenho. A auditoria completa, a regra e o teste que trava cor fixa estão em `docs/cor-da-marca.md`.
-Para o loop, renderize o exemplo com a marca do Ilustrando (laranja `#FF7A2F`). Sem mexer em `marca/tokens.json`: `ILU_TOKENS=<arquivo de tokens> node src/video/cli.mjs ...` usa outra marca só naquele comando.
+Para o loop, renderize o exemplo com a marca do Estudio de videos (laranja `#FF7A2F`). Sem mexer em `marca/tokens.json`: `ILU_TOKENS=<arquivo de tokens> node src/video/cli.mjs ...` usa outra marca só naquele comando.
 
 ## Adicionar um estilo novo
 1. Crie o estilo como de costume (ficha em `modelos/<id>.json` ou id novo em `src/video/plano.mjs`; `npm run estilos` tem que listar).

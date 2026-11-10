@@ -1,6 +1,6 @@
 ---
 name: roteiro
-description: Escolhe o formato e o gatilho de gancho e escreve o roteiro narrado de um vídeo curto do Ilustrando, na faixa de palavras do objetivo do vídeo (padrão 150 a 230). Use depois da pauta.
+description: Escolhe o formato e o gatilho de gancho e escreve o roteiro narrado de um vídeo curto do Estudio de videos, na faixa de palavras do objetivo do vídeo (padrão 150 a 230). Use depois da pauta.
 ---
 
 

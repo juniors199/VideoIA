@@ -1,4 +1,4 @@
-# Ilustrando Studio (instruções para o Codex)
+# Estudio de videos (instruções para o Codex)
 
 Este arquivo é o `CLAUDE.md` do estúdio para o Codex: mesmas regras, mesmo fluxo, mesmas skills. O Claude Code lê o `CLAUDE.md`; o Codex lê este. O trecho entre as marcas `CLAUDE.md:inicio` e `CLAUDE.md:fim` e a tabela de skills são copiados por `npm run sincronizar`: para mudar uma regra, edite o `CLAUDE.md` e rode o comando. Edite à mão só a seção "No Codex", no fim.
 
@@ -108,16 +108,16 @@ As skills são as mesmas do Claude Code, copiadas para `.agents/skills/` (a font
 <!-- skills:inicio -->
 | Skill | No Codex | Para que serve |
 |---|---|---|
-| `carrossel` | `$carrossel` | Cria um carrossel do Ilustrando (6 a 10 slides) e gera os PNGs, sem paradas de aprovação. |
-| `cena` | `$cena` | Escreve o cena.json de um vídeo do Ilustrando, o que aparece na tela em cada trecho da narração. |
+| `carrossel` | `$carrossel` | Cria um carrossel do Estudio de videos (6 a 10 slides) e gera os PNGs, sem paradas de aprovação. |
+| `cena` | `$cena` | Escreve o cena.json de um vídeo do Estudio de videos, o que aparece na tela em cada trecho da narração. |
 | `comece` | `$comece` | Primeira vez no estúdio, para quem nunca usou nada parecido. |
 | `critico` | `$critico` | Julga a folha de contato do vídeo e corrige os 3 maiores defeitos, sem pedir aprovação humana. |
 | `marca` | `$marca` | Coloca a marca da pessoa no estúdio (nome, @, cor, símbolo, avatar, banners) com uma conversa curta e um comando. |
 | `pauta` | `$pauta` | Escolhe o ângulo de um tema e confere os fatos antes de escrever qualquer roteiro ou slide. |
-| `publicar` | `$publicar` | Escreve a legenda, os marcadores e a descrição por plataforma para um vídeo ou carrossel do Ilustrando já gerado. |
+| `publicar` | `$publicar` | Escreve a legenda, os marcadores e a descrição por plataforma para um vídeo ou carrossel do Estudio de videos já gerado. |
 | `referencia` | `$referencia` | Dissecar um vídeo ou carrossel de referência para extrair o padrão transferível (mecanismo, estrutura, ritmo), nunca o conteúdo nem a identidade. |
-| `roteiro` | `$roteiro` | Escolhe o formato e o gatilho de gancho e escreve o roteiro narrado de um vídeo curto do Ilustrando, na faixa de palavras do objetivo do vídeo (padrão 150 a 230). |
-| `video` | `$video` | Produz o vídeo do Ilustrando de ponta a ponta, sem paradas de aprovação, a partir de um roteiro.md. |
+| `roteiro` | `$roteiro` | Escolhe o formato e o gatilho de gancho e escreve o roteiro narrado de um vídeo curto do Estudio de videos, na faixa de palavras do objetivo do vídeo (padrão 150 a 230). |
+| `video` | `$video` | Produz o vídeo do Estudio de videos de ponta a ponta, sem paradas de aprovação, a partir de um roteiro.md. |
 <!-- skills:fim -->
 
 ### Primeira vez

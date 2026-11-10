@@ -1,6 +1,6 @@
 
 
-# Ilustrando Studio
+# Estudio de videos
 
 Estúdio de carrosséis e vídeos de curiosidades que roda no Claude Code ou no Codex. Do tema ao arquivo pronto, sem aprovar etapa por etapa. Roda em computador ou notebook (Mac ou Windows), não em celular nem tablet.
 
@@ -15,7 +15,7 @@ O **estúdio visual é opcional**: escreva **abrir estúdio** para ver seus víd
 
 No estúdio:
 1. No estúdio (**Abrir Estúdio**), aba **Começar**: voz (a ElevenLabs é a padrão, com conta grátis e o passo a passo completo na própria tela: criar a conta, gerar a chave, colar e ouvir as 10 vozes; a chave vai direto para o `.env`, sem aparecer de novo), marca e tipo de página.
-2. No topo da aba **Começar**, digite um tema e clique em **Fazer meu primeiro vídeo**: o estúdio confere a instalação e a voz, instala o que faltar e mostra o vídeo tocando. Se algo parar, a tela diz a causa, o que fazer e tem **Copiar diagnóstico** para mandar no direct do Instagram @ilustrandocuriosidades (sem chaves nem dados pessoais).
+2. No topo da aba **Começar**, digite um tema e clique em **Fazer meu primeiro vídeo**: o estúdio confere a instalação e a voz, instala o que faltar e mostra o vídeo tocando. Se algo parar, a tela diz a causa, o que fazer e tem **Copiar diagnóstico** para mandar no direct do Instagram @kaueajure (sem chaves nem dados pessoais).
 3. Os vídeos prontos ficam em **Meus vídeos**, com Baixar e Copiar legenda.
 
 ## O que vem pronto

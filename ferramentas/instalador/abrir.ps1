@@ -2,7 +2,7 @@
  # Abre o estúdio web (Windows). Quem chama: "Abrir Estúdio (Windows).bat" e o atalho da área de trabalho.
 $ErrorActionPreference = 'Stop'
 try { [Console]::OutputEncoding = [Text.Encoding]::UTF8 } catch {}
-try { $Host.UI.RawUI.WindowTitle = 'Ilustrando Studio' } catch {}
+try { $Host.UI.RawUI.WindowTitle = 'Estudio de videos' } catch {}
 $studio = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..'))
 # 0.6.19: registro local e tela de ajuda ESTÁTICA (sem hash no endereço). O Windows tira o "#c=...&a=..." de um endereço file://
 # aberto pelo Start-Process, e a pessoa via sempre o texto genérico da página, com o diagnóstico só no cabeçalho. Agora a causa,
@@ -28,7 +28,7 @@ function Montar-Diagnostico($etapa, $causa, $acao = '') {
   $ver = '?'; try { $ver = (Get-Content -LiteralPath (Join-Path $studio 'VERSAO') -Raw).Trim() } catch {}
   $log = ''; try { $log = (Get-Content -LiteralPath (Join-Path $studio '.estudio\instalacao.log') -Tail 25 -Encoding UTF8) -join "`n" } catch {}
   $arq = $env:PROCESSOR_ARCHITEW6432; if (-not $arq) { $arq = $env:PROCESSOR_ARCHITECTURE }
-  $d = "Diagnóstico do Ilustrando Studio (instalação, sem chaves, sem e-mail e sem dados pessoais)`nVersão do estúdio: $ver`nSistema: Windows $($v.Major).$($v.Minor).$($v.Build) ($arq)`nEtapa que falhou: $etapa`nO que houve: $causa"
+  $d = "Diagnóstico do Estudio de videos (instalação, sem chaves, sem e-mail e sem dados pessoais)`nVersão do estúdio: $ver`nSistema: Windows $($v.Major).$($v.Minor).$($v.Build) ($arq)`nEtapa que falhou: $etapa`nO que houve: $causa"
   if ($acao) { $d += "`nO que fazer: $acao" }
   $nc = ([string]$studio).Length; $un = ([string]$studio).Substring(0, 1)
   $d += "`nPowerShell: $($PSVersionTable.PSVersion); caminho da pasta: $nc caracteres; unidade: $un"
@@ -47,7 +47,7 @@ function Tela-Ajuda($causa, $acao, $etapa) {
     $diag = Montar-Diagnostico $etapa $causa $acao
     $html = @'
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ilustrando Studio: ajuda</title>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Estudio de videos: ajuda</title>
 <style>
 :root{color-scheme:dark;--fundo:#0f1014;--cartao:#181a21;--texto:#f2efe9;--suave:#b9b4ab;--erro:#ff8f6b;--linha:#2b2e38}
 *{box-sizing:border-box}body{margin:0;background:var(--fundo);color:var(--texto);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding:24px 16px}
@@ -61,8 +61,8 @@ textarea{width:100%;min-height:200px;background:#0a0b0e;color:var(--suave);borde
 <h1>O estúdio precisa de uma ajudinha</h1>
 <p class="sub">Nada se perdeu: a pasta do estúdio continua como estava.</p>
 <div class="caixa" role="alert"><b>{{CAUSA}}</b>O que fazer: {{ACAO}}<br><small class="aviso">Etapa: {{ETAPA}}</small></div>
-<div class="acoes"><button class="btn" id="copiar">Copiar diagnóstico</button><a class="btn" href="https://ig.me/m/ilustrandocuriosidades" target="_blank" rel="noopener">Abrir o direct</a><span class="ok" id="copiado" aria-live="polite"></span></div>
-<p class="aviso">Cole o diagnóstico no direct do Instagram @ilustrandocuriosidades. Ele não leva chave, e-mail nem o nome do seu computador. O mesmo texto fica salvo em .estudio\ajuda.html.</p>
+<div class="acoes"><button class="btn" id="copiar">Copiar diagnóstico</button><a class="btn" href="https://ig.me/m/kaueajure" target="_blank" rel="noopener">Abrir o direct</a><span class="ok" id="copiado" aria-live="polite"></span></div>
+<p class="aviso">Cole o diagnóstico no direct do Instagram @kaueajure. Ele não leva chave, e-mail nem o nome do seu computador. O mesmo texto fica salvo em .estudio\ajuda.html.</p>
 <textarea id="diag" readonly aria-label="Diagnóstico">{{DIAG}}</textarea>
 </main><script>
 document.getElementById('copiar').onclick=function(){var t=document.getElementById('diag'),ok=false;var fim=function(){document.getElementById('copiado').textContent=ok?'Copiado. Agora cole no direct.':'Selecionei o texto: copie com Ctrl+C.';};
@@ -73,10 +73,10 @@ if(navigator.clipboard){navigator.clipboard.writeText(t.value).then(function(){o
     $f = Join-Path $dir 'ajuda.html'
     [IO.File]::WriteAllText($f, $html, (New-Object Text.UTF8Encoding($true)))
     Start-Process -FilePath $f
-    Write-Host '  Abri uma página de ajuda no navegador, com "Copiar diagnóstico" e "Abrir o direct" (https://ig.me/m/ilustrandocuriosidades).'
+    Write-Host '  Abri uma página de ajuda no navegador, com "Copiar diagnóstico" e "Abrir o direct" (https://ig.me/m/kaueajure).'
     Write-Host '  Se ela não abrir, o mesmo texto está em .estudio\ajuda.html e .estudio\instalacao.log, dentro da pasta do estúdio.'
   } catch {
-    Write-Host '  Mande uma foto desta janela no direct do Instagram @ilustrandocuriosidades (https://ig.me/m/ilustrandocuriosidades).'
+    Write-Host '  Mande uma foto desta janela no direct do Instagram @kaueajure (https://ig.me/m/kaueajure).'
   }
 }
 # o que a exceção do PowerShell quer dizer, em português simples: causa, o que fazer e um código curto para o aviso anônimo
@@ -90,7 +90,7 @@ function Explicar-Excecao($msg) {
   if ($m -match 'execution polic|running scripts is disabled|PSSecurityException|não pode ser carregado') { return @{ causa = 'uma política do Windows está bloqueando scripts do PowerShell.'; acao = 'Se o computador é da empresa, peça ao suporte de TI para liberar. No seu computador: clique com o botão direito em Instalar (Windows) > Propriedades > marque "Desbloquear" > OK, e tente de novo.'; codigo = 'politica-powershell' } }
   if ($m -match 'ConstrainedLanguage|language mode|modo de linguagem|Cannot invoke method|Não é possível chamar o método') { return @{ causa = 'o PowerShell deste computador está em modo restrito (política da empresa ou do antivírus).'; acao = 'Use um computador pessoal, ou peça ao suporte de TI para liberar o PowerShell completo para a pasta do estúdio.'; codigo = 'powershell-restrito' } }
   if ($m -match 'Expand-Archive|ZipFile|archive|arquivo.*(zip|compactado)|End of Central Directory|corrupt') { return @{ causa = 'o arquivo baixado veio incompleto ou o antivírus o alterou.'; acao = 'Espere 1 minuto e dê dois cliques em Instalar de novo (ele baixa outra vez).'; codigo = 'zip-ruim' } }
-  return @{ causa = $m; acao = 'Espere 1 minuto e dê dois cliques em Instalar de novo. Se repetir, clique em "Copiar diagnóstico" na página que vai abrir e mande no direct do Instagram @ilustrandocuriosidades.'; codigo = 'excecao' }
+  return @{ causa = $m; acao = 'Espere 1 minuto e dê dois cliques em Instalar de novo. Se repetir, clique em "Copiar diagnóstico" na página que vai abrir e mande no direct do Instagram @kaueajure.'; codigo = 'excecao' }
 }
 
 
@@ -118,7 +118,7 @@ trap {
   Write-Host ''
   Write-Host "  O estúdio não abriu: $($ex.causa)"
   Tela-Ajuda "O estúdio não abriu: $($ex.causa)" 'Dê dois cliques em "Instalar (Windows)" para conferir a instalação e abra de novo.' 'abrir o estúdio'
-  Write-Host '  Dê dois cliques em "Instalar (Windows)" para conferir a instalação. Se repetir, mande uma foto desta janela no direct do Instagram @ilustrandocuriosidades.'
+  Write-Host '  Dê dois cliques em "Instalar (Windows)" para conferir a instalação. Se repetir, mande uma foto desta janela no direct do Instagram @kaueajure.'
   Write-Host ''
   Read-Host '  Aperte Enter para fechar esta janela' | Out-Null
   exit 10
@@ -148,7 +148,7 @@ if (-not (Node-Abre $node)) {
 }
 if ($env:HTTPS_PROXY -or $env:https_proxy) { $env:NODE_USE_ENV_PROXY = '1'; $env:NODE_NO_WARNINGS = '1' }
 Write-Host ''
-Write-Host '  Ilustrando Studio'
+Write-Host '  Estudio de videos'
 Write-Host '  Abrindo no navegador. Deixe esta janela aberta enquanto usa o estúdio; para fechar o estúdio, feche esta janela.'
 Write-Host ''
 # 0.6.23: pasta em OneDrive/Downloads/nuvem derrubava o Node no Windows 11 novo (0xC0000409). Antes de ligar o servidor, o
@@ -179,13 +179,13 @@ if ((Test-Path -LiteralPath $mover) -and $env:ILU_SEM_MUDANCA -ne '1') {
       $studio = $novo
       try {
         $ws = New-Object -ComObject WScript.Shell
-        $atalho = $ws.CreateShortcut((Join-Path ([Environment]::GetFolderPath('Desktop')) 'Ilustrando Studio.lnk'))
+        $atalho = $ws.CreateShortcut((Join-Path ([Environment]::GetFolderPath('Desktop')) 'Estudio de videos.lnk'))
         $atalho.TargetPath = Join-Path $novo 'Abrir Estúdio (Windows).bat'
         $atalho.WorkingDirectory = $novo
         $atalho.Save()
       } catch {}
       Write-Host ''
-      Write-Host "  Pronto. Daqui para frente, abra o estúdio pelo atalho 'Ilustrando Studio' na área de trabalho (ou por $novo)."
+      Write-Host "  Pronto. Daqui para frente, abra o estúdio pelo atalho 'Estudio de videos' na área de trabalho (ou por $novo)."
       Write-Host ''
     } else {
       # 0.6.40: o motivo vai também para o instalacao.log, que entra no diagnóstico (o estudio.log recomeça quando o servidor liga

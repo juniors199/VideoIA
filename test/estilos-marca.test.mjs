@@ -183,7 +183,7 @@ test('QA: aviso de composição quando o conteúdo fica pequeno ou no alto por m
 test('QA: ILU_QA_DETALHE lista cada falha de cada rodada do QA da cena', (t) => {
   const src = fs.readFileSync(path.join(RAIZ, 'src/video/video.mjs'), 'utf8');
   // no pacote o motor vai minificado (scripts/proteger.mjs): o texto-fonte que este teste procura não existe lá
-  if (/^\/\* Ilustrando Studio .*Pacote /.test(src)) return t.skip('motor minificado (pacote do comprador)');
+  if (/^\/\* Estudio de videos .*Pacote /.test(src)) return t.skip('motor minificado (pacote do comprador)');
   assert.match(src, /if \(process\.env\.ILU_QA_DETALHE\) qa\.falhas\.forEach\(\(f\) => log\(/);
   const i = src.indexOf('process.env.ILU_QA_DETALHE'), laco = src.lastIndexOf('for (let i = 0; i < 6; i++)', i);
   assert.ok(laco > 0 && i - laco < 800, 'dentro do laço das rodadas do QA');

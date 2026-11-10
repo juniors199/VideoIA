@@ -15,7 +15,7 @@ fs.mkdirSync(saida, { recursive: true });
 const arq = path.join(saida, 'sfx-previa.wav');
 const lista = previa(arq);
 const fmt = (s) => `${Math.floor(s / 60)}:${(s % 60).toFixed(1).padStart(4, '0')}`;
-const txt = ['Prévia dos efeitos sonoros do Ilustrando (síntese própria, sem amostras de terceiros)', '', ...lista.map((x, i) => `${String(i + 1).padStart(2)}. ${fmt(x.t)}  ${x.nome} (${x.som}, ${x.dur} s)`)].join('\n') + '\n';
+const txt = ['Prévia dos efeitos sonoros do Estudio de videos (síntese própria, sem amostras de terceiros)', '', ...lista.map((x, i) => `${String(i + 1).padStart(2)}. ${fmt(x.t)}  ${x.nome} (${x.som}, ${x.dur} s)`)].join('\n') + '\n';
 fs.writeFileSync(path.join(saida, 'sfx-previa.txt'), txt);
 console.log(txt);
 console.log('prévia em', path.relative(RAIZ, arq));

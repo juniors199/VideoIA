@@ -1,6 +1,6 @@
 
 
-# Princípios de design do Ilustrando
+# Princípios de design do Estudio de videos
 
 Resumo prático, em palavras nossas, do que adotamos depois de auditar o projeto com as ideias da metodologia Impeccable (Apache 2.0) e com o nosso próprio olho. Vale para carrosséis, quadros de vídeo, o estúdio web e a landing.
 

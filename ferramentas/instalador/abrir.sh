@@ -3,7 +3,7 @@
  # Abre o estúdio web (Mac e Linux). Quem chama: "Abrir Estúdio (Mac).command" e o atalho da Mesa.
 cd "$(dirname "$0")/../.." || exit 1
 STUDIO="$(pwd)"
-printf '\033]0;Ilustrando Studio\007'
+printf '\033]0;Estudio de videos\007'
 # shellcheck source=node.sh
 . "$STUDIO/ferramentas/instalador/node.sh"
 if ! ilu_achar_node "$STUDIO" || [ ! -d "$STUDIO/node_modules/playwright" ]; then
@@ -17,7 +17,7 @@ fi
 # proxy da empresa ou da escola: o Node só usa HTTPS_PROXY com esta opção (licença e voz precisam de internet)
 if [ -n "${HTTPS_PROXY:-}${https_proxy:-}" ]; then export NODE_USE_ENV_PROXY=1 NODE_NO_WARNINGS=1; fi
 echo
-echo "  Ilustrando Studio"
+echo "  Estudio de videos"
 echo "  Abrindo no navegador. Deixe esta janela aberta enquanto usa o estúdio; para fechar o estúdio, feche esta janela."
 echo
 # 0.6.4: se o estúdio cair sem explicar (código diferente de 0, 10 e 130), abre a tela de ajuda com o diagnóstico

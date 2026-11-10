@@ -97,7 +97,7 @@ Cada uma tem cor com contraste conferido, 10 ideias de nome e @, bios prontas, f
 | Cotidiano e casa | `cotidiano-e-casa` | rosa #FF8FB1 | Casa Explicada |
 | Esportes | `esportes` | lima #B6F23A | Lance Explicado |
 
-O laranja #FF7A2F é do Ilustrando e fica de fora: a sua página tem cara própria. O símbolo é a sua inicial em branco com um ponto na sua cor, sobre fundo escuro. Fontes de licença livre. Uma cor de destaque por slide ou cena.
+O laranja #FF7A2F é do Estudio de videos e fica de fora: a sua página tem cara própria. O símbolo é a sua inicial em branco com um ponto na sua cor, sobre fundo escuro. Fontes de licença livre. Uma cor de destaque por slide ou cena.
 
 **Bio em três linhas:** o que a página entrega ("O que você vê todo dia, explicado em 1 minuto"), por que confiar ("Fato conferido, fonte na legenda") e o que fazer agora ("Novo vídeo todo dia").
 
@@ -163,7 +163,7 @@ Em política, nome neutro protege a página: nada que torça por um lado, cite p
 
 **Posso mudar o nome depois?** Pode, mas confunde quem já segue, e o TikTok só troca o @ a cada 30 dias.
 
-**Posso usar a marca do Ilustrando?** Não. Ela não está na licença, e "Sua Página" é só para teste.
+**Posso usar a marca do Estudio de videos?** Não. Ela não está na licença, e "Sua Página" é só para teste.
 
 **E um logo feito por designer?** Use na foto e nos banners das redes. Nos vídeos e carrosséis, o estúdio usa o símbolo da inicial, feito para ficar legível em tamanho pequeno.
 

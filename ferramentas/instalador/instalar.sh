@@ -1,6 +1,6 @@
 #!/bin/bash
  
- # Instalador do Ilustrando Studio para Mac (também roda no Linux). Quem chama: "Instalar (Mac).command".
+ # Instalador do Estudio de videos para Mac (também roda no Linux). Quem chama: "Instalar (Mac).command".
 # 1) garante um Node (o portátil, baixado de nodejs.org com SHA-256 conferido, ou o do computador se for 20+);
 # 2) roda ferramentas/instalador/instalar.mjs, que instala o resto dentro da pasta (.programas/);
 # 3) abre o estúdio no navegador.
@@ -18,7 +18,7 @@ for a in "$@"; do
   [ "$a" = "--assistente" ] && ABRIR=0
 done
 # título da janela só quando há uma janela de verdade (no assistente, o código de escape sujava a saída)
-[ -t 1 ] && printf '\033]0;Ilustrando Studio: instalação\007'
+[ -t 1 ] && printf '\033]0;Estudio de videos: instalação\007'
 # Mac: a pessoa já liberou o Instalar; tira a marca de "baixado da internet" do resto da pasta logo no começo. Antes isso
 # só acontecia no último passo (atalho) e, se um passo anterior parasse, o "Abrir Estúdio" pedia "Abrir Mesmo Assim" de novo
 if [ "$(uname -s)" = "Darwin" ] && [ "$SIMULAR" = "0" ]; then xattr -dr com.apple.quarantine "$STUDIO" 2>/dev/null || true; fi
@@ -42,7 +42,7 @@ parar() {
   echo
   # 0.6.4: aviso de falha (com o relatório de erro desde a 0.6.12) e tela de ajuda com "Copiar diagnóstico" e "Abrir o direct" (no assistente, sem abrir o navegador)
   ilu_aviso_anonimo "$STUDIO" "instalador-node" "${3:-node-inesperado}" "$1" 2>/dev/null
-  if [ "$ABRIR" = "1" ] && [ "$SIMULAR" = "0" ]; then ilu_tela_ajuda "$STUDIO" "A instalação parou: $1" "$2" "instalação (Node)" 2>/dev/null; else echo "  Ajuda: direct do Instagram @ilustrandocuriosidades (https://ig.me/m/ilustrandocuriosidades)."; fi
+  if [ "$ABRIR" = "1" ] && [ "$SIMULAR" = "0" ]; then ilu_tela_ajuda "$STUDIO" "A instalação parou: $1" "$2" "instalação (Node)" 2>/dev/null; else echo "  Ajuda: direct do Instagram @kaueajure (https://ig.me/m/kaueajure)."; fi
   echo "  Pode fechar esta janela."
   exit 1
 }
@@ -71,7 +71,7 @@ else
     if [ "$TENTATIVA" -lt 3 ]; then echo "  a internet falhou; tentando de novo ($((TENTATIVA + 1)) de 3)…"; sleep 3; fi
   done
   [ "$OK" = "1" ] || parar "não consegui baixar o Node de nodejs.org." "Confira a internet (abra um site qualquer) e dê dois cliques em Instalar de novo." node-sem-internet
-  [ "$(sha256 "$TGZ")" = "$SHA" ] || { rm -f "$TGZ"; parar "o arquivo baixado não é o esperado (impressão digital diferente)." "Por segurança, nada foi instalado. Tente de novo mais tarde; se repetir, fale com a gente no direct do Instagram @ilustrandocuriosidades." node-download-diferente; }
+  [ "$(sha256 "$TGZ")" = "$SHA" ] || { rm -f "$TGZ"; parar "o arquivo baixado não é o esperado (impressão digital diferente)." "Por segurança, nada foi instalado. Tente de novo mais tarde; se repetir, fale com a gente no direct do Instagram @kaueajure." node-download-diferente; }
   rm -rf "$PROG/node" "$PROG/node-$NODE_VERSAO-$ALVO"
   tar --no-same-owner -xzf "$TGZ" -C "$PROG" || parar "não consegui abrir o arquivo do Node." "Dê dois cliques em Instalar de novo."
   mv "$PROG/node-$NODE_VERSAO-$ALVO" "$PROG/node"

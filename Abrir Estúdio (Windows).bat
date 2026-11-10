@@ -1,5 +1,5 @@
 @echo off
-rem Ilustrando Studio: abre o estudio no navegador. Deixe a janela aberta enquanto usa.
+rem Estudio de videos: abre o estudio no navegador. Deixe a janela aberta enquanto usa.
 setlocal
 cd /d "%~dp0"
 rem aberto de dentro do .zip, o Windows extrai so este arquivo para uma pasta temporaria: avisa em vez de piscar e fechar

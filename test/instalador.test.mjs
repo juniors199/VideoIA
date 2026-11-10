@@ -118,7 +118,7 @@ test('atalho do Mac na Mesa aponta para o "Abrir Estúdio" da pasta, mesmo com e
   fs.writeFileSync(path.join(studio, 'Abrir Estúdio (Mac).command'), '#!/bin/bash\necho ABRIU "$0"\n', { mode: 0o755 });
   const r = criarAtalho({ studio, casa, plataforma: 'darwin' });
   assert.match(r, /Mesa/);
-  const atalho = path.join(casa, 'Desktop', 'Abrir Estúdio Ilustrando.command');
+  const atalho = path.join(casa, 'Desktop', 'Abrir Estudio de videos.command');
   assert.ok(fs.statSync(atalho).mode & 0o100);
   const s = spawnSync('bash', [atalho], { encoding: 'utf8' });
   assert.equal(s.status, 0, s.stderr);

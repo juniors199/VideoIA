@@ -39,7 +39,7 @@ Anote as perguntas boas na planilha: viram posts da categoria **Pergunta do púb
 ## 4. Pergunta sobre como você faz os vídeos
 
 - "Eu uso um estúdio com assistente de IA: peço o tema, ele confere os fatos, escreve, narra e anima, e eu confiro antes de postar."
-- Se você é afiliado do Método Ilustrando: "Comenta [PALAVRA] que eu te mando por mensagem como funciona." (e na mensagem, identifique o link de afiliado).
+- Se você é afiliado do Estudio de videos: "Comenta [PALAVRA] que eu te mando por mensagem como funciona." (e na mensagem, identifique o link de afiliado).
 
 Nunca prometa seguidores ou renda na resposta.
 

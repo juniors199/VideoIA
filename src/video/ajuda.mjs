@@ -1,9 +1,9 @@
-/* Ilustrando Studio 0.6.45. Pacote C-000000000000.  */
+/* Estudio de videos 0.6.45. Pacote C-000000000000.  */
 /*
  * 
  * 
  */
-function o(){return`Ilustrando Studio: comandos do v\xEDdeo
+function o(){return`Estudio de videos: comandos do v\xEDdeo
 
 Fazer um v\xEDdeo
   npm run video -- <projeto>            produz o v\xEDdeo do projeto (pasta projetos/<projeto>/ com roteiro.md)

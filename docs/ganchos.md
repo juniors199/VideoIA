@@ -1,6 +1,6 @@
 
 
-# Ganchos do Ilustrando
+# Ganchos do Estudio de videos
 
 ## Padrões de gancho para curiosidade (24/10/2026)
 
@@ -54,13 +54,13 @@ Resumo com as nossas palavras. O minuto é o da aula no YouTube (`7tL5OripB-c`).
 9. **Notícia quente com o nome que todo mundo procura** (15:00). "Acabou de ___": a atualidade já é o gancho.
 10. **Entre numa conversa que já existe** (32:00). Pegue o tema que o público já discute e seja o próximo vídeo óbvio depois do vídeo do assunto.
 11. **Primeiro pergunte "por que isso é curioso?"** (52:00, 55:30). O gancho nasce antes do roteiro; a IA não sabe sozinha o que é interessante. Se não há um ponto de diferença, não há vídeo.
-12. **Hipérbole com motivo** (58:00). A internet precisa de exagero ("a cadeira favorita dos empresários"), porque o exagero puxa o "por quê?". **No Ilustrando, só a hipérbole verdadeira**: superlativo com fonte ("o único estado", "a maior desde 2006", "quase triplicaram").
-13. **Formato reconhecível** (13:00 a 14:00 e 33:00 a 35:00). Abertura e cara iguais em todo vídeo fazem o seguidor parar antes de saber o assunto. No Ilustrando, essa familiaridade vem da linguagem visual e da clareza da explicação, sem a antiga promessa "Eu te ilustro".
+12. **Hipérbole com motivo** (58:00). A internet precisa de exagero ("a cadeira favorita dos empresários"), porque o exagero puxa o "por quê?". **No Estudio de videos, só a hipérbole verdadeira**: superlativo com fonte ("o único estado", "a maior desde 2006", "quase triplicaram").
+13. **Formato reconhecível** (13:00 a 14:00 e 33:00 a 35:00). Abertura e cara iguais em todo vídeo fazem o seguidor parar antes de saber o assunto. No Estudio de videos, essa familiaridade vem da linguagem visual e da clareza da explicação, sem a antiga promessa "Eu te ilustro".
 14. **Topo de funil** (41:00). O tema que "a mãe e a avó acham interessante" viraliza; o nicho entra depois dos primeiros segundos.
 
 **Erros que a aula aponta:** falar de si ("nós criamos uma bebida 100% natural", 58:00); adjetivo que qualquer concorrente poderia usar ("prático, natural, funcional", 56:00; teste: se outra página pudesse dizer a mesma frase, ela é genérica); história óbvia que todo mundo já conhece (51:00); conteúdo sem nada de único ou curioso, que "ninguém vê" (48:00); achar que sabe o que é bom sem testar: escreva várias opções e deixe o número decidir (09:00 a 12:00).
 
-### O que isso vira no Ilustrando (e o linter cobra)
+### O que isso vira no Estudio de videos (e o linter cobra)
 - **Primeira frase curta**: até 12 palavras. Contexto vai para a segunda frase.
 - **Tensão nos 3 primeiros segundos** (as 8 primeiras palavras): um número, uma pergunta curta, um contraste ("não", "nunca", "só", "único", "mas") ou um conflito (perdeu, pagou, proibiu, apagou, sigilo, prejuízo).
 - **Dois ingredientes na primeira respiração**: nome conhecido + número, pergunta + contraste, fato + tensão, "você" + perda.
