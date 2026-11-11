@@ -27,6 +27,7 @@ Leia este índice e **só o arquivo do estilo da vez** (sem `estilo` na cena, va
 | estilo ou assunto | arquivo |
 |---|---|
 | `padrao`, `editorial`, `minimalista`, `papel` (3D, o padrão) | `docs/cena/estilo-padrao.md` |
+| `tifo-football` (explicadores de futebol) | `docs/cena/estilo-tifo-football.md` |
 | `pontilhismo` e elemento `pontos` | `docs/cena/estilo-pontilhismo.md` |
 | `impresso`, `cartoes`, `tubo`, `linhas`, `anatomia`, `fino` | `docs/cena/estilos-motion.md` (e `docs/cena/kit-aberto.md` no cartoes, tubo e impresso) |
 | `letreiro`, `interface`, `colagem`, `ribalta`, `mundos` | `docs/cena/estilos-marca.md` e `docs/cena/kit-aberto.md` |

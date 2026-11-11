@@ -306,29 +306,35 @@ function pastaCursorAgent() {
   return path.join(local, 'cursor-agent');
 }
 
-/** Remove pastas extract-* e zips que travam o instalador oficial. */
-function limparLixoCursorAgent({ onLinha = () => {} } = {}) {
+function tentarApagar(alvo) {
+  try {
+    fs.rmSync(alvo, { recursive: true, force: true, maxRetries: 8, retryDelay: 300 });
+    return true;
+  } catch {
+    try {
+      const dir = path.dirname(alvo);
+      const lixo = path.join(dir, `lixo-${Date.now()}-${path.basename(alvo)}`);
+      fs.renameSync(alvo, lixo);
+      return true;
+    } catch {
+      return false;
+    }
+  }
+}
+
+/** Remove extract/zips e versões quebradas que travam o instalador oficial. */
+function limparLixoCursorAgent({ onLinha = () => {}, removerVersoesQuebradas = false } = {}) {
   const versions = path.join(pastaCursorAgent(), 'versions');
   if (!fs.existsSync(versions)) return;
   let n = 0;
   try {
     for (const nome of fs.readdirSync(versions)) {
-      if (!/^extract-/i.test(nome) && !/\.zip$/i.test(nome) && !/^promote-/i.test(nome)) continue;
+      const lixo = /^extract-/i.test(nome) || /\.zip$/i.test(nome) || /^promote-/i.test(nome) || /^lixo-/i.test(nome);
+      const versao = /^\d{4}\.\d{1,2}\.\d{1,2}/.test(nome);
+      if (!lixo && !(removerVersoesQuebradas && versao)) continue;
       const alvo = path.join(versions, nome);
-      try {
-        fs.rmSync(alvo, { recursive: true, force: true, maxRetries: 8, retryDelay: 300 });
-        n += 1;
-      } catch {
-        // arquivo travado: renomeia para o instalador não reutilizar
-        try {
-          const lixo = path.join(versions, `lixo-${Date.now()}-${nome}`);
-          fs.renameSync(alvo, lixo);
-          n += 1;
-          onLinha(`Separei resto travado: ${nome}`);
-        } catch (e2) {
-          onLinha(`Não limpei ${nome}: ${e2.message || e2}`);
-        }
-      }
+      if (tentarApagar(alvo)) n += 1;
+      else onLinha(`Não limpei ${nome} (arquivo em uso). Feche terminais e tente de novo.`);
     }
   } catch { /* */ }
   if (n) onLinha(`Limpei ${n} resto(s) de instalação do Cursor Agent.`);
@@ -757,30 +763,45 @@ async function instalarCursorCli({ raiz = RAIZ, onLinha = () => {} } = {}) {
     onLinha(`Cursor Agent já está neste PC (${ja.versao}).`);
     return 0;
   }
-  limparLixoCursorAgent({ onLinha });
+  // Instalação pela metade (sem native build) impede o Agent de subir
+  limparLixoCursorAgent({ onLinha, removerVersoesQuebradas: true });
   if (!temGitNoPc() || (process.platform === 'win32' && !temGitBash())) {
     onLinha('Falta o Git Bash no PATH. O Cursor Agent não instala sem ele.');
     return 1;
   }
-  // Garante que o instalador ache o bash (checagem "Git for Windows required")
   if (process.platform === 'win32') {
     const bash = acharBashGit();
-    if (bash) env.GIT_BASH = bash;
+    if (bash) {
+      env.GIT_BASH = bash;
+      // alguns instaladores só olham o PATH
+      env.Path = `${path.dirname(bash)}${path.delimiter}${env.Path || env.PATH || ''}`;
+      env.PATH = env.Path;
+    }
   }
   onLinha('Instalando Cursor Agent neste computador…');
+  const filtrarLinha = (l) => {
+    const t = String(l);
+    // O instalador oficial imprime isso no fim como lembrete, não como falha
+    if (/Git for Windows \(with Git Bash\) is required/i.test(t)) {
+      onLinha('(Aviso do instalador: o Agent usa Git Bash no Windows.)');
+      return;
+    }
+    if (/Install it from https:\/\/git-scm\.com\/download\/win/i.test(t)) return;
+    onLinha(t);
+  };
   let codigo = 1;
   if (process.platform === 'win32') {
-    // No Windows o script unix (curl|bash) detecta MINGW e falha; usar o instalador win32 com Git no PATH
+    // Script unix via Git Bash detecta MINGW e falha; usar instalador win32 com Git no PATH
     codigo = await spawnLinhas(
       'powershell.exe',
       ['-NoProfile', '-ExecutionPolicy', 'Bypass', '-Command', "irm 'https://cursor.com/install?win32=true' | iex"],
-      { cwd: os.homedir(), env, onLinha },
+      { cwd: os.homedir(), env, onLinha: filtrarLinha },
     );
   } else {
     codigo = await spawnLinhas(
       'bash',
       ['-lc', 'curl -fsSL https://cursor.com/install | bash'],
-      { cwd: os.homedir(), env, onLinha },
+      { cwd: os.homedir(), env, onLinha: filtrarLinha },
     );
   }
   limparLixoCursorAgent({ onLinha });
@@ -788,7 +809,7 @@ async function instalarCursorCli({ raiz = RAIZ, onLinha = () => {} } = {}) {
   if (acharCursorAgentOk({ raiz })) return 0;
   onLinha(codigo === 0
     ? 'O instalador terminou, mas o Agent ainda não responde. Tente Instalar de novo.'
-    : 'Instalação incompleta. Se falhou por pasta travada, feche outros terminais e tente de novo.');
+    : 'Instalação incompleta. Se falhou por arquivo travado, feche outros terminais/antivírus e tente de novo.');
   return codigo || 1;
 }
 

@@ -17,6 +17,14 @@
       "previa": "editorial.mp4"
     },
     {
+      "id": "tifo-football",
+      "nome": "Tifo Football",
+      "resumo": "Campo ilustrado, regras em cartões e imagens de contexto para explicar o futebol.",
+      "quandoUsar": "Histórias de jogadores, regras curiosas e lances que pedem uma explicação visual.",
+      "pedido": "Faça um vídeo sobre por que um presidente de clube pôde cobrar um pênalti. Estilo: tifo-football. Objetivo: curiosidade.",
+      "previa": "tifo-football.mp4"
+    },
+    {
       "id": "minimalista",
       "nome": "Minimalista",
       "resumo": "Um objeto por frase, muito espaço vazio e números grandes no meio da tela.",

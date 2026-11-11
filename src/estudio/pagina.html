@@ -1499,9 +1499,6 @@ const RENDER = {
         return '<span class="estado-ia falta">Não achei</span>';
       };
       const cursor = opcoes.find((o) => o.id === 'cursor');
-      const ideNota = cursor?.ide?.logado
-        ? `Detectei a IDE logada${cursor.ide.email ? ` como ${esc(cursor.ide.email)}` : ''}, mas esse login não serve para o chat do estúdio.`
-        : 'O login da IDE Cursor não vira API Key automaticamente.';
       const botoesIa = (o) => {
         const usar = o.instalado && !(o.id === 'cursor' && !o.temChave)
           ? `<button class="btn${escolhido === o.id ? ' sec' : ''}" type="button" data-conectar="${esc(o.id)}">${escolhido === o.id ? 'Em uso' : 'Usar esta'}</button>`
@@ -1517,15 +1514,7 @@ const RENDER = {
         <div><b>${esc(o.nome)}</b>${estadoTxt(o)}${o.versao ? `<small style="display:block;color:var(--fraco);margin-top:4px">${esc(o.versao)}</small>` : ''}</div>
         <p class="dica" style="margin:0">${esc(o.dica || '')}</p>
         <div class="acoes" style="margin:0">${botoesIa(o)}</div>
-      </div>`).join('') + (cursor ? `<div class="cartao-ia" style="grid-column:1/-1">
-        <b>Autenticação do Cursor</b>
-        <p class="dica" style="margin:0">${ideNota} Clique em <b>Entrar com o Cursor</b> (abre o navegador uma vez). Alternativa: API Key em <a href="https://cursor.com/dashboard/api" target="_blank" rel="noopener">cursor.com/dashboard/api</a> — ela não aparece dentro da IDE.</p>
-        <div class="acoes" style="margin:8px 0 0">${!cursor.temChave ? `<button class="btn" type="button" data-cursor-login>Entrar com o Cursor</button>` : ''}<button class="btn sec" type="button" data-salvar-cursor>Salvar chave</button></div>
-        <label style="display:grid;gap:6px;margin-top:10px">
-          <span class="dica" style="margin:0">Opcional: colar API Key do painel (fica no .env deste PC).</span>
-          <input type="password" id="iaCursorChave" placeholder="${cursor.temChave ? '•••• já autenticado (cole outra para trocar)' : 'Cole a CURSOR_API_KEY do painel'}" autocomplete="off">
-        </label>
-      </div>` : '');
+      </div>`).join('');
 
       $$('#iaGrade [data-conectar]').forEach((b) => (b.onclick = async () => {
         b.disabled = true;
@@ -1548,20 +1537,10 @@ const RENDER = {
           if (j.codigo === 0 || j.ia?.ok) {
             $('#resIa').innerHTML = '<div class="caixa-ok">Cursor autenticado. Pode usar esta IA.</div>';
           } else {
-            $('#resIa').innerHTML = '<div class="caixa-nota"><b>Login incompleto</b>Se o navegador abriu e você confirmou, clique de novo em Entrar. Senão, crie a chave em <a href="https://cursor.com/dashboard/api" target="_blank" rel="noopener">cursor.com/dashboard/api</a> e cole abaixo.</div>';
+            $('#resIa').innerHTML = '<div class="caixa-nota"><b>Login incompleto</b>Se o navegador abriu e você confirmou, clique de novo em <b>Entrar com o Cursor</b>.</div>';
           }
         }).then((r) => { if (!r) loginBtns.forEach((x) => { x.disabled = false; }); });
       }));
-      const salva = $('#iaGrade [data-salvar-cursor]');
-      if (salva) salva.onclick = async () => {
-        const chave = $('#iaCursorChave')?.value || '';
-        const r = await post('/api/ia/chave', { chave });
-        if (r.erro) { $('#resIa').innerHTML = caixaErro(r.erro); return; }
-        conf = await api('/api/configuracao');
-        desenhaPassos(); atualizarPin(); atualizarAbaChat();
-        $('#resIa').innerHTML = '<div class="caixa-ok">Chave salva. Conectando o que estiver pronto…</div>';
-        await desenhar();
-      };
 
       if (st.conectado) {
         $('#resIa').innerHTML = `<div class="caixa-ok">IA pronta: <b>${esc(st.nome || escolhido)}</b>. Abra o <b>Chat</b> para pedir um vídeo.</div>
@@ -1569,7 +1548,7 @@ const RENDER = {
         $('#irChat').onclick = () => mostrar('chat');
         $('#irVideos').onclick = () => mostrar('videos');
       } else if (cursor && cursor.instalado && !cursor.temChave) {
-        $('#resIa').innerHTML = '<div class="caixa-nota"><b>Quase pronto</b>No Cursor, clique em <b>Entrar com o Cursor</b> (login uma vez no navegador) ou cole a API Key do painel. Claude/Codex não precisam disso.</div>';
+        $('#resIa').innerHTML = '<div class="caixa-nota"><b>Quase pronto</b>No Cursor, clique em <b>Entrar com o Cursor</b> (login uma vez no navegador).</div>';
       } else if (!(opcoes || []).some((o) => o.instalado)) {
         $('#resIa').innerHTML = '<div class="caixa-nota"><b>Nenhuma IA utilizável</b>Use <b>Instalar</b> no cartão para baixar no PC. O estúdio não oferece IA grátis.</div>';
       }

@@ -7,7 +7,7 @@ export const MARCA_PESQUISA_VISUAL = '<!-- pesquisa-visual:v1 -->';
 const PLANOS = new Set(['normal', 'aberto', 'fechado', 'topo', 'baixo', 'lateral', 'lateralEsq']);
 const MOVIMENTOS = new Set(['deriva', 'avanca', 'recua', 'orbita', 'sobe', 'desce', 'panEsq', 'panDir', 'nenhum']);
 const TRANSICOES = new Set(['desfoque', 'corte', 'varredura']);
-const ESTILOS_COM_IMAGEM = new Set(['padrao', 'editorial', 'minimalista', 'papel']);
+const ESTILOS_COM_IMAGEM = new Set(['padrao', 'editorial', 'minimalista', 'papel', 'tifo-football']);
 const CLASSES = new Set(['registro', 'contexto']);
 const fotoPendente = el => typeof el?.busca === 'string' && el.busca.trim() && !el.arquivo;
 
@@ -135,7 +135,7 @@ function aplicarImagem(beat, foto, estilo) {
   }
   if (!alvo) return false;
 
-  Object.assign(alvo, { arquivo: foto.arquivo, _foto: foto.entidade });
+  Object.assign(alvo, { arquivo: foto.arquivo, _foto: foto.entidade, _classeVisual: foto.classe });
   if (foto.credito) alvo.credito = foto.credito;
   for (const chave of ['busca', 'contexto', 'reserva', 'reservaBeat', 'dupla', '_pessoa']) delete alvo[chave];
 

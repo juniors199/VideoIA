@@ -1,0 +1,29 @@
+{
+  "id": "tifo-football",
+  "nome": "Tifo Football",
+  "versao": 1,
+  "paraQuem": "Histórias e explicações de futebol com campo ilustrado, esquemas animados, cartões de contexto e fotos verificadas",
+  "apelidos": ["tifo", "quadro-tatico"],
+  "exemplosDePedido": ["Por que o impedimento existe", "Por que o presidente de um clube pôde cobrar um pênalti"],
+  "formato": {
+    "preferidos": ["causa-efeito", "revelacao", "comparativo"],
+    "padrao": "causa-efeito"
+  },
+  "roteiro": {
+    "palavras": [90, 160],
+    "alvoSegundos": [35, 65],
+    "tom": "Explicador de futebol. Use linguagem de arquibancada, frases curtas e precisão de regra, lance e resultado.",
+    "estrutura": [
+      {"bloco": "gancho", "seg": [2, 4], "instrucao": "Abra com o fato que estranha, sem explicar a regra ainda."},
+      {"bloco": "contexto", "seg": [8, 16], "instrucao": "Identifique o caso e o que já havia acontecido."},
+      {"bloco": "explicacao", "seg": [12, 28], "instrucao": "Explique a causa, a regra ou a jogada em etapas e diga apenas o resultado confirmado."},
+      {"bloco": "pergunta", "seg": [3, 6], "instrucao": "Feche com uma pergunta de opinião sobre aquele caso."}
+    ]
+  },
+  "visual": {
+    "estilo": "tifo-football",
+    "imagens": "opcional",
+    "transicao": "corte",
+    "pecasPorTema": true
+  }
+}
