@@ -32,10 +32,12 @@ Levante o assunto em pelo menos **duas fontes independentes** (órgão oficial, 
 - Imagem real que o tema pede (rosto de quem está no centro do caso, prédio, logo de empresa ou órgão): busque com `node scripts/buscar-imagem.mjs <projeto> "<nome + contexto do tema>" --listar` (e `--logo`). Você filtra os candidatos pela relação com o tema (título/descrição e, se baixar, a própria imagem); só então mostre à pessoa e baixe com `--escolha=N`. Homônimo de outro domínio não entra. Registra em `fontes.md`. Se a tela vai pedir um objeto ou um lugar que o repertório não tem, anote: a skill `cena` cria em `projetos/<nome>/pecas.js`. Nunca troque o assunto por uma peça genérica só porque é o que existe.
 - Se o projeto já tem `assets/referencias/` ou `referencias.md` (fotos que a pessoa anexou no estúdio), anote na pauta em qual trecho cada uma deve aparecer; a skill `cena` confirma olhando a imagem. Não peça foto de novo do que já foi anexado.
 
+Quando a cena precisar de imagem de um acontecimento, registre em `fontes.md` os elementos que o identificam e use `pesquisa-visual` para orientar a seleção. Se a pesquisa visual estiver na etapa de roteiro, leve essa identificação para ela.
+
 ## 3. Ache a contradição
 O bom conteúdo cabe em "todo mundo acha X, mas é Y". Se não completa a frase, o ângulo está fraco: proponha outro recorte em vez de escrever algo morno.
 - Responda **"por que isso é curioso?"** em uma linha. Prefira o recorte que a mãe e a avó também achariam interessante (topo de funil), com nome que todo mundo conhece e palavras do povo (`docs/ganchos.md`, "O que a aula ensina").
-- Esboce já **3 ganchos possíveis** e confira se cada número e fato deles está no `fontes.md`. Gancho que só fica forte exagerando o fato está proibido: troque o ângulo, não o fato. A skill `roteiro` escolhe o mais provocativo que continue verdadeiro e registra os 3 na linha `GANCHOS:`.
+- Esboce **3 ganchos possíveis** e confira se cada número e fato deles está no `fontes.md`. Gancho que só fica forte exagerando o fato está proibido: troque o ângulo, não o fato. Para vídeo, guarde os esboços em `projetos/<nome>/formato.md`, em `## Ganchos`, com uma opção por linha. Preserve as outras seções do arquivo. Inclua o gancho fornecido pela pessoa, se houver. A skill `roteiro` vai aproveitar esses esboços e registrar as três opções definitivas em `GANCHOS:`.
 
 ## 4. Escolha o esqueleto
 - **Revelação**: crença comum, mecanismo, número que prova, virada. Serve para quase tudo.

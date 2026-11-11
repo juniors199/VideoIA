@@ -1,14 +1,348 @@
-/* Estudio de videos: detecção e execução dos assistentes (Claude, Codex, Cursor). */
+/* Estudio de videos: detecção no PC e instalação sob pedido dos assistentes (Claude, Codex, Cursor). */
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 import { spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
-import { spawnSyncSemShell } from '../video/node-versao.mjs';
+import { spawnSyncSemShell, semShell } from '../video/node-versao.mjs';
 import { lerEnv, gravarEnv, lerConfig } from './configlocal.mjs';
+import { ambienteNpm, npmCli, comNodeNoPath } from '../../ferramentas/instalador/instalar.mjs';
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const IDS = ['claude', 'codex', 'cursor'];
 const NOMES = { claude: 'Claude Code', codex: 'Codex', cursor: 'Cursor' };
+const PACOTES = {
+  claude: '@anthropic-ai/claude-code',
+  codex: '@openai/codex',
+};
+const CMDS = process.platform === 'win32'
+  ? {
+    claude: ['claude.exe', 'claude.cmd', 'claude'],
+    codex: ['codex.exe', 'codex.cmd', 'codex'],
+    cursor: ['agent.exe', 'agent.cmd', 'cursor-agent.exe', 'cursor-agent.cmd', 'agent', 'cursor-agent'],
+  }
+  : {
+    claude: ['claude', 'claude.exe'],
+    codex: ['codex', 'codex.exe'],
+    cursor: ['agent', 'cursor-agent', 'agent.exe', 'cursor-agent.exe'],
+  };
+
+function prefixoLocal(raiz = RAIZ) {
+  return path.join(raiz, '.programas', 'assistentes');
+}
+
+/** Ignora binários de extensão do editor (não é instalação no PC). */
+function caminhoDeExtensao(caminho) {
+  const n = String(caminho || '').replace(/\\/g, '/').toLowerCase();
+  return n.includes('/.cursor/extensions/')
+    || n.includes('/.vscode/extensions/')
+    || n.includes('/.cursor-server/extensions/')
+    || n.includes('/cursor/resources/app/extensions/');
+}
+
+/** Pastas comuns onde Claude/Codex/Cursor Agent costumam ficar no PC (sem extensões do editor). */
+function pastasCandidatas(raiz = RAIZ) {
+  const home = os.homedir();
+  const local = process.env.LOCALAPPDATA || path.join(home, 'AppData', 'Local');
+  const roaming = process.env.APPDATA || path.join(home, 'AppData', 'Roaming');
+  const pref = prefixoLocal(raiz);
+  const lista = [
+    path.join(pref, 'bin'),
+    pref,
+    path.join(local, 'cursor-agent'),
+    path.join(home, '.local', 'bin'),
+    path.join(home, '.claude', 'bin'),
+    path.join(home, '.claude', 'local', 'bin'),
+    path.join(home, '.codex', 'bin'),
+    path.join(home, '.cursor', 'bin'),
+    path.join(roaming, 'npm'),
+    path.join(home, 'AppData', 'Roaming', 'npm'),
+    'C:\\Program Files\\Git\\cmd',
+    'C:\\Program Files\\Git\\bin',
+    'C:\\Program Files (x86)\\Git\\cmd',
+    'C:\\Program Files (x86)\\Git\\bin',
+    '/usr/local/bin',
+    '/opt/homebrew/bin',
+    path.join(home, '.npm-global', 'bin'),
+  ];
+  return [...new Set(lista.filter((p) => p && fs.existsSync(p) && !caminhoDeExtensao(p)))];
+}
+
+function caminhosGitComuns() {
+  if (process.platform === 'win32') {
+    return [
+      'C:\\Program Files\\Git\\cmd',
+      'C:\\Program Files\\Git\\bin',
+      'C:\\Program Files\\Git\\usr\\bin',
+      'C:\\Program Files (x86)\\Git\\cmd',
+      'C:\\Program Files (x86)\\Git\\bin',
+    ];
+  }
+  return ['/usr/bin', '/usr/local/bin', '/opt/homebrew/bin'];
+}
+
+function temGitNoPc() {
+  if (acharViaWhere(['git', 'git.exe'])) return true;
+  const exe = process.platform === 'win32' ? 'git.exe' : 'git';
+  return caminhosGitComuns().some((dir) => {
+    try { return fs.existsSync(path.join(dir, exe)); } catch { return false; }
+  });
+}
+
+function temGitBash() {
+  if (process.platform !== 'win32') {
+    return !!(acharViaWhere(['bash']) || ['/bin/bash', '/usr/bin/bash'].some((p) => fs.existsSync(p)));
+  }
+  return [
+    'C:\\Program Files\\Git\\bin\\bash.exe',
+    'C:\\Program Files\\Git\\usr\\bin\\bash.exe',
+    'C:\\Program Files (x86)\\Git\\bin\\bash.exe',
+  ].some((p) => {
+    try { return fs.existsSync(p); } catch { return false; }
+  });
+}
+
+/** Dependências extras para instalar uma IA (ex.: Git Bash no Windows para o Cursor Agent). */
+function depsFaltandoPara(id) {
+  const deps = [];
+  if (id === 'cursor') {
+    const faltaGit = process.platform === 'win32' ? (!temGitNoPc() || !temGitBash()) : !temGitNoPc();
+    if (faltaGit) {
+      deps.push({
+        id: 'git',
+        nome: process.platform === 'win32' ? 'Git for Windows' : 'Git',
+        motivo: process.platform === 'win32'
+          ? 'O Cursor Agent precisa do Git Bash para rodar no Windows.'
+          : 'O instalador do Cursor Agent precisa do Git neste computador.',
+      });
+    }
+  }
+  return deps;
+}
+
+async function instalarGit({ onLinha = () => {} } = {}) {
+  if (temGitNoPc() && (process.platform !== 'win32' || temGitBash())) {
+    onLinha('Git já está neste PC.');
+    return 0;
+  }
+  onLinha(process.platform === 'win32'
+    ? 'Instalando Git for Windows (você aprovou)…'
+    : 'Instalando Git (você aprovou)…');
+
+  if (process.platform === 'win32') {
+    const codigo = await spawnLinhas(
+      'winget.exe',
+      [
+        'install', '--id', 'Git.Git', '-e', '--source', 'winget',
+        '--accept-package-agreements', '--accept-source-agreements',
+        '--disable-interactivity',
+      ],
+      { cwd: os.homedir(), onLinha },
+    );
+    atualizarPathProcesso();
+    if (temGitNoPc() && temGitBash()) return 0;
+    if (codigo === 0) {
+      onLinha('Git pode precisar de um instante no PATH. Conferindo de novo…');
+      if (temGitNoPc() && temGitBash()) return 0;
+    }
+    onLinha('Não confirmei o Git Bash depois do winget. Se o instalador abriu, termine e tente de novo.');
+    return codigo || 1;
+  }
+
+  if (process.platform === 'darwin') {
+    const brew = acharViaWhere(['brew']);
+    if (!brew) {
+      onLinha('Não achei o Homebrew para instalar o Git. Instale o Git e tente de novo.');
+      return 1;
+    }
+    const codigo = await spawnLinhas(brew, ['install', 'git'], { cwd: os.homedir(), onLinha });
+    atualizarPathProcesso();
+    return temGitNoPc() ? 0 : (codigo || 1);
+  }
+
+  onLinha('Neste sistema o estúdio não instala o Git sozinho. Instale o Git e tente de novo.');
+  return 1;
+}
+
+function chavePath(env = process.env) {
+  return Object.keys(env).find((k) => k.toUpperCase() === 'PATH') || 'PATH';
+}
+
+/** Coloca as pastas dos assistentes na frente do PATH do processo (e devolve o env). */
+function atualizarPathProcesso(raiz = RAIZ, env = process.env) {
+  const chave = chavePath(env);
+  const sep = path.delimiter;
+  const atuais = String(env[chave] || '').split(sep).filter(Boolean);
+  const extras = pastasCandidatas(raiz);
+  const juntos = [...extras, ...atuais.filter((p) => !extras.includes(p))];
+  env[chave] = juntos.join(sep);
+  return env;
+}
+
+function nomesParaWhere(nomes) {
+  const vistos = new Set();
+  const out = [];
+  for (const nome of nomes) {
+    const base = String(nome).replace(/\.(cmd|exe|bat)$/i, '');
+    if (!base || vistos.has(base)) continue;
+    vistos.add(base);
+    out.push(base);
+  }
+  return out;
+}
+
+function acharViaWhere(nomes, env = process.env) {
+  const win = process.platform === 'win32';
+  const cmd = win ? 'where.exe' : 'which';
+  for (const nome of nomesParaWhere(nomes)) {
+    try {
+      const r = spawnSyncSemShell(cmd, [nome], {
+        encoding: 'utf8',
+        timeout: 4000,
+        windowsHide: true,
+        env: { ...process.env, ...env },
+      });
+      if (r.status !== 0) continue;
+      for (const linha of String(r.stdout || '').split(/\r?\n/)) {
+        const candidato = linha.trim().replace(/^"|"$/g, '');
+        if (!candidato || caminhoDeExtensao(candidato)) continue;
+        try {
+          if (fs.existsSync(candidato) && fs.statSync(candidato).isFile()) return candidato;
+        } catch { /* */ }
+      }
+    } catch { /* */ }
+  }
+  return null;
+}
+
+function acharExecutavel(nomes, { raiz = RAIZ, env = process.env } = {}) {
+  atualizarPathProcesso(raiz, env);
+  const chave = chavePath(env);
+  const dirs = [
+    ...pastasCandidatas(raiz),
+    ...String(env[chave] || '').split(path.delimiter).filter(Boolean),
+  ];
+  const visto = new Set();
+  for (const dir of dirs) {
+    if (visto.has(dir) || caminhoDeExtensao(dir)) continue;
+    visto.add(dir);
+    for (const nome of nomes) {
+      const candidato = path.join(dir, nome);
+      try {
+        if (caminhoDeExtensao(candidato)) continue;
+        if (fs.existsSync(candidato) && fs.statSync(candidato).isFile()) return candidato;
+      } catch { /* segue */ }
+    }
+  }
+  return acharViaWhere(nomes, env);
+}
+
+function acharCursorIdeExe() {
+  const home = os.homedir();
+  const local = process.env.LOCALAPPDATA || path.join(home, 'AppData', 'Local');
+  const candidatos = [
+    path.join(local, 'Programs', 'cursor', 'Cursor.exe'),
+    path.join(local, 'Programs', 'Cursor', 'Cursor.exe'),
+    path.join(local, 'Programs', 'cursor', 'resources', 'app', 'bin', 'cursor.cmd'),
+    path.join(local, 'Programs', 'Cursor', 'resources', 'app', 'bin', 'cursor.cmd'),
+    '/Applications/Cursor.app/Contents/MacOS/Cursor',
+    '/usr/bin/cursor',
+    '/opt/homebrew/bin/cursor',
+  ];
+  for (const c of candidatos) {
+    try { if (fs.existsSync(c)) return c; } catch { /* */ }
+  }
+  return acharViaWhere(['cursor', 'cursor.cmd', 'Cursor.exe']);
+}
+
+function versaoDoBin(bin) {
+  if (!bin) return null;
+  try {
+    const r = spawnSyncSemShell(bin, ['--version'], {
+      encoding: 'utf8',
+      timeout: 15000,
+      windowsHide: true,
+      env: envComGit(),
+    });
+    const txt = `${r.stdout || ''}\n${r.stderr || ''}`;
+    if (/Cannot find module|Error:|Git for Windows.*required/i.test(txt) && r.status !== 0) return null;
+    if (r.status !== 0) return null;
+    const linha = String(r.stdout || r.stderr || '').trim().split(/\r?\n/)[0] || '';
+    if (/Cannot find module|Error:/i.test(linha)) return null;
+    return linha.replace(/\s*\(Claude Code\)/, '').replace(/^codex-cli\s*/, '') || path.basename(bin);
+  } catch {
+    return null;
+  }
+}
+
+function envComGit(base = process.env) {
+  const env = { ...base };
+  const chave = chavePath(env);
+  const extras = caminhosGitComuns().filter((p) => {
+    try { return fs.existsSync(p); } catch { return false; }
+  });
+  if (!extras.length) return env;
+  const atuais = String(env[chave] || '').split(path.delimiter).filter(Boolean);
+  env[chave] = [...extras, ...atuais.filter((p) => !extras.includes(p))].join(path.delimiter);
+  return env;
+}
+
+function acharBashGit() {
+  if (process.platform !== 'win32') {
+    return acharViaWhere(['bash']) || (fs.existsSync('/bin/bash') ? '/bin/bash' : null);
+  }
+  for (const p of [
+    'C:\\Program Files\\Git\\bin\\bash.exe',
+    'C:\\Program Files\\Git\\usr\\bin\\bash.exe',
+    'C:\\Program Files (x86)\\Git\\bin\\bash.exe',
+  ]) {
+    try { if (fs.existsSync(p)) return p; } catch { /* */ }
+  }
+  return null;
+}
+
+function pastaCursorAgent() {
+  const local = process.env.LOCALAPPDATA || path.join(os.homedir(), 'AppData', 'Local');
+  return path.join(local, 'cursor-agent');
+}
+
+/** Remove pastas extract-* e zips que travam o instalador oficial. */
+function limparLixoCursorAgent({ onLinha = () => {} } = {}) {
+  const versions = path.join(pastaCursorAgent(), 'versions');
+  if (!fs.existsSync(versions)) return;
+  let n = 0;
+  try {
+    for (const nome of fs.readdirSync(versions)) {
+      if (!/^extract-/i.test(nome) && !/\.zip$/i.test(nome) && !/^promote-/i.test(nome)) continue;
+      const alvo = path.join(versions, nome);
+      try {
+        fs.rmSync(alvo, { recursive: true, force: true, maxRetries: 8, retryDelay: 300 });
+        n += 1;
+      } catch {
+        // arquivo travado: renomeia para o instalador não reutilizar
+        try {
+          const lixo = path.join(versions, `lixo-${Date.now()}-${nome}`);
+          fs.renameSync(alvo, lixo);
+          n += 1;
+          onLinha(`Separei resto travado: ${nome}`);
+        } catch (e2) {
+          onLinha(`Não limpei ${nome}: ${e2.message || e2}`);
+        }
+      }
+    }
+  } catch { /* */ }
+  if (n) onLinha(`Limpei ${n} resto(s) de instalação do Cursor Agent.`);
+}
+
+function acharCursorAgentOk({ raiz = RAIZ, env = process.env } = {}) {
+  const envGit = envComGit(env);
+  atualizarPathProcesso(raiz, envGit);
+  const bin = acharExecutavel(CMDS.cursor, { raiz, env: envGit });
+  if (!bin) return null;
+  const ver = versaoDoBin(bin);
+  if (!ver) return null;
+  return { bin, versao: ver };
+}
 
 function versaoCli(cmd, args = ['--version']) {
   try {
@@ -21,50 +355,160 @@ function versaoCli(cmd, args = ['--version']) {
   }
 }
 
+function sdkCursorInstalado(raiz = RAIZ) {
+  return fs.existsSync(path.join(raiz, 'node_modules', '@cursor', 'sdk', 'package.json'));
+}
+
+function caminhosAuthCursor() {
+  const home = os.homedir();
+  const appData = process.env.APPDATA || path.join(home, 'AppData', 'Roaming');
+  return {
+    sdk: path.join(home, '.cursor', 'sdk', 'auth.json'),
+    agent: path.join(appData, 'Cursor', 'auth.json'),
+    agentAlt: path.join(home, '.cursor', 'auth.json'),
+    ideDb: path.join(appData, 'Cursor', 'User', 'globalStorage', 'state.vscdb'),
+  };
+}
+
+function agentCursorLogado(raiz = RAIZ) {
+  const ok = acharCursorAgentOk({ raiz });
+  const bin = ok?.bin;
+  if (!bin) return false;
+  try {
+    const r = spawnSyncSemShell(bin, ['status'], { encoding: 'utf8', timeout: 12000, windowsHide: true });
+    const txt = `${r.stdout || ''}\n${r.stderr || ''}`;
+    if (/not authenticated|logged out|não autentic|unauthenticated|not logged/i.test(txt)) return false;
+    return /logged in|authenticated|signed in|Logged in|Account:/i.test(txt);
+  } catch {
+    return false;
+  }
+}
+
+/** Lê API key / sessão do Agent já salva. Nunca devolve o segredo. */
+function lerChaveCursorLocal(raiz = RAIZ, env = process.env) {
+  if (String(env.CURSOR_API_KEY || '').trim()) return { presente: true, origem: 'env' };
+  if (lerEnv(raiz).definidas?.CURSOR_API_KEY) return { presente: true, origem: 'env' };
+  const c = caminhosAuthCursor();
+  for (const [origem, arq] of [['sdk', c.sdk], ['agent', c.agent], ['agent', c.agentAlt]]) {
+    try {
+      if (!fs.existsSync(arq)) continue;
+      const j = JSON.parse(fs.readFileSync(arq, 'utf8'));
+      const key = String(j.apiKey || j.api_key || j.token || '').trim();
+      if (key) return { presente: true, origem, email: j.email || null };
+    } catch { /* arquivo inválido */ }
+  }
+  if (agentCursorLogado(raiz)) return { presente: true, origem: 'agent-session' };
+  return { presente: false, origem: null };
+}
+
+/** Detecta se a IDE Cursor está logada (sessão da IDE ≠ API Key do Agent/SDK). */
+function loginIdeCursorSync(dbPath = caminhosAuthCursor().ideDb) {
+  if (!fs.existsSync(dbPath)) return { logado: false, email: null };
+  try {
+    const sqlite = process.getBuiltinModule?.('node:sqlite');
+    if (!sqlite?.DatabaseSync) return { logado: true, email: null, aproximado: true };
+    const d = new sqlite.DatabaseSync(dbPath, { readOnly: true });
+    try {
+      const tok = d.prepare("SELECT length(value) AS n FROM ItemTable WHERE key = 'cursorAuth/accessToken'").get();
+      const mail = d.prepare("SELECT value FROM ItemTable WHERE key = 'cursorAuth/cachedEmail'").get();
+      const logado = Number(tok?.n || 0) > 20;
+      let email = null;
+      if (mail?.value) {
+        try { email = String(JSON.parse(mail.value) || '').trim() || String(mail.value).replace(/^"|"$/g, ''); }
+        catch { email = String(mail.value).replace(/^"|"$/g, ''); }
+      }
+      return { logado, email: email || null };
+    } finally {
+      d.close?.();
+    }
+  } catch {
+    return { logado: true, email: null, aproximado: true };
+  }
+}
+
 function chaveCursor(raiz = RAIZ, env = process.env) {
-  const doEnv = String(env.CURSOR_API_KEY || '').trim();
-  if (doEnv) return true;
-  const local = lerEnv(raiz);
-  return !!local.definidas?.CURSOR_API_KEY;
+  return lerChaveCursorLocal(raiz, env).presente;
+}
+
+function valorChaveCursor(raiz = RAIZ, env = process.env) {
+  const direta = String(env.CURSOR_API_KEY || '').trim();
+  if (direta) return direta;
+  try {
+    for (const linha of fs.readFileSync(path.join(raiz, '.env'), 'utf8').split(/\r?\n/)) {
+      const m = /^\s*CURSOR_API_KEY\s*=\s*(.*?)\s*$/.exec(linha);
+      if (m) {
+        const v = m[1].replace(/^["']|["']$/g, '').trim();
+        if (v) return v;
+      }
+    }
+  } catch { /* sem .env */ }
+  const c = caminhosAuthCursor();
+  for (const arq of [c.sdk, c.agent, c.agentAlt]) {
+    try {
+      if (!fs.existsSync(arq)) continue;
+      const j = JSON.parse(fs.readFileSync(arq, 'utf8'));
+      const key = String(j.apiKey || j.api_key || '').trim();
+      if (key) return key;
+    } catch { /* */ }
+  }
+  return '';
 }
 
 function detectarOpcao(id, { raiz = RAIZ, env = process.env } = {}) {
-  if (id === 'claude') {
-    const versao = versaoCli('claude');
+  atualizarPathProcesso(raiz, env);
+  if (id === 'claude' || id === 'codex') {
+    const bin = acharExecutavel(CMDS[id], { raiz, env });
+    const versao = bin ? versaoDoBin(bin) : null;
     return {
       id,
-      nome: NOMES.claude,
-      instalado: !!versao,
+      nome: NOMES[id],
+      instalado: !!bin,
       versao: versao || null,
-      dica: versao
-        ? 'Encontrei o Claude Code neste computador.'
-        : 'Instale o Claude Code (app Claude, aba Code) e deixe o comando `claude` no PATH. Guia 01, seção 07.',
+      bin,
+      dica: bin
+        ? `Encontrei o ${NOMES[id]} neste computador.`
+        : `Não achei o ${NOMES[id]} neste PC. Clique em Instalar para baixar no computador.`,
     };
   }
-  if (id === 'codex') {
-    const versao = versaoCli('codex');
-    return {
-      id,
-      nome: NOMES.codex,
-      instalado: !!versao,
-      versao: versao || null,
-      dica: versao
-        ? 'Encontrei o Codex neste computador.'
-        : 'Instale o Codex (app ChatGPT) e deixe o comando `codex` no PATH. Guia 01, seção 08.',
-    };
+  const agentOk = acharCursorAgentOk({ raiz, env });
+  const bin = agentOk?.bin || null;
+  const chave = lerChaveCursorLocal(raiz, env);
+  const ide = loginIdeCursorSync();
+  const ideExe = acharCursorIdeExe();
+  const ideNoPc = !!(ideExe || ide.logado || fs.existsSync(caminhosAuthCursor().ideDb));
+  const sdk = sdkCursorInstalado(raiz);
+  const instalado = !!(bin || sdk);
+  const temChave = !!chave.presente;
+  const pronto = instalado && temChave;
+  let dica;
+  if (pronto) {
+    const de = chave.origem === 'sdk' ? 'login do SDK'
+      : chave.origem === 'agent' || chave.origem === 'agent-session' ? 'login do Agent'
+      : chave.origem === 'env' ? 'chave no .env'
+      : 'credencial local';
+    dica = `Cursor autenticado (${de}).`;
+  } else if (!instalado && ideNoPc) {
+    dica = `Encontrei a IDE Cursor${ide.email ? ` (${ide.email})` : ''}, mas para o chat do estúdio falta o Cursor Agent. Clique em Instalar.`;
+  } else if (!instalado) {
+    dica = 'Não achei o Cursor Agent utilizável neste PC. Clique em Instalar para baixar no computador.';
+  } else if (ide.logado) {
+    dica = `Detectei a IDE Cursor logada${ide.email ? ` (${ide.email})` : ''}, mas o login da IDE não serve para o chat. Clique em "Entrar com o Cursor" uma vez ou cole a API Key do painel.`;
+  } else {
+    dica = 'Falta autenticar: "Entrar com o Cursor" (abre o login uma vez) ou cole uma API Key do painel.';
   }
-  const temChave = chaveCursor(raiz, env);
-  const agent = versaoCli('agent') || versaoCli('cursor-agent');
-  const instalado = temChave || !!agent;
   return {
     id: 'cursor',
     nome: NOMES.cursor,
     instalado,
-    versao: agent || (temChave ? 'chave no .env' : null),
+    encontrado: instalado || ideNoPc,
+    pronto,
+    versao: agentOk?.versao || (sdk ? 'SDK local' : (ideNoPc ? 'IDE no PC' : null)),
+    bin,
     temChave,
-    dica: instalado
-      ? (temChave ? 'Chave do Cursor encontrada no .env.' : 'Encontrei o CLI do Cursor; ainda falta a chave CURSOR_API_KEY.')
-      : 'Cole a chave CURSOR_API_KEY em Configurar IA (ela vai só para o .env), ou instale o Cursor Agent.',
+    sdk,
+    ide: { ...ide, exe: ideExe || null, noPc: ideNoPc },
+    origemChave: chave.origem || null,
+    dica,
   };
 }
 
@@ -78,13 +522,53 @@ function escolhido(raiz = RAIZ) {
   return IDS.includes(id) ? id : null;
 }
 
-function situacao(raiz = RAIZ, env = process.env) {
-  const opcoes = listarOpcoes({ raiz, env });
+const CACHE_IA_TTL_MS = 24 * 60 * 60 * 1000;
+const cacheIaMem = new Map();
+
+function arquivoCacheIa(raiz = RAIZ) {
+  return path.join(raiz, '.estudio', 'ia-detect.json');
+}
+
+function invalidarCacheIa(raiz = RAIZ) {
+  cacheIaMem.delete(path.resolve(raiz));
+  try { fs.unlinkSync(arquivoCacheIa(raiz)); } catch { /* sem cache */ }
+}
+
+function lerCacheIa(raiz = RAIZ) {
+  const chave = path.resolve(raiz);
+  const mem = cacheIaMem.get(chave);
+  if (mem && Date.now() - mem.em <= CACHE_IA_TTL_MS && Array.isArray(mem.opcoes)) return mem;
+  try {
+    const j = JSON.parse(fs.readFileSync(arquivoCacheIa(raiz), 'utf8'));
+    if (!j || !j.em || !Array.isArray(j.opcoes)) return null;
+    if (Date.now() - j.em > CACHE_IA_TTL_MS) return null;
+    cacheIaMem.set(chave, j);
+    return j;
+  } catch {
+    return null;
+  }
+}
+
+function gravarCacheIa(raiz, st) {
+  const payload = {
+    em: Date.now(),
+    opcoes: st.opcoes,
+    cursorIde: st.cursorIde || null,
+  };
+  cacheIaMem.set(path.resolve(raiz), payload);
+  try {
+    const pasta = path.join(raiz, '.estudio');
+    fs.mkdirSync(pasta, { recursive: true });
+    fs.writeFileSync(arquivoCacheIa(raiz), `${JSON.stringify(payload)}\n`);
+  } catch { /* pasta só leitura */ }
+  return payload;
+}
+
+function situacaoDeCache(raiz, cache) {
   const id = escolhido(raiz);
+  const opcoes = cache.opcoes || [];
   const atual = id ? opcoes.find((o) => o.id === id) : null;
-  const pronto = !!(atual && atual.instalado && (atual.id !== 'cursor' || atual.temChave || atual.versao));
-  // Cursor: precisa chave para o SDK; CLI agent sozinho não basta para o chat embutido com API
-  const cursorOk = atual?.id === 'cursor' ? !!atual.temChave : true;
+  const cursorOk = atual?.id === 'cursor' ? !!atual.temChave && !!atual.instalado : true;
   const conectado = !!(atual && atual.instalado && (atual.id !== 'cursor' || cursorOk));
   return {
     opcoes,
@@ -92,25 +576,59 @@ function situacao(raiz = RAIZ, env = process.env) {
     nome: id ? NOMES[id] : null,
     conectado,
     pronto: conectado,
+    cursorIde: cache.cursorIde || null,
+    cache: true,
+    em: cache.em,
   };
+}
+
+function situacaoFresca(raiz = RAIZ, env = process.env) {
+  atualizarPathProcesso(raiz, env);
+  const opcoes = listarOpcoes({ raiz, env });
+  const id = escolhido(raiz);
+  const atual = id ? opcoes.find((o) => o.id === id) : null;
+  const cursor = opcoes.find((o) => o.id === 'cursor');
+  const cursorOk = atual?.id === 'cursor' ? !!atual.temChave && !!atual.instalado : true;
+  const conectado = !!(atual && atual.instalado && (atual.id !== 'cursor' || cursorOk));
+  return {
+    opcoes,
+    escolhido: id,
+    nome: id ? NOMES[id] : null,
+    conectado,
+    pronto: conectado,
+    cursorIde: cursor?.ide || loginIdeCursorSync(),
+    cache: false,
+  };
+}
+
+function situacao(raiz = RAIZ, env = process.env, { forcar = false } = {}) {
+  if (!forcar) {
+    const cache = lerCacheIa(raiz);
+    if (cache) return situacaoDeCache(raiz, cache);
+  }
+  const st = situacaoFresca(raiz, env);
+  gravarCacheIa(raiz, st);
+  return st;
 }
 
 function gravarEscolha(id, raiz = RAIZ) {
   if (!IDS.includes(id)) {
     return { erro: { causa: 'Assistente desconhecido.', acao: 'Escolha Claude Code, Codex ou Cursor.' } };
   }
+  atualizarPathProcesso(raiz);
   const op = detectarOpcao(id, { raiz });
   if (!op.instalado) {
-    return { erro: { causa: `Não achei o ${op.nome} neste computador.`, acao: op.dica } };
+    return { erro: { causa: `Ainda não achei o ${op.nome} utilizável neste PC.`, acao: 'Clique em Instalar no cartão para baixar no computador.' } };
   }
   if (id === 'cursor' && !op.temChave) {
-    return { erro: { causa: 'Falta a chave do Cursor.', acao: 'Cole a CURSOR_API_KEY no campo abaixo e salve. Ela fica só neste computador.' } };
+    return { erro: { causa: 'Cursor ainda sem autenticação do Agent/SDK.', acao: 'Clique em "Entrar com o Cursor" (abre o login uma vez) ou crie a API Key em cursor.com/dashboard/api.' } };
   }
   const arq = path.join(raiz, 'ilustrando.config.json');
   const cfg = lerConfig(arq);
   cfg.assistente = id;
   fs.writeFileSync(arq, `${JSON.stringify(cfg, null, 2)}\n`);
-  return { ok: true, ...situacao(raiz) };
+  invalidarCacheIa(raiz);
+  return { ok: true, ...situacao(raiz, process.env, { forcar: true }) };
 }
 
 function gravarChaveCursor(chave, raiz = RAIZ) {
@@ -122,30 +640,32 @@ function gravarChaveCursor(chave, raiz = RAIZ) {
   }
   if (v) process.env.CURSOR_API_KEY = v;
   else delete process.env.CURSOR_API_KEY;
-  return { ok: true, ...situacao(raiz) };
+  invalidarCacheIa(raiz);
+  return { ok: true, ...situacao(raiz, process.env, { forcar: true }) };
 }
 
-function contextoCurto(raiz) {
-  return [
-    'Você está no Estudio de videos (pasta local).',
-    `Pasta: ${raiz}`,
-    'Siga CLAUDE.md / AGENTS.md e as skills (pauta, roteiro, video, carrossel, publicar, marca, comece).',
-    'Não peça chave de voz no chat. Não abra nem controle o navegador.',
-    'Grave arquivos em projetos/ e carrosseis/ quando for o caso.',
-  ].join(' ');
-}
-
-function montarPrompt(mensagem, raiz) {
-  const txt = String(mensagem || '').trim();
-  return `${contextoCurto(raiz)}\n\nPedido da pessoa:\n${txt}`;
+function autoConectar(raiz = RAIZ) {
+  const st = situacao(raiz);
+  if (st.conectado) return st;
+  const ordem = ['claude', 'codex', 'cursor'];
+  for (const id of ordem) {
+    const op = st.opcoes.find((o) => o.id === id);
+    if (!op?.instalado) continue;
+    if (id === 'cursor' && !op.temChave) continue;
+    const r = gravarEscolha(id, raiz);
+    if (r.ok) return r;
+  }
+  return situacao(raiz);
 }
 
 function spawnLinhas(cmd, args, { cwd, env, onLinha, sinal }) {
   return new Promise((resolve) => {
-    const filho = spawn(cmd, args, {
+    const [exe, argv] = semShell(cmd, args);
+    const filho = spawn(exe, argv, {
       cwd,
       env: { ...process.env, ...env },
       windowsHide: true,
+      windowsVerbatimArguments: process.platform === 'win32',
       shell: false,
     });
     if (sinal) sinal.proc = filho;
@@ -176,24 +696,193 @@ function spawnLinhas(cmd, args, { cwd, env, onLinha, sinal }) {
   });
 }
 
-async function rodarClaude(mensagem, { raiz, onLinha, sinal }) {
-  const prompt = montarPrompt(mensagem, raiz);
-  onLinha('Claude Code: começando…');
+/** Só detecta o que já existe no PC (PATH e pastas comuns; sem extensões do editor). Usa cache se houver. */
+async function prepararAssistentes(raiz = RAIZ, { onLinha = () => {}, forcar = false } = {}) {
+  atualizarPathProcesso(raiz);
+  if (!forcar) {
+    const cache = lerCacheIa(raiz);
+    if (cache) {
+      onLinha('Usando a última busca (cache).');
+      const st = situacaoDeCache(raiz, cache);
+      const final = st.conectado ? st : autoConectar(raiz);
+      return { ...final, cache: true };
+    }
+  }
+  onLinha('Procurando Claude, Codex e Cursor neste computador…');
+  invalidarCacheIa(raiz);
+  const st = situacao(raiz, process.env, { forcar: true });
+  for (const op of st.opcoes) {
+    if (op.instalado) onLinha(`${op.nome}: achei (${op.versao || 'ok'}).`);
+    else if (op.id === 'cursor' && op.encontrado) onLinha('Cursor: achei a IDE, mas falta o Agent CLI para o chat do estúdio.');
+    else onLinha(`${op.nome}: não achei neste PC.`);
+  }
+  const final = autoConectar(raiz);
+  if (final.conectado) onLinha(`Conectado: ${final.nome}.`);
+  else if (final.opcoes.some((o) => o.id === 'cursor' && o.instalado && !o.temChave)) {
+    onLinha('Cursor Agent encontrado. Falta autenticar: "Entrar com o Cursor" ou a API Key do painel.');
+  } else if (final.opcoes.some((o) => o.instalado || o.encontrado)) {
+    onLinha('Achei algo no PC, mas ainda não dá para conectar. Veja os cartões.');
+  } else {
+    onLinha('Nenhuma IA encontrada. Use Instalar no cartão da que quiser.');
+  }
+  gravarCacheIa(raiz, final);
+  return { ...final, cache: false };
+}
+
+async function npmGlobalLocal(pacote, { raiz, onLinha }) {
+  const pref = prefixoLocal(raiz);
+  fs.mkdirSync(pref, { recursive: true });
+  const npm = npmCli();
+  if (!npm) {
+    onLinha('Não achei o npm do Node do estúdio.');
+    return 1;
+  }
+  const env = {
+    ...ambienteNpm({ prog: path.join(raiz, '.programas'), env: process.env }),
+    ...comNodeNoPath(process.env),
+  };
+  onLinha(`Instalando ${pacote} neste computador…`);
   return spawnLinhas(
-    'claude',
-    ['-p', prompt, '--output-format', 'text', '--dangerously-skip-permissions'],
-    { cwd: raiz, onLinha, sinal },
+    process.execPath,
+    [npm, 'install', '-g', '--prefix', pref, pacote],
+    { cwd: raiz, env, onLinha },
   );
 }
 
-async function rodarCodex(mensagem, { raiz, onLinha, sinal }) {
-  const prompt = montarPrompt(mensagem, raiz);
+async function instalarCursorCli({ raiz = RAIZ, onLinha = () => {} } = {}) {
+  const env = envComGit();
+  atualizarPathProcesso(raiz, env);
+  const ja = acharCursorAgentOk({ raiz, env });
+  if (ja) {
+    onLinha(`Cursor Agent já está neste PC (${ja.versao}).`);
+    return 0;
+  }
+  limparLixoCursorAgent({ onLinha });
+  if (!temGitNoPc() || (process.platform === 'win32' && !temGitBash())) {
+    onLinha('Falta o Git Bash no PATH. O Cursor Agent não instala sem ele.');
+    return 1;
+  }
+  // Garante que o instalador ache o bash (checagem "Git for Windows required")
+  if (process.platform === 'win32') {
+    const bash = acharBashGit();
+    if (bash) env.GIT_BASH = bash;
+  }
+  onLinha('Instalando Cursor Agent neste computador…');
+  let codigo = 1;
+  if (process.platform === 'win32') {
+    // No Windows o script unix (curl|bash) detecta MINGW e falha; usar o instalador win32 com Git no PATH
+    codigo = await spawnLinhas(
+      'powershell.exe',
+      ['-NoProfile', '-ExecutionPolicy', 'Bypass', '-Command', "irm 'https://cursor.com/install?win32=true' | iex"],
+      { cwd: os.homedir(), env, onLinha },
+    );
+  } else {
+    codigo = await spawnLinhas(
+      'bash',
+      ['-lc', 'curl -fsSL https://cursor.com/install | bash'],
+      { cwd: os.homedir(), env, onLinha },
+    );
+  }
+  limparLixoCursorAgent({ onLinha });
+  atualizarPathProcesso(raiz, envComGit());
+  if (acharCursorAgentOk({ raiz })) return 0;
+  onLinha(codigo === 0
+    ? 'O instalador terminou, mas o Agent ainda não responde. Tente Instalar de novo.'
+    : 'Instalação incompleta. Se falhou por pasta travada, feche outros terminais e tente de novo.');
+  return codigo || 1;
+}
+
+/** Instala uma IA no PC sob pedido (só se ainda não estiver detectada). */
+async function instalarAssistente(id, { raiz = RAIZ, onLinha = () => {}, aprovarDeps = false } = {}) {
+  if (!IDS.includes(id)) {
+    onLinha('Assistente desconhecido.');
+    return { ok: false, ...situacao(raiz) };
+  }
+  atualizarPathProcesso(raiz);
+  const antes = detectarOpcao(id, { raiz });
+  if (antes.instalado) {
+    onLinha(`${antes.nome} já está neste PC.`);
+    autoConectar(raiz);
+    return { ok: true, ...situacao(raiz, process.env, { forcar: true }) };
+  }
+
+  const deps = depsFaltandoPara(id);
+  if (deps.length) {
+    if (!aprovarDeps) {
+      onLinha(`Falta dependência: ${deps.map((d) => d.nome).join(', ')}.`);
+      return { ok: false, precisaAprovacao: true, deps, ...situacao(raiz) };
+    }
+    for (const dep of deps) {
+      if (dep.id === 'git') {
+        const codigoGit = await instalarGit({ onLinha });
+        atualizarPathProcesso(raiz);
+        if (codigoGit !== 0 && depsFaltandoPara(id).some((d) => d.id === 'git')) {
+          onLinha('Não deu para instalar o Git. Sem ele o Cursor Agent não sobe.');
+          return { ok: false, ...situacao(raiz) };
+        }
+        onLinha('Git ok.');
+      }
+    }
+  }
+
+  onLinha(`Instalando ${NOMES[id]} no computador…`);
+  let codigo = 1;
+  if (id === 'claude' || id === 'codex') {
+    codigo = await npmGlobalLocal(PACOTES[id], { raiz, onLinha });
+  } else if (id === 'cursor') {
+    codigo = await instalarCursorCli({ raiz, onLinha });
+  }
+  atualizarPathProcesso(raiz);
+  invalidarCacheIa(raiz);
+  const depois = detectarOpcao(id, { raiz });
+  if (depois.instalado) {
+    onLinha(`${depois.nome}: instalado.`);
+    if (id !== 'cursor' || depois.temChave) autoConectar(raiz);
+    return { ok: true, ...situacao(raiz, process.env, { forcar: true }) };
+  }
+  onLinha(`${NOMES[id]}: não ficou pronto (código ${codigo}). Tente de novo ou confira a internet.`);
+  return { ok: false, ...situacao(raiz, process.env, { forcar: true }) };
+}
+
+function contextoCurto(raiz) {
+  return [
+    'Você está no Estudio de videos (pasta local).',
+    `Pasta: ${raiz}`,
+    'Siga CLAUDE.md no Claude Code ou AGENTS.md no Codex e no Cursor. Consulte apenas a skill da etapa atual e as referências pertinentes.',
+    'Não peça chave de voz no chat. Não abra nem controle o navegador.',
+    'Grave arquivos em projetos/ e carrosseis/ quando for o caso.',
+  ].join(' ');
+}
+
+function montarPrompt(mensagem, raiz, contexto) {
+  const txt = String(mensagem || '').trim();
+  let video = '';
+  if (contexto) {
+    const pasta = `projetos/${contexto.projeto}/`;
+    const arquivos = contexto.alvo === 'youtube'
+      ? 'O alvo é youtube.json. Use roteiro.md e fontes.md como referência. Ajuste os campos pedidos no pacote ou crie o pacote se a pessoa pediu e ele ainda não existe.'
+      : 'Abra apenas o arquivo pertinente ao pedido: roteiro.md para narração, cena.json para visual, youtube.json para YouTube ou post.md para a legenda do post. Use fontes.md para conferir afirmações.';
+    video = `\n\nVídeo selecionado no estúdio: ${pasta}\n${arquivos}`;
+  }
+  return `${contextoCurto(raiz)}${video}\n\nPedido da pessoa:\n${txt}`;
+}
+
+async function rodarClaude(prompt, { raiz, onLinha, sinal }) {
+  atualizarPathProcesso(raiz);
+  const bin = acharExecutavel(CMDS.claude, { raiz }) || 'claude';
+  onLinha('Claude Code: começando…');
+  return spawnLinhas(bin, ['-p', prompt, '--output-format', 'text', '--dangerously-skip-permissions'], {
+    cwd: raiz, onLinha, sinal,
+  });
+}
+
+async function rodarCodex(prompt, { raiz, onLinha, sinal }) {
+  atualizarPathProcesso(raiz);
+  const bin = acharExecutavel(CMDS.codex, { raiz }) || 'codex';
   onLinha('Codex: começando…');
-  return spawnLinhas(
-    'codex',
-    ['exec', '--sandbox', 'workspace-write', prompt],
-    { cwd: raiz, onLinha, sinal },
-  );
+  return spawnLinhas(bin, ['exec', '--sandbox', 'workspace-write', prompt], {
+    cwd: raiz, onLinha, sinal,
+  });
 }
 
 function textoDoEventoCursor(ev) {
@@ -214,71 +903,89 @@ function textoDoEventoCursor(ev) {
   return '';
 }
 
-function lerChaveCursorArquivo(raiz) {
-  try {
-    for (const linha of fs.readFileSync(path.join(raiz, '.env'), 'utf8').split(/\r?\n/)) {
-      const m = /^\s*CURSOR_API_KEY\s*=\s*(.*?)\s*$/.exec(linha);
-      if (m) return m[1].replace(/^["']|["']$/g, '').trim();
+async function rodarCursor(prompt, { raiz, onLinha, sinal }) {
+  atualizarPathProcesso(raiz);
+  const apiKey = valorChaveCursor(raiz);
+  const bin = acharExecutavel(CMDS.cursor, { raiz });
+
+  if (apiKey) {
+    try {
+      const mod = await import('@cursor/sdk');
+      const Agent = mod.Agent || mod.default?.Agent;
+      if (!Agent?.create) throw new Error('SDK sem Agent.create');
+      onLinha('Cursor: começando…');
+      const agent = await Agent.create({
+        apiKey,
+        model: { id: 'composer-2.5' },
+        local: { cwd: raiz },
+      });
+      if (sinal) sinal.agent = agent;
+      const run = await agent.send(prompt);
+      if (sinal) sinal.run = run;
+      for await (const ev of run.stream()) {
+        if (sinal?.cancelado) {
+          try { await run.cancel?.(); } catch { /* ok */ }
+          onLinha('(cancelado)');
+          return 1;
+        }
+        const txt = textoDoEventoCursor(ev);
+        if (txt) onLinha(txt);
+      }
+      try { await agent[Symbol.asyncDispose]?.(); } catch { /* ok */ }
+      try { await agent.dispose?.(); } catch { /* ok */ }
+      return 0;
+    } catch (e) {
+      const msg = String(e?.message || e);
+      if (!/Cannot find package|Cannot find module|ERR_MODULE_NOT_FOUND/i.test(msg)) {
+        onLinha(msg);
+        if (!bin) return 1;
+        onLinha('Tentando o CLI agent…');
+      } else {
+        onLinha('Pacote @cursor/sdk não instalado. Tentando o CLI agent…');
+      }
     }
-  } catch { /* sem .env */ }
-  return '';
+  }
+
+  if (!bin) {
+    onLinha(apiKey
+      ? 'Não achei o Cursor Agent neste PC. Clique em Instalar no cartão.'
+      : 'Cursor sem autenticação. Em Configurar IA: "Entrar com o Cursor" ou cole a API Key do painel.');
+    return 1;
+  }
+  onLinha('Cursor Agent: começando…');
+  const envExtra = apiKey ? { CURSOR_API_KEY: apiKey } : {};
+  return spawnLinhas(bin, ['-p', prompt], { cwd: raiz, env: envExtra, onLinha, sinal });
 }
 
-async function rodarCursor(mensagem, { raiz, onLinha, sinal }) {
-  const prompt = montarPrompt(mensagem, raiz);
-  const apiKey = String(process.env.CURSOR_API_KEY || lerChaveCursorArquivo(raiz) || '').trim();
-  if (!apiKey) {
-    onLinha('Falta CURSOR_API_KEY no .env.');
-    return 1;
+/** Abre o login oficial do Cursor Agent (uma vez). Não instala o Agent. */
+async function loginCursorAgent({ raiz = RAIZ, onLinha = () => {} } = {}) {
+  atualizarPathProcesso(raiz);
+  const bin = acharExecutavel(CMDS.cursor, { raiz });
+  if (!bin) {
+    onLinha('Não achei o Cursor Agent neste PC. Clique em Instalar no cartão.');
+    return { ok: false, ...situacao(raiz) };
   }
-
-  try {
-    const mod = await import('@cursor/sdk');
-    const Agent = mod.Agent || mod.default?.Agent;
-    if (!Agent?.create) throw new Error('SDK sem Agent.create');
-    onLinha('Cursor: começando…');
-    const agent = await Agent.create({
-      apiKey,
-      model: { id: 'composer-2.5' },
-      local: { cwd: raiz },
-    });
-    if (sinal) sinal.agent = agent;
-    const run = await agent.send(prompt);
-    if (sinal) sinal.run = run;
-    for await (const ev of run.stream()) {
-      if (sinal?.cancelado) {
-        try { await run.cancel?.(); } catch { /* ok */ }
-        onLinha('(cancelado)');
-        return 1;
-      }
-      const txt = textoDoEventoCursor(ev);
-      if (txt) onLinha(txt);
-    }
-    try { await agent[Symbol.asyncDispose]?.(); } catch { /* ok */ }
-    try { await agent.dispose?.(); } catch { /* ok */ }
-    return 0;
-  } catch (e) {
-    const msg = String(e?.message || e);
-    if (/Cannot find package|Cannot find module|ERR_MODULE_NOT_FOUND/i.test(msg)) {
-      onLinha('Pacote @cursor/sdk não instalado. Tentando o CLI agent…');
-      const cli = versaoCli('agent') ? 'agent' : (versaoCli('cursor-agent') ? 'cursor-agent' : null);
-      if (!cli) {
-        onLinha('Não achei o @cursor/sdk nem o CLI agent. Instale o SDK ou o Cursor Agent.');
-        return 1;
-      }
-      return spawnLinhas(cli, ['-p', prompt], { cwd: raiz, env: { CURSOR_API_KEY: apiKey }, onLinha, sinal });
-    }
-    onLinha(msg);
-    return 1;
+  onLinha('Abrindo o login do Cursor no navegador. Confirme a conta e volte aqui.');
+  const codigo = await spawnLinhas(bin, ['login'], { cwd: raiz, onLinha });
+  atualizarPathProcesso(raiz);
+  invalidarCacheIa(raiz);
+  const st = situacao(raiz, process.env, { forcar: true });
+  if (st.opcoes.find((o) => o.id === 'cursor')?.temChave || codigo === 0) {
+    autoConectar(raiz);
+    onLinha('Login concluído.');
+    return { ok: true, ...situacao(raiz, process.env, { forcar: true }) };
   }
+  onLinha('Se o navegador abriu e você confirmou, reabra Configurar IA. Senão, crie a API Key em cursor.com/dashboard/api.');
+  return { ok: false, ...st };
 }
 
 async function rodarChat(id, mensagem, ctx) {
   const onLinha = (l) => ctx.log?.(String(l).slice(0, 500));
   const sinal = ctx.sinal || {};
-  if (id === 'claude') return rodarClaude(mensagem, { raiz: ctx.raiz, onLinha, sinal });
-  if (id === 'codex') return rodarCodex(mensagem, { raiz: ctx.raiz, onLinha, sinal });
-  if (id === 'cursor') return rodarCursor(mensagem, { raiz: ctx.raiz, onLinha, sinal });
+  const prompt = montarPrompt(mensagem, ctx.raiz, ctx.contexto);
+  if (id === 'claude') return rodarClaude(prompt, { raiz: ctx.raiz, onLinha, sinal });
+  if (id === 'codex') return rodarCodex(prompt, { raiz: ctx.raiz, onLinha, sinal });
+  if (id === 'cursor') return rodarCursor(prompt, { raiz: ctx.raiz, onLinha, sinal });
   onLinha('Assistente não configurado.');
   return 1;
 }
@@ -305,6 +1012,15 @@ export {
   situacao,
   gravarEscolha,
   gravarChaveCursor,
+  autoConectar,
+  prepararAssistentes,
+  instalarAssistente,
+  depsFaltandoPara,
+  lerCacheIa,
+  invalidarCacheIa,
+  loginCursorAgent,
+  loginIdeCursorSync,
+  atualizarPathProcesso,
   rodarChat,
   cancelarChat,
   montarPrompt,

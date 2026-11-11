@@ -79,11 +79,12 @@ npm run verificar                        # arquivos iguais aos de fábrica? (só
 npm run estudio -- --abrir               # estúdio web: voz (chave direto no .env), marca, vídeos
 npm run atualizar -- <zip>               # versão nova sem tocar em projetos/, carrosseis/, marca/ e .env (a pessoa usa o estúdio web, Atualizar)
 bash ferramentas/instalador/instalar.sh --assistente   # instala o que falta, com o Node; Windows: ver skill `comece`, Passo 0
-node scripts/buscar-imagem.mjs <projeto> "<termo>" [--logo] [--listar] [--escolha=N]   # foto ou logo de licença livre, registrada em fontes.md
+node scripts/buscar-imagem.mjs <projeto> "<termo>" [--logo] [--listar] [--id=ID|--escolha=N]   # foto ou logo de licença livre, registrada em fontes.md
 node scripts/buscar-broll.mjs <projeto> "<termo>" [--fonte=…] [--listar] [--escolha=N]   # b-roll em vídeo livre (elemento video), em fontes.md
 node src/video/cli.mjs --galeria --projeto=<projeto>   # peças do projeto (projetos/<nome>/pecas.js)
 node scripts/imagem-para-pontos.mjs <foto> <saida.json> [--corte x,y,l,a] [--limiar 0.14]   # foto em pontos para o pontilhismo, com prévia .jpg
 node scripts/folha-pontos.mjs <projeto> [--mp4]   # folha de contato das formas em pontos
+node scripts/resumir-relatorio.mjs <projeto> [--campo=<campo>] [--filtro=<texto>]   # resumo do relatório ou trecho solicitado
 node scripts/respiros.mjs <projeto> [--simular] [--refazer]   # pausas na voz depois da pontuação, só no silêncio real
 npm run linha -- --ver | npm run linha -- <neutra|esquerda|centro|direita> [leve|moderada]   # linha editorial em política
 npm run estilos|objetivos [-- --ver <id> | --padrao [<id>] | --novo <id> --base <id> | --validar]   # estilo e objetivo

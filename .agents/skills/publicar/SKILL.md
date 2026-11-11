@@ -7,9 +7,11 @@ description: Escreve a legenda, os marcadores e a descrição por plataforma par
 
 # Legenda e publicação
 
-**Antes de tudo:** rode `npm run status` (ou leia `projetos/<nome>/saida/entrega.json`). Só publique quando `publicavel` for `true`: voz real, QA aprovado e nenhuma linha `PENDENTE` em `fontes.md`. Se houver pendência, feche-a (confirme a fonte ou reduza a afirmação no roteiro) e renderize de novo.
+**Antes de tudo:** leia `projetos/<nome>/saida/entrega.json`. Se estiver ausente, confira o estado do projeto com `npm run status`. Só publique quando `publicavel` for `true`: voz real, QA aprovado e nenhuma linha `PENDENTE` em `fontes.md`. Se houver pendência, feche-a (confirme a fonte ou reduza a afirmação no roteiro) e renderize de novo.
 
 **Objetivo do vídeo** (`objetivo` em `entrega.json`; em vídeo antigo, `modelo`; detalhes em `npm run objetivos -- --ver <id>`, ou `npm run estilos -- --ver <id>` quando só houver estilo): siga `publicar.legenda` (o jeito da legenda), use `publicar.hashtags` como base, ponha as fontes na legenda quando `fontesNaLegenda` for true e inclua o `cuidados.avisoLegenda` (ou `publicar.aviso`) quando houver. Com `cuidados.revisaoHumana`, o `entrega.json` sai com `publicavel: false` até a pessoa revisar: diga isso e não publique.
+
+Siga as orientações das plataformas pedidas. Se a entrega for só para YouTube, use a seção de YouTube e os créditos aplicáveis.
 
 ## Antes de escrever: palavra-chave (SEO da busca do Instagram)
 A busca do Instagram cruza o que a pessoa digita com legenda, nome, bio, hashtags, texto na tela e áudio falado. Guia completo em `docs/seo-legendas.md`. Para cada post, defina e anote no topo do `post.md`:
@@ -36,15 +38,15 @@ Responda **o quê** e **por que agora** e use um destes, nesta ordem de preferê
 ## Por plataforma
 - **Instagram Reels / Facebook Reels**: legenda completa + marcadores no fim.
 - **TikTok**: legenda curta (até ~100 caracteres úteis) + 3 marcadores. Pode usar o carrossel no modo foto.
-- **YouTube Shorts**: título de até 60 caracteres que complete "todo mundo acha X, mas é Y" + descrição de 1 a 2 linhas + `#Shorts`.
+- **Para YouTube**, antes de escrever a seção, use o pacote `projetos/<nome>/youtube.json`. Siga `youtube` para conferir e reaproveitar o pacote, ou para criá-lo se estiver ausente. Copie para `post.md` o título e a descrição que a pessoa escolheu. Sem escolha, preserve a opção anterior se ela ainda existir no pacote, ou use a primeira de cada lista. Acrescente as hashtags do pacote que ainda não estiverem na descrição.
 
 ## Vídeo horizontal (YouTube)
-Vídeo feito com `--formato=horizontal` (veja `saida/relatorio.json`, campo `formato`): é para o **YouTube** (não é Reels nem Shorts). Título de até 70 caracteres com a promessa no começo, descrição com 2 a 3 linhas e capítulos se passar de 2 min, 3 a 5 marcadores. A imagem do post é `saida/miniatura.jpg` (1280 x 720, até 2 MB), não `capa.jpg`. Não há `capa-grid.jpg`. Não escreva "@" nem peça de seguir "no topo" da tela: o horizontal sai sem @ por padrão.
+Vídeo feito com `--formato=horizontal` (confira com `node scripts/resumir-relatorio.mjs <nome> --campo=formato`): é para o **YouTube** (não é Reels nem Shorts). Use a opção horizontal do pacote conforme a regra acima. A imagem do post é `saida/miniatura.jpg` (1280 x 720, até 2 MB), não `capa.jpg`. Não há `capa-grid.jpg`. Não escreva "@" nem peça de seguir "no topo" da tela: o horizontal sai sem @ por padrão.
 
 ## Entregue
-Salve em `projetos/<nome>/post.md` (ou `carrosseis/<nome>/legenda.txt`): palavra-chave principal e secundárias, legenda, marcadores, texto alternativo, título do Shorts e o caminho do arquivo. Antes de salvar, passe o checklist da seção 7 de `docs/seo-legendas.md`. Confira que a legenda não afirma nada que `fontes.md` não sustente.
+Salve em `projetos/<nome>/post.md` (ou `carrosseis/<nome>/legenda.txt`): palavra-chave principal e secundárias, legenda, marcadores, texto alternativo, seção YouTube com a opção do pacote quando aplicável e o caminho do arquivo. Antes de salvar, passe o checklist da seção 7 de `docs/seo-legendas.md`. Confira que a legenda não afirma nada que `fontes.md` não sustente.
 
-O pacote YouTube (3 títulos, 3 descrições, tags do Studio e hashtags) é da skill `youtube` (`projetos/<nome>/youtube.json`), não deste arquivo. Depois de gravar o `post.md`, rode a skill `youtube`.
+As três opções e as tags do Studio ficam em `youtube.json`. Para um pedido exclusivo de metadados YouTube, use `youtube` diretamente.
 
 ## Crédito de fotos
 Se o vídeo ou carrossel usa elemento `imagem` com foto de terceiro, a legenda termina com uma linha "Fotos: <autor/agência> (<licença>)", tirada de `fontes.md`. Se usa elemento `video` (b-roll), acrescente "Vídeos: <crédito>" com o texto de "Crédito para a legenda do post" da seção Vídeos de `fontes.md` (Pexels e Pixabay pedem o nome do autor e da plataforma; NASA, "NASA"). O crédito não aparece na tela.

@@ -6,7 +6,7 @@
 # Conferir: codex execpolicy check --rules .codex/rules/ilustrando.rules node src/video/cli.mjs --doctor
 
 prefix_rule(
-    pattern = ["node", ["src/video/cli.mjs", "src/carrossel.mjs", "src/identidade.mjs", "src/video/previa.mjs", "src/estudio/servidor.mjs", "scripts/marca.mjs", "scripts/sincronizar-skills.mjs", "scripts/buscar-imagem.mjs", "scripts/linha-editorial.mjs", "scripts/modelos.mjs", "scripts/estilos.mjs", "scripts/objetivos.mjs", "scripts/imagem-para-pontos.mjs", "scripts/folha-pontos.mjs", "scripts/respiros.mjs", "scripts/verificar.mjs", "ferramentas/instalador/instalar.mjs"]],
+    pattern = ["node", ["src/video/cli.mjs", "src/carrossel.mjs", "src/identidade.mjs", "src/video/previa.mjs", "src/estudio/servidor.mjs", "scripts/marca.mjs", "scripts/sincronizar-skills.mjs", "scripts/buscar-imagem.mjs", "scripts/linha-editorial.mjs", "scripts/modelos.mjs", "scripts/estilos.mjs", "scripts/objetivos.mjs", "scripts/imagem-para-pontos.mjs", "scripts/folha-pontos.mjs", "scripts/respiros.mjs", "scripts/verificar.mjs", "scripts/resumir-relatorio.mjs", "ferramentas/instalador/instalar.mjs"]],
     decision = "allow",
     justification = "Motor do estúdio Ilustrando (vídeo, carrossel, marca)",
     match = [["node", "src/video/cli.mjs", "--doctor"], ["node", "src/carrossel.mjs", "exemplo-formatos"]],
@@ -64,7 +64,7 @@ prefix_rule(
 )
 
 prefix_rule(
-    pattern = [["ferramentas/rodar", "ferramentas\\rodar.cmd", "ferramentas/rodar.cmd"], "node", ["src/video/cli.mjs", "src/carrossel.mjs", "src/identidade.mjs", "src/video/previa.mjs", "src/estudio/servidor.mjs", "scripts/marca.mjs", "scripts/buscar-imagem.mjs", "scripts/linha-editorial.mjs", "scripts/modelos.mjs", "scripts/estilos.mjs", "scripts/objetivos.mjs", "scripts/imagem-para-pontos.mjs", "scripts/folha-pontos.mjs", "scripts/respiros.mjs", "scripts/verificar.mjs", "ferramentas/instalador/instalar.mjs"]],
+    pattern = [["ferramentas/rodar", "ferramentas\\rodar.cmd", "ferramentas/rodar.cmd"], "node", ["src/video/cli.mjs", "src/carrossel.mjs", "src/identidade.mjs", "src/video/previa.mjs", "src/estudio/servidor.mjs", "scripts/marca.mjs", "scripts/buscar-imagem.mjs", "scripts/linha-editorial.mjs", "scripts/modelos.mjs", "scripts/estilos.mjs", "scripts/objetivos.mjs", "scripts/imagem-para-pontos.mjs", "scripts/folha-pontos.mjs", "scripts/respiros.mjs", "scripts/verificar.mjs", "scripts/resumir-relatorio.mjs", "ferramentas/instalador/instalar.mjs"]],
     decision = "allow",
     justification = "Motor do estúdio Ilustrando com o Node portátil da pasta",
     match = [["ferramentas/rodar", "node", "src/video/cli.mjs", "--doctor"]],

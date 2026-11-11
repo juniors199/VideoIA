@@ -41,5 +41,6 @@
   ],
   "encoder": "auto",
   "objetivoPadrao": "esporte",
-  "estiloPadrao": "mindset"
+  "estiloPadrao": "mindset",
+  "assistente": "codex"
 }

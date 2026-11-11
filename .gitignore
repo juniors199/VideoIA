@@ -1,13 +1,40 @@
+# Dependências, programas e caches locais
 node_modules/
+.cache/
+/.programas/
+/ferramentas/instalador/pecas/
+
+# Credenciais e estado local
 .env
 .env.*
 !.env.exemplo
-.claude/settings.local.json
-.programas/
-projetos/
-marca/
-carrosseis/
-.estudio/
-ferramentas/instalador/pecas/
-.licenca/
-.atualizacao/
+/.claude/settings.local.json
+/.estudio/
+/.licenca/
+/.atualizacao/
+
+# Conteúdo e personalizações do estúdio
+/projetos/
+/marca/
+/carrosseis/
+/estilos/meus/
+/objetivos/meus/
+/modelos/meus/
+/biblioteca/pecas/
+/saida/
+
+# Testes locais e relatórios gerados
+/test/**/*.local.test.mjs
+/test/.tmp/
+/test/saida/
+/coverage/
+/.nyc_output/
+/test-results/
+/playwright-report/
+
+# Arquivos temporários do sistema e das ferramentas
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db

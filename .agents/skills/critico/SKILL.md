@@ -18,6 +18,8 @@ O QA automático mede margens e sobreposição. Você olha o que ele não vê: c
 
 6. **Fala x imagem** (0.6.12): para cada beat, o que aparece mostra o que a voz diz naquele trecho? Use `saida/relevancia.json` como ponto de partida e confira nos quadros. Objeto sem relação (uma escada quando a fala é sobre dinossauro) é defeito grave. Desde 05/11/2026, palavra a palavra: a forma tem que mostrar a AÇÃO e o OBJETO daquele beat ("dorme" pede cama, não o despertador do gancho); peça repetida só porque é do assunto do vídeo, ou forma trocada por rodízio, é defeito. Sem nada que represente a frase, o certo é a figura neutra do estilo + o texto da fala. Ferramenta: `auditarFalaForma(cena, palavras)` em `src/video/fala-forma.mjs` (falhas `fala-desenho`); corrija na raiz (`docs/planejador-fala-forma.md`).
 
+Quando houver `direcao-visual.json`, compare a folha com o trecho narrado e o campo `pesquisaVisual` do relatório. Confirme que o arquivo escolhido chegou ao plano e aparece no beat certo. Confira a função da imagem (registro ou contexto), a legibilidade e se o movimento ajuda a revelar ou explicar a informação. Use `pesquisa-visual` para rever uma imagem ou um movimento duvidoso.
+
 ## O que reprova
 - Objeto, cenário ou foto sem relação com a fala do beat.
 - Foto cujo nome bate, mas o assunto não (homônimo: sertanejo no lugar de jogador, prédio no lugar da agência citada). Confira o arquivo em `assets/` e a linha em `fontes.md` (título da foto no Commons).

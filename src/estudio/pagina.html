@@ -138,6 +138,10 @@ input::placeholder{color:var(--fraco)}
 .cartao-ia .estado-ia{font-size:12px;font-weight:700;color:var(--suave)}
 .cartao-ia .estado-ia.ok{color:var(--ok)}
 .cartao-ia .estado-ia.falta{color:var(--fraco)}
+.ia-procurando{display:flex;align-items:center;justify-content:center;gap:12px;min-height:min(42vh,320px);color:var(--suave);font-weight:600;font-size:15px}
+.ia-procurando[hidden]{display:none}
+.ia-spin{width:18px;height:18px;border:2px solid var(--linha);border-top-color:var(--texto);border-radius:50%;animation:ia-spin .7s linear infinite;flex:none}
+@keyframes ia-spin{to{transform:rotate(360deg)}}
 .chat-box{display:grid;grid-template-rows:1fr auto;gap:12px;min-height:min(70vh,640px)}
 .chat-log{background:var(--sup2);border:1px solid var(--linha);border-radius:14px;padding:14px;overflow:auto;display:grid;gap:10px;align-content:start}
 .chat-bolha{max-width:92%;padding:10px 12px;border-radius:12px;white-space:pre-wrap;line-height:1.45;font-size:14px}
@@ -145,6 +149,8 @@ input::placeholder{color:var(--fraco)}
 .chat-bolha.ia{justify-self:start;background:var(--sup);border:1px solid var(--linha);font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12.5px}
 .chat-form{display:grid;grid-template-columns:1fr auto auto;gap:8px;align-items:end}
 .chat-form textarea{min-height:72px;resize:vertical}
+.chat-contexto:not([hidden]){display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:8px;color:var(--suave)}
+.chat-contexto span{min-width:0;overflow-wrap:anywhere}
 /* assistente de primeira vez */
 .passos{list-style:none;display:grid;gap:8px;padding-bottom:0;scrollbar-width:thin}
 .passos button{width:100%;height:100%;display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;align-items:center;text-align:left;background:var(--sup);border:1px solid var(--linha);border-radius:14px;padding:12px;cursor:pointer;color:var(--suave);min-height:64px}
@@ -735,8 +741,12 @@ img,video{max-width:100%}
     </div>
     <div class="cartao chat-box">
       <div class="chat-log" id="chatLog" aria-live="polite"></div>
+      <div class="chat-contexto" id="chatContexto" hidden>
+        <span id="chatContextoTexto" role="status"></span>
+        <button class="btn sec pequeno" type="button" id="chatContextoRemover" disabled>Remover vídeo do pedido</button>
+      </div>
       <form class="chat-form" id="chatForm">
-        <textarea id="chatMsg" placeholder="Ex.: Quero um vídeo sobre por que o teclado tem um risquinho no F e no J." maxlength="20000" required></textarea>
+        <textarea id="chatMsg" aria-label="Mensagem" aria-describedby="chatContextoTexto" placeholder="Ex.: Quero um vídeo sobre por que o teclado tem um risquinho no F e no J." maxlength="20000" required></textarea>
         <button class="btn" type="submit" id="chatEnviar">Enviar</button>
         <button class="btn sec" type="button" id="chatCancelar" hidden>Cancelar</button>
       </form>
@@ -1048,6 +1058,15 @@ async function iniciarTarefa(url, corpo, cb) {
   try { document.querySelectorAll('video[src*="/midia/"]').forEach((v) => { v.pause(); v.removeAttribute('src'); v.load(); }); } catch { /* sem player */ }
   const r = await post(url, corpo);
   if (r.erro) { alertaTopo(r.erro); return null; }
+  if (r.precisaAprovacao) {
+    $('#tarefa').hidden = true;
+    return r;
+  }
+  if (r.cache && !r.id) {
+    $('#tarefa').hidden = true;
+    if (cb) await cb({ codigo: 0, fim: true, ia: r, cache: true });
+    return r;
+  }
   $('#tResultado').innerHTML = ''; $('#log').textContent = '';
   acompanhar(cb || (() => {}));
   return r;
@@ -1409,60 +1428,205 @@ const RENDER = {
   },
   async ia() {
     const P = $('#painelPasso');
-    P.innerHTML = `<h2>Configurar IA</h2><p class="sub">Quem escreve o roteiro e monta o vídeo é a IA no seu computador. O estúdio detecta o que já está instalado; um clique em <b>Conectar</b> e o Chat desta página passa a usá-la.</p><div id="iaGrade" class="grade-ia">Carregando…</div><div id="resIa"></div>`;
-    const st = await api('/api/ia').catch(() => conf.ia || { opcoes: [], escolhido: null });
-    const opcoes = st.opcoes || conf.ia?.opcoes || [];
-    const escolhido = st.escolhido || conf.ia?.escolhido;
-    const estadoTxt = (o) => {
-      if (escolhido === o.id && o.instalado) return '<span class="estado-ia ok">Conectado</span>';
-      if (o.instalado) return '<span class="estado-ia ok">Instalado</span>';
-      return '<span class="estado-ia falta">Não achei</span>';
+    const abrirAvisoDepsIa = (info, aoConfirmar) => {
+      const deps = info.deps || [];
+      const lista = deps.map((d) => `<li><b>${esc(d.nome)}</b> — ${esc(d.motivo || '')}</li>`).join('');
+      abrirDlg(`<h3 style="margin:0 0 10px">Falta uma dependência</h3>
+        <p style="margin:0 0 10px">Para instalar <b>${esc(info.nome || 'a IA')}</b>, o estúdio precisa disto no PC:</p>
+        <ul style="margin:0 0 14px;padding-left:18px">${lista}</ul>
+        <p class="dica" style="margin:0 0 14px">Só instala se você aprovar. Nada é cobrado pelo estúdio; é o instalador oficial da dependência.</p>
+        <div class="acoes" style="margin:0">
+          <button class="btn" type="button" id="iaDepsConfirmar">Sim, instalar</button>
+          <button class="btn sec" type="button" id="iaDepsCancelar">Agora não</button>
+        </div>`);
+      const ok = $('#iaDepsConfirmar');
+      const no = $('#iaDepsCancelar');
+      if (ok) ok.onclick = () => { $('#dlg').close(); aoConfirmar?.(); };
+      if (no) no.onclick = () => $('#dlg').close();
     };
-    const campoCursor = (o) => o.id !== 'cursor' ? '' : `<label style="display:grid;gap:6px;margin-top:4px"><span class="dica">Chave CURSOR_API_KEY (só neste computador)</span>
-      <input type="password" id="iaCursorChave" placeholder="${o.temChave ? '•••• chave já salva (cole outra para trocar)' : 'Cole a chave do Cursor'}" autocomplete="off">
-      <button class="btn sec pequeno" type="button" data-salvar-cursor>Salvar chave</button></label>`;
-    $('#iaGrade').innerHTML = opcoes.map((o) => `<div class="cartao-ia ${escolhido === o.id ? 'conectado' : ''}" data-id="${esc(o.id)}">
-      <div><b>${esc(o.nome)}</b>${estadoTxt(o)}${o.versao ? `<small style="display:block;color:var(--fraco);margin-top:4px">${esc(o.versao)}</small>` : ''}</div>
-      <p class="dica" style="margin:0">${esc(o.dica || '')}</p>
-      ${campoCursor(o)}
-      <div class="acoes" style="margin:0">${o.instalado && !(o.id === 'cursor' && !o.temChave)
-        ? `<button class="btn" type="button" data-conectar="${esc(o.id)}">${escolhido === o.id ? 'Conectado' : 'Conectar'}</button>`
-        : `<span class="dica">Instale e volte aqui.</span>`}</div>
-    </div>`).join('');
-    $$('#iaGrade [data-conectar]').forEach((b) => (b.onclick = async () => {
-      b.disabled = true;
-      const r = await post('/api/ia', { id: b.dataset.conectar });
-      if (r.erro) { $('#resIa').innerHTML = caixaErro(r.erro); b.disabled = false; return; }
-      conf = await api('/api/configuracao');
-      $('#resIa').innerHTML = `<div class="caixa-ok">${esc(r.nome || 'IA')} conectada. Abra a aba <b>Chat</b> para pedir um vídeo.</div>`;
-      desenhaPassos(); atualizarPin(); atualizarAbaChat(); RENDER.ia();
-    }));
-    const salva = $('#iaGrade [data-salvar-cursor]');
-    if (salva) salva.onclick = async () => {
-      const chave = $('#iaCursorChave')?.value || '';
-      const r = await post('/api/ia/chave', { chave });
-      if (r.erro) { $('#resIa').innerHTML = caixaErro(r.erro); return; }
-      $('#resIa').innerHTML = '<div class="caixa-ok">Chave do Cursor salva no .env.</div>';
-      conf = await api('/api/configuracao');
-      RENDER.ia();
+
+    const abrirAvisoInstalarIa = (id, aoConfirmar) => {
+      const nome = { claude: 'Claude Code', codex: 'Codex', cursor: 'Cursor' }[id] || id;
+      abrirDlg(`<h3 style="margin:0 0 10px">Instalar ${esc(nome)}</h3>
+        <p style="margin:0 0 10px">O estúdio <b>não disponibiliza IA grátis</b>. Isto só instala o programa no seu PC <b>se ele ainda não estiver aqui</b>.</p>
+        <p style="margin:0 0 10px">Para usar, você precisa de conta/plano <b>pago</b> da ${esc(nome)}. Em alguns casos existe crédito grátis, mas <b>não dura</b> — em algum momento o limite estoura.</p>
+        <p class="dica" style="margin:0 0 14px">O estúdio baixa e instala no computador. Se faltar alguma dependência (ex.: Git), ele pergunta antes.</p>
+        <div class="acoes" style="margin:0">
+          <button class="btn" type="button" id="iaInstalarConfirmar">Instalar no PC</button>
+        </div>`);
+      const confBtn = $('#iaInstalarConfirmar');
+      if (confBtn) confBtn.onclick = () => { $('#dlg').close(); aoConfirmar?.(id); };
     };
-    if (escolhido && (st.conectado || conf.pronto?.ia)) {
-      $('#resIa').innerHTML = `<div class="proximo"><h2>Pronto. Peça no Chat</h2><p class="sub">A IA conectada é <b>${esc(st.nome || conf.ia?.nome || escolhido)}</b>. Os vídeos prontos aparecem em Meus vídeos.</p>
-        <div class="acoes"><button class="btn" type="button" id="irChat">Abrir o Chat</button><button class="btn sec" type="button" id="irVideos">Meus vídeos</button></div></div>`;
-      $('#irChat').onclick = () => mostrar('chat');
-      $('#irVideos').onclick = () => mostrar('videos');
-    }
+
+    const rodarInstalacaoIa = (id, aprovarDeps = false) => {
+      $('#resIa').innerHTML = `<div class="caixa-nota"><b>${aprovarDeps ? 'Instalando dependência e IA' : 'Instalando no PC'}</b>Isso pode levar alguns minutos. O estúdio avisa quando terminar.</div>`;
+      iniciarTarefa('/api/ia/instalar', { id, aprovarDeps }, async (j) => {
+        conf = await api('/api/configuracao').catch(() => conf) || conf;
+        desenhaPassos(); atualizarPin(); atualizarAbaChat();
+        await desenhar();
+        if (j.codigo === 0 || j.ia?.ok) {
+          $('#resIa').innerHTML = `<div class="caixa-ok">${esc(j.ia?.nome || 'IA')} instalado neste PC.</div>`;
+        } else {
+          $('#resIa').innerHTML = '<div class="caixa-nota"><b>Não instalou</b>Confira a internet e tente Instalar de novo. Se pediu Git, aprove a instalação da dependência.</div>';
+        }
+      }).then((r) => {
+        if (!r?.precisaAprovacao) return;
+        abrirAvisoDepsIa(r, () => rodarInstalacaoIa(id, true));
+      });
+    };
+
+    P.innerHTML = `<h2>Configurar IA</h2>
+      <div class="ia-procurando" id="iaProcurando"><span class="ia-spin" aria-hidden="true"></span><span>Procurando…</span></div>
+      <div id="iaGrade" class="grade-ia" hidden></div>
+      <div id="resIa"></div>`;
+
+    const mostrarResultado = () => {
+      const proc = $('#iaProcurando');
+      const grade = $('#iaGrade');
+      if (proc) proc.hidden = true;
+      if (grade) grade.hidden = false;
+    };
+
+    const desenhar = async () => {
+      const st = await api('/api/ia').catch(() => conf.ia || { opcoes: [], escolhido: null });
+      const opcoes = st.opcoes || [];
+      const escolhido = st.escolhido || conf.ia?.escolhido;
+      const estadoTxt = (o) => {
+        if (escolhido === o.id && (st.conectado || o.instalado)) return '<span class="estado-ia ok">Conectado</span>';
+        if (o.instalado && o.id === 'cursor' && !o.temChave) return '<span class="estado-ia falta">Falta autenticar</span>';
+        if (o.instalado) return '<span class="estado-ia ok">No PC</span>';
+        if (o.id === 'cursor' && o.encontrado) return '<span class="estado-ia falta">IDE no PC</span>';
+        return '<span class="estado-ia falta">Não achei</span>';
+      };
+      const cursor = opcoes.find((o) => o.id === 'cursor');
+      const ideNota = cursor?.ide?.logado
+        ? `Detectei a IDE logada${cursor.ide.email ? ` como ${esc(cursor.ide.email)}` : ''}, mas esse login não serve para o chat do estúdio.`
+        : 'O login da IDE Cursor não vira API Key automaticamente.';
+      const botoesIa = (o) => {
+        const usar = o.instalado && !(o.id === 'cursor' && !o.temChave)
+          ? `<button class="btn${escolhido === o.id ? ' sec' : ''}" type="button" data-conectar="${esc(o.id)}">${escolhido === o.id ? 'Em uso' : 'Usar esta'}</button>`
+          : (o.id === 'cursor' && o.instalado && !o.temChave
+            ? `<button class="btn" type="button" data-cursor-login>Entrar com o Cursor</button>`
+            : '');
+        const instalar = !o.instalado
+          ? `<button class="btn sec" type="button" data-instalar="${esc(o.id)}">Instalar</button>`
+          : '';
+        return `${usar}${instalar}`;
+      };
+      $('#iaGrade').innerHTML = opcoes.map((o) => `<div class="cartao-ia ${escolhido === o.id ? 'conectado' : ''}" data-id="${esc(o.id)}">
+        <div><b>${esc(o.nome)}</b>${estadoTxt(o)}${o.versao ? `<small style="display:block;color:var(--fraco);margin-top:4px">${esc(o.versao)}</small>` : ''}</div>
+        <p class="dica" style="margin:0">${esc(o.dica || '')}</p>
+        <div class="acoes" style="margin:0">${botoesIa(o)}</div>
+      </div>`).join('') + (cursor ? `<div class="cartao-ia" style="grid-column:1/-1">
+        <b>Autenticação do Cursor</b>
+        <p class="dica" style="margin:0">${ideNota} Clique em <b>Entrar com o Cursor</b> (abre o navegador uma vez). Alternativa: API Key em <a href="https://cursor.com/dashboard/api" target="_blank" rel="noopener">cursor.com/dashboard/api</a> — ela não aparece dentro da IDE.</p>
+        <div class="acoes" style="margin:8px 0 0">${!cursor.temChave ? `<button class="btn" type="button" data-cursor-login>Entrar com o Cursor</button>` : ''}<button class="btn sec" type="button" data-salvar-cursor>Salvar chave</button></div>
+        <label style="display:grid;gap:6px;margin-top:10px">
+          <span class="dica" style="margin:0">Opcional: colar API Key do painel (fica no .env deste PC).</span>
+          <input type="password" id="iaCursorChave" placeholder="${cursor.temChave ? '•••• já autenticado (cole outra para trocar)' : 'Cole a CURSOR_API_KEY do painel'}" autocomplete="off">
+        </label>
+      </div>` : '');
+
+      $$('#iaGrade [data-conectar]').forEach((b) => (b.onclick = async () => {
+        b.disabled = true;
+        const r = await post('/api/ia', { id: b.dataset.conectar });
+        if (r.erro) { $('#resIa').innerHTML = caixaErro(r.erro); b.disabled = false; return; }
+        conf = await api('/api/configuracao');
+        desenhaPassos(); atualizarPin(); atualizarAbaChat();
+        await desenhar();
+      }));
+      $$('#iaGrade [data-instalar]').forEach((b) => (b.onclick = () => abrirAvisoInstalarIa(b.dataset.instalar, (id) => rodarInstalacaoIa(id, false))));
+      const loginBtns = $$('#iaGrade [data-cursor-login]');
+      loginBtns.forEach((b) => (b.onclick = () => {
+        loginBtns.forEach((x) => { x.disabled = true; });
+        $('#resIa').innerHTML = '<div class="caixa-nota"><b>Abrindo o login</b>Confirme no navegador e volte aqui. O estúdio aguarda.</div>';
+        iniciarTarefa('/api/ia/cursor-login', {}, async (j) => {
+          loginBtns.forEach((x) => { x.disabled = false; });
+          conf = await api('/api/configuracao').catch(() => conf) || conf;
+          desenhaPassos(); atualizarPin(); atualizarAbaChat();
+          await desenhar();
+          if (j.codigo === 0 || j.ia?.ok) {
+            $('#resIa').innerHTML = '<div class="caixa-ok">Cursor autenticado. Pode usar esta IA.</div>';
+          } else {
+            $('#resIa').innerHTML = '<div class="caixa-nota"><b>Login incompleto</b>Se o navegador abriu e você confirmou, clique de novo em Entrar. Senão, crie a chave em <a href="https://cursor.com/dashboard/api" target="_blank" rel="noopener">cursor.com/dashboard/api</a> e cole abaixo.</div>';
+          }
+        }).then((r) => { if (!r) loginBtns.forEach((x) => { x.disabled = false; }); });
+      }));
+      const salva = $('#iaGrade [data-salvar-cursor]');
+      if (salva) salva.onclick = async () => {
+        const chave = $('#iaCursorChave')?.value || '';
+        const r = await post('/api/ia/chave', { chave });
+        if (r.erro) { $('#resIa').innerHTML = caixaErro(r.erro); return; }
+        conf = await api('/api/configuracao');
+        desenhaPassos(); atualizarPin(); atualizarAbaChat();
+        $('#resIa').innerHTML = '<div class="caixa-ok">Chave salva. Conectando o que estiver pronto…</div>';
+        await desenhar();
+      };
+
+      if (st.conectado) {
+        $('#resIa').innerHTML = `<div class="caixa-ok">IA pronta: <b>${esc(st.nome || escolhido)}</b>. Abra o <b>Chat</b> para pedir um vídeo.</div>
+          <div class="acoes"><button class="btn" type="button" id="irChat">Abrir o Chat</button><button class="btn sec" type="button" id="irVideos">Meus vídeos</button></div>`;
+        $('#irChat').onclick = () => mostrar('chat');
+        $('#irVideos').onclick = () => mostrar('videos');
+      } else if (cursor && cursor.instalado && !cursor.temChave) {
+        $('#resIa').innerHTML = '<div class="caixa-nota"><b>Quase pronto</b>No Cursor, clique em <b>Entrar com o Cursor</b> (login uma vez no navegador) ou cole a API Key do painel. Claude/Codex não precisam disso.</div>';
+      } else if (!(opcoes || []).some((o) => o.instalado)) {
+        $('#resIa').innerHTML = '<div class="caixa-nota"><b>Nenhuma IA utilizável</b>Use <b>Instalar</b> no cartão para baixar no PC. O estúdio não oferece IA grátis.</div>';
+      }
+      mostrarResultado();
+      return st;
+    };
+
+    iniciarTarefa('/api/ia/preparar', {}, async () => {
+      mostrarResultado();
+      try {
+        conf = await api('/api/configuracao').catch(() => conf) || conf;
+        desenhaPassos(); atualizarPin(); atualizarAbaChat();
+        await desenhar();
+      } catch {
+        mostrarResultado();
+        $('#resIa').innerHTML = '<div class="caixa-nota"><b>Busca terminou</b>Não deu para montar os cartões. Abra Configurar IA de novo.</div>';
+      }
+    }).then(async (r) => {
+      if (r) return;
+      mostrarResultado();
+      await post('/api/ia', {}).catch(() => null);
+      conf = await api('/api/configuracao').catch(() => conf) || conf;
+      await desenhar();
+    });
   },
 };
 
 /* ---------------- Chat embutido ---------------- */
-const chatEstado = { linhasVistas: 0, jobId: null, bolhaIa: null };
+const chatEstado = { linhasVistas: 0, jobId: null, bolhaIa: null, contexto: null, rascunhos: new Map() };
 function atualizarAbaChat() {
   const aba = $('#abaChat');
   if (!aba) return;
   const ok = !!(conf && conf.pronto && conf.pronto.ia);
   aba.hidden = !ok;
   if (!ok && vista === 'chat') mostrar('configuracoes');
+}
+function definirContextoChat(contexto, sugestao = '') {
+  const entrada = $('#chatMsg');
+  const chave = c => c ? c.projeto + ':' + c.alvo : '';
+  const anterior = chave(chatEstado.contexto);
+  const proxima = chave(contexto);
+  if (anterior !== proxima) {
+    if (entrada.value) chatEstado.rascunhos.set(anterior, entrada.value);
+    else chatEstado.rascunhos.delete(anterior);
+    entrada.value = chatEstado.rascunhos.get(proxima) || '';
+  }
+  if (!entrada.value && sugestao) entrada.value = sugestao;
+  chatEstado.contexto = contexto;
+  $('#chatContexto').hidden = !contexto;
+  $('#chatContextoRemover').disabled = !contexto;
+  $('#chatContextoTexto').textContent = contexto ? rotuloContextoChat(contexto) : '';
+  mostrar('chat');
+  entrada.focus();
+}
+function rotuloContextoChat(contexto) {
+  const alvo = contexto.alvo === 'youtube' ? 'Pacote YouTube' : 'Vídeo';
+  return `${alvo}: ${contexto.titulo}`;
 }
 function prepararChat() {
   const nome = conf?.ia?.nome || 'IA';
@@ -1503,32 +1667,44 @@ function espelharChatJob(j) {
     if (j.codigo && j.codigo !== 0 && j.erro) appendChat('ia', `Não concluí: ${j.erro.causa || ''} ${j.erro.acao || ''}`.trim());
   }
 }
-async function enviarChat(mensagem, { ir = true } = {}) {
+async function enviarChat(mensagem, { ir = true, contexto = null } = {}) {
   const msg = String(mensagem || '').trim();
-  if (!msg) return;
+  if (!msg || $('#chatEnviar').disabled) return false;
   if (ir) mostrar('chat');
-  appendChat('eu', msg);
-  $('#chatMsg').value = '';
   $('#chatEnviar').disabled = true;
-  $('#chatCancelar').hidden = false;
-  const r = await post('/api/ia/chat', { mensagem: msg });
-  if (r.erro) {
-    appendChat('ia', `${r.erro.causa || ''} ${r.erro.acao || ''}`.trim());
+  const corpo = { mensagem: msg };
+  if (contexto) corpo.contexto = { projeto: contexto.projeto, alvo: contexto.alvo };
+  const r = await post('/api/ia/chat', corpo).catch(() => ({ erro: NAO_RESPONDE }));
+  if (!r?.id || r.erro) {
+    const erro = r?.erro || RESPOSTA_ESTRANHA;
+    appendChat('ia', `${erro.causa || ''} ${erro.acao || ''}`.trim());
     $('#chatEnviar').disabled = false;
     $('#chatCancelar').hidden = true;
-    return;
+    return false;
   }
+  appendChat('eu', contexto ? `${rotuloContextoChat(contexto)}
+${msg}` : msg);
+  $('#chatCancelar').hidden = false;
   chatEstado.jobId = r.id;
   chatEstado.linhasVistas = 0;
   chatEstado.bolhaIa = appendChat('ia', '…');
   acompanhar();
+  return true;
 }
 {
   const form = $('#chatForm');
-  if (form) form.addEventListener('submit', (e) => {
+  if (form) form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    enviarChat($('#chatMsg').value);
+    const entrada = $('#chatMsg');
+    const mensagem = entrada.value;
+    const contexto = chatEstado.contexto;
+    const enviado = await enviarChat(mensagem, { contexto });
+    if (!enviado) return;
+    if (chatEstado.contexto === contexto && entrada.value === mensagem) entrada.value = '';
+    const chave = contexto ? contexto.projeto + ':' + contexto.alvo : '';
+    if (chatEstado.rascunhos.get(chave) === mensagem) chatEstado.rascunhos.delete(chave);
   });
+  $('#chatContextoRemover').onclick = () => definirContextoChat(null);
   const cancel = $('#chatCancelar');
   if (cancel) cancel.onclick = () => post('/api/ia/chat/cancel', {});
 }
@@ -1927,15 +2103,24 @@ async function carregarVideos() {
   const novo = `<section class="cta-novo"><div><h2>Vídeo</h2><p class="sub">Tema, gancho e fecho ficam em <b>+ Vídeo</b>. O assistente escreve o roteiro; o estúdio produz.</p></div><button class="btn" id="ctaIrNovo">+ Vídeo</button></section>`;
   const ligaNovo = () => { const b = $('#ctaIrNovo'); if (!b) return; b.onclick = () => { mostrar('novo'); requestAnimationFrame(() => $('#pvTema')?.focus({ preventScroll: true })); }; };
   if (!vs.length) { alvo.innerHTML = novo + '<div class="vazio-bonito" style="grid-column:1/-1"><h2>Você ainda não tem vídeos prontos</h2><p>Os vídeos que o estúdio fizer aparecem aqui, com os botões de assistir, baixar e copiar a legenda. O jeito mais rápido de ver o primeiro é fazer o vídeo de teste.</p><div class="acoes"><button class="btn" id="vazioTeste">Fazer o vídeo de teste</button></div></div>'; ligaNovo(); $('#vazioTeste').onclick = () => irPara('teste'); return; }
+  const chatConectado = !!conf?.pronto?.ia;
+  const ajustar = (projeto, tipo, sugestao) => {
+    const video = vs.find(item => item.nome === projeto);
+    if (video) definirContextoChat({ projeto, titulo: video.titulo, alvo: tipo }, sugestao);
+  };
   alvo.innerHTML = novo + vs.map((v) => `<article class="vid">
     <button class="capa" data-ver="${v.nome}" aria-label="Assistir ${esc(v.titulo)}" style="${v.capa ? `background-image:url(/midia/${v.nome}/capa.jpg)` : ''}"></button>
     <div class="corpo-v"><b>${esc(v.titulo)}</b><small>${new Date(v.data).toLocaleString('pt-BR', { dateStyle: 'short', timeStyle: 'short' })} · ${v.mb} MB</small>
       <div class="marcas">${v.teste ? `<span class="etq aviso">${I('aviso')} sem voz (teste)</span>` : v.aprovado ? `<span class="etq ok">${I('ok')} conferido</span>` : `<span class="etq aviso">${I('aviso')} rever qualidade</span>`}${v.rapido ? '<span class="etq">prévia rápida</span>' : ''}</div></div>
     <div class="bts"><a class="btn sec" href="/baixar/${v.nome}" download>Baixar</a><button class="btn sec" data-pasta="${v.nome}">Mostrar na pasta</button>
       <button class="btn sec" data-leg="${v.nome}" ${v.legenda ? '' : 'title="Peça ao assistente (Claude Code ou Codex): escreva a legenda deste vídeo"'}>${v.legenda ? 'Copiar legenda' : 'Pedir a legenda'}</button>
-      <button class="btn sec" data-yt="${v.nome}" ${v.youtube ? '' : 'title="Peça ao assistente (Claude Code ou Codex): escreva o pacote YouTube deste vídeo"'}>${v.youtube ? 'YouTube' : 'Pedir YouTube'}</button></div>
+      <button class="btn sec" data-yt="${v.nome}" ${v.youtube ? '' : 'title="Peça ao assistente (Claude Code ou Codex): escreva o pacote YouTube deste vídeo"'}>${v.youtube ? 'YouTube' : 'Pedir YouTube'}</button>
+      ${chatConectado ? `<button class="btn sec" type="button" data-ajustar-video="${esc(v.nome)}">Pedir ajuste</button>` : ''}</div>
   </article>`).join('');
   ligaNovo();
+  $$('#videos [data-ajustar-video]').forEach(b => {
+    b.onclick = () => ajustar(b.dataset.ajustarVideo, 'video');
+  });
   $$('[data-ver]').forEach((b) => (b.onclick = () => abrirDlg(`<h2>${esc(vs.find((x) => x.nome === b.dataset.ver).titulo)}</h2><video controls autoplay playsinline src="/midia/${b.dataset.ver}/video?t=${Date.now()}" style="margin-top:12px"></video>`)));
   $$('[data-pasta]').forEach((b) => (b.onclick = () => post('/api/mostrar', { nome: b.dataset.pasta })));
   $$('[data-leg]').forEach((b) => (b.onclick = async () => {
@@ -1946,15 +2131,29 @@ async function carregarVideos() {
   }));
   $$('[data-yt]').forEach((b) => (b.onclick = async () => {
     const nome = b.dataset.yt;
-    const r = await api('/api/youtube/' + nome);
+    const r = await api('/api/youtube/' + encodeURIComponent(nome)).catch(() => ({ erro: NAO_RESPONDE }));
+    if (!r || (r.erro && typeof r.erro !== 'string')) {
+      abrirDlg(`<h2>Pacote YouTube</h2>${caixaErro(r?.erro || RESPOSTA_ESTRANHA, { botoes: false })}`);
+      return;
+    }
+    const abrirAjusteYoutube = (sugestao) => {
+      $('#dlg').close();
+      ajustar(nome, 'youtube', sugestao);
+    };
+    if (r.erro && chatConectado) {
+      abrirAjusteYoutube('Gere o pacote YouTube deste vídeo.');
+      return;
+    }
     if (r.erro) { abrirDlg(`<h2>Sem pacote YouTube ainda</h2><p class="sub">Peça ao assistente (Claude Code ou Codex), na conversa:</p><div class="diga">Escreva o pacote YouTube do vídeo ${esc(nome)}</div>`); return; }
     const bloco = (rotulo, texto, id) => `<div class="yt-bloco"><div class="yt-cab"><b>${esc(rotulo)}</b><button class="mini" data-copiar="${esc(id)}">Copiar</button></div><textarea id="${esc(id)}" readonly rows="${Math.min(8, Math.max(2, String(texto).split('\n').length + 1))}">${esc(texto)}</textarea></div>`;
     const titulos = (r.titulos || []).map((t, i) => bloco(`Título ${i + 1}`, t, `ytTit${i}`)).join('');
     const descs = (r.descricoes || []).map((t, i) => bloco(`Descrição ${i + 1}`, t, `ytDesc${i}`)).join('');
     const tags = bloco('Tags (campo Tags do Studio)', (r.tags || []).join(', '), 'ytTags');
     const hashes = bloco('Hashtags (colar na descrição)', (r.hashtags || []).join(' '), 'ytHash');
-    abrirDlg(`<h2>Pacote YouTube</h2><p class="dica">3 títulos, 3 descrições, tags e hashtags. Confira antes de colar no Studio.${r.formato ? ` Formato: ${esc(r.formato)}.` : ''}</p><div class="yt-pacote">${titulos}${descs}${tags}${hashes}</div><span id="ytOk" class="ok-txt"></span>`);
-    $$('[data-copiar]').forEach((btn) => (btn.onclick = async () => {
+    abrirDlg(`<h2>Pacote YouTube</h2><p class="dica">3 títulos, 3 descrições, tags e hashtags. Confira antes de colar no Studio.${r.formato ? ` Formato: ${esc(r.formato)}.` : ''}</p><div class="yt-pacote">${titulos}${descs}${tags}${hashes}</div>${chatConectado ? '<div class="acoes"><button class="btn sec" type="button" id="ytAjustar">Ajustar pacote no Chat</button></div>' : ''}<span id="ytOk" class="ok-txt" role="status"></span>`);
+    const ajustarPacote = $('#ytAjustar');
+    if (ajustarPacote) ajustarPacote.onclick = () => abrirAjusteYoutube();
+    $$('#dlg [data-copiar]').forEach((btn) => (btn.onclick = async () => {
       const t = $('#' + btn.dataset.copiar); if (!t) return;
       try { await navigator.clipboard.writeText(t.value); } catch { t.select(); document.execCommand('copy'); }
       $('#ytOk').textContent = 'Copiado.';

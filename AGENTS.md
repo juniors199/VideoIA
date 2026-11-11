@@ -31,12 +31,12 @@ Todo vídeo tem um **estilo** (a aparência; `npm run estilos`) e um **objetivo*
 
 ## Skills (nesta ordem)
 Primeira vez: `comece`. Trocar nome, @ ou cor: `marca`.
-`pauta` -> `roteiro` -> `video` (que usa `cena` e `critico`) -> `publicar` -> `youtube`. Para carrossel: `pauta` -> `carrossel` -> `publicar`. Para imitar o jeito de um conteúdo que deu certo: `referencia`.
+`pauta` -> `roteiro` -> `video` (que usa `cena` e `critico`) -> `publicar` (que usa `youtube` para o pacote). Para carrossel: `pauta` -> `carrossel` -> `publicar`. Para imitar o jeito de um conteúdo que deu certo: `referencia`.
 
 ## Leituras por etapa
 Abra a skill da etapa atual e consulte as referências que ela indicar para o trabalho em curso.
 - Na pauta e no roteiro, use o objetivo do vídeo e as seções pertinentes de `docs/identidade-e-voz.md`, `docs/formatos.md`, `docs/ganchos.md` e `docs/padroes-virais.md`.
-- Para montar a cena, comece pelo índice `docs/cena-schema.md` e pelo guia do estilo escolhido em `docs/cena/`. Consulte `docs/pontilhismo.md` quando usar pontos.
+- Para pesquisa de imagens reais e direção dos trechos principais, use `pesquisa-visual`. Para montar a cena, comece pelo índice `docs/cena-schema.md` e pelo guia do estilo escolhido em `docs/cena/`. Consulte `docs/pontilhismo.md` quando usar pontos.
 - No carrossel, consulte o modelo escolhido em `docs/carrossel-templates.md`. Consulte `docs/design-system.md` e `docs/principios-de-design.md` quando criar ou revisar a direção visual.
 - Para publicar, siga `publicar` ou `youtube` conforme a entrega. Para o pacote YouTube, parta do roteiro definitivo e de `fontes.md`. Abra as referências específicas da Vyral quando precisar delas.
 
@@ -95,6 +95,7 @@ As skills são as mesmas do Claude Code, copiadas para `.agents/skills/` (a font
 | `critico` | `$critico` | Julga a folha de contato do vídeo e corrige os 3 maiores defeitos, sem pedir aprovação humana. |
 | `marca` | `$marca` | Coloca a marca da pessoa no estúdio (nome, @, cor, símbolo, avatar, banners) com uma conversa curta e um comando. |
 | `pauta` | `$pauta` | Escolhe o ângulo de um tema e confere os fatos antes de escrever qualquer roteiro ou slide. |
+| `pesquisa-visual` | `$pesquisa-visual` | Planeja imagens reais, enquadramento e movimento para vídeos do VideoIA. |
 | `publicar` | `$publicar` | Escreve a legenda, os marcadores e a descrição por plataforma para um vídeo ou carrossel do Estudio de videos já gerado. |
 | `referencia` | `$referencia` | Dissecar um vídeo ou carrossel de referência para extrair o padrão transferível (mecanismo, estrutura, ritmo), nunca o conteúdo nem a identidade. |
 | `roteiro` | `$roteiro` | Escolhe o formato e o gatilho de gancho e escreve o roteiro narrado de um vídeo curto do Estudio de videos, na faixa de palavras do objetivo do vídeo (padrão 150 a 230). |
@@ -107,7 +108,7 @@ Se a pessoa disser "comece", "comece pelos primeiros passos", "primeira vez" ou 
 
 ### Sandbox, internet e aprovações
 - A pasta do estúdio precisa estar marcada como **confiável**. Sem isso o Codex abre só para leitura (a pasta não tem Git) e não carrega `.codex/config.toml` nem `.codex/rules/`. Se um comando falhar com "read-only", explique à pessoa como confiar na pasta (aviso na primeira abertura ou `/permissions`) e peça para reabrir o Codex.
-- `.codex/rules/ilustrando.rules` libera para rodar fora do sandbox só os comandos do estúdio: `node src/...`, `node scripts/marca.mjs`, `node scripts/sincronizar-skills.mjs`, `node scripts/buscar-imagem.mjs`, `node scripts/linha-editorial.mjs`, `npm run <script do estúdio>`, `npm test`, `npm ci`, `npx playwright install chromium`, `ffmpeg` e `ffprobe`. Use exatamente essas formas (caminho relativo, a partir da pasta do estúdio). `npm install` de pacote novo e `rm -rf` sempre pedem aprovação.
+- `.codex/rules/ilustrando.rules` libera para rodar fora do sandbox só os comandos do estúdio: `node src/...`, `node scripts/marca.mjs`, `node scripts/sincronizar-skills.mjs`, `node scripts/resumir-relatorio.mjs`, `node scripts/buscar-imagem.mjs`, `node scripts/linha-editorial.mjs`, `npm run <script do estúdio>`, `npm test`, `npm ci`, `npx playwright install chromium`, `ffmpeg` e `ffprobe`. Use exatamente essas formas (caminho relativo, a partir da pasta do estúdio). `npm install` de pacote novo e `rm -rf` sempre pedem aprovação.
 - A narração (ElevenLabs, Fish Audio) e o download do Chromium precisam de internet. Se falharem por rede, diga que é o modo de permissão e que basta aprovar o comando. **Nunca** sugira "Full access" nem `danger-full-access`.
 - O modo recomendado é **Ask for approval**.
 

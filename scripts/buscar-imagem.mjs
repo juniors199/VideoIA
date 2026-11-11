@@ -10,7 +10,7 @@ import { fileURLToPath } from 'node:url';
 /**
  * Busca foto ou logo real de licença livre, baixa para a pasta do projeto e registra autor, licença e endereço no fontes.md.
  *   node scripts/buscar-imagem.mjs <projeto> "<termo>" [--logo] [--fonte=commons|agenciabrasil|senado|camara|planalto]
- *        [--listar] [--escolha=N] [--largura=1280] [--nome=arquivo] [--carrossel]
+ *        [--listar] [--id=ID|--escolha=N] [--largura=1280] [--nome=arquivo] [--carrossel]
  *  - foto: Wikimedia Commons (API de busca, só licenças livres: domínio público, CC0, CC BY, CC BY-SA). --fonte restringe
  *    às fotos das agências públicas publicadas no Commons (Agência Brasil, Agência Senado, Câmara, Planalto).
  *  - logo (--logo): Wikidata, propriedade P154 (logotipo) do item mais próximo do termo; o arquivo vem do Commons.
@@ -78,9 +78,12 @@ export function licencaLivre(meta = {}) {
 export function registroDe(pagina) {
   const ii = pagina.imageinfo?.[0] || {}, m = ii.extmetadata || {};
   return {
+    id: pagina.pageid,
     titulo: String(pagina.title || '').replace(/^File:|^Arquivo:/, ''),
     autor: limparHtml(m.Artist?.value) || 'autor não informado',
     credito: limparHtml(m.Credit?.value),
+    descricao: limparHtml(m.ImageDescription?.value),
+    data: limparHtml(m.DateTimeOriginal?.value),
     licenca: limparHtml(m.LicenseShortName?.value) || 'licença não informada',
     licencaUrl: m.LicenseUrl?.value || '',
     restricoes: limparHtml(m.Restrictions?.value),
@@ -113,7 +116,7 @@ export function registrarFonte(pastaProjeto, linha, arquivo, secao = 'Imagens') 
   fs.writeFileSync(f, t.replace(/\n{3,}/g, '\n\n'));
 }
 
-const paramsInfo = (largura) => ({ prop: 'imageinfo', iiprop: 'url|extmetadata|mime|size', iiurlwidth: String(largura), iiextmetadatafilter: 'LicenseShortName|License|LicenseUrl|Artist|Credit|Restrictions', iiextmetadatalanguage: 'pt' });
+const paramsInfo = (largura) => ({ prop: 'imageinfo', iiprop: 'url|extmetadata|mime|size', iiurlwidth: String(largura), iiextmetadatafilter: 'LicenseShortName|License|LicenseUrl|Artist|Credit|Restrictions|ImageDescription|DateTimeOriginal', iiextmetadatalanguage: 'pt' });
 const urlApi = (base, p) => `${base}?${new URLSearchParams({ format: 'json', formatversion: '2', maxlag: '5', origin: '*', ...p })}`;
 
 /** candidatos de foto no Commons, na ordem da busca */
@@ -145,20 +148,30 @@ export async function buscarLogos(pedir, termo, { largura = 1000 } = {}) {
 
 const EXT = { 'image/jpeg': '.jpg', 'image/png': '.png', 'image/webp': '.webp', 'image/svg+xml': '.svg' };
 
-export async function buscarImagem({ projeto, termo, logo = false, fonte = 'commons', listar = false, escolha = null, largura = logo ? 1000 : 1280, nome = null, carrossel = false, fetch: f } = {}) {
-  if (!projeto || !termo) throw new Error('Uso: node scripts/buscar-imagem.mjs <projeto> "<termo>" [--logo] [--fonte=commons|agenciabrasil|senado|camara|planalto] [--listar] [--escolha=N] [--carrossel]');
+export async function buscarImagem({ projeto, termo, logo = false, fonte = 'commons', listar = false, escolha = null, id = null, largura = logo ? 1000 : 1280, nome = null, carrossel = false, fetch: f, raiz = RAIZ } = {}) {
+  if (!projeto || !termo) throw new Error('Uso: node scripts/buscar-imagem.mjs <projeto> "<termo>" [--logo] [--fonte=commons|agenciabrasil|senado|camara|planalto] [--listar] [--id=ID|--escolha=N] [--carrossel]');
+  if (id != null && (!/^[1-9]\d*$/.test(String(id)) || listar || escolha != null)) {
+    throw new Error('Use um ID do Commons em --id, separado de --listar e --escolha.');
+  }
   // --carrossel: vai direto para carrosseis/<nome> (um vídeo com o mesmo nome não rouba a foto do carrossel)
-  const pasta = (carrossel ? [path.join(RAIZ, 'carrosseis', projeto)] : [path.join(RAIZ, 'projetos', projeto), path.join(RAIZ, 'carrosseis', projeto)]).find((p) => fs.existsSync(p));
+  const pasta = (carrossel ? [path.join(raiz, 'carrosseis', projeto)] : [path.join(raiz, 'projetos', projeto), path.join(raiz, 'carrosseis', projeto)]).find((p) => fs.existsSync(p));
   if (!pasta) throw new Error(carrossel ? `Não achei carrosseis/${projeto}. Crie a pasta do carrossel antes.` : `Não achei projetos/${projeto} (nem carrosseis/${projeto}). Crie o projeto antes.`);
   const pedir = clienteEducado({ fetch: f });
-  const todos = logo ? await buscarLogos(pedir, termo, { largura }) : await buscarFotos(pedir, termo, { fonte, largura });
+  let todos;
+  if (id != null) {
+    const resposta = await pedir(urlApi(COMMONS, { action: 'query', pageids: String(id), ...paramsInfo(largura) }));
+    todos = (resposta.query?.pages || []).filter(pagina => String(pagina.pageid) === String(id)).map(registroDe);
+  } else {
+    todos = logo ? await buscarLogos(pedir, termo, { largura }) : await buscarFotos(pedir, termo, { fonte, largura });
+  }
   const livres = todos.filter((r) => r.livre && r.url && EXT[r.mime]);
   if (listar) return { pasta, candidatos: livres, descartados: todos.length - livres.length };
+  if (!livres.length && id != null) throw new Error('O arquivo escolhido não está disponível com licença livre. Confira a página do Commons.');
   if (!livres.length) throw new Error(`Nada de licença livre para "${termo}"${logo ? ' (logo no Wikidata)' : ` (${fonte})`}. ${todos.length ? `${todos.length} resultado(s) descartado(s) pela licença.` : 'Tente outro termo.'} Não use imagem sem licença: peça o arquivo à pessoa ou use uma peça 3D.`);
   const r = livres[Math.max(0, Math.min(livres.length - 1, (escolha ?? 1) - 1))];
   const bin = await pedir(r.url, { binario: true });
   fs.mkdirSync(path.join(pasta, 'assets'), { recursive: true });
-  const rel = `assets/${slug(nome || termo)}${logo ? '-logo' : ''}${EXT[r.mime]}`;
+  const rel = `assets/${slug(nome || termo)}${logo ? '-logo' : ''}${id != null ? `-${id}` : ''}${EXT[r.mime]}`;
   fs.writeFileSync(path.join(pasta, rel), bin);
   registrarFonte(pasta, linhaFonte(rel, r, { tipo: logo ? 'logo' : 'foto' }), rel);
   return { pasta, arquivo: rel, registro: r, bytes: bin.length };
@@ -173,10 +186,10 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const args = process.argv.slice(2), pos = args.filter((a) => !a.startsWith('--'));
   const opc = (k) => (args.find((a) => a.startsWith(`--${k}=`)) || '').split('=').slice(1).join('=');
   try {
-    const r = await buscarImagem({ projeto: pos[0], termo: pos.slice(1).join(' '), logo: args.includes('--logo'), fonte: opc('fonte') || 'commons', listar: args.includes('--listar'), escolha: opc('escolha') ? +opc('escolha') : null, largura: opc('largura') ? +opc('largura') : undefined, nome: opc('nome') || null, carrossel: args.includes('--carrossel') });
+    const r = await buscarImagem({ projeto: pos[0], termo: pos.slice(1).join(' '), logo: args.includes('--logo'), fonte: opc('fonte') || 'commons', listar: args.includes('--listar'), escolha: opc('escolha') ? +opc('escolha') : null, id: opc('id') || null, largura: opc('largura') ? +opc('largura') : undefined, nome: opc('nome') || null, carrossel: args.includes('--carrossel') });
     if (r.candidatos) {
-      r.candidatos.forEach((c, i) => console.log(`${i + 1}. ${c.titulo}${c.item ? ` [${c.item}]` : ''}\n   ${c.licenca}, ${c.autor}, arquivo ${c.larguraReal || c.largura}x${c.alturaReal || c.altura}${c.larguraReal && c.larguraReal !== c.largura ? ` (miniatura pedida ${c.largura}x${c.altura})` : ''}\n   ${c.pagina}`));
-      console.log(`${r.candidatos.length} com licença livre${r.descartados ? `, ${r.descartados} descartado(s)` : ''}. Baixe com --escolha=N.`);
+      r.candidatos.forEach((c, i) => console.log(`${i + 1}. ${c.titulo}${c.id ? ` [Commons ID ${c.id}]` : ''}${c.item ? ` [${c.item}]` : ''}\n   ${c.licenca}, ${c.autor}, arquivo ${c.larguraReal || c.largura}x${c.alturaReal || c.altura}${c.larguraReal && c.larguraReal !== c.largura ? ` (miniatura pedida ${c.largura}x${c.altura})` : ''}\n   ${c.pagina}${c.data ? `\n   Data: ${c.data}` : ''}${c.descricao ? `\n   Descrição: ${c.descricao.slice(0, 280)}` : ''}`));
+      console.log(`${r.candidatos.length} com licença livre${r.descartados ? `, ${r.descartados} descartado(s)` : ''}. Baixe a imagem conferida com --id=ID (ou --escolha=N no fluxo antigo).`);
     } else {
       console.log(`• ${path.relative(RAIZ, path.join(r.pasta, r.arquivo))} (${Math.round(r.bytes / 1024)} KB, ${r.registro.largura}x${r.registro.altura})\n• ${r.registro.titulo}: ${r.registro.autor}, ${r.registro.licenca}\n• registrado em fontes.md (seção Imagens)\n• na cena: { "tipo": "imagem", "arquivo": "${r.arquivo}", "credito": ${JSON.stringify(`${r.registro.autor} (${r.registro.licenca})`)} }`);
       if (r.registro.restricoes) console.log(`• atenção, restrições: ${r.registro.restricoes}`);

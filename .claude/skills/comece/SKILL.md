@@ -18,32 +18,16 @@ Quem está do outro lado descompactou a pasta do Estudio de videos (open-source)
 - **Chave nunca na conversa.** Você não pede, não lê, não mostra e não copia o conteúdo do `.env`. A chave entra pelo estúdio web (Começar > Voz), que grava no `.env` sem mostrar de novo. Se a pessoa colar uma chave no chat, diga com calma: "Não cole a chave aqui: ela fica salva na conversa. Entre no site da voz, apague essa chave, crie outra e cole só no estúdio, em Começar > Voz." Não repita a chave na resposta.
 - **Sem travessão longo com espaços** em nenhum texto.
 
+Se a pessoa trouxe um código de erro, siga [Recuperação do estúdio](recuperacao.md). Se ela colou o pedido de primeiro vídeo do estúdio, siga o trecho correspondente do Passo 4.
+
 ## Dois caminhos: estúdio web ou modo assistente
 Logo no começo, rode `npm run comece -- --situacao --json` (com `ferramentas/rodar` na frente se `node` não existir; se não existir de jeito nenhum, faça o Passo 0 primeiro). O campo `modo` diz onde você está:
 - `assistente` (você roda dentro do Claude Code ou do Codex e o estúdio web não está aberto), ou a pessoa pediu para fazer tudo pela conversa: **leia `modo-assistente.md`, nesta pasta da skill, e siga-o do início ao fim.** A voz acontece aqui, sem o estúdio web: a chave da voz nunca vai no chat (só no arquivo `.env`, aberto por `npm run voz -- --preparar`). Não existe mais ativação de licença.
 - `estudio-web-ou-terminal` (ele já está aberto ou você não é o assistente): siga os passos abaixo, que levam a pessoa ao estúdio web.
 Em dúvida, pergunte uma vez: "Você prefere configurar clicando no estúdio, no navegador, ou aqui comigo, pela conversa?"
 
-## Passo 0. Node e instalação: você mesmo resolve
-O estúdio precisa do Node 20 ou mais, do FFmpeg, do navegador interno e das peças. Quem deu dois cliques em Instalar já tem tudo dentro da pasta (`.programas/`). Quem abriu a pasta direto aqui pode não ter nada, nem o Node: tudo bem, o instalador da pasta resolve, e quem roda é você.
-
-**Qual instalador (o mesmo dos dois cliques, sem janela e sem abrir o navegador no fim):**
-- Mac e Linux: `bash ferramentas/instalador/instalar.sh --assistente`
-- Windows (Git Bash do Claude Code, PowerShell ou Prompt do Codex): `powershell.exe -NoProfile -ExecutionPolicy Bypass -File ferramentas/instalador/instalar.ps1 -Assistente` (o `ExecutionPolicy Bypass` vale só para esse processo; não mude nada do sistema)
-- Como saber que é Windows: `uname -s` responde `MINGW`, `MSYS` ou `CYGWIN`, ou o seu terminal é o PowerShell.
-
-Ele baixa o Node portátil (só se o computador não tiver o Node 20 ou mais), o FFmpeg, as peças, o navegador interno e o alinhador de voz, confere a impressão digital (SHA-256) de cada arquivo e não instala nada fora da pasta nem pede senha. Baixa uns 500 MB na primeira vez (é rapidinho; em internet lenta, um passo pode passar de 10 minutos). Rode com o maior tempo limite que o seu terminal permitir (no Claude Code, em segundo plano); se o comando for interrompido pelo tempo ou pela internet, rode de novo: ele continua do que falta. No fim aparece "Pronto! Tudo instalado"; se parar, ele imprime "O que houve" e "O que fazer": siga e rode de novo (no máximo 3 vezes).
-
-**A ordem:**
-1. Rode `node -v`. Se responder `v20` ou mais, use os comandos normalmente (`node ...`, `npm run ...`) e siga para o Passo 1.
-2. Se não existir (ou for menor que 20), rode `ferramentas/rodar node -v` (Mac, Linux e Git Bash) ou `ferramentas\rodar.cmd node -v` (PowerShell). Ele acha o Node portátil da pasta e o Node do computador fora do caminho do terminal (`/opt/homebrew/bin`, `/usr/local/bin`). Se responder `v20` ou mais, ponha `ferramentas/rodar` (ou `ferramentas\rodar.cmd`) na frente de todo comando `node`, `npm` ou `npx` desta e das outras skills, e siga para o Passo 1.
-3. Se nem isso funcionar, não há Node: avise ("Vou instalar o estúdio aqui na pasta, inclusive o Node, o motor que roda tudo. É rapidinho. Vai aparecer um pedido de aprovação: pode aprovar.") e rode o instalador da sua plataforma (acima). Depois use `ferramentas/rodar` (ou `ferramentas\rodar.cmd`) na frente dos comandos, como no item 2.
-
-Se a pessoa preferir, ela pode dar dois cliques em **Instalar (Mac)** ou **Instalar (Windows)**: é o mesmo instalador, numa janela, e no fim abre o estúdio. Avisos do sistema nesse caso: Guia 01, Seções 05 e 06.
-
-Sobre o assistente:
-- **Codex:** se um comando falhar com "read-only", "permission denied" ou "sandbox", a pasta ainda não foi marcada como confiável. Explique: "O Codex abriu a pasta só para leitura. No app, confirme que confia na pasta quando ele perguntar e escolha o modo **Ask for approval**. Depois feche e abra o Codex na mesma pasta." Nunca sugira **Full access**. Os comandos do estúdio (`node src/...`, `npm run ...`, `npm test`, `npm ci`, o instalador da pasta e os mesmos com `ferramentas/rodar` na frente) já estão liberados pelas regras do estúdio quando a pasta é confiável. Se o download do instalador falhar por rede, peça para a pessoa aprovar o comando quando o Codex perguntar.
-- **Claude Code:** o Claude pede permissão para rodar comandos. Diga à pessoa que pode aprovar os comandos do estúdio.
+## Passo 0. Node e instalação
+Teste `node -v`. Se o Node estiver ausente ou abaixo da versão 20, se o doctor pedir reinstalação ou se houver problema de permissão, siga [Instalação](instalacao.md).
 
 ## Passo 1 de 6. Conferir a instalação
 1. Rode `npm run doctor` (com `ferramentas/rodar` na frente se precisar). Cada linha começa com `ok`, `aviso` ou `ERRO`. Só `ERRO` impede o vídeo.
@@ -80,7 +64,7 @@ Sem estúdio web (o navegador não abriu, ou a pessoa prefere a conversa): siga 
 2. Rode `npm run linha -- --ver`. Se disser "ainda não foi escolhida", pergunte uma vez: "Se um dia a sua página falar de política, ela tende a algum lado? Neutra (o padrão), esquerda, centro ou direita? E com que força: leve ou moderada?". A linha só muda o ângulo e o tom, nunca os fatos. Grave com `npm run linha -- <linha> <intensidade>` (sem resposta, `neutra leve`).
 
 ## Passo 4 de 6. Configurar IA (e o primeiro vídeo)
-1. No estúdio web, peça para ela ir em **Configurações > Configurar IA**: o estúdio detecta Claude Code, Codex ou Cursor no computador. Ela clica em **Conectar** no que estiver instalado (no Cursor, cola a chave `CURSOR_API_KEY` no campo da tela; nunca peça a chave no chat).
+1. No estúdio web, peça para ela ir em **Configurações > Configurar IA**: ao abrir, o estúdio **procura sozinho** Claude Code, Codex ou Cursor Agent já no PC (não em extensão do editor). Ela clica em **Usar esta** no que aparecer; se faltar, **Instalar** baixa no computador (aviso: o estúdio não oferece IA grátis). No Cursor: **Entrar com o Cursor** ou a API Key do painel no campo da tela (nunca peça a chave no chat).
 2. Com a IA conectada, a aba **Chat** aparece no estúdio: o pedido do primeiro vídeo pode ir direto para lá (botão **Enviar no Chat**). Se a IA ainda não estiver conectada, mantenha o fluxo de **Copiar o pedido** para colar nesta conversa.
 3. Se ela preferir provar o motor pela conversa (sem o chat), diga "Vou fazer um vídeo de exemplo, sem voz, só para provar que tudo funciona." e rode `npm run prova`. Se passar, o vídeo aparece em **Meus vídeos**.
 4. Se falhar, siga a seção "Quando o estúdio devolver um erro" (mais abaixo): só a lista segura, no máximo 2 tentativas.
@@ -89,33 +73,13 @@ Sem estúdio web (o navegador não abriu, ou a pessoa prefere a conversa): siga 
 7. Se algo falhar no estúdio web, a tela mostra a causa, o que fazer e os botões **Copiar diagnóstico** e **Abrir o direct** (direct do Instagram @kaueajure, https://ig.me/m/kaueajure). O estúdio também manda sozinho um aviso anônimo (só o código da falha, a versão e o sistema; desliga em Configurações).
 
 ### Quando a pessoa colar o pedido do botão "Fazer meu primeiro vídeo" (ou enviar no Chat)
-O pedido começa com "Quero o meu primeiro vídeo sobre..." e diz a pasta (`projetos/<nome>/`, com o arquivo `PEDIDO-DO-ESTUDIO.md`). Faça só a parte do texto: skill `pauta` (ângulo e fatos conferidos), skill `roteiro` (grava `projetos/<nome>/roteiro.md` e `fontes.md`) e skill `youtube` (grava `projetos/<nome>/youtube.json`). **Não rode o vídeo** (nem `npm run video`, nem a skill `video`): o estúdio web está esperando o roteiro, começa sozinho uns 15 segundos depois de você gravar e mostra o progresso e o vídeo na tela dela. Termine dizendo: "O roteiro está pronto. Volte ao estúdio no navegador: o vídeo já começou." Se o estúdio depois mostrar "O roteiro não passou no corretor automático", reescreva o roteiro na mesma pasta e peça para ela clicar em **Tentar de novo**.
+O pedido começa com "Quero o meu primeiro vídeo sobre..." e diz a pasta (`projetos/<nome>/`, com o arquivo `PEDIDO-DO-ESTUDIO.md`). Faça só a parte do texto: skill `pauta` (ângulo e fatos conferidos), skill `roteiro` (grava `projetos/<nome>/roteiro.md` e `fontes.md`) skill `pesquisa-visual` (grava `direcao-visual.json` antes do `roteiro.md` definitivo) e skill `youtube` (grava `projetos/<nome>/youtube.json`). **Não rode o vídeo** (nem `npm run video`, nem a skill `video`): o estúdio web está esperando o roteiro, começa sozinho uns 15 segundos depois de você gravar e mostra o progresso e o vídeo na tela dela. Termine dizendo: "O roteiro está pronto. Volte ao estúdio no navegador: o vídeo já começou." Se o estúdio depois mostrar "O roteiro não passou no corretor automático", reescreva o roteiro na mesma pasta e peça para ela clicar em **Tentar de novo**.
 
 ## Quando a foto não vem
 O estúdio busca sozinho a foto de quem ou do que a fala cita pelo nome. Se o relatório trouxer o aviso `foto-nao-encontrada`, explique com as palavras do aviso (sem internet, antivírus ou rede da empresa bloqueando, ou nenhuma foto de licença livre) e ofereça: tentar de novo com internet, ou a pessoa pôr uma foto dela (ou com autorização) em `projetos/<nome>/assets/` e você usar no beat (`"arquivo": "assets/<arquivo>"`). Nunca use foto sem licença.
 
 ## Quando o estúdio devolver um erro
-Vale em qualquer momento, não só na primeira vez. O estúdio mostra a causa, "O que fazer", um código curto da falha (`ffmpeg-falhou`, `ffmpeg-quadros`, `voz-eleven-cota`, `navegador-nao-abre`...) e o botão **Copiar diagnóstico**. Ele já se corrige sozinho nas falhas de ambiente (FFmpeg, navegador, alinhador de voz, pasta curta, arquivo travado, porta, pouco 3D) e avisa numa linha "ajustei ... e continuei": isso não é erro e você não refaz.
-
-**1. Leia antes de mexer.** A mensagem do estúdio (ou o texto que a pessoa colou), `npm run doctor`, `npm run verificar` e `projetos/<nome>/saida/relatorio.json`.
-
-**2. Lista segura: só estas correções.**
-1. Repetir o passo. O estúdio reaproveita narração, trilha e quadros já feitos, sem gastar crédito.
-2. Reinstalar um componente do kit com o comando oficial: `bash ferramentas/instalador/instalar.sh --assistente` (Mac e Linux) ou o do Windows no Passo 0. Ele também troca um FFmpeg problemático pelo do kit.
-3. Trocar uma configuração do estúdio pelo estúdio web ou pelos comandos oficiais. Ex.: `"encoder": "x264"` no `ilustrando.config.json`; a voz em Começar > Voz.
-4. Erro de caminho: usar uma pasta curta. Mover a pasta do estúdio para a pasta pessoal, com nome curto, fora de Downloads e do OneDrive.
-5. Rodar `npm run verificar` e `npm run doctor`.
-6. Voz da ElevenLabs bloqueada (`voz-eleven-bloqueio`, "unusual activity"): não é chave errada nem defeito do estúdio. Confira com `npm run voz -- --conferir` (ou o botão Testar minha chave, em Começar > Voz), explique a trava em uma frase e siga o vídeo com `--voz=mock` se a pessoa quiser ver o resultado já; a narração entra depois, quando a conta liberar.
-
-**3. Nunca:**
-- editar `src/`, `ferramentas/` ou qualquer código do kit sem necessidade (prefira os comandos oficiais);
-- baixar outro FFmpeg ou Node por conta própria, nem mexer no PATH do sistema;
-- gastar crédito pago (ElevenLabs, Fish Audio) sem perguntar antes: nada de `--refazer-voz` nem de apagar `narracao.mp3` ou `palavras.json` para "tentar de novo";
-- pedir chave no chat.
-
-**4. Duas tentativas, no máximo.** Se não resolver, pare e diga, em uma frase, o que tentou. Peça à pessoa para clicar em **Copiar diagnóstico** e depois em **Abrir o direct** (direct do Instagram @kaueajure, https://ig.me/m/kaueajure) e colar lá. Não invente texto de suporte com hipótese técnica: repita o que o estúdio disse.
-
-O aviso do doctor "nenhum assistente encontrado no Terminal" não é erro: só quer dizer que o comando `claude` ou `codex` não está no Terminal. Quem usa o app do Claude ou do Codex não precisa fazer nada.
+Abra [Recuperação do estúdio](recuperacao.md). Comece pelo código e pelo resumo do relatório. Siga a lista de correções do guia e respeite o limite de duas tentativas.
 
 ## Passo 5 de 6. O que ela precisa fazer fora do computador
 Em três linhas, sem detalhar: criar as contas da página (Guia 02: Instagram, TikTok, Página do Facebook e YouTube Shorts), usar a mesma foto e o mesmo @ nas quatro (as imagens estão no estúdio web, em Começar > Sua marca, botão "Abrir a pasta com as imagens") e ler a rotina de postagem (Guia 04).
@@ -138,22 +102,7 @@ Agora escreva, do seu jeito:
 Se faltar algo (voz ou marca), o convite é para resolver isso primeiro, no estúdio web, numa frase.
 
 ## Como pedir mudanças
-Diga à pessoa, no fim, que ela pode pedir mudanças em português comum, sem editar arquivo. Exemplos e o que você faz:
-
-| Ela diz | Você faz |
-|---|---|
-| "deixa o título maior" | aumenta o título; se não couber, encurta o texto (nunca diminui a fonte) e refaz o vídeo |
-| "troca a cor do fundo para azul" | muda o fundo daquele vídeo; se for a cor da página inteira, confirma antes (decisão de marca) |
-| "tira a música" | refaz com `--sem-musica` |
-| "muda o final para chamar para comentar" | troca o CTA final por pedido de comentário; pergunta se é só neste vídeo ou em todos |
-| "deixa a voz mais devagar" | refaz a narração mais calma (`--refazer-voz`); a legenda acompanha |
-| "troca o objeto do começo" | troca a peça do gancho por uma ligada à primeira frase |
-| "faz na horizontal", "para o YouTube" | refaz no formato horizontal (`--formato=horizontal`), sem @ (pergunta se quer o @) e com legenda; diz que a capa é a `miniatura.jpg` |
-| "converte esse vídeo para vertical/horizontal" | `--converter=horizontal` (ou `vertical`): cria o projeto irmão com a mesma narração e trilha, sem gastar crédito; conta o que mudou |
-| "tira a legenda" / "põe o @" | `--sem-legenda` / `--handle` (o @ só existe no horizontal como opção; no vertical sempre aparece) |
-| "faz uma versão de 30 segundos" | encurta o roteiro mantendo o fato principal, num projeto novo, sem apagar o original |
-
-Cada ajuste refaz o vídeo; mexer só no visual reaproveita a narração. Pergunte antes só se o pedido mudar a marca ou tirar um fato conferido.
+Diga à pessoa que ela pode pedir alterações em português comum. Para orientar ou executar um ajuste específico, consulte [Ajustes em vídeos](ajustes.md).
 
 ## Atalhos (para quem quiser)
 | | Claude Code | Codex |
